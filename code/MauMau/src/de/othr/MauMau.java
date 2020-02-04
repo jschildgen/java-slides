@@ -21,12 +21,12 @@ public class MauMau {
             for(Spieler s : spieler) {
                 // Jeder Spieler legt eine Karte auf die aktuell ausgelegte Karte
                 aktuelleKarte = s.legeKarte(aktuelleKarte);
-                System.out.println(s.getName()+" legt: "+aktuelleKarte);
                 if (aktuelleKarte == null) {
                     // Spieler kann nicht legen
                     System.out.println(s.getName() + " hat verloren.");
                     break Spiel;
                 }
+                System.out.println(s.getName()+" legt: "+aktuelleKarte);
                 if (s.anzahlKarten() == 0) {
                     // Spieler hat keine Karten mehr
                     System.out.println(s.getName() + " hat gewonnen.");

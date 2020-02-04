@@ -87,14 +87,176 @@
 								Die Primärliteratur zu dieser Vorlesung ist das Java-Buch von Michael Kofler. Ein Buch-Symbol rechts oben auf Folien verweist auf die jeweiligen Kapitel im Buch.
 								</aside>
                 </section>
-                <section>
-                <h2>Aufbau der Vorlesung</h2>
-                <ol>
-                    <li>...</li>
-                </ol>
-								</section>
-								
                 
+                <section>
+                  <h2>Aufbau der Vorlesung</h2>
+                  <ol>
+                      <li>Java-Grundlagen
+                        <ul class="small">
+                          <li class="fragment">Datentypen, if/while/for/...</li>
+                          <li class="fragment">IntelliJ</li>
+                        </ul>
+                      </li>
+                  </ol>
+                  <img src="img/1/intellij.png" alt="IntelliJ" class="fragment noborder" style="width:90%;margin-top: -5mm; margin-left: 4cm;">
+                </section>
+
+                <section>
+                  <h2>Aufbau der Vorlesung</h2>
+                  <ol>
+                      <li>Java-Grundlagen
+                        <ul class="small">
+                          <li>Datentypen, if/while/for/...</li>
+                          <li>IntelliJ</li>
+                        </ul>
+                      </li>
+                      <li>Objekt-orientierte Programmierung
+                        <ul class="small">
+                          <li class="fragment">Klassen, Interfaces, Objekte</li>
+                        </ul></li>
+                  </ol>
+                  <pre class="fragment"><code class="java" data-trim contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#32-36'></code></pre>
+                </section>
+                
+
+                <section>
+                  <h2>Aufbau der Vorlesung</h2>
+                  <ol>
+                      <li>Java-Grundlagen
+                        <ul class="small">
+                          <li>Datentypen, if/while/for/...</li>
+                          <li>IntelliJ</li>
+                        </ul>
+                      </li>
+                      <li>Objekt-orientierte Programmierung
+                        <ul class="small">
+                          <li>Klassen, Interfaces, Objekte</li>
+                          <li>Vererbung</li>
+                        </ul></li>
+                  </ol>
+                  <pre class="fragment"><code class="java" data-trim contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Studierender.java#3-4'></code></pre>
+                </section>
+
+                <section>
+                  <h2>Aufbau der Vorlesung</h2>
+                  <ol>
+                      <li>Java-Grundlagen
+                        <ul class="small">
+                          <li>Datentypen, if/while/for/...</li>
+                          <li>IntelliJ</li>
+                        </ul>
+                      </li>
+                      <li>Objekt-orientierte Programmierung
+                        <ul class="small">
+                          <li>Klassen, Interfaces, Objekte</li>
+                          <li>Vererbung</li>
+                          <li>UML</li>
+                        </ul></li>
+                  </ol>
+                  <img class="fragment" style="position: absolute; right:0cm; top:7cm; width:30%" uml="class Person {
+                    -name : String
+                    -alter : int
+                    +setName(name : String)
+                    +getName() : String
+                    +setAlter(alter : int)
+                    +getAlter() : int
+                    +erhoeheAlter()
+                  }
+
+                  class Studierender {
+                    -matrikelnr : int
+                    +setMatrikelnr(matrikelnr : int)
+                    +getMatrikelnr() : int
+                  }
+                  Person <|-- Studierender
+                  
+                  "/>
+                </section>
+
+                <section>
+                  <h2>Aufbau der Vorlesung</h2>
+                  <ol>
+                      <li>Java-Grundlagen
+                        <ul class="small">
+                          <li>Datentypen, if/while/for/...</li>
+                          <li>IntelliJ</li>
+                        </ul>
+                      </li>
+                      <li>Objekt-orientierte Programmierung
+                        <ul class="small">
+                          <li>Klassen, Interfaces, Objekte</li>
+                          <li>Vererbung</li>
+                          <li>UML</li>
+                        </ul></li>
+                      
+                      <li>Exceptions</li>
+                      
+                      <li class="fragment">Generics und Collections
+                        <ul class="fragment small">
+                          <li>Arrays, Listen, Mengen, Maps</li>
+                        </ul>
+                      </li>
+                    </ol>
+                    <pre class="fragment"><code class="java" data-trim contenteditable data-sample='code/Programmieren2/src/de/othr/collections/CollectionBeispiel.java#10,13-14'></code></pre>
+                  
+                </section>
+
+                <section>
+                  <h2>Aufbau der Vorlesung</h2>
+                  <ol>
+                      <li>Java-Grundlagen
+                        <ul class="small">
+                          <li>Datentypen, if/while/for/...</li>
+                          <li>IntelliJ</li>
+                        </ul>
+                      </li>
+                      <li>Objekt-orientierte Programmierung
+                        <ul class="small">
+                          <li>Klassen, Interfaces, Objekte</li>
+                          <li>Vererbung</li>
+                          <li>UML</li>
+                        </ul></li>
+                      
+                      <li>Exceptions</li>
+                      
+                      <li>Generics und Collections
+                        <ul class="small">
+                          <li>Arrays, Listen, Mengen, Maps</li>
+                          <li>Lambda-Ausdrücke</li>
+                        </ul>
+                      </li>
+                  </ol>
+                  <pre class="fragment"><code class="java" data-trim contenteditable data-sample='code/Programmieren2/src/de/othr/collections/CollectionBeispiel.java#16'></code></pre>
+                </section>
+                <section>
+                  <h2>Aufbau der Vorlesung</h2>
+                  <ol>
+                      <li>Java-Grundlagen
+                        <ul class="small">
+                          <li>Datentypen, if/while/for/...</li>
+                          <li>IntelliJ</li>
+                        </ul>
+                      </li>
+                      <li>Objekt-orientierte Programmierung
+                        <ul class="small">
+                          <li>Klassen, Interfaces, Objekte</li>
+                          <li>Vererbung</li>
+                          <li>UML</li>
+                        </ul></li>
+                      
+                      <li>Exceptions</li>
+                      
+                      <li>Generics und Collections
+                        <ul class="small">
+                          <li>Arrays, Listen, Mengen, Maps</li>
+                          <li>Lambda-Ausdrücke</li>
+                        </ul>
+                      </li>
+                      <li>GUI-Programmierung mit JavaFX</li>
+                  </ol>
+                </section>
+								
+
 
 			<section>
 							<h2>Kapitelzusammenfassung</h2>

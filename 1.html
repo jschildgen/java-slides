@@ -264,6 +264,7 @@
 
       <section>
         <h2>Warum Java?</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 1.1</div>
         <img class="fragment" src="img/1/android.png" alt="Android App" style="width:5cm; position:absolute; margin-left:7cm; margin-top:0cm">
         <ul>
           <li>Plattformunabhängig</li>
@@ -282,11 +283,355 @@
         <img src="img/1/webapp.png" alt="WebApp" class="fragment noborder" style="width:8cm; position:absolute; margin-left:5cm; margin-top:-3cm">
       </section>
 
+      <section>
+        <h2>Komponenten von Java</h2>
+        <h4>Java Runtime Environment (JRE)</h4>
+        <ul>
+          <li>Wird benötigt, um Java-Programme auszuführen</li>
+          <li>Beinhaltet die <em>Java Virtual Machine</em> (JVM)</li>
+        </ul>
+        <p></p>
+        <h4>Java Development Kit (JDK)</h4>
+        <ul>
+          <li>Beinhaltet Klassen und Tools, um Java zu entwickeln</li>
+          <li>Beinhaltet auch das JRE</li>
+        </ul>
+        <p>Beides ist verfügbar als Oracle Java und OpenJDK.</p>
+        <aside class="notes">Im Rahmen dieser Vorlesung wird das JDK benötigt, damit wir Java-Anwendungen entwickeln, kompilieren und starten können. Dazu kann entweder die offizielle Java-Version von Oracle (früher von Sun) oder alternativ die Open-Source-Variante OpenJDK verwendet werden.</aside>
+      </section>
+
+      <section>
+        <h3>Zwei Tools: <code>javac</code> und <code>java</code></h3>
+        <h4><code>javac</code> - Der Java Compiler</h4>
+        <ul>
+          <li>Eingabe: *.java-Dateien (Klassen-Quellcode)</li>
+          <li style="margin-right:-2mm">Ausgabe: *.class-Dateien (plattformunabh. Bytecode)</li>
+        </ul>
+        <p></p>
+        <h4><code>java</code> - Starten einer Java-Anwendung</h4>
+        <ul>
+          <li>Eingabe: Name einer Klasse</li>
+          <li>Startet <code>main()</code>-Methode in der gegebenen Klasse</li>
+        </ul>
+
+        <pre class="fragment"><code data-trim class="bash">
+          $ javac MeinProgramm.java
+          $ ls
+          MeinProgramm.class	MeinProgramm.java
+          $ java MeinProgramm
+          Hallo!
+        </code></pre>
+        <aside class="notes">Der Java-Compiler <code>javac</code> erzeugt keinen direkt ausführbaren Maschinencode, sondern einen Bytecode, der in der JVM (Java Virtual Machine) unter Windows, Linux, MacOS etc. ausgeführt werden kann.</aside>
+      </section>
+
+      <section>
+        <h3>Beispiel-Programm</h3>
+        <p class="small">MeinProgramm.java</p>
+        <pre style="z-index: -5;"><code class="java" data-sample-indent="keep" contenteditable data-sample='code/MeinProgramm.java'></code></pre>
+        <p style="font-size:90%">Wichtig: Der Dateiname muss gleich dem Klassennamen sein!</p>
+        <aside class="notes">Eine Klasse, welche man starten möchte, benötigt die Methode <code>public static void main(String[] args)</code>. Die Kommandos, die dort drinstehen, werden beim Programmstart ausgeführt. In IntelliJ kann man die <code>main</code>-Methode mit Hilfe eines Live-Templates schnell generieren lassen, indem man einfach <code>main</code> eingibt und die Tabulatortaste drückt.<br>Im gezeigten Beispiel gibt das Programm einfach nur den Text &quot;Hallo!&quot; auf der Konsole aus. Unsere Klasse heißt MeinProgamm, daher muss der Dateiname unbedingt MeinProgramm.java heißen, auch Groß-Kleinschreibung ist hier wichtig. Dies bedeutet daher auch, dass es innerhalb einer .java-Datei nur eine Klasse geben darf, die <code>public</code> ist. <code>public</code> bedeutet, dass sie von außen sichtbar ist. </aside>
+      </section>
+
+      <section>
+        <h3>Java Shell <code>jshell</code></h3>
+
+        <pre><code class="nohighlight" data-trim>
+$ jshell
+|  Welcome to JShell -- Version 13.0.1
+|  For an introduction type: /help intro
+
+jshell> System.out.println("Nochmal hallo!");
+Nochmal hallo!
+
+jshell> 5+5
+$2 ==> 10
+
+jshell>
+        </code></pre>
+
+        <p class="small">Kommando einlesen &rightarrow; ausführen &rightarrow; Kommando einlesen &rightarrow; ausführen &rightarrow; ...</p>
+
+        <aside class="notes">Seit Java 9 kann man die <code>jshell</code> nutzen, um schnell etwas mit Java herumzuspielen. Man startet bereits in der <code>main</code>-Methode einer vordefinierten Klasse, muss sich also um die meisten der auf der vorherigen Folie gezeigten Dinge nicht kümmern. Wie das Kommando <code>5+5</code> zeigt, muss man in der Java Shell nicht zwangsweise ein <code>System.out.println</code> verwenden. Jede Rückgabe, die ein Kommando liefert wird ausgegeben. Die Java Shell bietet auch eine Autovervollständigung (Tab-Taste) und Hilfe (2x Tab-Taste). Mit Strg+D (MacOS: ^D) kann die Java Shell beendet werden.</aside>
+      </section>
+
+      <section>
+        <h2>IDE</h2>
+        <p><b>Integrated Development Enviroments</b><br>IntelliJ, Eclipse, Netbeans, ...</p>
+        <ul>
+          <li>Kann viiiiel mehr als ein Texteditor</li>
+          <li>Autovervollständigung</li>
+          <li>Code-Generierung</li>
+          <li>Versionsverwaltung</li>
+          <li>Zeigt Warnungen und Fehler an</li>
+          <li>Ausführung und Debugging des Programms</li>
+          <li>...</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>IntelliJ</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> A</div>
+        <img src="img/1/intellij.png" alt="IntelliJ" class="noborder stretch">
+        <aside class="notes">Links: Der Projekt-Explorer mit allen Dateien und Ordnern, die zu einem Java-Projekt gehören. Rechts: Der Code-Editor mit Syntax-Highlighting. Unten: Das Ausführungsfenster, in dem das lauffähige Programm ausprobiert werden kann.</aside>
+      </section>
+
+      <section>
+        <h2>IntelliJ</h2>
+        <p>Nützliche Funktionen:</p>
+        <img src="img/1/autocomplete.png" alt="Autovervollständigung" class="fragment noborder" data-fragment-index="1" style="position: absolute; width:7cm; margin-top: -3cm; margin-left: 6cm;">
+        <img src="img/1/intellij_info.png" alt="Code-Info" class="fragment noborder" data-fragment-index="2" style="position: absolute; width:7cm; margin-top: 3cm; margin-left: 6cm;">
+        <img src="img/1/autocorrection.png" alt="Code-Info" class="fragment noborder" data-fragment-index="6" style="position: absolute; width:8cm; margin-top: 10cm; margin-left: 5cm;">
+        <ul>
+          <li class="fragment" data-fragment-index="1">Autovervollständigung beim Tippen</li>
+          <li class="fragment" data-fragment-index="2">Infos und zum Code springen: Strg bzw. &#8984;</li>
+          <li class="fragment" data-fragment-index="3">Code &rightarrow; Reformat Code</li>
+          <li class="fragment" data-fragment-index="4">Sauberes umbenennen:<br>Rechtsklick auf etwas &rightarrow; Refactor</li>
+          <li class="fragment" data-fragment-index="5">Live-Templates mit Tab-Taste,<br>z. B. <code>sout&#8633;</code> erzeugt <code>System.out.println();</code></li>
+          <li class="fragment" data-fragment-index="6">Korrekturvorschläge annehmen:<br>Alt+Enter bzw. &#8997;+&#8629;</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Java-Dokumentation</h2>
+        <p><a href="https://docs.oracle.com/en/java/javase/13/docs/api/" target="_blank">https://docs.oracle.com/en/java/javase/13/docs/api/</a></p>
+
+        <p>Viele Beispiele, Beschreibungen aller Methoden, uvm.</p>
+
+        <img src="img/1/javadocu.png" alt="Java-Dokumentation" class="stretch noborder">
+      </section>
+
+      <section>
+        <h2>Sprachelemente</h2>
+        <table class="small">
+          <thead>
+            <tr><th>Bezeichnung</th><th>Beschreibung</th><th>Beispiel</th><th>Namenskonvention</th></tr>
+          </thead>
+          <tbody>
+            <tr class="fragment"><td>Kommentar</td><td>wird ignoriert</td><td><code>// Einzeiler</code><br><code>/* oder so */</code></td><td>-</td></tr>
+            <tr class="fragment"><td>Variable &amp; Attribut</td><td>speichert Wert oder Objektref.</td><td><code>x</code>, <code>name</code>,  <code>aktuelleKarte</code></td><td>Beginnt mit Kleinbuchstaben</td></tr>
+            <tr class="fragment"><td>Klasse</td><td>&quot;Bauplan&quot; für Objekte</td><td><code>String</code>, <code>Person</code></td><td>Beginnt mit Großbuchstaben</td></tr>
+            <tr class="fragment"><td>Methode</td><td>beschreibt Objektverhalten</td><td><code>println</code>, <code>getName</code></td><td>Beginnt mit Kleinbuchstaben</td></tr>
+            <tr class="fragment"><td>Konstanten</td><td>unveränderlich</td><td>SPRACHE</td><td>Alles groß</td></tr>
+            <tr class="fragment"><td>Enums</td><td>zulässige Werte</td><td>ROT, SCHWARZ</td><td>Alles groß</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Variablen</h2>
+        <p class="small" style="margin-right: -4cm;">Variablen speichern einen Wert eines primitiven Datentypen oder die Referenz auf ein Objekt.</p>
+
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#5-10'></code></pre>
+
+<p class="small">Jedes Java-Kommando muss mit einem Semikolon <code>;</code> enden!</p>
+      <aside class="notes">Variablen müssen zuerst deklariert werden, bevor man sie verwenden kann. Deklarieren erfolgt entweder mittels <code>datentyp variablenname;</code> oder <code>var variablenname = ...;</code> Bei letzterer Variante ermittelt der Java-Compiler den passenden Datentyp. Im oben stehenden Beispiel wird <code>c=5</code> gesetzt, außerdem wird auch der neue Wert (also 5) zurückgegeben. Somit hat auch <code>b</code> den Wert 5, usw. Schlussendlich setzt also <code>a=b=c=5;</code> alle drei Variablen auf 5.</aside>
+
+      </section>
+
+      <section>
+        <h2>Code-Blöcke</h2>
+        <p class="small">Der Gültigkeitsbereich von Variablen endet beim Abschluss desjenigen Code-Blocks, in dem sie deklariert wurden.</p>
+        
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#14-20'></code></pre>
+      <aside class="notes">Code-Blöcke kann man wie hier gezeigt mit <code>{</code> geschweiften Klammern <code>}</code> erstellen. Meist verwendet man Code-Blöcke jedoch in Verbindung mit <code>if</code>, <code>while</code>, <code>for</code>, Methoden, etc.</aside>
+      </section>
+
+      <section>
+        <h2>if / else if / else</h2>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#22-28'></code></pre>
+      </section>
+
+      <section>
+        <h2>while / do-while / for</h2>
+        <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#30-33'></code></pre>
+
+        <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#35-38'></code></pre>
+
+        <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#40-42'></code></pre>
+      
+        <aside class="notes">Der Unterschied zwischen der <code>while</code>-Schleife und der <code>do-while</code>-Scheife ist, dass bei letzter in jedem Falle der Schleifenkörper einmal ausgeführt wird, erst danach wird überprüft, ob weitere Durchläufe erfolgen sollen.</aside>
+      </section>
+
+      <section>
+        <h2>Primitive Datentypen</h2>
+        <table class="small">
+          <tbody>
+            <tr><td><code>boolean</code></td><td><code>true</code> oder <code>false</code></td></tr>
+            <tr><td><code>byte</code></td><td>Ganze Zahl zwischen -127 und 128 (1 Byte)</td></tr>
+            <tr><td><code>short</code></td><td>Ganze Zahl zwischen -32768 und 32767 (2 Byte)</td></tr>
+            <tr><td><code>int</code></td><td>Ganze Zahl zwischen ca. -2 Mrd. und ca. 2 Mrd. (4 Byte)</td></tr>
+            <tr><td><code>long</code></td><td>Ganze Zahl zwischen ca. -9 Trill. und ca. 9 Trill. (8 Byte)</td></tr>
+            <tr><td><code>float</code></td><td>Fließkommazahl bis 8 Stellen (4 Byte)</td></tr>
+            <tr><td><code>double</code></td><td>Fließkommazahl bis 16 Stellen (8 Byte)</td></tr>
+            <tr><td><code>char</code></td><td>Ein Unicode-Zeichen</td></tr>
+          </tbody>
+        </table>
+
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#45-48'></code></pre>
+        <aside class="notes">Bei <code>long</code>-Zahlen steht ein <code>L</code> am Ende. Ein <code>char</code> steht in einfachen Anführungszeichen.</aside>
+      </section>
+
+      <section>
+        <h2>Wrapper-Datentypen</h2>
+        <table class="small">
+          <tbody>
+            <tr><td><code>Boolean</code></td><td style="width:175mm">...</td></tr>
+            <tr><td><code>Byte</code></td><td>...</td></tr>
+            <tr><td><code>Short</code></td><td>...</td></tr>
+            <tr><td><code>Integer</code></td><td>...</td></tr>
+            <tr><td><code>Long</code></td><td>...</td></tr>
+            <tr><td><code>Float</code></td><td>...</td></tr>
+            <tr><td><code>Double</code></td><td>...</td></tr>
+            <tr><td><code>Character</code></td><td>...</td></tr>
+          </tbody>
+        </table>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#49'></code></pre>
+        <aside class="notes">Für jeden der primitiven Datentypen existiert eine Wrapper-Klasse. Variablen dieser Wrapper-Typen können auch den Wert <code>null</code> annehmen. Erwartet Java an einer Stelle ein Objekt und man übergibt beispielweise ein <code>int</code>, dann wird dieser in ein <code>Integer</code>-Objekt verpackt. Man nennt dies auch <em>Boxing</em>. Umgekehrt bedeutet <em>Unboxing</em>, dass ein <code>Integer</code>-Objekt automatisch bei Bedarf als <code>int</code> entpackt wird.</aside>
+      </section>
+
+      <section>
+        <h2>Aufzählungstypen</h2>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/EnumBeispiel.java#4-18'></code></pre>
+      </section>
+
+      <section>
+        <h2>Strings</h2>
+        <p class="small">Strings stehen in doppelten Anführungszeichen.</p>
+
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#51-58'></code></pre>
+      
+        <aside class="notes">Sobald bei Verwendung des <code>+</code>-Operators einer der Operanden ein String ist, werden die anderen Operanden in Strings umgewandelt.</aside>
+      </section>
+
+      <section>
+        <h2><code>String.equals</code></h2>
+        <p class="small">Strings in Java sind immutable, das heißt ein String kann nicht verändert werden. Stattdessen wird ein neues String-Objekt erzeugt und seine Variable zeigt nun auf den neuen String.</p>
+
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#63-68'></code></pre>
+      
+        <p class="small">NICHT (!!!) <strike><code class="java">if(name == "Herr Peter Müller")</code></strike></p>
+
+        <aside class="notes">Würde man zwei Strings mit <code>==</code> vergleichen, ist das Ergebnis fast immer <code>false</code>. Verglichen wird dann nämlich nicht, ob die Strings den gleichen Text beinhalten, sondern ob es sich um die gleichen String-Objekte im Arbeitsspeicher handelt. Und das ist in der Regel nicht der Fall.<br>In Java muss man sich nicht darum kümmern, nicht mehr referenzierte Objekte aus dem Speicher zu löschen. Dies erleidgt der <em>Garbage Collector</em> automatisch.</em></aside>
+      </section>
+
+      <section>
+        <h2>Objektreferenzen</h2>
+        <pre><code class="java" contenteditable data-trim>
+String s = "Hallo";
+String t = s;
+
+Person p = new Person("Peter");
+Person q = p;
+        </code></pre>
+
+        <p class="small">Der <em>Garbage Collector</em> entfernt nicht mehr referenzierte Objekte aus dem Speicher.</p>
+
+        <div class="sl-block" data-block-type="shape" data-block-id="447eb05349c227c2fe6e04d4ccaea6a2" style="width: 152.631px; height: 27.6608px; left: 110.059px; top: 400.409px;">
+          <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(159, 197, 232)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 153 28">
+                  <rect width="152.631" height="27.6608" rx="0" ry="0" class="shape-element" fill="#ffcb63"></rect>
+              </svg></div>
+      </div>
+      <div class="sl-block" data-block-type="line" data-block-id="7b44c909e4cae5d966e857fed662b8dd" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 176.491px; top: 370.455px;">
+          <div class="sl-block-content" data-line-x1="0" data-line-y1="44.44444444444443" data-line-x2="164.91228070175438" data-line-y2="0" data-line-color="#000000" data-line-start-type="circle" data-line-end-type="arrow" style="z-index: 11;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="164.91228070175438" height="44.44444444444443" viewBox="0 0 164.91228070175438 44.44444444444443">
+                  <line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5.589781598624928" y1="42.93797848169445" x2="159.11898304216814" y2="1.5613142628672134"></line>
+                  <line stroke="#000000" stroke-width="4" x1="5.589781598624928" y1="42.93797848169445" x2="159.11898304216814" y2="1.5613142628672134"></line>
+                  <polygon fill="#000000" transform="translate(159.11898304216814,1.5613142628672134) rotate(74.917)" points="0,-6 6,6 -6,6"></polygon>
+                  <ellipse rx="6" ry="6" cx="5.589781598624928" cy="42.93797848169445" fill="#000000"></ellipse>
+              </svg></div>
+      </div>
+      <div class="sl-block" data-block-type="text" data-block-id="2aef8f09f72c2c942124637817484783" style="height: auto; width: 45.614px; left: 64.4448px; top: 388.102px;">
+          <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+              <p style="text-align:center; font-size:75%">s<br>
+                  t<br>
+                  p<br>
+                  q</p>
+          </div>
+      </div>
+      <div class="sl-block" data-block-type="shape" style="width: 152.631px; height: 27.6608px; left: 110.059px; top: 438.441px;" data-block-id="da4d9b5a32c4ab924f80a8e8fcdf42ff">
+          <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(159, 197, 232)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 153 28">
+                  <rect width="152.631" height="27.6608" rx="0" ry="0" class="shape-element" fill="#ffcb63"></rect>
+              </svg></div>
+      </div>
+      <div class="sl-block" data-block-type="shape" style="width: 152.631px; height: 27.6608px; left: 110.059px; top: 478.772px;" data-block-id="4c273dbf85ff1b45a8afef29f0963eea">
+          <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(159, 197, 232)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 153 28">
+                  <rect width="152.631" height="27.6608" rx="0" ry="0" class="shape-element" fill="#ffcb63"></rect>
+              </svg></div>
+      </div>
+      <div class="sl-block" data-block-type="shape" style="width: 152.631px; height: 27.6608px; left: 110.059px; top: 516.441px;" data-block-id="0ef0732ee037f38ff9bbd15704517490">
+          <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(159, 197, 232)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 153 28">
+                  <rect width="152.631" height="27.6608" rx="0" ry="0" class="shape-element" fill="#ffcb63"></rect>
+              </svg></div>
+      </div>
+      <div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 180.19px; top: 388.102px;" data-block-id="85c724a0b104ed00d1def256c67768ec">
+          <div class="sl-block-content" data-line-x1="0" data-line-y1="64.61330409356722" data-line-x2="161.2132807017544" data-line-y2="0" data-line-color="#000000" data-line-start-type="circle" data-line-end-type="arrow" style="z-index: 16;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="161.2132807017544" height="64.61330409356722" viewBox="0 0 161.2132807017544 64.61330409356722">
+                  <line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5.376933838812337" y1="62.45826165720055" x2="155.6439465684144" y2="2.2321553062486865"></line>
+                  <line stroke="#000000" stroke-width="4" x1="5.376933838812337" y1="62.45826165720055" x2="155.6439465684144" y2="2.2321553062486865"></line>
+                  <polygon fill="#000000" transform="translate(155.6439465684144,2.2321553062486865) rotate(68.159)" points="0,-6 6,6 -6,6"></polygon>
+                  <ellipse rx="6" ry="6" cx="5.376933838812337" cy="62.45826165720055" fill="#000000"></ellipse>
+              </svg></div>
+      </div>
+      <div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 180.19px; top: 466.101px;" data-block-id="5376d7cfb4211febd12b78f2b9b07822">
+          <div class="sl-block-content" data-line-x1="0" data-line-y1="26.944966081871343" data-line-x2="164.9122807017544" data-line-y2="0" data-line-color="#000000" data-line-start-type="circle" data-line-end-type="arrow" style="z-index: 17;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="164.9122807017544" height="26.944966081871343" viewBox="0 0 164.9122807017544 26.944966081871343">
+                  <line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5.7088584309298565" y1="26.01219748432945" x2="158.99080058737056" y2="0.9675087880514096"></line>
+                  <line stroke="#000000" stroke-width="4" x1="5.7088584309298565" y1="26.01219748432945" x2="158.99080058737056" y2="0.9675087880514096"></line>
+                  <polygon fill="#000000" transform="translate(158.99080058737056,0.9675087880514096) rotate(80.72)" points="0,-6 6,6 -6,6"></polygon>
+                  <ellipse rx="6" ry="6" cx="5.7088584309298565" cy="26.01219748432945" fill="#000000"></ellipse>
+              </svg></div>
+      </div>
+      <div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 180.19px; top: 478.772px;" data-block-id="85d439f689589c7733025b4cd495375e">
+          <div class="sl-block-content" data-line-x1="0" data-line-y1="51.94417543859649" data-line-x2="164.9122807017544" data-line-y2="0" data-line-color="#000000" data-line-start-type="circle" data-line-end-type="arrow" style="z-index: 18;" data-line-width="4px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="164.9122807017544" height="51.94417543859649" viewBox="0 0 164.9122807017544 51.94417543859649">
+                  <line stroke="rgba(0,0,0,0)" stroke-width="15" x1="5.5242288934159145" y1="50.204150295644794" x2="159.1894570759596" y2="1.802578638518987"></line>
+                  <line stroke="#000000" stroke-width="4" x1="5.5242288934159145" y1="50.204150295644794" x2="159.1894570759596" y2="1.802578638518987"></line>
+                  <polygon fill="#000000" transform="translate(159.1894570759596,1.802578638518987) rotate(72.517)" points="0,-6 6,6 -6,6"></polygon>
+                  <ellipse rx="6" ry="6" cx="5.5242288934159145" cy="50.204150295644794" fill="#000000"></ellipse>
+              </svg></div>
+      </div>
+      <div class="sl-block" data-block-type="text" data-block-id="a548111e83a6713742819cd4faa9ea6e" style="height: auto; width: 247.953px; left: 353.685px; top: 361.409px;">
+          <div class="sl-block-content red" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(255, 255, 255);">
+              <p style="text-align:center; font-size:75%">String("Hallo")</p>
+          </div>
+      </div>
+      <div class="sl-block" data-block-type="text" style="height: auto; width: 247.953px; left: 353.685px; top: 453.602px;" data-block-id="870e4d76efed01e07497c0450746c12e">
+          <div class="sl-block-content red" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(255, 255, 255);">
+              <p style="text-align:center; font-size:75%">Person("Peter")</p>
+          </div>
+      </div>
+      <div class="sl-block" data-block-type="text" data-block-id="e7c1182a2baf180cfbc92a106dfd5c41" style="height: auto; width: 67.8363px; left: 583.509px; top: 361.046px;">
+          <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;">
+              <p style="text-align:center; font-size:75%">2</p>
+      
+              <p style="text-align:center; font-size:25%">&nbsp;</p>
+      
+              <p style="text-align:center; font-size:75%">2</p>
+          </div>
+      </div>
+
+      <aside class="notes">Intern wird vermerkt, wie oft ein im Speicher befindliches Objekt noch von Variablen referenziert wird. Im gezeigten Beispiel ist für beide Objekte der Counter-Wert 2. Erreicht der Counter den Wert 0, heißt das, dass ein Objekt nicht mehr referenziert wird. Der Garbage Collector ist ein Hintergrundprozess, der solche Objekte entfernt. Wann er das tut und ob er es überhaupt löscht, ist jedoch nicht garantiert.</aside>
+      </section>
+
+      <section>
+        <h3>Textausgabe: <code>System.out</code></h3>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/TextausgabeBeispiel.java#5-10'></code></pre>
+      </section>
+
+      <section>
+        <h3>Texteingabe: <code>Scanner</code></h3>
+        <pre><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/grundlagen/ScannerBeispiel.java#3-17'></code></pre>
+
+      <aside class="notes">Die Klasse <code>Scanner</code> befindet sich im Paket <code>java.util</code>, dahier muss diese Klasse zunächst importiert werden. Nach der Erzeugung eines Scanner-Objekts <code>scan</code> kann mittels <code>scan.nextLine()</code> die vom Benutzer eingegebene Zeichenkette gelesen werden. Im gezeigten Beispiel wird dies in einer Dauerschleife gemacht. Erst wenn die Eingabe leer ist, wird die Schleife durch das <code>break;</code>-Kommando verlassen. Der Dialog in diesem Programm könnte wie folgt aussehen: &quot;Was sagst du?&quot; - &quot;Hallo&quot; - &quot;Ich schreie zurück: HALLO&quot; - &quot;Was sagst du?&quot; - &quot;tschö&quot; - &quot;Ich schreie zurück: TSCHÖ&quot; - &quot;Was sagst du?&quot; - &quot;&quot;</aside>
+      </section>
 
 			<section>
 							<h2>Kapitelzusammenfassung</h2>
 							<ul>
-								<li>...</li>
+                <li>Die Programmiersprache Java</li>
+                <li>JRE, JDK, <code>javac</code>, <code>java</code>, Java Shell</li>
+                <li>IntelliJ IDE</li>
+                <li>Java-Dokumentation</li>
+                <li>Variablen, primitive Datentypen</li>
+                <li>Strings</li>
+                <li>Textausgabe und Texteingabe</li>
+
 							</ul>
 			</section>
 

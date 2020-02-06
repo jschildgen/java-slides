@@ -14,5 +14,12 @@ public class CollectionBeispiel {
         eine_liste.add(22);
 
         Arrays.asList(ein_array).forEach(n -> System.out.println(n));
+
+
+        System.out.println("Hallo!");
+
+
+
+
     }
 }

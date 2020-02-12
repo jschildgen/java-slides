@@ -12,107 +12,38 @@
     <header>
         <div>
         <div>
-            <b>Datenbanken 1 - WS 2019/20</b><br>
-            Dr.-Ing. Johannes Schildgen<br>
-            johannes.schildgen@h-da.de<br>
-            <b>Übungsblatt 1 vom 21./28./29.10.2019</b>
+            <b>Programmieren 2 (Java) - SS 2020</b><br>
+            Prof. Dr.-Ing. Johannes Schildgen<br>
+            johannes.schildgen@oth-regensburg.de<br>
+            <b>Übungsblatt 1 vom xx.03.2020</b>
         </div>
         <div><img src="../img/hda.png" style="border:0; height:80px"></div>
     </div>
     <hr>
     </header>
 <section style="padding-top: 2.5cm">
-    <h1>Aufgabe 1: Datenbanken-Grundbegriffe (10P)</h1>
+    <h1>Aufgabe 1: javac und java</h1>
     <p>Abgabe-Deadline: 21.10.2019 12:00 im Moodle</p>
-    <p>Welche der folgenden Aussagen sind wahr? Jede richtige Antwort gibt 1 Punkt, falsche Antworten geben keine Punktabzüge, maximal sind 10 Punkte möglich.</p>
-    <table border="0" style="width: 100%">
-    <tr>
-        <td style="width:10mm">&nbsp;</td>
-        <td>&nbsp;</td>
-        <td style="text-align: center; width:15mm">Richtig</td>
-        <td style="text-align: center; width:15mm">Falsch</td>
-    </tr>
-    <tr>
-        <td>1.</td><td>In OLTP-Systemen sind Transaktionen oft komplex und langdauernd.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>2.</td><td>Ein Data-Warehouse ist eine separate DB, die parallel zur operationalen DB zum Einsatz kommt.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>3.</td><td>Das I in ACID steht für Integrität.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>4.</td><td>MySQL ist ein Datenbankmanagementsystem.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>5.</td><td>Ein Befehl einer Anfragesprache, mit dem man eine neue Spalte in eine existierende Tabelle hinzufügen kann, fällt in die Kategorie DDL.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>6.</td><td>In den DB-Metadaten wird beschreiben, dass Peter die Telefonnummer 0151-12345 hat.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>7.</td><td>Daten belegen in der Regel mehr Platz als Metadaten.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>8.</td><td>Das logische Datenmodell legt fest, wie Datensätze intern auf die Festplatte gespeichert werden.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>9.</td><td>Eine View ist eine Sicht auf die in der Datenbank gespeicherten Daten und kann zum externen Zugriff für Anwendungen dienen.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>10.</td><td>Wenn ich bei meinem DBS die Storage-Engine umstelle, muss ich mein Tabellenschema komplett neu anpassen.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    <tr>
-        <td>11.</td><td>Das Datensystem nimmt eine Anfrage entgegen und das Speichersystem greift auf die entsprechenden Blöcke im RAM und auf der Festplatte zu.</td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-        <td style="text-align: center"><i class="far fa-square"></i></td>
-    </tr>
-    </table>
+    <p>In dieser ersten Aufgabe installieren Sie das Java Development Kit JDK und kompilieren und starten Ihr erstes Java-Programm.</p>
+    <ol>
+        <li>Prüfen Sie zunächst, ob das JDK bereits auf Ihrem PC installiert ist, indem Sie <code>javac --version</code> in einer Konsole (Linux/MacOS) bzw. <code>javac.exe -version</code> in der PowerShell (Windows) eingeben. Wird eine Version größer als 8 (bzw. 1.8) angezeigt, fahren Sie mit Aufgabenteil 3 fort.</li>
+        <li>Installieren Sie das JDK der Java Standard Edition (Java SE). Sie finden es auf der Oracle-Webseite für Linux, Mac und Windows. Bei den tar.gz- bzw. zip-Dateien ist keine Installation sondern lediglich ein Entpacken notwendig. Empfehlenswert ist jedoch, dass JDK zu installieren.</li>
+        <li>Erstellen Sie das Beispiel-Programm aus Vorlesungs-Kapitel 1, Folie 16 und speichern Sie es ab unter MeinProgramm.java</li>
+        <li>Kompilieren Sie das Programm mittels <code>javac</code> und starten Sie es mit <code>java</code></li>
+        <li>Erweitern Sie das Programm, sodass es den Benutzer mit seinem oder ihrem Namen begrüßt. Wenn Sie das z. B. Programm mittels <code>java MeinProgramm Peter</code> aufrufen, soll &quot;Hallo Peter!&quot; ausgegeben werden. In der Methode <code>main(String[] args)</code> bietet Ihnen <code>args[0]</code>Zugriff auf diesen ersten Konsolenparameter.</code></li>
+    </ol>
 </section>
 
-    <section style="page-break-inside:avoid; padding-top: 2.5cm">
-    <h1>Aufgabe 2: Datenbankanwendungen</h1>
-    <p>Datenbanken kommen bei einer Vielzahl von Anwendungen zum Einsatz, zum Beispiel bei:</p>
-<p><em>Facebook, eBay, BlaBlaCar, PayPal, Flixbus, Payback, Yelp, Voi, Netflix, Audible, Twitter</em></p>
-<p>Suchen Sie sich (gerne zusammen im 2er- oder 3er-Team) eine Anwendung heraus und beantworten Sie die unten genannten Fragen. Es gibt nicht eine richtige Antwort, sondern viele Lösungen. Wenn Sie bei einer Frage keine Idee haben, überspringen Sie sie einfach und kommen Sie am Schluss nochmal darauf zurück.</p>
-
-<ol>
-<li>Schreiben Sie eine simple Tabelle auf ein Blatt Papier, die in Ihrer Anwendung vorkommen könnte und dort eine zentrale Rolle spielt. Die Tabelle soll mindestens 2 Beispieldatenzeilen besitzen.</li>
-<li>Was aus Ihrer Tabelle sind Metadaten (das Schema) und was sind die Daten?</li>
-<li>Ein Informationssystem (a) erfasst, (b) speichert dauerhaft, (c) verarbeitet, (d) verändert, (e) analysiert Daten, (f) stellt Daten bereit und (g) zeigt sie an. Geben Sie zu jedem Punkt je ein Beispiel aus Ihrer Anwendung.</li>
-<li>Nennen Sie jeweils zwei typische OLTP- und OLAP-Anfragen, die in Ihrer Anwendung an die Datenbank oder ein Data-Warehouse gestellt wird.</li>
-<li>Überlegen Sie sich ein Beispiel für Data Mining in Ihrer Anwendung.</li>
-<li>Definieren Sie eine typische Transaktion in Ihrer Anwendung, die aus mehreren Operationen besteht, welche als atomare Einheit entweder ganz oder gar nicht ausgeführt werden müssen.</li>
-<li>Überlegen Sie sich zwei verschiedene Sichten für verschiedene Anwendergruppen auf Ihre Beispieltabelle.</li>
-</ol>
-</section>
-<section style="page-break-inside:avoid; padding-top: 0.5cm">
-    <h1>Aufgabe 3: ER-Diagramm einer Mitfahrbörse</h1>
-    <p>Erstellen Sie ein ER-Diagramm für die Mitfahrbörse Blablabla.</p>
-<p>Benutzer registrieren sich bei Blablabla mit ihrer Handynummer und geben ihren Namen an. Außerdem beschreiben sie ihr Auto: Farbe und Modell.</p>
-<p>Wenn ein Benutzer eine Fahrt erstellt, erhält diese eine automatisch generierte Fahrtnummer. Es müssen Start- und Zielort eingegeben werden, sowie eine beliebige Anzahl von Zwischenstopps. Bei Blablabla geht es nicht ums Geld, daher sind alle Fahrten kostenlos.</p>
-<p>Benutzer können sich für Fahrten eines anderen Benutzers eintragen, wenn sie mitfahren möchten. Dazu wird lediglich ein Status notiert, damit klar ist, ob die Meldung noch unbestätigt oder bereits bestätigt ist.</p>
-<p>Die Kommunikation erfolgt über SMS, daher braucht Blablabla kein eigenes Nachrichtensystem.</p>
+    <section style="page-break-inside:avoid; padding-top: 0.5cm">
+    <h1>Aufgabe 2: IntelliJ</h1>
+    <p>In dieser Aufgabe geht es darum, die IDE IntelliJ zu installieren und dort eine Anwendung zu entwickeln.</p>
+    <ol>
+        <li>Falls Sie IntelliJ noch nicht installiert haben, downloaden Sie die Installationsdateien der kostenlosen IntelliJ IDEA Community Edition von <a href="https://www.jetbrains.com/">jetbrains.com</a> und installieren Sie das Programm.</li>
+        <li>Erstellen Sie in IntelliJ ein neues Java-Projekt. Sie können das Template &quot;Command Line App&quot; verwenden, um direkt mit einer Klasse zu starten, die eine <code>main</code>-Methode beinhaltet.</li>
+        <li>Probieren Sie Live-Templates aus: Geben Sie <code>sout</code> oder <code>main</code> im Code-Editor ein und drücken Sie die Tabulator-Taste.</li>
+        <li>Ihr Programm soll zunächst einfach nur &quot;Hallo!&quot; ausgeben.</li>
+        <li>Benutzen Sie eine Suchmaschine, um etwas über den Umgang mit Datum und Uhrzeit in Java zu erfahren. Ihr Programm soll nämlich die aktuelle Uhrzeit ausgeben, z. B. &quot;Hallo, es ist 14:28 Uhr.&quot;</li>
+    </ol>
 </section>
 </body>
 </html>

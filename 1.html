@@ -302,6 +302,7 @@
 
       <section>
         <h3>Zwei Tools: <code>javac</code> und <code>java</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 1.6</div>
         <h4><code>javac</code> - Der Java Compiler</h4>
         <ul>
           <li>Eingabe: *.java-Dateien (Klassen-Quellcode)</li>
@@ -334,6 +335,7 @@
 
       <section>
         <h3>Java Shell <code>jshell</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 1.7</div>
 
         <pre><code class="nohighlight" data-trim>
 $ jshell
@@ -402,6 +404,7 @@ jshell>
 
       <section>
         <h2>Sprachelemente</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 2.2</div>
         <table class="small">
           <thead>
             <tr><th>Bezeichnung</th><th>Beschreibung</th><th>Beispiel</th><th>Namenskonvention</th></tr>
@@ -419,6 +422,7 @@ jshell>
 
       <section>
         <h2>Variablen</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 3</div>
         <p class="small" style="margin-right: -4cm;">Variablen speichern einen Wert eines primitiven Datentypen oder die Referenz auf ein Objekt.</p>
 
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#5-10'></code></pre>
@@ -426,6 +430,17 @@ jshell>
 <p class="small">Jedes Java-Kommando muss mit einem Semikolon <code>;</code> enden!</p>
       <aside class="notes">Variablen müssen zuerst deklariert werden, bevor man sie verwenden kann. Deklarieren erfolgt entweder mittels <code>datentyp variablenname;</code> oder <code>var variablenname = ...;</code> Bei letzterer Variante ermittelt der Java-Compiler den passenden Datentyp. Im oben stehenden Beispiel wird <code>c=5</code> gesetzt, außerdem wird auch der neue Wert (also 5) zurückgegeben. Somit hat auch <code>b</code> den Wert 5, usw. Schlussendlich setzt also <code>a=b=c=5;</code> alle drei Variablen auf 5.</aside>
 
+      </section>
+
+      <section>
+        <h2>Konstanten</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 3.6</div>
+        <p class="small"><code>final</code> macht Variablen unveränderbar.</p>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/KonstantenBeispiel.java#7-11'></code></pre>
+
+        <p class="small"><strike>ANZAHL_SPIELER = 3;</strike> &leftarrow; verboten!</p>
+
+        <aside class="notes">Der Wert einer Konstanten kann nur einmalig gesetzt und danach nicht mehr verändert werden. Wird beim Deklarieren der Variable ihr Wert nicht initial gesetzt (wie im <code>API-KEY</code>-Beispiel), darf dies nachfolgend genau einmal gemacht werden. Die Konstante <code>PETER</code> ist ein Objekt der Klasse Person. <code>final</code> bedeutet, dass die Variable niemals ein anderes Objekt referenzieren darf. Es ist jedoch erlaubt, dass das referenzierte Objekt modifiziert wird.</aside>
       </section>
 
       <section>
@@ -438,11 +453,35 @@ jshell>
 
       <section>
         <h2>if / else if / else</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 5.1</div>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#22-28'></code></pre>
       </section>
 
       <section>
+        <h3>Ternärer Operator <code>? : </code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 5.2</div>
+        <p class="small"><code>bedingung ? dann_wert : sonst_wert</code></p>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#70-73'></code></pre>
+        
+        <div class="fragment">
+        <p class="small">Die dritte Zeile des Beispiels entspricht dem Folgenden:</p>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#75-79'></code></pre>
+        </div>
+
+        <aside class="notes">Die Auswertung des ternären Operators erfolgt wie folgt: Ist die Bedingung, die vor dem Fragezeichen steht, wahr, wird der nach dem Fragezeichen stehende Wert genommen, ansonsten derjenige, der nach dem Doppelpunkt steht.</aside>
+      </section>
+
+
+      <section>
+        <h2>switch</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 5.3</div>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#81-92'></code></pre>
+        <aside class="notes"><code>switch</code> wertet einen Ausdruck aus (hier die Variable <code>sprache</code>) und überprüft, welchen Wert dieser hat. Dementsprechend werden diejenigen Anweisungen, die hinter dem jeweiligen Doppelpunkt stehen, ausgeführt. Wichtig ist, dass die letzte Anweisung ein <code>break;</code> ist, damit die anderen Fälle nicht weiter überprüft werden müssen. Der <code>default</code>-Fall ist optional. Die dahinter stehenden Ausweisungen werden ausgeführt, wenn vorher nicht bereits der Switch-Block mit einem <code>break</code> verlassen wurde, also wenn im gezeigten Beispiel die Sprache weder Englisch noch Deutsch ist.</aside>
+      </section>
+
+      <section>
         <h2>while / do-while / for</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 5.6, 5.4</div>
         <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#30-33'></code></pre>
 
         <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#35-38'></code></pre>
@@ -454,6 +493,7 @@ jshell>
 
       <section>
         <h2>Primitive Datentypen</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 3.2</div>
         <table class="small">
           <tbody>
             <tr><td><code>boolean</code></td><td><code>true</code> oder <code>false</code></td></tr>
@@ -491,11 +531,14 @@ jshell>
 
       <section>
         <h2>Aufzählungstypen</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 3.6</div>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/EnumBeispiel.java#4-18'></code></pre>
+        <aside class="notes"></aside>
       </section>
 
       <section>
         <h2>Strings</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 7</div>
         <p class="small">Strings stehen in doppelten Anführungszeichen.</p>
 
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#51-58'></code></pre>
@@ -611,11 +654,13 @@ Person q = p;
 
       <section>
         <h3>Textausgabe: <code>System.out</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 3.5</div>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/TextausgabeBeispiel.java#5-10'></code></pre>
       </section>
 
       <section>
         <h3>Texteingabe: <code>Scanner</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 3.5</div>
         <pre><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/grundlagen/ScannerBeispiel.java#3-17'></code></pre>
 
       <aside class="notes">Die Klasse <code>Scanner</code> befindet sich im Paket <code>java.util</code>, dahier muss diese Klasse zunächst importiert werden. Nach der Erzeugung eines Scanner-Objekts <code>scan</code> kann mittels <code>scan.nextLine()</code> die vom Benutzer eingegebene Zeichenkette gelesen werden. Im gezeigten Beispiel wird dies in einer Dauerschleife gemacht. Erst wenn die Eingabe leer ist, wird die Schleife durch das <code>break;</code>-Kommando verlassen. Der Dialog in diesem Programm könnte wie folgt aussehen: &quot;Was sagst du?&quot; - &quot;Hallo&quot; - &quot;Ich schreie zurück: HALLO&quot; - &quot;Was sagst du?&quot; - &quot;tschö&quot; - &quot;Ich schreie zurück: TSCHÖ&quot; - &quot;Was sagst du?&quot; - &quot;&quot;</aside>
@@ -628,7 +673,7 @@ Person q = p;
                 <li>JRE, JDK, <code>javac</code>, <code>java</code>, Java Shell</li>
                 <li>IntelliJ IDE</li>
                 <li>Java-Dokumentation</li>
-                <li>Variablen, primitive Datentypen</li>
+                <li>Variablen, Konstanten, primitive Datentypen</li>
                 <li>Strings</li>
                 <li>Textausgabe und Texteingabe</li>
 

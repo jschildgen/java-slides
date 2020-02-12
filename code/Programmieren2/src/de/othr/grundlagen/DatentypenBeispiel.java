@@ -66,6 +66,29 @@ public class DatentypenBeispiel {
         if(name.equals("Herr Peter Müller")) {
             System.out.println("Hallo Peter!");
         }
-        
+
+        char geschlecht = 'm';
+        String anrede;
+        anrede = geschlecht == 'w' ? "Frau" : "Herr";
+        System.out.println("Hallo "+anrede+" "+nachname);
+
+        if(geschlecht == 'w') {
+            anrede = "Frau";
+        } else {
+            anrede = "Herr";
+        }
+
+        String sprache = "Deutsch";
+        switch(sprache) {
+            case "Englisch":
+                System.out.println("Hello!");
+                break;
+            case "Deutsch":
+                System.out.println("Hallo!");
+                break;
+            default:
+                System.out.println("Hä?");
+                break;
+        }
     }
 }

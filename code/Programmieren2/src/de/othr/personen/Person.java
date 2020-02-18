@@ -35,4 +35,18 @@ public class Person {
         System.out.println(p.getName()+" ist nun " +
                            p.getAlter()+" Jahre alt.");
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    public Person() {
+    }
 }

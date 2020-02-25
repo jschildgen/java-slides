@@ -653,9 +653,25 @@ Person q = p;
       </section>
 
       <section>
+        <h3>Pakete / <code>import</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 2.2</div>
+        <p class="small">Jede Klasse (eigene Klassen, zur Java API gehörende Klassen, weitere verwendete Klassen) befindet sich in einem <em>Paket</em>.</p>
+        <p class="small">Verwendung einer Klasse: <code>paketname.Klasse</code><br>
+          Paketname kann weggelassen werden ...</p>
+        <ul class="small" style="margin-top: -5mm;">
+          <li>... für alle Klassen im Paket <code>java.lang</code> (z. B. <code>java.lang.String</code>)</li>
+          <li>... für alle Klassen im gleiche Paket wie die aktuelle Klasse</li>
+          <li>... für alle importierten Klassen</li>
+        </ul>
+
+        <pre><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/grundlagen/PaketeBeispiel.java'></code></pre>
+      </section>
+
+      <section>
         <h3>Textausgabe: <code>System.out</code></h3>
         <div class="trackinfo"><i class="fas fa-book"></i> 3.5</div>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/TextausgabeBeispiel.java#5-10'></code></pre>
+        <aside class="notes"><code>java.lang.System</code> muss nicht importiert werden, da es sich im Paket <code>java.lang</code> befindet. <code>System.out</code> ist ein sogenannter <code>PrintStream</code>, welcher Methoden anbietet, mit denen Text auf der Konsole ausgegeben werden kann. <code>print</code> macht anders als <code>println</code> am Ende keinen Zeilenumbruch. Diesen kann man aber mit <code>\n</code> innerhalb des Strings auch manuell machen. Die Methode <code>printf</code> nimmt als ersten Parameter einen String, der ausgegeben werden soll und in dem Platzhalter vorkommen. Als weitere Parameter wird für jeden Platzhalter ein Wert gesetzt. Der Platzhalter <code>%s</code> steht für String, <code>%d</code> für eine ganze Zahl im Dezimalsystem, <code>%.4f</code> für eine auf vier Nachkommastellen gerundete Dezimalzahl.</aside>
       </section>
 
       <section>

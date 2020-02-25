@@ -36,17 +36,15 @@ public class Person {
                            p.getAlter()+" Jahre alt.");
     }
 
-
-
-
-
-
-
-
-
-
-
-
     public Person() {
+    }
+
+    public Person(int alter) {
+        this();
+        this.alter = alter;
+    }
+
+    public Person(String vorname, String nachname) {
+        this(vorname+" "+nachname);
     }
 }

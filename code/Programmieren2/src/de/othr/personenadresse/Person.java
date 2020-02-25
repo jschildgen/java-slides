@@ -30,6 +30,21 @@ public class Person {
         return this.alter;
     }
 
+    public int erhoeheAlter(int jahre) {
+        this.alter += jahre;
+        return this.alter;
+    }
+
+    public int erhoeheAlter(short jahre) {
+        this.alter += jahre;
+        System.out.println("Alterserhöhung um nur "+jahre+" Jahre.");
+        return this.alter;
+    }
+
+    public void setName(String vorname, String nachname) {
+        this.name = vorname + " " + nachname;
+    }
+
     public Adresse getAdresse() {
         return adresse;
     }
@@ -56,7 +71,20 @@ public class Person {
         q.setAdresse(a);
 
         if(p.getAdresse() == q.getAdresse()) {
-            System.out.println(p.getName()+" und "+q.getName()+" haben die selbe Adresse.");
+            System.out.println(p.getName()+" und "+q.getName()
+                    +" haben dieselbe Adresse.");
         }
+
+        p.getAdresse().setHausnummer(5);
+        System.out.println(q.getName()+" wohnt in der Hausnummer "
+                +q.getAdresse().getHausnummer());
+
+
+
+
+
+        p.erhoeheAlter(2); // erhoeheAlter(int)
+        short x = 3;
+        p.erhoeheAlter(x); // erhoeheAlter(short)
     }
 }

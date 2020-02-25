@@ -61,6 +61,7 @@
         <img style="position: absolute; right:0cm; top:8cm; width:30%" uml="class Person {
           -name : String
           -alter : int
+          +Person(name : String)
           +setName(name : String)
           +getName() : String
           +setAlter(alter : int)
@@ -102,7 +103,7 @@
       <section>
         <h3>Member-Variablen</h3>
         <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Datentyp&gt; &lt;Attributsname&gt;;</code></p>
-        <pre style="margin-left:0px; width:12cm" ><code class="java" data-sample-indent="keep" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#1-5,52'></code></pre>  
+        <pre style="margin-left:0px; width:12cm" ><code class="java" data-sample-indent="keep" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#1-5,50'></code></pre>  
         <img style="position: absolute; right:0cm; top:3cm; width:30%; z-index: -5;" uml="
         package de.othr.personen {
           class Person {
@@ -134,6 +135,7 @@ System.out.println(p.getName());</code></pre>
         <img style="position: absolute; right:0cm; top:6cm; width:30%" uml="class Person {
           -name : String
           -alter : int
+          +Person(name : String)
           +setName(name : String)
           +getName() : String
           +setAlter(alter : int)
@@ -163,14 +165,25 @@ public void setName(String name) {
           Sie sind immer <code>public</code> und werden mit <code>new</code> aufgerufen.</p> 
         
         <h4>Default-Konstruktor</h4>
-        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#50-51'></code></pre>  
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#39-40'></code></pre>  
         <pre><code class="java">Person p = new Person();</code></pre>
 
         <h4 class="fragment" data-fragment-index="1">Benutzerdefinierte Konstruktoren</h4>
         <pre class="fragment" data-fragment-index="1"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#7-9'></code></pre>  
-        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#32'></code></pre>  
+        <pre class="fragment" data-fragment-index="1"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#32'></code></pre>  
         <aside class="notes">Wenn man in einer Klasse keinen Konstruktor definiert, hat diese standardmäßig den hier gezeigten Default-Konstruktor ohne Parameter.</aside>
       </section>
+
+      <section>
+      <h3>Konstruktoren: <code>this(...)</code></h3>
+      <p class="small">Konstruktoren können verkettet werden, indem sie andere Konstrutkoren aufrufen.</p>
+      <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#42-45'></code></pre>  
+      <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#47-49'></code></pre> 
+      <ul class="fragment small">
+        <li>Es darf nur max. 1 Konstruktor aufgerufen werden</li>
+        <li>Der <code>this(...)</code>-Aufruf muss die erste Anweisung im Konstrutor sein</li>
+      </ul>
+    </section>
 
       <section>
         <h3>Methoden: <code>void</code></h3>
@@ -186,15 +199,190 @@ public void setName(String name) {
         <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Rückgabetyp&gt;  &lt;Methodenname&gt;(&lt;Parametertyp&gt; &lt;Parametername&gt;, ...) { ... }</code></p>
 
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#28-31'></code></pre>  
-        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#47-51'></code></pre>  
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#62-66'></code></pre>  
       
         <aside class="notes">Wird für die Methode ein Rückgabetyp spezifiziert, muss in jedem Falle ein <code>return</code>-Statement aufgerufen werden, in dem das Ergebnis der Methode zurückgegeben wird. In der Regel wird beim Aufruf der Methode deren Ergebnis in eine entsprechend getypte Variable geschrieben. Ist man jedoch nicht am Ergebnis sondern lediglich an der Ausführung interessiert, kann man die Methode auch einfach so ohne eine Variablenzuweisung aufrufen.</aside>
       </section>
 
       <section>
         <h3>Methoden: Parameter</h3>
+
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#33-36'></code></pre>  
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#44-46'></code></pre>  
+    
+        <aside class="notes">Methodenparameter werden Komma-getrennt in die Klammern hinter den Methodennamen geschrieben. Jeder Parameter hat einen Datentypen und einen lokalen Variablennamen. Die beiden hier gezeigten Methoden <em>überladen</em> die existierenden Methoden <code>erhoeheAlter()</code> und <code>setName(String)</code> (Overloading; siehe nächste Folie).</aside>
+      </section>
+      
+      <section>
+        <h3>Methoden: Overloading</h3>
+        <p class="small">Eine Klasse kann mehrere Methoden mit dem <em>gleichen Namen</em>, aber <em>unterschiedlichen Parametern</em> besitzen.</p>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#33-42'></code></pre>  
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#86-88'></code></pre>  
+        <aside class="notes">Zur Compile-Zeit wird ermittelt, welche Methode tatsächlich aufgerufen werden soll. Es wird diejenige gewählt, die die richtige Anzahl an Parametern hat und kompatible Parametertypen besitzt. Gibt es mehrere Möglichkeiten, wird diejenige mit dem speziellsten Typ gewählt. Gibt es mehrere Kandidaten, in einer passt der eine Parameter besser, ein anderer aber schlechter, wird ein Compile-Fehler auftreten.</aside>
       </section>
 
+      <section>
+        <h3><code>static</code>: Statische Attribute</h3>
+        <p class="small">Mit <code>static</code> gekennzeichnete Attribute existieren nur einmal (nicht pro Objekt).</p>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personen/Haustier.java#3-18'></code></pre>  
+        <aside class="notes">Ein typischer Einsatzzweck für statische Attribute sind Konstanten (hier: <code>TIERART</code>). Was hier mit dem statischen Attribut <code>farbe</code> gemacht wurde, ist jedoch eher unüblich. Jedes Objekt hat stets den gleichen Wert in diesem Attribut. Auf statische Attribute kann man auch mit <code>Klassenname.attribut</code> zugreifen.</aside>
+      </section>
+
+      <section>
+        <h3><code>static</code>: Statische Methoden</h3>
+        <p class="small">Statische Methoden...</p>
+        <ul class="small" style="margin-top: -5mm;">
+          <li>... haben keinen Bezug zu einem Objekt (kein <code>this</code>),</li>
+          <li>... werden mittels <code>Klassenname.methode(...)</code> aufgerufen,</li>
+          <li>... haben keinen Zugriff auf nicht-statische Attribute,</li>
+          <li>... können keine nicht-statischen Methoden aufrufen.</li>
+        </ul>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/rechnen/Geld.java#3-9,14-19'></code></pre>  
+        <aside class="notes">In der statischen Methode <code>main</code> kann die andere statische Methode <code>addieren</code> aufgerufen werden. Da sie sich hier in der gleichen Klasse befindet, müsste man auch nicht <code>Geld.</code> vor die Methode schreiben.</aside>
+      </section>
+
+      <section>
+        <h2>UML</h2>
+        <h4>Unified Modelling Language</h4>
+        <p class="small" style="width:18cm;">Standardisierte grafische Sprache, die 14 Diagrammtypen zur Modellierung von Software-Systemen bietet:</p>
+
+        <ul class="small">
+          <li>Klassendiagramm (Beispiel: Klasse <code>Person</code>) &UpperRightArrow;</li>
+          <li>Objektdiagramm (Beispiel: Objekt <code>p</code>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &LowerRightArrow;</li>
+          <li>Sequenzdiagramm</li>
+          <li>...</li>
+        </ul>
+
+        <img style="position: absolute; right:0cm; top:4cm; width:30%" uml='
+        class Person {
+          -name : String
+          -alter : int
+          +setName(name : String)
+          +getName() : String
+          +setAlter(alter : int)
+          +getAlter() : int
+          +erhoeheAlter()
+        }     
+        
+        object "p:Person" as p {
+          name = "Peter"
+          alter = 20
+          }
+         Person -[hidden]-> p
+        '/>
+      </section>
+
+      <section>
+        <h3>UML-Klassendiagramm</h3>
+
+        <p class="small" style="margin-left:-3mm; margin-right: -1cm;">
+          <code>+|-|#|~ &lt;Attribut&gt; : &lt;Typ&gt; </code><br>
+          <code>+|-|#|~ &lt;Methode&gt;(&lt;Parameter&gt; : &lt;Typ&gt;, ...) : &lt;Rückgabetyp&gt; </code>
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <h4>Sichtbarkeiten</h4>
+        <ul class="small">
+          <li><code>+ public</code>: Sichtbar von überall</li>
+          <li><code>- private</code>: Nur in der Klasse selbst sichtbar</li>
+          <li><code># protected</code>: In Subklassen und in Klassen im gleichen Paket sichtbar</li>
+          <li><code>~</code> package-private: In Klassen im gleichen Paket sichtbar</li>
+        </ul>
+
+        <img style="position: absolute; right:0cm; top:5cm; width:30%" uml="class Person {
+          -name : String
+          -alter : int
+          +Person(name : String)
+          +setName(name : String)
+          +getName() : String
+          +setAlter(alter : int)
+          +getAlter() : int
+          +erhoeheAlter()
+        }        
+        "/>
+
+        <aside class="notes">In Klassendiagrammen werden Klassen und Schnittstellen samt ihrer Attribute und Methoden dargestellt sowie die Beziehungen zwischen ihnen.</aside>
+      </section>
+
+      <section>
+        <h3>Objektreferenzen</h3>
+        <img style="width:80%" uml="class Person {
+          -name : String
+          -alter : int
+          -adresse : Adresse
+          +setName(name : String)
+          +getName() : String
+          +setAlter(alter : int)
+          +getAlter() : int
+          +erhoeheAlter()
+          +setAdresse(adresse : Adresse)
+          +getAdresse() : Adresse
+        }
+
+        class Adresse {
+          -strasse : String
+          -hausnummer : int
+          -plz : String
+          -ort : String
+          +getStrasse() : String
+          +setStrasse(strasse : String)
+          +getHausnummer() : int
+          +setHausnummer(hausnummer : int)
+          +getPlz() : String
+          +setPlz(plz : String)
+          +getOrt() : String
+          +setOrt(ort : String)
+        }
+        Person -r- Adresse : adresse
+        "/>
+
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#57,68,70'></code></pre>  
+        <aside class="notes">Die Member-Variable <code>adresse</code> der Klasse <code>Person</code> hat die Klasse <code>Adresse</code>, das heißt, sie referenziert ein Objekt ebendieser <code>Adresse</code>-Klasse. Die letzten beiden Zeilen des Code-Beispiels lassen sich auch vereinfachen: <code>p.setAdresse(new Adresse("Badstr.", 3, "12345", "Teststadt"));</code></aside>
+      </section>
+
+      <section>
+        <h3>Objektidentität</h3>
+        <p class="small"><code>==</code> überprüft, ob zwei Variablen <em>dasselbe</em> Objekt referenzieren.</p>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#57-59,68-80'></code></pre>  
+        <aside class="notes">Hier wird &quot;Peter und Ute haben dieselbe Adresse." ausgegeben, da sie beide dasselbe <code>Adresse</code>-Objekt referenzieren. Das zweite <code>println</code> gibt &quot;Ute wohnt in der Hausnummer 5&quot; aus, da sich Peter's Adressänderung auch auf Ute auswirkt. Es handelt sich ja um dasselbe <code>Adresse</code>-Objekt.</aside>
+      </section>
+
+      <section>
+        <h3>Gleichheit: <code>equals</code></h3>
+        <p class="small"><code>equals</code> soll überprüfen, ob zwei Objekte als gleich behandelt werden.<br>Diese Methode muss man für eigene Klassen selbst entwickeln.</p>
+        <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personenadresse/Adresse.java#3,55-70'></code></pre>  
+        <aside class="notes">Diese Methode gibt <code>true</code> aus, wenn zwei Adressen dieselbe Straße, Hausnummer, PLZ und Ort haben. Details zur <code>@Override</code>-Annotation und zur <code>instanceof</code>-Überprüfung folgen später in diesem Kapitel. </aside>
+      </section>
+
+      <section>
+        <h3>Gleichheit: <code>equals</code></h3>
+        <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/EqualsBeispiel.java#5-21'></code></pre>  
+      </section>
+
+      <section>
+        <h3>UML-Objektdiagramm</h3>
+        <img style="width:45%" uml='object "<u>p:Person</u>" as p {
+          name = "Peter"
+          alter = 20
+          }
+          
+          object "<u>q:Person</u>" as q {
+            name = "Ute"
+            alter = null
+            }
+            
+          object "<u>:Adresse</u>" as a {
+            strasse = "Badstr."
+            hausnummer = 3
+            plz = "12345"
+            ort = "Teststadt"
+            }
+              
+            p--a : adresse
+            q--a : adresse
+              '>
+        <aside class="notes">Während UML-Klassendiagramme dazu geeignet sind, das Schema der Daten zu beschreiben, wird in Objektdiagrammen eine Momentaufnahme von konkreten Instanzen von Klassen - also Objekten - dargestellt. Hier ist das Beispiel zu sehen, in dem Peter und Uta dieselbe Adresse haben. Es existiert - anders als im Beispiel auf der vorherigen Folie - nur ein einziges <code>Adresse</code>-Objekt. In Objektdiagrammen wird der Bezeichner unterstrichen. Es ist optional, dem Objekt einen Namen zu geben (z. B. <code>p</code>).</aside>
+      </section>
 
 			<section>
 							<h2>Kapitelzusammenfassung</h2>

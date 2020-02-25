@@ -52,7 +52,7 @@ public class Adresse {
     public String toString() {
         return strasse+" "+hausnummer+", "+plz+" "+ort;
     }
-
+    //...
     @Override
     public boolean equals(Object obj) {
         if(obj instanceof Adresse) {

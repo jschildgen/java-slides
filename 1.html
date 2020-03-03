@@ -44,22 +44,22 @@
                     <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
                     <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
                     <h3>Kapitel 1: Grundlagen</h3>
-                    <h4 style="text-align:center">2020-03-XX</h4>
+                    <h4 style="text-align:center">2020-03-25</h4>
                     <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-225px;">
                     <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-225px; box-shadow:none">
                 </section>
                 <section>
                 <h2>Organisatorisches</h2>
-                <h4>Vorlesung (ab 2020-03-XX)</h4>
+                <h4>Vorlesung (ab 2020-03-25)</h4>
                 <ul>
-                    <li>XX, XX:XX Uhr (XX)</li>
-                    <li>XX, XX:XX Uhr (XX)</li>
+                    <li>Mi, 15:15 Uhr (K015)</li>
                 </ul>
+                <p>&nbsp;</p>
                 <br/>
-                <h4>Übung (ab 2020-XX-XX)</h4>
+                <h4>Übung (ab 2020-04-02)</h4>
                 <ul>
                     <li>Jede Woche ein Übungsblatt; insgesamt 12 Stück</li>
-                    <li>Aufgabe 1 (gibt i.d.R. 10 Punkte):<br>Abgabe online bis Montag 12:00 Uhr</li>
+                    <li>Aufgabe 1 (gibt i.d.R. 10 Punkte):<br>Abgabe online bis Mittwoch 12:00 Uhr</li>
                     <li>Weitere Aufgaben zum Lösen in der Übungsstunde</li>
                 </ul>
                 <div style="position: absolute; top: 120px; right:50px; font-size:250px"><i class="fas fa-university red"></i></div>
@@ -67,10 +67,10 @@
                 <section>
                 <h2>Klausur</h2>
                 <ul>
-					<li>2020-XX-XX XX:XX - XX:XX Uhr</li>
                     <li><b>Zulassungsvorraussetzung:<br>mind. 100 Punkte in der Übung</b></li>
                     <li>Schriftliche Klausur</li>
-                    <li>XX Minuten Zeit</li>
+                    <li>90 Minuten Zeit</li>
+                    <li>Hilfsmittel: Handschriftlich<br>doppelseitig beschriebenes DIN-A4-Blatt</li>
                 </ul>
                 <div style="position: absolute; top: 120px; right:50px; font-size:250px"><i class="fas fa-edit red"></i><div>
                 </section>
@@ -79,12 +79,13 @@
 								<div class="trackinfo"><i class="fas fa-book"></i> 1</div>
                 <ul style="font-size:26pt">
                     <li><em>M. Kofler</em> <br>Java - Der Grundkurs</li>
+                    <li><em>J. Schildgen</em><br>Sprachkurs Java - Der Podcast</li>
                     <li><em>C. Ullenboom</em><br>Java ist auch eine Insel</li>
 										<li><em>F. Jobst</em><br>Programmieren in Java</li>
                 </ul>
 								<div style="position: absolute; top: 125px; right:0px; font-size:250px"><img src="img/1/kofler_java.jpg" class="noborder" style="width:225px;border:0"><div>
 								<aside class="notes">
-								Die Primärliteratur zu dieser Vorlesung ist das Java-Buch von Michael Kofler. Ein Buch-Symbol rechts oben auf Folien verweist auf die jeweiligen Kapitel im Buch.
+								Die Primärliteratur zu dieser Vorlesung ist das Java-Buch von Michael Kofler. Ein Buch-Symbol rechts oben auf Folien verweist auf die jeweiligen Kapitel im Buch. Sprachkurs Java ist ein Podcast, welcher begleitend zur Vorlesung gehört werden kann. Der Podcast ist kostenfrei verfügbar auf Spotify, Anchor und anderen Podcast-Plattformen.
 								</aside>
                 </section>
                 
@@ -653,6 +654,31 @@ Person q = p;
       </section>
 
       <section>
+        <h2>Arrays</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 6</div>
+        <pre><code style="max-height: 12cm" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#8-21'></code></pre>
+        <aside class="notes">Die Array-Variable erhält den Typ <code>datentyp[]</code>. Danach kann der Array entweder mittels <code>new datentyp[n]</code> initialisiert werden (<code>n</code> ist die Anzahl der im Array zu speichernden Elemente) oder über ein direktes Zuweisen der Elemente mittels der <code>{}</code>-Syntax. Die Länge des Arrays ist immer fix, sie kann nachträglich nicht mehr verändert werden. Der Zugriff auf die einzelnen Array-Elemente erfolgt mittels <code>[i]</code>, wobei der Index <code>i</code> eine ganze Zahl zwischen <code>0</code> und <code>n-1</code> ist. Greift man auf ein ungültiges Element zu (z. B. <code>tage[7]</code>), erscheint eine ArrayIndexOutOfBoundsException.</aside>
+      </section>
+
+      <section>
+        <h2>for-each-Schleife</h2>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#26-28'></code></pre>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#30-32'></code></pre>
+        <aside class="notes">Die for-each-Schleife ermöglicht ein simples Iterieren über die Elemente eines Arrays. Der Wert des aktuellen Elements wird in jeder Iteration der vor dem Doppelpunkt stehenden Variable zugewiesen. Die for-each-Schleife kann die Elemente des Arrays jedoch nicht verändern, d. h. mit <code>zahl = 0</code> kann man nicht jede einzelne Zahl im <code>lotto</code>-Array auf 0 setzen.</aside>
+      </section>
+
+      <section>
+        <h2>Arrays</h2>
+        <h4>Arrays komplett ausgeben</h4>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#35-37'></code></pre>
+        <h4>Arrays klonen</h4>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#39'></code></pre>
+        <h4>Array sortieren</h4>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#40-41'></code></pre>
+        <aside class="notes">Um die Elemente des Arrays zu sehen, muss man entweder über diese iterieren oder man verwendet die Methode <code>Arrays.toString</code>. Gibt man ansonsten lediglich den Array aus, sieht man stattdessen eine Info wie <code>[I@6d311334</code> (Int-Array und dessen Speicheradresse). <code>Arrays.sort</code> liefert keinen neuen sortierten Array zurück, sondern es sortiert den Array in-place.</aside>
+      </section>
+
+      <section>
         <h3>Pakete / <code>import</code></h3>
         <div class="trackinfo"><i class="fas fa-book"></i> 2.2</div>
         <p class="small">Jede Klasse (eigene Klassen, zur Java API gehörende Klassen, weitere verwendete Klassen) befindet sich in einem <em>Paket</em>.</p>
@@ -677,7 +703,7 @@ Person q = p;
       <section>
         <h3>Texteingabe: <code>Scanner</code></h3>
         <div class="trackinfo"><i class="fas fa-book"></i> 3.5</div>
-        <pre><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/grundlagen/ScannerBeispiel.java#3-17'></code></pre>
+        <pre><code style="max-height: 12cm" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/grundlagen/ScannerBeispiel.java#3-17'></code></pre>
 
       <aside class="notes">Die Klasse <code>Scanner</code> befindet sich im Paket <code>java.util</code>, dahier muss diese Klasse zunächst importiert werden. Nach der Erzeugung eines Scanner-Objekts <code>scan</code> kann mittels <code>scan.nextLine()</code> die vom Benutzer eingegebene Zeichenkette gelesen werden. Im gezeigten Beispiel wird dies in einer Dauerschleife gemacht. Erst wenn die Eingabe leer ist, wird die Schleife durch das <code>break;</code>-Kommando verlassen. Der Dialog in diesem Programm könnte wie folgt aussehen: &quot;Was sagst du?&quot; - &quot;Hallo&quot; - &quot;Ich schreie zurück: HALLO&quot; - &quot;Was sagst du?&quot; - &quot;tschö&quot; - &quot;Ich schreie zurück: TSCHÖ&quot; - &quot;Was sagst du?&quot; - &quot;&quot;</aside>
       </section>
@@ -691,6 +717,7 @@ Person q = p;
                 <li>Java-Dokumentation</li>
                 <li>Variablen, Konstanten, primitive Datentypen</li>
                 <li>Strings</li>
+                <li>Arrays</li>
                 <li>Textausgabe und Texteingabe</li>
 							</ul>
 			</section>

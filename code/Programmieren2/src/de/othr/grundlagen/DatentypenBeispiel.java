@@ -50,7 +50,7 @@ public class DatentypenBeispiel {
 
         String vorname = "Peter";
         String nachname = "Müller";
-        String name = vorname + " " + "Müller";
+        String name = vorname + " " + nachname;
         String text = "Geht ein Text über mehrere Code-Zeilen, muss " +
                 "man ihn aus mehreren Strings mittels + konkatenieren.";
 

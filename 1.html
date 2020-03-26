@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Programmieren 2 (Java) - Kapitel 1 - Grundlagen</title>
+		<title>Programmieren 2 - Kapitel 1 - Grundlagen</title>
 
 		<link rel="stylesheet" href="reveal.js/css/reset.css">
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
@@ -54,20 +54,20 @@
                 <ul>
                     <li>Mi, 15:15 Uhr (K015)</li>
                 </ul>
-                <p>&nbsp;</p>
                 <br/>
                 <h4>Übung (ab 2020-04-02)</h4>
                 <ul>
                     <li>Jede Woche ein Übungsblatt; insgesamt 12 Stück</li>
-                    <li>Aufgabe 1 (gibt i.d.R. 10 Punkte):<br>Abgabe online bis Mittwoch 12:00 Uhr</li>
+                    <li>Aufgabe 1 (gibt ab Blatt 3 jeweils 10 Punkte):<br>Abgabe online bis Mittwoch 12:00 Uhr</li>
                     <li>Weitere Aufgaben zum Lösen in der Übungsstunde</li>
+                    <li>Blatt 1 und 2: Online-Einzelsessions</li>
                 </ul>
-                <div style="position: absolute; top: 120px; right:50px; font-size:250px"><i class="fas fa-university red"></i></div>
+                <div style="position: absolute; top: 100px; right:50px; font-size:250px"><i class="fas fa-university red"></i></div>
 								</section>
                 <section>
                 <h2>Klausur</h2>
                 <ul>
-                    <li><b>Zulassungsvorraussetzung:<br>mind. 100 Punkte in der Übung</b></li>
+                    <li><b>Zulassungsvorraussetzung:<br>mind. 80 Punkte in der Übung</b></li>
                     <li>Schriftliche Klausur</li>
                     <li>90 Minuten Zeit</li>
                     <li>Hilfsmittel: Handschriftlich<br>doppelseitig beschriebenes DIN-A4-Blatt</li>
@@ -79,13 +79,13 @@
 								<div class="trackinfo"><i class="fas fa-book"></i> 1</div>
                 <ul style="font-size:26pt">
                     <li><em>M. Kofler</em> <br>Java - Der Grundkurs</li>
-                    <li><em>J. Schildgen</em><br>Sprachkurs Java - Der Podcast</li>
+                    <!--<li><em>J. Schildgen</em><br>Sprachkurs Java - Der Podcast</li>-->
                     <li><em>C. Ullenboom</em><br>Java ist auch eine Insel</li>
 										<li><em>F. Jobst</em><br>Programmieren in Java</li>
                 </ul>
 								<div style="position: absolute; top: 125px; right:0px; font-size:250px"><img src="img/1/kofler_java.jpg" class="noborder" style="width:225px;border:0"><div>
 								<aside class="notes">
-								Die Primärliteratur zu dieser Vorlesung ist das Java-Buch von Michael Kofler. Ein Buch-Symbol rechts oben auf Folien verweist auf die jeweiligen Kapitel im Buch. Sprachkurs Java ist ein Podcast, welcher begleitend zur Vorlesung gehört werden kann. Der Podcast ist kostenfrei verfügbar auf Spotify, Anchor und anderen Podcast-Plattformen.
+								Die Primärliteratur zu dieser Vorlesung ist das Java-Buch von Michael Kofler. Ein Buch-Symbol rechts oben auf Folien verweist auf die jeweiligen Kapitel im Buch. <!--Sprachkurs Java ist ein Podcast, welcher begleitend zur Vorlesung gehört werden kann. Der Podcast ist kostenfrei verfügbar auf Spotify, Anchor und anderen Podcast-Plattformen.-->
 								</aside>
                 </section>
                 
@@ -533,7 +533,7 @@ jshell>
       <section>
         <h2>Aufzählungstypen</h2>
         <div class="trackinfo"><i class="fas fa-book"></i> 3.6</div>
-        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/EnumBeispiel.java#4-18'></code></pre>
+        <pre><code class="java" style="max-height: 19cm; width: 102%" data-sample='code/Programmieren2/src/de/othr/grundlagen/EnumBeispiel.java#4-18'></code></pre>
         <aside class="notes"></aside>
       </section>
 
@@ -555,7 +555,7 @@ jshell>
       
         <p class="small">NICHT (!!!) <strike><code class="java">if(name == "Herr Peter Müller")</code></strike></p>
 
-        <aside class="notes">Würde man zwei Strings mit <code>==</code> vergleichen, ist das Ergebnis fast immer <code>false</code>. Verglichen wird dann nämlich nicht, ob die Strings den gleichen Text beinhalten, sondern ob es sich um die gleichen String-Objekte im Arbeitsspeicher handelt. Und das ist in der Regel nicht der Fall.<br>In Java muss man sich nicht darum kümmern, nicht mehr referenzierte Objekte aus dem Speicher zu löschen. Dies erledigt der <em>Garbage Collector</em> automatisch.</em></aside>
+        <aside class="notes">Würde man zwei Strings mit <code>==</code> vergleichen, ist das Ergebnis fast immer <code>false</code>. Verglichen wird dann nämlich nicht, ob die Strings den gleichen Text beinhalten, sondern ob es sich um die gleichen String-Objekte im Arbeitsspeicher handelt. Und das ist in der Regel nicht der Fall.<br>Viele Entwickler schreiben auch <code>if("Herr Peter Müller".equals(name))</code> statt der auf dieser Folie stehenden Form <code>name.equals</code>. Der Vorteil daran ist, dass dies auch dann funktioniert wenn die Variable <code>name</code> den Wert <code>null</code> beinhaltet. Dann würde der Vergleich <code>false</code> zurückliefern, während <code>name.equals</code> eine NullPointException werfen würde.</aside>
       </section>
 
       <section>

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Programmieren 2 (Java) - Kapitel 1 - Grundlagen</title>
+		<title>Programmieren 2 - Kapitel 2 - Objektorientierte Programmierung</title>
 
 		<link rel="stylesheet" href="reveal.js/css/reset.css">
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="src/layout.css">
         <link rel="stylesheet" href="lib/joint.min.css" />
         <link rel="stylesheet" href="src/erd.css" />
+        <link rel="stylesheet" href="src/poll.css" />
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="src/rainbow.css">
@@ -22,8 +23,6 @@
         <!--<script defer src="lib/fontawesome.all.min.js"/>-->
         <link href="lib/fontawesome.all.min.css" rel="stylesheet">
         <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
-
-
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -119,6 +118,18 @@
           <li>package-private (nichts hinschreiben): In Klassen im gleichen Paket sichtbar</li>
         </ul>
         <aside class="notes">Member-Variablen werden auf Klassenebene definiert. Sie speichern den Zustand eines Objekts der jeweiligen Klasse. Über die Sichtbarkeiten wird festgelegt, von wo aus direkt auf die Attribute zugegriffen werden kann.</aside>
+      
+        <div class="poll fragment" style="bottom:-100px">
+          <h1>Welche Klassen haben Zugriff auf die Member-Variable &quot;alter&quot;?</h1>
+            <ul>
+              <li data-poll="correct">de.othr.personen.Person</li>
+              <li>de.othr.personen.*</li>
+              <li>Subklassen von de.othr.personen.Person</li>
+              <li>Alle Klassen</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
+      
       </section>
 
       <section>
@@ -156,8 +167,8 @@ System.out.println(p.getName());</code></pre>
 public void setName(String name) {
     this.name = name;
 }</code></pre>
-      <aside class="notes">Wie man am Beispiel <code>return name;</code> sehen kann, kann auf Klassenattribute auch direkt zugriffen werden, ohne <code>this.</code> davorzuschreiben. Gibt es jedoch bereits eine Variable, die den gleichen Namen hat wie die Member-Variable, ist das Objekt <code>this</code> nötig, da ansonsten die Variable gemeint ist. Im gezeigten Beispiel ist dies im Setter bei <code>name</code> der Fall. Mit <code>name</code> ist der Methodenparameter gemeint, mit <code>this.name</code> das Attribut der Klasse.</aside>
-      </section>
+      <aside class="notes">Wie man am Beispiel <code>return name;</code> sehen kann, kann auf Klassenattribute auch direkt zugriffen werden, ohne <code>this.</code> davorzuschreiben. Gibt es jedoch bereits eine Variable, die den gleichen Namen hat wie die Member-Variable, ist das Objekt <code>this</code> nötig, da ansonsten die Variable gemeint ist. Im gezeigten Beispiel ist dies im Setter bei <code>name</code> der Fall. Mit <code>name</code> ist der Methodenparameter gemeint, mit <code>this.name</code> das Attribut der Klasse.</aside>   
+    </section>
 
       <section>
         <h3>Konstruktoren</h3>
@@ -219,6 +230,15 @@ public void setName(String name) {
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#33-42'></code></pre>  
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#86-88'></code></pre>  
         <aside class="notes">Zur Compile-Zeit wird ermittelt, welche Methode tatsächlich aufgerufen werden soll. Es wird diejenige gewählt, die die richtige Anzahl an Parametern hat und kompatible Parametertypen besitzt. Gibt es mehrere Möglichkeiten, wird diejenige mit dem speziellsten Typ gewählt. Gibt es mehrere Kandidaten, in einer passt der eine Parameter besser, ein anderer aber schlechter, wird ein Compile-Fehler auftreten.</aside>
+      
+        <div class="poll fragment" style="bottom:0px">
+          <h1>Dürfte es in der Personen-Klasse zusätzlich zu den hier gezeigten Methoden auch noch eine erhoeheAlter()-Methode ohne Parameter geben?</h1>
+            <ul>
+              <li data-poll="correct">Ja</li>
+              <li>Nein</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
       </section>
 
       <section>
@@ -382,6 +402,17 @@ public void setName(String name) {
             q--a : adresse
               '>
         <aside class="notes">Während UML-Klassendiagramme dazu geeignet sind, das Schema der Daten zu beschreiben, wird in Objektdiagrammen eine Momentaufnahme von konkreten Instanzen von Klassen - also Objekten - dargestellt. Hier ist das Beispiel zu sehen, in dem Peter und Uta dieselbe Adresse haben. Es existiert - anders als im Beispiel auf der vorherigen Folie - nur ein einziges <code>Adresse</code>-Objekt. In Objektdiagrammen wird der Bezeichner unterstrichen. Es ist optional, dem Objekt einen Namen zu geben (z. B. <code>p</code>).</aside>
+      
+        <div class="poll fragment" style="bottom:-80px">
+          <h1>Was würde p.adresse.equals(q.adresse) zurückliefern?</h1>
+            <ul>
+              <li data-poll="correct">true</li>
+              <li>false</li>
+              <li>null</li>
+              <li>1</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
       </section>
 
 			<section>

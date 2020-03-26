@@ -10,7 +10,7 @@ public class EnumBeispiel {
 
         switch(farbe) {
            case ROT: System.out.println("Die Farbe ist rot!"); break;
-           default: System.out.println("Die Farbe ist rot!"); break;
+           default: System.out.println("Keine Ahnung!"); break;
         }
 
         System.out.println("Die Farbe ist "+

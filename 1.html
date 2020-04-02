@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="src/layout.css">
         <link rel="stylesheet" href="lib/joint.min.css" />
         <link rel="stylesheet" href="src/erd.css" />
+        <link rel="stylesheet" href="poll/poll.css" />
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="src/rainbow.css">
@@ -429,6 +430,18 @@ jshell>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#5-10'></code></pre>
 
 <p class="small">Jedes Java-Kommando muss mit einem Semikolon <code>;</code> enden!</p>
+
+<div class="poll fragment" style="bottom:-200px">
+  <h1>Welchen Wert hat nun die Variable &quot;zahl&quot;?</h1>
+    <ul>
+      <li>15</li>
+      <li>50</li>
+      <li data-poll="correct">150</li>
+      <li>300</li>
+    </ul>
+  <h2>https://frage.space</h2>
+ </div>
+
       <aside class="notes">Variablen müssen zuerst deklariert werden, bevor man sie verwenden kann. Deklarieren erfolgt entweder mittels <code>datentyp variablenname;</code> oder <code>var variablenname = ...;</code> Bei letzterer Variante ermittelt der Java-Compiler den passenden Datentyp. Im oben stehenden Beispiel wird <code>c=5</code> gesetzt, außerdem wird auch der neue Wert (also 5) zurückgegeben. Somit hat auch <code>b</code> den Wert 5, usw. Schlussendlich setzt also <code>a=b=c=5;</code> alle drei Variablen auf 5.</aside>
 
       </section>
@@ -468,6 +481,17 @@ jshell>
         <p class="small">Die dritte Zeile des Beispiels entspricht dem Folgenden:</p>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#75-79'></code></pre>
         </div>
+
+        <div class="poll fragment" style="bottom:-150px">
+          <h1>Was ist <code>1 > 2 ? 3 : 4</code>?</h1>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li data-poll="correct">4</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
 
         <aside class="notes">Die Auswertung des ternären Operators erfolgt wie folgt: Ist die Bedingung, die vor dem Fragezeichen steht, wahr, wird der nach dem Fragezeichen stehende Wert genommen, ansonsten derjenige, der nach dem Doppelpunkt steht.</aside>
       </section>
@@ -663,7 +687,7 @@ Person q = p;
       <section>
         <h2>for-each-Schleife</h2>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#26-28'></code></pre>
-        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#30-32'></code></pre>
+        <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#30-32'></code></pre>
         <aside class="notes">Die for-each-Schleife ermöglicht ein simples Iterieren über die Elemente eines Arrays. Der Wert des aktuellen Elements wird in jeder Iteration der vor dem Doppelpunkt stehenden Variable zugewiesen. Die for-each-Schleife kann die Elemente des Arrays jedoch nicht verändern, d. h. mit <code>zahl = 0</code> kann man nicht jede einzelne Zahl im <code>lotto</code>-Array auf 0 setzen.</aside>
       </section>
 
@@ -671,10 +695,22 @@ Person q = p;
         <h2>Arrays</h2>
         <h4>Arrays komplett ausgeben</h4>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#35-37'></code></pre>
-        <h4>Arrays klonen</h4>
-        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#39'></code></pre>
-        <h4>Array sortieren</h4>
-        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#40-41'></code></pre>
+        <h4 class="fragment" data-fragment-index="1">Arrays klonen</h4>
+        <pre class="fragment" data-fragment-index="1"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#39'></code></pre>
+        <h4 class="fragment" data-fragment-index="2">Array sortieren</h4>
+        <pre class="fragment" data-fragment-index="2"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#40-41'></code></pre>
+        
+        <div class="poll fragment" style="bottom:-80px">
+          <h1>Was wäre, wenn man den Array nicht geklont, sondern einfach geschrieben hätte <code>int[] lotto2 = lotto;</code>?</h1>
+            <ul>
+              <li>Keine Auswirkung</li>
+              <li>Es kommt ein Fehler</li>
+              <li>lotto2 wäre nicht sortiert</li>
+              <li data-poll="correct">lotto wäre auch sortiert</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
+        
         <aside class="notes">Um die Elemente des Arrays zu sehen, muss man entweder über diese iterieren oder man verwendet die Methode <code>Arrays.toString</code>. Gibt man ansonsten lediglich den Array aus, sieht man stattdessen eine Info wie <code>[I@6d311334</code> (Int-Array und dessen Speicheradresse). <code>Arrays.sort</code> liefert keinen neuen sortierten Array zurück, sondern es sortiert den Array in-place.</aside>
       </section>
 
@@ -682,12 +718,12 @@ Person q = p;
         <h3>Pakete / <code>import</code></h3>
         <div class="trackinfo"><i class="fas fa-book"></i> 2.2</div>
         <p class="small">Jede Klasse (eigene Klassen, zur Java API gehörende Klassen, weitere verwendete Klassen) befindet sich in einem <em>Paket</em>.</p>
-        <p class="small">Verwendung einer Klasse: <code>paketname.Klasse</code><br>
+        <p class="fragment small">Verwendung einer Klasse: <code>paketname.Klasse</code><br>
           Paketname kann weggelassen werden ...</p>
         <ul class="small" style="margin-top: -5mm;">
-          <li>... für alle Klassen im Paket <code>java.lang</code> (z. B. <code>java.lang.String</code>)</li>
-          <li>... für alle Klassen im gleiche Paket wie die aktuelle Klasse</li>
-          <li>... für alle importierten Klassen</li>
+          <li class="fragment">... für alle Klassen im Paket <code>java.lang</code> (z. B. <code>java.lang.String</code>)</li>
+          <li class="fragment">... für alle Klassen im gleiche Paket wie die aktuelle Klasse</li>
+          <li class="fragment">... für alle importierten Klassen</li>
         </ul>
 
         <pre><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/grundlagen/PaketeBeispiel.java'></code></pre>

@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="src/layout.css">
         <link rel="stylesheet" href="lib/joint.min.css" />
         <link rel="stylesheet" href="src/erd.css" />
-        <link rel="stylesheet" href="src/poll.css" />
+        <link rel="stylesheet" href="poll/poll.css" />
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="src/rainbow.css">
@@ -131,6 +131,28 @@
          </div>
       
       </section>
+
+      <section>
+        <h2>Poll Plugin</h2>
+        <ol>
+          <li>Put the <code>poll</code> folder in your reveal.js slides<br>and on a PHP-enabled web server</li>
+          <li>Include the CSS in your slides:<br>
+          <pre><code class="html"><link rel="stylesheet" href="poll/poll.css" /></code></pre></li>
+          <li>Initialize reveal.js with the following dependency:<br>
+            <pre><code class="javascript">{ src: 'poll/poll.js', async: true }</code></pre></li>
+          <li>Add polls to your slides:<br>
+            <pre><code class="html" contenteditable><div class="poll fragment">
+<h1>Question?</h1><ul><li>Wrong answer</li>
+<li data-poll="correct">Correct answer</li></ul>
+<h2>https://url-to-server</h2></div></code></pre></li>
+        </ol>
+        <div class="poll fragment" style="bottom:50px">
+            <h1>Question?</h1><ul><li>Wrong answer</li>
+            <li data-poll="correct">Correct answer</li></ul>
+<h2>https://url-to-server</h2></div>
+      </section>
+
+      
 
       <section>
         <h3>Getter / Setter</h3>

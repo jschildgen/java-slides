@@ -1,4 +1,4 @@
-package de.othr.personen;
+package de.othr.lebewesen;
 
 public class Studierender extends Person {
     private int matrikelnr;

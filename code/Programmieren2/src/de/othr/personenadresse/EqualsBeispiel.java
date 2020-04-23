@@ -20,6 +20,9 @@ public class EqualsBeispiel {
             System.out.println("Die Adresse ist nicht die gleiche.");
         }
 
+        Adresse a = new Adresse("Badstr.", 3, "12345", "Teststadt");
+        p.setAdresse(a);
+        q.setAdresse(a);
 
     }
 }

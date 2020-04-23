@@ -1,4 +1,4 @@
-package de.othr.personen;
+package de.othr.overriding;
 
 public class Studierender extends Person {
     private int matrikelnr;
@@ -10,5 +10,11 @@ public class Studierender extends Person {
 
     public int getMatrikelnr() {
         return matrikelnr;
+    }
+
+    @Override
+    public String getDetails() {
+        return ""+this.matrikelnr+" / "
+                +super.getDetails();
     }
 }

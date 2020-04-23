@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Programmieren 2 - Kapitel 3 - Vererbung</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reset.css">
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+
+        <link rel="stylesheet" href="src/slides.css">
+        <link rel="stylesheet" href="src/style.css">
+
+		<link rel="stylesheet" href="src/layout.css">
+        <link rel="stylesheet" href="lib/joint.min.css" />
+        <link rel="stylesheet" href="src/erd.css" />
+        <link rel="stylesheet" href="poll/poll.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="src/rainbow.css">
+
+        <!--<script defer src="lib/fontawesome.all.min.js"/>-->
+        <link href="lib/fontawesome.all.min.css" rel="stylesheet">
+        <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+            <div id="header"></div>
+            <div id="footer"></div>
+			<div class="slides">
+                <section>
+                    <h4 style="text-align:center"><b>Prof. Dr.-Ing. Johannes Schildgen</b><br>
+                    <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
+                    <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
+                    <h3>Kapitel 3: Vererbung</h3>
+                    <h4 style="text-align:center">2020-03-29</h4>
+                    <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-225px;">
+                    <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-225px; box-shadow:none">
+                </section>
+                
+                <section>
+                    <h2>Vererbung</h2>
+                    <div class="trackinfo"><i class="fas fa-book"></i> 12.1</div>
+                    <p class="small">Subklasse erweitert die Superklasse und erbt alle deren Attribute und Methoden</p>
+                    <pre style="position: absolute; width:17.5cm; left:0px; font-size: 50%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Studierender.java#3-14' data-sample-indent="keep"></code></pre>
+                    <img style="position: absolute; right:-0.5cm; max-height: 9cm; top:4.7cm" uml="class Person {
+                      -name : String
+                      -alter : int
+                      +Person(name : String)
+                      +setName(name : String)
+                      +getName() : String
+                      +setAlter(alter : int)
+                      +getAlter() : int
+                      +erhoeheAlter()
+                    }
+            
+                    class Studierender {
+                      -matrikelnr : int
+                      +Studierender(name : String, matrikelnr : int)
+                      +setMatrikelnr(matrnr : int)
+                      +getMatrikelnr() : int
+                    }
+            
+            
+                    Person <|-- Studierender
+                    "/>
+                    <aside class="notes">Die Klasse <code>Person</code> ist die Superklasse (oder Basisklasse) der hier erstellten Klasse <code>Studierender</code>. Zusätzlich zu den geerbten Attributen <code>name</code> und <code>alter</code> hat ein Studierender eine <code>matrikelnr</code>. Dadurch, dass <code>matrikelnr</code> private ist und es keinen Setter gibt, kann der Wert dieser Member-Variable nur im Konstruktor gesetzt werden. Das hier gezeigte Vorgehen, eine neue speziellere Klasse einer existierenden Klasse zu entwickeln heißt <em>Spezialisierung</em>. Die Umkehrung heißt <em>Generalisierung</em>.</aside>
+                  </section>
+            
+                  <section>
+                    <h2>Vererbung</h2>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/StudierenderBeispiel.java#5-7'></code></pre>  
+                    <h4>Casting</h4>
+                    <ul class="small">
+                      <li>Downcasting: <code>(Subklasse)variable</code></li>
+                      <li>Upcasting: <code>(Superklasse)variable</code></li>
+                    </ul>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/StudierenderBeispiel.java#9-12'></code></pre>
+                    <aside class="notes">Die Variable <code>s</code> ist vom Typ <code>Studierender</code>, daher kann direkt auf die Methode <code>s.getMatrikelnr</code> zugegriffen werden. Um auch bei der Variable <code>q</code>, die vom Typ <code>Person</code> ist, in der aber ein <code>Studierender</code>-Objekt gespeichert ist, auf ebendiese Methode zuzugreifen, ist eine Typumwandlung - hier: ein Downcast - nötig. Wäre <code>q</code> gar kein <code>Studierender</code>, würde ein Fehler zur Laufzeit auftreten.</aside>
+                  </section>
+            
+                  <section>
+                    <h2>Polymorphie</h2>
+                    <p class="small">Polymorphie (Vielgestaltigkeit) bedeutet, dass ein und die selbe Variable zur Laufzeit von unterschiedlichen Datentypen sein kann.</p>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/StudierenderBeispiel.java#7'></code></pre>  
+                    <div class="fragment">
+                    <h4><code>x instanceof C</code></h4>
+                    <p class="small">Ist wahr, wenn <code>x</code> von der Klasse <code>C</code> oder einer (auch indirekten) Subklasse von <code>C</code> ist.</p>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/LebewesenBeispiel.java#7-13'></code></pre>
+                    </div>
+                    <aside class="notes">Ist die Typhierarchie Lebewesen &#8702; Person &#8702; Studierender, sind beide <code>instanceof</code>-Überprüfungen auf dieser Folie wahr.</aside>
+                  </section>
+            
+                  <section>
+                    <h2>Polymorphie</h2>
+                    <p class="small">Wo ein <code>A</code>-Objekt erwartet wird, wird auch ein <code>B</code>-Objekt (<code>extends A</code>) akzeptiert.</p>
+                    <img style="position: absolute; right:-0.5cm; max-height: 9cm; top:4.7cm" uml="
+                    class A { }
+                    class B { }
+                    A <|-- B
+                    "/>
+                    <pre style="left:-1cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/StudierenderBeispiel.java#40-49'></code></pre>
+                    <pre style="left:-1cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/StudierenderBeispiel.java#14-16'></code></pre>
+                    <aside class="notes">Die hier gezeigte Methode <code>werIstAelter</code> erwartet zwei Objekte der Klasse <code>Person</code>, jedoch ist <code>q</code> von der Klasse <code>Studierender</code>. Da <code>Studierender</code> eine Subklasse von <code>Person</code> ist und damit alles von ihr erbt, kann die gezeigte Methode erfolgreich mit <code>q</code> aufgerufen werden.</aside>
+                  </section>
+            
+                  <section>
+                    <h2>Method Overriding</h2>
+                    <p class="small">Neuimplementieren einer Methode einer Superklasse</p>
+                    <p class="small"><code class="java">Person</code></p>
+                    <pre style="left:-1cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/overriding/Person.java#43-45'></code></pre>
+                    <p class="fragment small" data-fragment-index="1"><code class="java">Studierender extends Person</code></p>
+                    <pre class="fragment" data-fragment-index="1" style="left:-3.44cm; width: 18cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/overriding/Studierender.java#15-19'></code></pre>
+                    <img class="fragment noborder" data-fragment-index="2" style="position: absolute; right:0cm; top:8.8cm" src="img/2/override.png" alt="Overriding-Methoden in IntelliJ automatisch generieren">
+                    <aside class="notes">Overriding bedeutet dass eine in einer Superklasse vorhandene Methode überschrieben wird. Die Methoden-Signatur (Name, Parameter) und auch die Sichtbarkeit und der Rückgabetyp muss exakt mit dem der zu überschreibenden Methode übereinstimmen. Dies unterscheidet Overriding von Overloading. Beim Overloading ist nur der Methodenname gleich, die Parameter unterscheiden sich jedoch. Durch die <code>@Override</code>-Annotation überprüft der Compiler, ob es die Methode in der Superklasse wirklich gibt.</aside>
+                  </section>
+            
+                  <section>
+                      <h2>Objektreferenz <code>super</code></h2>
+                      <ul>
+                        <li><code>this</code> referenziert das aktuelle Objekt</li>
+                        <li><code>super</code> referenziert das Objekt der Superklasse</li>
+                      </ul>
+                      <div class="fragment">
+                      <p class="small"><code class="java">Studierender extends Person</code></p>
+                      <pre><code class="java">String s1 = this.getDetails();             // 123456 / Ute (0)
+String s2 = super.getDetails();            // Ute (0)</code></pre>
+                      </div>
+                      <aside class="notes">Wenn Attribute oder Methoden der Superklasse überschrieben wurden, lässt sich mit <code>super</code> immer noch auf diese zugreifen.</aside>
+                    </section>
+
+                  <section>
+                    <h3>Konstruktoren-Aufruf: <code>super()</code></h3>
+                    <p class="small">In einem Konstruktor lässt sich ein Konstruktor der Superklasse aufrufen.</p>
+                    <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Studierender.java#3-9,14' data-sample-indent="keep"></code></pre>
+                    <aside class="notes">Genau wie eine Konstruktoren-Verkettung mit <code>this()</code> möglich ist, darf man mittels <code>super()</code> einen Konstruktor der Superklasse aufrufen. Dies muss dann das erste Kommando im Konstruktor sein.</aside>
+                  </section>
+            
+                  <section>
+                    <h2>Method Overriding</h2>
+                    <p class="small">Zur Laufzeit wird die Methode von der tatsächlichen Klasse eines Objekts gewählt.</p>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/overriding/OverridingBeispiel.java#5-11'></code></pre>
+                    <p class="fragment small"><code>Peter (0)<br>123456 / Ute (0)</code></p>
+                  </section>
+
+                  <section>
+                    <h2>Klasse <code>Object</code></h2>
+                    <div class="trackinfo"><i class="fas fa-book"></i> 12.2</div>
+                    <p class="small">Jede Klasse ist automatisch eine Subklasse von <code>Object</code></p>
+                    <p class="small">Methoden:</p>
+
+                    <ul class="small" >
+                      <li class="fragment"><code>toString()</code><br>Erzeugen einer String-Repräsentation des Objekts</li>
+                      <li class="fragment"><code>equals()</code><br>Wahr, wenn das Objekt gleich einem anderen ist</li>
+                      <li class="fragment"><code>hashCode()</code><br><code>a.equals(b)</code> &Rightarrow; <code>a.hashCode()==b.hashCode()</code></li>
+                      <li class="fragment">...</li>
+                    </ul>
+                    <aside class="notes"><code>clone</code> soll eine Kopie des Objekts erzeugen, jedoch wird von der Verwendung abgeraten. <code>equals</code> ist standardmäßig wahr, wenn zwei Objekte identisch sind, jedoch kann die Methode überladen werden (wie z. B. bei <code>String.equals</code>). Wenn zwei Objekte gemäß <code>equals</code> gleich sind, soll <code>hashCode</code> den gleichen Hashcode zurückliefern. <code>finalize</code> wird aufgerufen, wenn der Garbage Collector das Objekt löscht. <code>getClass</code> liefert ein <code>Class</code>-Objekt des Objekts. <code>notify, notifyAll und wait</code> kommen bei Multi-Threaded- (nebenläufigen) Anwendungen zum Einsatz.</aside>
+
+                    <img style="z-index:-1; position: absolute; right:-0.5cm; max-height: 11cm; top:2.2cm" uml="
+                    class Object { 
+                      +clone() : Object
+                      +equals(obj : Object) : boolean 
+                      +finalize()
+                      +getClass() : Class<?>
+                      +hashCode() : int
+                      +notify()
+                      +notifyAll()
+                      +toString() : String
+                      +wait()
+                    }
+                    class Person { }
+                    Object <|-- Person
+                    "/>
+                  </section>
+
+                  <section>
+                      <h2>Methode <code>toString</code></h2>
+                      <p class="small">Die <code>Object</code>-Klasse hat eine Methode <code>toString</code>, um das Objekt in einen String zu wandeln, wenn ein String benötigt wird, z. B. in <code>println</code> oder <code>""+p</code></p>
+                      <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/overriding/OverridingBeispiel.java#13-15'></code></pre>
+                    <p class="fragment small"><code>de.othr.overriding.Person@3b9a45b3<br>de.othr.overriding.Studierender@7699a589</code></p>
+                    <p class="fragment small"><code>toString</code> kann überschrieben werden:</p>
+                    <pre class="fragment"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/overriding/Person.java#47-50'></code></pre>  
+                    <aside class="notes">Die Standardimplementierung der Methode <code>toString</code> in der Klasse <code>Object</code> liefert den Klassennamen und einen Hashcode des Objekts zurück. Überschreibt man die <code>toString</code>-Methode, kann ein individueller String aus den Attributswerden des Objekts erzeugt werden.</aside>
+                  </section>
+
+                  <section>
+                    <h3>Finale Klassen und Methoden</h3>
+                    <h4>Finale Klassen</h4>
+                    <p class="small">...dürfen keine Subklassen haben.</p>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Kreditkarte.java#3'></code></pre>
+                    <p class="small"><strike><code>public class Debitkarte extends Kreditkarte</code></strike></p>
+                    <p class="small"><strike><code>public class ABC extends String</code></strike></p>
+                    
+                    <div class="fragment">
+                    <h4>Finale Methoden</h4>
+                    <p class="small">...dürfen nicht überschrieben werden.</p>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Person.java#27-29'></code></pre>
+                    </div>
+                    <aside class="notes">Mit <code>final class</code> kann man verbieten, dass es von der Klasse Subklassen geben darf. <code>String</code> ist beispielsweise <code>final</code>. Die unten gezeigte <code>final</code>-Methode aus der Klasse <code>Person</code> ist fertig implementiert und darf in Subklassen (z. B. <code>Studierender</code>) nicht mittels Overriding überschrieben werden.</aside>
+                  </section>
+
+                  <section>
+                    <h3>Abstrakte und Methoden</h3>
+                    <h4>Abstrakte Klassen</h4>
+                    <p class="small">... können nicht instanziiert werden und sind nur zum Vererben da.</p>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#3'></code></pre>
+                    <p class="small"><strike><code>Person p = new Person;</code></strike></p>
+
+                    <div class="fragment">
+                      <h4>Abstrakte Methoden</h4>
+                      <p class="small">...gibt es nur in abstrakten Klassen und sind unimplementiert.</p>
+                      <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#18'></code></pre>
+                      <p class="small">Jede (nicht abstrakte) Subklasse muss diese abstrakte Methode überschreiben.</p>
+                    </div>
+                    <aside class="notes">Von abstrakten Klassen lassen sich keine direkten Objekte erzeugen. Es ist lediglich möglich, dass eine Subklasse von der abstrakten Klasse erbt, die dann nicht abstrakt und damit instanziierbar ist. Diese Subklasse muss alle abstrakten Methoden überschreiben. Es darf in der abstrakten Klasse auch nicht-abstrakte Methoden geben.</aside>
+                  </section>
+
+                  <section>
+                    <h3>Innere Klassen</h3>
+                    <p>Klassen können in Klassen verschachtelt werden.</p>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Person.java#3,50-51,57,89-91,138-140'></code></pre>
+                    <pre class="fragment"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/InnereKlassenBeispiel.java#5-7'></code></pre>
+                  
+                    <aside class="notes">Die hier gezeigte Klasse <code>Person</code> hat zwei innere Klassen. Dieses Konzept kommt zum Einsatz, wenn die innere Klasse in der Regel nur in Verbindung mit Objekten der äußeren Klasse verwendet wird. Das Stichwort <code>static</code> sorgt hier dafür, dass man Objekte der inneren Klasse ohne ein Objekt der äußeren Klasse erzeugen kann. Bei der nicht-statistischen inneren Klasse <code>Adresse</code> ist dies jedoch nötig. Die <code>Adresse</code>-Objekte werden auf einem konkreten <code>Personen</code>-Objekt instanziiert.</aside>
+                  </section>
+
+                  <section>
+                    <h2>Schnittstellen (Interfaces)</h2>
+                    <ul class="small">
+                      <li>In Interfaces werden nur Methoden-Signaturen definiert, nicht ausimplementiert (ähnlich wie bei abstrakten Methoden).</li>
+                      <li class="fragment">Eine Klasse kann beliebig viele Interfaces implementieren<br>und muss dabei deren Methoden ausimplementieren</li>
+                      <li class="fragment">Interfaces können andere Interfaces implementieren</li>
+                    </ul>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-5'></code></pre>
+                    <aside class="notes">Jede Klasse, die unser Interface <code>Pritable</code> implementiert, muss die Methode <code>print</code> implementieren. Interfaces heißen oft <code>...able</code> (auf Deutsch: <code>...bar</code>), z. B. <code>Comparable</code>, <code>Clonable</code>, <code>Skalierbar</code>, <code>Verschiebbar</code>, weil man mit den Objekten der weiligen Klasse etwas bestimmtes machen kann (vergleichen, klonen, skalieren, verschieben).</aside>
+                  </section>
+
+                  <section>
+                    <h2>Schnittstellen (Interfaces)</h2>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-5'></code></pre>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Person.java#3,50-55'></code></pre>
+                    <pre><code style="max-height: 1000px;" class="java" data-sample='code/Programmieren2/src/de/othr/interfaces/InterfacesBeispiel.java#5-6'></code></pre>
+                    <aside class="notes">Da unsere Variable <code>p</code> vom Typ <code>Printable</code> ist, kann es Objekte speichern, die von einer Klasse sind, welche <code>Printable</code> implementieren, z. B. unsere <code>Personen</code>-Klasse. Auf dem <code>Printable</code>-Objekt lassen sich dann auch alle Methoden des Interfaces (hier <code>print()</code> aufrufen.</aside>
+                  </section>
+
+                  <section>
+                    <h2>Interface <code>Comparable</code></h2>
+                    <p class="small">Klassen, die eine <code>Comparable</code> implementieren, benötigen die Methode <code>compareTo(Object other)</code>, die...</p>
+                    <ul class="small" style="margin-top: -3mm;">
+                      <li><code>< 0</code> ausgibt, wenn <code>this</code> kleiner als <code>other</code> ist,</li>
+                      <li><code>0</code> ausgibt, wenn <code>this</code> gleich groß wie <code>other</code> ist,</li>
+                      <li><code>> 0</code> ausgibt, wenn <code>this</code> größer als <code>other</code> ist.</li>
+                    </ul>
+                    <pre style="margin-top: 3mm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#7,47-54,80'></code></pre>
+                    <aside class="notes">Wenn eine Klasse die Schnittstelle <code>Comparable</code> implementiert, weiß Java, ob ein Objekt als kleiner, gleich oder größer als ein anderes Objekt der Klasse behandelt werden soll. In unserem Beispiel ist eine Person kleiner als eine andere, wenn sie ein kleineres Alter hat. Ist das übergebene Objekt gar keine Person, sorgt <code>return -1;</code> dafür, dass die Person stets als das kleinere angesehen wird.</aside>
+                  </section>
+
+                  <section>
+                    <h2><code>compareTo</code>-Methode</h2>
+                    <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#57-62'></code></pre>
+                    <div class="columns">
+                    <div style="width:19cm"><pre class="fragment" style="left:-0.53cm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#64-73'></code></pre></div>
+                    <div class="fragment"><p class="small">Tim (8)<br>Ute (19)<br>Peter (20)<br>Otto (70)</p></div>
+                    </div>
+                    <aside class="notes"><code>Arrays.sort(Comparable[])</code> verwendet intern die <code>compareTo</code>-Methode, um die Elemente im Array zu sortieren. Dazu müssen diese Elemente Objekte einer Klasse sein, die <code>Comparable</code> implementiert.</aside>
+                  </section>
+
+                  <section>
+                      <h2>Kapitelzusammenfassung</h2>
+                      <ul>
+                      </ul>
+              </section>
+        
+              </div>
+            </div>
+        
+            <script src="reveal.js/js/reveal.js"></script>
+                <script src="lib/jquery.js"></script>
+                <script src="lib/lodash.js"></script>
+                <script src="lib/backbone.js"></script>
+                <script src="lib/joint.min.js"></script>
+                <script src="lib/deflate.js"></script>
+        
+            <script src="src/init_reveal.js"></script>
+        
+                <script>
+                if(window.location.search.match( /print-pdf/gi )) {
+                        document.getElementById('header').style="display:none";
+                        document.getElementById('footer').style="display:none";
+                }
+                </script>
+        
+        
+          </body>
+        </html>
+        

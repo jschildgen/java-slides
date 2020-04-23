@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Programmieren 2 - Kapitel 2 - Objektorientierte Programmierung</title>
+		<title>Programmieren 2 - Kapitel 2 - Objektorientierung</title>
 
 		<link rel="stylesheet" href="reveal.js/css/reset.css">
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
@@ -42,15 +42,16 @@
                     <h4 style="text-align:center"><b>Prof. Dr.-Ing. Johannes Schildgen</b><br>
                     <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
                     <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
-                    <h3>Kapitel 2:<br>Objektorientierte Programmierung</h3>
-                    <h4 style="text-align:center">2020-03-XX</h4>
-                    <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-151px;">
-                    <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-151px; box-shadow:none">
+                    <h3>Kapitel 2: Objektorientierung</h3>
+                    <h4 style="text-align:center">2020-04-15</h4>
+                    <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-225px;">
+                    <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-225px; box-shadow:none">
                 </section>
                 
 
       <section>
         <h2>Klassen und Objekte</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 11</div>
         <pre><code class="java" data-trim contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#32-36'></code></pre>  
         <h4>Klasse</h4>
         <p class="small" style="margin-top: -5mm;">Vorlage für Objekte, besteht aus <em>Attributen</em> (<em>Member-<br>Variablen</em>) und <em>Methoden</em>.</p>
@@ -88,6 +89,7 @@
 
       <section>
         <h3>Objektorientierung: Vorteile</h3>
+        <div style="position: absolute; top: 100px; right:0px; font-size:200px"><i class="fas fa-cubes red"></i></div>
         <h4>Modularisierung</h4>
         <ul>
           <li>Modul: Logische Code-Einheit<br>(z. B. eine oder mehrere Klassen)</li>
@@ -97,6 +99,19 @@
           <li>(+) jedes Modul individuell testbar</li>
         </ul>
         <aside class="notes">Nicht nur weil Menschen ohnehin in Objekten denken, bietet die objektorientierte Programmierung viele Vorteile. Dadurch, dass immer wieder benötigte zusammengehörige Code-Elemente in Klassen gebündelt werden, werden Redundanz und Fehler vermieden. Wird eine Klasse nachträglich durch die Entwicklung neuer Methoden erweitert oder eine Subklasse erstellt, hat dies meist keine großen Auswirkungen auf den existierenden Programmcode, in dem die Klasse verwendet wird.</aside>
+      </section>
+
+      <section>
+        <h3>Beispiel: Mensaplan-App für Android</h3>
+        <p class="small">Klassen:</p>
+        <ul class="small">
+          <li class="fragment"><code>MensaActivity</code>: Startseite der App<br><code>onCreate</code>-Methode implementiert, was dargestellt wird</li>
+          <li class="fragment"><code>Meal</code>: Repräsentiert ein Essen<br>Attribute <code>description</code>, <code>price</code>, <code>image</code>, etc.</li>
+          <li class="fragment"><code>MensaDatastore</code>: Kommunikation mit dem Server<br>Methoden: <code>public Meal[] loadMeals()</code>, etc.</li>
+          <li class="fragment">...</li>
+        </ul>
+        <img class="noborder" src="img/1/android.png" alt="Android App" style="width:5cm; position:absolute; right:5mm; top:3cm">
+        <aside class="notes">Die <code>MensaActivity</code>-Klasse wird beim App-Start einmal instanziiert und die darin befindliche <code>onCreate</code>-Methode aufgerufen. In dieser Methode wird ein <code>MensaDataStore</code>-Objekt erzeugt, welches zur Kommunikation mit dem Webserver, auf dem der Mensaplan abgerufen kann, dient. <code>loadMeals</code> liefert einen Array mit <code>Meal</code>-Objekten zurück. In der <code>MensaActivity</code>-Klasse wird ebendiese Methode aufgerufen und in einer Schleife jedes einzelne Essen in der App dargestellt.</aside>
       </section>
 
       <section>
@@ -132,7 +147,7 @@
       
       </section>
 
-      <section>
+      <!--<section>
         <h2>Poll Plugin</h2>
         <ol>
           <li>Put the <code>poll</code> folder in your reveal.js slides<br>and on a PHP-enabled web server</li>
@@ -150,9 +165,7 @@
             <h1>Question?</h1><ul><li>Wrong answer</li>
             <li data-poll="correct">Correct answer</li></ul>
 <h2>https://url-to-server</h2></div>
-      </section>
-
-      
+      </section>-->
 
       <section>
         <h3>Getter / Setter</h3>
@@ -180,6 +193,19 @@ System.out.println(p.getName());</code></pre>
       </section>
 
       <section>
+        <h2>Datenkapselung</h2>
+        <div style="position: absolute; top: 100px; right:0px; font-size:120px"><i class="fas fa-eye-slash red"></i></div>
+        <h4>Information Hiding</h4>
+        <p>Verstecken von Daten und internen Details vor dem Zugriff von außen.</p>
+        <p class="fragment small" data-fragment-index="1">Vorteile:</p>
+        <ul class="fragment small" data-fragment-index="1">
+          <li>Nur das &quot;Was&quot; und nicht das &quot;Wie&quot; sind nach außen sichtbar</li>
+          <li>Implementierung (das &quot;Wie&quot;) kann ohne große Auswirkungen einfach geändert werden</li>
+          <li>Modularisierung; dadurch besser testbar und anpassbar</li>
+        </ul>
+      </section>
+
+      <section>
         <h3><code>this</code></h3>
         <p class="small">Jede Klasse besitzt automatisch das Attribut <code>this</code>, welches auf das Objekt selbst verweist, um das es gerade geht.</p>
         <pre><code class="java" contenteditable>public String getName() {
@@ -194,6 +220,7 @@ public void setName(String name) {
 
       <section>
         <h3>Konstruktoren</h3>
+        <div style="position: absolute; top: 50px; right:50px; font-size:100px"><i class="fas fa-star red"></i></div>
         <p class="small">Konstruktoren erzeugen neue Objekte der Klasse. <br>
           Sie sind immer <code>public</code> und werden mit <code>new</code> aufgerufen.</p> 
         
@@ -213,13 +240,15 @@ public void setName(String name) {
       <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#42-45'></code></pre>  
       <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#47-49'></code></pre> 
       <ul class="fragment small">
-        <li>Es darf nur max. 1 Konstruktor aufgerufen werden</li>
+        <li>Es darf nur max. 1 anderer Konstruktor aufgerufen werden</li>
         <li>Der <code>this(...)</code>-Aufruf muss die erste Anweisung im Konstrutor sein</li>
       </ul>
     </section>
 
       <section>
         <h3>Methoden: <code>void</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 9</div>
+        <div style="position: absolute; top: 50px; right:50px; font-size:100px"><i class="fas fa-meh-blank red"></i></div>
         <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Rückgabetyp&gt;  &lt;Methodenname&gt;(&lt;Parametertyp&gt; &lt;Parametername&gt;, ...) { ... }</code></p>
       
         <h4><code>void</code> (keine Rückgabe)</h4>
@@ -229,6 +258,8 @@ public void setName(String name) {
 
       <section>
         <h3>Methoden: <code>return</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 9.3</div>
+        <div style="position: absolute; top: 50px; right:50px; font-size:100px"><i class="fas fa-surprise red"></i></div>
         <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Rückgabetyp&gt;  &lt;Methodenname&gt;(&lt;Parametertyp&gt; &lt;Parametername&gt;, ...) { ... }</code></p>
 
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#28-31'></code></pre>  
@@ -239,6 +270,7 @@ public void setName(String name) {
 
       <section>
         <h3>Methoden: Parameter</h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 9.2</div>
 
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#33-36'></code></pre>  
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#44-46'></code></pre>  
@@ -249,8 +281,8 @@ public void setName(String name) {
       <section>
         <h3>Methoden: Overloading</h3>
         <p class="small">Eine Klasse kann mehrere Methoden mit dem <em>gleichen Namen</em>, aber <em>unterschiedlichen Parametern</em> besitzen.</p>
-        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#33-42'></code></pre>  
-        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#86-88'></code></pre>  
+        <pre style="width:92%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#33-42'></code></pre>  
+        <pre style="width:92%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#86-88'></code></pre>  
         <aside class="notes">Zur Compile-Zeit wird ermittelt, welche Methode tatsächlich aufgerufen werden soll. Es wird diejenige gewählt, die die richtige Anzahl an Parametern hat und kompatible Parametertypen besitzt. Gibt es mehrere Möglichkeiten, wird diejenige mit dem speziellsten Typ gewählt. Gibt es mehrere Kandidaten, in einer passt der eine Parameter besser, ein anderer aber schlechter, wird ein Compile-Fehler auftreten.</aside>
       
         <div class="poll fragment" style="bottom:0px">
@@ -265,6 +297,7 @@ public void setName(String name) {
 
       <section>
         <h3><code>static</code>: Statische Attribute</h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 11.1</div>
         <p class="small">Mit <code>static</code> gekennzeichnete Attribute existieren nur einmal (nicht pro Objekt).</p>
         <pre><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personen/Haustier.java#3-18'></code></pre>  
         <aside class="notes">Ein typischer Einsatzzweck für statische Attribute sind Konstanten (hier: <code>TIERART</code>). Was hier mit dem statischen Attribut <code>farbe</code> gemacht wurde, ist jedoch eher unüblich. Jedes Objekt hat stets den gleichen Wert in diesem Attribut. Auf statische Attribute kann man auch mit <code>Klassenname.attribut</code> zugreifen.</aside>
@@ -281,6 +314,31 @@ public void setName(String name) {
         </ul>
         <pre><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/rechnen/Geld.java#3-9,14-19'></code></pre>  
         <aside class="notes">In der statischen Methode <code>main</code> kann die andere statische Methode <code>addieren</code> aufgerufen werden. Da sie sich hier in der gleichen Klasse befindet, müsste man auch nicht <code>Geld.</code> vor die Methode schreiben.</aside>
+      </section>
+
+      <section>
+        <h3>Methoden: varargs</h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 9.2</div>
+        <ul class="small">
+          <li>Der letzte (oder einzige) Methodenparameter darf variadisch sein</li>
+          <li>Der variadische Parameter erscheint in der Methode als Array</li>
+        </ul>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/varargs/Geld.java#6-10'></code></pre>
+        <ul class="small">
+          <li>Methodenaufruf mit einer beliebigen Anzahl von Parametern möglich</li>
+        </ul>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/varargs/Geld.java#16-19'></code></pre>  
+        <div class="poll fragment" style="bottom:-80px">
+          <h1>Was liefert Geld.addieren() zurück?</h1>
+            <ul>
+              <li data-poll="correct">0</li>
+              <li>null</li>
+              <li>ein leeres Array</li>
+              <li>einen Fehler</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
+        <aside class="notes">Würde man die Methode als <code>addieren(double[] args)</code> definieren, sähe ihre Implementierung nicht anders aus, allerdings müsste man die Methode dann tatsächlich mit einem Double-Array aufrufen als einzigen Parameter aufrufen. Die Varargs-Schreibweise <code>(double...)</code> ermöglicht es, die Methode mit einer beliebigen Anzahl von Parametern aufzurufen. Auch der Aufruf <code>Geld.addieren()</code> wäre möglich und würde 0 zurückgeben. Im unteren Beispiel ist zu sehen, dass sogar die <code>main</code>-Methode variadisch definiert sein kann. Dies hat jedoch gegenüber <code>String[] args</code> keine Vorteile.</aside>
       </section>
 
       <section>
@@ -384,6 +442,7 @@ public void setName(String name) {
 
       <section>
         <h3>Objektidentität</h3>
+        <div class="red" style="position: absolute; top: 20px; right:50px; font-size:100px"><code>==</code></div>
         <p class="small"><code>==</code> überprüft, ob zwei Variablen <em>dasselbe</em> Objekt referenzieren.</p>
         <pre><code style="max-height: 1000px" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#57-59,68-80'></code></pre>  
         <aside class="notes">Hier wird &quot;Peter und Ute haben dieselbe Adresse." ausgegeben, da sie beide dasselbe <code>Adresse</code>-Objekt referenzieren. Das zweite <code>println</code> gibt &quot;Ute wohnt in der Hausnummer 5&quot; aus, da sich Peter's Adressänderung auch auf Ute auswirkt. Es handelt sich ja um dasselbe <code>Adresse</code>-Objekt.</aside>
@@ -391,18 +450,31 @@ public void setName(String name) {
 
       <section>
         <h3>Gleichheit: <code>equals</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 12.2</div>
+        <div style="position: absolute; top: 30px; right:0px; font-size:80px"><i class="fas fa-home red"></i><i class="fas fa-home red"></i></div>
         <p class="small"><code>equals</code> soll überprüfen, ob zwei Objekte als gleich behandelt werden.<br>Diese Methode muss man für eigene Klassen selbst entwickeln.</p>
         <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personenadresse/Adresse.java#3,55-70'></code></pre>  
-        <aside class="notes">Diese Methode gibt <code>true</code> aus, wenn zwei Adressen dieselbe Straße, Hausnummer, PLZ und Ort haben. Details zur <code>@Override</code>-Annotation und zur <code>instanceof</code>-Überprüfung folgen später in diesem Kapitel. </aside>
+        <aside class="notes">Diese Methode gibt <code>true</code> aus, wenn zwei Adressen dieselbe Straße, Hausnummer, PLZ und Ort haben. Details zur <code>@Override</code>-Annotation und zur <code>instanceof</code>-Überprüfung folgen im nächsten Kapitel. </aside>
       </section>
 
       <section>
         <h3>Gleichheit: <code>equals</code></h3>
         <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/EqualsBeispiel.java#5-21'></code></pre>  
+        <div class="poll fragment" style="bottom:-80px">
+          <h1>Peters und Utes Adressen sind...?</h1>
+            <ul>
+              <li>dieselbe und die gleiche</li>
+              <li>dieselbe, aber nicht die gleiche</li>
+              <li data-poll="correct">nicht dieselbe, aber die gleiche</li>
+              <li>nicht die selbe und nicht die gleiche</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
       </section>
 
       <section>
         <h3>UML-Objektdiagramm</h3>
+        <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/EqualsBeispiel.java#8-9'></code></pre>  
         <img style="width:45%" uml='object "<u>p:Person</u>" as p {
           name = "Peter"
           alter = 20
@@ -419,29 +491,62 @@ public void setName(String name) {
             plz = "12345"
             ort = "Teststadt"
             }
+
+            object "<u>:Adresse</u>" as b {
+              strasse = "Badstr."
+              hausnummer = 3
+              plz = "12345"
+              ort = "Teststadt"
+              }
+              
+            p--a : adresse
+            q--b : adresse
+              '>
+        <aside class="notes">Während UML-Klassendiagramme dazu geeignet sind, das Schema der Daten zu beschreiben, wird in Objektdiagrammen eine Momentaufnahme von konkreten Instanzen von Klassen - also Objekten - dargestellt. In Objektdiagrammen wird der Bezeichner unterstrichen. Es ist optional, dem Objekt einen Namen zu geben (z. B. <code>p</code>).</aside>
+      
+        
+      </section>
+
+      <section>
+        <h3>UML-Objektdiagramm</h3>
+        <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/EqualsBeispiel.java#23-25'></code></pre>
+        <img style="width:45%" uml='object "<u>p:Person</u>" as p {
+          name = "Peter"
+          alter = 20
+          }
+          
+          object "<u>q:Person</u>" as q {
+            name = "Ute"
+            alter = null
+            }
+            
+          object "<u>a:Adresse</u>" as a {
+            strasse = "Badstr."
+            hausnummer = 3
+            plz = "12345"
+            ort = "Teststadt"
+            }
               
             p--a : adresse
             q--a : adresse
               '>
-        <aside class="notes">Während UML-Klassendiagramme dazu geeignet sind, das Schema der Daten zu beschreiben, wird in Objektdiagrammen eine Momentaufnahme von konkreten Instanzen von Klassen - also Objekten - dargestellt. Hier ist das Beispiel zu sehen, in dem Peter und Uta dieselbe Adresse haben. Es existiert - anders als im Beispiel auf der vorherigen Folie - nur ein einziges <code>Adresse</code>-Objekt. In Objektdiagrammen wird der Bezeichner unterstrichen. Es ist optional, dem Objekt einen Namen zu geben (z. B. <code>p</code>).</aside>
-      
-        <div class="poll fragment" style="bottom:-80px">
-          <h1>Was würde p.adresse.equals(q.adresse) zurückliefern?</h1>
-            <ul>
-              <li data-poll="correct">true</li>
-              <li>false</li>
-              <li>null</li>
-              <li>1</li>
-            </ul>
-          <h2>https://frage.space</h2>
-         </div>
+        <aside class="notes">Im nun gezeigen Beispiel haben Peter und Ute dieselbe Adresse. Es existiert - anders als im Beispiel auf der vorherigen Folie - nur ein einziges <code>Adresse</code>-Objekt.</aside>
       </section>
+
 
 			<section>
 							<h2>Kapitelzusammenfassung</h2>
 							<ul>
+                <li>Klassen und Objekte</li>
+                <li>Member-Variablen</li>
+                <li>Konstruktoren, Methoden, Getter, Setter</li>
+                <li><code>this</code></li>
+                <li>Overloading</li>
+                <li>Statische Attribute und Methoden</li>
+                <li>UML: Klassendiagramme und Objektdiagramme</li>
+                <li>Objektidentität, <code>equals</code></li>
 							</ul>
-			</section>
+      </section>
 
 			</div>
 		</div>

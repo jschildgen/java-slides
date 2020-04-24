@@ -98,6 +98,18 @@
                     <p class="small">Ist wahr, wenn <code>x</code> von der Klasse <code>C</code> oder einer (auch indirekten) Subklasse von <code>C</code> ist.</p>
                     <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/LebewesenBeispiel.java#7-13'></code></pre>
                     </div>
+
+                    <div class="poll fragment" style="bottom:-50px">
+                      <h1>Was wird hier ausgegeben?</h1>
+                        <ul>
+                          <li>Ute studiert.</li>
+                          <li>Ute lebt.</li>
+                          <li data-poll="correct">beides</li>
+                          <li>gar nichts</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                     </div>
+
                     <aside class="notes">Ist die Typhierarchie Lebewesen &#8702; Person &#8702; Studierender, sind beide <code>instanceof</code>-Überprüfungen auf dieser Folie wahr.</aside>
                   </section>
             
@@ -122,6 +134,18 @@
                     <p class="fragment small" data-fragment-index="1"><code class="java">Studierender extends Person</code></p>
                     <pre class="fragment" data-fragment-index="1" style="left:-3.44cm; width: 18cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/overriding/Studierender.java#15-19'></code></pre>
                     <img class="fragment noborder" data-fragment-index="2" style="position: absolute; right:0cm; top:8.8cm" src="img/2/override.png" alt="Overriding-Methoden in IntelliJ automatisch generieren">
+                    
+                    <div class="poll fragment" style="bottom:-100px">
+                      <h1>Wie sieht der Rückgabewert von Studierender.getDetails() aus?</h1>
+                        <ul>
+                          <li>123457 Ute</li>
+                          <li>123457 / Ute / 19</li>
+                          <li>123457 Ute (19)</li>
+                          <li data-poll="correct">123457 / Ute (19)</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                     </div>
+                    
                     <aside class="notes">Overriding bedeutet dass eine in einer Superklasse vorhandene Methode überschrieben wird. Die Methoden-Signatur (Name, Parameter) und auch die Sichtbarkeit und der Rückgabetyp muss exakt mit dem der zu überschreibenden Methode übereinstimmen. Dies unterscheidet Overriding von Overloading. Beim Overloading ist nur der Methodenname gleich, die Parameter unterscheiden sich jedoch. Durch die <code>@Override</code>-Annotation überprüft der Compiler, ob es die Methode in der Superklasse wirklich gibt.</aside>
                   </section>
             
@@ -150,7 +174,17 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <h2>Method Overriding</h2>
                     <p class="small">Zur Laufzeit wird die Methode von der tatsächlichen Klasse eines Objekts gewählt.</p>
                     <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/overriding/OverridingBeispiel.java#5-11'></code></pre>
-                    <p class="fragment small"><code>Peter (0)<br>123456 / Ute (0)</code></p>
+                    <p class="fragment small" data-fragment-index="2"><code>Peter (0)<br>123456 / Ute (0)</code></p>
+
+                    <div class="poll fragment" data-fragment-index="1" style="bottom:-150px">
+                      <h1>Was wird hier ausgegeben?</h1>
+                        <ul>
+                          <li>Peter (0)<br>Ute (0)</li>
+                          <li data-poll="correct">Peter (0)<br>123456 / Ute (0)</li>
+                          <li>0 / Peter (0)<br>123456 / Ute (0)</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                     </div>
                   </section>
 
                   <section>
@@ -206,7 +240,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <div class="fragment">
                     <h4>Finale Methoden</h4>
                     <p class="small">...dürfen nicht überschrieben werden.</p>
-                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Person.java#27-29'></code></pre>
+                    <pre style="width: 14cm; margin-left: 1cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Person.java#27-29'></code></pre>
                     </div>
 
                     <img style="position: absolute; right:-0.5cm; max-height: 3cm; top:4.7cm" uml="class Kreditkarte <<leaf>> { } "/>
@@ -219,12 +253,12 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <h4>Abstrakte Klassen</h4>
                     <p class="small">... können nicht instanziiert werden und sind nur zum Vererben da.</p>
                     <pre style="width: 14cm; margin-left: 1cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#3'></code></pre>
-                    <p class="small"><strike><code>Person p = new Person;</code></strike></p>
+                    <p class="small"><strike><code>Person p = new Person();</code></strike></p>
 
                     <div class="fragment">
                       <h4>Abstrakte Methoden</h4>
                       <p class="small" style="margin-top: -5px;">...gibt es nur in abstrakten Klassen und sind unimplementiert.</p>
-                      <pre style="margin-top: -5px;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#18'></code></pre>
+                      <pre style="margin-top: -5px; margin-left: 1cm; width: 14cm"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#18'></code></pre>
                       <p class="small" style="margin-top: -5px;">Jede (nicht abstrakte) Subklasse muss diese abstrakte Methode überschreiben.</p>
                     </div>
 
@@ -246,7 +280,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <img style="position: absolute; right:-0.5cm; max-height: 3cm; top:3cm" uml="interface Printable <<interface>> { 
                       +print()  
                     } "/>
-                    <aside class="notes">Jede Klasse, die unser Interface <code>Pritable</code> implementiert, muss die Methode <code>print</code> implementieren. Interfaces heißen oft <code>...able</code> (auf Deutsch: <code>...bar</code>), z. B. <code>Comparable</code>, <code>Clonable</code>, <code>Skalierbar</code>, <code>Verschiebbar</code>, weil man mit den Objekten der weiligen Klasse etwas bestimmtes machen kann (vergleichen, klonen, skalieren, verschieben).</aside>
+                    <aside class="notes">Jede Klasse, die unser Interface <code>Printable</code> implementiert, muss die Methode <code>print</code> implementieren. Interfaces heißen oft <code>...able</code> (auf Deutsch: <code>...bar</code>), z. B. <code>Comparable</code>, <code>Clonable</code>, <code>Skalierbar</code>, <code>Verschiebbar</code>, weil man mit den Objekten der jeweiligen Klasse etwas bestimmtes machen kann (vergleichen, klonen, skalieren, verschieben).</aside>
                   </section>
 
                   <section>
@@ -285,6 +319,19 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                       <li><code>> 0</code> ausgibt, wenn <code>this</code> größer als <code>other</code> ist.</li>
                     </ul>
                     <pre style="margin-top: 3mm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#7,47-54,80'></code></pre>
+                    
+                    <div class="poll fragment" style="bottom:-50px">
+                      <h1>Wer ist größer?</h1>
+                        <ul>
+                          <li>new Person(&quot;Peter&quot;)</li>
+                          <li data-poll="correct">&quot;Peter&quot;</li>
+                          <li>Beide sind gleich groß</li>
+                          <li>Es kommt ein Fehler</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                     </div>
+                  </section>
+                    
                     <aside class="notes">Wenn eine Klasse die Schnittstelle <code>Comparable</code> implementiert, weiß Java, ob ein Objekt als kleiner, gleich oder größer als ein anderes Objekt der Klasse behandelt werden soll. In unserem Beispiel ist eine Person kleiner als eine andere, wenn sie ein kleineres Alter hat. Ist das übergebene Objekt gar keine Person, sorgt <code>return -1;</code> dafür, dass die Person stets als das kleinere angesehen wird.</aside>
                   </section>
 
@@ -295,6 +342,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <div style="width:19cm"><pre class="fragment" style="left:-0.53cm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#64-73'></code></pre></div>
                     <div class="fragment"><p class="small">Tim (8)<br>Ute (19)<br>Peter (20)<br>Otto (70)</p></div>
                     </div>
+                    
                     <aside class="notes"><code>Arrays.sort(Comparable[])</code> verwendet intern die <code>compareTo</code>-Methode, um die Elemente im Array zu sortieren. Dazu müssen diese Elemente Objekte einer Klasse sein, die <code>Comparable</code> implementiert.</aside>
                   </section>
 
@@ -303,6 +351,18 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <div class="trackinfo"><i class="fas fa-book"></i> 12.4</div>
                     <p class="small">Vorgeben einer Standard-Implementierung einer Schnittstellen-Methode.</p>
                     <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-10'></code></pre>
+                    
+                    <div class="poll fragment" style="bottom:-170px"> 
+                      <h1>class C implements Printable, welche Methoden muss C haben?</h1>
+                          <ul>
+                            <li data-poll="correct">print()</li>
+                            <li>printTwice()</li>
+                            <li>beide</li>
+                            <li>keine</li>
+                          </ul>
+                        <h2>https://frage.space</h2>
+                       </div>
+                    
                     <aside class="notes">Wenn eine Schnittstelle im Nachhinein um weitere Methoden erweitert wird, werden alle Klassen, die diese Schnittstelle implementieren, ungültig, da es in ihnen diese neue Methoden nicht gibt. Um dieses Problem zu lösen, bietet Java <code>default</code>-Methoden. Diese sind bereits mit einer Standard-Implementierung ausimplementiert, sodass dies nicht mehr zwangsweise von der implementierenden Klasse gemacht werden muss.</aside>
                   </section>
 
@@ -411,9 +471,9 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     }
 
                     class Kreditkarte <<static>> {
-                      -kartennr : int
+                      -kartenr : int
                       +setKartenr(kartenr : int)
-                      +getKartennr() : int  
+                      +getKartenr() : int  
                     }
                       
             

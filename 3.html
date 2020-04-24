@@ -196,9 +196,10 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h3>Finale Klassen und Methoden</h3>
+                    <div class="trackinfo"><i class="fas fa-book"></i> 12.1</div>
                     <h4>Finale Klassen</h4>
                     <p class="small">...dürfen keine Subklassen haben.</p>
-                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Kreditkarte.java#3'></code></pre>
+                    <pre style="width: 14cm; margin-left: 1cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Kreditkarte.java#3'></code></pre>
                     <p class="small"><strike><code>public class Debitkarte extends Kreditkarte</code></strike></p>
                     <p class="small"><strike><code>public class ABC extends String</code></strike></p>
                     
@@ -207,6 +208,9 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <p class="small">...dürfen nicht überschrieben werden.</p>
                     <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Person.java#27-29'></code></pre>
                     </div>
+
+                    <img style="position: absolute; right:-0.5cm; max-height: 3cm; top:4.7cm" uml="class Kreditkarte <<leaf>> { } "/>
+
                     <aside class="notes">Mit <code>final class</code> kann man verbieten, dass es von der Klasse Subklassen geben darf. <code>String</code> ist beispielsweise <code>final</code>. Die unten gezeigte <code>final</code>-Methode aus der Klasse <code>Person</code> ist fertig implementiert und darf in Subklassen (z. B. <code>Studierender</code>) nicht mittels Overriding überschrieben werden.</aside>
                   </section>
 
@@ -214,48 +218,66 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <h3>Abstrakte und Methoden</h3>
                     <h4>Abstrakte Klassen</h4>
                     <p class="small">... können nicht instanziiert werden und sind nur zum Vererben da.</p>
-                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#3'></code></pre>
+                    <pre style="width: 14cm; margin-left: 1cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#3'></code></pre>
                     <p class="small"><strike><code>Person p = new Person;</code></strike></p>
 
                     <div class="fragment">
                       <h4>Abstrakte Methoden</h4>
-                      <p class="small">...gibt es nur in abstrakten Klassen und sind unimplementiert.</p>
-                      <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#18'></code></pre>
-                      <p class="small">Jede (nicht abstrakte) Subklasse muss diese abstrakte Methode überschreiben.</p>
+                      <p class="small" style="margin-top: -5px;">...gibt es nur in abstrakten Klassen und sind unimplementiert.</p>
+                      <pre style="margin-top: -5px;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#18'></code></pre>
+                      <p class="small" style="margin-top: -5px;">Jede (nicht abstrakte) Subklasse muss diese abstrakte Methode überschreiben.</p>
                     </div>
-                    <aside class="notes">Von abstrakten Klassen lassen sich keine direkten Objekte erzeugen. Es ist lediglich möglich, dass eine Subklasse von der abstrakten Klasse erbt, die dann nicht abstrakt und damit instanziierbar ist. Diese Subklasse muss alle abstrakten Methoden überschreiben. Es darf in der abstrakten Klasse auch nicht-abstrakte Methoden geben.</aside>
-                  </section>
 
-                  <section>
-                    <h3>Innere Klassen</h3>
-                    <p>Klassen können in Klassen verschachtelt werden.</p>
-                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Person.java#3,50-51,57,89-91,138-140'></code></pre>
-                    <pre class="fragment"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/InnereKlassenBeispiel.java#5-7'></code></pre>
-                  
-                    <aside class="notes">Die hier gezeigte Klasse <code>Person</code> hat zwei innere Klassen. Dieses Konzept kommt zum Einsatz, wenn die innere Klasse in der Regel nur in Verbindung mit Objekten der äußeren Klasse verwendet wird. Das Stichwort <code>static</code> sorgt hier dafür, dass man Objekte der inneren Klasse ohne ein Objekt der äußeren Klasse erzeugen kann. Bei der nicht-statistischen inneren Klasse <code>Adresse</code> ist dies jedoch nötig. Die <code>Adresse</code>-Objekte werden auf einem konkreten <code>Personen</code>-Objekt instanziiert.</aside>
+                    <img style="position: absolute; right:-0.5cm; max-height: 3cm; top:5.7cm" uml="abstract class Lebewesen { 
+                      {abstract}+getDetails() : String  
+                    } "/>
+                    <aside class="notes">Von abstrakten Klassen lassen sich keine direkten Objekte erzeugen. Es ist lediglich möglich, dass eine Subklasse von der abstrakten Klasse erbt, die dann nicht abstrakt und damit instanziierbar ist. Diese Subklasse muss alle abstrakten Methoden überschreiben. Es darf in der abstrakten Klasse auch nicht-abstrakte Methoden geben. Im UML-Diagramm werden Namen von abstrakten Klassen und Methoden <em>kursiv</em>   geschrieben.</aside>
                   </section>
 
                   <section>
                     <h2>Schnittstellen (Interfaces)</h2>
+                    <div class="trackinfo"><i class="fas fa-book"></i> 12.4</div>
                     <ul class="small">
                       <li>In Interfaces werden nur Methoden-Signaturen definiert, nicht ausimplementiert (ähnlich wie bei abstrakten Methoden).</li>
                       <li class="fragment">Eine Klasse kann beliebig viele Interfaces implementieren<br>und muss dabei deren Methoden ausimplementieren</li>
                       <li class="fragment">Interfaces können andere Interfaces implementieren</li>
                     </ul>
                     <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-4,10'></code></pre>
+                    <img style="position: absolute; right:-0.5cm; max-height: 3cm; top:3cm" uml="interface Printable <<interface>> { 
+                      +print()  
+                    } "/>
                     <aside class="notes">Jede Klasse, die unser Interface <code>Pritable</code> implementiert, muss die Methode <code>print</code> implementieren. Interfaces heißen oft <code>...able</code> (auf Deutsch: <code>...bar</code>), z. B. <code>Comparable</code>, <code>Clonable</code>, <code>Skalierbar</code>, <code>Verschiebbar</code>, weil man mit den Objekten der weiligen Klasse etwas bestimmtes machen kann (vergleichen, klonen, skalieren, verschieben).</aside>
                   </section>
 
                   <section>
                     <h2>Schnittstellen (Interfaces)</h2>
-                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-4,10'></code></pre>
-                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Person.java#3,50-55'></code></pre>
-                    <pre><code style="max-height: 1000px;" class="java" data-sample='code/Programmieren2/src/de/othr/interfaces/InterfacesBeispiel.java#5-6'></code></pre>
+                    <pre style="margin-left: 1cm; width: 18cm;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-4,10'></code></pre>
+                    <pre style="margin-left: 1cm; width: 18cm;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Person.java#3,50-55'></code></pre>
+                    <pre style="margin-left: 1cm; width: 18cm;"><code class="java" data-sample='code/Programmieren2/src/de/othr/interfaces/InterfacesBeispiel.java#5-6'></code></pre>
+                    <img style="position: absolute; right:-0.5cm; max-height: 10cm; top:3cm" uml="interface Printable <<interface>> { 
+                      +print()  
+                    }
+                    class Person {
+                      -name : String
+                      -alter : int
+                      +Person(name : String)
+                      +setName(name : String)
+                      +getName() : String
+                      +setAlter(alter : int)
+                      +getAlter() : int
+                      +erhoeheAlter()
+                      +print()
+                    }
+                    Printable <|.. Person "/>
                     <aside class="notes">Da unsere Variable <code>p</code> vom Typ <code>Printable</code> ist, kann es Objekte speichern, die von einer Klasse sind, welche <code>Printable</code> implementieren, z. B. unsere <code>Personen</code>-Klasse. Auf dem <code>Printable</code>-Objekt lassen sich dann auch alle Methoden des Interfaces (hier <code>print()</code> aufrufen.</aside>
                   </section>
 
                   <section>
-                    <h2>Interface <code>Comparable</code></h2>
+                    <h3>Interface <code>Comparable</code></h3>
+                    <div class="trackinfo"><i class="fas fa-book"></i> 13.5</div>
+                    <img style="position: absolute; right:-0.5cm; max-height: 3cm; top:4.5cm" uml="interface Comparable <<interface>> { 
+                      +compareTo(other : Object) : int  
+                    } "/>
                     <p class="small">Klassen, die eine <code>Comparable</code> implementieren, benötigen die Methode <code>compareTo(Object other)</code>, die...</p>
                     <ul class="small" style="margin-top: -3mm;">
                       <li><code>< 0</code> ausgibt, wenn <code>this</code> kleiner als <code>other</code> ist,</li>
@@ -267,7 +289,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                   </section>
 
                   <section>
-                    <h2><code>compareTo</code>-Methode</h2>
+                    <h3><code>compareTo</code>-Methode</h3>
                     <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#57-62'></code></pre>
                     <div class="columns">
                     <div style="width:19cm"><pre class="fragment" style="left:-0.53cm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#64-73'></code></pre></div>
@@ -278,18 +300,144 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h3><code>default</code>-Methoden in Schnittstellen</h3>
+                    <div class="trackinfo"><i class="fas fa-book"></i> 12.4</div>
                     <p class="small">Vorgeben einer Standard-Implementierung einer Schnittstellen-Methode.</p>
                     <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-10'></code></pre>
                     <aside class="notes">Wenn eine Schnittstelle im Nachhinein um weitere Methoden erweitert wird, werden alle Klassen, die diese Schnittstelle implementieren, ungültig, da es in ihnen diese neue Methoden nicht gibt. Um dieses Problem zu lösen, bietet Java <code>default</code>-Methoden. Diese sind bereits mit einer Standard-Implementierung ausimplementiert, sodass dies nicht mehr zwangsweise von der implementierenden Klasse gemacht werden muss.</aside>
                   </section>
 
                   <section>
-                    <h3>Schnittstellen vs. abstrakte Klassen</h3>
+                    <h3>Abstrakte Klassen vs. Schnittstelle</h3>
+                    <p class="small">Ähnlicher Ansatz: Beide nicht instanziierbar. Methoden werden vorgegeben, die die Sub-Klassen implementieren müssen.</p>
+                    <div class="columns">
+                      <div style="width:13cm">
+                        <h4>Abstrakte Klasse</h4>
+                        <ul class="small">
+                          <li class="fragment" data-fragment-index="1">Kann beliebige Attribute besitzen</li>
+                          <li class="fragment" data-fragment-index="3">Kann beliebige Methoden besitzen</li>
+                          <li class="fragment" data-fragment-index="5">Kann Superklasse haben und Interfaces implementieren</li>
+                          <li class="fragment" data-fragment-index="7">Klassen haben immer nur eine Superklasse</li>
+                        </ul>
+                      </div>
+                      <div style="width:12cm">
+                        <h4>Schnittstelle</h4>
+                        <ul class="small">
+                          <li class="fragment" data-fragment-index="2">Besitzt nur <code>final</code> Attribute</li>
+                          <li class="fragment" data-fragment-index="4">Besitzt nur <code>public</code> Methoden</li>
+                          <li class="fragment" data-fragment-index="6">Kann nur Interfaces implementieren</li>
+                          <li class="fragment" data-fragment-index="8">Klassen können mehrere Interfaces implementieren</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <aside class="notes">Interfaces werden häufig dazu verwendet, einer Klasse eine Eigenschaft zu geben, z. B. <code>Comparable</code>, <code>Iterable</code>, <code>Clonable</code>, ... Abstrakte Klassen dagegen eignen sich dafür, funktionierende Grundfunktionalitäten anzubieten, die in Subklassen dann noch erweitert werden.</aside>
+                  </section>
+
+                  <section>
+                    <h3>Innere Klassen</h3>
+                    <div class="trackinfo"><i class="fas fa-book"></i> 11.2, 11.4</div>
+                    <p class="small">Klassen können in Klassen verschachtelt werden.</p>
+                    <pre style="margin-left: 1cm; width:13cm"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Person.java#3,50-51,57,89,91,138-140'></code></pre>
+                    <pre class="fragment"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/InnereKlassenBeispiel.java#5-7'></code></pre>
+                  
+                    <img style="position: absolute; right:-0.5cm; max-height: 7cm; top:3cm" uml="class Person
+                    class Kreditkarte <<static>>
+                    class Adresse 
+                    Person +-- Kreditkarte
+                    Person +-- Adresse"/>
+
+                    <aside class="notes">Die hier gezeigte Klasse <code>Person</code> hat zwei innere Klassen. Dieses Konzept kommt zum Einsatz, wenn die innere Klasse in der Regel nur in Verbindung mit Objekten der äußeren Klasse verwendet wird. Das Stichwort <code>static</code> sorgt hier dafür, dass man Objekte der inneren Klasse ohne ein Objekt der äußeren Klasse erzeugen kann. Bei der nicht-statistischen inneren Klasse <code>Adresse</code> ist dies jedoch nötig. Die <code>Adresse</code>-Objekte werden auf einem konkreten <code>Personen</code>-Objekt instanziiert. Das Erstellen von inneren Klassen ist auf Klassenebene aber auch innerhalb von Methoden möglich.</aside>
+                  </section>
+
+                  <section>
+                    <h3>Anonyme Klassen</h3>
+                    <div class="trackinfo"><i class="fas fa-book"></i> 11.3</div>
+                    <p class="small">Innere Klassen ohne Namen.</p>
+                    <pre style="margin-left: 1cm; width: 16cm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/AnonymeKlasseBeispiel.java#7-13'></code></pre>
+                    
+                    <img style="position: absolute; right:-0.5cm; max-height: 7cm; top:2cm" uml="class MeinProgramm
+                    class Printable <<anonymous>>
+                    MeinProgramm +-- Printable"/>
+                    
+                    <p style="margin-top:-4px" class="fragment small" data-fragment-index="1">...entspricht in etwa Folgendem:</p>
+                    <pre class="fragment" data-fragment-index="1" style="margin-left: 1cm; width: 16cm; top: -8px;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/AnonymeKlasseBeispiel.java#18-24'></code></pre>
+                    
+                    <img class="fragment" data-fragment-index="1" style="position: absolute; right:-0.5cm; max-height: 6cm; top:10cm" uml="class MeinProgramm
+                    interface Printable
+                    MeinProgramm +-- AnonymeKlasse
+                    AnonymeKlasse <|..u Printable"/>
+                    
+                    <aside class="notes">Wenn man ein Objekt einer Klasse benötigt, die ein bestimmtes Interface implementiert oder eine (z. B. abstrakte) Klasse erweitert, ist es nicht zwingend notwendig eine eigene neue Klasse dafür zu erstellen und dieser einen Namen zu geben.</aside>
+                  </section>
+
+                  <section>
+                    <h3>UML-Beispiel</h3>
+                    <img style="max-height: 12cm; margin-top: -4mm;" uml="interface Printable <<interface>> { 
+                      +print()  
+                    }
+
+                    abstract class Lebewesen { 
+                      {abstract}+getDetails() : String  
+                    }
+
+                    class Adresse {
+                      -strasse : String
+                      -ort : String
+                      +setStrasse(strasse : String)
+                      +getStrasse() : String
+                      +setOrt(ort : String)
+                      +getOrt() : String
+                    }
+
+                    class Person {
+                      -name : String
+                      -alter : int
+                      -adressen : Adresse[]
+                      +Person(name : String)
+                      +setName(name : String)
+                      +getName() : String
+                      +setAlter(alter : int)
+                      +getAlter() : int
+                      +setAdressen(adressen : Adresse[])
+                      +getAdressen() : Adresse[]
+                      +erhoeheAlter()
+                      +print()
+                    }
+
+                    class Studierender {
+                      -matrikelnr : int
+                      +Studierender(name : String, matrikelnr : int)
+                      +setMatrikelnr(matrnr : int)
+                      +getMatrikelnr() : int
+                    }
+
+                    class Kreditkarte <<static>> {
+                      -kartennr : int
+                      +setKartenr(kartenr : int)
+                      +getKartennr() : int  
+                    }
+                      
+            
+                    Lebewesen <|-- Person
+                    Person <|-- Studierender
+                    Printable <|..r Person  : \t
+                    Person +-- Kreditkarte
+                    Person &quot;1&quot; ---r &quot;*&quot; Adresse : \t "/>
+
+                    <aside class="notes">Zu sehen ist hier ein UML-Klassendiagramm mit einer Klasse (<code>Person</code>), ein Interface (<code>Printable</code>), eine Subklasse (<code>Studierender</code>), eine innere und statische Klasse (<code>Kreditkarte</code>) sowie eine abstrakte Klasse (<code>Lebewesen</code>). Rechts ist eine Klasse <code>Adresse</code> zu sehen und eine Eins-zu-viele-Assoziation zwischen Personen und Adressen. Eine Person hat beliebig viele Adressen (<code>*</code>), und ein Adress-Objekt gehört stets zu nur einer Person (<code>1</code>).</aside>
                   </section>
 
                   <section>
                       <h2>Kapitelzusammenfassung</h2>
                       <ul>
+                        <li>Vererbung (<code>extends</code>)</li>
+                        <li><code>(Casting)</code>, <code>instanceof</code></li>
+                        <li>Method-Overriding, <code>super</code></li>
+                        <li><code>Object</code>-Klasse (<code>toString</code>, </code><code>equals</code>, ...)</li>
+                        <li><code>final class</code></code></li>
+                        <li><code>abstract class</code></li>
+                        <li>Schnittstellen (<code>implements</code>)</li>
+                        <li>Innere Klassen, anonyme Klassen</li>
+                        <li>UML</li>
                       </ul>
               </section>
         

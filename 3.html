@@ -242,13 +242,13 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                       <li class="fragment">Eine Klasse kann beliebig viele Interfaces implementieren<br>und muss dabei deren Methoden ausimplementieren</li>
                       <li class="fragment">Interfaces können andere Interfaces implementieren</li>
                     </ul>
-                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-5'></code></pre>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-4,10'></code></pre>
                     <aside class="notes">Jede Klasse, die unser Interface <code>Pritable</code> implementiert, muss die Methode <code>print</code> implementieren. Interfaces heißen oft <code>...able</code> (auf Deutsch: <code>...bar</code>), z. B. <code>Comparable</code>, <code>Clonable</code>, <code>Skalierbar</code>, <code>Verschiebbar</code>, weil man mit den Objekten der weiligen Klasse etwas bestimmtes machen kann (vergleichen, klonen, skalieren, verschieben).</aside>
                   </section>
 
                   <section>
                     <h2>Schnittstellen (Interfaces)</h2>
-                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-5'></code></pre>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-4,10'></code></pre>
                     <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Person.java#3,50-55'></code></pre>
                     <pre><code style="max-height: 1000px;" class="java" data-sample='code/Programmieren2/src/de/othr/interfaces/InterfacesBeispiel.java#5-6'></code></pre>
                     <aside class="notes">Da unsere Variable <code>p</code> vom Typ <code>Printable</code> ist, kann es Objekte speichern, die von einer Klasse sind, welche <code>Printable</code> implementieren, z. B. unsere <code>Personen</code>-Klasse. Auf dem <code>Printable</code>-Objekt lassen sich dann auch alle Methoden des Interfaces (hier <code>print()</code> aufrufen.</aside>
@@ -274,6 +274,17 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <div class="fragment"><p class="small">Tim (8)<br>Ute (19)<br>Peter (20)<br>Otto (70)</p></div>
                     </div>
                     <aside class="notes"><code>Arrays.sort(Comparable[])</code> verwendet intern die <code>compareTo</code>-Methode, um die Elemente im Array zu sortieren. Dazu müssen diese Elemente Objekte einer Klasse sein, die <code>Comparable</code> implementiert.</aside>
+                  </section>
+
+                  <section>
+                    <h3><code>default</code>-Methoden in Schnittstellen</h3>
+                    <p class="small">Vorgeben einer Standard-Implementierung einer Schnittstellen-Methode.</p>
+                    <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces/Printable.java#3-10'></code></pre>
+                    <aside class="notes">Wenn eine Schnittstelle im Nachhinein um weitere Methoden erweitert wird, werden alle Klassen, die diese Schnittstelle implementieren, ungültig, da es in ihnen diese neue Methoden nicht gibt. Um dieses Problem zu lösen, bietet Java <code>default</code>-Methoden. Diese sind bereits mit einer Standard-Implementierung ausimplementiert, sodass dies nicht mehr zwangsweise von der implementierenden Klasse gemacht werden muss.</aside>
+                  </section>
+
+                  <section>
+                    <h3>Schnittstellen vs. abstrakte Klassen</h3>
                   </section>
 
                   <section>

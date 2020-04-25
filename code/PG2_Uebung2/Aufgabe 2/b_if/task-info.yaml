@@ -1,0 +1,10 @@
+type: output
+files:
+- name: test/output.txt
+  visible: false
+- name: src/Wetter.java
+  visible: true
+  placeholders:
+  - offset: 220
+    length: 234
+    placeholder_text: ""

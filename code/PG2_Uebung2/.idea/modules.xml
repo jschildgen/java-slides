@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen.iml" group="Programmieren_2/Aufgabe_1-a_Rechnen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_main.iml" group="Programmieren_2/Aufgabe_1-a_Rechnen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_test.iml" group="Programmieren_2/Aufgabe_1-a_Rechnen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random.iml" group="Programmieren_2/Aufgabe_2-a_Random" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_main.iml" group="Programmieren_2/Aufgabe_2-a_Random" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_test.iml" group="Programmieren_2/Aufgabe_2-a_Random" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if.iml" group="Programmieren_2/Aufgabe_2-b_if" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_main.iml" group="Programmieren_2/Aufgabe_2-b_if" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_test.iml" group="Programmieren_2/Aufgabe_2-b_if" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen.iml" group="Programmieren_2/Aufgabe_2-c_Schleifen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_main.iml" group="Programmieren_2/Aufgabe_2-c_Schleifen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_test.iml" group="Programmieren_2/Aufgabe_2-c_Schleifen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum.iml" group="Programmieren_2/Aufgabe_2-d_enum" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_main.iml" group="Programmieren_2/Aufgabe_2-d_enum" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_test.iml" group="Programmieren_2/Aufgabe_2-d_enum" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings.iml" group="Programmieren_2/Aufgabe_2-e_Strings" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_main.iml" group="Programmieren_2/Aufgabe_2-e_Strings" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_test.iml" group="Programmieren_2/Aufgabe_2-e_Strings" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays.iml" group="Programmieren_2/Aufgabe_2-f_Arrays" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_main.iml" group="Programmieren_2/Aufgabe_2-f_Arrays" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_test.iml" group="Programmieren_2/Aufgabe_2-f_Arrays" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner.iml" group="Programmieren_2/Aufgabe_2-g_Scanner" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_main.iml" group="Programmieren_2/Aufgabe_2-g_Scanner" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_test.iml" group="Programmieren_2/Aufgabe_2-g_Scanner" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Programmieren_2.iml" filepath="$PROJECT_DIR$/.idea/modules/Programmieren_2.iml" group="Programmieren_2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="Programmieren_2/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="Programmieren_2/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="Programmieren_2/util" />
+    </modules>
+  </component>
+</project>

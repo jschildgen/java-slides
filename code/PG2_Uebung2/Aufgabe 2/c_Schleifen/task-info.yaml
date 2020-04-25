@@ -1,0 +1,10 @@
+type: output
+files:
+- name: test/output.txt
+  visible: false
+- name: src/GeradeZahlen.java
+  visible: true
+  placeholders:
+  - offset: 78
+    length: 69
+    placeholder_text: ""

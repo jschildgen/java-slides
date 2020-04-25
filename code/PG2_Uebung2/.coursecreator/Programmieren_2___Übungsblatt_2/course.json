@@ -1,0 +1,309 @@
+{
+  "summary" : "Prof. Dr. Johannes Schildgen, OTH Regensburg, Sommersemester 2020",
+  "title" : "Programmieren 2 - Übungsblatt 2",
+  "authors" : [
+    "Johannes Schildgen"
+  ],
+  "programming_language" : "JAVA",
+  "language" : "de",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "Aufgabe 1",
+      "task_list" : [
+        {
+          "name" : "a_Rechnen",
+          "files" : {
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "Gesamtpreis: 18.89\n"
+            },
+            "src/Webshop.java" : {
+              "name" : "src/Webshop.java",
+              "placeholders" : [
+                {
+                  "offset" : 179,
+                  "length" : 0,
+                  "possible_answer" : "anzahl*preis + versandkosten",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class Webshop {\n   public static void main(String[] args) {\n      int anzahl = 10;\n      double preis = 1.39;\n      double versandkosten = 4.99;\n      double gesamtpreis = ;\n      System.out.println(\"Gesamtpreis: \"+gesamtpreis);\n   }\n}"
+            }
+          },
+          "description_text" : "<html>\n<h2>Aufgabe 1 a) Rechnen</h2>\n<p>In dieser ersten Aufgabe geht es um einen Online-Shop, in welchem ein Kunde gerne 10 Dosen Hundefutter bestellen möchte.</p>\n<p><b>Ergänzen Sie die fehlende Code-Zeile, um den Gesamtpreis der Bestellung zu berechnen.</b></p>\n<p>Klicken Sie dazu in die Zeile, die mit <code>double gesamtpreis = </code>  beginnt und setzen Sie dort Ihre Berechnung ein. Im Anschluss klicken Sie bitte unten auf &quot;Check&quot;, um Ihre Lösung zu überprüfen.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        }
+      ],
+      "type" : "lesson"
+    },
+    {
+      "title" : "Aufgabe 2",
+      "task_list" : [
+        {
+          "name" : "a_Random",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.*;\n\nimport java.io.ByteArrayOutputStream;\nimport java.io.PrintStream;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class Tests {\n  private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();\n  private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();\n  private final PrintStream originalOut = System.out;\n  private final PrintStream originalErr = System.err;\n\n  @Before\n  public void setUpStreams() {\n    System.setOut(new PrintStream(outContent));\n    System.setErr(new PrintStream(errContent));\n  }\n\n  @After\n  public void restoreStreams() {\n    System.setOut(originalOut);\n    System.setErr(originalErr);\n  }\n\n  @Test\n  public void testSolution() {\n    boolean dice_6 = false;\n    boolean dice_0 = false;\n    for(int i = 1; i<= 100; i++) {\n      Wuerfeln.main(new String[0]);\n    }\n\n    List<String> output = Arrays.asList(outContent.toString().split(\"\\n\"));\n    Assert.assertFalse(\"Es wurde mal eine 0 gewuerfelt.\", output.contains(\"Ich habe eine 0 gewuerfelt.\"));\n    Assert.assertTrue(\"Es wurde nie eine 3 gewuerfelt.\", output.contains(\"Ich habe eine 3 gewuerfelt.\"));\n    Assert.assertTrue(\"Es wurde nie eine 6 gewuerfelt.\", output.contains(\"Ich habe eine 6 gewuerfelt.\"));\n  }\n}"
+            },
+            "src/Wuerfeln.java" : {
+              "name" : "src/Wuerfeln.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "import java.util.Random;",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 153,
+                  "length" : 0,
+                  "possible_answer" : " + 1",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "\n\npublic class Wuerfeln {\n    public static void main(String[] args) {\n        Random wuerfel = new Random();\n\n        int augenzahl = wuerfel.nextInt(6);\n\n        System.out.println(\"Ich habe eine \"+augenzahl+\" gewuerfelt.\");\n    }\n}"
+            }
+          },
+          "description_text" : "<html>\n<h2>Aufgabe 2 a) Random</h2>\nMit Hilfe eines Würfels lässt sich eine zufällige ganze Zahl zwischen 1 und 6 erzeugen. Mit Java lässt sich dies mit der Klasse <code>Random</code> erreichen.\n<p><b>Lösen Sie das Problem, dass die Klasse <code>Random</code> nicht gefunden werden kann.</b></p>\n<p>Tipp: IntelliJ kann fehlende Klassen-Importe automatisch mittels Alt+Enter hinzufügen.</p>\n<p><b>Sorgen Sie außerdem dafür, dass richtig gewürfelt wird! Es sollen nur die Zahlen 1, 2, 3, 4, 5 und 6 gewürfelt werden können.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "b_if",
+          "files" : {
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "Es ist eiskalt!\nEs ist kalt!\nEs ist kalt!\nEs ist warm!\nEs ist warm!\nEs ist warm!\nEs ist warm!\n"
+            },
+            "src/Wetter.java" : {
+              "name" : "src/Wetter.java",
+              "placeholders" : [
+                {
+                  "offset" : 220,
+                  "length" : 0,
+                  "possible_answer" : "if(temperatur < 7) {\n            System.out.println(\"Es ist eiskalt!\");\n         } else if(temperatur < 18) {\n            System.out.println(\"Es ist kalt!\");\n         } else {\n            System.out.println(\"Es ist warm!\");\n         }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class Wetter {\n   public static void main(String[] args) {\n      double temperatur = 1.5;\n\n      for(int tag = 1; tag <= 7; tag++) {\n         // Jeden Tag wird es 5 Grad wärmer\n         temperatur += 5;\n\n         \n\n      }\n\n   }\n}"
+            }
+          },
+          "description_text" : "<html>\n<h2>Aufgabe 2 b) if</h2>\n<p>Sie sehen hier eine Schleife, die von 1 bis 7 läuft. Dies steht in diesem Fall für eine Woche von Montag bis Sonntag. Jeden Tag wird die Temperatur 5°C wärmer.</p>\n<p><b>Schreiben Sie mittels <code>if</code> / <code>else if</code> / <code>else</code> einen Code in die Schleife, der folgende Ausgaben mittels <code>System.out.println</code> erzeugt:</b></p>\n<ul>\n    <li>Es ist eiskalt!</li>\n    <li>Es ist kalt!</li>\n    <li>Es ist warm!</li>\n</ul>\n<p>Die dafür relevanten Grenzen betragen 7°C und 18°C. Beträgt die Temperatur also 7°C oder mehr, aber weniger als 18°C, soll &quot;Es ist kalt!&quot; ausgegeben werden.</p>\n<p><em>Bonusaufgabe</em>: Schaffen Sie es, diese Aufgabe statt mittels <code>if</code> / <code>else if</code> / <code>else</code> mit dem ternären Operator <code>... ? ... : ...</code> zu lösen?</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "c_Schleifen",
+          "files" : {
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "2\n4\n6\n8\n10\n12\n14\n16\n18\n20\n"
+            },
+            "src/GeradeZahlen.java" : {
+              "name" : "src/GeradeZahlen.java",
+              "placeholders" : [
+                {
+                  "offset" : 78,
+                  "length" : 0,
+                  "possible_answer" : "for(int i = 2; i<=20; i+=2) {\n         System.out.println(i);\n      }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class GeradeZahlen {\n   public static void main(String[] args) {\n      \n   }\n}"
+            }
+          },
+          "description_text" : "<html>\n<h2>Aufgabe 2 c) Schleifen</h2>\n<p><b>Benutzen Sie eine <code>for</code>- oder <code>while</code>-Schleife, um die geraden Zahlen zwischen 2 und 20 auszugeben.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "d_enum",
+          "files" : {
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "OFFEN\nIN_ARBEIT\nFERTIG\n"
+            },
+            "src/Todo.java" : {
+              "name" : "src/Todo.java",
+              "placeholders" : [
+                {
+                  "offset" : 24,
+                  "length" : 29,
+                  "possible_answer" : "enum STATUS { OFFEN, IN_ARBEIT, FERTIG };",
+                  "placeholder_text" : "Definieren Sie den enum hier."
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class Todo {\n\n   Definieren Sie den enum hier.\n\n   public static void main(String[] args) {\n      STATUS status = STATUS.OFFEN;\n      System.out.println(status);\n\n      // Jetzt fange ich an zu arbeiten\n      status = STATUS.IN_ARBEIT;\n      System.out.println(status);\n\n      // Jetzt bin ich fertig\n      status = STATUS.FERTIG;\n      System.out.println(status);\n   }\n}"
+            }
+          },
+          "description_text" : "<html>\n<h2>Aufgabe 2 d) enum</h2>\nIn einer Todo-App soll jede Aufgabe mit einem Status versehen werden.\n\n<p><b>Definieren Sie außerhalb der <code>main</code>-Methode einen Aufzählungstypen <code>STATUS</code>, welcher die möglichen Werte <code>OFFEN</code>, <code>IN_ARBEIT</code> und <code>FERTIG</code> annehmen kann.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "e_Strings",
+          "files" : {
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "Haupstrasse 4b 01234 Teststadt\nDie Adresse befindet sich in Teststadt!\n"
+            },
+            "src/Adresse.java" : {
+              "name" : "src/Adresse.java",
+              "placeholders" : [
+                {
+                  "offset" : 235,
+                  "length" : 0,
+                  "possible_answer" : "strasse+\" \"+hausnummer+\" \"+plz+\" \"+ort",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 248,
+                  "length" : 0,
+                  "possible_answer" : "\"Teststadt\".equals(ort)",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class Adresse {\n   public static void main(String[] args) {\n      String strasse = \"Haupstrasse\";\n      String hausnummer = \"4b\";\n      String plz = \"01234\";\n      String ort = new String(\"Teststadt\");\n\n      System.out.println();\n\n      if() {\n         System.out.println(\"Die Adresse befindet sich in Teststadt!\");\n      }\n   }\n}"
+            }
+          },
+          "description_text" : "<html>\n<h2>Aufgabe 2 e) Strings</h2>\n<ul>\n    <li>Geben Sie die vollständige Adresse aus. Verwenden Sie das Format &quot;Straße Hausnummer PLZ Ort\".</li>\n    <li>Überprüfen Sie im vorliegenden <code>if</code>-Statement, ob der Ort &quot;Teststadt&quot; ist.</li>\n</ul>\n<p>Hinweis: Verwenden Sie zum Vergleich zweier Strings nicht <code>==</code>. In dieser Aufgabe wurde <code>new String(\"Teststadt\")</code> geschrieben, um zu verhindern, dass der String-Vergleich mit <code>==</code> aus Glück nämlich doch <code>true</code> ergibt. Der Compiler würde nämlich eine Optimierung vornehmen und den schon im RAM befindlichen String wiederverwenden.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "f_Arrays",
+          "files" : {
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "Hund\nKatze\nMaus\nHund\nKatze\nMaus\n"
+            },
+            "src/Tiere.java" : {
+              "name" : "src/Tiere.java",
+              "placeholders" : [
+                {
+                  "offset" : 110,
+                  "length" : 0,
+                  "possible_answer" : "tiere[0] = \"Hund\";\n      tiere[1] = \"Katze\";\n      tiere[2] = \"Maus\";",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 186,
+                  "length" : 0,
+                  "possible_answer" : "tiere[i]",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 220,
+                  "length" : 0,
+                  "possible_answer" : ": tiere",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class Tiere {\n   public static void main(String[] args) {\n      String[] tiere = new String[3];\n\n      \n\n      for(int i = 0; i < tiere.length; i++) {\n         System.out.println();\n      }\n\n      for(String tier ) {\n         System.out.println(tier);\n      }\n   }\n}"
+            }
+          },
+          "description_text" : "<html>\n<h2>Aufgabe 2 f) Arrays</h2>\n<p>Achim hat drei Tiere, einen Hund, eine Katze und eine Maus.</p>\n<p><b>Fügen Sie &quot;Hund&quot;, &quot;Katze&quot; und &quot;Maus&quot; in den Array <code>tiere</code> ein und vervollständigen Sie das <code>System.out.println</code>-Statement in der <code>for</code>-Schleife, um alle Tiere auszugeben.</b></p>\n<p><b>Geben Sie danach die Tiere nochmals aus, dieses mal jedoch in einer <code>for</code>-each-Schleife.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "g_Scanner",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.*;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.ByteArrayOutputStream;\nimport java.io.InputStream;\nimport java.io.PrintStream;\nimport java.util.List;\n\npublic class Tests {\n  private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();\n  private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();\n  private final PrintStream originalOut = System.out;\n  private final PrintStream originalErr = System.err;\n\n  @Before\n  public void setUpStreams() {\n    System.setOut(new PrintStream(outContent));\n    System.setErr(new PrintStream(errContent));\n  }\n\n  @After\n  public void restoreStreams() {\n    System.setOut(originalOut);\n    System.setErr(originalErr);\n  }\n\n  @Test\n  public void testSolution() {\n    String input = \"Frau Dr. Dings\";\n    InputStream in = new ByteArrayInputStream(input.getBytes());\n    System.setIn(in);\n    Hallo.main(new String[0]);\n    Assert.assertEquals(\"Wie heißt du? Hallo Frau Dr. Dings!\\n\", outContent.toString());\n  }\n}"
+            },
+            "src/Hallo.java" : {
+              "name" : "src/Hallo.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "import java.util.Scanner;",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 91,
+                  "length" : 0,
+                  "possible_answer" : "new Scanner(System.in);",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 159,
+                  "length" : 0,
+                  "possible_answer" : "scan.nextLine();",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "\n\npublic class Hallo {\n    public static void main(String[] args) {\n        Scanner scan = \n\n        System.out.print(\"Wie heißt du? \");\n        String name = \n\n        System.out.printf(\"Hallo %s!\\n\", name);\n    }\n}"
+            }
+          },
+          "description_text" : "<html>\n<h2>Aufgabe 2 g) Scanner</h2>\n<p>Das vorliegende Programm soll den Benutzer per Konsoleneingabe nach dem Namen fragen und daraufhin eine angepasste Begrüßung ausgeben.</p>\n<p><b>Vervollständigen Sie das Programm unter Verwendung der <code>Scanner</code>-Klasse.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "buildscript {\n    repositories {\n        mavenCentral()\n    }\n}\n\ndef printOutput(def output) {\n    return tasks.create(\"printOutput\") {\n        for (line in output.toString().readLines()) {\n            println \"#educational_plugin\" + line\n        }\n    }\n}\n\nsubprojects {\n    apply plugin: 'application'\n    apply plugin: 'java'\n\n    sourceCompatibility = 1.8\n\n    repositories {\n        mavenCentral()\n    }\n\n    dependencies {\n        testCompile group: 'junit', name: 'junit', version: '4.12'\n    }\n\n    sourceSets {\n        main {\n            java.srcDir 'src'\n        }\n        test {\n            java.srcDir 'test'\n        }\n    }\n\n    mainClassName = project.hasProperty(\"mainClass\") ? project.getProperty(\"mainClass\") : \"\"\n\n    def runOutput = new ByteArrayOutputStream()\n    tasks.run.setStandardOutput(runOutput)\n    tasks.run.doLast { printOutput(runOutput) }\n}\n\nproject(':util') {\n    dependencies {\n        compile group: 'junit', name: 'junit', version: '4.12'\n    }\n}\n\nconfigure(subprojects.findAll {it.name != 'util'}) {\n  dependencies {\n    compile project(':util').sourceSets.main.output\n    testCompile project(':util').sourceSets.test.output\n  }\n}\n"
+    }
+  ],
+  "version" : 11
+}

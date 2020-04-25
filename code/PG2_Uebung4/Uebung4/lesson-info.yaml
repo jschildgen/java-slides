@@ -1,0 +1,8 @@
+type: framework
+content:
+- 1_Banking
+- 2a_Waehrung
+- 2b_BigDecimal
+- 2c_auszahlen
+- 2d_ueberweisen
+- 2e_compareTo

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PG2_Uebung3.iml" filepath="$PROJECT_DIR$/.idea/PG2_Uebung3.iml" group="PG2_Uebung3" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/Uebung3-2a_toString.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/Uebung3-2a_toString.iml" group="PG2_Uebung3/Uebung3-2a_toString" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/Uebung3-2a_toString_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/Uebung3-2a_toString_main.iml" group="PG2_Uebung3/Uebung3-2a_toString" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/Uebung3-2a_toString_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/Uebung3-2a_toString_test.iml" group="PG2_Uebung3/Uebung3-2a_toString" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/Uebung3-2b_Random.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/Uebung3-2b_Random.iml" group="PG2_Uebung3/Uebung3-2b_Random" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/Uebung3-2b_Random_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/Uebung3-2b_Random_main.iml" group="PG2_Uebung3/Uebung3-2b_Random" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/Uebung3-2b_Random_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/Uebung3-2b_Random_test.iml" group="PG2_Uebung3/Uebung3-2b_Random" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/Uebung3-2c_Methode.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/Uebung3-2c_Methode.iml" group="PG2_Uebung3/Uebung3-2c_Methode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/Uebung3-2c_Methode_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/Uebung3-2c_Methode_main.iml" group="PG2_Uebung3/Uebung3-2c_Methode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/Uebung3-2c_Methode_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/Uebung3-2c_Methode_test.iml" group="PG2_Uebung3/Uebung3-2c_Methode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/Uebung3-2d_Spiel.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/Uebung3-2d_Spiel.iml" group="PG2_Uebung3/Uebung3-2d_Spiel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/Uebung3-2d_Spiel_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/Uebung3-2d_Spiel_main.iml" group="PG2_Uebung3/Uebung3-2d_Spiel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/Uebung3-2d_Spiel_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/Uebung3-2d_Spiel_test.iml" group="PG2_Uebung3/Uebung3-2d_Spiel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/Uebung3-Aufgabe_1_Klasse_Karte.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/Uebung3-Aufgabe_1_Klasse_Karte.iml" group="PG2_Uebung3/Uebung3-Aufgabe_1_Klasse_Karte" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/Uebung3-Aufgabe_1_Klasse_Karte_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/Uebung3-Aufgabe_1_Klasse_Karte_main.iml" group="PG2_Uebung3/Uebung3-Aufgabe_1_Klasse_Karte" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/Uebung3-Aufgabe_1_Klasse_Karte_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/Uebung3-Aufgabe_1_Klasse_Karte_test.iml" group="PG2_Uebung3/Uebung3-Aufgabe_1_Klasse_Karte" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="PG2_Uebung3/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="PG2_Uebung3/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="PG2_Uebung3/util" />
+    </modules>
+  </component>
+</project>

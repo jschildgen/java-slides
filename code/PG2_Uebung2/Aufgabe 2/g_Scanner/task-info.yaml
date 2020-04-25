@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: src/Hallo.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 25
+    placeholder_text: ""
+  - offset: 116
+    length: 23
+    placeholder_text: ""
+  - offset: 207
+    length: 16
+    placeholder_text: ""

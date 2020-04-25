@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PG2_Uebung5.iml" filepath="$PROJECT_DIR$/.idea/PG2_Uebung5.iml" group="PG2_Uebung5" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/1_Spieler/Uebung5-1_Spieler.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/1_Spieler/Uebung5-1_Spieler.iml" group="PG2_Uebung5/Uebung5-1_Spieler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/1_Spieler/Uebung5-1_Spieler_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/1_Spieler/Uebung5-1_Spieler_main.iml" group="PG2_Uebung5/Uebung5-1_Spieler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/1_Spieler/Uebung5-1_Spieler_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/1_Spieler/Uebung5-1_Spieler_test.iml" group="PG2_Uebung5/Uebung5-1_Spieler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2a_instanceof/Uebung5-2a_instanceof.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2a_instanceof/Uebung5-2a_instanceof.iml" group="PG2_Uebung5/Uebung5-2a_instanceof" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2a_instanceof/Uebung5-2a_instanceof_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2a_instanceof/Uebung5-2a_instanceof_main.iml" group="PG2_Uebung5/Uebung5-2a_instanceof" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2a_instanceof/Uebung5-2a_instanceof_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2a_instanceof/Uebung5-2a_instanceof_test.iml" group="PG2_Uebung5/Uebung5-2a_instanceof" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2b_Computergegner_Staerke/Uebung5-2b_Computergegner_Staerke.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2b_Computergegner_Staerke/Uebung5-2b_Computergegner_Staerke.iml" group="PG2_Uebung5/Uebung5-2b_Computergegner_Staerke" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2b_Computergegner_Staerke/Uebung5-2b_Computergegner_Staerke_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2b_Computergegner_Staerke/Uebung5-2b_Computergegner_Staerke_main.iml" group="PG2_Uebung5/Uebung5-2b_Computergegner_Staerke" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2b_Computergegner_Staerke/Uebung5-2b_Computergegner_Staerke_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2b_Computergegner_Staerke/Uebung5-2b_Computergegner_Staerke_test.iml" group="PG2_Uebung5/Uebung5-2b_Computergegner_Staerke" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2c_Overriding/Uebung5-2c_Overriding.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2c_Overriding/Uebung5-2c_Overriding.iml" group="PG2_Uebung5/Uebung5-2c_Overriding" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2c_Overriding/Uebung5-2c_Overriding_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2c_Overriding/Uebung5-2c_Overriding_main.iml" group="PG2_Uebung5/Uebung5-2c_Overriding" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2c_Overriding/Uebung5-2c_Overriding_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2c_Overriding/Uebung5-2c_Overriding_test.iml" group="PG2_Uebung5/Uebung5-2c_Overriding" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2d_Casting/Uebung5-2d_Casting.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2d_Casting/Uebung5-2d_Casting.iml" group="PG2_Uebung5/Uebung5-2d_Casting" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2d_Casting/Uebung5-2d_Casting_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2d_Casting/Uebung5-2d_Casting_main.iml" group="PG2_Uebung5/Uebung5-2d_Casting" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung5/2d_Casting/Uebung5-2d_Casting_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung5/2d_Casting/Uebung5-2d_Casting_test.iml" group="PG2_Uebung5/Uebung5-2d_Casting" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="PG2_Uebung5/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="PG2_Uebung5/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="PG2_Uebung5/util" />
+    </modules>
+  </component>
+</project>

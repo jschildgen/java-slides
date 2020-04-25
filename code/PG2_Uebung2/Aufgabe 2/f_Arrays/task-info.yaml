@@ -1,0 +1,16 @@
+type: output
+files:
+- name: test/output.txt
+  visible: false
+- name: src/Tiere.java
+  visible: true
+  placeholders:
+  - offset: 110
+    length: 69
+    placeholder_text: ""
+  - offset: 255
+    length: 8
+    placeholder_text: ""
+  - offset: 297
+    length: 7
+    placeholder_text: ""

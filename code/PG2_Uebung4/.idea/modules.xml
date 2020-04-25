@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PG2_Uebung4.iml" filepath="$PROJECT_DIR$/.idea/PG2_Uebung4.iml" group="PG2_Uebung4" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/Uebung4-1_Banking.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/Uebung4-1_Banking.iml" group="PG2_Uebung4/Uebung4-1_Banking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/Uebung4-1_Banking_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/Uebung4-1_Banking_main.iml" group="PG2_Uebung4/Uebung4-1_Banking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/Uebung4-1_Banking_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/Uebung4-1_Banking_test.iml" group="PG2_Uebung4/Uebung4-1_Banking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/Uebung4-2a_Waehrung.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/Uebung4-2a_Waehrung.iml" group="PG2_Uebung4/Uebung4-2a_Waehrung" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/Uebung4-2a_Waehrung_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/Uebung4-2a_Waehrung_main.iml" group="PG2_Uebung4/Uebung4-2a_Waehrung" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/Uebung4-2a_Waehrung_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/Uebung4-2a_Waehrung_test.iml" group="PG2_Uebung4/Uebung4-2a_Waehrung" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/Uebung4-2b_BigDecimal.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/Uebung4-2b_BigDecimal.iml" group="PG2_Uebung4/Uebung4-2b_BigDecimal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/Uebung4-2b_BigDecimal_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/Uebung4-2b_BigDecimal_main.iml" group="PG2_Uebung4/Uebung4-2b_BigDecimal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/Uebung4-2b_BigDecimal_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/Uebung4-2b_BigDecimal_test.iml" group="PG2_Uebung4/Uebung4-2b_BigDecimal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/Uebung4-2c_auszahlen.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/Uebung4-2c_auszahlen.iml" group="PG2_Uebung4/Uebung4-2c_auszahlen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/Uebung4-2c_auszahlen_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/Uebung4-2c_auszahlen_main.iml" group="PG2_Uebung4/Uebung4-2c_auszahlen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/Uebung4-2c_auszahlen_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/Uebung4-2c_auszahlen_test.iml" group="PG2_Uebung4/Uebung4-2c_auszahlen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/Uebung4-2d_ueberweisen.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/Uebung4-2d_ueberweisen.iml" group="PG2_Uebung4/Uebung4-2d_ueberweisen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/Uebung4-2d_ueberweisen_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/Uebung4-2d_ueberweisen_main.iml" group="PG2_Uebung4/Uebung4-2d_ueberweisen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/Uebung4-2d_ueberweisen_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/Uebung4-2d_ueberweisen_test.iml" group="PG2_Uebung4/Uebung4-2d_ueberweisen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/Uebung4-2e_compareTo.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/Uebung4-2e_compareTo.iml" group="PG2_Uebung4/Uebung4-2e_compareTo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/Uebung4-2e_compareTo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/Uebung4-2e_compareTo_main.iml" group="PG2_Uebung4/Uebung4-2e_compareTo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/Uebung4-2e_compareTo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/Uebung4-2e_compareTo_test.iml" group="PG2_Uebung4/Uebung4-2e_compareTo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="PG2_Uebung4/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="PG2_Uebung4/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="PG2_Uebung4/util" />
+    </modules>
+  </component>
+</project>

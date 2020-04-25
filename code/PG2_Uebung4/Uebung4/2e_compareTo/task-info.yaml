@@ -1,0 +1,58 @@
+type: output
+files:
+- name: src/Konto.java
+  visible: true
+  placeholders:
+  - offset: 110
+    length: 18
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2d_ueberweisen
+      file: src/Konto.java
+      placeholder: 1
+      is_visible: false
+  - offset: 135
+    length: 47
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2d_ueberweisen
+      file: src/Konto.java
+      placeholder: 2
+      is_visible: false
+  - offset: 187
+    length: 44
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2d_ueberweisen
+      file: src/Konto.java
+      placeholder: 3
+      is_visible: false
+  - offset: 262
+    length: 55
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2d_ueberweisen
+      file: src/Konto.java
+      placeholder: 4
+      is_visible: false
+- name: src/Bank.java
+  visible: true
+  placeholders:
+  - offset: 416
+    length: 137
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2d_ueberweisen
+      file: src/Bank.java
+      placeholder: 1
+      is_visible: false
+  - offset: 263
+    length: 53
+    placeholder_text: ""
+- name: test/output.txt
+  visible: false

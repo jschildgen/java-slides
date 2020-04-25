@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Aufgabe_1-a__Gesamtpreis_berechnen_main" target="1.8" />
+      <module name="Aufgabe_1-a__Gesamtpreis_berechnen_test" target="1.8" />
+      <module name="Aufgabe_1-a__main" target="1.8" />
+      <module name="Aufgabe_1-a__Rechnen_main" target="1.8" />
+      <module name="Aufgabe_1-a__Rechnen_test" target="1.8" />
+      <module name="Aufgabe_1-a__test" target="1.8" />
+      <module name="Aufgabe_1-a_Rechnen_main" target="1.8" />
+      <module name="Aufgabe_1-a_Rechnen_test" target="1.8" />
+      <module name="Aufgabe_1-b__main" target="1.8" />
+      <module name="Aufgabe_1-b__test" target="1.8" />
+      <module name="Aufgabe_1-task1_main" target="1.8" />
+      <module name="Aufgabe_1-task1_test" target="1.8" />
+      <module name="Aufgabe_1-task2_main" target="1.8" />
+      <module name="Aufgabe_1-task2_test" target="1.8" />
+      <module name="Aufgabe_2-a__main" target="1.8" />
+      <module name="Aufgabe_2-a__Random_main" target="1.8" />
+      <module name="Aufgabe_2-a__Random_test" target="1.8" />
+      <module name="Aufgabe_2-a__test" target="1.8" />
+      <module name="Aufgabe_2-a__Würfeln_main" target="1.8" />
+      <module name="Aufgabe_2-a__Würfeln_test" target="1.8" />
+      <module name="Aufgabe_2-a_Random_main" target="1.8" />
+      <module name="Aufgabe_2-a_Random_test" target="1.8" />
+      <module name="Aufgabe_2-b__if_main" target="1.8" />
+      <module name="Aufgabe_2-b__if_test" target="1.8" />
+      <module name="Aufgabe_2-b__main" target="1.8" />
+      <module name="Aufgabe_2-b__test" target="1.8" />
+      <module name="Aufgabe_2-b_if_main" target="1.8" />
+      <module name="Aufgabe_2-b_if_test" target="1.8" />
+      <module name="Aufgabe_2-c__Schleife_main" target="1.8" />
+      <module name="Aufgabe_2-c__Schleife_test" target="1.8" />
+      <module name="Aufgabe_2-c__Schleifen_main" target="1.8" />
+      <module name="Aufgabe_2-c__Schleifen_test" target="1.8" />
+      <module name="Aufgabe_2-c__while-Schleife_main" target="1.8" />
+      <module name="Aufgabe_2-c__while-Schleife_test" target="1.8" />
+      <module name="Aufgabe_2-c_Schleifen_main" target="1.8" />
+      <module name="Aufgabe_2-c_Schleifen_test" target="1.8" />
+      <module name="Aufgabe_2-d__enum_main" target="1.8" />
+      <module name="Aufgabe_2-d__enum_test" target="1.8" />
+      <module name="Aufgabe_2-d_enum_main" target="1.8" />
+      <module name="Aufgabe_2-d_enum_test" target="1.8" />
+      <module name="Aufgabe_2-e__Strings_main" target="1.8" />
+      <module name="Aufgabe_2-e__Strings_test" target="1.8" />
+      <module name="Aufgabe_2-e_Strings_main" target="1.8" />
+      <module name="Aufgabe_2-e_Strings_test" target="1.8" />
+      <module name="Aufgabe_2-f__Arrays_main" target="1.8" />
+      <module name="Aufgabe_2-f__Arrays_test" target="1.8" />
+      <module name="Aufgabe_2-f_Arrays_main" target="1.8" />
+      <module name="Aufgabe_2-f_Arrays_test" target="1.8" />
+      <module name="Aufgabe_2-g__Scanner_main" target="1.8" />
+      <module name="Aufgabe_2-g__Scanner_test" target="1.8" />
+      <module name="Aufgabe_2-g__Texteingabe_main" target="1.8" />
+      <module name="Aufgabe_2-g__Texteingabe_test" target="1.8" />
+      <module name="Aufgabe_2-g_Scanner_main" target="1.8" />
+      <module name="Aufgabe_2-g_Scanner_test" target="1.8" />
+      <module name="Aufgabe_2-task2_main" target="1.8" />
+      <module name="Aufgabe_2-task2_test" target="1.8" />
+      <module name="Aufgabe_2-task3_main" target="1.8" />
+      <module name="Aufgabe_2-task3_test" target="1.8" />
+      <module name="lesson1-task1_main" target="1.8" />
+      <module name="lesson1-task1_test" target="1.8" />
+      <module name="util_main" target="1.8" />
+      <module name="util_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,48 @@
+type: edu
+files:
+- name: src/Konto.java
+  visible: true
+  placeholders:
+  - offset: 110
+    length: 18
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2b_BigDecimal
+      file: src/Konto.java
+      placeholder: 1
+      is_visible: false
+  - offset: 135
+    length: 47
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2b_BigDecimal
+      file: src/Konto.java
+      placeholder: 2
+      is_visible: false
+  - offset: 187
+    length: 44
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2b_BigDecimal
+      file: src/Konto.java
+      placeholder: 3
+      is_visible: false
+  - offset: 262
+    length: 55
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2b_BigDecimal
+      file: src/Konto.java
+      placeholder: 4
+      is_visible: false
+  - offset: 564
+    length: 98
+    placeholder_text: ""
+- name: src/Bank.java
+  visible: true
+- name: test/Tests.java
+  visible: false

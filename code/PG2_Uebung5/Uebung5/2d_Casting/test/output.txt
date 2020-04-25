@@ -1,0 +1,4 @@
+Computer (Staerke 3)
+Computer (Staerke 2)
+Anzahl Menschen: 0
+Anzahl Computer: 2

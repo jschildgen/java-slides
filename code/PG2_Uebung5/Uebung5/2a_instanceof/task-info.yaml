@@ -1,0 +1,32 @@
+type: output
+files:
+- name: src/Spieler.java
+  visible: true
+- name: src/MauMau.java
+  visible: true
+  placeholders:
+  - offset: 292
+    length: 189
+    placeholder_text: ""
+  - offset: 533
+    length: 121
+    placeholder_text: ""
+  - offset: 186
+    length: 59
+    placeholder_text: ""
+- name: src/MenschlicherSpieler.java
+  visible: true
+- name: src/ComputerGegner.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 112
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung5
+      task: 1_Spieler
+      file: src/ComputerGegner.java
+      placeholder: 1
+      is_visible: false
+- name: test/output.txt
+  visible: false

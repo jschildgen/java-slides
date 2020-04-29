@@ -4,11 +4,11 @@ public class Konto {
     private long kontonr;
     private BigDecimal kontostand;
 
-    private static long next_kontonummer = 555555L;
+    private static long next_kontonr = 555555L;
 
     public Konto() {
-        kontonr = next_kontonummer;
-        next_kontonummer++;
+        kontonr = next_kontonr;
+        next_kontonr++;
     }
 
     public long getKontonr() {

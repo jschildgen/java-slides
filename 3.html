@@ -67,7 +67,6 @@
                     class Studierender {
                       -matrikelnr : int
                       +Studierender(name : String, matrikelnr : int)
-                      +setMatrikelnr(matrnr : int)
                       +getMatrikelnr() : int
                     }
             
@@ -136,7 +135,7 @@
                     <img class="fragment noborder" data-fragment-index="2" style="position: absolute; right:0cm; top:8.8cm" src="img/2/override.png" alt="Overriding-Methoden in IntelliJ automatisch generieren">
                     
                     <div class="poll fragment" style="bottom:-100px">
-                      <h1>Wie sieht der Rückgabewert von Studierender.getDetails() aus?</h1>
+                      <h1>Wie sieht der Rückgabewert von q.getDetails() aus?</h1>
                         <ul>
                           <li>123457 Ute</li>
                           <li>123457 / Ute / 19</li>
@@ -253,7 +252,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <h4>Abstrakte Klassen</h4>
                     <p class="small">... können nicht instanziiert werden und sind nur zum Vererben da.</p>
                     <pre style="width: 14cm; margin-left: 1cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#3'></code></pre>
-                    <p class="small"><strike><code>Person p = new Person();</code></strike></p>
+                    <p class="small"><strike><code>Lebewesen p = new Lebewesen();</code></strike></p>
 
                     <div class="fragment">
                       <h4>Abstrakte Methoden</h4>
@@ -265,7 +264,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     <img style="position: absolute; right:-0.5cm; max-height: 3cm; top:5.7cm" uml="abstract class Lebewesen { 
                       {abstract}+getDetails() : String  
                     } "/>
-                    <aside class="notes">Von abstrakten Klassen lassen sich keine direkten Objekte erzeugen. Es ist lediglich möglich, dass eine Subklasse von der abstrakten Klasse erbt, die dann nicht abstrakt und damit instanziierbar ist. Diese Subklasse muss alle abstrakten Methoden überschreiben. Es darf in der abstrakten Klasse auch nicht-abstrakte Methoden geben. Im UML-Diagramm werden Namen von abstrakten Klassen und Methoden <em>kursiv</em>   geschrieben.</aside>
+                    <aside class="notes">Von abstrakten Klassen lassen sich keine direkten Objekte erzeugen. Es ist lediglich möglich, dass eine Subklasse von der abstrakten Klasse erbt, die dann nicht abstrakt und damit instanziierbar ist. Diese Subklasse muss alle abstrakten Methoden überschreiben. Es darf in der abstrakten Klasse auch nicht-abstrakte Methoden geben. Im UML-Diagramm werden Namen von abstrakten Klassen und Methoden <em>kursiv</em>  geschrieben.</aside>
                   </section>
 
                   <section>
@@ -304,6 +303,42 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     }
                     Printable <|.. Person "/>
                     <aside class="notes">Da unsere Variable <code>p</code> vom Typ <code>Printable</code> ist, kann es Objekte speichern, die von einer Klasse sind, welche <code>Printable</code> implementieren, z. B. unsere <code>Personen</code>-Klasse. Auf dem <code>Printable</code>-Objekt lassen sich dann auch alle Methoden des Interfaces (hier <code>print()</code> aufrufen.</aside>
+                  </section>
+
+                  <section>
+                    <h3>Schnittstellen in UML</h3>
+                    <img style="max-height: 5cm;" uml="interface Printable <<interface>> { 
+                      +print()  
+                    }
+                    class Person {
+                      -name : String
+                      -alter : int
+                      +Person(name : String)
+                      +setName(name : String)
+                      +getName() : String
+                      +setAlter(alter : int)
+                      +getAlter() : int
+                      +erhoeheAlter()
+                      +print()
+                    }
+                    Printable <|..r Person : \t\t\t"/>
+                    <div class="fragment">
+                      <h4>Lollipop-Notation</h4>
+                      <img style="max-height: 5.5cm; margin-top: -8mm;" uml="
+                      class Person {
+                        -name : String
+                        -alter : int
+                        +Person(name : String)
+                        +setName(name : String)
+                        +getName() : String
+                        +setAlter(alter : int)
+                        +getAlter() : int
+                        +erhoeheAlter()
+                        +print()
+                      }
+                      iiiiiiiiiiiPrintable ()- Person : \t\t"/>
+                    </div>
+                    <aside class="notes">In UML-Klassendiagrammen kann man eine Schnittstelle ähnlich wie eine Klasse darstellen, die man mit der Annotation <em>&laquo;interface&raquo;</em> versieht. In der unten dargestellten Lollipop-Notation können keine Methoden dargestellt werden. Sie dient nur zur Info, dass das eine Klasse eine bestimmte Schnittstelle implementiert. Sie dient nicht dazu, die Schnittstelle zu definieren.</aside>
                   </section>
 
                   <section>
@@ -466,7 +501,6 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     class Studierender {
                       -matrikelnr : int
                       +Studierender(name : String, matrikelnr : int)
-                      +setMatrikelnr(matrnr : int)
                       +getMatrikelnr() : int
                     }
 

@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 117
-    length: 47
+    length: 43
     placeholder_text: ""
     dependency:
       lesson: Uebung4
@@ -12,11 +12,11 @@ files:
       file: src/Konto.java
       placeholder: 1
       is_visible: false
-  - offset: 169
+  - offset: 165
     length: 44
     placeholder_text: ""
-  - offset: 244
-    length: 55
+  - offset: 240
+    length: 47
     placeholder_text: ""
     dependency:
       lesson: Uebung4

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5ab4c4b-c8c6-41f1-a77c-5acc4ee6c66d" name="Default Changelist" comment="" />
+    <list default="true" id="f5ab4c4b-c8c6-41f1-a77c-5acc4ee6c66d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.coursecreator/PG2_Uebung4/course.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +30,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1aJ7ciBgsus8kwNsyi7AXhmfZS6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,6 +43,11 @@
     <property name="Edu.Author.Name" value="Johannes" />
     <property name="Edu.CourseCreator.LastArchiveLocation" value="/media/tmpfs" />
     <property name="HINTS_IN_TASK_DESCRIPTION" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
   <component name="RunManager" selected="Application.Main (5)">
@@ -86,6 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586441923239</updated>
+      <workItem from="1588007051313" duration="19000" />
     </task>
     <servers />
   </component>

@@ -54,12 +54,12 @@ img.noborder {
 }
 
 /* colors: http://paletton.com/#uid=73i0u0kjAAl9uSqf1JJn-uIsLrg */
-div.green, i.green { color:rgba(66, 169, 170, 0.99) }
-div.yellow, i.yellow { color:#ffcb63 }
-div.orange, i.orange { color:#ffaa63 }
-div.gray, i.gray { color: #797d9a }
-div.red, i.red { color: #ff6363 }
-div.blue, i.blue { color: #5473b9 }
+div.green, i.green, p.green { color:rgba(66, 169, 170, 0.99) }
+div.yellow, i.yellow, p.yellow { color:#ffcb63 }
+div.orange, i.orange, p.orange { color:#ffaa63 }
+div.gray, i.gray, p.gray { color: #797d9a }
+div.red, i.red, p.red { color: #ff6363 }
+div.blue, i.blue, p.blue { color: #5473b9 }
 
 .sl-block-content.green { background-color:rgba(66, 169, 170, 0.99); color:#ffffff }
 .sl-block-content.yellow { background-color:#ffcb63 }

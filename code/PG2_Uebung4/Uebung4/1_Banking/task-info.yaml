@@ -6,10 +6,10 @@ files:
   visible: true
   placeholders:
   - offset: 117
-    length: 47
+    length: 43
     placeholder_text: ""
-  - offset: 195
-    length: 55
+  - offset: 191
+    length: 47
     placeholder_text: ""
 - name: src/Bank.java
   visible: true

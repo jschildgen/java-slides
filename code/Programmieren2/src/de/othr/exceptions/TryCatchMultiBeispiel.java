@@ -9,11 +9,11 @@ public class TryCatchMultiBeispiel {
         scan = new Scanner(System.in);
 
         wochentag_weahlen();
-        wochentag_weahlen2();
+        //wochentag_weahlen2();
     }
 
     public static String wochentag_weahlen() {
-        String[] tage = { "So", "Mo", "Di", "Mi", "Do", "Fr", "Sa" };
+        String[] tage = {"So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"};
         System.out.print("Bitte Wochentag wählen [0-6]: ");
         try {
             int index = Integer.parseInt(scan.nextLine());
@@ -28,13 +28,25 @@ public class TryCatchMultiBeispiel {
     }
 
     public static String wochentag_weahlen2() {
-        String[] tage = { "So", "Mo", "Di", "Mi", "Do", "Fr", "Sa" };
+        String[] tage = {"So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"};
+        System.out.print("Bitte Wochentag wählen [0-6]: ");
+        try {
+            int index = Integer.parseInt(scan.nextLine());
+            return tage[index];
+        } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+            System.out.println("Fehler: " + e.getMessage());
+            return wochentag_weahlen();
+        }
+    }
+
+    public static String wochentag_weahlen3() {
+        String[] tage = {"So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"};
         System.out.print("Bitte Wochentag wählen [0-6]: ");
         try {
             int index = Integer.parseInt(scan.nextLine());
             return tage[index];
         } catch (Exception e) {
-            System.out.println("Fehler: "+e.getMessage());
+            System.out.println("Fehler: " + e.getMessage());
             return wochentag_weahlen();
         }
     }

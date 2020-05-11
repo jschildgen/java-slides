@@ -70,11 +70,14 @@
                 <section>
                   <h3>Beispiel: Inhalt einer Datei lesen</h3>
                   <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesen.java#14,16-25,27'></code></pre>
+                  
+                  <div class="fragment">
                   <ul class="small">
                     <li><code>new FileReader</code> kann eine <code>FileNotFoundException</code> werfen</li>
                     <li><code>BufferedReader.readLine()</code> kann eine <code>IOException</code> werfen</li>
                   </ul>
                   <p class="small" style="margin-left:2cm">&Rightarrow; entweder abfangen oder weiterwerfen!</p>
+                  </div>
                   <aside class="notes">IDEs wie IntelliJ zeigen an, welche Exceptions behandelt werden müssen. Das hier gezeigte Programm kann nicht kompiliert werden, bevor man sich um die Behandlung der beiden Exceptions kümmert. </aside>
                 </section>
 
@@ -151,6 +154,18 @@
                   <p class="small">Wenn eine Exception nicht abgefangen wird, wird sie weitergeworfen.</p>
                   <pre style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#13-24'></code></pre>
                   
+
+                  <div class="poll fragment" style="bottom:-120px"> 
+                    <h1>Wo wird jetzt die IOException abgefangen?</h1>
+                        <ul>
+                          <li>Wird nun automatisch abgefangen und ignoriert</li>
+                          <li data-poll="correct">Muss nun dort abgefangen werden, wo die Methode printDatei augerufen wird</li>
+                          <li>Muss nun in der Klasse FileReader abgefangen werden</li>
+                          <li>Im Code-Beispiel fehlt try/catch</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                     </div>
+
                   <aside class="notes">Hat die Methode eine <code>throws</code>-Klausel, zeigt dies, dass bei einem Methodenaufruf möglicherweise die genannte Exception geworfen wird. Jemand, der die Methode aufruft, muss sich gemäß der Catch-or-Throw-Regel darum kümmern, diese Exception entweder abzufangen oder ebenfalls weiterzuwerfen.</aside>
                 </section>
 

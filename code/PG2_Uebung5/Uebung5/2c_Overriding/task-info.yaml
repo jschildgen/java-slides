@@ -6,7 +6,7 @@ files:
   visible: true
   placeholders:
   - offset: 186
-    length: 59
+    length: 58
     placeholder_text: ""
     dependency:
       lesson: Uebung5

@@ -299,7 +299,15 @@ public void setName(String name) {
         <h3><code>static</code>: Statische Attribute</h3>
         <div class="trackinfo"><i class="fas fa-book"></i> 11.1</div>
         <p class="small">Mit <code>static</code> gekennzeichnete Attribute existieren nur einmal (nicht pro Objekt).</p>
-        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personen/Haustier.java#3-18'></code></pre>  
+        <pre style="width:19.5cm; margin-left: 0px;"><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personen/Haustier.java#3-18'></code></pre>  
+        <img style="position: absolute; right:0cm; top:4.5cm; width:5.5cm" uml="class Haustier {
+          {static}+TIERART : String = &quot;Hund&quot;
+          {static}+farbe : String
+          -name : String
+          +Haustier(name : String)
+          {static}+main(args : String[])
+        }        
+        "/>
         <aside class="notes">Ein typischer Einsatzzweck für statische Attribute sind Konstanten (hier: <code>TIERART</code>). Was hier mit dem statischen Attribut <code>farbe</code> gemacht wurde, ist jedoch eher unüblich. Jedes Objekt hat stets den gleichen Wert in diesem Attribut. Auf statische Attribute kann man auch mit <code>Klassenname.attribut</code> zugreifen.</aside>
       </section>
 
@@ -313,6 +321,14 @@ public void setName(String name) {
           <li>... können keine nicht-statischen Methoden aufrufen.</li>
         </ul>
         <pre><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/rechnen/Geld.java#3-9,14-19'></code></pre>  
+        
+        <img style="position: absolute; right:0cm; top:1.8cm; width:7.5cm; z-index: 1;" uml="class Geld {
+          {static}+WAEHRUNG : String = &quot;EUR&quot;
+          {static}+addieren(a : double, b : double) : double
+          {static}+main(args : String[])
+        }        
+        "/>
+        
         <aside class="notes">In der statischen Methode <code>main</code> kann die andere statische Methode <code>addieren</code> aufgerufen werden. Da sie sich hier in der gleichen Klasse befindet, müsste man auch nicht <code>Geld.</code> vor die Methode schreiben.</aside>
       </section>
 
@@ -433,7 +449,7 @@ public void setName(String name) {
           +getOrt() : String
           +setOrt(ort : String)
         }
-        Person -r- Adresse : adresse
+        Person &quot;*&quot; ---r &quot;1&quot; Adresse : \t
         "/>
 
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#57,68,70'></code></pre>  

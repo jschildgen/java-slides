@@ -505,6 +505,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     }
 
                     class Kreditkarte <<static>> {
+                      {static} +waehrung : String
                       -kartenr : int
                       +setKartenr(kartenr : int)
                       +getKartenr() : int  
@@ -515,9 +516,9 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                     Person <|-- Studierender
                     Printable <|..r Person  : \t
                     Person +-- Kreditkarte
-                    Person &quot;1&quot; ---r &quot;*&quot; Adresse : \t "/>
+                    Person &quot;*&quot; ---r &quot;*&quot; Adresse : \t "/>
 
-                    <aside class="notes">Zu sehen ist hier ein UML-Klassendiagramm mit einer Klasse (<code>Person</code>), ein Interface (<code>Printable</code>), eine Subklasse (<code>Studierender</code>), eine innere und statische Klasse (<code>Kreditkarte</code>) sowie eine abstrakte Klasse (<code>Lebewesen</code>). Rechts ist eine Klasse <code>Adresse</code> zu sehen und eine Eins-zu-viele-Assoziation zwischen Personen und Adressen. Eine Person hat beliebig viele Adressen (<code>*</code>), und ein Adress-Objekt gehört stets zu nur einer Person (<code>1</code>).</aside>
+                    <aside class="notes">Zu sehen ist hier ein UML-Klassendiagramm mit einer Klasse (<code>Person</code>), ein Interface (<code>Printable</code>), eine Subklasse (<code>Studierender</code>), eine innere und statische Klasse (<code>Kreditkarte</code>) sowie eine abstrakte Klasse (<code>Lebewesen</code>). Rechts ist eine Klasse <code>Adresse</code> zu sehen und eine Viele-zu-viele-Assoziation zwischen Personen und Adressen. Eine Person hat beliebig viele Adressen (<code>*</code>), und ein Adress-Objekt kann auch zu mehreren Person gehören (<code>*</code>). Das Attribut <code>waehrung</code> ist statisch und wird unterstrichen.</aside>
                   </section>
 
                   <section>

@@ -1,62 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a1d5a1a8-a52c-4691-8daa-a4a33343b4b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung3/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung3/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.coursecreator/PG2_Uebung4/course.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coursecreator/PG2_Uebung5/course.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PG2_Uebung5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PG2_Uebung5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/1_Spieler/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/1_Spieler/build/reports/tests/test/classes/Tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/1_Spieler/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/1_Spieler/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/1_Spieler/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/1_Spieler/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/1_Spieler/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/1_Spieler/build/test-results/test/TEST-Tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/1_Spieler/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/1_Spieler/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/reports/tests/test/classes/Tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/test-results/test/TEST-Tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2c_Overriding/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung5/1_Spieler/src/ComputerGegner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/1_Spieler/src/ComputerGegner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung5/1_Spieler/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/1_Spieler/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung5/2a_instanceof/src/MauMau.java" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2a_instanceof/src/MauMau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung5/2a_instanceof/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2a_instanceof/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung5/2b_Computergegner_Staerke/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2b_Computergegner_Staerke/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung5/2c_Overriding/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2c_Overriding/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung5/2d_Casting/src/MauMau.java" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2d_Casting/src/MauMau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung5/2d_Casting/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2d_Casting/task-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,11 +149,27 @@
       <workItem from="1588007369761" duration="22000" />
       <workItem from="1588007393785" duration="1818000" />
       <workItem from="1588009314453" duration="118000" />
+      <workItem from="1588232681957" duration="683000" />
+      <workItem from="1588246085868" duration="2261000" />
+      <workItem from="1588319041972" duration="341000" />
+      <workItem from="1588845274104" duration="756000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="609" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1587632447429">

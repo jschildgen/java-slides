@@ -5,15 +5,15 @@ files:
 - name: src/MauMau.java
   visible: true
   placeholders:
-  - offset: 292
-    length: 189
-    placeholder_text: ""
-  - offset: 533
+  - offset: 226
+    length: 58
+    placeholder_text: Definieren Sie hier Ihre Variablen
+  - offset: 333
+    length: 176
+    placeholder_text: instanceof-Ueberpruefungen hier
+  - offset: 574
     length: 121
-    placeholder_text: ""
-  - offset: 186
-    length: 59
-    placeholder_text: ""
+    placeholder_text: Hier soll die Ausgabe erfolgen.
 - name: src/MenschlicherSpieler.java
   visible: true
 - name: src/ComputerGegner.java

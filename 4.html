@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Programmieren 2 - Kapitel 4 - Exceptions und Dateien</title>
+		<title>Programmieren 2 - Kapitel 4 - Exception-Handling</title>
 
 		<link rel="stylesheet" href="reveal.js/css/reset.css">
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
@@ -42,8 +42,8 @@
                     <h4 style="text-align:center"><b>Prof. Dr.-Ing. Johannes Schildgen</b><br>
                     <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
                     <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
-                    <h3>Kapitel 4: Exceptions und Dateien</h3>
-                    <h4 style="text-align:center">2020-03-29</h4>
+                    <h3>Kapitel 4: Exception-Handling</h3>
+                    <h4 style="text-align:center">2020-05-13</h4>
                     <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-225px;">
                     <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-225px; box-shadow:none">
                 </section>
@@ -65,6 +65,19 @@
                   <aside class="notes">Im obigen Beispiel ist die <code>parseInt</code>-Methode aufgrund ungültiger Zeichen (&quot; EUR&quot;) nicht in der Lage, den String in eine Zahl zu wandeln. Daher wirft die Methode eine <code>NumberFormatException</code>. Im zweiten Beispiel geht der Index im <code>tage</code>-Array von 0 bis 6. Der Zugriff auf <code>tage[7]</code> wirft deshalb die Exception.</aside>
                 </section>
 
+                
+
+                <section>
+                  <h3>Beispiel: Inhalt einer Datei lesen</h3>
+                  <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesen.java#14,16-25,27'></code></pre>
+                  <ul class="small">
+                    <li><code>new FileReader</code> kann eine <code>FileNotFoundException</code> werfen</li>
+                    <li><code>BufferedReader.readLine()</code> kann eine <code>IOException</code> werfen</li>
+                  </ul>
+                  <p class="small" style="margin-left:2cm">&Rightarrow; entweder abfangen oder weiterwerfen!</p>
+                  <aside class="notes">IDEs wie IntelliJ zeigen an, welche Exceptions behandelt werden müssen. Das hier gezeigte Programm kann nicht kompiliert werden, bevor man sich um die Behandlung der beiden Exceptions kümmert. </aside>
+                </section>
+
                 <section>
                   <h2><code>try catch</code></h2>
                   <div class="columns">
@@ -82,34 +95,33 @@
                     </div>
                   </div>
                   
-                  <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/TryCatchBeispiel.java#15-23'></code></pre>
+                  <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#11-16'></code></pre>
 
-                  <aside class="notes">Die Catch-or-Throw-Regel besagt, dass Exceptions entweder abgefangen werden müssen oder man gibt sie an den Methoden-Aufrufer weiter. Das Abfangen erfolgt in Java mit einem <code>try</code>/<code>catch</code>-Konstrukt. Tritt im gezeigten Beispiel im <code>try</code>-Block eine <code>NumberFormatException</code> auf, springt das Programm in den entsprechenden <code>catch</code>-Block. Die Exception wurde also behandelt. Das Programm geht weiter.</aside>
+                  <aside class="notes">Die Catch-or-Throw-Regel besagt, dass Exceptions entweder abgefangen werden müssen oder man gibt sie an den Methoden-Aufrufer weiter. Das Abfangen erfolgt in Java mit einem <code>try</code>/<code>catch</code>-Konstrukt. Tritt im gezeigten Beispiel im <code>try</code>-Block eine <code>FileNotFoundException</code> auf, springt das Programm in den entsprechenden <code>catch</code>-Block. Die Exception wurde also behandelt. Das Programm geht weiter.</aside>
                 </section>
 
                 <section>
                   <h2><code>try catch</code></h2>
                   <p class="small">Abfangen verschiedener Exceptions:</p>
-                  <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/TryCatchMultiBeispiel.java#15-28'></code></pre>
+                  <pre><code style="max-height: 12cm" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#21-35'></code></pre>
                   <aside class="notes">Mehrere <code>catch</code>-Blöcke können verwendet werden, um unterschiedliche Arten von Exceptions unterschiedlich zu behandeln.</aside>
                 </section>
 
                 <section>
                   <h2><code>try catch</code></h2>
                   <p class="small">Multi-Catch:</p>
-                  <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/TryCatchMultiBeispiel.java#36-39'></code></pre>
+                  <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#49-52'></code></pre>
                   <div class="fragment">  
                     <p class="small">Abfangen aller Exceptions:</p>
-                    <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/TryCatchMultiBeispiel.java#48-51'></code></pre>
+                    <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#56-59'></code></pre>
                   </div>
-                  <aside class="notes">In einem <code>catch</code>-Ausdruck lassen sich mehrere Exceptions mit einem senkrechten Strich <code>|</code> trennen. Das untere Beispiel zeigt, dass es auch möglich ist, jegliche Art von Exception abzufangen und sie auf gleiche Weise zu behandeln.</aside>
+                  <aside class="notes">In einem <code>catch</code>-Ausdruck lassen sich mehrere Exceptions mit einem senkrechten Strich <code>|</code> trennen. Das untere Beispiel zeigt, dass es auch möglich ist, jegliche Art von Exception abzufangen und sie auf gleiche Weise zu behandeln. Im oberen Beispiel haben wir nicht wie auf der vorherigen Folie die <code>FileNotFoundException</code> verwendet, da diese eine Subklasse von <code>IOException</code> ist und daher ohnehin schon abgefangen wird.</aside>
                   </section>
 
                   <section>
                     <h2><code>try catch finally</code></h2>
                     <p class="small">Der <code>finally</code>-Block wird in jedem Falle aufgerufen, egal ob der <code>try</code>-Block mit oder ohne Exception durchlaufen wurde.</p>
                     <pre><code class="java" contenteditable data-trim>
-                      // Ein Beispiel folgt später, wenn wir mit Dateien arbeiten
                       try {
                         ...
                       } catch( ... ) {
@@ -119,36 +131,34 @@
                       }
                     </code></pre>
                     <p class="small">Der <code>finally</code>-Block wird selbst dann noch aufgerufen, wenn im <code>try</code>-Block die Methode, Schleife, etc. mit <code>return</code>, <code>break</code> oder <code>continue</code> verlassen wurde.</p>
-                    
+                  </section>
+
+                  <section>
+                    <h2><code>try catch finally</code></h2>
+                    <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#72-84'></code></pre>
+                    <aside class="notes">Das im <code>finally</code>-Block befindliche <code>br.close();</code> wird in jedem Fall ausgeführt, egal ob die Datei fehlerfrei ausgegeben werden konnte oder aus der Methode gesprungen wird, weil dabei ein Fehler auftrat. Da die <code>close</code>-Methode ebenfalls wieder eine <code>IOException</code> werfen kann, wird diese hier abgefangen und ignoriert.</aside>
                   </section>
 
                   <section>
                     <h3><code>try(...)</code> mit Ressourcen</h3>
                     <p class="small">Deklariert man im <code>try</code>-Statement eine oder mehrere Ressourcen, kümmert sich Java darum, diese am Ende des <code>try</code>-Statements zu schließen, egal ob eine Exception auftrat oder nicht.</p>
-                    <pre style="width: 95%;"><code class="java" contenteditable data-trim>
-                      // Ein Beispiel folgt später, wenn wir mit Dateien arbeiten
-                      try(BufferedReader br = new BufferedReader(new FileReader(pfad))) {
-                        ...
-                      } catch( ... ) {
-                        ...
-                      }
-                    </code></pre>
+                    <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#90-98'></code></pre>
                     <aside class="notes">Mit einer Ressource ist ein Objekt gemeint, welches nach der Verwendung ordnungsgemäß geschlossen werden soll, z. B. eine Datei oder eine Verbindung zu einer Datenbank. Es können alle Objekte von Klassen verwendet werden, die die Schnittstelle <code>AutoCloseable</code> implementieren. Java ruft dann nach Beendigung des <code>try</code>-Statements deren <code>close()</code>-Methode auf.</aside>
                   </section>
 
                 <section>
                   <h2><code>throws</code></h2>
                   <p class="small">Wenn eine Exception nicht abgefangen wird, wird sie weitergeworfen.</p>
-                  <pre style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/ThrowsBeispiel.java#15-18'></code></pre>
+                  <pre style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#13-24'></code></pre>
                   
-                  <aside class="notes">Hat die Methode eine <code>throws</code>-Klausel, zeigt dies, dass ein Methodenaufruf möglicherweise die genannte Exception wirft. Jemand der die Methode aufruft, muss sich gemäß der Catch-or-Throw-Regel darum kümmern diese Exception entweder abzufangen oder ebenfalls weiterzuwerfen.</aside>
+                  <aside class="notes">Hat die Methode eine <code>throws</code>-Klausel, zeigt dies, dass bei einem Methodenaufruf möglicherweise die genannte Exception geworfen wird. Jemand, der die Methode aufruft, muss sich gemäß der Catch-or-Throw-Regel darum kümmern, diese Exception entweder abzufangen oder ebenfalls weiterzuwerfen.</aside>
                 </section>
 
                 <section>
                   <h2><code>throw</code></h2>
                   <p class="small">Manuelles Werfen von Exceptions:</p>
-                    <pre style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/ThrowBeispiel.java#19-22'></code></pre>
-                  <pre class="fragment" style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/ThrowBeispiel.java#30'></code></pre>
+                    <pre style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#29-32'></code></pre>
+                  <pre class="fragment" style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#39'></code></pre>
                   <aside class="notes">Durch einen Aufruf des <code>throw</code>-Befehl wird die Ausführung der aktuellen Methoden sofort abgebrochen und die gegebene Exception geworfen. Obiges Beispiel wirft einfach die <code>Exception e</code>, die gerade abgefangen wurde, weiter. Im unteren Beispiel wird ein neues <code>Exception</code>-Objekt erzeugt.</aside>
                 </section>
 

@@ -1,9 +1,6 @@
 {
   "summary" : "Programmieren 2 (Java)\nSS2020, Prof. Schildgen, OTH Regensburg",
   "title" : "PG2_Uebung5",
-  "authors" : [
-    "Johannes Schildgen"
-  ],
   "programming_language" : "JAVA",
   "language" : "en",
   "course_type" : "PyCharm",
@@ -43,13 +40,13 @@
               "placeholders" : [
                 {
                   "offset" : 0,
-                  "length" : 0,
+                  "length" : 31,
                   "possible_answer" : "public class ComputerGegner extends Spieler {\n    public ComputerGegner() {\n        setName(\"Computer\");\n    }\n}",
-                  "placeholder_text" : ""
+                  "placeholder_text" : "Entwicklen Sie hier Ihre Klasse"
                 }
               ],
               "is_visible" : true,
-              "text" : "\n"
+              "text" : "Entwicklen Sie hier Ihre Klasse"
             }
           },
           "description_text" : "<html>\n<p>An unserem MauMau-Spiel sollen verschiedene Arten von Spielern teilnehmen können: Menschliche Spieler, Computergegner und später vielleicht noch weitere (Spieler übers Internet, o. ä.).</p>\n<p>Die abstrakte Klasse <code>Spieler</code> beschreibt, dass jeder Spieler einen Namen haben muss. Sie stellt auch eine Getter- und Setter-Methode für das private Attribut <code>name</code> bereit.</p>\n<p>Schauen Sie sich die Klasse <code>MenschlicherSpieler</code> an. Sie ist eine Subklasse von <code>Spieler</code> und hat einen Konstruktor ohne Parameter. Wird dieser aufgerufen, wird der Benutzer aufgefordert, seinen Namen einzugeben.</p>\n<p><b>Entwickeln Sie die Klasse <code>ComputerGegner</code>. Sie soll ebenfalls eine Subklasse von <code>Spieler</code> sein. Der Konstuktor <code>ComputerGegner()</code> soll den Namen auf &quot;Computer&quot; setzen.</b></p>\n</html>",
@@ -72,26 +69,26 @@
               "name" : "src/MauMau.java",
               "placeholders" : [
                 {
-                  "offset" : 186,
-                  "length" : 0,
-                  "possible_answer" : "int anzahl_menschen = 0;\n        int anzahl_computer = 0;\n\n",
-                  "placeholder_text" : ""
+                  "offset" : 226,
+                  "length" : 34,
+                  "possible_answer" : "int anzahl_menschen = 0;\n        int anzahl_computer = 0;\n",
+                  "placeholder_text" : "Definieren Sie hier Ihre Variablen"
                 },
                 {
-                  "offset" : 233,
-                  "length" : 0,
-                  "possible_answer" : "if(s instanceof MenschlicherSpieler) {\n                anzahl_menschen++;\n            } else if (s instanceof ComputerGegner) {\n                anzahl_computer++;\n            }\n            ",
-                  "placeholder_text" : ""
+                  "offset" : 309,
+                  "length" : 31,
+                  "possible_answer" : "if(s instanceof MenschlicherSpieler) {\n                anzahl_menschen++;\n            } else if (s instanceof ComputerGegner) {\n                anzahl_computer++;\n            }",
+                  "placeholder_text" : "instanceof-Ueberpruefungen hier"
                 },
                 {
-                  "offset" : 285,
-                  "length" : 0,
+                  "offset" : 405,
+                  "length" : 31,
                   "possible_answer" : "System.out.println(\"Anzahl Menschen: \"+anzahl_menschen);\n        System.out.println(\"Anzahl Computer: \"+anzahl_computer);",
-                  "placeholder_text" : ""
+                  "placeholder_text" : "Hier soll die Ausgabe erfolgen."
                 }
               ],
               "is_visible" : true,
-              "text" : "public class MauMau {\n    public static void main(String[] args) {\n        Spieler[] spieler =\n                { new ComputerGegner(),\n                  new ComputerGegner() };\n\n                for(Spieler s : spieler) {\n            System.out.println(s.getName());\n        }\n\n        \n    }\n}"
+              "text" : "import javax.security.sasl.SaslServer;\n\npublic class MauMau {\n    public static void main(String[] args) {\n        Spieler[] spieler =\n                { new ComputerGegner(),\n                  new ComputerGegner() };\n\n        Definieren Sie hier Ihre Variablen\n\n        for(Spieler s : spieler) {\n            instanceof-Ueberpruefungen hier\n            System.out.println(s.getName());\n        }\n\n        Hier soll die Ausgabe erfolgen.\n    }\n}"
             },
             "src/MenschlicherSpieler.java" : {
               "name" : "src/MenschlicherSpieler.java",
@@ -152,27 +149,14 @@
                     "lesson" : "Uebung5",
                     "task" : "2a_instanceof",
                     "file" : "src/MauMau.java",
-                    "placeholder" : 2,
-                    "is_visible" : false
-                  },
-                  "possible_answer" : "int anzahl_menschen = 0;\n        int anzahl_computer = 0;\n\n",
-                  "placeholder_text" : ""
-                },
-                {
-                  "offset" : 233,
-                  "length" : 0,
-                  "dependency" : {
-                    "lesson" : "Uebung5",
-                    "task" : "2a_instanceof",
-                    "file" : "src/MauMau.java",
                     "placeholder" : 0,
                     "is_visible" : false
                   },
-                  "possible_answer" : "if(s instanceof MenschlicherSpieler) {\n                anzahl_menschen++;\n            } else if (s instanceof ComputerGegner) {\n                anzahl_computer++;\n            }\n            ",
+                  "possible_answer" : "int anzahl_menschen = 0;\n        int anzahl_computer = 0;\n",
                   "placeholder_text" : ""
                 },
                 {
-                  "offset" : 285,
+                  "offset" : 234,
                   "length" : 0,
                   "dependency" : {
                     "lesson" : "Uebung5",
@@ -181,12 +165,25 @@
                     "placeholder" : 1,
                     "is_visible" : false
                   },
+                  "possible_answer" : "if(s instanceof MenschlicherSpieler) {\n                anzahl_menschen++;\n            } else if (s instanceof ComputerGegner) {\n                anzahl_computer++;\n            }",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 299,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung5",
+                    "task" : "2a_instanceof",
+                    "file" : "src/MauMau.java",
+                    "placeholder" : 2,
+                    "is_visible" : false
+                  },
                   "possible_answer" : "System.out.println(\"Anzahl Menschen: \"+anzahl_menschen);\n        System.out.println(\"Anzahl Computer: \"+anzahl_computer);",
                   "placeholder_text" : ""
                 }
               ],
               "is_visible" : true,
-              "text" : "public class MauMau {\n    public static void main(String[] args) {\n        Spieler[] spieler =\n                { new ComputerGegner(),\n                  new ComputerGegner() };\n\n                for(Spieler s : spieler) {\n            System.out.println(s.getName());\n        }\n\n        \n    }\n}"
+              "text" : "public class MauMau {\n    public static void main(String[] args) {\n        Spieler[] spieler =\n                { new ComputerGegner(),\n                  new ComputerGegner() };\n\n        \n        for(Spieler s : spieler) {\n            \n            System.out.println(s.getName());\n        }\n\n        \n    }\n}"
             },
             "src/MenschlicherSpieler.java" : {
               "name" : "src/MenschlicherSpieler.java",
@@ -250,11 +247,11 @@
                     "placeholder" : 0,
                     "is_visible" : false
                   },
-                  "possible_answer" : "int anzahl_menschen = 0;\n        int anzahl_computer = 0;\n\n",
+                  "possible_answer" : "int anzahl_menschen = 0;\n        int anzahl_computer = 0;\n",
                   "placeholder_text" : ""
                 },
                 {
-                  "offset" : 233,
+                  "offset" : 234,
                   "length" : 0,
                   "dependency" : {
                     "lesson" : "Uebung5",
@@ -267,7 +264,7 @@
                   "placeholder_text" : ""
                 },
                 {
-                  "offset" : 285,
+                  "offset" : 286,
                   "length" : 0,
                   "dependency" : {
                     "lesson" : "Uebung5",
@@ -281,7 +278,7 @@
                 }
               ],
               "is_visible" : true,
-              "text" : "public class MauMau {\n    public static void main(String[] args) {\n        Spieler[] spieler =\n                { new ComputerGegner(),\n                  new ComputerGegner() };\n\n                for(Spieler s : spieler) {\n            System.out.println(s.getName());\n        }\n\n        \n    }\n}"
+              "text" : "public class MauMau {\n    public static void main(String[] args) {\n        Spieler[] spieler =\n                { new ComputerGegner(),\n                  new ComputerGegner() };\n\n        \n        for(Spieler s : spieler) {\n            System.out.println(s.getName());\n        }\n\n        \n    }\n}"
             },
             "src/MenschlicherSpieler.java" : {
               "name" : "src/MenschlicherSpieler.java",
@@ -337,12 +334,12 @@
               "placeholders" : [
                 {
                   "offset" : 186,
-                  "length" : 0,
+                  "length" : 44,
                   "possible_answer" : "((ComputerGegner)spieler[0]).setStaerke(3);",
-                  "placeholder_text" : ""
+                  "placeholder_text" : "Setzen Sie die Staerke von spieler[0] auf 3."
                 },
                 {
-                  "offset" : 196,
+                  "offset" : 240,
                   "length" : 0,
                   "dependency" : {
                     "lesson" : "Uebung5",
@@ -351,11 +348,11 @@
                     "placeholder" : 0,
                     "is_visible" : false
                   },
-                  "possible_answer" : "int anzahl_menschen = 0;\n        int anzahl_computer = 0;\n\n",
+                  "possible_answer" : "int anzahl_menschen = 0;\n        int anzahl_computer = 0;\n",
                   "placeholder_text" : ""
                 },
                 {
-                  "offset" : 243,
+                  "offset" : 288,
                   "length" : 0,
                   "dependency" : {
                     "lesson" : "Uebung5",
@@ -364,11 +361,11 @@
                     "placeholder" : 1,
                     "is_visible" : false
                   },
-                  "possible_answer" : "if(s instanceof MenschlicherSpieler) {\n                anzahl_menschen++;\n            } else if (s instanceof ComputerGegner) {\n                anzahl_computer++;\n            }\n            ",
+                  "possible_answer" : "if(s instanceof MenschlicherSpieler) {\n                anzahl_menschen++;\n            } else if (s instanceof ComputerGegner) {\n                anzahl_computer++;\n            }",
                   "placeholder_text" : ""
                 },
                 {
-                  "offset" : 295,
+                  "offset" : 353,
                   "length" : 0,
                   "dependency" : {
                     "lesson" : "Uebung5",
@@ -382,7 +379,7 @@
                 }
               ],
               "is_visible" : true,
-              "text" : "public class MauMau {\n    public static void main(String[] args) {\n        Spieler[] spieler =\n                { new ComputerGegner(),\n                  new ComputerGegner() };\n\n        \n\n                for(Spieler s : spieler) {\n            System.out.println(s.getName());\n        }\n\n        \n    }\n}"
+              "text" : "public class MauMau {\n    public static void main(String[] args) {\n        Spieler[] spieler =\n                { new ComputerGegner(),\n                  new ComputerGegner() };\n\n        Setzen Sie die Staerke von spieler[0] auf 3.\n\n        \n        for(Spieler s : spieler) {\n            \n            System.out.println(s.getName());\n        }\n\n        \n\n    }\n}"
             },
             "src/MenschlicherSpieler.java" : {
               "name" : "src/MenschlicherSpieler.java",

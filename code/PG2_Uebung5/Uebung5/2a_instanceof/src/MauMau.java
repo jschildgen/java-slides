@@ -1,3 +1,5 @@
+import javax.security.sasl.SaslServer;
+
 public class MauMau {
     public static void main(String[] args) {
         Spieler[] spieler =
@@ -6,6 +8,7 @@ public class MauMau {
 
         int anzahl_menschen = 0;
         int anzahl_computer = 0;
+
 
         for(Spieler s : spieler) {
             if(s instanceof MenschlicherSpieler) {

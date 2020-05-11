@@ -20,5 +20,6 @@ public class MauMau {
 
         System.out.println("Anzahl Menschen: "+anzahl_menschen);
         System.out.println("Anzahl Computer: "+anzahl_computer);
+
     }
 }

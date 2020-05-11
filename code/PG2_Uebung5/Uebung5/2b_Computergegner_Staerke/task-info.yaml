@@ -6,22 +6,22 @@ files:
   visible: true
   placeholders:
   - offset: 186
-    length: 59
-    placeholder_text: ""
-    dependency:
-      lesson: Uebung5
-      task: 2a_instanceof
-      file: src/MauMau.java
-      placeholder: 3
-      is_visible: false
-  - offset: 292
-    length: 189
+    length: 58
     placeholder_text: ""
     dependency:
       lesson: Uebung5
       task: 2a_instanceof
       file: src/MauMau.java
       placeholder: 1
+      is_visible: false
+  - offset: 292
+    length: 176
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung5
+      task: 2a_instanceof
+      file: src/MauMau.java
+      placeholder: 2
       is_visible: false
   - offset: 533
     length: 121
@@ -30,7 +30,7 @@ files:
       lesson: Uebung5
       task: 2a_instanceof
       file: src/MauMau.java
-      placeholder: 2
+      placeholder: 3
       is_visible: false
 - name: src/MenschlicherSpieler.java
   visible: true

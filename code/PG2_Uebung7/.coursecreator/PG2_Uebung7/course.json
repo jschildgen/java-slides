@@ -1,0 +1,314 @@
+{
+  "summary" : "Programmieren 2 (Java) Uebungsblatt 7\nSS2020, Prof. Schildgen, OTH Regensburg",
+  "title" : "PG2_Uebung7",
+  "authors" : [
+    "Prof. Johannes Schildgen"
+  ],
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "Uebung7",
+      "task_list" : [
+        {
+          "name" : "1_Exceptions",
+          "files" : {
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "<!doctype html><html><head>    <title>Example Domain</title>    <meta charset=\"utf-8\" />    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\" />    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />    <style type=\"text/css\">    body {        background-color: #f0f0f2;        margin: 0;        padding: 0;        font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;            }    div {        width: 600px;        margin: 5em auto;        padding: 2em;        background-color: #fdfdff;        border-radius: 0.5em;        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);    }    a:link, a:visited {        color: #38488f;        text-decoration: none;    }    @media (max-width: 700px) {        div {            margin: 0 auto;            width: auto;        }    }    </style>    </head><body><div>    <h1>Example Domain</h1>    <p>This domain is for use in illustrative examples in documents. You may use this    domain in literature without prior coordination or asking for permission.</p>    <p><a href=\"https://www.iana.org/domains/example\">More information...</a></p></div></body></html>\n"
+            },
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\n",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 73,
+                  "length" : 0,
+                  "possible_answer" : " throws IOException",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "\npublic class APIHelper {\n    public static String httpGet(String urlStr) {\n        URL url = new URL(urlStr);\n        HttpURLConnection conn =\n                (HttpURLConnection) url.openConnection();\n\n        // Buffer the result into a string\n        BufferedReader rd = new BufferedReader(\n                new InputStreamReader(conn.getInputStream()));\n        StringBuilder sb = new StringBuilder();\n        String line;\n        while ((line = rd.readLine()) != null) {\n            sb.append(line);\n        }\n        rd.close();\n\n        conn.disconnect();\n        return sb.toString();\n    }\n}\n"
+            },
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "import java.io.IOException;\n",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 102,
+                  "length" : 0,
+                  "possible_answer" : "try {",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 205,
+                  "length" : 0,
+                  "possible_answer" : "} catch (IOException e) {\n            System.out.println(\"Verbindungsfehler\");\n        }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "\npublic class Main {\n    public static void main(String[] args) {\n        String html = null;\n        \n        html = APIHelper.httpGet(\"http://www.example.com\");\n        System.out.println(html);\n        \n    }\n}\n"
+            }
+          },
+          "description_text" : "<html>\n<p>In unserer Witze-App möchten wir API-Anfragen machen. Eine solche Anfrage läuft so ab, dass ein HTTP GET-Request an die REST-API-URL geschickt wird. Das Ergebnis dieses HTTP GET-Requests nennt sich Response und beinhaltet die Antwort der API.</p>\n<p>In der Klasse <code>APIHelper</code> wurde bereits mit der Entwicklung einer statischen Methode <code>httpGet</code> begonnen. Was noch fehlt sind die Imports der benötigten Klassen sowie das Exception-Handling.</p>\n<p>Beim Verbinden mit einer API kann viel schlief gehen: Die Internetverbindung ist unterbrochen, die URL ist ungültig, usw. Daher ist es nun ihre Aufgabe, diese Exceptions, die auftreten können, zu behandeln.</p>\n<ol>\n    <li><b>Importieren Sie die fehlenden Klassen in <code>APIHelper</code>.</b></li>\n    <li><b>In der Methode <code>httpGet</code> soll die <code>IOException</code> nicht abgefangen werden. Stattdessen soll die Methode diese Exception einfach nach außen weiterwerfen.</b></li>\n    <li><b>Da Sie die Exception an die <code>main</code>-Methode der Klasse <code>Main</code> weiterreichen, muss sie nun dort behandelt werden. Fangen Sie sie in der <code>main</code>-Methode ab und geben Sie statt der eigentlichen Ausgabe (dem Quelltext der Webseite) &quot;Verbindungsfehler&quot; aus, wenn die <code>IOException</code> auftritt.</b></li>\n</ol>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "2a_JSON",
+          "files" : {
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [
+                {
+                  "offset" : 1148,
+                  "length" : 0,
+                  "possible_answer" : "try {",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 1282,
+                  "length" : 0,
+                  "possible_answer" : "} catch (ScriptException | ClassCastException e) {\n            throw new IllegalArgumentException(\"Ungueltiges JSON-Objekt\");\n        }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import javax.script.ScriptEngine;\nimport javax.script.ScriptEngineManager;\nimport javax.script.ScriptException;\nimport java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class APIHelper {\n\n    private static ScriptEngineManager sem = new ScriptEngineManager();\n    private static ScriptEngine engine = sem.getEngineByName(\"javascript\");\n\n    public static String httpGet(String urlStr) throws IOException {\n        URL url = new URL(urlStr);\n        HttpURLConnection conn =\n                (HttpURLConnection) url.openConnection();\n\n        // Buffer the result into a string\n        BufferedReader rd = new BufferedReader(\n                new InputStreamReader(conn.getInputStream()));\n        StringBuilder sb = new StringBuilder();\n        String line;\n        while ((line = rd.readLine()) != null) {\n            sb.append(line);\n        }\n        rd.close();\n\n        conn.disconnect();\n        return sb.toString();\n    }\n\n    public static Map<String, Object> parseJson(String json) {\n        \n            Object data = engine.eval(\"Java.asJSONCompatible(\" + json + \")\");\n            return (Map<String, Object>) data;\n        \n    }\n}"
+            },
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Main {\n    public static void main(String[] args) {\n        String json = \"{ \\\"name\\\": \\\"Peter\\\", \\\"alter\\\": \\\"20\\\" }\";\n        System.out.println(APIHelper.parseJson(json).get(\"name\"));\n    }\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    boolean passed = false;\n    try {\n      APIHelper.parseJson(\"{\\\"x : 5}\");\n    } catch (IllegalArgumentException e) {\n      passed = true;\n    }\n    Assert.assertTrue(\"Beim nicht-wohlgeformten JSON-Objekt erscheint keine IllegalArgumentsException.\", passed);\n\n    passed = false;\n    try {\n      APIHelper.parseJson(\"[5,4,3,2,1]\");\n    } catch (IllegalArgumentException e) {\n      passed = true;\n    }\n    Assert.assertTrue(\"Wenn kein JSON-Objekt uebergeben wird, erscheint keine IllegalArgumentsException.\", passed);\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>Als weiteres benötigen wir eine Möglichkeit, JSON-Daten zu parsen, damit wir später in der Witze-App auf das Ergebnis eines API-Aufrufs zugreifen können. Die APIs, die wir verwenden, liefern als Rückgabe einen JSON-String.</p>\n<p>JSON-Objekte sehen in etwa so aus: <code>{\"attribut\": \"wert\"}</code>. Während der Attributname stets ein String ist, kann der Wert ein <code>\"String\"</code>, eine Zahl, ein <code>[Array]</code>, ein <code>{Unterobjekt}</code>, usw. sein.</p>\n<p>Normalerweise verwendet man eine spezielle <code>org.json</code>-Bibliothek, um in Java JSON-Daten zu verarbeiten. Das Hinzufügen von Bibliotheken behandeln wir jedoch erst später. Daher wird hier ein (nicht empfohlener!!!) Weg, einen JSON-String zu parsen verwendet, und zwar mittels der Nashorn-Engine. Diese wird jedoch in zuküftigen Java-Versionen entfernt.</p>\n<p>Das Parsen eines JSON-Strings erfolgt in der Methode <code>APIHelper.parseJson</code>. Dort können zwei Dinge schief gehen: Wenn der übergebene String kein wohlgeformtes JSON ist, wird eine <code>javax.script.ScriptException</code> geworfen. Handelt es sich um kein JSON-Objekt, sondern zum Beispiel um einen Array, tritt eine <code>java.lang.ClassCastException</code> auf, weil das Casten auf die Klasse <code>Map</code> fehlschlägt (mehr zu Maps später im Kapitel über Collections).</p>\n<p><b>Fangen Sie in der Methode <code>parseJson</code> diese beiden Exceptions ab und werfen Sie eine <code>new IllegalArgumentException(\"Ungueltiges JSON-Objekt\")</code>.</b></p>\n<p>Die <code>IllegalArgumentsException</code> ist eine Subklasse von <code>RuntimeException</code>. Sie muss also nicht abgefangen werden und bedarf auch einer <code>throws</code>-Deklaration.</p>\n<p><b>Probieren Sie im Anschluss in der <code>Main</code>-Klasse aus, was passiert, wenn Sie einen nicht-wohlgeformten JSON-String übergeben (vergessen Sie z. B. ein <code>\"</code> oder eine <code>}</code>) oder wenn Sie einen Array <code>[1,3,3]</code> übergeben.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "ChuckNorrisAPI",
+          "files" : {
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import javax.script.ScriptEngine;\nimport javax.script.ScriptEngineManager;\nimport javax.script.ScriptException;\nimport java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class APIHelper {\n\n    private static ScriptEngineManager sem = new ScriptEngineManager();\n    private static ScriptEngine engine = sem.getEngineByName(\"javascript\");\n\n    public static String httpGet(String urlStr) throws IOException {\n        URL url = new URL(urlStr);\n        HttpURLConnection conn =\n                (HttpURLConnection) url.openConnection();\n\n        // Buffer the result into a string\n        BufferedReader rd = new BufferedReader(\n                new InputStreamReader(conn.getInputStream()));\n        StringBuilder sb = new StringBuilder();\n        String line;\n        while ((line = rd.readLine()) != null) {\n            sb.append(line);\n        }\n        rd.close();\n\n        conn.disconnect();\n        return sb.toString();\n    }\n\n    public static Map<String, Object> parseJson(String json) {\n        try {\n            Object data = engine.eval(\"Java.asJSONCompatible(\" + json + \")\");\n            return (Map<String, Object>) data;\n        } catch (ScriptException | ClassCastException e) {\n            throw new IllegalArgumentException(\"Ungueltiges JSON-Objekt\");\n        }\n    }\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.After;\nimport org.junit.Assert;\nimport org.junit.Before;\nimport org.junit.Test;\n\nimport java.io.ByteArrayOutputStream;\nimport java.io.PrintStream;\n\npublic class Tests {\n\n    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();\n    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();\n    private final PrintStream originalOut = System.out;\n    private final PrintStream originalErr = System.err;\n\n    @Before\n    public void setUpStreams() {\n        System.setOut(new PrintStream(outContent));\n        System.setErr(new PrintStream(errContent));\n    }\n\n    @After\n    public void restoreStreams() {\n        System.setOut(originalOut);\n        System.setErr(originalErr);\n    }\n\n    @Test\n    public void testSolution() {\n        WitzeApp.main(new String[0]);\n        if(outContent.size() < 5) {\n            Assert.fail(\"Es wurde kein Witz ausgegeben.\");\n        }\n    }\n}"
+            },
+            "src/MeineTestAPI.java" : {
+              "name" : "src/MeineTestAPI.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class MeineTestAPI implements WitzAPI {\n\n    private static final Kategorie[] KATEGORIEN = { new Kategorie(\"Essen\"), new Kategorie(\"Trinken\") };\n\n    @Override\n    public Witz getZufallswitz() {\n        return new Witz(\"Geht ein Mathematiker an der Kneipe vorbei.\", KATEGORIEN[1]);\n    }\n\n    @Override\n    public Witz[] getWitze(Kategorie kategorie) {\n        Witz[] witze = {new FrageAntwortWitz(\"Wo geht ein Wal essen?\", \"Ins Wallokal\"),\n                        new Witz(\"Brechstangen werden aus Diebstahl gefertigt.\")};\n        return witze;\n    }\n\n    @Override\n    public Kategorie[] getKategorien() {\n        return KATEGORIEN;\n    }\n}"
+            },
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [
+                {
+                  "offset" : 139,
+                  "length" : 0,
+                  "possible_answer" : "api = new ChuckNorrisAPI();\n\n        try {\n            System.out.println(api.getZufallswitz().getWitz());\n        } catch (IOException e) {\n            System.out.println(\"API-Fehler\");\n        }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.io.IOException;\n\npublic class WitzeApp {\n    private static WitzAPI api;\n\n    public static void main(String[] args) {\n        \n    }\n}\n"
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "import java.io.IOException;\n",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 53,
+                  "length" : 0,
+                  "possible_answer" : " throws IOException",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "\npublic interface WitzAPI {\n    Witz getZufallswitz();\n    Witz[] getWitze(Kategorie kategorie);\n    Kategorie[] getKategorien();\n}"
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Witz {\n    private String witz;\n    protected Kategorie kategorie;\n\n    public Witz(String witz) {\n        this.witz = witz;\n    }\n\n    public Witz(String witz, Kategorie kategorie) {\n        this.witz = witz;\n        this.kategorie = kategorie;\n    }\n\n    public String getWitz() {\n        return witz;\n    }\n\n    public Kategorie getKategorie() {\n        return kategorie;\n    }\n}"
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Kategorie {\n    String kategorie;\n\n    public Kategorie(String kategorie) {\n        this.kategorie = kategorie;\n    }\n\n    @Override\n    public String toString() {\n        return kategorie;\n    }\n}"
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class FrageAntwortWitz extends Witz {\n    private String frage;\n    private String antwort;\n\n    public FrageAntwortWitz(String frage, String antwort) {\n        super(null);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public FrageAntwortWitz(String frage, String antwort, Kategorie kategorie) {\n        super(null, kategorie);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public String getFrage() {\n        return frage;\n    }\n\n    public String getAntwort() {\n        return antwort;\n    }\n\n    @Override\n    public String getWitz() {\n        return this.frage+\" \"+this.antwort;\n    }\n}"
+            },
+            "src/ChuckNorrisAPI.java" : {
+              "name" : "src/ChuckNorrisAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 146,
+                  "length" : 0,
+                  "possible_answer" : " throws IOException",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.io.IOException;\nimport java.util.Map;\n\npublic class ChuckNorrisAPI implements WitzAPI {\n    @Override\n    public Witz getZufallswitz() {\n        String json = APIHelper.httpGet(\"http://api.icndb.com/jokes/random\");\n        String witz = (String)((Map)APIHelper.parseJson(json).get(\"value\")).get(\"joke\");\n        return new Witz(witz);\n    }\n\n    @Override\n    public Witz[] getWitze(Kategorie kategorie) {\n        return new Witz[0];\n    }\n\n    @Override\n    public Kategorie[] getKategorien() {\n        return new Kategorie[0];\n    }\n}\n"
+            }
+          },
+          "description_text" : "<html>\n<p>Hier sind wir wieder in unserer Witze-App. Mittlerweile hat auch die <code>APIHelper</code>-Klasse hier Einzug gehalten.</p>\n<p>Wie Sie in der neuen Klasse <code>ChuckNorrisAPI</code> sehen können, verwendet sie unsere beiden Methoden <code>httpGet</code> und <code>parseJson</code>. In diesem Übungsblatt kümmern wir uns nur um die Methode <code>getZufallswitz</code>. Dort wurde sich mal wieder nicht ums Exception-Handling gekümmert.</p>\n<p><b>Sorgen Sie in der Klasse <code>ChuckNorrisAPI</code>dafür, dass sie die IOException nach außen weiterwirft.</b></p>\n<p><b>Diese <code>throws</code>-Deklaration muss auch ins Interface eingetragen werden.</b></p>\n<p><b>Entwickeln Sie die <code>main</code>-Methode in der Klasse <code>WitzeApp</code>. Sie soll unter Verwendung der <code>ChuckNorrisAPI</code> einen zufälligen Witz auszugeben. Wenn ein Fehler auftritt, geben Sie &quot;API-Fehler&quot; aus.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "OfficialJokeAPI",
+          "files" : {
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import javax.script.ScriptEngine;\nimport javax.script.ScriptEngineManager;\nimport java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class APIHelper {\n\n    private static ScriptEngineManager sem = new ScriptEngineManager();\n    private static ScriptEngine engine = sem.getEngineByName(\"javascript\");\n\n    public static String httpGet(String urlStr) throws IOException {\n        URL url = new URL(urlStr);\n        HttpURLConnection conn =\n                (HttpURLConnection) url.openConnection();\n\n        // Buffer the result into a string\n        BufferedReader rd = new BufferedReader(\n                new InputStreamReader(conn.getInputStream()));\n        StringBuilder sb = new StringBuilder();\n        String line;\n        while ((line = rd.readLine()) != null) {\n            sb.append(line);\n        }\n        rd.close();\n\n        conn.disconnect();\n        return sb.toString();\n    }\n\n    public static Map<String, Object> parseJson(String json) {\n        try {\n            Object data = engine.eval(\"Java.asJSONCompatible(\" + json + \")\");\n            return (Map<String, Object>) data;\n        } catch (Exception e) {\n            throw new IllegalArgumentException(\"Ungueltiges JSON-Objekt\");\n        }\n    }\n}"
+            },
+            "src/MeineTestAPI.java" : {
+              "name" : "src/MeineTestAPI.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class MeineTestAPI implements WitzAPI {\n\n    private static final Kategorie[] KATEGORIEN = { new Kategorie(\"Essen\"), new Kategorie(\"Trinken\") };\n\n    @Override\n    public Witz getZufallswitz() {\n        return new Witz(\"Geht ein Mathematiker an der Kneipe vorbei.\", KATEGORIEN[1]);\n    }\n\n    @Override\n    public Witz[] getWitze(Kategorie kategorie) {\n        Witz[] witze = {new FrageAntwortWitz(\"Wo geht ein Wal essen?\", \"Ins Wallokal\"),\n                        new Witz(\"Brechstangen werden aus Diebstahl gefertigt.\")};\n        return witze;\n    }\n\n    @Override\n    public Kategorie[] getKategorien() {\n        return KATEGORIEN;\n    }\n}"
+            },
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.io.IOException;\n\npublic class WitzeApp {\n    private static WitzAPI api;\n\n    public static void main(String[] args) {\n        api = new OfficialJokeAPI();\n\n        try {\n            System.out.println(api.getZufallswitz().getWitz());\n        } catch (IOException e) {\n            System.out.println(\"API-Fehler\");\n        }\n    }\n}\n"
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.io.IOException;\n\npublic interface WitzAPI {\n    Witz getZufallswitz() throws IOException;\n    Witz[] getWitze(Kategorie kategorie);\n    Kategorie[] getKategorien();\n}"
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Witz {\n    private String witz;\n    protected Kategorie kategorie;\n\n    public Witz(String witz) {\n        this.witz = witz;\n    }\n\n    public Witz(String witz, Kategorie kategorie) {\n        this.witz = witz;\n        this.kategorie = kategorie;\n    }\n\n    public String getWitz() {\n        return witz;\n    }\n\n    public Kategorie getKategorie() {\n        return kategorie;\n    }\n}"
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Kategorie {\n    String kategorie;\n\n    public Kategorie(String kategorie) {\n        this.kategorie = kategorie;\n    }\n\n    @Override\n    public String toString() {\n        return kategorie;\n    }\n}"
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class FrageAntwortWitz extends Witz {\n    private String frage;\n    private String antwort;\n\n    public FrageAntwortWitz(String frage, String antwort) {\n        super(null);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public FrageAntwortWitz(String frage, String antwort, Kategorie kategorie) {\n        super(null, kategorie);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public String getFrage() {\n        return frage;\n    }\n\n    public String getAntwort() {\n        return antwort;\n    }\n\n    @Override\n    public String getWitz() {\n        return this.frage+\" \"+this.antwort;\n    }\n}"
+            },
+            "src/ChuckNorrisAPI.java" : {
+              "name" : "src/ChuckNorrisAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 146,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung7",
+                    "task" : "ChuckNorrisAPI",
+                    "file" : "src/ChuckNorrisAPI.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : " throws IOException",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.io.IOException;\nimport java.util.Map;\n\npublic class ChuckNorrisAPI implements WitzAPI {\n    @Override\n    public Witz getZufallswitz() {\n        String json = APIHelper.httpGet(\"http://api.icndb.com/jokes/random\");\n        String witz = (String)((Map)APIHelper.parseJson(json).get(\"value\")).get(\"joke\");\n        return new Witz(witz);\n    }\n\n    @Override\n    public Witz[] getWitze(Kategorie kategorie) {\n        return new Witz[0];\n    }\n\n    @Override\n    public Kategorie[] getKategorien() {\n        return new Kategorie[0];\n    }\n}\n"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport java.io.IOException;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    WitzAPI api = new OfficialJokeAPI();\n    Witz witz;\n    try {\n      witz = api.getZufallswitz();\n      Assert.assertTrue(\"Es wird kein Witz zurueckgeliefert.\", witz.getWitz().length() >= 5);\n      Assert.assertTrue(\"Es wird kein FrageAntwortWitz-Objekt zurueckgeliefert.\", witz instanceof FrageAntwortWitz);\n    } catch (IOException e) {\n      Assert.fail(\"getZufallswitz() liefert eine Exception.\");\n    }\n  }\n}"
+            },
+            "src/OfficialJokeAPI.java" : {
+              "name" : "src/OfficialJokeAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "import java.io.IOException;\n\npublic class OfficialJokeAPI implements WitzAPI {\n    @Override\n    public Witz getZufallswitz() throws IOException {\n        String json = APIHelper.httpGet(\"https://official-joke-api.appspot.com/random_joke\");\n        String frage = (String)(APIHelper.parseJson(json).get(\"setup\"));\n        String antwort = (String)(APIHelper.parseJson(json).get(\"punchline\"));\n        return new FrageAntwortWitz(frage, antwort);\n    }\n\n    @Override\n    public Witz[] getWitze(Kategorie kategorie) {\n        return new Witz[0];\n    }\n\n    @Override\n    public Kategorie[] getKategorien() {\n        return new Kategorie[0];\n    }\n}\n",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : ""
+            }
+          },
+          "description_text" : "<html>\n<p>Nun ist es Ihre Aufgabe, eine weitere API anzubinden. Und zwar die OfficialJokeAPI.</p>\n<p>Hier finden Sie die Beschreibung zu dieser API: <a href=\"https://github.com/15Dkatz/official_joke_api\">https://github.com/15Dkatz/official_joke_api</a>.</p>\n<p><b>Die Klasse <code>OfficialJokeAPI</code> ist bereits angelegt. Sie müssen sich &quot;nur noch&quot; um die Implementierung kümmern.</b></p>\n<p>Hinweis: Erzeugen Sie ein <code>FrageAntwortWitz</code>-Objekt.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "framework"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "buildscript {\n    repositories {\n        mavenCentral()\n    }\n}\n\ndef printOutput(def output) {\n    return tasks.create(\"printOutput\") {\n        for (line in output.toString().readLines()) {\n            println \"#educational_plugin\" + line\n        }\n    }\n}\n\nsubprojects {\n    apply plugin: 'application'\n    apply plugin: 'java'\n\n    sourceCompatibility = 1.8\n\n    repositories {\n        mavenCentral()\n    }\n\n    dependencies {\n        testCompile group: 'junit', name: 'junit', version: '4.12'\n    }\n\n    sourceSets {\n        main {\n            java.srcDir 'src'\n        }\n        test {\n            java.srcDir 'test'\n        }\n    }\n\n    mainClassName = project.hasProperty(\"mainClass\") ? project.getProperty(\"mainClass\") : \"\"\n\n    def runOutput = new ByteArrayOutputStream()\n    tasks.run.setStandardOutput(runOutput)\n    tasks.run.doLast { printOutput(runOutput) }\n}\n\nproject(':util') {\n    dependencies {\n        compile group: 'junit', name: 'junit', version: '4.12'\n    }\n}\n\nconfigure(subprojects.findAll {it.name != 'util'}) {\n  dependencies {\n    compile project(':util').sourceSets.main.output\n    testCompile project(':util').sourceSets.test.output\n  }\n}\n"
+    }
+  ],
+  "version" : 11
+}

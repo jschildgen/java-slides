@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung6.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung6.iml" group="PG2_Uebung6" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/Uebung6-1_UML.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/Uebung6-1_UML.iml" group="PG2_Uebung6/Uebung6-1_UML" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/Uebung6-1_UML_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/Uebung6-1_UML_main.iml" group="PG2_Uebung6/Uebung6-1_UML" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/Uebung6-1_UML_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/Uebung6-1_UML_test.iml" group="PG2_Uebung6/Uebung6-1_UML" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2a_Ausprobieren/Uebung6-2a_Ausprobieren.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2a_Ausprobieren/Uebung6-2a_Ausprobieren.iml" group="PG2_Uebung6/Uebung6-2a_Ausprobieren" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2a_Ausprobieren/Uebung6-2a_Ausprobieren_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2a_Ausprobieren/Uebung6-2a_Ausprobieren_main.iml" group="PG2_Uebung6/Uebung6-2a_Ausprobieren" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2a_Ausprobieren/Uebung6-2a_Ausprobieren_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2a_Ausprobieren/Uebung6-2a_Ausprobieren_test.iml" group="PG2_Uebung6/Uebung6-2a_Ausprobieren" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2b_Schnittstelle/Uebung6-2b_Schnittstelle.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2b_Schnittstelle/Uebung6-2b_Schnittstelle.iml" group="PG2_Uebung6/Uebung6-2b_Schnittstelle" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2b_Schnittstelle/Uebung6-2b_Schnittstelle_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2b_Schnittstelle/Uebung6-2b_Schnittstelle_main.iml" group="PG2_Uebung6/Uebung6-2b_Schnittstelle" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2b_Schnittstelle/Uebung6-2b_Schnittstelle_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2b_Schnittstelle/Uebung6-2b_Schnittstelle_test.iml" group="PG2_Uebung6/Uebung6-2b_Schnittstelle" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2c_Overrides/Uebung6-2c_Overrides.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2c_Overrides/Uebung6-2c_Overrides.iml" group="PG2_Uebung6/Uebung6-2c_Overrides" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2c_Overrides/Uebung6-2c_Overrides_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2c_Overrides/Uebung6-2c_Overrides_main.iml" group="PG2_Uebung6/Uebung6-2c_Overrides" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2c_Overrides/Uebung6-2c_Overrides_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2c_Overrides/Uebung6-2c_Overrides_test.iml" group="PG2_Uebung6/Uebung6-2c_Overrides" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2d_implements/Uebung6-2d_implements.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2d_implements/Uebung6-2d_implements.iml" group="PG2_Uebung6/Uebung6-2d_implements" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2d_implements/Uebung6-2d_implements_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2d_implements/Uebung6-2d_implements_main.iml" group="PG2_Uebung6/Uebung6-2d_implements" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2d_implements/Uebung6-2d_implements_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2d_implements/Uebung6-2d_implements_test.iml" group="PG2_Uebung6/Uebung6-2d_implements" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="PG2_Uebung6/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="PG2_Uebung6/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="PG2_Uebung6/util" />
+    </modules>
+  </component>
+</project>

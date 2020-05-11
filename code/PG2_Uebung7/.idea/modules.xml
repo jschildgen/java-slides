@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PG2_Uebung7.iml" filepath="$PROJECT_DIR$/.idea/PG2_Uebung7.iml" group="PG2_Uebung7" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/1_Exceptions/Uebung7-1_Exceptions.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/1_Exceptions/Uebung7-1_Exceptions.iml" group="PG2_Uebung7/Uebung7-1_Exceptions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/1_Exceptions/Uebung7-1_Exceptions_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/1_Exceptions/Uebung7-1_Exceptions_main.iml" group="PG2_Uebung7/Uebung7-1_Exceptions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/1_Exceptions/Uebung7-1_Exceptions_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/1_Exceptions/Uebung7-1_Exceptions_test.iml" group="PG2_Uebung7/Uebung7-1_Exceptions" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/2a_JSON/Uebung7-2a_JSON.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/2a_JSON/Uebung7-2a_JSON.iml" group="PG2_Uebung7/Uebung7-2a_JSON" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/2a_JSON/Uebung7-2a_JSON_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/2a_JSON/Uebung7-2a_JSON_main.iml" group="PG2_Uebung7/Uebung7-2a_JSON" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/2a_JSON/Uebung7-2a_JSON_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/2a_JSON/Uebung7-2a_JSON_test.iml" group="PG2_Uebung7/Uebung7-2a_JSON" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/ChuckNorrisAPI/Uebung7-ChuckNorrisAPI.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/ChuckNorrisAPI/Uebung7-ChuckNorrisAPI.iml" group="PG2_Uebung7/Uebung7-ChuckNorrisAPI" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/ChuckNorrisAPI/Uebung7-ChuckNorrisAPI_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/ChuckNorrisAPI/Uebung7-ChuckNorrisAPI_main.iml" group="PG2_Uebung7/Uebung7-ChuckNorrisAPI" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/ChuckNorrisAPI/Uebung7-ChuckNorrisAPI_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/ChuckNorrisAPI/Uebung7-ChuckNorrisAPI_test.iml" group="PG2_Uebung7/Uebung7-ChuckNorrisAPI" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/OfficialJokeAPI/Uebung7-OfficialJokeAPI.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/OfficialJokeAPI/Uebung7-OfficialJokeAPI.iml" group="PG2_Uebung7/Uebung7-OfficialJokeAPI" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/OfficialJokeAPI/Uebung7-OfficialJokeAPI_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/OfficialJokeAPI/Uebung7-OfficialJokeAPI_main.iml" group="PG2_Uebung7/Uebung7-OfficialJokeAPI" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung7/OfficialJokeAPI/Uebung7-OfficialJokeAPI_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung7/OfficialJokeAPI/Uebung7-OfficialJokeAPI_test.iml" group="PG2_Uebung7/Uebung7-OfficialJokeAPI" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="PG2_Uebung7/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="PG2_Uebung7/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="PG2_Uebung7/util" />
+    </modules>
+  </component>
+</project>

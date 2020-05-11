@@ -1,0 +1,22 @@
+<html>
+<p>In dieser ersten Aufgabe geht es nicht darum, etwas zu programmieren. Stattdessen geht es um den Entwurf einer Software.</p>
+<p><b>Erstellen Sie ein UML-Klassendiagramm für das folgende Szenario:</b></p>
+<ul>
+    <li>Wir möchten eine Witze-App erstellen mit einer Anbindung für verschiedene Witze-Anbieter-APIs.</li>
+    <li>Die Klasse <code>Witz</code> soll die Attribute <code>witz</code> und <code>kategorie</code> besitzen. Während der Witz ein <code>String</code> ist, soll es für die <code>Kategorie</code> eine eigene Klasse geben.</li>
+    <li>Es soll die beiden Konstruktoren <code>Witz(witz)</code> und <code>Witz(witz, kategorie)</code> sowie die Getter die beiden Attribute geben (keine Setter).</li>
+    <li>Die Klasse <code>Kategorie</code> hat ein Attribut <code>kategorie</code> vom Typ <code>String</code>, einen Konstruktor <code>Kategorie(kategorie)</code> und eine Methode <code>toString()</code> besitzen.</li>
+    <li>Eine Subklasse von <code>Witz</code> soll die Klasse <code>FrageAntwortWitz</code> sein. Diese soll die zusätzlichen Attribute <code>frage</code> und <code>antwort</code> besitzen sowie die Getter-Methoden für diese besitzen.</li>
+    <li>Die beiden Konstruktoren hier sollen <code>FrageAntwortWitz(frage, antwort)</code> und <code>FrageAntwortWitz(frage, antwort, kategorie)</code> sein.</li>
+    <li>Die Schnittstelle <code>WitzAPI</code> soll die Methoden <code>getZufallswitz()</code> und <code>getWitze(Kategorie kategorie)</code> besitzen. Erste liefert ein <code>Witz</code>-Objekt zurück, letztere einen Array mit <code>Witz</code>-Objekten.</li>
+    <li>Eine weitere Methode der <code>WitzAPI</code>-Schnittstelle voll <code>getKategorien()</code> sein, welche einen Array mit den verfügbaren Kategorien liefert.</li>
+    <li>Die beiden Klassen <code>OfficialJokeAPI</code> und <code>ChuckNorrisAPI</code> sollen jeweils das Interface <code>WitzAPI</code> implementieren. Beide sollen einen Konstruktor ohne Parameter besitzen.</li>
+    <li>In der Klasse <code>OfficialJokeAPI</code> sind die Kategorien hart reinprogrammiert, daher soll es dort eine statische Klassen-Variable <code>Kategorie[] kategorien</code> geben.</li>
+    <li>Die Hauptklasse der App heißt <code>WitzeApp</code>. Sie hat eine Methode <code>public static void main(String[] args)</code> sowie eine private statische Member-Variable <code>WitzAPI api</code>, in welche die zu wendende API konfiguriert wird.</li>
+</ul>
+<p>Hinweis: Achten Sie darauf, Klassen miteinander zu verbinden und mit Multiplizitäten (1, *, ...) zu versehen, wenn in einer Klasse Objekte einer anderen Klasse in Member-Variablen gespeichert werden.</p>
+<p>Zeichnen Sie das UML-Diagramm auf Papier und laden Sie ein Foto oder Scan davon im GRIPS hoch oder verwenden Sie eine Software zur Erstellung des UML-Diagrams und exportieren Sie darin das Diagramm als eine PDF.</p>
+<p>Es können nur PDF-Dateien hochgeladen werden. Haben Sie beispielsweise nur ein JPEG-Foto o. ä., fügen Sie dieses einfach in ein Word- oder LibreOffice-Dokument ein und exportieren Sie das Dokument als PDF.</p>
+<p>Fahren Sie mit den nächsten Aufgaben bitte erst fort, wenn Sie das UML-Diagramm fertiggestellt haben.</p>
+<p>PS: Der &quot;Run&quot;-Button dort unten hat bei dieser Aufgabe natürlich keine Funktion.</p>
+</html>

@@ -1,0 +1,25 @@
+type: output
+files:
+- name: test/output.txt
+  visible: false
+- name: src/APIHelper.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 149
+    placeholder_text: ""
+  - offset: 222
+    length: 19
+    placeholder_text: ""
+- name: src/Main.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 28
+    placeholder_text: ""
+  - offset: 130
+    length: 5
+    placeholder_text: ""
+  - offset: 238
+    length: 88
+    placeholder_text: ""

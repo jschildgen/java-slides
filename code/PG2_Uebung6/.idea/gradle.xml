@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Uebung6/1_UML" />
+            <option value="$PROJECT_DIR$/Uebung6/2a_Ausprobieren" />
+            <option value="$PROJECT_DIR$/Uebung6/2b_Schnittstelle" />
+            <option value="$PROJECT_DIR$/Uebung6/2c_Overrides" />
+            <option value="$PROJECT_DIR$/Uebung6/2d_implements" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

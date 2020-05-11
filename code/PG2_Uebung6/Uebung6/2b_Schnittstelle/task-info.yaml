@@ -1,0 +1,28 @@
+type: edu
+files:
+- name: src/WitzeApp.java
+  visible: true
+  placeholders:
+  - offset: 130
+    length: 127
+    placeholder_text: Definieren Sie die Kategorie und den Witz hier.
+    dependency:
+      lesson: Uebung6
+      task: 2a_Ausprobieren
+      file: src/WitzeApp.java
+      placeholder: 1
+      is_visible: false
+- name: src/FrageAntwortWitz.java
+  visible: true
+- name: src/Kategorie.java
+  visible: true
+- name: src/Witz.java
+  visible: true
+- name: test/Tests.java
+  visible: false
+- name: src/WitzAPI.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 130
+    placeholder_text: Entwickeln Sie die Schnittstelle hier.

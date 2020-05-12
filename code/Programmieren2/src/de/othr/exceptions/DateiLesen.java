@@ -2,9 +2,9 @@ package de.othr.exceptions;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
+import java.nio.file.*;
+
 
 public class DateiLesen {
     public static void main(String[] args) {
@@ -13,8 +13,8 @@ public class DateiLesen {
 
     public static void printDatei(String dateiname) {
         try {
-        FileReader fr = new FileReader(dateiname);
-        BufferedReader br = new BufferedReader(fr);
+        Path datei = Paths.get(dateiname);
+        BufferedReader br = Files.newBufferedReader(datei);
 
         String zeile;
 
@@ -23,6 +23,6 @@ public class DateiLesen {
         }
 
         br.close();
-        } catch(IOException e) {}
+        } catch(IOException e) { e.printStackTrace(); }
     }
 }

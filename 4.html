@@ -50,6 +50,7 @@
                 
                 <section>
                   <h2>Exceptions</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 10</div>
                   <p class="small">Exceptions werden geworfen, wenn eine Ausnahmesituation auftritt.</p>
                   <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/ExceptionBeispiel.java#5'></code></pre>
                   <p class="fragment small red">java.lang.NumberFormatException: For input string: "500 EUR"</p>
@@ -73,16 +74,17 @@
                   
                   <div class="fragment">
                   <ul class="small">
-                    <li><code>new FileReader</code> kann eine <code>FileNotFoundException</code> werfen</li>
+                    <li><code>Files.newBufferedReader</code> kann eine <code>IOException</code> werfen</li>
                     <li><code>BufferedReader.readLine()</code> kann eine <code>IOException</code> werfen</li>
                   </ul>
                   <p class="small" style="margin-left:2cm">&Rightarrow; entweder abfangen oder weiterwerfen!</p>
                   </div>
-                  <aside class="notes">IDEs wie IntelliJ zeigen an, welche Exceptions behandelt werden müssen. Das hier gezeigte Programm kann nicht kompiliert werden, bevor man sich um die Behandlung der beiden Exceptions kümmert. </aside>
+                  <aside class="notes">IDEs wie IntelliJ zeigen an, welche Exceptions behandelt werden müssen. Das hier gezeigte Programm kann nicht kompiliert werden, bevor man sich um die Behandlung der Exceptions kümmert. </aside>
                 </section>
 
                 <section>
                   <h2><code>try catch</code></h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 10.2</div>
                   <div class="columns">
                     <div>
                       <p class="small">Wird im <code>try</code>-Block die abzufangene Exception geworfen,<br>wird sofort in den entsprechenden <code>catch</code>-Block gesprungen.</p>
@@ -98,16 +100,16 @@
                     </div>
                   </div>
                   
-                  <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#11-16'></code></pre>
+                  <pre class="fragment" style="width:95%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#11-17'></code></pre>
 
-                  <aside class="notes">Die Catch-or-Throw-Regel besagt, dass Exceptions entweder abgefangen werden müssen oder man gibt sie an den Methoden-Aufrufer weiter. Das Abfangen erfolgt in Java mit einem <code>try</code>/<code>catch</code>-Konstrukt. Tritt im gezeigten Beispiel im <code>try</code>-Block eine <code>FileNotFoundException</code> auf, springt das Programm in den entsprechenden <code>catch</code>-Block. Die Exception wurde also behandelt. Das Programm geht weiter.</aside>
+                  <aside class="notes">Die Catch-or-Throw-Regel besagt, dass Exceptions entweder abgefangen werden müssen oder man gibt sie an den Methoden-Aufrufer weiter. Das Abfangen erfolgt in Java mit einem <code>try</code>/<code>catch</code>-Konstrukt. Tritt im gezeigten Beispiel im <code>try</code>-Block eine <code>IOException</code> auf, springt das Programm in den entsprechenden <code>catch</code>-Block. Die Exception wurde also behandelt. Das Programm geht weiter.</aside>
                 </section>
 
                 <section>
                   <h2><code>try catch</code></h2>
                   <p class="small">Abfangen verschiedener Exceptions:</p>
                   <pre><code style="max-height: 12cm" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#21-35'></code></pre>
-                  <aside class="notes">Mehrere <code>catch</code>-Blöcke können verwendet werden, um unterschiedliche Arten von Exceptions unterschiedlich zu behandeln.</aside>
+                  <aside class="notes">Mehrere <code>catch</code>-Blöcke können verwendet werden, um unterschiedliche Arten von Exceptions unterschiedlich zu behandeln. Die <code>NoSuchFileException</code> ist eine Subklasse von <code>IOException</code>.</aside>
                 </section>
 
                 <section>
@@ -118,7 +120,7 @@
                     <p class="small">Abfangen aller Exceptions:</p>
                     <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#56-59'></code></pre>
                   </div>
-                  <aside class="notes">In einem <code>catch</code>-Ausdruck lassen sich mehrere Exceptions mit einem senkrechten Strich <code>|</code> trennen. Das untere Beispiel zeigt, dass es auch möglich ist, jegliche Art von Exception abzufangen und sie auf gleiche Weise zu behandeln. Im oberen Beispiel haben wir nicht wie auf der vorherigen Folie die <code>FileNotFoundException</code> verwendet, da diese eine Subklasse von <code>IOException</code> ist und daher ohnehin schon abgefangen wird.</aside>
+                  <aside class="notes">In einem <code>catch</code>-Ausdruck lassen sich mehrere Exceptions mit einem senkrechten Strich <code>|</code> trennen. Das untere Beispiel zeigt, dass es auch möglich ist, jegliche Art von Exception abzufangen und sie auf gleiche Weise zu behandeln. Im oberen Beispiel haben wir nicht wie auf der vorherigen Folie die <code>NoSuchFileException</code> verwendet, da diese eine Subklasse von <code>IOException</code> ist und daher ohnehin schon abgefangen wird.</aside>
                   </section>
 
                   <section>
@@ -138,8 +140,8 @@
 
                   <section>
                     <h2><code>try catch finally</code></h2>
-                    <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#72-84'></code></pre>
-                    <aside class="notes">Das im <code>finally</code>-Block befindliche <code>br.close();</code> wird in jedem Fall ausgeführt, egal ob die Datei fehlerfrei ausgegeben werden konnte oder aus der Methode gesprungen wird, weil dabei ein Fehler auftrat. Da die <code>close</code>-Methode ebenfalls wieder eine <code>IOException</code> werfen kann, wird diese hier abgefangen und ignoriert.</aside>
+                    <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#66-79'></code></pre>
+                    <aside class="notes">Der im <code>finally</code>-Block befindliche Code wird in jedem Fall ausgeführt, egal ob die Datei fehlerfrei ausgegeben werden konnte oder aus der Methode gesprungen wird, weil dabei ein Fehler auftrat. Da die <code>close</code>-Methode ebenfalls wieder eine <code>IOException</code> werfen kann, wird diese hier abgefangen und ignoriert.</aside>
                   </section>
 
                   <section>
@@ -151,6 +153,7 @@
 
                 <section>
                   <h2><code>throws</code></h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 10.3</div>
                   <p class="small">Wenn eine Exception nicht abgefangen wird, wird sie weitergeworfen.</p>
                   <pre style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#13-24'></code></pre>
                   
@@ -171,10 +174,11 @@
 
                 <section>
                   <h2><code>throw</code></h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 10.4</div>
                   <p class="small">Manuelles Werfen von Exceptions:</p>
-                    <pre style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#29-32'></code></pre>
-                  <pre class="fragment" style="width: 97%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#39'></code></pre>
-                  <aside class="notes">Durch einen Aufruf des <code>throw</code>-Befehl wird die Ausführung der aktuellen Methoden sofort abgebrochen und die gegebene Exception geworfen. Obiges Beispiel wirft einfach die <code>Exception e</code>, die gerade abgefangen wurde, weiter. Im unteren Beispiel wird ein neues <code>Exception</code>-Objekt erzeugt.</aside>
+                    <pre style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#29-32'></code></pre>
+                  <pre class="fragment" style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#39'></code></pre>
+                  <aside class="notes">Durch einen Aufruf des <code>throw</code>-Befehl wird die Ausführung der aktuellen Methoden sofort abgebrochen und die gegebene Exception geworfen. Obiges Beispiel wirft einfach die <code>IOException e</code>, die gerade abgefangen wurde, weiter. Im unteren Beispiel wird ein neues <code>Exception</code>-Objekt erzeugt.</aside>
                 </section>
 
                 <section>
@@ -186,6 +190,7 @@
 
                 <section>
                   <h2><code>Exception</code>-Klasse</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 10.1</div>
                   <img style="max-height: 10.5cm; margin-top: -8mm;" uml="
                   hide empty members
                   set namespaceSeparator none
@@ -269,6 +274,121 @@
                 </section>
 
                 <section>
+                  <h3>Datei-Handling</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 16</div>
+                  <ul class="small">
+                    <li><code>java.io</code>
+                      <ul>
+                        <li><code>BufferedReader</code> / <code>BufferedWriter</code>: Textdateien lesen / schreiben</li>
+                        <li><code>IOException</code></li>
+                        <li><strike><code>File</code></strike></li>
+                        <li>...</li>
+                      </ul>
+                    </li>
+                    <li><code>java.nio.file</code> (Non-blocking IO / New IO)
+                    <ul>
+                      <li><code>Path</code>: eine Datei oder ein Verzeichnis</li>
+                      <li><code>BasicFileAttributes</code>: Dateiattribute (Erstellungsdatum ...)</li>
+                      <li><code>DirectoryStream</code>: Inhalt von Verzeichnissen</li>
+                      <li><code>Paths</code> / <code>Files</code>: nützliche statische Methoden</li>
+                      <li>...</li>
+                    </ul>
+                    </li>
+                  </ul>
+                  <aside class="notes">In vielen Tutorials und Büchern liest man noch von der Klasse <code>java.io.File</code>. Seit einigen Jahren gibt es jedoch für vieles, was mit der Arbeit mit Dateien zu tun hat, eine Alternative im Paket <code>java.nio</code>. Die <code>File</code>-Klasse ist zwar nicht deprecated, aber wenn man die Wahl hat, sollte man die <code>nio</code>-Klassen und -Interfaces verwenden.</aside>
+                </section>
+
+                <section>
+                  <h3>Betriebssystem-Umgebungsvariablen</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 16.2</div>
+                  <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/dateien/DateiBeispiel.java#9-13'></code></pre>
+                  <table class="small">
+                    <thead><tr><td><code>os.name</code></td><th>Windows 10</th><th>Mac OS X</th><th>Linux</th></tr></thead>
+                    <tbody>
+                      <tr><td><code>user.dir</code></td><td>D:\projekt</td><td>/pfad/projekt</td><td>/pfad/projekt</td></tr>
+                      <tr><td><code>user.home</code></td><td>C:\Users\xyz</td><td>/Users/xyz</td><td>/home/xyz</td></tr>
+                      <tr><td><code>java.io.tmpdir</code></td><td><small>C:\Users\xyz\AppData\Local\Temp</small></td><td><small>/var/folders/vd/T_/qyr.../T/</small></td><td>/tmp</td></tr>
+                      <tr><td><code>file.separator</code></td><td>\</td><td>/</td><td>/</td></tr>
+                    </tbody>
+                  </table>
+                  <aside class="notes">Da Java eine plattformunabhängige Sprache ist, sollte man bei der Arbeit mit Dateien keine Pfade in den Programmcode hardcoden und auch nicht den Slash (/ bzw. \) in Pfaden verwenden, sondern stattdessen auf Umgebungsvariablen zugreifen.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Path</code> / <code>Paths</code></h3>
+                  <img style="max-height: 8cm; position: absolute; right: 5mm;" uml="
+                  class Paths {
+                    --
+                    {static} +get(first : String, more : String...) : Path 
+                    . . .
+                  }
+
+                  interface Path <<interface>> { 
+                    --
+                    +resolve(other : String) : Path
+                    +getParent() : Path
+                    . . .  
+                  }
+                  
+                  Paths -[hidden]-> Path 
+                  "/>
+                  <pre style="width: 16cm; margin-left: 2mm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/dateien/DateiBeispiel.java#16-21'></code></pre>
+                  
+                  <div class="poll fragment" style="bottom:-350px"> 
+                    <h1>Was ist datei.toString() unter Linux?</h1>
+                        <ul>
+                          <li>datei.txt</li>
+                          <li>\tmp\datei.txt</li>
+                          <li data-poll="correct">/tmp/datei.txt</li>
+                          <li>Kommt drauf an, welche der 3 Zuweisungen gemeint ist</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+                  
+                  <aside class="notes">Die Schnittstelle <code>Path</code> repräsentiert eine Datei. Mit <code>Paths.get</code> kann ein solches Objekt erzeugt werden. Im Beispielcode wurde zunächst ein <code>Path</code> zum temporären Verzeichnis erzeugt und daraufhin auf drei verschiedene Arten auf eine dort befindliche Datei verwiesen. Die beiden letzten Varianten sind sehr elegant, da man kein Pfad-Trennzeichen einfügen muss. Übergibt man <code>Paths.get</code> mehrere Strings, kann man den Pfad aus mehreren Unterordnern zusammensetzen. <code>Path.resolve</code> löst ausgehend von einem existierenden Pfad den Pfad weiter auf. Wir bewegen uns also auch hier zur Datei <code>datei.txt</code>, die sich im temporären Verzeichnis befindet. Achtung: <code>Path</code> bzw. <code>Paths.get</code> überprüft nicht, ob es die Datei oder das Verzeichnis wirklich gibt und ob darauf zugegriffen werden kann.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Files</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 16.2, 16.3</div>
+                  <img style="max-height: 8cm; position: absolute; right: 1mm; top: 2cm; z-index: 9999;" uml="
+                  class Files {
+                    --
+                    {static} +exists(path : Path) : boolean
+                    {static} +size(path : Path) : long
+                    {static} +isDirectory(path : Path) : boolean
+                    {static} +isRegularFile(path : Path) : boolean
+                    {static} +isReadable(path : Path) : boolean
+                    {static} +isWritable(path : Path) : boolean
+                    {static} +createDirectory(path : Path) : Path
+                    {static} +createFile(path : Path) : Path
+                    {static} +move(source : Path, target : Path) : Path
+                    {static} +copy(source : Path, target : Path) : Path
+                    {static} +delete(path : Path)
+                    . . .
+                  }
+                  "/>
+                  <pre><code style="max-height:22cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/dateien/DateiBeispiel.java#31-51'></code></pre>
+                  <aside class="notes">Hier wird mit <code>Files.exists</code> überprüft, ob eine Datei oder ein Verzeichnis existiert. <code>Files.createFile</code> und <code>Files.size</code> werfen eine <code>IOException</code>, wenn der Dateizugriff nicht funktioniert.</aside>
+                </section>
+
+                <section>
+                  <h3><code>BufferedWriter</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 16.4</div>
+                  <h4>In eine Textdatei schreiben</h4>
+                  <pre><code style="max-height:22cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/dateien/DateiBeispiel.java#68-77'></code></pre>
+                  <aside class="notes">Viele Methoden der <code>Files</code>-Klasse nehmen beliebig viele zusätzliche Parameter entgegen, um Optionen festzulegen. In diesem Beispiel wurde die Option <code>APPEND</code> gewählt, um den Text ans Ende der Datei anzufügen anstatt die Datei zu überschreiben. Die <code>CREATE</code>-Option sorgt dafür, dass die Datei angelegt wird, falls sie noch nicht existiert.</aside>
+                </section>    
+                
+                <section>
+                  <h3><code>BufferedReader</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 16.4</div>
+                  <h4>Aus einer Textdatei lesen</h4>
+                  <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#90-98'></code></pre>
+                  <aside class="notes">Dieses Beispiel wurde bereits auf der Folie zum try-catch mit Ressourcen gezeigt. Der <code>BufferedReader</code> erlaubt über die Methode <code>readLine()</code> einen zeilenweisen Zugriff auf eine Textdatei. Ist er am Ende angekommen, liefert die Methode <code>null</code> zurück. Der Ausdruck <code>zeile = br.readLine()</code> setzt also <code>zeile</code> auf <code>null</code> und liefert <code>null</code>. Die Überprüfung auf <code>!= null</code> sorgt dann dafür, dass die <code>while</code>-Schleife nun beendet ist.</aside>
+                </section>
+
+                <section>
                   <h2>Kapitelzusammenfassung</h2>
                   <ul>
                     <li>Exceptions, RuntimeExceptions</li>
@@ -276,6 +396,10 @@
                     <li><code>try catch</code></li>
                     <li><code>try catch finally</code></li>
                     <li><code>throws</code> / <code>throw</code></li>
+                    <li>Betriebssystem-Umgebungsvariablen</li>
+                    <li>Dateien und Ordner: <code>Path</code>, <code>Paths</code>, <code>Files</code></li>
+                    <li>Dateien lesen: <code>BufferedReader</code></li>
+                    <li>Dateien schreiben: <code>BufferedWriter</code></li>
                   </ul>
           </section>
 

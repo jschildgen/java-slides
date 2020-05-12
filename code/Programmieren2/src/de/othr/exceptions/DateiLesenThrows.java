@@ -1,6 +1,7 @@
 package de.othr.exceptions;
 
 import java.io.*;
+import java.nio.file.*;
 
 public class DateiLesenThrows {
     public static void main(String[] args) throws Exception {
@@ -9,10 +10,9 @@ public class DateiLesenThrows {
 
 
 
-
     public static void printDatei(String dateiname) throws IOException {
-        FileReader fr = new FileReader(dateiname);
-        BufferedReader br = new BufferedReader(fr);
+        Path datei = Paths.get(dateiname);
+        BufferedReader br = Files.newBufferedReader(datei);
 
         String zeile;
 
@@ -25,7 +25,7 @@ public class DateiLesenThrows {
 
     public static void printDatei2(String dateiname) throws IOException {
         try {
-            FileReader fr = new FileReader(dateiname);
+            BufferedReader br = Files.newBufferedReader(Paths.get(dateiname));
         } catch (IOException e) {
             System.out.println("Beim Datei-Lesen ist etwas schief gelaufen.");
             throw e;
@@ -34,7 +34,7 @@ public class DateiLesenThrows {
 
     public static void printDatei3(String dateiname) throws IOException {
         try {
-            FileReader fr = new FileReader(dateiname);
+            BufferedReader br = Files.newBufferedReader(Paths.get(dateiname));
         } catch (IOException e) {
             throw new IOException("Fehler beim Lesen der Datei");
         }

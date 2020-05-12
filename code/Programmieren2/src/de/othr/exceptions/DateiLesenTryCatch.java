@@ -1,5 +1,5 @@
 package de.othr.exceptions;
-import java.io.*;
+import java.io.*; import java.nio.file.*;
 public class DateiLesenTryCatch {
     public static void main(String[] args) {
         String dateiname = System.getProperty("user.home")+  File.separator + "test.txt";
@@ -9,24 +9,24 @@ public class DateiLesenTryCatch {
 
     public static void printDatei(String dateiname) {
         try {
-            FileReader fr = new FileReader(dateiname);
-        } catch (FileNotFoundException e) {
-            System.out.println("Die Datei existiert nicht.");
+            Path datei = Paths.get(dateiname);
+            BufferedReader br = Files.newBufferedReader(datei);
+        } catch (IOException e) {
+            System.out.println("Die Datei kann nicht geöffnet werden.");
             return;
         }
         // ...
     }
-
     public static void printDatei2(String dateiname) {
         try {
-            FileReader fr = new FileReader(dateiname);
-            BufferedReader br = new BufferedReader(fr);
+            Path datei = Paths.get(dateiname);
+            BufferedReader br = Files.newBufferedReader(datei);
             String zeile;
             while ((zeile = br.readLine()) != null) {
                 System.out.println(zeile);
             }
             br.close();
-        } catch (FileNotFoundException e) {
+        } catch (NoSuchFileException e) {
             System.out.println("Die Datei existiert nicht.");
             return;
         } catch (IOException e) {
@@ -39,8 +39,8 @@ public class DateiLesenTryCatch {
 
     public static void printDatei3(String dateiname) {
         try {
-            FileReader fr = new FileReader(dateiname);
-            BufferedReader br = new BufferedReader(fr);
+            Path datei = Paths.get(dateiname);
+            BufferedReader br = Files.newBufferedReader(datei);
             String zeile;
             while ((zeile = br.readLine()) != null) {
                 System.out.println(zeile);
@@ -61,15 +61,10 @@ public class DateiLesenTryCatch {
 
 
     public static void printDatei4(String dateiname) {
-        FileReader fr;
+        Path datei = Paths.get(dateiname);
+        BufferedReader br = null;
         try {
-            fr = new FileReader(dateiname);
-        } catch(FileNotFoundException e) {
-            System.out.println("Die Datei existiert nicht.");
-            return;
-        }
-        BufferedReader br = new BufferedReader(fr);
-        try {
+            br = Files.newBufferedReader(datei);
             String zeile;
             while ((zeile = br.readLine()) != null) {
                 System.out.println(zeile);
@@ -79,15 +74,20 @@ public class DateiLesenTryCatch {
             return;
         } finally {
             try {
-                br.close();
+                if(br != null) { br.close(); }
             } catch (IOException e) { }
         }
     }
 
 
 
+
+
+
+
     public static void printDatei5(String dateiname) {
-        try(BufferedReader br = new BufferedReader(new FileReader(dateiname))) {
+        Path datei = Paths.get(dateiname);
+        try(BufferedReader br = Files.newBufferedReader(datei)) {
             String zeile;
             while ((zeile = br.readLine()) != null) {
                 System.out.println(zeile);

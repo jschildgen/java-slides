@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Programmieren 2 - Kapitel 5 - Generics, Collections, Lambda-Ausdrücke</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reset.css">
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+
+        <link rel="stylesheet" href="src/slides.css">
+        <link rel="stylesheet" href="src/style.css">
+
+		<link rel="stylesheet" href="src/layout.css">
+        <link rel="stylesheet" href="lib/joint.min.css" />
+        <link rel="stylesheet" href="src/erd.css" />
+        <link rel="stylesheet" href="poll/poll.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="src/rainbow.css">
+
+        <!--<script defer src="lib/fontawesome.all.min.js"/>-->
+        <link href="lib/fontawesome.all.min.css" rel="stylesheet">
+        <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+            <div id="header"></div>
+            <div id="footer"></div>
+			<div class="slides">
+                <section>
+                    <h4 style="text-align:center"><b>Prof. Dr.-Ing. Johannes Schildgen</b><br>
+                    <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
+                    <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
+                    <h3>Kapitel 5: Generics, Collections, Lambda-Ausdrücke</h3>
+                    <h4 style="text-align:center">2020-05-20</h4>
+                    <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-180px;">
+                    <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-180px; box-shadow:none">
+                </section>
+                
+                <section>
+                  <h3>Eine Klasse <code>StringPaar</code></h3>
+                  <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/StringPaar.java#3-20,28'></code></pre>
+                  <aside class="notes">Hier ist eine Klasse zu sehen, die es ermöglicht, ein Paar von zwei Strings zu speichern. Wir müssten das ganze nochmal genau so machen, wenn wir eine <code>IntegerPaar</code>, <code>PersonenPaar</code>, usw. bräuchten.</aside>
+                </section>
+
+                <section>
+                  <h3>Generics: <code>&lt;T&gt;</code></h3>
+                  <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/Paar.java#3-20,28'></code></pre>
+                  <aside class="notes">Unter Generics versteht man Klassen und Interfaces, die mit verschiedenen Datentypen zurecht kommen können. Innerhalb der Klasse (oder Schnittstelle) nennt man den Datentyp einfach irgendwie, üblich ist z.&nbsp;B. <code>T</code> oder auch <code>K</code> und <code>V</code> (für Key und Value). Member-Variablen können von diesem generischen Typen sein, Methoden können <code>T</code>-Objekte als Parameter entgegennehmen und <code>T</code>-Objekte zurückgeben.</aside>
+                </section>
+
+                <section>
+                  <h3>Generics</h3>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#6-8'></code></pre>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#10-14'></code></pre>
+                  <pre class="fragment"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#16-20'></code></pre>
+                  <aside class="notes">Das untere Beispiel ist vielleicht etwas verrückt, aber die hier gezeigten Code-Beispiele zeigen, dass sich die generischen Klassen mit beliebigen Typen verwenden lassen. Lediglich primitive Datentypen (<code>int</code>,...) dürfen nicht verwendet werden, nur Klassen. Nicht falsch verstehen: Das oben gezeigte Beispiel sollen nur zeigen, wie man Generics verwendet. Für das gezeigten Beispiel und später folgende Beispiele wäre die Entwicklung einer Klasse <code>Person</code> natürlich viel sinnvoller!</aside>
+                </section>
+
+                <section>
+                  <h3>Diamond-Operator <code>&lt;&gt;</code></h3>
+                  <p class="small">Beim Konstruktor-Aufruf dürfen die Typenparameter weggelassen werden.</p>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#24'></code></pre>
+
+                  <aside class="notes">Der Java-Compiler erkennt automatisch an den übergebenen Werten, was die Parameter-Typen sein sollen. Im hier gezeigten Beispiel entspricht <code>&lt;&gt;</code> folgendem: <code>&lt;String, String&gt;</code></aside>
+                </section>
+
+                <section>
+                  <h3>Generics: Mehrere Typenparameter</h3>
+                  <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/SchluesselWertPaar.java#3-14,28,36'></code></pre>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#22-23'></code></pre>
+                  <aside class="notes">Es ist auch möglich, mehrere Typenparameter einzuführen. Wichtig ist, dass diese in der Klassendefinition genannt werden (hier: <code>SchluesselWertPaar<K, V></K></code>). Die Schreibweise mit <code>var</code> spart hier sehr viel Schreibarbeit. Ausgeschrieben müsste es heißen: <code>SchluesselWertPaar&lt;String, Integer&gt; ute = </String>new SchluesselWertPaar&lt;String, Integer&gt;("Ute", 19);</code>.</aside>
+                </section>
+
+                <section>
+                  <h3>Typeinschränkung</h3>
+                  <h4><code>&lt;T extends C&gt;</code></h4>
+                  <p class="small">Es soll nicht jeder beliebige Typ <code>&lt;T&gt;</code> verwendet werden dürfen, sondern nur Subklassen von <code>C</code>.</p>
+                  <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/Brautpaar.java#3-14'></code></pre>                      
+                  <aside class="notes">Objekte dieser generischen Klasse dürfen nur mit Typenparametern verwendet werden, die eine Subklasse von <code>Person</code> sind (<code>Person</code> selbst ist auch ok). Daher können Sie sich in der Klasse darauf verlassen, dass ihre <code>T</code>-Objekte z. B. die Methode <code>getAlter()</code> haben.</aside>
+                </section>
+
+                <section>
+                  <h3>Generische Methoden</h3>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#33-39'></code></pre>                  
+                  <pre class="fragment"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#26-30'></code></pre> 
+                  <aside class="notes">In beliebigen Klassen (nicht nur in generischen) darf es generische Methoden geben. Wichtig bei solchen Methoden ist, den generischen Typen (hier <code>&lt;T extends Person&gt;</code>) vor den Rückgabetypen der Methode (bzw. vor <code>void</code>) zu schreiben. Dann darf die Methode Objekte dieses generischen Typen entgegennehmen und zurückliefern. Das gezeigte Beispiel nimmt zwei Objekte entgegen, die von der Klasse <code>Person</code> oder deren Subklasse ist, und liefert die ältere Person zurück. Werden beispielsweise zwei <code>Studierender</code>-Objekte übergeben, kommt auch ein Studierender-Objekt zurück.</aside>
+                </section>
+
+                <section>
+                  <h3>Wildcards <code>&lt;?&gt;</code></h3>
+                  <p class="small">Wenn Parameter von Methoden Gernerics sind, können bei diesen Wildcards <code>&lt;?&gt;</code> verwenden werden, damit sie mit beliebigen Typen übergeben werden können.</p>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#41-44'></code></pre>
+                  <aside class="notes">Die hier gezeigte Methode nimmt ein beliebiges <code>Paar</code>-Objekt entgegen, z. B. ein <code>Paar&lt;String&gt;</code>, ein <code>Paar&lt;Integer&gt;</code> oder ein <code>Paar&lt;Object&gt;</code>.</aside>
+                </section>
+                
+                <section>
+                  <h3>Upper- / Lower-bound Wildcards</h3>
+                  <div>
+                    <h4>Upper-bound Wildcards <code>&lt;? extends C&gt;</code></h4>
+                    <pre style="width: 95%; margin-top: -2mm;"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#45-48'></code></pre>
+                    <pre style="width: 95%;"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#55-56'></code></pre>
+                  </div>
+
+                  <div class="fragment">
+                    <h4>Lower-bound Wildcards <code>&lt;? super C&gt;</code></h4>
+                    <pre style="width: 95%; margin-top: -2mm;"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#50-52'></code></pre>
+                    <pre style="width: 95%;"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#57'></code></pre>
+                  </div>
+                  <aside class="notes">Möchte man nur Typparameter einer bestimmten Klasse oder deren Subklasse akzeptieren, verwendet man <code>&lt;? extends C&gt;</code>. Die Methode im unteren Beispiel akzeptiert nur Objekte der Klassen <code>Paar&lt;Person&gt;</code>, <code>Paar&lt;Lebewesen&gt;</code> und <code>Paar&lt;Object&gt;</code>.</aside>
+                </section>
+
+                <section>
+                  <h2>Collections</h2>
+                  <img style="max-height: 14cm; margin-top:-1cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  package java.util {
+                    interface Iterable<T> <<interface>> {
+                      --
+                      +iterator() : Iterator<T>
+                      +forEach(action : Consumer<? super T>)
+                      . . .
+                    }
+
+                    interface Collection<E> <<interface>> {
+                      --
+                      +add(e : E) : boolean
+                      +remove(o : Object) : boolean
+                      +contains(e : E) : boolean
+                      +size() : int
+                      +toArray() : Object[]
+                      . . .
+                    }
+
+                    interface List<E> <<interface>> { 
+                      --
+                      +get(index : int) : E
+                      +sort(c : Comparator<? super E>)
+                      . . .
+                    }
+
+                    class ArrayList<E> { }
+                    class LinkedList<E> { }
+
+                    interface Set<E> <<interface>> { }
+
+                    class HashSet<E> { }
+
+                    Iterable <|..r Collection : \t\t\t
+                    Collection <|.. List : \t\t\t
+                    Collection <|.. Set : \t\t\t
+
+                    List <|.. ArrayList : \t\t\t
+                    List <|.. LinkedList : \t\t\t
+
+                    Set <|.. HashSet : \t\t\t
+
+                    interface Map<K,V> {
+                      --
+                      put(key : K, value : V) : V
+                      get(key : Object) : V
+                      ...
+                    }
+
+                    Iterable -[hidden]-> Map
+                    
+                    class HashMap<K,V> { }
+
+                    Map <|.. HashMap : \t\t\t
+                  }
+                  "/>
+                  <aside class="notes">Dieses Klassendiagramm zeigt einen Auszug aus den Klassen und Schnittstellen im Paket <code>java.util</code>.</aside>
+                </section>
+
+              </div>
+            </div>
+        
+            <script src="reveal.js/js/reveal.js"></script>
+                <script src="lib/jquery.js"></script>
+                <script src="lib/lodash.js"></script>
+                <script src="lib/backbone.js"></script>
+                <script src="lib/joint.min.js"></script>
+                <script src="lib/deflate.js"></script>
+        
+            <script src="src/init_reveal.js"></script>
+        
+                <script>
+                if(window.location.search.match( /print-pdf/gi )) {
+                        document.getElementById('header').style="display:none";
+                        document.getElementById('footer').style="display:none";
+                }
+                </script>
+        
+        
+          </body>
+        </html>
+        

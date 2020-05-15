@@ -1,6 +1,6 @@
 package de.othr.generics;
 
-public class Person {
+public class Person implements Comparable<Person> {
     private String name;
     private int alter;
 
@@ -46,5 +46,10 @@ public class Person {
 
     public Person(String vorname, String nachname) {
         this(vorname+" "+nachname);
+    }
+    //...
+    @Override
+    public int compareTo(Person person) {
+        return this.alter-person.alter;
     }
 }

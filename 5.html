@@ -122,6 +122,57 @@
                 </section>
 
                 <section>
+                  <h3>Beispiel: <code>Comparable&lt;T&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.5</div>
+                  <img style="position: absolute; right:-0.5cm; max-height: 6cm; top:2.5cm" uml="
+                  skinparam genericDisplay old
+                  hide empty members
+
+                  interface Comparable<T> <<interface>> { 
+                    +compareTo(other : T) : int  
+                  } 
+
+                  class Person {}
+                  
+                  Comparable <|.. Person 
+                  
+                  "/>
+                  
+                  <pre style="width:18cm; margin-left: 5mm;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/generics/Person.java#3,50-55'></code></pre>
+                
+                  <pre class="fragment" style="width:18cm; margin-left: 5mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#64-68,70'></code></pre>
+                
+                  <div style="position: absolute; right:0.5cm; max-height: 6cm; top:9cm" class="fragment"><p class="small">Tim (8)<br>Ute (19)<br>Peter (20)<br>Otto (70)</p></div>
+
+                  <aside class="notes">Auf diversen Folien wurde bereits die <code>Comparable</code>-Schnittstelle aus dem Paket <code>java.lang</code> und die darin vorhandene <code>compareTo</code>-Methode gezeigt. Verschwiegen wurde jedoch, dass dieses Interface ein generisches Interface ist. <code>implements Comparable</code> bedeutet, dass man ein Objekt der genannten Klasse mit jedem beliebigen <code>Object</code> vergleichen kann. Deutlich nützlicher ist dagegen </code><code>implements Comparable&lt;Person&gt;</code>. Hier muss <code>compareTo(Person)</code> implementiert werden. Personen-Objekte sind damit nur mit anderen Personen-Objekten vergleichbar.</aside>
+                </section>
+
+                <section>
+                  <h3>Beispiel: <code>Comparator&lt;T&gt;</code></h3>
+                  <img style="position: absolute; right:-0.5cm; max-height: 6cm; top:2.5cm" uml="
+                  skinparam genericDisplay old
+                  hide empty members
+
+                  interface Comparator<T> <<interface>> { 
+                    +compare(t1 : T, t2 : T) : int  
+                  } 
+
+                  class PersonNameComparator\t {}
+                  
+                  Comparator <|.. PersonNameComparator\t
+                  
+                  "/>
+
+                  <pre style="width:18.2cm; margin-left: 5mm;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces_java/PersonNameComparator.java#5-11'></code></pre>
+
+                  <pre class="fragment" style="width:18.2cm; margin-left: 5mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/ComparatorBeispiel.java#7-11,13'></code></pre>
+
+                  <div style="position: absolute; right:0.5cm; max-height: 6cm; top:9cm" class="fragment"><p class="small">Otto (70)<br>Peter (20)<br>Tim (8)<br>Ute (19)</p></div>
+
+                  <aside class="notes"><!--Selten muss man selbst generische Klassen entwickeln. Oft verwendet man aber vorhandene generische Klassen und Interfaces aus der Java-API. Neben <code>Comparable&lt;T&gt;</code> und der im nächsten Abschnitt präsentierten Collections, ist ein weiteres Beispiel das hier gezeigt Interface <code>Comparator&lt;T&gt;</code>. -->Ähnlich wie <code>Comparable&lt;T&gt;</code> vergleicht ein Comparator, welches zweier <code>T</code>-Objekte größer ist. Während bei <code>Comparable</code> die <code>compareTo</code>-Methode auf einem zu vergleichenden Objekt aufgerufen wird, nimmt ein <code>Comparator</code>-Objekt zwei <code>T</code>-Objekte entgegen, um sie zu vergleichen. Der Vergleich ist also aus der Klasse selbst ausgelagert. Das macht es z. B. möglich, Personen-Objekte - mal so, mal so - nach verschiedenen Kriterien zu sortieren.</aside>
+                </section>
+
+                <section>
                   <h2>Collections</h2>
                   <img style="max-height: 14cm; margin-top:-1cm" uml="
                   hide empty members

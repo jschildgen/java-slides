@@ -174,7 +174,7 @@
 
                 <section>
                   <h2>Collections</h2>
-                  <img style="max-height: 14cm; margin-top:-1cm" uml="
+                  <img style="max-height: 15cm; margin-top:-1cm" uml="
                   hide empty members
                   set namespaceSeparator none
 
@@ -199,6 +199,7 @@
 
                     interface List<E> <<interface>> { 
                       --
+                      +add(index : int, element : E)
                       +get(index : int) : E
                       +sort(c : Comparator<? super E>)
                       . . .
@@ -235,6 +236,197 @@
                   }
                   "/>
                   <aside class="notes">Dieses Klassendiagramm zeigt einen Auszug aus den Klassen und Schnittstellen im Paket <code>java.util</code>.</aside>
+                </section>
+
+                <section>
+                  <h3>Collections-Schnittstellen</h3>
+                  <ul class="small">
+                    <li><code>Iterable</code>: ermöglicht die Nutzung in einer <code>for-each</code>-Schleife
+                      <ul>
+                        <li class="fragment"><code>Collection</code>: Eine Sammlung von Objekten
+                          <ul>
+                            <li class="fragment"><code>List</code>: Sortiert, Zugriff über Positions-Index (0, 1, 2, ...)</li>
+                            <li class="fragment"><code>Set</code>: Ungeordnet, keine Duplikate</li>
+                            <li class="fragment"><code>Queue</code>: FIFO-Warteschlange (First-in-First-out)</li>
+                            <li class="fragment"><code>Deque</code>: LIFO-Stapel (Last-in-First-out)</li>
+                          </ul></li>
+                      </ul></li>
+                      <li class="fragment"><code>Map</code>: Dictionary von Schlüssel-Wert-Paaren; Schlüssel-basierter Zugriff</li>
+                  </ul>
+                  <aside class="notes">Da all diese Schnittstellen (außer <code>Map</code>) das Interface <code>Iterable</code> implementieren, lässt sich über die Elemente einer Liste, Menge, usw. mit einer for-each-Schleife iterieren: <code>for(T element : sammlung)</code>.<br>
+                                       Listen haben eine Ordnung, d. h. es gibt ein nulltes Element, ein erstes und so weiter. In Listen darf ein Element auch doppelt vorkommen. Mengen (Sets) sind dagegen ungeordnet und frei von Duplikaten. Fügt man ein Element in eine Menge ein, welches schon vorhanden ist, passiert nichts.<br>
+                                       Queues und Deques sind geordnet. Man fügt dort stets am Ende etwas ein und entnimmt immer nur etwas am Anfang (<code>Queue</code>) bzw. am Ende (<code>Deque</code>).<br>
+                                       Maps heißen in anderen Programmiersprachen Dictionaries oder assoziative Arrays. Sie sind eine ungeordnete Menge von Schlüssel-Wert-Paaren. Man greift auf einen Wert zu, indem man den Schlüssel angibt.</aside>
+                </section>
+
+                <section>
+                  <h2><code>List</code>: Listen</h2>
+                  <pre style="margin-left: 1mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/ListBeispiel.java#8'></code></pre>
+                  <ul class="small">
+                    <li>Element-Zugriff über die Position<br>(ähnlich wie bei Arrays)</li>
+                    <li>Doppelte Einträge erlaubt</li>
+                    <li>Implementierungen:
+                      <ul>
+                        <li><code>ArrayList</code></li>
+                        <li><code>LinkedList</code>
+                          <ul>
+                            <li>Elemente intern verkettet<br>mit Vorgänger und Nachfolger<br>
+                                &Rightarrow; Effizientes Einfügen und Löschen</li>
+                          </ul>
+                        </li>
+                        <li>...</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <img style="position: absolute; right: 5mm; max-height: 14cm; top:2.5cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                
+
+                    interface Collection<E> <<interface>> {
+                      --
+                      +add(e : E) : boolean
+                      +remove(o : Object) : boolean
+                      +contains(e : E) : boolean
+                      +size() : int
+                      +toArray() : Object[]
+                      . . .
+                    }
+
+                    interface List<E> <<interface>> { 
+                      --
+                      +add(index : int, element : E)
+                      +get(index : int) : E
+                      +sort(c : Comparator<? super E>)
+                      . . .
+                    }
+
+                    class ArrayList<E> { }
+                    class LinkedList<E> { }
+                    Collection <|.. List : \t\t\t
+
+                    List <|.. ArrayList : \t\t\t
+                    List <|.. LinkedList : \t\t\t
+
+                  
+                  "/>
+                </section>
+
+                <section>
+                  <h3><code>List</code>: Listen</h3>
+
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/ListBeispiel.java#8-24'></code></pre>
+                  <aside class="notes">Eine Liste kann anders als ein Array beliebig viele Elemente speichern. Neue Elemente lassen sich mit <code>add(E, int)</code> an eine bestimmte Position hinzufügen. Lässt man die Position weg, wird ans Ende eingefügt. <code>add</code> liefert immer <code>true</code> zurück. Entfernen erfolgt entweder über die Position über den Wert. Ist der Wert mehrfach vorhanden, wird er nur das erste Vorkommen gelöscht.</aside>
+                </section>
+
+                <section>
+                  <h2><code>Set</code>: Mengen</h2>
+                  <pre style="margin-left: 1mm; z-index: 9999; width: 16cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/SetBeispiel.java#8'></code></pre>
+                  <ul class="small">
+                    <li>Keine Ordnung</li>
+                    <li>Keine Duplikate</li>
+                    <li>Implementierungen:
+                      <ul>
+                        <li><code>HashSet</code></li>
+                        <li><code>LinkedHashSet</code>
+                          <ul>
+                            <li>Elemente intern verkettet<br>mit Vorgänger und Nachfolger<br>
+                                &Rightarrow; Also doch eine Ordnung!</li>
+                          </ul>
+                        </li>
+                        <li><code>TreeSet</code>
+                          <ul>
+                            <li>Einfügungen gemäß <code>compareTo</code> der Elemente</li>
+                          </ul>
+                        </li>
+                        <li>...</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <img style="position: absolute; right: 5mm; max-height: 11cm; top:2.5cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                
+
+                    interface Collection<E> <<interface>> {
+                      --
+                      +add(e : E) : boolean
+                      +remove(o : Object) : boolean
+                      +contains(e : E) : boolean
+                      +size() : int
+                      +toArray() : Object[]
+                      . . .
+                    }
+
+                    interface Set<E> <<interface>> { }
+
+                    class HashSet<E> { }
+                    class LinkedHashSet<E> { }
+                    class TreeSet<E> { }
+
+                    Collection <|.. Set : \t\t\t
+
+
+                    Set <|.. HashSet : \t\t\t
+                    Set <|.. LinkedHashSet : \t\t\t
+                    Set <|.. TreeSet : \t\t\t
+
+                  
+                  "/>
+                </section>
+
+                <section>
+                  <h3><code>Set</code>: Mengen</h3>
+
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/SetBeispiel.java#8-23'></code></pre>
+                  <aside class="notes">
+                    Das wiederholte Einfügen des gleichen Elements (hier: Kaffeemaschine) fügt es nicht nochmals hinzu. <code>add</code> liefert <code>true</code> zurück, wenn das Element noch nicht in der Menge war, ansonsten <code>false</code>.<br>
+                    In der gezeigten <code>for-each</code>-Schleife ist nicht garantiert in welcher Reihenfolge die Elemente durchlaufen werden. Hätte man <code>LinkedHashSet</code> verwendet, bliebe die Reihenfolge erhalten.<br>
+                    Die <code>contains</code>-Methode stammt aus dem Interface <code>Collection</code>, sie funktioniert daher auch bei Listen. </aside>
+                </section>
+
+                <section>
+                  <h3><code>TreeSet</code></h3>
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/TreeSetBeispiel.java#10-19'></code></pre>
+                  <p class="small" style="margin-left: 3cm;">Tim (8)<br>Ute (19)<br>Peter (20)<br>Otto (70)</p>
+                  <aside class="notes">Ein <code>TreeSet</code> hat eine Ordnung. Die Elemente bereits beim Einfügen an die richtige Stelle eingefügt gemäß der <code>compareTo</code>-Implementierung. Dazu muss die Klasse der Elemente (hier <code>Person</code>) entweder die Schnittstelle <code>Comparable</code> implementieren oder man übergibt dem <code>TreeSet</code>-Konstruktor ein entsprechendes <code>Comparator</code>-Objekt.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Iterable</code> / <code>Iterator</code></h3>
+                  
+                  <img style="position: absolute; right: 5mm; max-height: 12cm; top:2.5cm; z-index: 9999;" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                    interface Iterable<T> <<interface>> {
+                      --
+                      +iterator() : Iterator<T>
+                      . . .
+                    }
+
+                    interface Iterator<E> <<interface>> {
+                      --
+                      +hasNext() : boolean
+                      +next() : E
+                      . . .
+                    }
+
+                    Iterable --- Iterator
+                  ">
+
+                  <pre style="margin-left: 1mm; z-index: 9999; width: 18.2cm;"><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/IteratorBeispiel.java#9-18'></code></pre>
+
+                  <pre style="margin-left: 1mm; z-index: 9999; width: 18.2cm;" class="fragment"><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/IteratorBeispiel.java#24-26'></code></pre>
+
+                  <aside class="notes">Da die <code>Collection</code>-Klassen die <code>Iterable</code>-Schnittstelle implementieren, lässt sich mit einer <code>for-each</code>-Schleife über deren Elemente iterieren (unteres Code-Beispiel). Im oberen Beispiel ist zu sehen, was dabei tatsächlich intern passiert: Es wird sich ein <code>Iterator</code>-Objekt geholt, mit dem sich mittels <code>next()</code>-Aufruf das ein Element nach dem anderen holen lässt.</aside>
                 </section>
 
               </div>

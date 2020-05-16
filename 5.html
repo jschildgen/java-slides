@@ -429,6 +429,96 @@
                   <aside class="notes">Da die <code>Collection</code>-Klassen die <code>Iterable</code>-Schnittstelle implementieren, lässt sich mit einer <code>for-each</code>-Schleife über deren Elemente iterieren (unteres Code-Beispiel). Im oberen Beispiel ist zu sehen, was dabei tatsächlich intern passiert: Es wird sich ein <code>Iterator</code>-Objekt geholt, mit dem sich mittels <code>next()</code>-Aufruf das ein Element nach dem anderen holen lässt.</aside>
                 </section>
 
+                <section>
+                  <h2><code>Map</code></h2>
+                  <pre style="margin-left: 1mm; z-index: 9999; width: 16cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#8'></code></pre>
+                  <ul class="small">
+                    <li>Menge von Schlüssel-Wert-Paaren</li>
+                    <li>Implementierungen:
+                      <ul>
+                        <li><code>HashMap</code></li>
+                        <li><code>LinkedHashMap</code>
+                          <ul>
+                            <li>Schlüssel-Wert-Paare intern verkettet<br>mit Vorgänger und Nachfolger</li>
+                          </ul>
+                        </li>
+                        <li><code>TreeMap</code>
+                          <ul>
+                            <li>Einfügungen gemäß <code>compareTo</code> der Schlüssel</li>
+                          </ul>
+                        </li>
+                        <li>...</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <img style="position: absolute; right: 5mm; max-height: 5.8cm; top:2.5cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                
+
+                  interface Map<K,V> {
+                    --
+                    put(key : K, value : V) : V
+                    get(key : Object) : V
+                    ...
+                  }
+                  
+                  class HashMap<K,V> { }
+                  class LinkedHashMap<K,V> { }
+                  class TreeMap<K,V> { }
+
+                  Map <|.. HashMap : \t\t\t
+                  Map <|.. LinkedHashMap : \t\t\t
+                  Map <|.. TreeMap : \t\t\t
+
+                  
+                  "/>
+                  <aside class="notes">Maps heißen in anderen Programmiersprachen Dictionaries oder assoziative Arrays. Eine Map hat jeweils einen Datentyp für Schlüssel und einen für Werte. Jeden Schlüssel gibt es nur einmal. Einträge einer <code>HashMap</code> sind ungeordnet. Bei der <code>LinkedHashMap</code> wird die Einfügereihenfolge beibehalten, bei der <code>TreeMap</code> sind alle Einträge stets gemäß der <code>compareTo</code>-Ordnung der Schlüssel (müssen <code>Comparable</code> sein) geordnet.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Map</code></h3>
+
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#8-17'></code></pre>
+                  <aside class="notes">Wird beim Einfügen ein neuer Key genannt, wird ein neuer Eintrag erstellt. Gibt es den Key schon, wird der Wert im Eintrag geändert. </aside>
+                </section>
+                
+                <section>
+                  <h3><code>Map.Entry&lt;K, V&gt;</code></h3>
+
+                  <img style="height: 4cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                
+
+                  interface Map<K,V> {
+                    --
+                    put(key : K, value : V) : V
+                    get(key : Object) : V
+                    entrySet() : Set<Entry<K,V>>
+                    ...
+                  }
+
+                  interface Entry<K,V> {
+                    getKey(): K
+                    getValue(): V
+                  }
+                  
+                  Map +--r Entry
+                  
+                  "/>
+
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#20-23'></code></pre>
+
+                  
+                  <aside class="notes">Die Methode <code>entrySet()</code> liefert eine Menge von <code>java.util.Map.Entry</code>-Objekten. Dies macht es möglich, über alle Einträge einer Map zu iterieren. Ein <code>Entry</code> repräsentiert dabei einen Eintrag. </aside>
+                </section>
+
               </div>
             </div>
         

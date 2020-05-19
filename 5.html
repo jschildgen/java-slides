@@ -73,6 +73,17 @@
                   <p class="small">Beim Konstruktor-Aufruf dürfen die Typenparameter weggelassen werden.</p>
                   <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#24'></code></pre>
 
+                  <div class="poll fragment" style="bottom:-430px"> 
+                    <h1>Wie ist das Äquivalent des hier gezeigten Konstruktor-Aurufs ohne Diamond-Operator?</h1>
+                        <ul>
+                          <li>new Paar("Ute", "Meyer");</li>
+                          <li  data-poll="correct">new Paar&lt;String&gt;("Ute", "Meyer");</li>
+                          <li>new Paar&lt;String,String&gt;("Ute", "Meyer");</li>
+                          <li>das geht nicht</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
                   <aside class="notes">Der Java-Compiler erkennt automatisch an den übergebenen Werten, was die Parameter-Typen sein sollen. Im hier gezeigten Beispiel entspricht <code>&lt;&gt;</code> folgendem: <code>&lt;String, String&gt;</code></aside>
                 </section>
 
@@ -95,13 +106,25 @@
                   <h3>Generische Methoden</h3>
                   <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#33-39'></code></pre>                  
                   <pre class="fragment"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#26-30'></code></pre> 
+                  
+                  <div class="poll fragment" style="bottom:-190px"> 
+                    <h1>In welcher Klasse befinden wir uns hier eigentlich?</h1>
+                        <ul>
+                          <li data-poll="correct">In irgendeiner beliebigen</li>
+                          <li>In einer generischen Klasse mit Parameter &lt;T&gt;</li>
+                          <li>In einer generischen Klasse mit beliebigen Parametern</li>
+                          <li>In einer Klasse, die nicht generisch sein darf</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+                  
                   <aside class="notes">In beliebigen Klassen (nicht nur in generischen) darf es generische Methoden geben. Wichtig bei solchen Methoden ist, den generischen Typen (hier <code>&lt;T extends Person&gt;</code>) vor den Rückgabetypen der Methode (bzw. vor <code>void</code>) zu schreiben. Dann darf die Methode Objekte dieses generischen Typen entgegennehmen und zurückliefern. Das gezeigte Beispiel nimmt zwei Objekte entgegen, die von der Klasse <code>Person</code> oder deren Subklasse ist, und liefert die ältere Person zurück. Werden beispielsweise zwei <code>Studierender</code>-Objekte übergeben, kommt auch ein Studierender-Objekt zurück.</aside>
                 </section>
 
                 <section>
                   <h3>Wildcards <code>&lt;?&gt;</code></h3>
                   <p class="small">Wenn Parameter von Methoden Gernerics sind, können bei diesen Wildcards <code>&lt;?&gt;</code> verwenden werden, damit sie mit beliebigen Typen übergeben werden können.</p>
-                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#41-44'></code></pre>
+                  <pre style="width:95%"><code style="max-height: 25cm; class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#41-44'></code></pre>
                   <aside class="notes">Die hier gezeigte Methode nimmt ein beliebiges <code>Paar</code>-Objekt entgegen, z. B. ein <code>Paar&lt;String&gt;</code>, ein <code>Paar&lt;Integer&gt;</code> oder ein <code>Paar&lt;Object&gt;</code>.</aside>
                 </section>
                 
@@ -138,9 +161,9 @@
                   
                   "/>
                   
-                  <pre style="width:18cm; margin-left: 5mm;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/generics/Person.java#3,50-55'></code></pre>
+                  <pre style="width:18.5cm; margin-left: 5mm;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/generics/Person.java#3,50-55'></code></pre>
                 
-                  <pre class="fragment" style="width:18cm; margin-left: 5mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#64-68,70'></code></pre>
+                  <pre class="fragment" style="width:18.5cm; margin-left: 5mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#64-68,70'></code></pre>
                 
                   <div style="position: absolute; right:0.5cm; max-height: 6cm; top:9cm" class="fragment"><p class="small">Tim (8)<br>Ute (19)<br>Peter (20)<br>Otto (70)</p></div>
 
@@ -168,6 +191,18 @@
                   <pre class="fragment" style="width:18.2cm; margin-left: 5mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/ComparatorBeispiel.java#7-11,13'></code></pre>
 
                   <div style="position: absolute; right:0.5cm; max-height: 6cm; top:9cm" class="fragment"><p class="small">Otto (70)<br>Peter (20)<br>Tim (8)<br>Ute (19)</p></div>
+
+                  <div class="poll fragment" style="bottom:-160px"> 
+                    <h1>Was ist der Vorteil vom Comparator im Gegensatz zu Comparable?</h1>
+                        <ul>
+                          <li>Es gibt keinen</li>
+                          <li>Weniger Schreibarbeit</li>
+                          <li data-poll="correct">Für ein und die selbe Klasse kann man mehrere Comparatoren entwickeln</li>
+                          <li>Ein und der selbe Comparator kann für Objekte verschiedener Klassen eingesetzt werden</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
 
                   <aside class="notes"><!--Selten muss man selbst generische Klassen entwickeln. Oft verwendet man aber vorhandene generische Klassen und Interfaces aus der Java-API. Neben <code>Comparable&lt;T&gt;</code> und der im nächsten Abschnitt präsentierten Collections, ist ein weiteres Beispiel das hier gezeigt Interface <code>Comparator&lt;T&gt;</code>. -->Ähnlich wie <code>Comparable&lt;T&gt;</code> vergleicht ein Comparator, welches zweier <code>T</code>-Objekte größer ist. Während bei <code>Comparable</code> die <code>compareTo</code>-Methode auf einem zu vergleichenden Objekt aufgerufen wird, nimmt ein <code>Comparator</code>-Objekt zwei <code>T</code>-Objekte entgegen, um sie zu vergleichen. Der Vergleich ist also aus der Klasse selbst ausgelagert. Das macht es z. B. möglich, Personen-Objekte - mal so, mal so - nach verschiedenen Kriterien zu sortieren.</aside>
                 </section>
@@ -221,7 +256,7 @@
 
                     Set <|.. HashSet : \t\t\t
 
-                    interface Map<K,V> {
+                    interface Map<K,V> <<interface>> {
                       --
                       put(key : K, value : V) : V
                       get(key : Object) : V
@@ -235,6 +270,20 @@
                     Map <|.. HashMap : \t\t\t
                   }
                   "/>
+                  <div class="poll fragment" style="bottom:10px"> 
+                    <h1>Welche Aussage ist falsch?</h1>
+                        <ul>
+                          <li>Listen sind geordnet</li>
+                          <li>Mengen haben keine Duplikate</li>
+                          <li>Die hier gezeigten Interfaces und Klassen sind generisch</li>
+                          <li>Set.contains überprüft, ob ein Element in der Menge ist</li>
+                          <li>Eine Map hat zwei Typenparameter</li>
+                          <li data-poll="correct">Die Klasse ArrayList hat keine Methoden</li>
+                          <li>Bei Maps komme ich über einen Schlüssel an den Wert</li>
+                          <li>Bei Listen komme ich über die Position an den Wert</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
                   <aside class="notes">Dieses Klassendiagramm zeigt einen Auszug aus den Klassen und Schnittstellen im Paket <code>java.util</code>.</aside>
                 </section>
 
@@ -278,6 +327,17 @@
                       </ul>
                     </li>
                   </ul>
+
+                  <div class="poll fragment" style="bottom:-110px; z-index: 10000;"> 
+                    <h1>Was ist eine typische Aktion auf einer Liste?</h1>
+                        <ul>
+                          <li>Gib mir das 3. Element</li>
+                          <li>Füge ein neues Element hinzu</li>
+                          <li>Lösche das 2. Element und schiebe alles was danach kommt um eins nach links</li>
+                          <li data-poll="correct">Alle der drei genannten</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
                   
                   <img style="position: absolute; right: 5mm; max-height: 14cm; top:2.5cm" uml="
                   hide empty members
@@ -346,6 +406,17 @@
                       </ul>
                     </li>
                   </ul>
+
+                  <div class="poll fragment" style="bottom:-70px; z-index: 10000;"> 
+                    <h1>Was ist eine typische Aktion auf einer Menge?</h1>
+                        <ul>
+                          <li>Gib mir das 3. Element</li>
+                          <li data-poll="correct">Füge ein neues Element hinzu</li>
+                          <li>Lösche das 2. Element und schiebe alles was danach kommt um eins nach links</li>
+                          <li>Alle der drei genannten</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
                   
                   <img style="position: absolute; right: 5mm; max-height: 11cm; top:2.5cm" uml="
                   hide empty members
@@ -451,6 +522,17 @@
                       </ul>
                     </li>
                   </ul>
+
+                  <div class="poll fragment" style="bottom:-130px; z-index: 10000;"> 
+                    <h1>Was ist eine typische Aktion auf einer Map?</h1>
+                        <ul>
+                          <li data-poll="correct">Gib mir den Wert für den Schlüssel "abc"</li>
+                          <li>Gib mir den Wert für das 3. Element</li>
+                          <li>Gib mir die Schlüssel, die den Wert "abc" haben</li>
+                          <li>Alle der drei genannten</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
                   
                   <img style="position: absolute; right: 5mm; max-height: 5.8cm; top:2.5cm" uml="
                   hide empty members
@@ -534,8 +616,8 @@
                       +wait()
                     }
                     "/>
-                    <p class="small" style="width:16cm">Damit eine <code>HashMap&lt;K,V&gt;</code> ordnungsgemäß funktioniert, muss die Key-Klasse <code>K</code> die Methoden <code>equals</code> und <code>hashCode</code> implementieren.</p>
-                    <p class="small" style="width:16cm">Das gleiche gilt beim <code>HashSet&lt;E&gt;</code> für die Klasse <code>E</code>.</p>
+                    <p class="small" style="width:16.2cm">Damit eine <code>HashMap&lt;K,V&gt;</code> ordnungsgemäß funktioniert, muss die Key-Klasse <code>K</code> die Methoden <code>equals</code> und <code>hashCode</code> implementieren.</p>
+                    <p class="small" style="width:16.2cm">Das gleiche gilt beim <code>HashSet&lt;E&gt;</code> für die Klasse <code>E</code>.</p>
 
                     <h4>equals(Object other)</h4>
                     <p class="small">Legt fest, wann zwei Objekte gleich sind.</p>
@@ -589,7 +671,7 @@
                   <section>
                     <h3>Keys von Hash-Maps</h3>
                     <p class="small">Die Schlüssel einer <code>HashMap</code> sollen sich nachträglich nicht mehr ändern, d. h. sie sollen <em>immutable</em> sein.</p>
-                    <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#25-34'></code></pre>
+                    <pre style="width:94%"><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#25-34'></code></pre>
                     <p class="small fragment"><code>Peters Kontostand: null</code></p>
                     <aside class="notes">Hier wurde eine Hash-Map eingesetzt, um zu jedem Personen-Objekt einen Kontostand zu speichern. Nachdem Peters Alter jedoch erhöht wurde, liefert <code>peter.hashCode</code> einen anderen Wert als vorher. Nun liefert <code>kontostand.get(peter)</code> den Wert <code>null</code>, da es diesen Key nicht in der Map gibt. Um solche Merkwürdigkeiten zu verhindern, sollte als Key einer Map stets ein Objekt verwendet werden, welches immutable ist, also ein Objekt, dessen Zustand nicht mehr geändert wird.</aside>
                   </section>

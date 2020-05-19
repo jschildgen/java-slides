@@ -519,6 +519,105 @@
                   <aside class="notes">Die Methode <code>entrySet()</code> liefert eine Menge von <code>java.util.Map.Entry</code>-Objekten. Dies macht es möglich, über alle Einträge einer Map zu iterieren. Ein <code>Entry</code> repräsentiert dabei einen Eintrag. </aside>
                 </section>
 
+                <section>
+                  <h3><code>Object.equals</code> / <code>hashCode</code></h3>
+                  <img style="z-index:-1; position: absolute; right:2mm; max-height: 7cm; top:2.2cm" uml="
+                    class Object { 
+                      +clone() : Object
+                      +equals(obj : Object) : boolean 
+                      +finalize()
+                      +getClass() : Class<?>
+                      +hashCode() : int
+                      +notify()
+                      +notifyAll()
+                      +toString() : String
+                      +wait()
+                    }
+                    "/>
+                    <p class="small" style="width:16cm">Damit eine <code>HashMap&lt;K,V&gt;</code> ordnungsgemäß funktioniert, muss die Key-Klasse <code>K</code> die Methoden <code>equals</code> und <code>hashCode</code> implementieren.</p>
+                    <p class="small" style="width:16cm">Das gleiche gilt beim <code>HashSet&lt;E&gt;</code> für die Klasse <code>E</code>.</p>
+
+                    <h4>equals(Object other)</h4>
+                    <p class="small">Legt fest, wann zwei Objekte gleich sind.</p>
+
+                    <h4>hashCode()</h4>
+                    <p class="small">Erzeugt aus dem Objekt einen Hash-Wert (Integer-Zahl).</p>
+
+                    <aside class="notes">Intern ist ein <code>HashSet&lt;E&gt;</code> implementiert als eine <code>HashMap&lt;E,Object&gt;</code>. Die Methoden <code>equals</code> und <code>hashCode</code> sind wichtig für die Schlüsselvergleiche bei <code>map.put(k, v)</code> und <code>map.get(k)</code>. Intern wird eine <em>Hash-Tabelle</em> angelegt. Über diese kann in konstanter Zeit ein Schlüssel-basierter Zugriff erfolgen, indem der <code>hashCode</code> des Keys berechnet und in der Hash-Tabelle nachgeschlagen wird.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Object.equals</code> / <code>hashCode</code></h3>
+                  <img style="z-index:999; position: absolute; right:2mm; max-height: 9cm; top:2.2cm" uml="
+                    class Object { 
+                      +clone() : Object
+                      +equals(obj : Object) : boolean 
+                      +finalize()
+                      +getClass() : Class<?>
+                      +hashCode() : int
+                      +notify()
+                      +notifyAll()
+                      +toString() : String
+                      +wait()
+                    }
+                    
+                    class Person {
+                      -name : String
+                      -alter : int
+                      --
+                      ...
+                    }
+                    Object <|-- Person
+                    "/>
+                    <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/Person.java#5,36-54'></code></pre>
+                    <aside class="notes">Wenn man unsere <code>Person</code>-Klasse als Schlüssel einer <code>HashMap</code> verwenden möchte, oder ein <code>HashSet&lt;Person&gt;</code>, ist die Implementierung von <code>equals</code> und <code>hashCode</code> vonnöten.</aside>
+                  </section>
+
+                  <section>
+                    <h3><code>hashCode</code></h3>
+                    <ul class="small">
+                      <li>Ziel: Zustand des Objekts auf eine Integer-Zahl reduzieren</li>
+                      <li class="fragment">Ruft man hashCode zweimal auf dem gleichen Objekt auf, muss das gleiche herauskommen (außer sein Zustand hat sich zwischenzeitig geändert)</li>
+                      <li class="fragment">Nach jeder Zustandsänderung soll der Hash-Code möglichst anders sein</li>
+                      <li class="fragment">HashCodes sollen weitestgehend kollisionsfrei sein</li>
+                      <li class="fragment">Gleiche Objekte müssen gleichen Hash-Code liefern:<br><code>a.equals(b)</code> &Rightarrow; <code>a.hashCode() == b.hashCode</code></li>
+                    </ul>
+                    <pre class="fragment"><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/Person.java#51-54'></code></pre>
+                    <aside class="notes">Die statische Methode <code>Objects.hash</code> nimmt beliebig viele Parameter beliebiger Klassen entgegen, ruft jeweils deren <code>hashCode</code>-Implementierung auf und erzeugt daraus einen neuen Hash-Code.</aside>
+                  </section>
+
+                  <section>
+                    <h3>Keys von Hash-Maps</h3>
+                    <p class="small">Die Schlüssel einer <code>HashMap</code> sollen sich nachträglich nicht mehr ändern, d. h. sie sollen <em>immutable</em> sein.</p>
+                    <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#25-34'></code></pre>
+                    <p class="small fragment"><code>Peters Kontostand: null</code></p>
+                    <aside class="notes">Hier wurde eine Hash-Map eingesetzt, um zu jedem Personen-Objekt einen Kontostand zu speichern. Nachdem Peters Alter jedoch erhöht wurde, liefert <code>peter.hashCode</code> einen anderen Wert als vorher. Nun liefert <code>kontostand.get(peter)</code> den Wert <code>null</code>, da es diesen Key nicht in der Map gibt. Um solche Merkwürdigkeiten zu verhindern, sollte als Key einer Map stets ein Objekt verwendet werden, welches immutable ist, also ein Objekt, dessen Zustand nicht mehr geändert wird.</aside>
+                  </section>
+
+                <section>
+                  <h3>Collections: Performance</h3>
+                  <table style="font-size:62%">
+                    <tr><th><code>List</code></th><th><code>add</code></th><th><code>remove</code></th><th><code>get</code></th><th><code>contains</code></th><th><code>next</code></th><th>Int. Struktur</th></tr>
+                    <tr><td><code>ArrayList</code></td><td>O(1)</td><td>O(n)</td><td>O(1)</td><td>O(n)</td><td>O(1)</td><td>Array</td></tr>
+                    <tr><td><code>LinkedList</code></td><td>O(1)</td><td>O(1)</td><td>O(n)</td><td>O(n)</td><td>O(1)</td><td>Verkettete Liste</td></tr>
+                  </table>
+
+                  <table style="font-size:62%; margin-top: 3mm;">
+                    <tr><th><code>Set</code></th><th><code>add</code></th><th><code>remove</code></th><th><code>contains</code></th><th><code>next</code></th><th>Int. Struktur</th></tr>
+                    <tr><td><code>HashSet</code></td><td>O(1)</td><td>O(1)</td><td>O(1)</td><td>O(h/n)</td><td>Hashtabelle</td></tr>
+                    <tr><td><code>LinkedHashSet</code></td><td>O(1)</td><td>O(1)</td><td>O(1)</td><td>O(1)</td><td>Hasht. + Verk. L.</td></tr>
+                    <tr><td><code>TreeSet</code></td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td><td>Baum</td></tr>
+                  </table>
+
+                  <table style="font-size:62%; margin-top: 3mm;">
+                    <tr><th><code>Map</code></th><th><code>get</code></th><th><code>containsKey</code></th><th><code>next</code></th><th>Int. Struktur</th></tr>
+                    <tr><td><code>HashMap</code></td><td>O(1)</td><td>O(1)</td><td>O(h/n)</td><td>Hashtabelle</td></tr>
+                    <tr><td><code>LinkedHashMap</code></td><td>O(1)</td><td>O(1)</td><td>O(1)</td><td>Hasht. + Verk. L.</td></tr>
+                    <tr><td><code>TreeMap</code></td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td><td>Baum</td></tr>
+                  </table>
+                  <aside class="notes">Die <code>LinkedList</code> hat gegenüber der <code>ArrayList</code> den Vorteil, dass man mitten drin günstiger etwas einfügen und löschen kann. Beim <code>HashSet</code> und der <code>HashMap</code> kostet es O(n*h/n), alle Einträge zu durchlaufen. h ist die Größe der Hashtabelle.</aside>
+                </section>
+
               </div>
             </div>
         

@@ -21,5 +21,16 @@ public class MapBeispiel {
             System.out.printf("%s heißt %s\n",
                     eintrag.getKey(), eintrag.getValue());
         }
+
+        Person peter = new Person("Peter");
+        Person ute = new Person("Ute");
+
+        Map<Person, Integer> kontostand = new HashMap<>();
+        kontostand.put(peter, 1000);
+        kontostand.put(ute, 1500);
+
+        peter.erhoeheAlter();
+
+        System.out.println("Peters Kontostand: "+kontostand.get(peter));
     }
 }

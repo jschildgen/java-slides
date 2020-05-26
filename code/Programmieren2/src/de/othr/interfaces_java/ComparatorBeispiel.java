@@ -15,5 +15,9 @@ public class ComparatorBeispiel {
         for(Person p : personen) {
             p.print();
         }
+
+        Arrays.sort(personen, (p1, p2) -> p1.getAlter() - p2.getAlter());
+
+        Arrays.sort(personen, (p1, p2) -> p1.getName().compareTo(p2.getName()));
     }
 }

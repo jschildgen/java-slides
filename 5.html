@@ -74,7 +74,7 @@
                   <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#24'></code></pre>
 
                   <div class="poll fragment" style="bottom:-430px"> 
-                    <h1>Wie ist das Äquivalent des hier gezeigten Konstruktor-Aurufs ohne Diamond-Operator?</h1>
+                    <h1>Wie ist das Äquivalent des hier gezeigten Konstruktor-Aufrufs ohne Diamond-Operator?</h1>
                         <ul>
                           <li>new Paar("Ute", "Meyer");</li>
                           <li  data-poll="correct">new Paar&lt;String&gt;("Ute", "Meyer");</li>
@@ -698,6 +698,252 @@
                     <tr><td><code>TreeMap</code></td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td><td>Baum</td></tr>
                   </table>
                   <aside class="notes">Die <code>LinkedList</code> hat gegenüber der <code>ArrayList</code> den Vorteil, dass man mitten drin günstiger etwas einfügen und löschen kann. Beim <code>HashSet</code> und der <code>HashMap</code> kostet es O(n*h/n), alle Einträge zu durchlaufen. h ist die Größe der Hashtabelle.</aside>
+                </section>
+
+                <section>
+                  <h2>Lambda-Ausdrücke</h2>
+
+                  <div style="position: absolute; top: 80px; right:50px; font-size:200px" class="red">&lambda;</div>
+
+                  
+
+                  <ul class="small">
+                    <li>Methoden ohne Namen</li>
+                    <li>Syntax: <code>parameter -> ergebnis</code></li>
+                    <li>Beispiele:
+                      <ul>
+                        <li><code>x -> 2*x</code></li>
+                        <li><code>s -> System.out.println(s)</code></li>
+                        <li><code>x -> { System.out.println(x); return x; }</code></li>
+                        <li><code>(x, y) -> x+y</code></li>
+                        <li><code>() -> System.out.println("Hallo");</code></li>
+                      </ul>
+                    </li>
+                    <li>Entspricht der Verwendung einer anonymen Klasse, z. B.</li>
+                  </ul>
+                    <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/AnonymeBeispiel.java#14-19'></code></pre>
+                </section>
+
+                <section>
+                  <h3>Funktionale Schnittstellen</h3>
+                  <p class="small">Interfaces, in denen es nur eine Methode gibt.</p>
+                  <p class="small">Dort wo Objekte funktionaler Schnittstellen erwartet werden,<br>kann man Lambda-Ausdrücke einsetzen.</p>
+
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                    interface Consumer<T> <<interface>> {
+                    --
+                    accept(t : T)  
+                    }
+
+                    
+                  "/>
+
+                  <img style="position: absolute; max-height: 4cm; top: 6cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                   interface Iterable<T> <<interface>> {
+                      --
+                      +iterator() : Iterator<T>
+                      +forEach(action : Consumer<? super T>)
+                      . . .
+                    }
+                  "/>
+                  <p><br><br><br></p>
+                  <pre style="width: 99%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/AnonymeBeispiel.java#10-11'></code></pre>
+
+                  <aside class="notes">Die <code>Iterable</code>-Schnittstelle, welche von Listen, Mengen, etc. implementiert wird, besitzt eine Default-Methode <code>forEach</code>, welche ein <code>Consumer</code>-Objekt entgegennimmt. <code>Consumer&lt;T&gt;</code> ist eine funktionale Schnittstelle, deren einzige Methode <code>accept</code> die Aufgabe hat, etwas mit einem <code>T</code>-Objekt zu machen, z. B. es auszugeben.</aside>
+
+                </section>
+
+                <section>
+                  <h3>Funktionale Schnittstellen</h3>
+                  <img uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+
+                  package java.util.function {
+                    interface Predicate<T> {
+                      --
+                      test(t : T) : boolean  
+                    }
+
+                    interface Supplier<T>  {
+                      --
+                      get() : T  
+                    }
+                    interface Consumer<T> {
+                      --
+                      accept(t : T)  
+                    }
+                    interface BiConsumer<T, U>  {
+                      --
+                      accept(t : T, u : U)  
+                    }
+
+
+
+                    interface BiFunction<T, U, R> {
+                      --
+                      apply(t : T, u : U) : R  
+                    }
+                    interface Function<T, R>  {
+                      --
+                      apply(t : T)  : R 
+                    }
+
+                    interface UnaryOperator<T>  {
+                    }
+
+                    interface BinaryOperator<T>  {
+                    }
+
+                    
+
+                    BiFunction <|-- BinaryOperator
+                    Function <|-- UnaryOperator 
+                  } "/>
+                  <aside class="notes">Hier ist ein Auszug der wichtigsten funktionalen Schnittstellen aus dem Paket <code>java.util.function</code> zu sehen. In den nachfolgenden Folien wird näher auf die einzelnen Schnittstellen eingegangen.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Consumer</code></h3>
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                    interface Consumer<T> <<interface>> {
+                    --
+                    accept(t : T)  
+                    }
+
+                    
+                  "/>
+                  <p class="small">Ein <code>Consumer&lt;T&gt;</code> verarbeitet ein Objekt der Klasse <code>T</code>.</p>
+                  <p>&nbsp;</p>
+                  <pre style="width: 99%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#8-9'></code></pre>
+                  <pre class="fragment" style="width: 99%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#11-17'></code></pre>
+                
+                  <aside class="notes">Ein <code>Consumer&lt;T&gt;</code> nimmt ein Objekt der Klasse <code>T</code> entgegen und macht etwas mit diesem Objekt, z. B. es auf der Konsole ausgeben. Im hier oben gezeigten Beispiel würde &quot;Hallo&quot; auf der Konsole ausgegeben werden.<br> Die <code>forEach</code>-Methode der <code>Collection</code>-Schnittstelle nimmt ein <code>Consumer</code> entgegen, um mit jedem Element der Collection die gewünschte Aktion auszuführen.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Function</code>, <code>UnaryOperator</code></h3>
+                  <img style="position: absolute; max-height: 6cm; top: 2cm; right:5mm; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  interface Function<T, R>  {
+                    --
+                    apply(t : T)  : R 
+                  }
+
+                  interface UnaryOperator<T>  {
+                  }
+                  Function <|-- UnaryOperator 
+
+                  "/>
+
+                  <h4><code>Function&lt;T, R&gt;</code></h4>
+                  <p class="small">Nimmt ein <code>T</code>-Objekt entgegen und gibt ein <code>R</code>-Objekt aus.</p>
+                  <pre style="width: 19cm; margin-left: 5mm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#19-20'></code></pre>
+                  
+                  <div class="fragment">
+                  <h4><code>UnaryOperator&lt;T&gt;</code> &wedgeq; <code>Function&lt;T,T&gt;</code></h4>
+                  <pre style="width: 19cm; margin-left: 5mm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#22-23'></code></pre>
+                  </div>
+                </section>
+
+                <section>
+                  <h3><code>Predicate</code></h3>
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:5mm; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  interface Predicate<T> {
+                    --
+                    test(t : T) : boolean  
+                  }
+                  "/>
+
+                  <h4><code>Predicate&lt;T&gt;</code></h4>
+                  <p class="small">Überprüft, ob ein <code>T</code>-Objekt eine bestimmte Bedingung erfüllt.</p>
+                  <pre style="width: 19cm; margin-left: 5mm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#25-28'></code></pre>
+                  
+                  <aside class="notes">Die hier gezeigte Funktion <code>ungerade</code> berechnet <code>n</code> modulo <code>2</code>. Wenn dies <code>1</code> liefert, ist die Zahl ungerade.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Comparator</code></h3>
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:5mm; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  interface Comparator<T> <<interface>> { 
+                    +compare(t1 : T, t2 : T) : int  
+                  }
+                  "/>
+
+                  <h4><code>compare(T t1, T t2)</code></h4>
+                  <p class="small">Liefert etwas Negatives, wenn t1 kleiner als t2 ist,<br>etwas Positives wenn t1 größer als t2 ist,<br>und bei Gleichheit 0.</p>
+                  <pre style="width:103%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/ComparatorBeispiel.java#7-11,18-21'></code></pre>
+                  
+                  <aside class="notes">Auch das Interface <code>Comparator</code> ist eine funktionale Schnittstelle, da sie nur eine Methode enthält, und zwar <code>compare</code>. Mit einem Lambda-Ausdruck lässt sich schnell ein eigener Comparator erzeugen, z. B. um die Elemente eines Arrays nach einem bestimmten Kriterium zu sortieren.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Stream</code></h3>
+
+                  <ul class="small">
+                    <li>Funktionale Programmierung<br>in Java<br>&nbsp;</li>
+                    <li><code>Collection.stream()</code><br>erzeugt einen Stream<br>&nbsp;</li>
+                    <li><code>Stream.collect(<br>&nbsp;Collectors.toList())</code><br>erzeugt eine Liste</li>
+                  </ul>
+
+                  <img style="position: absolute; max-height: 10cm; top: 2.5cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+
+                  interface Stream<T> {
+                    --
+                    +collect(collector : Collector<? super T,A,R>)) : R
+                    +count() : long
+                    +distinct() : Stream<T>
+                    +filter(predicate : Predicate<?super T>) : Stream<T>
+                    +forEach(action : Consumer<? super T>)
+                    +map(Function<? super T, ? extends R>) : Stream<R>
+                    +min(Comparator<? super T>) : Optional<T>
+                    +max(Comparator<? super T>) : Optional<T>
+                    +limit(maxSize : long) : Stream<T>
+                    +reduce(accumulator : BinaryOperator<T>) : Optional<T> 
+                    +skip(n : long) : Stream<T>
+                  }
+
+                  interface Collection<E> {
+                    --
+                    +stream() : Stream<E>
+                    . . .
+                  }
+
+                  Stream -[hidden]-> Collection
+
+                    
+                  "/>
+
+                <aside class="notes">Viele der hier gezeigten Methoden, die auf einem <code>Stream</code> aufgerufen werden, erzeugen auch wieder einen <code>Stream</code>. Dadurch lassen sich leicht mehrere Operatoren hintereinanderketten und komplexe Berechnungen sehr kompakt darfstellen.</aside>
                 </section>
 
               </div>

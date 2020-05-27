@@ -56,12 +56,14 @@
 
                 <section>
                   <h3>Generics: <code>&lt;T&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13, 13.1, 13.2</div>
                   <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/Paar.java#3-20,28'></code></pre>
                   <aside class="notes">Unter Generics versteht man Klassen und Interfaces, die mit verschiedenen Datentypen zurecht kommen können. Innerhalb der Klasse (oder Schnittstelle) nennt man den Datentyp einfach irgendwie, üblich ist z.&nbsp;B. <code>T</code> oder auch <code>K</code> und <code>V</code> (für Key und Value). Member-Variablen können von diesem generischen Typen sein, Methoden können <code>T</code>-Objekte als Parameter entgegennehmen und <code>T</code>-Objekte zurückgeben.</aside>
                 </section>
 
                 <section>
                   <h3>Generics</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.1</div>
                   <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#6-8'></code></pre>
                   <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#10-14'></code></pre>
                   <pre class="fragment"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#16-20'></code></pre>
@@ -70,6 +72,7 @@
 
                 <section>
                   <h3>Diamond-Operator <code>&lt;&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.1</div>
                   <p class="small">Beim Konstruktor-Aufruf dürfen die Typenparameter weggelassen werden.</p>
                   <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#24'></code></pre>
 
@@ -89,6 +92,7 @@
 
                 <section>
                   <h3>Generics: Mehrere Typenparameter</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.2</div>
                   <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/SchluesselWertPaar.java#3-14,28,36'></code></pre>
                   <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#22-23'></code></pre>
                   <aside class="notes">Es ist auch möglich, mehrere Typenparameter einzuführen. Wichtig ist, dass diese in der Klassendefinition genannt werden (hier: <code>SchluesselWertPaar<K, V></K></code>). Die Schreibweise mit <code>var</code> spart hier sehr viel Schreibarbeit. Ausgeschrieben müsste es heißen: <code>SchluesselWertPaar&lt;String, Integer&gt; ute = </String>new SchluesselWertPaar&lt;String, Integer&gt;("Ute", 19);</code>.</aside>
@@ -96,6 +100,7 @@
 
                 <section>
                   <h3>Typeinschränkung</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.2</div>
                   <h4><code>&lt;T extends C&gt;</code></h4>
                   <p class="small">Es soll nicht jeder beliebige Typ <code>&lt;T&gt;</code> verwendet werden dürfen, sondern nur Subklassen von <code>C</code>.</p>
                   <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/Brautpaar.java#3-14'></code></pre>                      
@@ -104,6 +109,7 @@
 
                 <section>
                   <h3>Generische Methoden</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.3</div>
                   <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#33-39'></code></pre>                  
                   <pre class="fragment"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#26-30'></code></pre> 
                   
@@ -123,8 +129,9 @@
 
                 <section>
                   <h3>Wildcards <code>&lt;?&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.4</div>
                   <p class="small">Wenn Parameter von Methoden Gernerics sind, können bei diesen Wildcards <code>&lt;?&gt;</code> verwenden werden, damit sie mit beliebigen Typen übergeben werden können.</p>
-                  <pre style="width:95%"><code style="max-height: 25cm; class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#41-44'></code></pre>
+                  <pre style="width:95%"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#41-44'></code></pre>
                   <aside class="notes">Die hier gezeigte Methode nimmt ein beliebiges <code>Paar</code>-Objekt entgegen, z. B. ein <code>Paar&lt;String&gt;</code>, ein <code>Paar&lt;Integer&gt;</code> oder ein <code>Paar&lt;Object&gt;</code>.</aside>
                 </section>
                 
@@ -172,6 +179,7 @@
 
                 <section>
                   <h3>Beispiel: <code>Comparator&lt;T&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.5</div>
                   <img style="position: absolute; right:-0.5cm; max-height: 6cm; top:2.5cm" uml="
                   skinparam genericDisplay old
                   hide empty members
@@ -209,6 +217,7 @@
 
                 <section>
                   <h2>Collections</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15</div>
                   <img style="max-height: 15cm; margin-top:-1cm" uml="
                   hide empty members
                   set namespaceSeparator none
@@ -289,6 +298,7 @@
 
                 <section>
                   <h3>Collections-Schnittstellen</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.1</div>
                   <ul class="small">
                     <li><code>Iterable</code>: ermöglicht die Nutzung in einer <code>for-each</code>-Schleife
                       <ul>
@@ -310,6 +320,7 @@
 
                 <section>
                   <h2><code>List</code>: Listen</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.5</div>
                   <pre style="margin-left: 1mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/ListBeispiel.java#8'></code></pre>
                   <ul class="small">
                     <li>Element-Zugriff über die Position<br>(ähnlich wie bei Arrays)</li>
@@ -383,8 +394,9 @@
                 </section>
 
                 <section>
-                  <h2><code>Set</code>: Mengen</h2>
-                  <pre style="margin-left: 1mm; z-index: 9999; width: 16cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/SetBeispiel.java#8'></code></pre>
+                  <h2 style="z-index: 99999;"><code>Set</code>: Mengen</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.4</div>
+                  <pre style="margin-left: 1mm; z-index: 999; width: 16cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/SetBeispiel.java#8'></code></pre>
                   <ul class="small">
                     <li>Keine Ordnung</li>
                     <li>Keine Duplikate</li>
@@ -418,7 +430,7 @@
                       <h2>https://frage.space</h2>
                   </div>
                   
-                  <img style="position: absolute; right: 5mm; max-height: 11cm; top:2.5cm" uml="
+                  <img style="position: absolute; right: 5mm; max-height: 11cm; top:2.75cm; z-index: 900;" uml="
                   hide empty members
                   set namespaceSeparator none
 
@@ -471,6 +483,7 @@
 
                 <section>
                   <h3><code>Iterable</code> / <code>Iterator</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.2</div>
                   
                   <img style="position: absolute; right: 5mm; max-height: 12cm; top:2.5cm; z-index: 9999;" uml="
                   hide empty members
@@ -502,6 +515,8 @@
 
                 <section>
                   <h2><code>Map</code></h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.7</div>
+
                   <pre style="margin-left: 1mm; z-index: 9999; width: 16cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#8'></code></pre>
                   <ul class="small">
                     <li>Menge von Schlüssel-Wert-Paaren</li>
@@ -564,7 +579,7 @@
                 <section>
                   <h3><code>Map</code></h3>
 
-                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#8-17'></code></pre>
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#9-18'></code></pre>
                   <aside class="notes">Wird beim Einfügen ein neuer Key genannt, wird ein neuer Eintrag erstellt. Gibt es den Key schon, wird der Wert im Eintrag geändert. </aside>
                 </section>
                 
@@ -603,6 +618,7 @@
 
                 <section>
                   <h3><code>Object.equals</code> / <code>hashCode</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 12.2</div>
                   <img style="z-index:-1; position: absolute; right:2mm; max-height: 7cm; top:2.2cm" uml="
                     class Object { 
                       +clone() : Object
@@ -702,6 +718,7 @@
 
                 <section>
                   <h2>Lambda-Ausdrücke</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 14</div>
 
                   <div style="position: absolute; top: 80px; right:50px; font-size:200px" class="red">&lambda;</div>
 
@@ -726,6 +743,7 @@
 
                 <section>
                   <h3>Funktionale Schnittstellen</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 12.4</div>
                   <p class="small">Interfaces, in denen es nur eine Methode gibt.</p>
                   <p class="small">Dort wo Objekte funktionaler Schnittstellen erwartet werden,<br>kann man Lambda-Ausdrücke einsetzen.</p>
 
@@ -762,7 +780,8 @@
                 </section>
 
                 <section>
-                  <h3>Funktionale Schnittstellen</h3>
+                  <h3>Lambda-Schnittstellen</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 14.2</div>
                   <img uml="
                   hide empty members
                   set namespaceSeparator none
@@ -836,6 +855,23 @@
                 </section>
 
                 <section>
+                  <h3><code>BiConsumer</code></h3>
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  interface BiConsumer<T, U>  {
+                    --
+                    accept(t : T, u : U)  
+                  }                    
+                  "/>
+                  <p class="small">Ein <code>BiConsumer&lt;T, U&gt;</code> verarbeitet ein Objekt<br>der Klasse <code>T</code> und ein Objekt der Klasse <code>U</code>.</p>
+                  <pre style="width: 99%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#53-57'></code></pre>
+                  <aside class="notes">Die <code>forEach</code>-Methode aus der Schnittstelle <code>Map</code> nimmt einen <code>BiConsumer</code> entgegen. Dies macht es sehr simpel, über alle Einträge einer Map zu iterieren.</aside>
+                </section>
+
+                <section>
                   <h3><code>Function</code>, <code>UnaryOperator</code></h3>
                   <img style="position: absolute; max-height: 6cm; top: 2cm; right:5mm; z-index:-1" uml="
                   hide empty members
@@ -861,6 +897,18 @@
                   <h4><code>UnaryOperator&lt;T&gt;</code> &wedgeq; <code>Function&lt;T,T&gt;</code></h4>
                   <pre style="width: 19cm; margin-left: 5mm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#22-23'></code></pre>
                   </div>
+
+                  <div class="poll fragment" style="bottom:-200px"> 
+                    <h1>Was ist ein gültiger Lambda-Ausdruck für eine BiFunction?</h1>
+                        <ul>
+                          <li>n -&gt; n * n</li>
+                          <li>(x, y) -> (x, y)</li>
+                          <li data-poll="correct">(x, y) -&gt; x+y</li>
+                          <li>(x, y, z) -&gt; x+y+z</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
                 </section>
 
                 <section>
@@ -880,6 +928,17 @@
                   <p class="small">Überprüft, ob ein <code>T</code>-Objekt eine bestimmte Bedingung erfüllt.</p>
                   <pre style="width: 19cm; margin-left: 5mm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#25-28'></code></pre>
                   
+                  <div class="poll fragment" style="bottom:-280px"> 
+                    <h1>Wie überprüft man, ob ein String nicht leer ist?</h1>
+                        <ul>
+                          <li>s -&gt; s == ""</li>
+                          <li>s -&gt; s != ""</li>
+                          <li>s -&gt; s.isEmpty()</li>
+                          <li data-poll="correct">s -&gt; !s.isEmpty()</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
                   <aside class="notes">Die hier gezeigte Funktion <code>ungerade</code> berechnet <code>n</code> modulo <code>2</code>. Wenn dies <code>1</code> liefert, ist die Zahl ungerade.</aside>
                 </section>
 
@@ -904,6 +963,7 @@
 
                 <section>
                   <h3><code>Stream</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.6</div>
 
                   <ul class="small">
                     <li>Funktionale Programmierung<br>in Java<br>&nbsp;</li>
@@ -911,7 +971,7 @@
                     <li><code>Stream.collect(<br>&nbsp;Collectors.toList())</code><br>erzeugt eine Liste</li>
                   </ul>
 
-                  <img style="position: absolute; max-height: 10cm; top: 2.5cm; right:50px; z-index:-1" uml="
+                  <img style="position: absolute; max-height: 12cm; top: 2.5cm; right:50px; z-index:-1" uml="
                   hide empty members
                   set namespaceSeparator none
 
@@ -919,7 +979,7 @@
 
                   interface Stream<T> {
                     --
-                    +collect(collector : Collector<? super T,A,R>)) : R
+                    +collect(collector : Collector<? super T,A,R>) : R
                     +count() : long
                     +distinct() : Stream<T>
                     +filter(predicate : Predicate<?super T>) : Stream<T>
@@ -929,6 +989,7 @@
                     +max(Comparator<? super T>) : Optional<T>
                     +limit(maxSize : long) : Stream<T>
                     +reduce(accumulator : BinaryOperator<T>) : Optional<T> 
+                    +sorted(Comparator<? super T>) : Stream<T>
                     +skip(n : long) : Stream<T>
                   }
 
@@ -938,12 +999,110 @@
                     . . .
                   }
 
+                  interface Optional<T> {
+                    --
+                    +get() : T
+                    +isPresent() : boolean
+                    . . .
+                  }
+
                   Stream -[hidden]-> Collection
+                  Stream -[hidden]-> Optional
 
                     
                   "/>
 
-                <aside class="notes">Viele der hier gezeigten Methoden, die auf einem <code>Stream</code> aufgerufen werden, erzeugen auch wieder einen <code>Stream</code>. Dadurch lassen sich leicht mehrere Operatoren hintereinanderketten und komplexe Berechnungen sehr kompakt darfstellen.</aside>
+                  <div class="poll fragment" style="bottom:-230px"> 
+                    <h1>Viele Methoden der Klasse Stream erzeugen wieder einen Stream. Was hast dies für einen Vorteil?</h1>
+                        <ul>
+                          <li>Man kann alles mit einem Methodenaufruf erledigen</li>
+                          <li data-poll="correct">Mehrere Methodenaufrufe lassen sich verketten</li>
+                          <li>Intern werden weniger anonyme Klassen angelegt</li>
+                          <li>Man muss weniger Lambda-Ausdrücke formulieren</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+                  
+
+                <aside class="notes">Viele der hier gezeigten Methoden, die auf einem <code>Stream</code> aufgerufen werden, erzeugen auch wieder einen <code>Stream</code>. Dadurch lassen sich leicht mehrere Operatoren hintereinanderketten und komplexe Berechnungen sehr kompakt darfstellen. Manche Methoden (z. B. <code>reduce</code>) erzeugen ein <code>Optional&lt;T&gt;</code>. Dies ist ein Container, der entweder ein <code>T</code>-Objekt enthält oder nicht.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Stream</code></h3>
+                  <pre style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#11'></code></pre>
+                  
+                  <pre class="fragment" style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#30-33'></code></pre>
+                  
+                  <pre class="fragment" style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#37-42'></code></pre>
+
+                  <pre class="fragment" style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#44-48'></code></pre>
+                
+                  <aside class="notes">Wird <code>sorted()</code> ohne <code>Comparator</code> aufgerufen, müssen die Einträge <code>Comparable</code> sein. Die <code>reduce</code>-Funktion wird auf die ersten beiden Werte angewandt, dann auf das Ergebnis und den dritten Wert, usw.<aside>
+                </section>
+
+                <section>
+                  <h3>Methodenreferenzen</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 14.2</div>
+                  <p class="small">Kurzschreibweisen in Lambda-Ausdrücken, um Methoden zu referenzieren.</p>
+                  <p class="small"><code style="font-weight: bold;">Klasse::statischeMethode</code> &wedgeq; <code>x -> Klasse.statischeMethode(x)</code></p>
+                  <pre style="margin-top:-5mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/Methodenreferenzen.java#13,18'></code></pre>
+                  <div class="fragment">
+                    <p class="small"><code style="font-weight: bold;">Klasse::methode</code> &wedgeq; <code>x -> x.methode()</code></p>
+                    <pre style="margin-top:-5mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/Methodenreferenzen.java#24,29'></code></pre>
+                  </div>
+                    <div class="fragment">
+                    <p class="small"><code style="font-weight: bold;">objekt::methode</code> &wedgeq; <code>x -> objekt.methode(x)</code></p>
+                    <pre style="margin-top:-5mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/Methodenreferenzen.java#9,10,34,36'></code></pre>
+                    </div>
+                  <aside class="notes">Mit der <code>::</code>-Syntax lässt sich Schreibarbeit sparen. Sie entspricht einem Lambda-Ausdruck, der die genannte statische oder nichtstatische Methode aufruft.</aside>
+                </section>
+
+                <section>
+                  <h3>Was passiert im Hintergrund?</h3>
+                  <pre style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#10'></code></pre>
+                  <div class="fragment">
+                    <p class="small"><code>::</code>-Methodenreferenz wird aufgelöst:</p>
+                    <pre style="margin-top:-5mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#11'></code></pre>
+                  </div>
+                  <div class="fragment">
+                    <p class="small">Die Variable <code>s</code> hat die Typ <code>String</code> (weil die Liste eine <code>List&lt;String&gt;</code> ist):</p>
+                    <pre style="margin-top:-5mm; width: 108%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#12'></code></pre>
+                  </div>
+                  <div class="fragment">
+                    <p class="small">Die Methode wird komplett ausimplementiert:</p>
+                    <pre style="margin-top:-5mm; width: 108%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#13-14'></code></pre>
+                  </div>
+
+                  <div class="poll fragment fade-in-then-out" style="bottom:30px"> 
+                    <h1>Welcher Schritt fehlt noch?</h1>
+                        <ul>
+                          <li>Nichts mehr; fertig!</li>
+                          <li>Aus dem Lambda-Ausdruck entsteht eie Schleife und ein If-Konstrukt</li>
+                          <li>Aus dem Lambda-Ausdruck entsteht eine anonyme Klasse, die Function implementiert</li>
+                          <li data-poll="correct">Aus dem Lambda-Ausdruck entsteht eine anonyme Klasse, die Predicate implementiert</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
+                  <div class="fragment">
+                    <p class="small">Lambda-Ausdruck wird durch anonyme Klasse ersetzt:</p>
+                    <pre style="margin-top:-5mm; width: 108%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#15-20'></code></pre>
+                  </div>
+                </section>
+
+                <section>
+                  <h3>Zusammenfassung</h3>
+                  <ul class="small">
+                    <li>Generics: <code>class ...&lt;T&gt;</code></li>
+                    <li>Typeinschränkung: <code>&lt;T extends C&gt;</code></li>
+                    <li>Wildcards in Methoden: <code>&lt;?&gt;</code>, <code>&lt;? extends C&gt;</code>, <code>&lt;? super C&gt;</code></li>
+                    <li><code>Comparable</code>, <code>Comparator</code></li>
+                    <li>Collections: <code>Iterable</code>, <code>Collection</code>, <code>List</code>, <code>Set</code>, <code>Map</code></li>
+                    <li>Lambda-Ausdrücke: <code>... -&gt; ...</code></li>
+                    <li>Funktionale Schnittstellen: <code>Consumer</code>, <code>Predicate</code>, <code>Function</code>,...</li>
+                    <li>Streams: <code>stream()</code>, <code>filter</code>, <code>map</code>, <code>count</code>, <code>forEach</code>, ...</li>
+                    <li>Methodenreferenzen: <code>X::y</code></li>
+                  </ul>
                 </section>
 
               </div>

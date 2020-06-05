@@ -1041,6 +1041,26 @@
                 </section>
 
                 <section>
+                  <h3><code>Stream</code>-Schritte</h3>
+                  <h4><code>filter(Predicate)</code></h4>
+                  <p class="small" style="margin-top: -5mm;">Erzeugt einen Stream aus denjenigen Einträgen, die ein Prädikat erfüllen.</p>
+                  <pre style="margin-top: -2mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#32'></code></pre>
+
+                  <div class="fragment">
+                    <h4><code>map(Function)</code></h4>
+                    <p class="small" style="margin-top: -5mm;">Erzeugt einen Stream, der aus dem Funktionsergebnissen jedes Eintrags besteht.</p>
+                    <pre style="margin-top: -2mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#46'></code></pre>
+                  </div>
+
+                  <div class="fragment">
+                    <h4><code>reduce(BinaryOperator)</code></h4>
+                    <p class="small" style="margin-top: -5mm;">Reduziert alle Elemente paarweise auf ein zusammenfassendes Ergebnis.</p>
+                    <pre style="margin-top: -2mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#47-47'></code></pre>
+                  </div>
+                  <aside class="notes">Der <code>filter</code>-Schritt steckt jeden Eintrag des Stroms in eine Funktion. Liefert diese <code>true</code> zurück, bleibt der Eintrag im Strom, ansonsten wird er rausgefiltert. Beim <code>map</code>-Schritt wird jedes Element durch einen neuen Wert ersetzt, der mit der übergebenen Funktion berechnet wird. <code>reduce</code> wendet eine Operation auf die ersten beiden Elemente an, dann auf das Ergebnis daraus zusammen mit dem dritten Element, usw.</aside>
+                </section>
+
+                <section>
                   <h3>Methodenreferenzen</h3>
                   <div class="trackinfo"><i class="fas fa-book"></i> 14.2</div>
                   <p class="small">Kurzschreibweisen in Lambda-Ausdrücken, um Methoden zu referenzieren.</p>

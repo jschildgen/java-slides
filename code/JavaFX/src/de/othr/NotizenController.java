@@ -13,8 +13,6 @@ public class NotizenController {
     @FXML TextArea notiztext;
     @FXML TextField notiztitel;
     @FXML Button btn_neu;
-    @FXML Button btn_edt;
-    @FXML Button btn_del;
 
     ObservableList<Notiz> notizen
             = FXCollections.observableArrayList();

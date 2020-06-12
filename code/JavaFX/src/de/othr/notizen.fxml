@@ -15,10 +15,8 @@
   <bottom>
     <HBox>
       <TextField fx:id="notiztitel"/>
-      <Button fx:id="btn_neu" text="Neue Notiz erstellen"
-              onAction="#notizNeu"/>
-      <Button fx:id="btn_del" text="Löschen"
-              onAction="#notizLoeschen"/>
+      <Button text="Neue Notiz erstellen" onAction="#notizNeu"/>
+      <Button text="Löschen" onAction="#notizLoeschen"/>
     </HBox>
   </bottom>
 </BorderPane>

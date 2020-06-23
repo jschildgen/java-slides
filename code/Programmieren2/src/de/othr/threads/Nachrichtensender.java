@@ -10,23 +10,30 @@ public class Nachrichtensender {
     public static void main(String[] args) {
         Nachrichtensender news = new Nachrichtensender();
 
-        new Thread(() -> {
+        new Thread(() -> { // dieser Thread sendet Nachrichten
             Scanner scan = new Scanner(System.in);
             String nachricht;
             while(!(nachricht = scan.nextLine()).isEmpty()) {
                 news.add(nachricht);
             }
         }).start();
-
+        // Im Main-Thread werden die Nachrichten ausgegeben
         news.warten_und_ausgeben();
     }
+    //...
 
-    private synchronized void add(String neuigkeit) {
+    /**
+     * Fügt eine neue Neuigkeit in die Warteschlange
+     * und benachricht einen auf die Warteschlange
+     * wartenden Thread
+     * @param neuigkeit Die Nachricht die gesendet werden soll
+     */
+    public synchronized void add(String neuigkeit) {
         nachrichten.offer(neuigkeit);
         notify();
     }
 
-    private synchronized void warten_und_ausgeben() {
+    public synchronized void warten_und_ausgeben() {
         try {
             while (true) {
                 while (nachrichten.isEmpty()) {

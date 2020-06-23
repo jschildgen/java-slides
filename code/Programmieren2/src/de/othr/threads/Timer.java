@@ -8,7 +8,7 @@ public class Timer extends Thread {
         this.bezeichnung = bezeichnung;
         this.sekunden = sekunden;
     }
-
+    // ...
     @Override
     public void run() {
         System.out.println(bezeichnung+"-Timer gestartet.");
@@ -18,5 +18,6 @@ public class Timer extends Thread {
             System.out.println(bezeichnung+"-Timer unterbrochen.");
         }
         System.out.println(bezeichnung+"-Timer abgelaufen.");
+        // ...
     }
 }

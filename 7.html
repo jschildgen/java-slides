@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Programmieren 2 - Kapitel 7 - Threads</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reset.css">
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+
+        <link rel="stylesheet" href="src/slides.css">
+        <link rel="stylesheet" href="src/style.css">
+
+		<link rel="stylesheet" href="src/layout.css">
+        <link rel="stylesheet" href="lib/joint.min.css" />
+        <link rel="stylesheet" href="src/erd.css" />
+        <link rel="stylesheet" href="poll/poll.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="src/rainbow.css">
+
+        <!--<script defer src="lib/fontawesome.all.min.js"/>-->
+        <link href="lib/fontawesome.all.min.css" rel="stylesheet">
+        <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+            <div id="header"></div>
+            <div id="footer"></div>
+			<div class="slides">
+                <section>
+                    <h4 style="text-align:center"><b>Prof. Dr.-Ing. Johannes Schildgen</b><br>
+                    <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
+                    <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
+                    <h3>Kapitel 7: Threads</h3>
+                    <h4 style="text-align:center">2020-05-20</h4>
+                    <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-180px;">
+                    <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-180px; box-shadow:none">
+                </section>
+
+                <section>
+                  <h2>Threads</h2>
+                  <p class="small">Threads ermöglichen nebenläufige Programmierung</p>
+                  <h4>Single-Threaded</h4>
+                  <ul class="small">
+                    <li>Das Java-Programm läuft sequenziell im <em>Main-Thread</em></li>
+                  </ul>
+                  <div style="position: absolute; top: 170px; right:105px; font-size:150px"><i class="fas fa-long-arrow-alt-down red"></i></div>
+                  <p></p>
+
+                  <h4>Multi-Threaded</h4>
+                  <ul class="small">
+                    <li>Zusätzlich zum Main-Thread gibt es weitere Threads.</li>
+                    <li>Ein Thread ist eine sequenzielle Folge von Anweisungen</li>
+                    <li>Jeder Thread läuft parallel zu den anderen Threads</li>
+                    <li>Threads können auf gemeinsame Ressourcen<br>(z. B. Variablen, Objekte, ...) zugreifen.</li>
+                  </ul>
+                  <div style="position: absolute; top: 360px; right:30px; font-size:150px"><i class="fas fa-long-arrow-alt-down red"></i><i class="fas fa-long-arrow-alt-down red"></i><i class="fas fa-long-arrow-alt-down red"></i></div>                 
+                </section>
+
+                <section>
+                  <h3>Threads in Java: Die Klasse <code>Thread</code></h3>
+                  <img style="position: absolute; right:-0.5cm; max-height: 9cm; top:3.5cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+                  
+                  interface Runnable <<interface>> { 
+                    +run()  
+                  }
+
+                  class Thread {
+                    --
+                    +Thread()
+                    +Thread(target : Runnable)
+                    +getState() : State
+                    +run()
+                    +sleep(millis : long)
+                    +start()
+                    . . .
+                  }
+         
+          
+                  Runnable <|.. Thread
+                  "/>
+
+                  <h4><code>Runnable</code> (funktionales Interface)</h4>
+                  <p class="small" style="margin-top: -3mm;">In der <code>run()</code> wird implementiert, was gemacht werden soll.</p>
+                  <p></p>
+
+                  <h4><code>Thread</code></h4>
+                  <ul class="small" style="margin-top: -3mm;">
+                    <li class="fragment"><code>Thread(Runnable target)</code> - erzeugt neunen Thread</li>
+                    <li class="fragment"><code>start()</code> startet die Ausführung des Threads;<br>Die JVM ruft dessen <code>run</code>-Methode asynchron auf<br>und setzt parallel dazu das Programm normal fort</li>
+                    <li class="fragment"><code>getState()</code> - Zustand des Threads:<br>NEW, RUNNABLE, BLOCKED, WAITING, TIME_WAITING, TERMINATED</li>
+                    <li class="fragment"><code>sleep(long millis)</code>: Für die angegebene Anzahl von Millisekunden wird der Thread schlafen gelegt (Zustand TIME_WAITING)</li>
+                  </ul>
+                  <aside class="notes">Zustand NEW bedeutet, dass der Thread existiert, aber noch nicht gestartet wurde. Bei RUNNABLE läuft er, bei BLOCKED wartet er bis ein anderer Thread einen Monitor-Sperre freigibt, bei WAITING, bis ein anderer Thread <code>notify()</code> aufruft und TERMINATED bedeutet, dass der Thread fertig ausgeführt wurde.</aside>
+                </section>
+                <section>
+                  <h3>Erstellen eines Threads</h3>
+                  <h4>a) Neue Subklasse von <code>Thread</code> erstellen</h4>
+                  <p class="small"><code>run()</code> implementieren, dann <code>start()</code> aufrufen:</p>
+                  <pre><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/threads/Timer.java#3, 11-13,21-23'></code></pre>
+                  <pre><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/threads/TimerApp.java#3-9, 40-41'></code></pre>
+                  <div class="poll fragment" style="bottom:50px">
+                    <h1>Wie viele Threads gibt es in der TimerApp?</h1>
+                      <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li data-poll="correct">3</li>
+                        <li>4</li>
+                      </ul>
+                    <h2>https://frage.space</h2>
+                   </div>
+                  <aside class="notes">Es gibt zwei Möglichkeiten, einen Thread zu erstellen. Eine ist das Anlegen einer Subklasse von <code>Thread</code>.</aside>                  
+                </section>
+
+                <section>
+                  <h3>Erstellen eines Threads</h3>
+                  <h4>a) Neue Subklasse von <code>Thread</code> erstellen</h4>
+                  <p class="small">Auch möglich als anonyme Klasse:</p>
+                  <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/threads/TimerApp.java#22-27'></code></pre>            
+                </section>
+
+                <section>
+                  <h3>Erstellen eines Threads</h3>
+                  <h4>b) <code>Thread</code>-Konstruktor ein Runnable übergeben</h4>
+                  <p class="small">z. B. in Form eines Lambda-Ausdrucks:</p>
+                  <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/threads/TimerApp.java#31-39'></code></pre>            
+                </section>
+
+                <section>
+                  <h3>Thread-Synchronisierung</h3>
+                  <h4><code>synchronized(obj)</code>-Block</h4>
+                  <p class="small">Greifen mehrere Threads auf das gleiche Objekt zu, kann mit <code>synchronized</code> das Objekt gesperrt werden, sodass andere warten müssen.</p>
+                  <div class="columns">
+                    <div><pre style="width: 14cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/threads/GeldbeutelSync.java#9-22'></code></pre>  </div>
+                    <div>&nbsp;</div>
+                    <div><pre style="width: 12.5cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/threads/GeldbeutelSync.java#24-34'></code></pre>  </div>
+                  </div>
+                  <div class="poll fragment fade-in-then-out" style="bottom:360px">
+                    <h1>Was wird ausgegeben?</h1>
+                      <ul>
+                        <li>10</li>
+                        <li>50</li>
+                        <li>100</li>
+                        <li data-poll="correct">500</li>
+                      </ul>
+                    <h2>https://frage.space</h2>
+                   </div>
+                  <div class="poll fragment" style="bottom:50px">
+                    <h1>Was würde passieren, wenn nicht synchronized(geldbeutel) gemacht worden wäre?</h1>
+                      <ul>
+                        <li data-poll="correct">Der linke Thread ist noch nicht fertig, der rechte summiert aber schon die Zahlen in der Liste auf</li>
+                        <li>Eine Exception wird im linken Thread geworfen</li>
+                        <li>Eine Exception wird im rechten Thread geworfen</li>
+                        <li>Der linke Thread wird abgebrochen</li>
+                      </ul>
+                    <h2>https://frage.space</h2>
+                   </div>
+                   
+                  <aside class="notes">Der Main-Thread (rechts) muss warten, bis der Thread links mit seiner <code>for</code>-Schleife fertig ist.</aside>
+                </section>
+
+                <section>
+                  <h3>Thread-Synchronisierung</h3>
+                  <h4><code>synchronized</code>-Methode</h4>
+                  <pre><code class="java" contenteditable>public synchronized void mach_was() { ... }</code></pre>
+                  <p class="small">steht für:</p>
+                  <pre><code class="java" contenteditable>public void mach_was() { synchronized(this) { ... } }</code></pre>
+                </section>
+
+                <section>
+                  <h3>Beispiel ohne <code>synchronized</code></h3>
+                  <pre style="width: 95%;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/threads/ABC.java#3-12,23'></code></pre>  
+                  <pre style="width: 95%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/threads/ABCTest.java#5-7'></code></pre>   
+                  <p class="fragment small">Ausgabe: AABBCC</p>
+                  <aside class="notes">Die beiden Threads werden gleichzeitig ausgeführt. Auf der Konsolenausgabe kommen die Ausgaben der einzelnen Threads durcheinander an.</aside> 
+                </section>
+
+                <section>
+                  <h3>Beispiel mit <code>synchronized</code></h3>
+                  <pre style="width: 95%;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/threads/ABC.java#3,14-23'></code></pre>  
+                  <pre style="width: 95%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/threads/ABCTest.java#5,12-13'></code></pre>   
+                  
+                  <div class="poll fragment" style="bottom:-70px">
+                    <h1>Was wird ausgegeben?</h1>
+                      <ul>
+                        <li>ABC</li>
+                        <li data-poll="correct">ABCABC</li>
+                        <li>AABBCC</li>
+                        <li>AABCCB</li>
+                      </ul>
+                    <h2>https://frage.space</h2>
+                   </div>
+                  
+                  <p class="fragment small">Ausgabe: ABCABC</p>
+                  <aside class="notes">Hier holt sich innerhalb der <code>sync_print()</code>-Methode einer der beiden Threads die Sperre auf dem Objekt <code>this</code> (also <code>abc</code>). Der andere Thread startet daher erst mit der Ausführung der <code>sync_print()</code>-Methode, wenn der erste damit abgeschlossen ist und die Sperre freigegeben hat.</aside> 
+                </section>
+
+                <section>
+                  <h3><code>wait()</code> und <code>notify()</code></h3>
+                  <img style="z-index:-1; position: absolute; right:0.5cm; max-height: 6cm; top:2.5cm" uml="
+                    class Object { 
+                      +clone() : Object
+                      +equals(obj : Object) : boolean 
+                      +finalize()
+                      +getClass() : Class<?>
+                      +hashCode() : int
+                      +notify()
+                      +notifyAll()
+                      +toString() : String
+                      +wait()
+                    }
+                    "/>
+                    <p class="small">In <code>synchronized</code>-Blöcken kann aufgerufen werden:</p>
+                    <h4><code>wait()</code></h4>
+                    <p class="small" style="margin-top: -3mm;">Versetzt den Thread in den Status <code>WAITING</code><br>und gibt die Sperre auf dem Objekt frei,<br>so lange bis jemand <code>notify()</code> auf dem Objekt aufruft.</p>
+  
+                    <h4><code>notify()</code></h4>
+                    <p class="small" style="margin-top: -3mm;">Benachrichtigt einen auf das Objekt wartenden Thread,<br>sodass dieser sein Warten beendet.</p>
+  
+                    <h4><code>notifyAll()</code></h4>
+                    <p class="small" style="margin-top: -3mm;">Benachrichtigt alle auf das Objekt wartenden Threads,<br>sodass diese ihr Warten beenden.</p>
+                </section>
+
+                <section>
+                  <h3>Beispiel: Nachrichtensender (1/2)</h3>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/threads/Nachrichtensender.java#7-23,41'></code></pre> 
+                  <aside class="notes">Die Methoden <code>add</code>- und <code>warten_und_ausgeben()</code> (siehe nächste Folie) sind <code>synchronized</code>. In ihnen rufen wir <code>wait</code> und <code>notify</code> auf. Im hier gezeigten Thread gibt der Benutzer auf der Konsole einen Text ein, welcher daraufhin in der <code>add</code>-Methode in die <code>LinkedList</code> eingefügt wird (siehe nächste Folie).</aside>
+                </section>
+                <section>
+                  <h3>Beispiel: Nachrichtensender (2/2)</h3>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/threads/Nachrichtensender.java#31-47'></code></pre> 
+                  <aside class="notes"><code>add</code> fügt die Nachricht in die <code>Queue</code> ein (<code>offer</code> fügt am Ende ein) und benachrichtigt wartende Threads. In der Methode <code>warten_und_ausgeben</code>, welche vom Main-Thread aufgerufen wird (siehe vorherige Folie), wartet auf eingehende Nachrichten (<code>wait()</code>). Sobald der Warteprozess aufgrund von <code>notify()</code> beendet wird, wird sich die Nachricht geholt, sie wird ausgegeben und aus der Queue entfernt (<code>poll</code>).</aside>
+                </section>
+                
+                <section>
+                  <h2>JavaDoc</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 18</div>
+                  <p class="small"><code>/** ... */</code>-Kommentarblöcke beschreiben Klassen, Methoden, etc.</p>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/threads/Nachrichtensender.java#25-34'></code></pre>
+                  <p class="small">Erzeugen einer JavaDoc (HTML-Dateien) auf der Konsole:</p>
+                  <pre><code>javadoc Nachrichtensender.java</code></pre>
+                  <p class="small">In IntelliJ: Tools &rightarrow; Generate JavaDoc...</p>
+                  <img src="img/7/javadoc_intellij.png" alt="JavaDoc" class="noborder" style="position: absolute; top: 10cm; right:0mm; width: 7cm;">
+                  <aside class="notes">Mit JavaDoc können Sie Ihre Klassen, Interfaces, Methoden, deren Parameter (<code>@params</code>), Exception-Verhalten (<code>@throws</code>), und mehr dokumentieren. IDEs wie IntelliJ zeigen JavaDoc-Infos im Code an.</aside>
+                </section>
+                <section>
+                  <h2>JavaDoc</h2>
+                  <img src="img/7/javadoc1.png" alt="JavaDoc" class="noborder" style="margin-top: -5mm; width: 80%;">
+                  <img src="img/7/javadoc2.png" alt="JavaDoc" class="noborder" style="margin-top: -5mm; width: 80%;">
+                  
+                </section>
+
+                <section>
+                  <h3>Kapitelzusammenfassung</h3>
+                  <ul>
+                    <li>Threads: <code>Runnable</code>, <code>run</code>, <code>start</code></li>
+                    <li><code>synchronized</code>-Blöcke und -Methoden</li>
+                    <li><code>wait</code>, <code>notify</code>, <code>notifyAll</code></li>
+                    <li>JavaDoc</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+        
+            <script src="reveal.js/js/reveal.js"></script>
+                <script src="lib/jquery.js"></script>
+                <script src="lib/lodash.js"></script>
+                <script src="lib/backbone.js"></script>
+                <script src="lib/joint.min.js"></script>
+                <script src="lib/deflate.js"></script>
+        
+            <script src="src/init_reveal.js"></script>
+        
+                <script>
+                if(window.location.search.match( /print-pdf/gi )) {
+                        document.getElementById('header').style="display:none";
+                        document.getElementById('footer').style="display:none";
+                }
+                </script>
+        
+        
+          </body>
+        </html>
+        

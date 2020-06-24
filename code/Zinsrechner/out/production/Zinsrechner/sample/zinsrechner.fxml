@@ -6,10 +6,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.layout.BorderPane?>
-<BorderPane fx:controller="sample.Controller"
-            xmlns:fx="http://javafx.com/fxml">
-    <VBox alignment="center">
+<VBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
     <Label text="Anfangskapital [EUR]"/>
     <TextField fx:id="anfangskapital"/>
     <Label text="Zinssatz [%]"/>
@@ -18,5 +16,5 @@
     <TextField fx:id="jahre"/>
     <Button text="Berechnen" onAction="#zinsen_berechnen"/>
     <Label text="Endkapital [EUR]"/>
-    <TextField fx:id="endkapital"/></VBox>
-</BorderPane>
+    <TextField fx:id="endkapital"/>
+</VBox>

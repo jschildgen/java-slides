@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programmieren 2 - Übungsblatt 12</title>
+    <link rel="stylesheet" href="../src/exercises.css">
+    <link href="../lib/fontawesome.all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+        <div>
+            <b>Programmieren 2 (Java) - SS 2020</b><br>
+            Prof. Dr.-Ing. Johannes Schildgen<br>
+            johannes.schildgen@oth-regensburg.de<br>
+            <b>Übungsblatt 12 vom 09.07.2020</b>
+        </div>
+        <div><img src="../img/oth.png" style="border:0; height:50px"></div>
+    </div>
+    <hr>
+    </header>
+    <section style="padding-top: 2.5cm">
+        <h1>Aufgabe 1: JavaFX, Threads</h1>
+        <p>Abgabe-Deadline: 08.07.2020 12:00 im Moodle</p>
+          <p>Programmieren Sie das folgende Spiel &quot;Tipptrainer&quot; mit JavaFX:</p>
+
+          <p>Ziel des Tipptrainers ist es, seine Fähigkeiten im 10-Finger-Schreiben auf der Computertastatur zu verbessern. Der Benutzer hat 15 Sekunden Zeit, 
+            einen Text zu verfassen, daraufhin wird die Anzahl der Anschläge pro Minute angezeigt.</p>
+          
+            <p>Die Anwendung besteht aus einem mehrzeiligen Eingabefeld, in welches der Benutzer einen Text schreiben kann, einem Label,
+              welches die Anchläge pro Minute darstellt und einem Neustart-Button.</p> 
+            
+            <p>Sobald man anfängt zu tippen, läuft im Hintergrund die Zeit. Es ist nicht nötig, dass die verbleibende Zeit irgendwo angezeigt wird. 
+            Aber wenn 15 Sekunden abgelaufen sind, deaktiviert sich das Eingabefeld (<code>disable</code>), sodass ein Weitertippen nicht mehr möglich ist. 
+            Das Label zeigt nun die erreichte Punktzahl an, also die Anzahl der Zeichen pro Minute.</p>
+
+            <p>Ein Klick auf den Neustart-Button leert und aktiviert das Tippfeld wieder, sodass man erneut spielen kann.</p>
+
+            <h4>Hinweise:</h4>
+            <ul>
+              <li>Verwenden Sie FXML, um das Layout zu erstellen und entwickeln Sie eine Controller-Klasse.</li>
+              <li>Es ist nicht möglich, dass eigens erstellte Threads auf direkte Weise auf die JavaFX-Elemente zugreifen. Versuchen Sie dies, sehen Sie eine Exception &quot;Not on FX application thread&quot;.</li>
+              <li>Hier ist die Lösung, um dennoch in Ihren Threads auf JavaFX-Elemente zugreifen zu können: Rufen Sie die entsprechenden Kommandos in einem solchen Block innerhalb Ihres Threads auf:
+              <pre><code>Platform.runLater(() -> { 
+    // hier
+});</code></pre></li>
+            </ul>
+
+            <p>Laden Sie im Moodle einen Screenshot Ihrer Anwendung (mit Anzeige der Anschläge pro Minute!) hoch und zeigen Sie in Ihrer Einzelslot-Session Ihren Code und die Anwendung.</p>
+    
+            <h4>Optional:</h4>
+            <ul>
+              <li>Darstellung der Restlaufzeit in Sekunden.</li>
+              <li>Wird der Neustart-Button geklickt, während die Zeit noch läuft, soll der Countdown abgebrochen werden.</li>
+            </ul>
+          </section>
+</body>
+</html>

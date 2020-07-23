@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Java Slides</title>
+    <title>DB Slides</title>
     <link href="./lib/fontawesome.all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -17,7 +17,7 @@ foreach($files as $file) {
 }
 ?>
 <hr>
-<h1>Exercise Sheets</h1>
+<h1 onClick="javascript:document.querySelector('#exams').style.visibility = document.querySelector('#exams').style.visibility == 'hidden' ? 'visible' : 'hidden';">Exercise Sheets</h1>
 <?php
 $files = glob('./exercises/*.{html}', GLOB_BRACE);
 foreach($files as $file) {
@@ -26,6 +26,7 @@ foreach($files as $file) {
 ?>
 
 <hr>
+<div id="exams" style="visibility:hidden">
 <h1>Exams</h1>
 <?php
 $files = glob('./exams/*.{html}', GLOB_BRACE);
@@ -33,5 +34,6 @@ foreach($files as $file) {
   echo "<a href=\"$file\">$file</a><br>";
 }
 ?>
+</div>
 </body>
 </html>

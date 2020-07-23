@@ -19,22 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1d5a1a8-a52c-4691-8daa-a4a33343b4b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.coursecreator/PG2_Uebung5/course.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/1_Spieler/src/ComputerGegner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/1_Spieler/src/ComputerGegner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/1_Spieler/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/1_Spieler/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2a_instanceof/src/MauMau.java" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2a_instanceof/src/MauMau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2a_instanceof/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2a_instanceof/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2b_Computergegner_Staerke/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2b_Computergegner_Staerke/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2c_Overriding/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2c_Overriding/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2d_Casting/src/MauMau.java" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2d_Casting/src/MauMau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung5/2d_Casting/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung5/2d_Casting/task-info.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="a1d5a1a8-a52c-4691-8daa-a4a33343b4b8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,6 +138,7 @@
       <workItem from="1588246085868" duration="2261000" />
       <workItem from="1588319041972" duration="341000" />
       <workItem from="1588845274104" duration="756000" />
+      <workItem from="1594294419006" duration="42000" />
     </task>
     <servers />
   </component>

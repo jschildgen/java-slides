@@ -4,10 +4,10 @@ files:
   visible: true
   placeholders:
   - offset: 110
-    length: 18
+    length: 4
     placeholder_text: ""
-  - offset: 135
-    length: 43
+  - offset: 117
+    length: 0
     placeholder_text: ""
     dependency:
       lesson: Uebung4
@@ -15,8 +15,8 @@ files:
       file: src/Konto.java
       placeholder: 1
       is_visible: false
-  - offset: 183
-    length: 44
+  - offset: 118
+    length: 0
     placeholder_text: ""
     dependency:
       lesson: Uebung4
@@ -24,8 +24,8 @@ files:
       file: src/Konto.java
       placeholder: 2
       is_visible: false
-  - offset: 258
-    length: 47
+  - offset: 141
+    length: 0
     placeholder_text: ""
     dependency:
       lesson: Uebung4

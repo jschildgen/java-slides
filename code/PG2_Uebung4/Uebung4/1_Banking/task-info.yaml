@@ -5,11 +5,11 @@ files:
 - name: src/Konto.java
   visible: true
   placeholders:
-  - offset: 117
-    length: 43
+  - offset: 113
+    length: 0
     placeholder_text: ""
-  - offset: 191
-    length: 47
+  - offset: 136
+    length: 0
     placeholder_text: ""
 - name: src/Bank.java
   visible: true

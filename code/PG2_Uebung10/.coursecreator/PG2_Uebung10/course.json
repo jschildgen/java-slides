@@ -1,0 +1,192 @@
+{
+  "summary" : "Programmieren 2 - Uebung 10\nProf. Schildgen, OTH Regensburg, SS2020",
+  "title" : "PG2_Uebung10",
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "Uebung10",
+      "task_list" : [
+        {
+          "name" : "1_Lambda",
+          "files" : {
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 968,
+                  "length" : 0,
+                  "possible_answer" : "laender.forEach(System.out::println);",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.time.LocalDate;\nimport java.util.List;\nimport java.util.stream.Stream;\n\npublic class Main {\n   public static void main(String[] args) {\n      List<String> corona_daten;\n      try {\n         corona_daten = APIHelper.httpGetList(\"https://opendata.ecdc.europa.eu/covid19/casedistribution/csv\");\n      } catch(Exception e) {\n         e.printStackTrace();\n         return;\n      }\n\n      Stream<CoronaDatensatz> daten = corona_daten.stream()\n              .skip(1)\n              .map(s -> s.split(\",(?=(?:[^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)\"))\n              .map(a -> new CoronaDatensatz(\n                      LocalDate.of(Integer.parseInt(a[3]),Integer.parseInt(a[2]),Integer.parseInt(a[1])),\n                      Integer.parseInt(a[4]),\n                      a[6],\n                      a[10]));\n\n      Stream<String> laender = daten.map(CoronaDatensatz::getLand)\n                                    .distinct()\n                                    .sorted();\n\n      \n\n   }\n}"
+            },
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "\"Bonaire, Saint Eustatius and Saba\"\nAfghanistan\nAlbania\nAlgeria\nAndorra\nAngola\nAnguilla\nAntigua_and_Barbuda\nArgentina\nArmenia\nAruba\nAustralia\nAustria\nAzerbaijan\nBahamas\nBahrain\nBangladesh\nBarbados\nBelarus\nBelgium\nBelize\nBenin\nBermuda\nBhutan\nBolivia\nBosnia_and_Herzegovina\nBotswana\nBrazil\nBritish_Virgin_Islands\nBrunei_Darussalam\nBulgaria\nBurkina_Faso\nBurundi\nCambodia\nCameroon\nCanada\nCape_Verde\nCases_on_an_international_conveyance_Japan\nCayman_Islands\nCentral_African_Republic\nChad\nChile\nChina\nColombia\nComoros\nCongo\nCosta_Rica\nCote_dIvoire\nCroatia\nCuba\nCuraçao\nCyprus\nCzechia\nDemocratic_Republic_of_the_Congo\nDenmark\nDjibouti\nDominica\nDominican_Republic\nEcuador\nEgypt\nEl_Salvador\nEquatorial_Guinea\nEritrea\nEstonia\nEswatini\nEthiopia\nFalkland_Islands_(Malvinas)\nFaroe_Islands\nFiji\nFinland\nFrance\nFrench_Polynesia\nGabon\nGambia\nGeorgia\nGermany\nGhana\nGibraltar\nGreece\nGreenland\nGrenada\nGuam\nGuatemala\nGuernsey\nGuinea\nGuinea_Bissau\nGuyana\nHaiti\nHoly_See\nHonduras\nHungary\nIceland\nIndia\nIndonesia\nIran\nIraq\nIreland\nIsle_of_Man\nIsrael\nItaly\nJamaica\nJapan\nJersey\nJordan\nKazakhstan\nKenya\nKosovo\nKuwait\nKyrgyzstan\nLaos\nLatvia\nLebanon\nLesotho\nLiberia\nLibya\nLiechtenstein\nLithuania\nLuxembourg\nMadagascar\nMalawi\nMalaysia\nMaldives\nMali\nMalta\nMauritania\nMauritius\nMexico\nMoldova\nMonaco\nMongolia\nMontenegro\nMontserrat\nMorocco\nMozambique\nMyanmar\nNamibia\nNepal\nNetherlands\nNew_Caledonia\nNew_Zealand\nNicaragua\nNiger\nNigeria\nNorth_Macedonia\nNorthern_Mariana_Islands\nNorway\nOman\nPakistan\nPalestine\nPanama\nPapua_New_Guinea\nParaguay\nPeru\nPhilippines\nPoland\nPortugal\nPuerto_Rico\nQatar\nRomania\nRussia\nRwanda\nSaint_Kitts_and_Nevis\nSaint_Lucia\nSaint_Vincent_and_the_Grenadines\nSan_Marino\nSao_Tome_and_Principe\nSaudi_Arabia\nSenegal\nSerbia\nSeychelles\nSierra_Leone\nSingapore\nSint_Maarten\nSlovakia\nSlovenia\nSomalia\nSouth_Africa\nSouth_Korea\nSouth_Sudan\nSpain\nSri_Lanka\nSudan\nSuriname\nSweden\nSwitzerland\nSyria\nTaiwan\nTajikistan\nThailand\nTimor_Leste\nTogo\nTrinidad_and_Tobago\nTunisia\nTurkey\nTurks_and_Caicos_islands\nUganda\nUkraine\nUnited_Arab_Emirates\nUnited_Kingdom\nUnited_Republic_of_Tanzania\nUnited_States_Virgin_Islands\nUnited_States_of_America\nUruguay\nUzbekistan\nVenezuela\nVietnam\nWestern_Sahara\nYemen\nZambia\nZimbabwe\n"
+            },
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class APIHelper {\n    public static List<String> httpGetList(String urlStr) throws IOException {\n        URL url = new URL(urlStr);\n        HttpURLConnection conn =\n                (HttpURLConnection) url.openConnection();\n\n        BufferedReader rd = new BufferedReader(\n                new InputStreamReader(conn.getInputStream()));\n        String line;\n        List<String> lines = new ArrayList<>();\n        while ((line = rd.readLine()) != null) {\n            lines.add(line);\n        }\n        rd.close();\n\n        conn.disconnect();\n        return lines;\n    }\n}\n"
+            },
+            "src/CoronaDatensatz.java" : {
+              "name" : "src/CoronaDatensatz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.time.LocalDate;\n\npublic class CoronaDatensatz {\n    private LocalDate datum;\n    private int faelle;\n    private String land;\n    private String kontinent;\n\n    public CoronaDatensatz(LocalDate datum, int faelle, String land, String kontinent) {\n        this.datum = datum;\n        this.faelle = faelle;\n        this.land = land;\n        this.kontinent = kontinent;\n    }\n\n    public LocalDate getDatum() {\n        return datum;\n    }\n\n    public void setDatum(LocalDate datum) {\n        this.datum = datum;\n    }\n\n    public int getFaelle() {\n        return faelle;\n    }\n\n    public void setFaelle(int faelle) {\n        this.faelle = faelle;\n    }\n\n    public String getLand() {\n        return land;\n    }\n\n    public void setLand(String land) {\n        this.land = land;\n    }\n\n    public String getKontinent() {\n        return kontinent;\n    }\n\n    public void setKontinent(String kontinent) {\n        this.kontinent = kontinent;\n    }\n}\n"
+            }
+          },
+          "description_text" : "<html>\n<p>Betrachten Sie das hier gezeigte Java-Programm, welches eine CSV-Datei aus dem Internet abruft und verarbeitet.</p>\n<p>Die in der <code>APIHelper</code>-Klasse befindliche Methode <code>httpGetList</code> ist eine leicht abgeänderte Variante der Methode vom Übungsblatt über die Witze-App. Diese gibt nicht einfach einen String aus, sondern eine <code>List&lt;String&gt;</code>. Jedes Listenelement entspricht einer Zeile.</p>\n<ul>\n    <li><b>Öffnen Sie die URL zur CSV-Datei, die hier abgerufen wird, in einem Browser und betrachten Sie die Datei in einem Texteditor (nicht in Excel o. ä.)</b></li>\n    <li><b>Versuchen Sie die in der <code>Main</code>-Klasse stehenden Lambda-Ausdrücke zu verstehen und nachzuvollziehen. Beantworten Sie dazu die Verständnisfragen im Moodle (kurze Antworten; max. 20 Wörter).</b></li>\n    <li><b>Ergänzen Sie das Programm so, dass die Liste aller Länder ausgegeben wird und führen Sie das Programm aus. Verwenden Sie dazu keine Schleife, sondern <code>laender.forEach</code></b></li>\n</ul>\n<p>Bemerkung: Hier wird nicht einfach <code>s.split(\",\")</code> gemacht, um eine Zeile in ihre einzelnen Spalten zu zerlegen, sondern ein komplexer Ausdruck verwendet, der auch beachtet, dass Kommas innerhalb einer Spalte stehen können. Der Spaltenwert steht dann in Anführungszeichen, z. B. beim Land <code>\"Bonaire, Saint Eustatius and Saba\"</code></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "2a_Anzahl_Laender",
+          "files" : {
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 900,
+                  "length" : 0,
+                  "possible_answer" : "System.out.println(laender.count());",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.time.LocalDate;\nimport java.util.List;\nimport java.util.stream.Stream;\n\npublic class Main {\n   public static void main(String[] args) {\n      List<String> corona_daten;\n      try {\n         corona_daten = APIHelper.httpGetList(\"https://opendata.ecdc.europa.eu/covid19/casedistribution/csv\");\n      } catch(Exception e) {\n         e.printStackTrace();\n         return;\n      }\n\n      Stream<CoronaDatensatz> daten = corona_daten.stream()\n              .skip(1)\n              .map(s -> s.split(\",(?=(?:[^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)\"))\n              .map(a -> new CoronaDatensatz(\n                      LocalDate.of(Integer.parseInt(a[3]),Integer.parseInt(a[2]),Integer.parseInt(a[1])),\n                      Integer.parseInt(a[4]),\n                      a[6],\n                      a[10]));\n\n      Stream<String> laender = daten.map(CoronaDatensatz::getLand)\n              .distinct();\n\n      \n   }\n}"
+            },
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "210\n"
+            },
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class APIHelper {\n    public static List<String> httpGetList(String urlStr) throws IOException {\n        URL url = new URL(urlStr);\n        HttpURLConnection conn =\n                (HttpURLConnection) url.openConnection();\n\n        BufferedReader rd = new BufferedReader(\n                new InputStreamReader(conn.getInputStream()));\n        String line;\n        List<String> lines = new ArrayList<>();\n        while ((line = rd.readLine()) != null) {\n            lines.add(line);\n        }\n        rd.close();\n\n        conn.disconnect();\n        return lines;\n    }\n}\n"
+            },
+            "src/CoronaDatensatz.java" : {
+              "name" : "src/CoronaDatensatz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.time.LocalDate;\n\npublic class CoronaDatensatz {\n    private LocalDate datum;\n    private int faelle;\n    private String land;\n    private String kontinent;\n\n    public CoronaDatensatz(LocalDate datum, int faelle, String land, String kontinent) {\n        this.datum = datum;\n        this.faelle = faelle;\n        this.land = land;\n        this.kontinent = kontinent;\n    }\n\n    public LocalDate getDatum() {\n        return datum;\n    }\n\n    public void setDatum(LocalDate datum) {\n        this.datum = datum;\n    }\n\n    public int getFaelle() {\n        return faelle;\n    }\n\n    public void setFaelle(int faelle) {\n        this.faelle = faelle;\n    }\n\n    public String getLand() {\n        return land;\n    }\n\n    public void setLand(String land) {\n        this.land = land;\n    }\n\n    public String getKontinent() {\n        return kontinent;\n    }\n\n    public void setKontinent(String kontinent) {\n        this.kontinent = kontinent;\n    }\n}\n"
+            }
+          },
+          "description_text" : "<html>\n<p>Geben Sie die Anzahl der Länder aus.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "2b_ErsterJuni",
+          "files" : {
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 805,
+                  "length" : 0,
+                  "possible_answer" : "int faelle = daten.filter(c -> \"Germany\".equals(c.getLand())\n                           && c.getDatum().equals(LocalDate.of(2020,6,1)))\n                        .findFirst().get().getFaelle();\n\n      System.out.println(faelle);",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.time.LocalDate;\nimport java.util.List;\nimport java.util.stream.Stream;\n\npublic class Main {\n   public static void main(String[] args) {\n      List<String> corona_daten;\n      try {\n         corona_daten = APIHelper.httpGetList(\"https://opendata.ecdc.europa.eu/covid19/casedistribution/csv\");\n      } catch(Exception e) {\n         e.printStackTrace();\n         return;\n      }\n\n      Stream<CoronaDatensatz> daten = corona_daten.stream()\n              .skip(1)\n              .map(s -> s.split(\",(?=(?:[^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)\"))\n              .map(a -> new CoronaDatensatz(\n                      LocalDate.of(Integer.parseInt(a[3]),Integer.parseInt(a[2]),Integer.parseInt(a[1])),\n                      Integer.parseInt(a[4]),\n                      a[6],\n                      a[10]));\n\n      \n   }\n}"
+            },
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "333\n"
+            },
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class APIHelper {\n    public static List<String> httpGetList(String urlStr) throws IOException {\n        URL url = new URL(urlStr);\n        HttpURLConnection conn =\n                (HttpURLConnection) url.openConnection();\n\n        BufferedReader rd = new BufferedReader(\n                new InputStreamReader(conn.getInputStream()));\n        String line;\n        List<String> lines = new ArrayList<>();\n        while ((line = rd.readLine()) != null) {\n            lines.add(line);\n        }\n        rd.close();\n\n        conn.disconnect();\n        return lines;\n    }\n}\n"
+            },
+            "src/CoronaDatensatz.java" : {
+              "name" : "src/CoronaDatensatz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.time.LocalDate;\n\npublic class CoronaDatensatz {\n    private LocalDate datum;\n    private int faelle;\n    private String land;\n    private String kontinent;\n\n    public CoronaDatensatz(LocalDate datum, int faelle, String land, String kontinent) {\n        this.datum = datum;\n        this.faelle = faelle;\n        this.land = land;\n        this.kontinent = kontinent;\n    }\n\n    public LocalDate getDatum() {\n        return datum;\n    }\n\n    public void setDatum(LocalDate datum) {\n        this.datum = datum;\n    }\n\n    public int getFaelle() {\n        return faelle;\n    }\n\n    public void setFaelle(int faelle) {\n        this.faelle = faelle;\n    }\n\n    public String getLand() {\n        return land;\n    }\n\n    public void setLand(String land) {\n        this.land = land;\n    }\n\n    public String getKontinent() {\n        return kontinent;\n    }\n\n    public void setKontinent(String kontinent) {\n        this.kontinent = kontinent;\n    }\n}\n"
+            }
+          },
+          "description_text" : "<html>\n<p>Geben Sie die Anzahl der Corona-Fälle am 1. Juni 2020 in Germany aus.\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "2c_Gesamtanzahl",
+          "files" : {
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 805,
+                  "length" : 0,
+                  "possible_answer" : "int faelle = daten.filter(c -> \"Germany\".equals(c.getLand())\n              && c.getDatum().getYear()==2020 && c.getDatum().getMonthValue()==5)\n              .map(CoronaDatensatz::getFaelle).reduce((a,b)->a+b).get();\n\n      System.out.println(faelle);",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.time.LocalDate;\nimport java.util.List;\nimport java.util.stream.Stream;\n\npublic class Main {\n   public static void main(String[] args) {\n      List<String> corona_daten;\n      try {\n         corona_daten = APIHelper.httpGetList(\"https://opendata.ecdc.europa.eu/covid19/casedistribution/csv\");\n      } catch(Exception e) {\n         e.printStackTrace();\n         return;\n      }\n\n      Stream<CoronaDatensatz> daten = corona_daten.stream()\n              .skip(1)\n              .map(s -> s.split(\",(?=(?:[^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)\"))\n              .map(a -> new CoronaDatensatz(\n                      LocalDate.of(Integer.parseInt(a[3]),Integer.parseInt(a[2]),Integer.parseInt(a[1])),\n                      Integer.parseInt(a[4]),\n                      a[6],\n                      a[10]));\n\n      \n   }\n}"
+            },
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "22363\n"
+            },
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class APIHelper {\n    public static List<String> httpGetList(String urlStr) throws IOException {\n        URL url = new URL(urlStr);\n        HttpURLConnection conn =\n                (HttpURLConnection) url.openConnection();\n\n        BufferedReader rd = new BufferedReader(\n                new InputStreamReader(conn.getInputStream()));\n        String line;\n        List<String> lines = new ArrayList<>();\n        while ((line = rd.readLine()) != null) {\n            lines.add(line);\n        }\n        rd.close();\n\n        conn.disconnect();\n        return lines;\n    }\n}\n"
+            },
+            "src/CoronaDatensatz.java" : {
+              "name" : "src/CoronaDatensatz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.time.LocalDate;\n\npublic class CoronaDatensatz {\n    private LocalDate datum;\n    private int faelle;\n    private String land;\n    private String kontinent;\n\n    public CoronaDatensatz(LocalDate datum, int faelle, String land, String kontinent) {\n        this.datum = datum;\n        this.faelle = faelle;\n        this.land = land;\n        this.kontinent = kontinent;\n    }\n\n    public LocalDate getDatum() {\n        return datum;\n    }\n\n    public void setDatum(LocalDate datum) {\n        this.datum = datum;\n    }\n\n    public int getFaelle() {\n        return faelle;\n    }\n\n    public void setFaelle(int faelle) {\n        this.faelle = faelle;\n    }\n\n    public String getLand() {\n        return land;\n    }\n\n    public void setLand(String land) {\n        this.land = land;\n    }\n\n    public String getKontinent() {\n        return kontinent;\n    }\n\n    public void setKontinent(String kontinent) {\n        this.kontinent = kontinent;\n    }\n}\n"
+            }
+          },
+          "description_text" : "<html>\n<p>Geben Sie die Gesamtanzahl an Corona-Fällen, die es im Monat Mai in Germany gab, aus.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "buildscript {\n    repositories {\n        mavenCentral()\n    }\n}\n\ndef printOutput(def output) {\n    return tasks.create(\"printOutput\") {\n        for (line in output.toString().readLines()) {\n            println \"#educational_plugin\" + line\n        }\n    }\n}\n\nsubprojects {\n    apply plugin: 'application'\n    apply plugin: 'java'\n\n    sourceCompatibility = 1.8\n\n    repositories {\n        mavenCentral()\n    }\n\n    dependencies {\n        testCompile group: 'junit', name: 'junit', version: '4.12'\n    }\n\n    sourceSets {\n        main {\n            java.srcDir 'src'\n        }\n        test {\n            java.srcDir 'test'\n        }\n    }\n\n    mainClassName = project.hasProperty(\"mainClass\") ? project.getProperty(\"mainClass\") : \"\"\n\n    def runOutput = new ByteArrayOutputStream()\n    tasks.run.setStandardOutput(runOutput)\n    tasks.run.doLast { printOutput(runOutput) }\n}\n\nproject(':util') {\n    dependencies {\n        compile group: 'junit', name: 'junit', version: '4.12'\n    }\n}\n\nconfigure(subprojects.findAll {it.name != 'util'}) {\n  dependencies {\n    compile project(':util').sourceSets.main.output\n    testCompile project(':util').sourceSets.test.output\n  }\n}\n"
+    }
+  ],
+  "version" : 11
+}

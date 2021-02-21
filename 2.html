@@ -43,7 +43,7 @@
                     <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
                     <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
                     <h3>Kapitel 2: Objektorientierung</h3>
-                    <h4 style="text-align:center">2020-04-15</h4>
+                    <h4 style="text-align:center">2020-10-26</h4>
                     <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-225px;">
                     <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-225px; box-shadow:none">
                 </section>
@@ -333,6 +333,13 @@ public void setName(String name) {
       </section>
 
       <section>
+        <h3><code>import static</code></h3>
+        <p class="small">Erlaubt das direkte Verwenden importierter statischer Attribute und Methoden aus anderen Klassen ohne die Angabe des Klassennamens.</p>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/rechnen/GeldRechner.java#3-10'></code></pre>  
+        <aside class="notes">Ohne die Verwendung von <code>import static</code> hätte man in diesem Beispiel <code>Geld.addieren</code> bzw. <code>Geld.WAEHRUNG</code> schreiben müssen, um auf die statischen Methoden und Attribute zuzugreifen.<br>Der statische Import kann für einzelne Attribute oder Methoden erfolgen (z. B. <code>import static de.othr.rechnen.Geld.addieren</code>) oder für alle auf einmal (z. B. <code>import static de.othr.rechnen.Geld.*</code>).<br>Die Ausgabe von diesem Programm lautet: 9,20 EUR</aside>
+      </section>
+
+      <section>
         <h3>Methoden: varargs</h3>
         <div class="trackinfo"><i class="fas fa-book"></i> 9.2</div>
         <ul class="small">
@@ -498,7 +505,7 @@ public void setName(String name) {
           
           object "<u>q:Person</u>" as q {
             name = "Ute"
-            alter = null
+            alter = 0
             }
             
           object "<u>:Adresse</u>" as a {
@@ -533,7 +540,7 @@ public void setName(String name) {
           
           object "<u>q:Person</u>" as q {
             name = "Ute"
-            alter = null
+            alter = 0
             }
             
           object "<u>a:Adresse</u>" as a {

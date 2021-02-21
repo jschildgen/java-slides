@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung8.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung8.Uebung9-1_Collections.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung8.Uebung9-1_Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung8.Uebung9-1_Collections.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung8.Uebung9-1_Collections.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung8.Uebung9-1_Collections.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung8.Uebung9-1_Collections.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2a_Listen/PG2_Uebung8.Uebung9-2a_Listen.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2a_Listen/PG2_Uebung8.Uebung9-2a_Listen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2a_Listen/PG2_Uebung8.Uebung9-2a_Listen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2a_Listen/PG2_Uebung8.Uebung9-2a_Listen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2a_Listen/PG2_Uebung8.Uebung9-2a_Listen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2a_Listen/PG2_Uebung8.Uebung9-2a_Listen.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2b_Mengen/PG2_Uebung8.Uebung9-2b_Mengen.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2b_Mengen/PG2_Uebung8.Uebung9-2b_Mengen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2b_Mengen/PG2_Uebung8.Uebung9-2b_Mengen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2b_Mengen/PG2_Uebung8.Uebung9-2b_Mengen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2b_Mengen/PG2_Uebung8.Uebung9-2b_Mengen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2b_Mengen/PG2_Uebung8.Uebung9-2b_Mengen.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2c_Dateien_Map/PG2_Uebung8.Uebung9-2c_Dateien_Map.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2c_Dateien_Map/PG2_Uebung8.Uebung9-2c_Dateien_Map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2c_Dateien_Map/PG2_Uebung8.Uebung9-2c_Dateien_Map.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2c_Dateien_Map/PG2_Uebung8.Uebung9-2c_Dateien_Map.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2c_Dateien_Map/PG2_Uebung8.Uebung9-2c_Dateien_Map.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2c_Dateien_Map/PG2_Uebung8.Uebung9-2c_Dateien_Map.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung8.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung8.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung8.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung8.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung8.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung8.util.test.iml" />
+    </modules>
+  </component>
+</project>

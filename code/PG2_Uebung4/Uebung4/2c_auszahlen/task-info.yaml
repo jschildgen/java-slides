@@ -12,8 +12,8 @@ files:
       file: src/Konto.java
       placeholder: 1
       is_visible: false
-  - offset: 135
-    length: 43
+  - offset: 131
+    length: 0
     placeholder_text: ""
     dependency:
       lesson: Uebung4
@@ -21,8 +21,8 @@ files:
       file: src/Konto.java
       placeholder: 2
       is_visible: false
-  - offset: 183
-    length: 44
+  - offset: 132
+    length: 0
     placeholder_text: ""
     dependency:
       lesson: Uebung4
@@ -30,8 +30,8 @@ files:
       file: src/Konto.java
       placeholder: 3
       is_visible: false
-  - offset: 258
-    length: 47
+  - offset: 155
+    length: 0
     placeholder_text: ""
     dependency:
       lesson: Uebung4
@@ -39,8 +39,8 @@ files:
       file: src/Konto.java
       placeholder: 4
       is_visible: false
-  - offset: 552
-    length: 98
+  - offset: 398
+    length: 0
     placeholder_text: ""
 - name: src/Bank.java
   visible: true

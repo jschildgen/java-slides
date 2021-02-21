@@ -43,7 +43,7 @@
                     <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
                     <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
                     <h3>Kapitel 5: Generics, Collections, Lambda-Ausdrücke</h3>
-                    <h4 style="text-align:center">2020-05-20</h4>
+                    <h4 style="text-align:center">2020-12-07</h4>
                     <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-180px;">
                     <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-180px; box-shadow:none">
                 </section>
@@ -678,7 +678,7 @@
                       <li class="fragment">Ruft man hashCode zweimal auf dem gleichen Objekt auf, muss das gleiche herauskommen (außer sein Zustand hat sich zwischenzeitig geändert)</li>
                       <li class="fragment">Nach jeder Zustandsänderung soll der Hash-Code möglichst anders sein</li>
                       <li class="fragment">HashCodes sollen weitestgehend kollisionsfrei sein</li>
-                      <li class="fragment">Gleiche Objekte müssen gleichen Hash-Code liefern:<br><code>a.equals(b)</code> &Rightarrow; <code>a.hashCode() == b.hashCode</code></li>
+                      <li class="fragment">Gleiche Objekte müssen gleichen Hash-Code liefern:<br><code>a.equals(b)</code> &Rightarrow; <code>a.hashCode() == b.hashCode()</code></li>
                     </ul>
                     <pre class="fragment"><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/Person.java#51-54'></code></pre>
                     <aside class="notes">Die statische Methode <code>Objects.hash</code> nimmt beliebig viele Parameter beliebiger Klassen entgegen, ruft jeweils deren <code>hashCode</code>-Implementierung auf und erzeugt daraus einen neuen Hash-Code.</aside>

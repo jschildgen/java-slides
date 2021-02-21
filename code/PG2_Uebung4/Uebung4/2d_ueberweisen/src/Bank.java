@@ -9,8 +9,5 @@ public class Bank {
         System.out.printf("Konto %d: %.2f %s\n", k2.getKontonr(), k2.getKontostand(), Konto.WAEHRUNG);
     }
 
-    public static void ueberweisen(Konto k1, Konto k2, BigDecimal betrag) {
-        k1.auszahlen(betrag);
-        k2.einzahlen(betrag);
-    }
+
 }

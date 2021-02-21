@@ -1,0 +1,14 @@
+type: output
+files:
+- name: src/Main.java
+  visible: true
+  placeholders:
+  - offset: 913
+    length: 43
+    placeholder_text: ""
+- name: test/output.txt
+  visible: false
+- name: src/APIHelper.java
+  visible: true
+- name: src/CoronaDatensatz.java
+  visible: true

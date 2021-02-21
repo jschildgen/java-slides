@@ -1,7 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:reveal.js" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e8529e2-4117-45b8-be4a-5a9eca72e868" name="Default Changelist" comment="" />
+    <list default="true" id="3e8529e2-4117-45b8-be4a-5a9eca72e868" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmieren2/src/de/othr/rechnen/GeldRechner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe 1/a_Rechnen/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe 1/a_Rechnen/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Programmieren2/src/de/othr/collections/CollectionBeispiel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Programmieren2/src/de/othr/collections/CollectionBeispiel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/ex2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex2.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,22 +139,29 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ZqxWp4q4QJMEq1SLWEW8RcKUwg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="Edu.Author.Name" value="Johannes Schildgen" />
-    <property name="Edu.CourseCreator.LastArchiveLocation" value="/media/tmpfs" />
+    <property name="Edu.CourseCreator.LastArchiveLocation" value="/media/tmpfs/uebung2.zip" />
     <property name="HINTS_IN_TASK_DESCRIPTION" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="/media/tmpfs" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
@@ -78,6 +202,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Hallo" />
@@ -88,6 +225,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -98,45 +236,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585580459571</updated>
+      <workItem from="1603374731953" duration="47000" />
+      <workItem from="1603374816505" duration="669000" />
+      <workItem from="1603375887155" duration="518000" />
+      <workItem from="1603455645131" duration="282000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="468" y="82" width="653" height="710" key="#Task" timestamp="1585584524257">
-      <screen x="0" y="0" width="1600" height="868" />
+    <state x="443" y="99" width="1024" height="844" key="#Project_Structure" timestamp="1603375554805">
+      <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="468" y="82" width="653" height="710" key="#Task/0.0.1600.868@0.0.1600.868" timestamp="1585584524257" />
-    <state x="583" y="195" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585590150160">
-      <screen x="0" y="0" width="1600" height="868" />
+    <state x="443" y="99" width="1024" height="844" key="#Project_Structure/0.0.1920.1044@0.0.1920.1044" timestamp="1603375554805" />
+    <state x="648" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603375574292">
+      <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="583" y="195" width="424" height="491" key="FileChooserDialogImpl/0.0.1600.868@0.0.1600.868" timestamp="1585590150160" />
-    <state width="1552" height="214" key="GridCell.Tab.0.bottom" timestamp="1585909915005">
-      <screen x="0" y="0" width="1600" height="874" />
+    <state x="648" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1603375574292" />
+    <state x="749" y="1379" key="FileChooserDialogImpl" timestamp="1603455719724">
+      <screen x="1" y="1080" width="1920" height="1080" />
     </state>
-    <state width="1552" height="213" key="GridCell.Tab.0.bottom/0.0.1600.868@0.0.1600.868" timestamp="1585756517452" />
-    <state width="1552" height="214" key="GridCell.Tab.0.bottom/0.0.1600.874@0.0.1600.874" timestamp="1585909915005" />
-    <state width="1552" height="214" key="GridCell.Tab.0.center" timestamp="1585909915004">
-      <screen x="0" y="0" width="1600" height="874" />
-    </state>
-    <state width="1552" height="213" key="GridCell.Tab.0.center/0.0.1600.868@0.0.1600.868" timestamp="1585756517451" />
-    <state width="1552" height="214" key="GridCell.Tab.0.center/0.0.1600.874@0.0.1600.874" timestamp="1585909915004" />
-    <state width="1552" height="214" key="GridCell.Tab.0.left" timestamp="1585909915004">
-      <screen x="0" y="0" width="1600" height="874" />
-    </state>
-    <state width="1552" height="213" key="GridCell.Tab.0.left/0.0.1600.868@0.0.1600.868" timestamp="1585756517451" />
-    <state width="1552" height="214" key="GridCell.Tab.0.left/0.0.1600.874@0.0.1600.874" timestamp="1585909915004" />
-    <state width="1552" height="214" key="GridCell.Tab.0.right" timestamp="1585909915005">
-      <screen x="0" y="0" width="1600" height="874" />
-    </state>
-    <state width="1552" height="213" key="GridCell.Tab.0.right/0.0.1600.868@0.0.1600.868" timestamp="1585756517452" />
-    <state width="1552" height="214" key="GridCell.Tab.0.right/0.0.1600.874@0.0.1600.874" timestamp="1585909915005" />
-    <state x="283" y="11" width="1024" height="852" key="SettingsEditor" timestamp="1585754072587">
-      <screen x="0" y="0" width="1600" height="868" />
-    </state>
-    <state x="283" y="11" width="1024" height="852" key="SettingsEditor/0.0.1600.868@0.0.1600.868" timestamp="1585754072587" />
-    <state x="463" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1585582919671">
-      <screen x="0" y="0" width="1600" height="868" />
-    </state>
-    <state x="463" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1600.868@0.0.1600.868" timestamp="1585582919671" />
+    <state x="749" y="1379" key="FileChooserDialogImpl/0.0.1920.1080/1.1080.1920.1080@1.1080.1920.1080" timestamp="1603455719724" />
   </component>
 </project>

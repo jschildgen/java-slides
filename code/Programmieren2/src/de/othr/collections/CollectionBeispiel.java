@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Set;
 
 public class CollectionBeispiel {
-
     public static void main(String[] args) {
         Integer[] ein_array = {5, 27, -3};
 

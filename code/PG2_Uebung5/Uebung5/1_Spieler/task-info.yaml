@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: src/Spieler.java
+  visible: true
+- name: src/MauMau.java
+  visible: true
+- name: src/MenschlicherSpieler.java
+  visible: true
+- name: src/ComputerGegner.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 112
+    placeholder_text: Entwicklen Sie hier Ihre Klasse

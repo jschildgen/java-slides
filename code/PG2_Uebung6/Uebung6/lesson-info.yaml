@@ -1,0 +1,7 @@
+type: framework
+content:
+- 1_UML
+- 2a_Ausprobieren
+- 2b_Schnittstelle
+- 2c_Overrides
+- 2d_implements

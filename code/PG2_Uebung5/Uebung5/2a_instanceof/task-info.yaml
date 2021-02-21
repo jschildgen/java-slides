@@ -1,0 +1,32 @@
+type: output
+files:
+- name: src/Spieler.java
+  visible: true
+- name: src/MauMau.java
+  visible: true
+  placeholders:
+  - offset: 226
+    length: 58
+    placeholder_text: Definieren Sie hier Ihre Variablen
+  - offset: 333
+    length: 176
+    placeholder_text: instanceof-Ueberpruefungen hier
+  - offset: 574
+    length: 121
+    placeholder_text: Hier soll die Ausgabe erfolgen.
+- name: src/MenschlicherSpieler.java
+  visible: true
+- name: src/ComputerGegner.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 112
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung5
+      task: 1_Spieler
+      file: src/ComputerGegner.java
+      placeholder: 1
+      is_visible: false
+- name: test/output.txt
+  visible: false

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Programmieren_2.iml" filepath="$PROJECT_DIR$/.idea/modules/Programmieren_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.test.iml" />
+    </modules>
+  </component>
+</project>

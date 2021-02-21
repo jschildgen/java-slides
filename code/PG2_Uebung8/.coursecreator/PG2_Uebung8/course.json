@@ -1,0 +1,165 @@
+{
+  "summary" : "Programmieren 2 Uebung 8\nProf. Schildgen, OTH Regensburg, SS2020",
+  "title" : "PG2_Uebung8",
+  "authors" : [
+    "Johannes Schildgen"
+  ],
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "Uebung8",
+      "task_list" : [
+        {
+          "name" : "1_Collections",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Person p = new Person();\n    Assert.assertEquals(\"Der Name ist falsch\", \"Katja\", p.getName());\n    Assert.assertEquals(\"Die Hobbies sind falsch\", 2, p.getHobbies().size());\n    Assert.assertTrue(\"Die Hobbies sind falsch\", p.getHobbies().contains(\"Tennis\"));\n    Assert.assertTrue(\"Die Hobbies sind falsch\", p.getHobbies().contains(\"Klavier\"));\n    Assert.assertEquals(\"Die Wohnorte sind falsch\", 2, p.getWohnorte().size());\n    Assert.assertEquals(\"Die Wohnorte sind falsch\", \"Regensburg\", p.getWohnorte().get(0));\n    Assert.assertEquals(\"Die Wohnorte sind falsch\", \"Berlin\", p.getWohnorte().get(1));\n    Assert.assertEquals(\"Die Telefonnummern sind falsch\", 2, p.getTelefon().size());\n    Assert.assertEquals(\"Die Telefonnummern sind falsch\", \"0151/55\", p.getTelefon().get(\"Mobil\"));\n    Assert.assertEquals(\"Die Telefonnummern sind falsch\", \"0941/55\", p.getTelefon().get(\"Privat\"));\n\n  }\n}"
+            },
+            "src/Person.java" : {
+              "name" : "src/Person.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "import java.util.*;\n\npublic class Person {\n    private String name;\n    private Set<String> hobbies;\n    private List<String> wohnorte;\n    private Map<String, String> telefon;\n\n    public Person() {\n        name = \"Katja\";\n\n        hobbies = new HashSet<>();\n        wohnorte = new ArrayList<>();\n        telefon = new HashMap<>();\n\n        hobbies.add(\"Tennis\");\n        hobbies.add(\"Klavier\");\n\n        wohnorte.add(\"Regensburg\");\n        wohnorte.add(\"Berlin\");\n\n        telefon.put(\"Mobil\", \"0151/55\");\n        telefon.put(\"Privat\", \"0941/55\");\n    }\n\n    public String getName() {\n        return name;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    public Set<String> getHobbies() {\n        return hobbies;\n    }\n\n    public void setHobbies(Set<String> hobbies) {\n        this.hobbies = hobbies;\n    }\n\n    public List<String> getWohnorte() {\n        return wohnorte;\n    }\n\n    public void setWohnorte(List<String> wohnorte) {\n        this.wohnorte = wohnorte;\n    }\n\n    public Map<String, String> getTelefon() {\n        return telefon;\n    }\n\n    public void setTelefon(Map<String, String> telefon) {\n        this.telefon = telefon;\n    }\n}",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : ""
+            }
+          },
+          "description_text" : "<html>\n<p>Für ein soziales Netzwerk wird eine Klasse <code>Person</code> benötigt, welche ein Personenprofil repräsentieren soll. Die Klasse soll die folgenden vier Attribute besitzen:\n<ul>\n    <li><code>name</code></li>\n    <li><code>hobbies</code></li>\n    <li><code>wohnorte</code></li>\n    <li><code>telefon</code></li>\n</ul>\n<p>Während die Hobbies einer Person eine ungeordnete Menge ohne Duplikate sind, haben die Wohnorte eine Reihenfolge und dürfen auch doppelte Einträge beinhalten. Durch diese Reihenfolge kann beispielsweise der Hauptwohnsitz bestimmt werden.</p>\n<p>Eine Person kann beliebig viele Telefonnummern haben. Jede hat einen eindeutigen Typen (z. B. &quot;Mobil&quot;) und eine Nummer. Die Nummer darf auch Sonderzeichen (/ + usw.) enthalten.</p>\n\n<p><b>Entwickeln Sie die Klasse samt Gettern und Settern und setzen Sie dabei im Konstruktor <code>Person()</code> folgende Standardprofilwerte:</b></p>\n<ul>\n    <li>Katja</li>\n    <li>Hobbies: Tennis und Klavier</li>\n    <li>Hauptwohnsitz: Regensburg</li>\n    <li>Zweitwohnsitz: Berlin</li>\n    <li>Mobil: 0151/55</li>\n    <li>Privat: 0941/55</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "2a_Listen",
+          "files" : {
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 224,
+                  "length" : 0,
+                  "possible_answer" : "\n      buchstaben.add('D');\n      buchstaben.add(0, 'A');\n      System.out.println(buchstaben.size());\n      System.out.println(buchstaben.get(buchstaben.size()-1));\n\n      for(Character c : buchstaben) {\n         System.out.println(c);\n      }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n   public static void main(String[] args) {\n      List<Character> buchstaben = new ArrayList<>();\n      buchstaben.add('B');\n      buchstaben.add('C');\n\n   }\n}"
+            },
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "4\nD\nA\nB\nC\nD\n"
+            }
+          },
+          "description_text" : "<html>\n<p>Hier ist eine Liste zu sehen, in welche wir Buchstaben speichern können.</p>\n<ul>\n    <li>Fügen Sie an das Ende der Liste den Buchstaben D ein.</li>\n    <li>Fügen Sie ganz am Anfang der Liste den Buchstaben A ein.</li>\n    <li>Geben Sie die Anzahl der Elemente aus.</li>\n    <li>Geben Sie das letzte Element aus.</li>\n    <li>Geben Sie alle Elemente aus.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "2b_Mengen",
+          "files" : {
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 253,
+                  "length" : 0,
+                  "possible_answer" : "\n      zahlen.add(77);\n      zahlen.add(77);\n\n      System.out.println(zahlen.size());\n      if(zahlen.contains(14)) {\n         System.out.println(\"Jepp\");\n      }\n\n      for(Integer zahl : zahlen) {\n         System.out.println(zahl);\n      }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.util.Arrays;\nimport java.util.HashSet;\nimport java.util.Set;\nimport java.util.TreeSet;\n\npublic class Main {\n   public static void main(String[] args) {\n      Set<Integer> zahlen = new TreeSet<>();\n      zahlen.add(27);\n      zahlen.add(14);\n\n   }\n}"
+            },
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "3\nJepp\n14\n27\n77\n"
+            }
+          },
+          "description_text" : "<html>\n<p>Hier ist nun eine Menge von Zahlen zu sehen.</p>\n<ul>\n    <li>Fügen Sie zwei mal die Zahl 77 hinzu.</li>\n    <li>Geben Sie die Anzahl der Elemente der Menge aus.</li>\n    <li>Überprüfen Sie, ob die 14 in der Menge ist. Wenn ja, soll &quot;Jepp&quot; ausgegeben werden.</li>\n    <li>Geben Sie alle Elemente der Menge aus.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "2c_Dateien_Map",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport java.io.BufferedWriter;\nimport java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\nimport java.nio.file.StandardOpenOption;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Uebersetzer ue = new Uebersetzer();\n    Assert.assertEquals(\"Die uebersetzen-Methode soll den ursprünglichen String wiedergeben, wenn er nicht im Woerterbuch gefunden wird.\", \"abc123\", ue.uebersetzen(\"abc123\"));\n\n    Path datei = null;\n    try {\n      datei = Files.createTempFile(\"abc123\",\".txt\");\n    } catch (IOException e) {\n      Assert.fail(\"Fehler beim Anlegen einer temporaeren Datei.\");\n    }\n\n    try(BufferedWriter br = Files.newBufferedWriter(datei, StandardOpenOption.CREATE)) {\n      br.write(\"car|Auto\");\n      br.write(\"\\nbike|Fahrrad\");\n    } catch (IOException e) {\n      Assert.fail(\"Fehler beim Schreiben einer temporaeren Datei.\");\n    }\n\n    try {\n      ue = new Uebersetzer(datei);\n      Assert.assertEquals(\"Eintraege im Woerterbuch werden nicht korrekt uebersetzt.\", \"Auto\", ue.uebersetzen(\"car\"));\n      Assert.assertEquals(\"Eintraege im Woerterbuch werden nicht korrekt uebersetzt.\", \"Fahrrad\", ue.uebersetzen(\"bike\"));\n    } catch (IOException e) {\n      Assert.fail(\"Konstruktor Uebersetzer(Path) liefert eine IOException, obwohl eigentlich alles ok sein sollte.\");\n    }\n\n    try(BufferedWriter br = Files.newBufferedWriter(datei, StandardOpenOption.APPEND)) {\n      br.write(\"\\nfoo|bar|baz\");\n    } catch (IOException e) {\n      Assert.fail(\"Fehler beim Schreiben einer Datei im Temp-Verzeichnis.\");\n    }\n\n    try {\n      ue = new Uebersetzer(datei);\n      Assert.fail(\"Konstruktor Uebersetzer(Path) soll eine IOException werfen, wenn die Woerterbuch-Datei ungueltige Zeilen enthaelt.\");\n    } catch (IOException e) {\n    }\n\n    try {\n      Files.delete(datei);\n    } catch (IOException e) {\n    }\n  }\n}"
+            },
+            "src/InfoApp.java" : {
+              "name" : "src/InfoApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.io.IOException;\nimport java.nio.file.Paths;\nimport java.util.Date;\n\npublic class InfoApp {\n    public static void main(String[] args) {\n        String home_dir = System.getProperty(\"user.home\");\n        Uebersetzer ue;\n        try {\n            ue = new Uebersetzer(Paths.get(home_dir, \"deutsch.txt\"));\n        } catch (IOException e) {\n            e.printStackTrace();\n            ue = new Uebersetzer();\n        }\n\n        System.out.printf(\"=== %s ===\\n\", ue.uebersetzen(\"Information\"));\n\n        System.out.printf(\"%s: %s\\n\", ue.uebersetzen(\"Operating System\"), System.getProperty(\"os.name\"));\n\n        System.out.printf(\"%s: %s\\n\", ue.uebersetzen(\"Time\"), new Date());\n    }\n}"
+            },
+            "src/Uebersetzer.java" : {
+              "name" : "src/Uebersetzer.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.util.HashMap;\nimport java.util.Map;\n\n",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 195,
+                  "length" : 0,
+                  "possible_answer" : "BufferedReader br = Files.newBufferedReader(sprachdatei);\n        String zeile;\n        String[] teile;\n        while((zeile = br.readLine()) != null) {\n            teile = zeile.split(\"\\\\|\");\n            if(teile.length != 2) {\n                throw new IOException(\"Ungueltige Zeile im Woerterbuch: \"+zeile);\n            }\n            woerterbuch.put(teile[0], teile[1]);\n        }",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 253,
+                  "length" : 0,
+                  "possible_answer" : "if(woerterbuch.containsKey(s)) {\n            return woerterbuch.get(s);\n        }\n        return s;",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class Uebersetzer {\n    private Map<String, String> woerterbuch = new HashMap<>();\n\n    public Uebersetzer() {\n    }\n\n    public Uebersetzer(Path sprachdatei) throws IOException {\n        \n    }\n\n    public String uebersetzen(String s) {\n        \n    }\n}\n"
+            }
+          },
+          "description_text" : "<html>\n<p>In dieser Aufgabe sehen Sie eine Info-App, welche dem Benutzer auf der Konsole nützliche Infos darstellt: Sein oder ihr Betriebssystem und die aktuelle Uhrzeit.</p>\n<p>Ihre Aufgabe ist es, diese App um einen Multilingual-Support zu erweitern. D. h., sie soll Texte auf englisch, deutsch, usw. ausgeben können.</p>\n<p>Legen Sie eine Sprachdatei in Ihrem Home-Verzeichnis namens <code>deutsch.txt</code> an, die wie folgt aussieht:</p>\n<pre>Information|Information\nOperating System|Betriebssystem\nTime|Uhrzeit</pre>\n<p>In jeder Zeile steht also ein englischer Betriff, dann ein senkrechter Strich und dann die Übersetzung.</p>\n\n<p><b>Entwickeln Sie die <code>Uebersetzer</code>-Klasse:</b></p>\n<ul>\n    <li>Der Konstruktor <code>Uebersetzer(Path)</code> soll die als Parameter übergebene Sprachdatei einlesen und alle darin enthaltenen Einträge in die Map <code>woerterbuch</code> eintragen. Tritt ein Fehler beim Lesen der Datei auf, soll der Konstruktor eine IOException werfen (auch wenn die Wörterbuch-Datei einen ungültigen Eintrag enthält, z. B. eine Zeile ohne <code>|</code> oder mit mehreren <code>|</code>)</li>\n    <li>Die Methode <code>uebersetzen(String)</code> soll den übergebenen String mittels des eingelesenen Wörterbuchs übersetzen. Wird der Eintrag nicht gefunden, soll einfach der ursprüngliche englische Begriff unübersetzt ausgegeben werden.</li>\n</ul>\n<p>Starten Sie die Info-App, um zu sehen, ob die Übersetzung ins Deutsche funktioniert hat. Gerne können Sie auch noch weitere Sprachdateien (z. B. spanisch.txt) anlegen und den Dateipfad in der Info-App entsprechend anpassen.</p>\n<p>Tipp: Mit der <code>String</code>-Methode <code>split(\"\\\\|\")</code> können Sie einen String anhand vom <code>|</code>-Symbol in mehrere Teile aufteilen.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "buildscript {\n    repositories {\n        mavenCentral()\n    }\n}\n\ndef printOutput(def output) {\n    return tasks.create(\"printOutput\") {\n        for (line in output.toString().readLines()) {\n            println \"#educational_plugin\" + line\n        }\n    }\n}\n\nsubprojects {\n    apply plugin: 'application'\n    apply plugin: 'java'\n\n    sourceCompatibility = 1.8\n\n    repositories {\n        mavenCentral()\n    }\n\n    dependencies {\n        testCompile group: 'junit', name: 'junit', version: '4.12'\n    }\n\n    sourceSets {\n        main {\n            java.srcDir 'src'\n        }\n        test {\n            java.srcDir 'test'\n        }\n    }\n\n    mainClassName = project.hasProperty(\"mainClass\") ? project.getProperty(\"mainClass\") : \"\"\n\n    def runOutput = new ByteArrayOutputStream()\n    tasks.run.setStandardOutput(runOutput)\n    tasks.run.doLast { printOutput(runOutput) }\n}\n\nproject(':util') {\n    dependencies {\n        compile group: 'junit', name: 'junit', version: '4.12'\n    }\n}\n\nconfigure(subprojects.findAll {it.name != 'util'}) {\n  dependencies {\n    compile project(':util').sourceSets.main.output\n    testCompile project(':util').sourceSets.test.output\n  }\n}\n"
+    }
+  ],
+  "version" : 11
+}

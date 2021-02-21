@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programmieren 2 - Übungsblatt 1</title>
+    <link rel="stylesheet" href="../src/exercises.css">
+    <link href="../lib/fontawesome.all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+        <div>
+            <b>Programmieren 2 (Java) - WS 2020/21</b><br>
+            Prof. Dr.-Ing. Johannes Schildgen<br>
+            johannes.schildgen@oth-regensburg.de<br>
+            <b>Übungsblatt 1 vom 23.10.2020</b>
+        </div>
+        <div><img src="../img/oth.png" style="border:0; height:50px"></div>
+    </div>
+    <hr>
+    </header>
+<section style="padding-top: 2.5cm">
+    <h1>Aufgabe 1: javac und java</h1>
+    <p>Abgabe-Deadline: 22.10.2020 12:00 im Moodle</p>
+    <p>In dieser ersten Aufgabe installieren Sie das Java Development Kit JDK (Version 11) und kompilieren und starten Ihr erstes Java-Programm. Lösen Sie diese Aufgabe bitte ohne Verwendung einer IDE (wie zum Beispiel IntelliJ)!</p>
+    <ol>
+        <li>Prüfen Sie zunächst, ob das JDK bereits auf Ihrem PC installiert ist, indem Sie <code>javac -version</code> in einer Konsole (Linux/MacOS) bzw. <code>javac.exe -version</code> in der PowerShell (Windows) eingeben. Wird eine Version größer als 8 (bzw. 1.8) angezeigt, fahren Sie mit Aufgabenteil 3 fort.</li>
+        <li>Installieren Sie das JDK der Java Standard Edition (Java SE) in Version 11. Sie finden es auf der Oracle-Webseite für Linux, Mac und Windows. Bei den tar.gz- bzw. zip-Dateien ist keine Installation sondern lediglich ein Entpacken notwendig. Empfehlenswert ist jedoch, dass JDK zu installieren.</li>
+        <li>Erstellen Sie das Beispiel-Programm aus Vorlesungs-Kapitel 1, Folie 17 und speichern Sie es ab unter MeinProgramm.java</li>
+        <li>Kompilieren Sie das Programm mittels <code>javac</code> und starten Sie es mit <code>java</code></li>
+        <li>Erweitern Sie das Programm, sodass es den Benutzer mit seinem oder ihrem Namen begrüßt. Wenn Sie das z. B. Programm mittels <code>java MeinProgramm Peter</code> aufrufen, soll &quot;Hallo Peter!&quot; ausgegeben werden. In der Methode <code>main(String[] args)</code> bietet Ihnen <code>args[0]</code>Zugriff auf diesen ersten Konsolenparameter.</code></li>
+    </ol>
+</section>
+
+    <section style="page-break-inside:avoid; padding-top: 0.5cm">
+    <h1>Aufgabe 2: IntelliJ</h1>
+    <p>In dieser Aufgabe geht es darum, die IDE IntelliJ zu installieren und dort eine Anwendung zu entwickeln.</p>
+    <ol>
+        <li>Falls Sie IntelliJ noch nicht installiert haben, downloaden Sie die Installationsdateien der kostenlosen IntelliJ IDEA Community Edition von <a href="https://www.jetbrains.com/">jetbrains.com</a> und installieren Sie das Programm.</li>
+        <li>Erstellen Sie in IntelliJ ein neues Java-Projekt. Sie können das Template &quot;Command Line App&quot; verwenden, um direkt mit einer Klasse zu starten, die eine <code>main</code>-Methode beinhaltet.</li>
+        <li>Probieren Sie Live-Templates aus: Geben Sie <code>sout</code> oder <code>main</code> im Code-Editor ein und drücken Sie die Tabulator-Taste.</li>
+        <li>Ihr Programm soll zunächst einfach nur &quot;Hallo!&quot; ausgeben.</li>
+        <li>Benutzen Sie eine Suchmaschine, um etwas über den Umgang mit Datum und Uhrzeit in Java zu erfahren. Ihr Programm soll nämlich die aktuelle Uhrzeit ausgeben, z. B. &quot;Hallo, es ist 14:28 Uhr.&quot;</li>
+    </ol>
+</section>
+</body>
+</html>

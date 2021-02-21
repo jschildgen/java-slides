@@ -1,0 +1,7 @@
+type: framework
+content:
+- 1_Spieler
+- 2a_instanceof
+- 2b_Computergegner_Staerke
+- 2c_Overriding
+- 2d_Casting

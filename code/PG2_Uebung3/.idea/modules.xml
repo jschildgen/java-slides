@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PG2_Uebung3.iml" filepath="$PROJECT_DIR$/.idea/PG2_Uebung3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.test.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,1150 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Programmieren 2 - Kapitel 5 - Generics, Collections, Lambda-Ausdrücke</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reset.css">
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+
+        <link rel="stylesheet" href="src/slides.css">
+        <link rel="stylesheet" href="src/style.css">
+
+		<link rel="stylesheet" href="src/layout.css">
+        <link rel="stylesheet" href="lib/joint.min.css" />
+        <link rel="stylesheet" href="src/erd.css" />
+        <link rel="stylesheet" href="poll/poll.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="src/rainbow.css">
+
+        <!--<script defer src="lib/fontawesome.all.min.js"/>-->
+        <link href="lib/fontawesome.all.min.css" rel="stylesheet">
+        <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+            <div id="header"></div>
+            <div id="footer"></div>
+			<div class="slides">
+                <section>
+                    <h4 style="text-align:center"><b>Prof. Dr.-Ing. Johannes Schildgen</b><br>
+                    <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
+                    <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
+                    <h3>Kapitel 5: Generics, Collections, Lambda-Ausdrücke</h3>
+                    <h4 style="text-align:center">2020-12-07</h4>
+                    <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-180px;">
+                    <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-180px; box-shadow:none">
+                </section>
+                
+                <section>
+                  <h3>Eine Klasse <code>StringPaar</code></h3>
+                  <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/StringPaar.java#3-20,28'></code></pre>
+                  <aside class="notes">Hier ist eine Klasse zu sehen, die es ermöglicht, ein Paar von zwei Strings zu speichern. Wir müssten das ganze nochmal genau so machen, wenn wir eine <code>IntegerPaar</code>, <code>PersonenPaar</code>, usw. bräuchten.</aside>
+                </section>
+
+                <section>
+                  <h3>Generics: <code>&lt;T&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13, 13.1, 13.2</div>
+                  <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/Paar.java#3-20,28'></code></pre>
+                  <aside class="notes">Unter Generics versteht man Klassen und Interfaces, die mit verschiedenen Datentypen zurecht kommen können. Innerhalb der Klasse (oder Schnittstelle) nennt man den Datentyp einfach irgendwie, üblich ist z.&nbsp;B. <code>T</code> oder auch <code>K</code> und <code>V</code> (für Key und Value). Member-Variablen können von diesem generischen Typen sein, Methoden können <code>T</code>-Objekte als Parameter entgegennehmen und <code>T</code>-Objekte zurückgeben.</aside>
+                </section>
+
+                <section>
+                  <h3>Generics</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.1</div>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#6-8'></code></pre>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#10-14'></code></pre>
+                  <pre class="fragment"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#16-20'></code></pre>
+                  <aside class="notes">Das untere Beispiel ist vielleicht etwas verrückt, aber die hier gezeigten Code-Beispiele zeigen, dass sich die generischen Klassen mit beliebigen Typen verwenden lassen. Lediglich primitive Datentypen (<code>int</code>,...) dürfen nicht verwendet werden, nur Klassen. Nicht falsch verstehen: Das oben gezeigte Beispiel sollen nur zeigen, wie man Generics verwendet. Für das gezeigten Beispiel und später folgende Beispiele wäre die Entwicklung einer Klasse <code>Person</code> natürlich viel sinnvoller!</aside>
+                </section>
+
+                <section>
+                  <h3>Diamond-Operator <code>&lt;&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.1</div>
+                  <p class="small">Beim Konstruktor-Aufruf dürfen die Typenparameter weggelassen werden.</p>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#24'></code></pre>
+
+                  <div class="poll fragment" style="bottom:-430px"> 
+                    <h1>Wie ist das Äquivalent des hier gezeigten Konstruktor-Aufrufs ohne Diamond-Operator?</h1>
+                        <ul>
+                          <li>new Paar("Ute", "Meyer");</li>
+                          <li  data-poll="correct">new Paar&lt;String&gt;("Ute", "Meyer");</li>
+                          <li>new Paar&lt;String,String&gt;("Ute", "Meyer");</li>
+                          <li>das geht nicht</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
+                  <aside class="notes">Der Java-Compiler erkennt automatisch an den übergebenen Werten, was die Parameter-Typen sein sollen. Im hier gezeigten Beispiel entspricht <code>&lt;&gt;</code> folgendem: <code>&lt;String, String&gt;</code></aside>
+                </section>
+
+                <section>
+                  <h3>Generics: Mehrere Typenparameter</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.2</div>
+                  <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/SchluesselWertPaar.java#3-14,28,36'></code></pre>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#22-23'></code></pre>
+                  <aside class="notes">Es ist auch möglich, mehrere Typenparameter einzuführen. Wichtig ist, dass diese in der Klassendefinition genannt werden (hier: <code>SchluesselWertPaar<K, V></K></code>). Die Schreibweise mit <code>var</code> spart hier sehr viel Schreibarbeit. Ausgeschrieben müsste es heißen: <code>SchluesselWertPaar&lt;String, Integer&gt; ute = </String>new SchluesselWertPaar&lt;String, Integer&gt;("Ute", 19);</code>.</aside>
+                </section>
+
+                <section>
+                  <h3>Typeinschränkung</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.2</div>
+                  <h4><code>&lt;T extends C&gt;</code></h4>
+                  <p class="small">Es soll nicht jeder beliebige Typ <code>&lt;T&gt;</code> verwendet werden dürfen, sondern nur Subklassen von <code>C</code>.</p>
+                  <pre><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/Brautpaar.java#3-14'></code></pre>                      
+                  <aside class="notes">Objekte dieser generischen Klasse dürfen nur mit Typenparametern verwendet werden, die eine Subklasse von <code>Person</code> sind (<code>Person</code> selbst ist auch ok). Daher können Sie sich in der Klasse darauf verlassen, dass ihre <code>T</code>-Objekte z. B. die Methode <code>getAlter()</code> haben.</aside>
+                </section>
+
+                <section>
+                  <h3>Generische Methoden</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.3</div>
+                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#33-39'></code></pre>                  
+                  <pre class="fragment"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#26-30'></code></pre> 
+                  
+                  <div class="poll fragment" style="bottom:-190px"> 
+                    <h1>In welcher Klasse befinden wir uns hier eigentlich?</h1>
+                        <ul>
+                          <li data-poll="correct">In irgendeiner beliebigen</li>
+                          <li>In einer generischen Klasse mit Parameter &lt;T&gt;</li>
+                          <li>In einer generischen Klasse mit beliebigen Parametern</li>
+                          <li>In einer Klasse, die nicht generisch sein darf</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+                  
+                  <aside class="notes">In beliebigen Klassen (nicht nur in generischen) darf es generische Methoden geben. Wichtig bei solchen Methoden ist, den generischen Typen (hier <code>&lt;T extends Person&gt;</code>) vor den Rückgabetypen der Methode (bzw. vor <code>void</code>) zu schreiben. Dann darf die Methode Objekte dieses generischen Typen entgegennehmen und zurückliefern. Das gezeigte Beispiel nimmt zwei Objekte entgegen, die von der Klasse <code>Person</code> oder deren Subklasse ist, und liefert die ältere Person zurück. Werden beispielsweise zwei <code>Studierender</code>-Objekte übergeben, kommt auch ein Studierender-Objekt zurück.</aside>
+                </section>
+
+                <section>
+                  <h3>Wildcards <code>&lt;?&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.4</div>
+                  <p class="small">Wenn Parameter von Methoden Gernerics sind, können bei diesen Wildcards <code>&lt;?&gt;</code> verwenden werden, damit sie mit beliebigen Typen übergeben werden können.</p>
+                  <pre style="width:95%"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#41-44'></code></pre>
+                  <aside class="notes">Die hier gezeigte Methode nimmt ein beliebiges <code>Paar</code>-Objekt entgegen, z. B. ein <code>Paar&lt;String&gt;</code>, ein <code>Paar&lt;Integer&gt;</code> oder ein <code>Paar&lt;Object&gt;</code>.</aside>
+                </section>
+                
+                <section>
+                  <h3>Upper- / Lower-bound Wildcards</h3>
+                  <div>
+                    <h4>Upper-bound Wildcards <code>&lt;? extends C&gt;</code></h4>
+                    <pre style="width: 95%; margin-top: -2mm;"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#45-48'></code></pre>
+                    <pre style="width: 95%;"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#55-56'></code></pre>
+                  </div>
+
+                  <div class="fragment">
+                    <h4>Lower-bound Wildcards <code>&lt;? super C&gt;</code></h4>
+                    <pre style="width: 95%; margin-top: -2mm;"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#50-52'></code></pre>
+                    <pre style="width: 95%;"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/generics/GenericsBeispiel.java#57'></code></pre>
+                  </div>
+                  <aside class="notes">Möchte man nur Typparameter einer bestimmten Klasse oder deren Subklasse akzeptieren, verwendet man <code>&lt;? extends C&gt;</code>. Die Methode im unteren Beispiel akzeptiert nur Objekte der Klassen <code>Paar&lt;Person&gt;</code>, <code>Paar&lt;Lebewesen&gt;</code> und <code>Paar&lt;Object&gt;</code>.</aside>
+                </section>
+
+                <section>
+                  <h3>Beispiel: <code>Comparable&lt;T&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.5</div>
+                  <img style="position: absolute; right:-0.5cm; max-height: 6cm; top:2.5cm" uml="
+                  skinparam genericDisplay old
+                  hide empty members
+
+                  interface Comparable<T> <<interface>> { 
+                    +compareTo(other : T) : int  
+                  } 
+
+                  class Person {}
+                  
+                  Comparable <|.. Person 
+                  
+                  "/>
+                  
+                  <pre style="width:18.5cm; margin-left: 5mm;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/generics/Person.java#3,50-55'></code></pre>
+                
+                  <pre class="fragment" style="width:18.5cm; margin-left: 5mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/Person.java#64-68,70'></code></pre>
+                
+                  <div style="position: absolute; right:0.5cm; max-height: 6cm; top:9cm" class="fragment"><p class="small">Tim (8)<br>Ute (19)<br>Peter (20)<br>Otto (70)</p></div>
+
+                  <aside class="notes">Auf diversen Folien wurde bereits die <code>Comparable</code>-Schnittstelle aus dem Paket <code>java.lang</code> und die darin vorhandene <code>compareTo</code>-Methode gezeigt. Verschwiegen wurde jedoch, dass dieses Interface ein generisches Interface ist. <code>implements Comparable</code> bedeutet, dass man ein Objekt der genannten Klasse mit jedem beliebigen <code>Object</code> vergleichen kann. Deutlich nützlicher ist dagegen </code><code>implements Comparable&lt;Person&gt;</code>. Hier muss <code>compareTo(Person)</code> implementiert werden. Personen-Objekte sind damit nur mit anderen Personen-Objekten vergleichbar.</aside>
+                </section>
+
+                <section>
+                  <h3>Beispiel: <code>Comparator&lt;T&gt;</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.5</div>
+                  <img style="position: absolute; right:-0.5cm; max-height: 6cm; top:2.5cm" uml="
+                  skinparam genericDisplay old
+                  hide empty members
+
+                  interface Comparator<T> <<interface>> { 
+                    +compare(t1 : T, t2 : T) : int  
+                  } 
+
+                  class PersonNameComparator\t {}
+                  
+                  Comparator <|.. PersonNameComparator\t
+                  
+                  "/>
+
+                  <pre style="width:18.2cm; margin-left: 5mm;"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/interfaces_java/PersonNameComparator.java#5-11'></code></pre>
+
+                  <pre class="fragment" style="width:18.2cm; margin-left: 5mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/ComparatorBeispiel.java#7-11,13'></code></pre>
+
+                  <div style="position: absolute; right:0.5cm; max-height: 6cm; top:9cm" class="fragment"><p class="small">Otto (70)<br>Peter (20)<br>Tim (8)<br>Ute (19)</p></div>
+
+                  <div class="poll fragment" style="bottom:-160px"> 
+                    <h1>Was ist der Vorteil vom Comparator im Gegensatz zu Comparable?</h1>
+                        <ul>
+                          <li>Es gibt keinen</li>
+                          <li>Weniger Schreibarbeit</li>
+                          <li data-poll="correct">Für ein und die selbe Klasse kann man mehrere Comparatoren entwickeln</li>
+                          <li>Ein und der selbe Comparator kann für Objekte verschiedener Klassen eingesetzt werden</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
+
+                  <aside class="notes"><!--Selten muss man selbst generische Klassen entwickeln. Oft verwendet man aber vorhandene generische Klassen und Interfaces aus der Java-API. Neben <code>Comparable&lt;T&gt;</code> und der im nächsten Abschnitt präsentierten Collections, ist ein weiteres Beispiel das hier gezeigt Interface <code>Comparator&lt;T&gt;</code>. -->Ähnlich wie <code>Comparable&lt;T&gt;</code> vergleicht ein Comparator, welches zweier <code>T</code>-Objekte größer ist. Während bei <code>Comparable</code> die <code>compareTo</code>-Methode auf einem zu vergleichenden Objekt aufgerufen wird, nimmt ein <code>Comparator</code>-Objekt zwei <code>T</code>-Objekte entgegen, um sie zu vergleichen. Der Vergleich ist also aus der Klasse selbst ausgelagert. Das macht es z. B. möglich, Personen-Objekte - mal so, mal so - nach verschiedenen Kriterien zu sortieren.</aside>
+                </section>
+
+                <section>
+                  <h2>Collections</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15</div>
+                  <img style="max-height: 15cm; margin-top:-1cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  package java.util {
+                    interface Iterable<T> <<interface>> {
+                      --
+                      +iterator() : Iterator<T>
+                      +forEach(action : Consumer<? super T>)
+                      . . .
+                    }
+
+                    interface Collection<E> <<interface>> {
+                      --
+                      +add(e : E) : boolean
+                      +remove(o : Object) : boolean
+                      +contains(e : E) : boolean
+                      +size() : int
+                      +toArray() : Object[]
+                      . . .
+                    }
+
+                    interface List<E> <<interface>> { 
+                      --
+                      +add(index : int, element : E)
+                      +get(index : int) : E
+                      +sort(c : Comparator<? super E>)
+                      . . .
+                    }
+
+                    class ArrayList<E> { }
+                    class LinkedList<E> { }
+
+                    interface Set<E> <<interface>> { }
+
+                    class HashSet<E> { }
+
+                    Iterable <|..r Collection : \t\t\t
+                    Collection <|.. List : \t\t\t
+                    Collection <|.. Set : \t\t\t
+
+                    List <|.. ArrayList : \t\t\t
+                    List <|.. LinkedList : \t\t\t
+
+                    Set <|.. HashSet : \t\t\t
+
+                    interface Map<K,V> <<interface>> {
+                      --
+                      put(key : K, value : V) : V
+                      get(key : Object) : V
+                      ...
+                    }
+
+                    Iterable -[hidden]-> Map
+                    
+                    class HashMap<K,V> { }
+
+                    Map <|.. HashMap : \t\t\t
+                  }
+                  "/>
+                  <div class="poll fragment" style="bottom:10px"> 
+                    <h1>Welche Aussage ist falsch?</h1>
+                        <ul>
+                          <li>Listen sind geordnet</li>
+                          <li>Mengen haben keine Duplikate</li>
+                          <li>Die hier gezeigten Interfaces und Klassen sind generisch</li>
+                          <li>Set.contains überprüft, ob ein Element in der Menge ist</li>
+                          <li>Eine Map hat zwei Typenparameter</li>
+                          <li data-poll="correct">Die Klasse ArrayList hat keine Methoden</li>
+                          <li>Bei Maps komme ich über einen Schlüssel an den Wert</li>
+                          <li>Bei Listen komme ich über die Position an den Wert</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+                  <aside class="notes">Dieses Klassendiagramm zeigt einen Auszug aus den Klassen und Schnittstellen im Paket <code>java.util</code>.</aside>
+                </section>
+
+                <section>
+                  <h3>Collections-Schnittstellen</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.1</div>
+                  <ul class="small">
+                    <li><code>Iterable</code>: ermöglicht die Nutzung in einer <code>for-each</code>-Schleife
+                      <ul>
+                        <li class="fragment"><code>Collection</code>: Eine Sammlung von Objekten
+                          <ul>
+                            <li class="fragment"><code>List</code>: Sortiert, Zugriff über Positions-Index (0, 1, 2, ...)</li>
+                            <li class="fragment"><code>Set</code>: Ungeordnet, keine Duplikate</li>
+                            <li class="fragment"><code>Queue</code>: FIFO-Warteschlange (First-in-First-out)</li>
+                            <li class="fragment"><code>Deque</code>: LIFO-Stapel (Last-in-First-out)</li>
+                          </ul></li>
+                      </ul></li>
+                      <li class="fragment"><code>Map</code>: Dictionary von Schlüssel-Wert-Paaren; Schlüssel-basierter Zugriff</li>
+                  </ul>
+                  <aside class="notes">Da all diese Schnittstellen (außer <code>Map</code>) das Interface <code>Iterable</code> implementieren, lässt sich über die Elemente einer Liste, Menge, usw. mit einer for-each-Schleife iterieren: <code>for(T element : sammlung)</code>.<br>
+                                       Listen haben eine Ordnung, d. h. es gibt ein nulltes Element, ein erstes und so weiter. In Listen darf ein Element auch doppelt vorkommen. Mengen (Sets) sind dagegen ungeordnet und frei von Duplikaten. Fügt man ein Element in eine Menge ein, welches schon vorhanden ist, passiert nichts.<br>
+                                       Queues und Deques sind geordnet. Man fügt dort stets am Ende etwas ein und entnimmt immer nur etwas am Anfang (<code>Queue</code>) bzw. am Ende (<code>Deque</code>).<br>
+                                       Maps heißen in anderen Programmiersprachen Dictionaries oder assoziative Arrays. Sie sind eine ungeordnete Menge von Schlüssel-Wert-Paaren. Man greift auf einen Wert zu, indem man den Schlüssel angibt.</aside>
+                </section>
+
+                <section>
+                  <h2><code>List</code>: Listen</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.5</div>
+                  <pre style="margin-left: 1mm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/ListBeispiel.java#8'></code></pre>
+                  <ul class="small">
+                    <li>Element-Zugriff über die Position<br>(ähnlich wie bei Arrays)</li>
+                    <li>Doppelte Einträge erlaubt</li>
+                    <li>Implementierungen:
+                      <ul>
+                        <li><code>ArrayList</code></li>
+                        <li><code>LinkedList</code>
+                          <ul>
+                            <li>Elemente intern verkettet<br>mit Vorgänger und Nachfolger<br>
+                                &Rightarrow; Effizientes Einfügen und Löschen</li>
+                          </ul>
+                        </li>
+                        <li>...</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <div class="poll fragment" style="bottom:-110px; z-index: 10000;"> 
+                    <h1>Was ist eine typische Aktion auf einer Liste?</h1>
+                        <ul>
+                          <li>Gib mir das 3. Element</li>
+                          <li>Füge ein neues Element hinzu</li>
+                          <li>Lösche das 2. Element und schiebe alles was danach kommt um eins nach links</li>
+                          <li data-poll="correct">Alle der drei genannten</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+                  
+                  <img style="position: absolute; right: 5mm; max-height: 14cm; top:2.5cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                
+
+                    interface Collection<E> <<interface>> {
+                      --
+                      +add(e : E) : boolean
+                      +remove(o : Object) : boolean
+                      +contains(e : E) : boolean
+                      +size() : int
+                      +toArray() : Object[]
+                      . . .
+                    }
+
+                    interface List<E> <<interface>> { 
+                      --
+                      +add(index : int, element : E)
+                      +get(index : int) : E
+                      +sort(c : Comparator<? super E>)
+                      . . .
+                    }
+
+                    class ArrayList<E> { }
+                    class LinkedList<E> { }
+                    Collection <|.. List : \t\t\t
+
+                    List <|.. ArrayList : \t\t\t
+                    List <|.. LinkedList : \t\t\t
+
+                  
+                  "/>
+                </section>
+
+                <section>
+                  <h3><code>List</code>: Listen</h3>
+
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/ListBeispiel.java#8-24'></code></pre>
+                  <aside class="notes">Eine Liste kann anders als ein Array beliebig viele Elemente speichern. Neue Elemente lassen sich mit <code>add(E, int)</code> an eine bestimmte Position hinzufügen. Lässt man die Position weg, wird ans Ende eingefügt. <code>add</code> liefert immer <code>true</code> zurück. Entfernen erfolgt entweder über die Position über den Wert. Ist der Wert mehrfach vorhanden, wird er nur das erste Vorkommen gelöscht.</aside>
+                </section>
+
+                <section>
+                  <h2 style="z-index: 99999;"><code>Set</code>: Mengen</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 13.4</div>
+                  <pre style="margin-left: 1mm; z-index: 999; width: 16cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/SetBeispiel.java#8'></code></pre>
+                  <ul class="small">
+                    <li>Keine Ordnung</li>
+                    <li>Keine Duplikate</li>
+                    <li>Implementierungen:
+                      <ul>
+                        <li><code>HashSet</code></li>
+                        <li><code>LinkedHashSet</code>
+                          <ul>
+                            <li>Elemente intern verkettet<br>mit Vorgänger und Nachfolger<br>
+                                &Rightarrow; Also doch eine Ordnung!</li>
+                          </ul>
+                        </li>
+                        <li><code>TreeSet</code>
+                          <ul>
+                            <li>Einfügungen gemäß <code>compareTo</code> der Elemente</li>
+                          </ul>
+                        </li>
+                        <li>...</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <div class="poll fragment" style="bottom:-70px; z-index: 10000;"> 
+                    <h1>Was ist eine typische Aktion auf einer Menge?</h1>
+                        <ul>
+                          <li>Gib mir das 3. Element</li>
+                          <li data-poll="correct">Füge ein neues Element hinzu</li>
+                          <li>Lösche das 2. Element und schiebe alles was danach kommt um eins nach links</li>
+                          <li>Alle der drei genannten</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+                  
+                  <img style="position: absolute; right: 5mm; max-height: 11cm; top:2.75cm; z-index: 900;" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                
+
+                    interface Collection<E> <<interface>> {
+                      --
+                      +add(e : E) : boolean
+                      +remove(o : Object) : boolean
+                      +contains(e : E) : boolean
+                      +size() : int
+                      +toArray() : Object[]
+                      . . .
+                    }
+
+                    interface Set<E> <<interface>> { }
+
+                    class HashSet<E> { }
+                    class LinkedHashSet<E> { }
+                    class TreeSet<E> { }
+
+                    Collection <|.. Set : \t\t\t
+
+
+                    Set <|.. HashSet : \t\t\t
+                    Set <|.. LinkedHashSet : \t\t\t
+                    Set <|.. TreeSet : \t\t\t
+
+                  
+                  "/>
+                </section>
+
+                <section>
+                  <h3><code>Set</code>: Mengen</h3>
+
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/SetBeispiel.java#8-23'></code></pre>
+                  <aside class="notes">
+                    Das wiederholte Einfügen des gleichen Elements (hier: Kaffeemaschine) fügt es nicht nochmals hinzu. <code>add</code> liefert <code>true</code> zurück, wenn das Element noch nicht in der Menge war, ansonsten <code>false</code>.<br>
+                    In der gezeigten <code>for-each</code>-Schleife ist nicht garantiert in welcher Reihenfolge die Elemente durchlaufen werden. Hätte man <code>LinkedHashSet</code> verwendet, bliebe die Reihenfolge erhalten.<br>
+                    Die <code>contains</code>-Methode stammt aus dem Interface <code>Collection</code>, sie funktioniert daher auch bei Listen. </aside>
+                </section>
+
+                <section>
+                  <h3><code>TreeSet</code></h3>
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/TreeSetBeispiel.java#10-19'></code></pre>
+                  <p class="small" style="margin-left: 3cm;">Tim (8)<br>Ute (19)<br>Peter (20)<br>Otto (70)</p>
+                  <aside class="notes">Ein <code>TreeSet</code> hat eine Ordnung. Die Elemente bereits beim Einfügen an die richtige Stelle eingefügt gemäß der <code>compareTo</code>-Implementierung. Dazu muss die Klasse der Elemente (hier <code>Person</code>) entweder die Schnittstelle <code>Comparable</code> implementieren oder man übergibt dem <code>TreeSet</code>-Konstruktor ein entsprechendes <code>Comparator</code>-Objekt.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Iterable</code> / <code>Iterator</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.2</div>
+                  
+                  <img style="position: absolute; right: 5mm; max-height: 12cm; top:2.5cm; z-index: 9999;" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                    interface Iterable<T> <<interface>> {
+                      --
+                      +iterator() : Iterator<T>
+                      . . .
+                    }
+
+                    interface Iterator<E> <<interface>> {
+                      --
+                      +hasNext() : boolean
+                      +next() : E
+                      . . .
+                    }
+
+                    Iterable --- Iterator
+                  ">
+
+                  <pre style="margin-left: 1mm; z-index: 9999; width: 18.2cm;"><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/IteratorBeispiel.java#9-18'></code></pre>
+
+                  <pre style="margin-left: 1mm; z-index: 9999; width: 18.2cm;" class="fragment"><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/IteratorBeispiel.java#24-26'></code></pre>
+
+                  <aside class="notes">Da die <code>Collection</code>-Klassen die <code>Iterable</code>-Schnittstelle implementieren, lässt sich mit einer <code>for-each</code>-Schleife über deren Elemente iterieren (unteres Code-Beispiel). Im oberen Beispiel ist zu sehen, was dabei tatsächlich intern passiert: Es wird sich ein <code>Iterator</code>-Objekt geholt, mit dem sich mittels <code>next()</code>-Aufruf das ein Element nach dem anderen holen lässt.</aside>
+                </section>
+
+                <section>
+                  <h2><code>Map</code></h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.7</div>
+
+                  <pre style="margin-left: 1mm; z-index: 9999; width: 16cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#9'></code></pre>
+                  <ul class="small">
+                    <li>Menge von Schlüssel-Wert-Paaren</li>
+                    <li>Implementierungen:
+                      <ul>
+                        <li><code>HashMap</code></li>
+                        <li><code>LinkedHashMap</code>
+                          <ul>
+                            <li>Schlüssel-Wert-Paare intern verkettet<br>mit Vorgänger und Nachfolger</li>
+                          </ul>
+                        </li>
+                        <li><code>TreeMap</code>
+                          <ul>
+                            <li>Einfügungen gemäß <code>compareTo</code> der Schlüssel</li>
+                          </ul>
+                        </li>
+                        <li>...</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <div class="poll fragment" style="bottom:-130px; z-index: 10000;"> 
+                    <h1>Was ist eine typische Aktion auf einer Map?</h1>
+                        <ul>
+                          <li data-poll="correct">Gib mir den Wert für den Schlüssel "abc"</li>
+                          <li>Gib mir den Wert für das 3. Element</li>
+                          <li>Gib mir die Schlüssel, die den Wert "abc" haben</li>
+                          <li>Alle der drei genannten</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+                  
+                  <img style="position: absolute; right: 5mm; max-height: 5.8cm; top:2.5cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                
+
+                  interface Map<K,V> {
+                    --
+                    put(key : K, value : V) : V
+                    get(key : Object) : V
+                    ...
+                  }
+                  
+                  class HashMap<K,V> { }
+                  class LinkedHashMap<K,V> { }
+                  class TreeMap<K,V> { }
+
+                  Map <|.. HashMap : \t\t\t
+                  Map <|.. LinkedHashMap : \t\t\t
+                  Map <|.. TreeMap : \t\t\t
+
+                  
+                  "/>
+                  <aside class="notes">Maps heißen in anderen Programmiersprachen Dictionaries oder assoziative Arrays. Eine Map hat jeweils einen Datentyp für Schlüssel und einen für Werte. Jeden Schlüssel gibt es nur einmal. Einträge einer <code>HashMap</code> sind ungeordnet. Bei der <code>LinkedHashMap</code> wird die Einfügereihenfolge beibehalten, bei der <code>TreeMap</code> sind alle Einträge stets gemäß der <code>compareTo</code>-Ordnung der Schlüssel (müssen <code>Comparable</code> sein) geordnet.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Map</code></h3>
+
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#9-18'></code></pre>
+                  <aside class="notes">Wird beim Einfügen ein neuer Key genannt, wird ein neuer Eintrag erstellt. Gibt es den Key schon, wird der Wert im Eintrag geändert. </aside>
+                </section>
+                
+                <section>
+                  <h3><code>Map.Entry&lt;K, V&gt;</code></h3>
+
+                  <img style="height: 4cm" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                
+
+                  interface Map<K,V> {
+                    --
+                    put(key : K, value : V) : V
+                    get(key : Object) : V
+                    entrySet() : Set<Entry<K,V>>
+                    ...
+                  }
+
+                  interface Entry<K,V> {
+                    getKey(): K
+                    getValue(): V
+                  }
+                  
+                  Map +--r Entry
+                  
+                  "/>
+
+                  <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#20-23'></code></pre>
+
+                  
+                  <aside class="notes">Die Methode <code>entrySet()</code> liefert eine Menge von <code>java.util.Map.Entry</code>-Objekten. Dies macht es möglich, über alle Einträge einer Map zu iterieren. Ein <code>Entry</code> repräsentiert dabei einen Eintrag. </aside>
+                </section>
+
+                <section>
+                  <h3><code>Object.equals</code> / <code>hashCode</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 12.2</div>
+                  <img style="z-index:-1; position: absolute; right:2mm; max-height: 7cm; top:2.2cm" uml="
+                    class Object { 
+                      +clone() : Object
+                      +equals(obj : Object) : boolean 
+                      +finalize()
+                      +getClass() : Class<?>
+                      +hashCode() : int
+                      +notify()
+                      +notifyAll()
+                      +toString() : String
+                      +wait()
+                    }
+                    "/>
+                    <p class="small" style="width:16.2cm">Damit eine <code>HashMap&lt;K,V&gt;</code> ordnungsgemäß funktioniert, muss die Key-Klasse <code>K</code> die Methoden <code>equals</code> und <code>hashCode</code> implementieren.</p>
+                    <p class="small" style="width:16.2cm">Das gleiche gilt beim <code>HashSet&lt;E&gt;</code> für die Klasse <code>E</code>.</p>
+
+                    <h4>equals(Object other)</h4>
+                    <p class="small">Legt fest, wann zwei Objekte gleich sind.</p>
+
+                    <h4>hashCode()</h4>
+                    <p class="small">Erzeugt aus dem Objekt einen Hash-Wert (Integer-Zahl).</p>
+
+                    <aside class="notes">Intern ist ein <code>HashSet&lt;E&gt;</code> implementiert als eine <code>HashMap&lt;E,Object&gt;</code>. Die Methoden <code>equals</code> und <code>hashCode</code> sind wichtig für die Schlüsselvergleiche bei <code>map.put(k, v)</code> und <code>map.get(k)</code>. Intern wird eine <em>Hash-Tabelle</em> angelegt. Über diese kann in konstanter Zeit ein Schlüssel-basierter Zugriff erfolgen, indem der <code>hashCode</code> des Keys berechnet und in der Hash-Tabelle nachgeschlagen wird.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Object.equals</code> / <code>hashCode</code></h3>
+                  <img style="z-index:999; position: absolute; right:2mm; max-height: 9cm; top:2.2cm" uml="
+                    class Object { 
+                      +clone() : Object
+                      +equals(obj : Object) : boolean 
+                      +finalize()
+                      +getClass() : Class<?>
+                      +hashCode() : int
+                      +notify()
+                      +notifyAll()
+                      +toString() : String
+                      +wait()
+                    }
+                    
+                    class Person {
+                      -name : String
+                      -alter : int
+                      --
+                      ...
+                    }
+                    Object <|-- Person
+                    "/>
+                    <pre><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/Person.java#5,36-54'></code></pre>
+                    <aside class="notes">Wenn man unsere <code>Person</code>-Klasse als Schlüssel einer <code>HashMap</code> verwenden möchte, oder ein <code>HashSet&lt;Person&gt;</code>, ist die Implementierung von <code>equals</code> und <code>hashCode</code> vonnöten.</aside>
+                  </section>
+
+                  <section>
+                    <h3><code>hashCode</code></h3>
+                    <ul class="small">
+                      <li>Ziel: Zustand des Objekts auf eine Integer-Zahl reduzieren</li>
+                      <li class="fragment">Ruft man hashCode zweimal auf dem gleichen Objekt auf, muss das gleiche herauskommen (außer sein Zustand hat sich zwischenzeitig geändert)</li>
+                      <li class="fragment">Nach jeder Zustandsänderung soll der Hash-Code möglichst anders sein</li>
+                      <li class="fragment">HashCodes sollen weitestgehend kollisionsfrei sein</li>
+                      <li class="fragment">Gleiche Objekte müssen gleichen Hash-Code liefern:<br><code>a.equals(b)</code> &Rightarrow; <code>a.hashCode() == b.hashCode()</code></li>
+                    </ul>
+                    <pre class="fragment"><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/Person.java#51-54'></code></pre>
+                    <aside class="notes">Die statische Methode <code>Objects.hash</code> nimmt beliebig viele Parameter beliebiger Klassen entgegen, ruft jeweils deren <code>hashCode</code>-Implementierung auf und erzeugt daraus einen neuen Hash-Code.</aside>
+                  </section>
+
+                  <section>
+                    <h3>Keys von Hash-Maps</h3>
+                    <p class="small">Die Schlüssel einer <code>HashMap</code> sollen sich nachträglich nicht mehr ändern, d. h. sie sollen <em>immutable</em> sein.</p>
+                    <pre style="width:94%"><code style="max-height: 30cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/collections/MapBeispiel.java#25-34'></code></pre>
+                    <p class="small fragment"><code>Peters Kontostand: null</code></p>
+                    <aside class="notes">Hier wurde eine Hash-Map eingesetzt, um zu jedem Personen-Objekt einen Kontostand zu speichern. Nachdem Peters Alter jedoch erhöht wurde, liefert <code>peter.hashCode</code> einen anderen Wert als vorher. Nun liefert <code>kontostand.get(peter)</code> den Wert <code>null</code>, da es diesen Key nicht in der Map gibt. Um solche Merkwürdigkeiten zu verhindern, sollte als Key einer Map stets ein Objekt verwendet werden, welches immutable ist, also ein Objekt, dessen Zustand nicht mehr geändert wird.</aside>
+                  </section>
+
+                <section>
+                  <h3>Collections: Performance</h3>
+                  <table style="font-size:62%">
+                    <tr><th><code>List</code></th><th><code>add</code></th><th><code>remove</code></th><th><code>get</code></th><th><code>contains</code></th><th><code>next</code></th><th>Int. Struktur</th></tr>
+                    <tr><td><code>ArrayList</code></td><td>O(1)</td><td>O(n)</td><td>O(1)</td><td>O(n)</td><td>O(1)</td><td>Array</td></tr>
+                    <tr><td><code>LinkedList</code></td><td>O(1)</td><td>O(1)</td><td>O(n)</td><td>O(n)</td><td>O(1)</td><td>Verkettete Liste</td></tr>
+                  </table>
+
+                  <table style="font-size:62%; margin-top: 3mm;">
+                    <tr><th><code>Set</code></th><th><code>add</code></th><th><code>remove</code></th><th><code>contains</code></th><th><code>next</code></th><th>Int. Struktur</th></tr>
+                    <tr><td><code>HashSet</code></td><td>O(1)</td><td>O(1)</td><td>O(1)</td><td>O(h/n)</td><td>Hashtabelle</td></tr>
+                    <tr><td><code>LinkedHashSet</code></td><td>O(1)</td><td>O(1)</td><td>O(1)</td><td>O(1)</td><td>Hasht. + Verk. L.</td></tr>
+                    <tr><td><code>TreeSet</code></td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td><td>Baum</td></tr>
+                  </table>
+
+                  <table style="font-size:62%; margin-top: 3mm;">
+                    <tr><th><code>Map</code></th><th><code>get</code></th><th><code>containsKey</code></th><th><code>next</code></th><th>Int. Struktur</th></tr>
+                    <tr><td><code>HashMap</code></td><td>O(1)</td><td>O(1)</td><td>O(h/n)</td><td>Hashtabelle</td></tr>
+                    <tr><td><code>LinkedHashMap</code></td><td>O(1)</td><td>O(1)</td><td>O(1)</td><td>Hasht. + Verk. L.</td></tr>
+                    <tr><td><code>TreeMap</code></td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td><td>Baum</td></tr>
+                  </table>
+                  <aside class="notes">Die <code>LinkedList</code> hat gegenüber der <code>ArrayList</code> den Vorteil, dass man mitten drin günstiger etwas einfügen und löschen kann. Beim <code>HashSet</code> und der <code>HashMap</code> kostet es O(n*h/n), alle Einträge zu durchlaufen. h ist die Größe der Hashtabelle.</aside>
+                </section>
+
+                <section>
+                  <h2>Lambda-Ausdrücke</h2>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 14</div>
+
+                  <div style="position: absolute; top: 80px; right:50px; font-size:200px" class="red">&lambda;</div>
+
+                  
+
+                  <ul class="small">
+                    <li>Methoden ohne Namen</li>
+                    <li>Syntax: <code>parameter -> ergebnis</code></li>
+                    <li>Beispiele:
+                      <ul>
+                        <li><code>x -> 2*x</code></li>
+                        <li><code>s -> System.out.println(s)</code></li>
+                        <li><code>x -> { System.out.println(x); return x; }</code></li>
+                        <li><code>(x, y) -> x+y</code></li>
+                        <li><code>() -> System.out.println("Hallo");</code></li>
+                      </ul>
+                    </li>
+                    <li>Entspricht der Verwendung einer anonymen Klasse, z. B.</li>
+                  </ul>
+                    <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/AnonymeBeispiel.java#14-19'></code></pre>
+                </section>
+
+                <section>
+                  <h3>Funktionale Schnittstellen</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 12.4</div>
+                  <p class="small">Interfaces, in denen es nur eine Methode gibt.</p>
+                  <p class="small">Dort wo Objekte funktionaler Schnittstellen erwartet werden,<br>kann man Lambda-Ausdrücke einsetzen.</p>
+
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                    interface Consumer<T> <<interface>> {
+                    --
+                    accept(t : T)  
+                    }
+
+                    
+                  "/>
+
+                  <img style="position: absolute; max-height: 4cm; top: 6cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                   interface Iterable<T> <<interface>> {
+                      --
+                      +iterator() : Iterator<T>
+                      +forEach(action : Consumer<? super T>)
+                      . . .
+                    }
+                  "/>
+                  <p><br><br><br></p>
+                  <pre style="width: 99%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/AnonymeBeispiel.java#10-11'></code></pre>
+
+                  <aside class="notes">Die <code>Iterable</code>-Schnittstelle, welche von Listen, Mengen, etc. implementiert wird, besitzt eine Default-Methode <code>forEach</code>, welche ein <code>Consumer</code>-Objekt entgegennimmt. <code>Consumer&lt;T&gt;</code> ist eine funktionale Schnittstelle, deren einzige Methode <code>accept</code> die Aufgabe hat, etwas mit einem <code>T</code>-Objekt zu machen, z. B. es auszugeben.</aside>
+
+                </section>
+
+                <section>
+                  <h3>Lambda-Schnittstellen</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 14.2</div>
+                  <img uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+
+                  package java.util.function {
+                    interface Predicate<T> {
+                      --
+                      test(t : T) : boolean  
+                    }
+
+                    interface Supplier<T>  {
+                      --
+                      get() : T  
+                    }
+                    interface Consumer<T> {
+                      --
+                      accept(t : T)  
+                    }
+                    interface BiConsumer<T, U>  {
+                      --
+                      accept(t : T, u : U)  
+                    }
+
+
+
+                    interface BiFunction<T, U, R> {
+                      --
+                      apply(t : T, u : U) : R  
+                    }
+                    interface Function<T, R>  {
+                      --
+                      apply(t : T)  : R 
+                    }
+
+                    interface UnaryOperator<T>  {
+                    }
+
+                    interface BinaryOperator<T>  {
+                    }
+
+                    
+
+                    BiFunction <|-- BinaryOperator
+                    Function <|-- UnaryOperator 
+                  } "/>
+                  <aside class="notes">Hier ist ein Auszug der wichtigsten funktionalen Schnittstellen aus dem Paket <code>java.util.function</code> zu sehen. In den nachfolgenden Folien wird näher auf die einzelnen Schnittstellen eingegangen.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Consumer</code></h3>
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                    interface Consumer<T> <<interface>> {
+                    --
+                    accept(t : T)  
+                    }
+
+                    
+                  "/>
+                  <p class="small">Ein <code>Consumer&lt;T&gt;</code> verarbeitet ein Objekt der Klasse <code>T</code>.</p>
+                  <p>&nbsp;</p>
+                  <pre style="width: 99%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#8-9'></code></pre>
+                  <pre class="fragment" style="width: 99%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#11-17'></code></pre>
+                
+                  <aside class="notes">Ein <code>Consumer&lt;T&gt;</code> nimmt ein Objekt der Klasse <code>T</code> entgegen und macht etwas mit diesem Objekt, z. B. es auf der Konsole ausgeben. Im hier oben gezeigten Beispiel würde &quot;Hallo&quot; auf der Konsole ausgegeben werden.<br> Die <code>forEach</code>-Methode der <code>Collection</code>-Schnittstelle nimmt ein <code>Consumer</code> entgegen, um mit jedem Element der Collection die gewünschte Aktion auszuführen.</aside>
+                </section>
+
+                <section>
+                  <h3><code>BiConsumer</code></h3>
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  interface BiConsumer<T, U>  {
+                    --
+                    accept(t : T, u : U)  
+                  }                    
+                  "/>
+                  <p class="small">Ein <code>BiConsumer&lt;T, U&gt;</code> verarbeitet ein Objekt<br>der Klasse <code>T</code> und ein Objekt der Klasse <code>U</code>.</p>
+                  <pre style="width: 99%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#53-57'></code></pre>
+                  <aside class="notes">Die <code>forEach</code>-Methode aus der Schnittstelle <code>Map</code> nimmt einen <code>BiConsumer</code> entgegen. Dies macht es sehr simpel, über alle Einträge einer Map zu iterieren.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Function</code>, <code>UnaryOperator</code></h3>
+                  <img style="position: absolute; max-height: 6cm; top: 2cm; right:5mm; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  interface Function<T, R>  {
+                    --
+                    apply(t : T)  : R 
+                  }
+
+                  interface UnaryOperator<T>  {
+                  }
+                  Function <|-- UnaryOperator 
+
+                  "/>
+
+                  <h4><code>Function&lt;T, R&gt;</code></h4>
+                  <p class="small">Nimmt ein <code>T</code>-Objekt entgegen und gibt ein <code>R</code>-Objekt aus.</p>
+                  <pre style="width: 19cm; margin-left: 5mm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#19-20'></code></pre>
+                  
+                  <div class="fragment">
+                  <h4><code>UnaryOperator&lt;T&gt;</code> &wedgeq; <code>Function&lt;T,T&gt;</code></h4>
+                  <pre style="width: 19cm; margin-left: 5mm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#22-23'></code></pre>
+                  </div>
+
+                  <div class="poll fragment" style="bottom:-200px"> 
+                    <h1>Was ist ein gültiger Lambda-Ausdruck für eine BiFunction?</h1>
+                        <ul>
+                          <li>n -&gt; n * n</li>
+                          <li>(x, y) -> (x, y)</li>
+                          <li data-poll="correct">(x, y) -&gt; x+y</li>
+                          <li>(x, y, z) -&gt; x+y+z</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
+                </section>
+
+                <section>
+                  <h3><code>Predicate</code></h3>
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:5mm; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  interface Predicate<T> {
+                    --
+                    test(t : T) : boolean  
+                  }
+                  "/>
+
+                  <h4><code>Predicate&lt;T&gt;</code></h4>
+                  <p class="small">Überprüft, ob ein <code>T</code>-Objekt eine bestimmte Bedingung erfüllt.</p>
+                  <pre style="width: 19cm; margin-left: 5mm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#25-28'></code></pre>
+                  
+                  <div class="poll fragment" style="bottom:-280px"> 
+                    <h1>Wie überprüft man, ob ein String nicht leer ist?</h1>
+                        <ul>
+                          <li>s -&gt; s == ""</li>
+                          <li>s -&gt; s != ""</li>
+                          <li>s -&gt; s.isEmpty()</li>
+                          <li data-poll="correct">s -&gt; !s.isEmpty()</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
+                  <aside class="notes">Die hier gezeigte Funktion <code>ungerade</code> berechnet <code>n</code> modulo <code>2</code>. Wenn dies <code>1</code> liefert, ist die Zahl ungerade.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Comparator</code></h3>
+                  <img style="position: absolute; max-height: 3cm; top: 2cm; right:5mm; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+                  interface Comparator<T> <<interface>> { 
+                    +compare(t1 : T, t2 : T) : int  
+                  }
+                  "/>
+
+                  <h4><code>compare(T t1, T t2)</code></h4>
+                  <p class="small">Liefert etwas Negatives, wenn t1 kleiner als t2 ist,<br>etwas Positives wenn t1 größer als t2 ist,<br>und bei Gleichheit 0.</p>
+                  <pre style="width:103%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/interfaces_java/ComparatorBeispiel.java#7-11,18-21'></code></pre>
+                  
+                  <aside class="notes">Auch das Interface <code>Comparator</code> ist eine funktionale Schnittstelle, da sie nur eine Methode enthält, und zwar <code>compare</code>. Mit einem Lambda-Ausdruck lässt sich schnell ein eigener Comparator erzeugen, z. B. um die Elemente eines Arrays nach einem bestimmten Kriterium zu sortieren.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Stream</code></h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 15.6</div>
+
+                  <ul class="small">
+                    <li>Funktionale Programmierung<br>in Java<br>&nbsp;</li>
+                    <li><code>Collection.stream()</code><br>erzeugt einen Stream<br>&nbsp;</li>
+                    <li><code>Stream.collect(<br>&nbsp;Collectors.toList())</code><br>erzeugt eine Liste</li>
+                  </ul>
+
+                  <img style="position: absolute; max-height: 12cm; top: 2.5cm; right:50px; z-index:-1" uml="
+                  hide empty members
+                  set namespaceSeparator none
+
+                  skinparam genericDisplay old
+
+                  interface Stream<T> {
+                    --
+                    +collect(collector : Collector<? super T,A,R>) : R
+                    +count() : long
+                    +distinct() : Stream<T>
+                    +filter(predicate : Predicate<?super T>) : Stream<T>
+                    +forEach(action : Consumer<? super T>)
+                    +map(Function<? super T, ? extends R>) : Stream<R>
+                    +min(Comparator<? super T>) : Optional<T>
+                    +max(Comparator<? super T>) : Optional<T>
+                    +limit(maxSize : long) : Stream<T>
+                    +reduce(accumulator : BinaryOperator<T>) : Optional<T> 
+                    +sorted(Comparator<? super T>) : Stream<T>
+                    +skip(n : long) : Stream<T>
+                  }
+
+                  interface Collection<E> {
+                    --
+                    +stream() : Stream<E>
+                    . . .
+                  }
+
+                  interface Optional<T> {
+                    --
+                    +get() : T
+                    +isPresent() : boolean
+                    . . .
+                  }
+
+                  Stream -[hidden]-> Collection
+                  Stream -[hidden]-> Optional
+
+                    
+                  "/>
+
+                  <div class="poll fragment" style="bottom:-230px"> 
+                    <h1>Viele Methoden der Klasse Stream erzeugen wieder einen Stream. Was hast dies für einen Vorteil?</h1>
+                        <ul>
+                          <li>Man kann alles mit einem Methodenaufruf erledigen</li>
+                          <li data-poll="correct">Mehrere Methodenaufrufe lassen sich verketten</li>
+                          <li>Intern werden weniger anonyme Klassen angelegt</li>
+                          <li>Man muss weniger Lambda-Ausdrücke formulieren</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+                  
+
+                <aside class="notes">Viele der hier gezeigten Methoden, die auf einem <code>Stream</code> aufgerufen werden, erzeugen auch wieder einen <code>Stream</code>. Dadurch lassen sich leicht mehrere Operatoren hintereinanderketten und komplexe Berechnungen sehr kompakt darfstellen. Manche Methoden (z. B. <code>reduce</code>) erzeugen ein <code>Optional&lt;T&gt;</code>. Dies ist ein Container, der entweder ein <code>T</code>-Objekt enthält oder nicht.</aside>
+                </section>
+
+                <section>
+                  <h3><code>Stream</code></h3>
+                  <pre style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#11'></code></pre>
+                  
+                  <pre class="fragment" style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#30-33'></code></pre>
+                  
+                  <pre class="fragment" style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#37-42'></code></pre>
+
+                  <pre class="fragment" style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#44-48'></code></pre>
+                
+                  <aside class="notes">Wird <code>sorted()</code> ohne <code>Comparator</code> aufgerufen, müssen die Einträge <code>Comparable</code> sein. Die <code>reduce</code>-Funktion wird auf die ersten beiden Werte angewandt, dann auf das Ergebnis und den dritten Wert, usw.<aside>
+                </section>
+
+                <section>
+                  <h3><code>Stream</code>-Schritte</h3>
+                  <h4><code>filter(Predicate)</code></h4>
+                  <p class="small" style="margin-top: -5mm;">Erzeugt einen Stream aus denjenigen Einträgen, die ein Prädikat erfüllen.</p>
+                  <pre style="margin-top: -2mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#32'></code></pre>
+
+                  <div class="fragment">
+                    <h4><code>map(Function)</code></h4>
+                    <p class="small" style="margin-top: -5mm;">Erzeugt einen Stream, der aus dem Funktionsergebnissen jedes Eintrags besteht.</p>
+                    <pre style="margin-top: -2mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#46'></code></pre>
+                  </div>
+
+                  <div class="fragment">
+                    <h4><code>reduce(BinaryOperator)</code></h4>
+                    <p class="small" style="margin-top: -5mm;">Reduziert alle Elemente paarweise auf ein zusammenfassendes Ergebnis.</p>
+                    <pre style="margin-top: -2mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/LambdaBeispiel.java#47-47'></code></pre>
+                  </div>
+                  <aside class="notes">Der <code>filter</code>-Schritt steckt jeden Eintrag des Stroms in eine Funktion. Liefert diese <code>true</code> zurück, bleibt der Eintrag im Strom, ansonsten wird er rausgefiltert. Beim <code>map</code>-Schritt wird jedes Element durch einen neuen Wert ersetzt, der mit der übergebenen Funktion berechnet wird. <code>reduce</code> wendet eine Operation auf die ersten beiden Elemente an, dann auf das Ergebnis daraus zusammen mit dem dritten Element, usw.</aside>
+                </section>
+
+                <section>
+                  <h3>Methodenreferenzen</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 14.2</div>
+                  <p class="small">Kurzschreibweisen in Lambda-Ausdrücken, um Methoden zu referenzieren.</p>
+                  <p class="small"><code style="font-weight: bold;">Klasse::statischeMethode</code> &wedgeq; <code>x -> Klasse.statischeMethode(x)</code></p>
+                  <pre style="margin-top:-5mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/Methodenreferenzen.java#13,18'></code></pre>
+                  <div class="fragment">
+                    <p class="small"><code style="font-weight: bold;">Klasse::methode</code> &wedgeq; <code>x -> x.methode()</code></p>
+                    <pre style="margin-top:-5mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/Methodenreferenzen.java#24,29'></code></pre>
+                  </div>
+                    <div class="fragment">
+                    <p class="small"><code style="font-weight: bold;">objekt::methode</code> &wedgeq; <code>x -> objekt.methode(x)</code></p>
+                    <pre style="margin-top:-5mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/Methodenreferenzen.java#9,10,34,36'></code></pre>
+                    </div>
+                  <aside class="notes">Mit der <code>::</code>-Syntax lässt sich Schreibarbeit sparen. Sie entspricht einem Lambda-Ausdruck, der die genannte statische oder nichtstatische Methode aufruft.</aside>
+                </section>
+
+                <section>
+                  <h3>Was passiert im Hintergrund?</h3>
+                  <pre style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#10'></code></pre>
+                  <div class="fragment">
+                    <p class="small"><code>::</code>-Methodenreferenz wird aufgelöst:</p>
+                    <pre style="margin-top:-5mm; width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#11'></code></pre>
+                  </div>
+                  <div class="fragment">
+                    <p class="small">Die Variable <code>s</code> hat die Typ <code>String</code> (weil die Liste eine <code>List&lt;String&gt;</code> ist):</p>
+                    <pre style="margin-top:-5mm; width: 108%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#12'></code></pre>
+                  </div>
+                  <div class="fragment">
+                    <p class="small">Die Methode wird komplett ausimplementiert:</p>
+                    <pre style="margin-top:-5mm; width: 108%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#13-14'></code></pre>
+                  </div>
+
+                  <div class="poll fragment fade-in-then-out" style="bottom:30px"> 
+                    <h1>Welcher Schritt fehlt noch?</h1>
+                        <ul>
+                          <li>Nichts mehr; fertig!</li>
+                          <li>Aus dem Lambda-Ausdruck entsteht eie Schleife und ein If-Konstrukt</li>
+                          <li>Aus dem Lambda-Ausdruck entsteht eine anonyme Klasse, die Function implementiert</li>
+                          <li data-poll="correct">Aus dem Lambda-Ausdruck entsteht eine anonyme Klasse, die Predicate implementiert</li>
+                        </ul>
+                      <h2>https://frage.space</h2>
+                  </div>
+
+                  <div class="fragment">
+                    <p class="small">Lambda-Ausdruck wird durch anonyme Klasse ersetzt:</p>
+                    <pre style="margin-top:-5mm; width: 108%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lambda/WasPassiertImHintergrund.java#15-20'></code></pre>
+                  </div>
+                </section>
+
+                <section>
+                  <h3>Zusammenfassung</h3>
+                  <ul class="small">
+                    <li>Generics: <code>class ...&lt;T&gt;</code></li>
+                    <li>Typeinschränkung: <code>&lt;T extends C&gt;</code></li>
+                    <li>Wildcards in Methoden: <code>&lt;?&gt;</code>, <code>&lt;? extends C&gt;</code>, <code>&lt;? super C&gt;</code></li>
+                    <li><code>Comparable</code>, <code>Comparator</code></li>
+                    <li>Collections: <code>Iterable</code>, <code>Collection</code>, <code>List</code>, <code>Set</code>, <code>Map</code></li>
+                    <li>Lambda-Ausdrücke: <code>... -&gt; ...</code></li>
+                    <li>Funktionale Schnittstellen: <code>Consumer</code>, <code>Predicate</code>, <code>Function</code>,...</li>
+                    <li>Streams: <code>stream()</code>, <code>filter</code>, <code>map</code>, <code>count</code>, <code>forEach</code>, ...</li>
+                    <li>Methodenreferenzen: <code>X::y</code></li>
+                  </ul>
+                </section>
+
+              </div>
+            </div>
+        
+            <script src="reveal.js/js/reveal.js"></script>
+                <script src="lib/jquery.js"></script>
+                <script src="lib/lodash.js"></script>
+                <script src="lib/backbone.js"></script>
+                <script src="lib/joint.min.js"></script>
+                <script src="lib/deflate.js"></script>
+        
+            <script src="src/init_reveal.js"></script>
+        
+                <script>
+                if(window.location.search.match( /print-pdf/gi )) {
+                        document.getElementById('header').style="display:none";
+                        document.getElementById('footer').style="display:none";
+                }
+                </script>
+        
+        
+          </body>
+        </html>
+        

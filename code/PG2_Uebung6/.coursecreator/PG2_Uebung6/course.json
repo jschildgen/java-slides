@@ -1,0 +1,316 @@
+{
+  "summary" : "Programmieren 2 - Uebungsblatt 6\nSS2020 - Johannes Schildgen, OTH Regensburg",
+  "title" : "PG2_Uebung6",
+  "authors" : [
+    "Johannes Schildgen"
+  ],
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "Uebung6",
+      "task_list" : [
+        {
+          "name" : "1_UML",
+          "files" : {
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class WitzeApp {\n    public static void main(String[] args) {\n        System.out.println(\"Noch nicht implementiert.\");\n    }\n}\n"
+            }
+          },
+          "description_text" : "<html>\n<p>In dieser ersten Aufgabe geht es nicht darum, etwas zu programmieren. Stattdessen geht es um den Entwurf einer Software.</p>\n<p><b>Erstellen Sie ein UML-Klassendiagramm für das folgende Szenario:</b></p>\n<ul>\n    <li>Wir möchten eine Witze-App erstellen mit einer Anbindung für verschiedene Witze-Anbieter-APIs.</li>\n    <li>Die Klasse <code>Witz</code> soll die Attribute <code>witz</code> und <code>kategorie</code> besitzen. Während der Witz ein <code>String</code> ist, soll es für die <code>Kategorie</code> eine eigene Klasse geben.</li>\n    <li>Es soll die beiden Konstruktoren <code>Witz(witz)</code> und <code>Witz(witz, kategorie)</code> sowie die Getter die beiden Attribute geben (keine Setter).</li>\n    <li>Die Klasse <code>Kategorie</code> hat ein Attribut <code>kategorie</code> vom Typ <code>String</code>, einen Konstruktor <code>Kategorie(kategorie)</code> und eine Methode <code>toString()</code> besitzen.</li>\n    <li>Eine Subklasse von <code>Witz</code> soll die Klasse <code>FrageAntwortWitz</code> sein. Diese soll die zusätzlichen Attribute <code>frage</code> und <code>antwort</code> besitzen sowie die Getter-Methoden für diese besitzen.</li>\n    <li>Die beiden Konstruktoren hier sollen <code>FrageAntwortWitz(frage, antwort)</code> und <code>FrageAntwortWitz(frage, antwort, kategorie)</code> sein.</li>\n    <li>Die Schnittstelle <code>WitzAPI</code> soll die Methoden <code>getZufallswitz()</code> und <code>getWitze(Kategorie kategorie)</code> besitzen. Erste liefert ein <code>Witz</code>-Objekt zurück, letztere einen Array mit <code>Witz</code>-Objekten.</li>\n    <li>Eine weitere Methode der <code>WitzAPI</code>-Schnittstelle voll <code>getKategorien()</code> sein, welche einen Array mit den verfügbaren Kategorien liefert.</li>\n    <li>Die beiden Klassen <code>OfficialJokeAPI</code> und <code>ChuckNorrisAPI</code> sollen jeweils das Interface <code>WitzAPI</code> implementieren. Beide sollen einen Konstruktor ohne Parameter besitzen.</li>\n    <li>In der Klasse <code>OfficialJokeAPI</code> sind die Kategorien hart reinprogrammiert, daher soll es dort eine statische Klassen-Variable <code>Kategorie[] kategorien</code> geben.</li>\n    <li>Die Hauptklasse der App heißt <code>WitzeApp</code>. Sie hat eine Methode <code>public static void main(String[] args)</code> sowie eine private statische Member-Variable <code>WitzAPI api</code>, in welche die zu wendende API konfiguriert wird.</li>\n</ul>\n<p>Hinweis: Achten Sie darauf, Klassen miteinander zu verbinden und mit Multiplizitäten (1, *, ...) zu versehen, wenn in einer Klasse Objekte einer anderen Klasse in Member-Variablen gespeichert werden.</p>\n<p>Zeichnen Sie das UML-Diagramm auf Papier und laden Sie ein Foto oder Scan davon im GRIPS hoch oder verwenden Sie eine Software zur Erstellung des UML-Diagrams und exportieren Sie darin das Diagramm als eine PDF.</p>\n<p>Es können nur PDF-Dateien hochgeladen werden. Haben Sie beispielsweise nur ein JPEG-Foto o. ä., fügen Sie dieses einfach in ein Word- oder LibreOffice-Dokument ein und exportieren Sie das Dokument als PDF.</p>\n<p>Fahren Sie mit den nächsten Aufgaben bitte erst fort, wenn Sie das UML-Diagramm fertiggestellt haben.</p>\n<p>PS: Der &quot;Run&quot;-Button dort unten hat bei dieser Aufgabe natürlich keine Funktion.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "theory"
+        },
+        {
+          "name" : "2a_Ausprobieren",
+          "files" : {
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [
+                {
+                  "offset" : 97,
+                  "length" : 47,
+                  "possible_answer" : "Kategorie essen = new Kategorie(\"Essen\");\n        witz = new Witz(\"Herr Ober, da ist ein H in meiner Buchstabensuppe!\", essen);",
+                  "placeholder_text" : "Definieren Sie die Kategorie und den Witz hier."
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class WitzeApp {\n    public static void main(String[] args) {\n        Witz witz;\n\n        Definieren Sie die Kategorie und den Witz hier.\n\n        System.out.println(\"Kategorie: \"+witz.getKategorie());\n        System.out.println(witz.getWitz());\n    }\n}\n"
+            },
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "Kategorie: Essen\nHerr Ober, da ist ein H in meiner Buchstabensuppe!\n"
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class FrageAntwortWitz extends Witz {\n    private String frage;\n    private String antwort;\n\n    public FrageAntwortWitz(String frage, String antwort) {\n        super(null);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public FrageAntwortWitz(String frage, String antwort, Kategorie kategorie) {\n        super(null, kategorie);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public String getFrage() {\n        return frage;\n    }\n\n    public String getAntwort() {\n        return antwort;\n    }\n}"
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Kategorie {\n    String kategorie;\n\n    public Kategorie(String kategorie) {\n        this.kategorie = kategorie;\n    }\n\n    @Override\n    public String toString() {\n        return kategorie;\n    }\n}"
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Witz {\n    private String witz;\n    protected Kategorie kategorie;\n\n    public Witz(String witz) {\n        this.witz = witz;\n    }\n\n    public Witz(String witz, Kategorie kategorie) {\n        this.witz = witz;\n        this.kategorie = kategorie;\n    }\n\n    public String getWitz() {\n        return witz;\n    }\n\n    public Kategorie getKategorie() {\n        return kategorie;\n    }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>Nachdem Sie Ihr UML-Diagramm erstellt haben und damit der Entwurf der Witz-App abgeschlossen ist, beginnt nun die eigentliche Softwareentwicklung.</p>\n<p>Wie Sie sehen können, ist bis auf die API-Schnittstelle und deren Implementierung schon fast alles fertig entwickelt.</p>\n<p>Um sich mit den Klassen vertraut zu machen, eine kleine Aufgabe:</p>\n<p><b>Erzeugen Sie ein <code>Witz</code>-Objekt mit dem folgenden Text und der Kategorie &quot;Essen&quot;:</b></p>\n<pre>Herr Ober, da ist ein H in meiner Buchstabensuppe!</pre>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        },
+        {
+          "name" : "2b_Schnittstelle",
+          "files" : {
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [
+                {
+                  "offset" : 130,
+                  "length" : 47,
+                  "dependency" : {
+                    "lesson" : "Uebung6",
+                    "task" : "2a_Ausprobieren",
+                    "file" : "src/WitzeApp.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "Kategorie essen = new Kategorie(\"Essen\");\n        witz = new Witz(\"Herr Ober, da ist ein H in meiner Buchstabensuppe!\", essen);",
+                  "placeholder_text" : "Definieren Sie die Kategorie und den Witz hier."
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class WitzeApp {\n    private static WitzAPI api;\n\n    public static void main(String[] args) {\n        Witz witz;\n\n        Definieren Sie die Kategorie und den Witz hier.\n\n        System.out.println(\"Kategorie: \"+witz.getKategorie());\n        System.out.println(witz.getWitz());\n    }\n}\n"
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class FrageAntwortWitz extends Witz {\n    private String frage;\n    private String antwort;\n\n    public FrageAntwortWitz(String frage, String antwort) {\n        super(null);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public FrageAntwortWitz(String frage, String antwort, Kategorie kategorie) {\n        super(null, kategorie);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public String getFrage() {\n        return frage;\n    }\n\n    public String getAntwort() {\n        return antwort;\n    }\n}"
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Kategorie {\n    String kategorie;\n\n    public Kategorie(String kategorie) {\n        this.kategorie = kategorie;\n    }\n\n    @Override\n    public String toString() {\n        return kategorie;\n    }\n}"
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Witz {\n    private String witz;\n    protected Kategorie kategorie;\n\n    public Witz(String witz) {\n        this.witz = witz;\n    }\n\n    public Witz(String witz, Kategorie kategorie) {\n        this.witz = witz;\n        this.kategorie = kategorie;\n    }\n\n    public String getWitz() {\n        return witz;\n    }\n\n    public Kategorie getKategorie() {\n        return kategorie;\n    }\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    for(java.lang.reflect.Method m : WitzAPI.class.getMethods()) {\n      Assert.assertTrue(m.getName().equals(\"getZufallswitz\") && m.getParameterCount() == 0 && m.getReturnType().getName() == \"Witz\"\n              || m.getName().equals(\"getWitze\") && m.getParameterCount() == 1 && m.getReturnType().getName() == \"[LWitz;\"\n              || m.getName().equals(\"getKategorien\") && m.getParameterCount() == 0 && m.getReturnType().getName() == \"[LKategorie;\");\n    }\n  }\n}"
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 38,
+                  "possible_answer" : "public interface WitzAPI {\n    Witz getZufallswitz();\n    Witz[] getWitze(Kategorie kategorie);\n    Kategorie[] getKategorien();\n}",
+                  "placeholder_text" : "Entwickeln Sie die Schnittstelle hier."
+                }
+              ],
+              "is_visible" : true,
+              "text" : "Entwickeln Sie die Schnittstelle hier."
+            }
+          },
+          "description_text" : "<html>\n<p>Bevor wir mit der Entwicklung der einzelnen API-Implementierungen beginnen, benötigen wir das Interface <code>WitzAPI</code> mit den folgenden Methoden:</p>\n<ul>\n    <li><code>getZufallswitz()</code> liefert ein <code>Witz</code>-Objekt zurück</li>\n    <li><code>getWitze(Kategorie kategorie)</code> gibt einen Array mit <code>Witz</code>-Objekten aus</li>\n    <li><code>getKategorien()</code> gibt einen Array mit <code>Kategorie</code>-Objekten</li>\n</ul>\n<p><b>Entwickeln Sie die Schnittstelle <code>WitzAPI</code>.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "2c_Overrides",
+          "files" : {
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class WitzeApp {\n    private static WitzAPI api;\n\n    public static void main(String[] args) {\n        Witz witz;\n\n        witz = new FrageAntwortWitz(\"Wie heisst ein Ritter ohne Ruestung?\", \"Wilhelm\");\n\n        System.out.println(witz.getWitz());\n    }\n}\n"
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [
+                {
+                  "offset" : 556,
+                  "length" : 49,
+                  "possible_answer" : "@Override\n    public String getWitz() {\n        return this.frage+\" \"+this.antwort;\n    }",
+                  "placeholder_text" : "Entwickeln Sie die Override-Methode getWitz hier."
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class FrageAntwortWitz extends Witz {\n    private String frage;\n    private String antwort;\n\n    public FrageAntwortWitz(String frage, String antwort) {\n        super(null);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public FrageAntwortWitz(String frage, String antwort, Kategorie kategorie) {\n        super(null, kategorie);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public String getFrage() {\n        return frage;\n    }\n\n    public String getAntwort() {\n        return antwort;\n    }\n\n    Entwickeln Sie die Override-Methode getWitz hier.\n}"
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Kategorie {\n    String kategorie;\n\n    public Kategorie(String kategorie) {\n        this.kategorie = kategorie;\n    }\n\n    @Override\n    public String toString() {\n        return kategorie;\n    }\n}"
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Witz {\n    private String witz;\n    protected Kategorie kategorie;\n\n    public Witz(String witz) {\n        this.witz = witz;\n    }\n\n    public Witz(String witz, Kategorie kategorie) {\n        this.witz = witz;\n        this.kategorie = kategorie;\n    }\n\n    public String getWitz() {\n        return witz;\n    }\n\n    public Kategorie getKategorie() {\n        return kategorie;\n    }\n}"
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 38,
+                  "dependency" : {
+                    "lesson" : "Uebung6",
+                    "task" : "2b_Schnittstelle",
+                    "file" : "src/WitzAPI.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "public interface WitzAPI {\n    Witz getZufallswitz();\n    Witz[] getWitze(Kategorie kategorie);\n    Kategorie[] getKategorien();\n}",
+                  "placeholder_text" : "Entwickeln Sie die Schnittstelle hier."
+                }
+              ],
+              "is_visible" : true,
+              "text" : "Entwickeln Sie die Schnittstelle hier."
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Witz witz = new FrageAntwortWitz(\"a\", \"b\");\n    Assert.assertEquals(\"a b\", witz.getWitz());\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>Bevor wir weitermachen, noch eine unschöne Sache: Wenn ein Witz von der Klasse <code>FrageAntwortWitz</code> ist und wir dann dessen <code>getWitz()</code>-Methode aufrufen, kommt <code>null</code> zurück, da ja die Member-Variable <code>witz</code> im Konstruktor auf <code>null</code> gesetzt wurde.</p>\n<p><b>Überschreiben Sie unter Verwendung der <code>@Overrides</code>-Notation in der <code>FrageAntwortWitz</code>-Klasse die Methode <code>getWitz()</code> so, dass sie die <code>frage</code>, dann ein Leerzeichen und dann die <code>antwort</code> ausgibt.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "2d_implements",
+          "files" : {
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class WitzeApp {\n    private static WitzAPI api;\n\n    public static void main(String[] args) {\n        api = new MeineTestAPI();\n\n        System.out.println(\"= Kategorien =\");\n        for(Kategorie k : api.getKategorien()) {\n            System.out.println(k);\n        }\n\n        Kategorie k = api.getKategorien()[0];\n\n        System.out.println();\n        System.out.println(\"= Witze =\");\n        for(Witz w : api.getWitze(k)) {\n            System.out.println(w.getWitz());\n        }\n\n        System.out.println();\n        System.out.println(\"= Zufallswitz =\");\n        System.out.println(api.getZufallswitz().getWitz());\n    }\n}\n"
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [
+                {
+                  "offset" : 556,
+                  "length" : 49,
+                  "dependency" : {
+                    "lesson" : "Uebung6",
+                    "task" : "2c_Overrides",
+                    "file" : "src/FrageAntwortWitz.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "@Override\n    public String getWitz() {\n        return this.frage+\" \"+this.antwort;\n    }",
+                  "placeholder_text" : "Entwickeln Sie die Override-Methode getWitz hier."
+                }
+              ],
+              "is_visible" : true,
+              "text" : "public class FrageAntwortWitz extends Witz {\n    private String frage;\n    private String antwort;\n\n    public FrageAntwortWitz(String frage, String antwort) {\n        super(null);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public FrageAntwortWitz(String frage, String antwort, Kategorie kategorie) {\n        super(null, kategorie);\n        this.frage = frage;\n        this.antwort = antwort;\n    }\n\n    public String getFrage() {\n        return frage;\n    }\n\n    public String getAntwort() {\n        return antwort;\n    }\n\n    Entwickeln Sie die Override-Methode getWitz hier.\n}"
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Kategorie {\n    String kategorie;\n\n    public Kategorie(String kategorie) {\n        this.kategorie = kategorie;\n    }\n\n    @Override\n    public String toString() {\n        return kategorie;\n    }\n}"
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Witz {\n    private String witz;\n    protected Kategorie kategorie;\n\n    public Witz(String witz) {\n        this.witz = witz;\n    }\n\n    public Witz(String witz, Kategorie kategorie) {\n        this.witz = witz;\n        this.kategorie = kategorie;\n    }\n\n    public String getWitz() {\n        return witz;\n    }\n\n    public Kategorie getKategorie() {\n        return kategorie;\n    }\n}"
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 38,
+                  "dependency" : {
+                    "lesson" : "Uebung6",
+                    "task" : "2c_Overrides",
+                    "file" : "src/WitzAPI.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "public interface WitzAPI {\n    Witz getZufallswitz();\n    Witz[] getWitze(Kategorie kategorie);\n    Kategorie[] getKategorien();\n}",
+                  "placeholder_text" : "Entwickeln Sie die Schnittstelle hier."
+                }
+              ],
+              "is_visible" : true,
+              "text" : "Entwickeln Sie die Schnittstelle hier."
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    WitzAPI api = new MeineTestAPI();\n    Assert.assertNotNull(api.getZufallswitz());\n    Assert.assertNotNull(api.getKategorien());\n    Kategorie k = null;\n    if(api.getKategorien().length > 0) {\n      k = api.getKategorien()[0];\n    }\n    Assert.assertNotNull(api.getWitze(k));\n  }\n}"
+            },
+            "src/MeineTestAPI.java" : {
+              "name" : "src/MeineTestAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 31,
+                  "possible_answer" : "public class MeineTestAPI implements WitzAPI {\n\n    private static final Kategorie[] KATEGORIEN = { new Kategorie(\"Essen\"), new Kategorie(\"Trinken\") };\n\n    @Override\n    public Witz getZufallswitz() {\n        return new Witz(\"Geht ein Mathematiker an der Kneipe vorbei.\", KATEGORIEN[1]);\n    }\n\n    @Override\n    public Witz[] getWitze(Kategorie kategorie) {\n        Witz[] witze = {new FrageAntwortWitz(\"Wo geht ein Wal essen?\", \"Ins Wallokal\"),\n                        new Witz(\"Brechstangen werden aus Diebstahl gefertigt.\")};\n        return witze;\n    }\n\n    @Override\n    public Kategorie[] getKategorien() {\n        return KATEGORIEN;\n    }\n}",
+                  "placeholder_text" : "Entwickeln Sie die Klasse hier."
+                }
+              ],
+              "is_visible" : true,
+              "text" : "Entwickeln Sie die Klasse hier."
+            }
+          },
+          "description_text" : "<html>\n<p>Ich muss Sie leider hier enttäuschen. Wir entwickeln unsere App erst auf dem nächsten Übungsblatt zu Ende.</p>\n<p><b>Implementieren Sie nun zum Testen eine Klasse <code>MeineTestAPI</code>, die Ihr Interface <code>WitzAPI</code> implementiert.</b></p>\n<p>Geben Sie in den drei zu implementierenden Methoden einfach irgendwas zurück (aber nicht <code>null</code>!), z. B. einen leeren Array mit Witzen bzw. Kategorien.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "framework"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "buildscript {\n    repositories {\n        mavenCentral()\n    }\n}\n\ndef printOutput(def output) {\n    return tasks.create(\"printOutput\") {\n        for (line in output.toString().readLines()) {\n            println \"#educational_plugin\" + line\n        }\n    }\n}\n\nsubprojects {\n    apply plugin: 'application'\n    apply plugin: 'java'\n\n    sourceCompatibility = 1.8\n\n    repositories {\n        mavenCentral()\n    }\n\n    dependencies {\n        testCompile group: 'junit', name: 'junit', version: '4.12'\n    }\n\n    sourceSets {\n        main {\n            java.srcDir 'src'\n        }\n        test {\n            java.srcDir 'test'\n        }\n    }\n\n    mainClassName = project.hasProperty(\"mainClass\") ? project.getProperty(\"mainClass\") : \"\"\n\n    def runOutput = new ByteArrayOutputStream()\n    tasks.run.setStandardOutput(runOutput)\n    tasks.run.doLast { printOutput(runOutput) }\n}\n\nproject(':util') {\n    dependencies {\n        compile group: 'junit', name: 'junit', version: '4.12'\n    }\n}\n\nconfigure(subprojects.findAll {it.name != 'util'}) {\n  dependencies {\n    compile project(':util').sourceSets.main.output\n    testCompile project(':util').sourceSets.test.output\n  }\n}\n"
+    }
+  ],
+  "version" : 11
+}

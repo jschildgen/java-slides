@@ -1,0 +1,35 @@
+type: edu
+files:
+- name: src/APIHelper.java
+  visible: true
+- name: test/Tests.java
+  visible: false
+- name: src/MeineTestAPI.java
+  visible: true
+- name: src/WitzeApp.java
+  visible: true
+  placeholders:
+  - offset: 139
+    length: 196
+    placeholder_text: ""
+- name: src/WitzAPI.java
+  visible: true
+  placeholders:
+  - offset: 81
+    length: 19
+    placeholder_text: ""
+  - offset: 0
+    length: 28
+    placeholder_text: ""
+- name: src/Witz.java
+  visible: true
+- name: src/Kategorie.java
+  visible: true
+- name: src/FrageAntwortWitz.java
+  visible: true
+- name: src/ChuckNorrisAPI.java
+  visible: true
+  placeholders:
+  - offset: 146
+    length: 19
+    placeholder_text: ""

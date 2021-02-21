@@ -1,0 +1,13 @@
+type: output
+files:
+- name: test/output.txt
+  visible: false
+- name: src/Adresse.java
+  visible: true
+  placeholders:
+  - offset: 235
+    length: 38
+    placeholder_text: ""
+  - offset: 286
+    length: 23
+    placeholder_text: ""

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programmieren 2 - Übungsklausur</title>
+    <link rel="stylesheet" href="../src/exercises.css">
+    <link href="../lib/fontawesome.all.min.css" rel="stylesheet">
+    <link href="../src/erd.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/joint.min.css" />
+</head>
+<body>
+    <header>
+        <div>
+        <div>
+            <b>Programmieren 2 (Java) - WS 2020/21</b><br>
+            Prof. Dr.-Ing. Johannes Schildgen<br>
+            johannes.schildgen@oth-regensburg.de<br>
+            <b>Übungsaufgaben zur Prüfungsvorbereitung</b>
+        </div>
+        <div><img src="../img/oth.png" style="border:0; height:50px"></div>
+    </div>
+    <hr>
+    </header>
+<section style="padding-top: 2.5cm">
+        <h1>Aufgabe 1: Variablen und Datentypen</h1>
+        
+        <p>Initialisieren Sie die folgenden Variablen mit einem gültigen Wert (nicht <code>null</code>). Das Importieren der benötigten Klassen und Interfaces ist nicht nötig.</p>
+
+        <pre style="font-size: xx-large;"><code>int i =                         
+
+List&lt;String&gt; l =                         
+
+Map&lt;String, Integer&gt; m =                         
+
+Comparator&lt;String&gt; c =                         
+</code></pre>
+    </section>
+
+
+    <section style="padding-top: 2.5cm">
+        <h1>Aufgabe 2: Klassen und Subklassen</h1>
+        
+        <p>Betrachten Sie die folgende Klasse <code>Benutzer</code>:</p>
+
+        <pre style="font-size: xx-large;"><code>public class Benutzer {
+    private String email;
+    private String passwort;
+}</code></pre>
+
+    <ol>
+        <li>Entwickeln Sie einen Konstruktor mit einem Parameter <code>email</code>. Dieser soll eine <code>IllegalArgumentException</code> werfen, wenn die E-Mail-Adresse kein @-Symbol enthält.</li>
+        <li>Entwickeln Sie die Getter-Methode <code>getEmail()</code></li>
+        <li>Entwickeln Sie eine statische Methode <code>passwort_staerke(String passwort)</code>, die eine Punktzahl (1, 2 oder 3) ausgibt, je nachdem wie stark das Passwort ist. Wenn das Passwort (a) länger als 8 Zeichen ist und außerdem (b) sowohl aus Groß- als auch aus Kleinbuchstaben besteht, gibt es drei Punkte. Ist nur eines davon erfüllt (a oder b), gibt es zwei Punkte, ansonsten nur einen.</li>
+        <li>Entwickeln Sie eine Klasse <code>Admin</code>, die von <code>Benutzer</code> erbt. Rufen Sie im Konstruktor, der ebenfalls nur die E-Mail-Adresse entgegennimmt den Konstruktor der Klasse <code>Benutzer</code> auf.</li>
+    </ol>
+    </section>
+
+    <section style="page-break-inside:avoid; padding-top: 1cm">
+        <h1>Aufgabe 3: Arrays, Collections und Lambda-Ausdrücke</h1>
+        
+        <p>Gegeben sind die folgenden Variablen:</p>
+
+        <pre style="font-size: xx-large;"><code>Integer[] array = { 1, 2, 3 };
+List&lt;Integer&gt; liste = Arrays.asList(array);</code></pre>
+
+    <ol>
+        <li>Modifizieren Sie den Array so, dass das dritte Element nun 5 ist.</li>
+        <li>Fügen Sie den Wert 4 ans Ende der Liste hinzu.</li>
+        <li>Verwenden Sie eine for-each-Schleife, um alle Elemente des Arrays auszugeben.</li>
+        <li>Verwenden Sie die forEach-Methode, um alle Elemente der Liste auszugeben.</li>
+        <li>Berechnen Sie mithilfe eines Lambda-Ausdrucks die Summe der Zahlen in der Liste und schreiben Sie das Ergebnis in eine Integer-Variable <code>summe</code>.</li>
+    </ol>
+    </section>
+
+    <section style="page-break-inside:avoid; padding-top: 2.5cm">
+        <h1>Aufgabe 4: UML</h1>
+        
+        <p>Entwerfen Sie ein UML-Diagramm für eine Pizza-Bestell-App. Wenn nicht anders angegeben sind die Member-Variablen stets <code>private</code>.</p>
+        <p>Ein Kunde hat einen Namen, eine Adresse und eine Telefonnummer (alles Strings). Es gibt auch Stammkunden. Diese haben zusätzlich noch ein Passwort und sammeln Bonuspunkte. Die jeweiligen Konstruktoren nehmen jeweils nur den Namen entgegen. Für die anderen Attribute gibt es Getter und Setter.</p>
+        <p>Jede Pizza hat eine Bezeichnung, eine Größe (in cm), einen Preis (BigDecimal) und einen Array mit Zutaten. Der Konstruktor nimmt nur die Bezeichnung; auch hier gibt es Getter und Setter für die vier Attribute.</p>
+        <p>Die Klasse Pizza implementiert das Interface Comparable und die dafür benötigte Methode, um eine Pizza mit einer anderen Pizza zu vergleichen.</p>
+        <p>In der Klasse Pizza gibt es eine öffentliche Klassen-Konstante <code>WAEHRUNG</code>.</p>
+        <p>Eine Bestellung hat eine Bestellnummer, eine Referenz zum Kunden, der sie aufgegeben hat, sowie einen Array mit bestellten Pizzas.</p>
+    </section>
+
+    <section style="page-break-inside:avoid; padding-top: 1cm">
+        <h1>Aufgabe 5: JavaFX</h1>
+        Betrachten Sie die folgende FXML eines JavaFX-Programms:
+        <pre style="font-size: xx-large;"><code>&lt;VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="quatsch.QuatschController"
+            prefHeight="400.0" prefWidth="600.0"
+            alignment="CENTER"&gt;
+        &lt;Label&gt;Wirklich den Nein-Knopf deaktivieren?&lt;/Label&gt;
+        &lt;HBox alignment="CENTER"&gt;
+        &lt;Button text="Ja" onAction="#neinknopf_deaktivieren"/&gt;
+        &lt;Button text="Nein" fx:id="neinknopf"/&gt;
+        &lt;/HBox&gt;
+        &lt;/VBox&gt;</code></pre>
+        
+        <ol>
+            <li>Zeichnen Sie auf, wie in etwa das Programmfenster dieser Anwendung aussieht.</li>
+            <li>Entwickeln Sie die Klasse <code>QuatschController</code> samt der Methode <code>public void neinknopf_deaktivieren(ActionEvent actionEvent)</code>. Diese Methode soll den Nein-Button deaktivieren, sodass er nicht mehr gedrückt werden kann.</li>
+        </ol>
+        </section>
+
+    <section style="page-break-inside:avoid; padding-top: 2.5cm">
+        <h1>Aufgabe 6: Exceptions, JavaDoc</h1>
+        <p>Füllen Sie die Lücken im folgenden Java-Programm:</p>
+        <ul>
+            <li>Der Benutzer gibt einen Dateinamen ein.</li>
+            <li>Die Datei wird neu angelegt.</li>
+            <li>Kann die Datei nicht angelegt werden, wird &quot;Die Datei kann nicht angelegt werden.&quot; angezeigt.</li>
+            <li>Die <code>datei_anlegen</code>-Methode soll die <code>IOException</code> weiterwerfen, die <code>main</code>-Methode soll sie abfangen.</li>
+            <li>Formulieren Sie eine Javadoc für die Methode <code>datei_anlegen</code></li>
+        </ul>
+
+        <pre style="font-size: xx-large;"><code>
+public               Dateien {
+
+    public static void main(                         ) {
+        Scanner scan = new Scanner(                    );
+
+        
+
+            System.out.print("Bitte einen Dateinamen eingeben: ");
+            Path datei = Paths.get(scan.nextLine());
+            datei_anlegen(datei);
+        
+
+
+
+    }
+
+    
+
+
+
+
+
+
+    
+    private static void datei_anlegen(                   )                             {
+
+        Files.createFile(                   );
+    }
+}</code></pre>
+
+</section>
+
+<section>
+    <h1>Aufgabe 7: Threads</h1>
+    <p>In der vorherigen Aufgabe wurde <code>datei_anlegen(datei);</code> aufgerufen. Nehmen wir an, dieser Aufruf würde sehr lange dauern, daher soll er im Hintergrund erfolgen und das Programm soll ganz normal weiterlaufen. Entwickeln Sie mithilfe eines Threads diese asynchrone Ausführung.</p>
+</section>
+
+
+    
+
+
+<script src="../lib/jquery.js"></script>
+<script src="../lib/lodash.js"></script>
+<script src="../lib/backbone.js"></script>
+<script src="../lib/joint.min.js"></script>
+<script type="text/javascript">
+Reveal = document;
+Reveal.registerPlugin = function(pluginname, plugin) {
+    plugin.init()
+};
+Reveal.addEventListener = function(event, f) {
+    if(event == 'ready') {
+        f();
+    }
+}
+</script>
+<script type="text/javascript" src="../src/erd.js"></script>
+
+</body>
+</html>

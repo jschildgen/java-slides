@@ -1,0 +1,15 @@
+type: edu
+files:
+- name: src/APIHelper.java
+  visible: true
+  placeholders:
+  - offset: 1287
+    length: 135
+    placeholder_text: ""
+  - offset: 1148
+    length: 5
+    placeholder_text: ""
+- name: src/Main.java
+  visible: true
+- name: test/Tests.java
+  visible: false

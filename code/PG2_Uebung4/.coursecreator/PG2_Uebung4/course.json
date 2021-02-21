@@ -1,0 +1,485 @@
+{
+  "summary" : "Programmieren 2 - Uebungsblatt 4\nSS2020, Prof. Schildgen, OTH Regensburg",
+  "title" : "PG2_Uebung4",
+  "authors" : [
+    "Johannes"
+  ],
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "Uebung4",
+      "task_list" : [
+        {
+          "name" : "1_Banking",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Konto[] konto = new Konto[10];\n    for(int i=0;i<konto.length;i++) {\n      konto[i] = new Konto();\n      if(i > 0) {\n        Assert.assertEquals(1, konto[i].getKontonr()-konto[i-1].getKontonr());\n      }\n    }\n  }\n}"
+            },
+            "src/Konto.java" : {
+              "name" : "src/Konto.java",
+              "placeholders" : [
+                {
+                  "offset" : 117,
+                  "length" : 0,
+                  "possible_answer" : "private static long next_kontonummer = 555555L;",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 148,
+                  "length" : 0,
+                  "possible_answer" : "kontonr = next_kontonummer;\n        next_kontonummer++;",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.math.BigDecimal;\n\npublic class Konto {\n    private long kontonr;\n    private BigDecimal kontostand;\n\n    \n\n    public Konto() {\n        \n    }\n\n    public long getKontonr() {\n        return kontonr;\n    }\n\n    public BigDecimal getKontostand() {\n        return kontostand;\n    }\n\n    public void einzahlen(BigDecimal d) {\n        this.kontostand = this.kontostand.add(d);\n    }\n}\n"
+            },
+            "src/Bank.java" : {
+              "name" : "src/Bank.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Bank {\n    public static void main(String[] args) {\n        Konto k1 = new Konto();\n        Konto k2 = new Konto();\n\n        System.out.println(k1.getKontonr());\n        System.out.println(k2.getKontonr());\n    }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>Für eine Bank-Anwendung wird eine Klasse <code>Konto</code> benötigt. Diese Klasse ist bereits erstellt worden, jedoch ist sie noch nicht ganz fertig.</p>\n<p>Im Moment hat jedes neu erstellte Konto die Kontonummer <code>0</code>. Nun wird es jedoch gewünscht, dass ein neues Konto eine automatisch generierte eindeutige Kontonummer erhält, beginnend mit 555555.</p>\n<ul>\n    <li><b>Erstellen Sie in der <code>Konto</code>-Klasse eine statische Member-Variable <code>next_kontonummer = 555555</code></b>, in der stets die als nächstes zu vergebende Kontonummer gespeichert wird. Verwenden Sie dafür den Datentyp <code>long</code>.</li>\n    <li><b>Sorgen Sie im Konstruktor <code>Konto()</code> dafür, dass ein neu erstelltes Konto die in <code>next_kontonummer</code> stehende Kontonummer erhält</b>. Zählen Sie zudem <code>next_kontonummer</code> um eins hoch.</li>\n    <li>Von außerhalb der Klasse <code>Konto</code> soll niemand Einblick in diese Variable haben dürfen!</li>\n</ul>\n\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "2a_Waehrung",
+          "files" : {
+            "src/Konto.java" : {
+              "name" : "src/Konto.java",
+              "placeholders" : [
+                {
+                  "offset" : 117,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "1_Banking",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "private static long next_kontonummer = 555555L;",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 122,
+                  "length" : 0,
+                  "possible_answer" : "public static final String WAEHRUNG = \"EUR\";",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 153,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "1_Banking",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 1,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "kontonr = next_kontonummer;\n        next_kontonummer++;",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.math.BigDecimal;\n\npublic class Konto {\n    private long kontonr;\n    private BigDecimal kontostand;\n\n    \n    \n\n    public Konto() {\n        \n    }\n\n    public long getKontonr() {\n        return kontonr;\n    }\n\n    public BigDecimal getKontostand() {\n        return kontostand;\n    }\n\n    public void einzahlen(BigDecimal d) {\n        this.kontostand = this.kontostand.add(d);\n    }\n}\n"
+            },
+            "src/Bank.java" : {
+              "name" : "src/Bank.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Bank {\n    public static void main(String[] args) {\n        System.out.println(\"Waehrung: \"+Konto.WAEHRUNG);\n    }\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Assert.assertEquals(\"EUR\", Konto.WAEHRUNG);\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>Alle unsere Konten sollen in der gleichen Währung geführt werden.</p>\n<p><b>Führen Sie in die <code>Konto</code>-Klasse eine statische Konstante <code>WAEHRUNG = \"EUR\"</code> ein.</b></p>\n<p>Von überall aus soll der Zugriff auf diese Klassenvariable möglich sein.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "2b_BigDecimal",
+          "files" : {
+            "src/Konto.java" : {
+              "name" : "src/Konto.java",
+              "placeholders" : [
+                {
+                  "offset" : 110,
+                  "length" : 0,
+                  "possible_answer" : " = BigDecimal.ZERO",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 117,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2a_Waehrung",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "private static long next_kontonummer = 555555L;",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 122,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2a_Waehrung",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 1,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "public static final String WAEHRUNG = \"EUR\";",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 153,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2a_Waehrung",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 2,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "kontonr = next_kontonummer;\n        next_kontonummer++;",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.math.BigDecimal;\n\npublic class Konto {\n    private long kontonr;\n    private BigDecimal kontostand;\n\n    \n    \n\n    public Konto() {\n        \n    }\n\n    public long getKontonr() {\n        return kontonr;\n    }\n\n    public BigDecimal getKontostand() {\n        return kontostand;\n    }\n\n    public void einzahlen(BigDecimal d) {\n        this.kontostand = this.kontostand.add(d);\n    }\n}\n"
+            },
+            "src/Bank.java" : {
+              "name" : "src/Bank.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "public class Bank {\n    public static void main(String[] args) {\n        Konto konto = new Konto();\n        System.out.println(\"Kontostand: \"+konto.getKontostand());\n    }\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport java.math.BigDecimal;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Konto konto = new Konto();\n    Assert.assertNotEquals(\"Der Kontostand ist null!\", null, konto.getKontostand());\n    Assert.assertEquals(0, BigDecimal.ZERO.compareTo(konto.getKontostand()));\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p>Für Dezimalzahlen mit einer festen Anzahl von Nachkommastellen (z. B. Geldbeträge) wird häufig die Klasse <code>BigDecimal</code> verwendet.</p>\n<p>Die Arbeit mit <code>BigDecimal</code>-Zahlen ist leider nicht so komfortabel wie mit <code>Integer</code> und Co. Schauen Sie sich zum Beispiel die Methode <code>einzahlen</code> an.</p>\n<p>Im Moment hat ein neu erstelltes Konto noch den Kontostand <code>null</code>.</p>\n<p><b>Initialisieren Sie den Kontostand jedes neu erstellten Kontos mit <code>0</code>.</b></p>\n<p>Tipp: Die Klasse <code>BigDecimal</code> hat dafür eine passende Klassen-Konstante parat.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "2c_auszahlen",
+          "files" : {
+            "src/Konto.java" : {
+              "name" : "src/Konto.java",
+              "placeholders" : [
+                {
+                  "offset" : 110,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2b_BigDecimal",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : " = BigDecimal.ZERO",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 117,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2b_BigDecimal",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 1,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "private static long next_kontonummer = 555555L;",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 122,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2b_BigDecimal",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 2,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "public static final String WAEHRUNG = \"EUR\";",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 153,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2b_BigDecimal",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 3,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "kontonr = next_kontonummer;\n        next_kontonummer++;",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 400,
+                  "length" : 0,
+                  "possible_answer" : "public void auszahlen(BigDecimal d) {\n        this.kontostand = this.kontostand.subtract(d);\n    }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.math.BigDecimal;\n\npublic class Konto {\n    private long kontonr;\n    private BigDecimal kontostand;\n\n    \n    \n\n    public Konto() {\n        \n    }\n\n    public long getKontonr() {\n        return kontonr;\n    }\n\n    public BigDecimal getKontostand() {\n        return kontostand;\n    }\n\n    public void einzahlen(BigDecimal d) {\n        this.kontostand = this.kontostand.add(d);\n    }\n\n    \n}\n"
+            },
+            "src/Bank.java" : {
+              "name" : "src/Bank.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "import java.math.BigDecimal;\n\npublic class Bank {\n    public static void main(String[] args) {\n        Konto konto = new Konto();\n        konto.einzahlen(new BigDecimal(\"185.25\"));\n        konto.auszahlen(new BigDecimal(\"80.01\"));\n        System.out.println(\"Kontostand: \"+konto.getKontostand());\n    }\n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport java.math.BigDecimal;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Konto konto = new Konto();\n    konto.auszahlen(new BigDecimal(\"1.11\"));\n    konto.auszahlen(new BigDecimal(\"2.22\"));\n    Assert.assertEquals(new BigDecimal(\"-3.33\"),konto.getKontostand());\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p><b>Entwickeln Sie in der Klasse <code>Konto</code> die Methode <code>auszahlen(BigDecimal)</code></b>.</p>\n<p><code>auszahlen</code> nimmt eine <code>BigDecimal</code>-Zahl entgegen und reduziert den Kontostand um ebendiesen Betrag.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "2d_ueberweisen",
+          "files" : {
+            "src/Konto.java" : {
+              "name" : "src/Konto.java",
+              "placeholders" : [
+                {
+                  "offset" : 110,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2c_auszahlen",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : " = BigDecimal.ZERO",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 117,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2c_auszahlen",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 1,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "private static long next_kontonummer = 555555L;",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 122,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2c_auszahlen",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 2,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "public static final String WAEHRUNG = \"EUR\";",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 153,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2c_auszahlen",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 3,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "kontonr = next_kontonummer;\n        next_kontonummer++;",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.math.BigDecimal;\n\npublic class Konto {\n    private long kontonr;\n    private BigDecimal kontostand;\n\n    \n    \n\n    public Konto() {\n        \n    }\n\n    public long getKontonr() {\n        return kontonr;\n    }\n\n    public BigDecimal getKontostand() {\n        return kontostand;\n    }\n\n    public void einzahlen(BigDecimal d) {\n        this.kontostand = this.kontostand.add(d);\n    }\n\n    public void auszahlen(BigDecimal d) {\n        this.kontostand = this.kontostand.subtract(d);\n    }\n}\n"
+            },
+            "src/Bank.java" : {
+              "name" : "src/Bank.java",
+              "placeholders" : [
+                {
+                  "offset" : 434,
+                  "length" : 0,
+                  "possible_answer" : "public static void ueberweisen(Konto k1, Konto k2, BigDecimal betrag) {\n        k1.auszahlen(betrag);\n        k2.einzahlen(betrag);\n    }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.math.BigDecimal;\n\npublic class Bank {\n    public static void main(String[] args) {\n        Konto k1 = new Konto();\n        Konto k2 = new Konto();\n        Bank.ueberweisen(k1, k2, new BigDecimal(\"29.9\"));\n        System.out.printf(\"Konto %d: %.2f %s\\n\", k1.getKontonr(), k1.getKontostand(), Konto.WAEHRUNG);\n        System.out.printf(\"Konto %d: %.2f %s\\n\", k2.getKontonr(), k2.getKontostand(), Konto.WAEHRUNG);\n    }\n\n    \n}"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import org.junit.Assert;\nimport org.junit.Test;\n\nimport java.math.BigDecimal;\n\npublic class Tests {\n  @Test\n  public void testSolution() {\n    Konto k1 = new Konto();\n    Konto k2 = new Konto();\n    Bank.ueberweisen(k1, k2, BigDecimal.ONE);\n    Assert.assertEquals(BigDecimal.ZERO.subtract(BigDecimal.ONE), k1.getKontostand());\n    Assert.assertEquals(BigDecimal.ONE, k2.getKontostand());\n  }\n}"
+            }
+          },
+          "description_text" : "<html>\n<p><b>Entwickeln Sie in der Klasse <code>Bank</code> eine statische Methode <code>public static void ueberweisen(Konto, Konto, BigDecimal)</code>, welche den gegebenen Betrag vom ersten Konto abzieht und auf das zweite Konto aufaddiert.</b></p>\n<p>Tipp: Verwenden Sie in dieser Methode die Methoden <code>auszahlen</code> und <code>einzahlen</code>.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "edu"
+        },
+        {
+          "name" : "2e_compareTo",
+          "files" : {
+            "src/Konto.java" : {
+              "name" : "src/Konto.java",
+              "placeholders" : [
+                {
+                  "offset" : 110,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2d_ueberweisen",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : " = BigDecimal.ZERO",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 117,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2d_ueberweisen",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 1,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "private static long next_kontonummer = 555555L;",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 122,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2d_ueberweisen",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 2,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "public static final String WAEHRUNG = \"EUR\";",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 153,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2d_ueberweisen",
+                    "file" : "src/Konto.java",
+                    "placeholder" : 3,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "kontonr = next_kontonummer;\n        next_kontonummer++;",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.math.BigDecimal;\n\npublic class Konto {\n    private long kontonr;\n    private BigDecimal kontostand;\n\n    \n    \n\n    public Konto() {\n        \n    }\n\n    public long getKontonr() {\n        return kontonr;\n    }\n\n    public BigDecimal getKontostand() {\n        return kontostand;\n    }\n\n    public void einzahlen(BigDecimal d) {\n        this.kontostand = this.kontostand.add(d);\n    }\n\n    public void auszahlen(BigDecimal d) {\n        this.kontostand = this.kontostand.subtract(d);\n    }\n}\n"
+            },
+            "src/Bank.java" : {
+              "name" : "src/Bank.java",
+              "placeholders" : [
+                {
+                  "offset" : 263,
+                  "length" : 0,
+                  "possible_answer" : "k1.getKontostand().compareTo(k2.getKontostand()) == 0",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 363,
+                  "length" : 0,
+                  "dependency" : {
+                    "lesson" : "Uebung4",
+                    "task" : "2d_ueberweisen",
+                    "file" : "src/Bank.java",
+                    "placeholder" : 0,
+                    "is_visible" : false
+                  },
+                  "possible_answer" : "public static void ueberweisen(Konto k1, Konto k2, BigDecimal betrag) {\n        k1.auszahlen(betrag);\n        k2.einzahlen(betrag);\n    }",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "import java.math.BigDecimal;\n\npublic class Bank {\n    public static void main(String[] args) {\n        Konto k1 = new Konto();\n        Konto k2 = new Konto();\n        k1.einzahlen(new BigDecimal(\"100\"));\n        k2.einzahlen(new BigDecimal(\"100.00\"));\n        if() {\n            System.out.println(\"Auf beiden Konten ist gleich viel Geld.\");\n        }\n    }\n\n    \n}"
+            },
+            "test/output.txt" : {
+              "name" : "test/output.txt",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "Auf beiden Konten ist gleich viel Geld.\n"
+            }
+          },
+          "description_text" : "<html>\n<p>Auf dem einen Konto sind 100 EUR, auf dem anderen sind 100.00 EUR. Da sollte man doch meinen, dass die beiden Kontostände gleich sind, oder?</p>\n<p><code>k1.getKontostand()==k2.getKontostand()</code> liefert natürlich <code>false</code>, weil es sich ja um zwei verschiedene <code>BigDecimal</code>-Objekte handelt. Aber auch <code>k1.getKontostand(equals(k2.getKontostand())</code> ist hier <code>false</code>, weil sich die beiden <code>BigDecimal</code>-Zahlen in der Anzahl ihrer Nachkommastellen unterscheiden.</p>\n<p><b>Was Sie hier benötigen, ist die Methode <code>compareTo</code>, die sich in der <code>BigDecimal-Klasse</code> befindet. Verwenden Sie sie, um zu überprüfen, ob beide Kontostände gleich hoch sind.</b></p>\n<p>Tipp: <code>a.compareTo(b)</code> liefert eine negative Zahl, wenn a kleiner als b ist, eine positive Zahl, wenn a größer als b ist, und 0, wenn a gleich b ist.</p>\n</html>",
+          "description_format" : "HTML",
+          "feedback_link" : {
+            "link_type" : "STEPIK"
+          },
+          "task_type" : "output"
+        }
+      ],
+      "type" : "framework"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "buildscript {\n    repositories {\n        mavenCentral()\n    }\n}\n\ndef printOutput(def output) {\n    return tasks.create(\"printOutput\") {\n        for (line in output.toString().readLines()) {\n            println \"#educational_plugin\" + line\n        }\n    }\n}\n\nsubprojects {\n    apply plugin: 'application'\n    apply plugin: 'java'\n\n    sourceCompatibility = 1.8\n\n    repositories {\n        mavenCentral()\n    }\n\n    dependencies {\n        testCompile group: 'junit', name: 'junit', version: '4.12'\n    }\n\n    sourceSets {\n        main {\n            java.srcDir 'src'\n        }\n        test {\n            java.srcDir 'test'\n        }\n    }\n\n    mainClassName = project.hasProperty(\"mainClass\") ? project.getProperty(\"mainClass\") : \"\"\n\n    def runOutput = new ByteArrayOutputStream()\n    tasks.run.setStandardOutput(runOutput)\n    tasks.run.doLast { printOutput(runOutput) }\n}\n\nproject(':util') {\n    dependencies {\n        compile group: 'junit', name: 'junit', version: '4.12'\n    }\n}\n\nconfigure(subprojects.findAll {it.name != 'util'}) {\n  dependencies {\n    compile project(':util').sourceSets.main.output\n    testCompile project(':util').sourceSets.test.output\n  }\n}\n"
+    }
+  ],
+  "version" : 11
+}

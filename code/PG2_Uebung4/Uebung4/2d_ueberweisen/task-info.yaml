@@ -1,0 +1,49 @@
+type: edu
+files:
+- name: src/Konto.java
+  visible: true
+  placeholders:
+  - offset: 110
+    length: 3
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2c_auszahlen
+      file: src/Konto.java
+      placeholder: 1
+      is_visible: false
+  - offset: 116
+    length: 0
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2c_auszahlen
+      file: src/Konto.java
+      placeholder: 2
+      is_visible: false
+  - offset: 117
+    length: 0
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2c_auszahlen
+      file: src/Konto.java
+      placeholder: 3
+      is_visible: false
+  - offset: 140
+    length: 0
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2c_auszahlen
+      file: src/Konto.java
+      placeholder: 4
+      is_visible: false
+- name: src/Bank.java
+  visible: true
+  placeholders:
+  - offset: 430
+    length: 0
+    placeholder_text: ""
+- name: test/Tests.java
+  visible: false

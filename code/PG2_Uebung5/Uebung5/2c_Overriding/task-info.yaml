@@ -1,0 +1,50 @@
+type: edu
+files:
+- name: src/Spieler.java
+  visible: true
+- name: src/MauMau.java
+  visible: true
+  placeholders:
+  - offset: 186
+    length: 58
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung5
+      task: 2b_Computergegner_Staerke
+      file: src/MauMau.java
+      placeholder: 1
+      is_visible: false
+  - offset: 292
+    length: 189
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung5
+      task: 2b_Computergegner_Staerke
+      file: src/MauMau.java
+      placeholder: 2
+      is_visible: false
+  - offset: 533
+    length: 121
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung5
+      task: 2b_Computergegner_Staerke
+      file: src/MauMau.java
+      placeholder: 3
+      is_visible: false
+- name: src/MenschlicherSpieler.java
+  visible: true
+- name: src/ComputerGegner.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 397
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung5
+      task: 2b_Computergegner_Staerke
+      file: src/ComputerGegner.java
+      placeholder: 1
+      is_visible: false
+- name: test/Tests.java
+  visible: false

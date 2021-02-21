@@ -1,0 +1,10 @@
+type: output
+files:
+- name: test/output.txt
+  visible: false
+- name: src/Todo.java
+  visible: true
+  placeholders:
+  - offset: 24
+    length: 41
+    placeholder_text: Definieren Sie den enum hier.

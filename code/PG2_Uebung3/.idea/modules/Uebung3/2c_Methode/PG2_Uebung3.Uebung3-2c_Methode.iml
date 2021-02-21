@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Uebung3-2c_Methode" external.linked.project.path="$MODULE_DIR$/../../../../Uebung3/2c_Methode" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="PG2_Uebung3" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../Uebung3/2c_Methode">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../Uebung3/2c_Methode/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../Uebung3/2c_Methode/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../Uebung3/2c_Methode/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

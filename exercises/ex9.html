@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programmieren 2 - Übungsblatt 10</title>
+    <link rel="stylesheet" href="../src/exercises.css">
+    <link href="../lib/fontawesome.all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+        <div>
+            <b>Programmieren 2 (Java) - WS 2020/21</b><br>
+            Prof. Dr.-Ing. Johannes Schildgen<br>
+            johannes.schildgen@oth-regensburg.de<br>
+            <b>Übungsblatt 10 vom 08.01.2021</b>
+        </div>
+        <div><img src="../img/oth.png" style="border:0; height:50px"></div>
+    </div>
+    <hr>
+    </header>
+    <section style="padding-top: 2.5cm">
+        <h1>Aufgabe 1: Generics und Collections</h1>
+        <p>Abgabe-Deadline: 08.01.2020 9:00 im Moodle</p>
+        <p>Welche der folgenden Aussagen sind wahr? Jede richtige Antwort gibt 1 Punkt.</p>
+        <table border="0" style="width: 100%">
+        <tr>
+            <td style="width:10mm">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td style="text-align: center; width:15mm">Richtig</td>
+            <td style="text-align: center; width:15mm">Falsch</td>
+        </tr>
+        <tr>
+            <td>1.</td><td>Nür Klassen (nicht Interfaces) dürfen generisch sein.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        <tr>
+            <td>2.</td><td>Eine generische Klasse darf keine nicht-generischen Subklassen haben.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        <tr>
+            <td>3.</td><td>public class MeineKlasse&lt;?&gt; ist eine gültige Klassensignatur.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        <tr>
+            <td>4.</td><td>Alle Member-Variablen der Klasse MeineKlasse&lt;T&gt; müssen vom Typ T sein.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        <tr>
+            <td>5.</td><td>Eine Methode der Klasse MeineKlasse&lt;T&gt; darf T zurückliefern.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        <tr>
+            <td>6.</td><td>In eine große ArrayList kann effizient am Ende etwas hinzugefügt werden.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        <tr>
+            <td>7.</td><td>Die compare-Methode einer Klasse, die Comparator implementiert, nimmt zwei Objekte entgegen und vergleicht diese.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        <tr>
+            <td>8.</td><td>In einem TreeSet werden die Einträge sortiert nach ihrer Einfügereihenfolge abgespeichert.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        <tr>
+            <td>9.</td><td>Bei for(a : b) muss b ein Iterable&lt;T&gt;-Objekt sein und a von der Klasse T.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        <tr>
+            <td>10.</td><td>Eine HashMap implementiert die Schnittstelle Iterable.</td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+            <td style="text-align: center"><i class="far fa-square"></i></td>
+        </tr>
+        </table>
+    </section>
+
+    <section style="page-break-inside:avoid; padding-top: -0.5cm">
+    <h1>Aufgabe 2: Länder-Spiel</h1>
+    <p>Entwickeln Sie das folgende Spiel in Java (alles in einer Klasse):</p>
+    <ul>
+        <li>Zunächst wird der Spieler aufgefordert, die Namen aller Spieler einzugeben. Das Spiel kann mit beliebig vielen Spielern gespielt werden (mind. 2).</li>
+        <li>Danach wird reihum jeder Spieler gefragt ein Land einzugeben.</li>
+        <li>Nennt ein Spieler ein Land, welches schon einmal genannt wurde, verliert der Spieler und scheidet aus.</li>
+        <li>Derjenige Spieler, der als einziges übrig bleibt, bekommt einen Punkt.</li>
+        <li>Danach kann eine neue Runde gestartet werden oder das Spiel wird beendet.</li>
+        <li>Am Ende soll ausgegeben werden, wie viele Punkte jeder Spieler erreicht hat.</li>
+    </ul>
+
+    <p>Beispiel-Ablauf einer Runde: Achim, Berta und Carla spielen. Achim nennt Deutschland, Berta sagt Italien, Carla sagt USA, Achim sagt Frankreich, Berta Deutschland. Damit scheidet Berta aus, weil Deutschland schon einmal genannt wurde, und es geht weiter mit Carla, dann Achim, dann wieder Carla, usw. Da Achim irgendwann das bereits genannte Land Frankreich nennt, gewinnt Carla einen Punkt.</p>
+</section>
+</body>
+</html>

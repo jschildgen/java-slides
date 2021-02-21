@@ -1,0 +1,39 @@
+type: edu
+files:
+- name: src/Konto.java
+  visible: true
+  placeholders:
+  - offset: 110
+    length: 4
+    placeholder_text: ""
+  - offset: 117
+    length: 0
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2a_Waehrung
+      file: src/Konto.java
+      placeholder: 1
+      is_visible: false
+  - offset: 118
+    length: 0
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2a_Waehrung
+      file: src/Konto.java
+      placeholder: 2
+      is_visible: false
+  - offset: 141
+    length: 0
+    placeholder_text: ""
+    dependency:
+      lesson: Uebung4
+      task: 2a_Waehrung
+      file: src/Konto.java
+      placeholder: 3
+      is_visible: false
+- name: src/Bank.java
+  visible: true
+- name: test/Tests.java
+  visible: false

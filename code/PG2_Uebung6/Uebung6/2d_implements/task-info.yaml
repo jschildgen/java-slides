@@ -1,0 +1,40 @@
+type: edu
+files:
+- name: src/WitzeApp.java
+  visible: true
+- name: src/FrageAntwortWitz.java
+  visible: true
+  placeholders:
+  - offset: 556
+    length: 89
+    placeholder_text: Entwickeln Sie die Override-Methode getWitz hier.
+    dependency:
+      lesson: Uebung6
+      task: 2c_Overrides
+      file: src/FrageAntwortWitz.java
+      placeholder: 1
+      is_visible: false
+- name: src/Kategorie.java
+  visible: true
+- name: src/Witz.java
+  visible: true
+- name: src/WitzAPI.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 130
+    placeholder_text: Entwickeln Sie die Schnittstelle hier.
+    dependency:
+      lesson: Uebung6
+      task: 2c_Overrides
+      file: src/WitzAPI.java
+      placeholder: 1
+      is_visible: false
+- name: test/Tests.java
+  visible: false
+- name: src/MeineTestAPI.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 649
+    placeholder_text: Entwickeln Sie die Klasse hier.

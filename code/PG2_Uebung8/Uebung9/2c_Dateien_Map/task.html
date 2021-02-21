@@ -1,0 +1,17 @@
+<html>
+<p>In dieser Aufgabe sehen Sie eine Info-App, welche dem Benutzer auf der Konsole nützliche Infos darstellt: Sein oder ihr Betriebssystem und die aktuelle Uhrzeit.</p>
+<p>Ihre Aufgabe ist es, diese App um einen Multilingual-Support zu erweitern. D. h., sie soll Texte auf englisch, deutsch, usw. ausgeben können.</p>
+<p>Legen Sie eine Sprachdatei in Ihrem Home-Verzeichnis namens <code>deutsch.txt</code> an, die wie folgt aussieht:</p>
+<pre>Information|Information
+Operating System|Betriebssystem
+Time|Uhrzeit</pre>
+<p>In jeder Zeile steht also ein englischer Betriff, dann ein senkrechter Strich und dann die Übersetzung.</p>
+
+<p><b>Entwickeln Sie die <code>Uebersetzer</code>-Klasse:</b></p>
+<ul>
+    <li>Der Konstruktor <code>Uebersetzer(Path)</code> soll die als Parameter übergebene Sprachdatei einlesen und alle darin enthaltenen Einträge in die Map <code>woerterbuch</code> eintragen. Tritt ein Fehler beim Lesen der Datei auf, soll der Konstruktor eine IOException werfen (auch wenn die Wörterbuch-Datei einen ungültigen Eintrag enthält, z. B. eine Zeile ohne <code>|</code> oder mit mehreren <code>|</code>)</li>
+    <li>Die Methode <code>uebersetzen(String)</code> soll den übergebenen String mittels des eingelesenen Wörterbuchs übersetzen. Wird der Eintrag nicht gefunden, soll einfach der ursprüngliche englische Begriff unübersetzt ausgegeben werden.</li>
+</ul>
+<p>Starten Sie die Info-App, um zu sehen, ob die Übersetzung ins Deutsche funktioniert hat. Gerne können Sie auch noch weitere Sprachdateien (z. B. spanisch.txt) anlegen und den Dateipfad in der Info-App entsprechend anpassen.</p>
+<p>Tipp: Mit der <code>String</code>-Methode <code>split("\\|")</code> können Sie einen String anhand vom <code>|</code>-Symbol in mehrere Teile aufteilen.</p>
+</html>

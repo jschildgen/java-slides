@@ -1,0 +1,595 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Programmieren 2 - Kapitel 2 - Objektorientierung</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reset.css">
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+
+        <link rel="stylesheet" href="src/slides.css">
+        <link rel="stylesheet" href="src/style.css">
+
+		<link rel="stylesheet" href="src/layout.css">
+        <link rel="stylesheet" href="lib/joint.min.css" />
+        <link rel="stylesheet" href="src/erd.css" />
+        <link rel="stylesheet" href="poll/poll.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="src/rainbow.css">
+
+        <!--<script defer src="lib/fontawesome.all.min.js"/>-->
+        <link href="lib/fontawesome.all.min.css" rel="stylesheet">
+        <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+            <div id="header"></div>
+            <div id="footer"></div>
+			<div class="slides">
+                <section>
+                    <h4 style="text-align:center"><b>Prof. Dr.-Ing. Johannes Schildgen</b><br>
+                    <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
+                    <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
+                    <h3>Kapitel 2: Objektorientierung</h3>
+                    <h4 style="text-align:center">2020-10-26</h4>
+                    <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-225px;">
+                    <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-225px; box-shadow:none">
+                </section>
+                
+
+      <section>
+        <h2>Klassen und Objekte</h2>
+        <div class="trackinfo"><i class="fas fa-book"></i> 11</div>
+        <pre><code class="java" data-trim contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#32-36'></code></pre>  
+        <h4>Klasse</h4>
+        <p class="small" style="margin-top: -5mm;">Vorlage für Objekte, besteht aus <em>Attributen</em> (<em>Member-<br>Variablen</em>) und <em>Methoden</em>.</p>
+        <h4>Objekt</h4>
+        <p class="small" style="margin-top: -5mm;">Instanz einer Klasse. Hat eine <em>Objekt-Identität</em> (Speicher-<br>adresse) und einen <em>Zustand</em> (Werte seiner Attribute).</p>
+        
+        <img style="position: absolute; right:0cm; top:8cm; width:30%" uml="class Person {
+          -name : String
+          -alter : int
+          +Person(name : String)
+          +setName(name : String)
+          +getName() : String
+          +setAlter(alter : int)
+          +getAlter() : int
+          +erhoeheAlter()
+        }        
+        "/>
+        <aside class="notes">Im gezeigten Code-Beispiel gibt es die Klasse <code>Person</code>. Das UML-Diagramm rechts zeigt an, dass diese Klasse die beiden Attribute <code>name</code> und <code>alter</code> sowie fünf Methoden besitzt. Die Variable <code>p</code> speichert ein Personen-Objekt, also eine Instanz der Klasse <code>Person</code>.</aside>
+      </section>
+
+      <section>
+        <h3>Objektorientierung nach Alan Kay</h3>
+        <ol class="small">
+          <li>Alles ist ein Objekt</li>
+          <li class="fragment">Objekte kommunizieren miteinander durch den Austausch von Nachrichten</li>
+          <li class="fragment">Objekte haben ihren eigenen Speicher (speichern Objekte)</li>
+          <li class="fragment">Ein Objekt ist Instanz einer Klasse (Klasse ist auch ein Objekt)</li>
+          <li class="fragment">Eine Klasse definiert das gemeinsame Verhalten ihrer Instanzen</li>
+          <li class="fragment">Man startet ein Programm, indem man einer Klasse die Kontrolle übergibt</li>
+        </ol>
+        
+        <aside class="notes">Der Austausch von Nachrichten ist ein wesentliches Merkmal objektorientierter Programmierung. Im Code-Beispiel auf der vorherigen Folie wurde die Methode <code>p.setAlter(20)</code> aufgerufen. Das heißt, eine Nachricht mit dem Inhalt <code>20</code> wurde an das Objekt geschickt. Andere Methoden liefern ein Ergebnis zurück, es kommt also eine Nachricht zurück.<br>
+        Klassen sind Objekte der Klasse <code>Class</code>. So kann man beispielsweise überprüfen, ob zwei Objekte Instanzen der gleichen Klasse sind oder abfragen, welche Methoden die Klasse bietet.</aside>
+      </section>
+
+      <section>
+        <h3>Objektorientierung: Vorteile</h3>
+        <div style="position: absolute; top: 100px; right:0px; font-size:200px"><i class="fas fa-cubes red"></i></div>
+        <h4>Modularisierung</h4>
+        <ul>
+          <li>Modul: Logische Code-Einheit<br>(z. B. eine oder mehrere Klassen)</li>
+          <li>(+) flexibel und leicht erweiterbar</li>
+          <li>(+) wiederverwendbar</li>
+          <li>(+) Teamwork-freundlich</li>
+          <li>(+) jedes Modul individuell testbar</li>
+        </ul>
+        <aside class="notes">Nicht nur weil Menschen ohnehin in Objekten denken, bietet die objektorientierte Programmierung viele Vorteile. Dadurch, dass immer wieder benötigte zusammengehörige Code-Elemente in Klassen gebündelt werden, werden Redundanz und Fehler vermieden. Wird eine Klasse nachträglich durch die Entwicklung neuer Methoden erweitert oder eine Subklasse erstellt, hat dies meist keine großen Auswirkungen auf den existierenden Programmcode, in dem die Klasse verwendet wird.</aside>
+      </section>
+
+      <section>
+        <h3>Beispiel: Mensaplan-App für Android</h3>
+        <p class="small">Klassen:</p>
+        <ul class="small">
+          <li class="fragment"><code>MensaActivity</code>: Startseite der App<br><code>onCreate</code>-Methode implementiert, was dargestellt wird</li>
+          <li class="fragment"><code>Meal</code>: Repräsentiert ein Essen<br>Attribute <code>description</code>, <code>price</code>, <code>image</code>, etc.</li>
+          <li class="fragment"><code>MensaDatastore</code>: Kommunikation mit dem Server<br>Methoden: <code>public Meal[] loadMeals()</code>, etc.</li>
+          <li class="fragment">...</li>
+        </ul>
+        <img class="noborder" src="img/1/android.png" alt="Android App" style="width:5cm; position:absolute; right:5mm; top:3cm">
+        <aside class="notes">Die <code>MensaActivity</code>-Klasse wird beim App-Start einmal instanziiert und die darin befindliche <code>onCreate</code>-Methode aufgerufen. In dieser Methode wird ein <code>MensaDataStore</code>-Objekt erzeugt, welches zur Kommunikation mit dem Webserver, auf dem der Mensaplan abgerufen kann, dient. <code>loadMeals</code> liefert einen Array mit <code>Meal</code>-Objekten zurück. In der <code>MensaActivity</code>-Klasse wird ebendiese Methode aufgerufen und in einer Schleife jedes einzelne Essen in der App dargestellt.</aside>
+      </section>
+
+      <section>
+        <h3>Member-Variablen</h3>
+        <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Datentyp&gt; &lt;Attributsname&gt;;</code></p>
+        <pre style="margin-left:0px; width:12cm" ><code class="java" data-sample-indent="keep" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#1-5,50'></code></pre>  
+        <img style="position: absolute; right:0cm; top:3cm; width:30%; z-index: -5;" uml="
+        package de.othr.personen {
+          class Person {
+          -name : String
+          -alter : int
+        }        
+        "/>
+        <h4>Sichtbarkeiten</h4>
+        <ul class="small">
+          <li><code>public</code>: Sichtbar von überall</li>
+          <li><code>private</code>: Nur in der Klasse selbst sichtbar (Empfehlung!)</li>
+          <li><code>protected</code>: In Subklassen und in Klassen im gleichen Paket sichtbar</li>
+          <li>package-private (nichts hinschreiben): In Klassen im gleichen Paket sichtbar</li>
+        </ul>
+        <aside class="notes">Member-Variablen werden auf Klassenebene definiert. Sie speichern den Zustand eines Objekts der jeweiligen Klasse. Über die Sichtbarkeiten wird festgelegt, von wo aus direkt auf die Attribute zugegriffen werden kann.</aside>
+      
+        <div class="poll fragment" style="bottom:-100px">
+          <h1>Welche Klassen haben Zugriff auf die Member-Variable &quot;alter&quot;?</h1>
+            <ul>
+              <li data-poll="correct">de.othr.personen.Person</li>
+              <li>de.othr.personen.*</li>
+              <li>Subklassen von de.othr.personen.Person</li>
+              <li>Alle Klassen</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
+      
+      </section>
+
+      <!--<section>
+        <h2>Poll Plugin</h2>
+        <ol>
+          <li>Put the <code>poll</code> folder in your reveal.js slides<br>and on a PHP-enabled web server</li>
+          <li>Include the CSS in your slides:<br>
+          <pre><code class="html"><link rel="stylesheet" href="poll/poll.css" /></code></pre></li>
+          <li>Initialize reveal.js with the following dependency:<br>
+            <pre><code class="javascript">{ src: 'poll/poll.js', async: true }</code></pre></li>
+          <li>Add polls to your slides:<br>
+            <pre><code class="html" contenteditable><div class="poll fragment">
+<h1>Question?</h1><ul><li>Wrong answer</li>
+<li data-poll="correct">Correct answer</li></ul>
+<h2>https://url-to-server</h2></div></code></pre></li>
+        </ol>
+        <div class="poll fragment" style="bottom:50px">
+            <h1>Question?</h1><ul><li>Wrong answer</li>
+            <li data-poll="correct">Correct answer</li></ul>
+<h2>https://url-to-server</h2></div>
+      </section>-->
+
+      <section>
+        <h3>Getter / Setter</h3>
+        <pre><code class="java">p.name = "Peter";
+System.out.println(p.name);</code></pre>
+        <p class="small">... funktioniert nur innerhalb der Klasse <code>de.othr.personen.Person</code></p>
+
+        <pre style="margin-left:47px; width:15cm" ><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#11-17'></code></pre> 
+
+        <pre style="margin-left:47px; width:15cm" ><code class="java">p.setName("Peter");
+System.out.println(p.getName());</code></pre>
+        <p class="small">... funktioniert überall!</p>
+        <img style="position: absolute; right:0cm; top:6cm; width:30%" uml="class Person {
+          -name : String
+          -alter : int
+          +Person(name : String)
+          +setName(name : String)
+          +getName() : String
+          +setAlter(alter : int)
+          +getAlter() : int
+          +erhoeheAlter()
+        }        
+        "/>
+        <aside class="notes">Es wird empfohlen, Member-Variablen auf <code>private</code> zu stellen und Getter und Setter zu implementieren (IntelliJ kann den Code dafür automatisch erzeugen). Der Zugriff auf Attribute erfolgt somit also ausschließlich über Getter und Setter. Nur so lässt sich beispielsweise ein Attribut spezifizieren, auf das nur lesend zugegriffen werden kann, oder welches nur bestimmte Werte zulässt.</aside>
+      </section>
+
+      <section>
+        <h2>Datenkapselung</h2>
+        <div style="position: absolute; top: 100px; right:0px; font-size:120px"><i class="fas fa-eye-slash red"></i></div>
+        <h4>Information Hiding</h4>
+        <p>Verstecken von Daten und internen Details vor dem Zugriff von außen.</p>
+        <p class="fragment small" data-fragment-index="1">Vorteile:</p>
+        <ul class="fragment small" data-fragment-index="1">
+          <li>Nur das &quot;Was&quot; und nicht das &quot;Wie&quot; sind nach außen sichtbar</li>
+          <li>Implementierung (das &quot;Wie&quot;) kann ohne große Auswirkungen einfach geändert werden</li>
+          <li>Modularisierung; dadurch besser testbar und anpassbar</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3><code>this</code></h3>
+        <p class="small">Jede Klasse besitzt automatisch das Attribut <code>this</code>, welches auf das Objekt selbst verweist, um das es gerade geht.</p>
+        <pre><code class="java" contenteditable>public String getName() {
+    return name; // oder: return this.name;
+}
+
+public void setName(String name) {
+    this.name = name;
+}</code></pre>
+      <aside class="notes">Wie man am Beispiel <code>return name;</code> sehen kann, kann auf Klassenattribute auch direkt zugriffen werden, ohne <code>this.</code> davorzuschreiben. Gibt es jedoch bereits eine Variable, die den gleichen Namen hat wie die Member-Variable, ist das Objekt <code>this</code> nötig, da ansonsten die Variable gemeint ist. Im gezeigten Beispiel ist dies im Setter bei <code>name</code> der Fall. Mit <code>name</code> ist der Methodenparameter gemeint, mit <code>this.name</code> das Attribut der Klasse.</aside>   
+    </section>
+
+      <section>
+        <h3>Konstruktoren</h3>
+        <div style="position: absolute; top: 50px; right:50px; font-size:100px"><i class="fas fa-star red"></i></div>
+        <p class="small">Konstruktoren erzeugen neue Objekte der Klasse. <br>
+          Sie sind immer <code>public</code> und werden mit <code>new</code> aufgerufen.</p> 
+        
+        <h4>Default-Konstruktor</h4>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#39-40'></code></pre>  
+        <pre><code class="java">Person p = new Person();</code></pre>
+
+        <h4 class="fragment" data-fragment-index="1">Benutzerdefinierte Konstruktoren</h4>
+        <pre class="fragment" data-fragment-index="1"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#7-9'></code></pre>  
+        <pre class="fragment" data-fragment-index="1"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#32'></code></pre>  
+        <aside class="notes">Wenn man in einer Klasse keinen Konstruktor definiert, hat diese standardmäßig den hier gezeigten Default-Konstruktor ohne Parameter.</aside>
+      </section>
+
+      <section>
+      <h3>Konstruktoren: <code>this(...)</code></h3>
+      <p class="small">Konstruktoren können verkettet werden, indem sie andere Konstruktoren aufrufen.</p>
+      <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#42-45'></code></pre>  
+      <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#47-49'></code></pre> 
+      <ul class="fragment small">
+        <li>Es darf nur max. 1 anderer Konstruktor aufgerufen werden</li>
+        <li>Der <code>this(...)</code>-Aufruf muss die erste Anweisung im Konstruktor sein</li>
+      </ul>
+    </section>
+
+      <section>
+        <h3>Methoden: <code>void</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 9</div>
+        <div style="position: absolute; top: 50px; right:50px; font-size:100px"><i class="fas fa-meh-blank red"></i></div>
+        <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Rückgabetyp&gt;  &lt;Methodenname&gt;(&lt;Parametertyp&gt; &lt;Parametername&gt;, ...) { ... }</code></p>
+      
+        <h4><code>void</code> (keine Rückgabe)</h4>
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#27-29'></code></pre>  
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#34'></code></pre>  
+      </section>
+
+      <section>
+        <h3>Methoden: <code>return</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 9.3</div>
+        <div style="position: absolute; top: 50px; right:50px; font-size:100px"><i class="fas fa-surprise red"></i></div>
+        <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Rückgabetyp&gt;  &lt;Methodenname&gt;(&lt;Parametertyp&gt; &lt;Parametername&gt;, ...) { ... }</code></p>
+
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#28-31'></code></pre>  
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#62-66'></code></pre>  
+      
+        <aside class="notes">Wird für die Methode ein Rückgabetyp spezifiziert, muss in jedem Falle ein <code>return</code>-Statement aufgerufen werden, in dem das Ergebnis der Methode zurückgegeben wird. In der Regel wird beim Aufruf der Methode deren Ergebnis in eine entsprechend getypte Variable geschrieben. Ist man jedoch nicht am Ergebnis sondern lediglich an der Ausführung interessiert, kann man die Methode auch einfach so ohne eine Variablenzuweisung aufrufen.</aside>
+      </section>
+
+      <section>
+        <h3>Methoden: Parameter</h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 9.2</div>
+
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#33-36'></code></pre>  
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#44-46'></code></pre>  
+    
+        <aside class="notes">Methodenparameter werden Komma-getrennt in die Klammern hinter den Methodennamen geschrieben. Jeder Parameter hat einen Datentypen und einen lokalen Variablennamen. Die beiden hier gezeigten Methoden <em>überladen</em> die existierenden Methoden <code>erhoeheAlter()</code> und <code>setName(String)</code> (Overloading; siehe nächste Folie).</aside>
+      </section>
+      
+      <section>
+        <h3>Methoden: Overloading</h3>
+        <p class="small">Eine Klasse kann mehrere Methoden mit dem <em>gleichen Namen</em>, aber <em>unterschiedlichen Parametern</em> besitzen.</p>
+        <pre style="width:92%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#33-42'></code></pre>  
+        <pre style="width:92%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#86-88'></code></pre>  
+        <aside class="notes">Zur Compile-Zeit wird ermittelt, welche Methode tatsächlich aufgerufen werden soll. Es wird diejenige gewählt, die die richtige Anzahl an Parametern hat und kompatible Parametertypen besitzt. Gibt es mehrere Möglichkeiten, wird diejenige mit dem speziellsten Typ gewählt. Gibt es mehrere Kandidaten, in einer passt der eine Parameter besser, ein anderer aber schlechter, wird ein Compile-Fehler auftreten.</aside>
+      
+        <div class="poll fragment" style="bottom:0px">
+          <h1>Dürfte es in der Personen-Klasse zusätzlich zu den hier gezeigten Methoden auch noch eine erhoeheAlter()-Methode ohne Parameter geben?</h1>
+            <ul>
+              <li data-poll="correct">Ja</li>
+              <li>Nein</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
+      </section>
+
+      <section>
+        <h3><code>static</code>: Statische Attribute</h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 11.1</div>
+        <p class="small">Mit <code>static</code> gekennzeichnete Attribute existieren nur einmal (nicht pro Objekt).</p>
+        <pre style="width:19.5cm; margin-left: 0px;"><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personen/Haustier.java#3-18'></code></pre>  
+        <img style="position: absolute; right:0cm; top:4.5cm; width:5.5cm" uml="class Haustier {
+          {static}+TIERART : String = &quot;Hund&quot;
+          {static}+farbe : String
+          -name : String
+          +Haustier(name : String)
+          {static}+main(args : String[])
+        }        
+        "/>
+        <aside class="notes">Ein typischer Einsatzzweck für statische Attribute sind Konstanten (hier: <code>TIERART</code>). Was hier mit dem statischen Attribut <code>farbe</code> gemacht wurde, ist jedoch eher unüblich. Jedes Objekt hat stets den gleichen Wert in diesem Attribut. Auf statische Attribute kann man auch mit <code>Klassenname.attribut</code> zugreifen.</aside>
+      </section>
+
+      <section>
+        <h3><code>static</code>: Statische Methoden</h3>
+        <p class="small">Statische Methoden...</p>
+        <ul class="small" style="margin-top: -5mm;">
+          <li>... haben keinen Bezug zu einem Objekt (kein <code>this</code>),</li>
+          <li>... werden mittels <code>Klassenname.methode(...)</code> aufgerufen,</li>
+          <li>... haben keinen Zugriff auf nicht-statische Attribute,</li>
+          <li>... können keine nicht-statischen Methoden aufrufen.</li>
+        </ul>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/rechnen/Geld.java#3-9,14-19'></code></pre>  
+        
+        <img style="position: absolute; right:0cm; top:1.8cm; width:7.5cm; z-index: 1;" uml="class Geld {
+          {static}+WAEHRUNG : String = &quot;EUR&quot;
+          {static}+addieren(a : double, b : double) : double
+          {static}+main(args : String[])
+        }        
+        "/>
+        
+        <aside class="notes">In der statischen Methode <code>main</code> kann die andere statische Methode <code>addieren</code> aufgerufen werden. Da sie sich hier in der gleichen Klasse befindet, müsste man auch nicht <code>Geld.</code> vor die Methode schreiben.</aside>
+      </section>
+
+      <section>
+        <h3><code>import static</code></h3>
+        <p class="small">Erlaubt das direkte Verwenden importierter statischer Attribute und Methoden aus anderen Klassen ohne die Angabe des Klassennamens.</p>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/rechnen/GeldRechner.java#3-10'></code></pre>  
+        <aside class="notes">Ohne die Verwendung von <code>import static</code> hätte man in diesem Beispiel <code>Geld.addieren</code> bzw. <code>Geld.WAEHRUNG</code> schreiben müssen, um auf die statischen Methoden und Attribute zuzugreifen.<br>Der statische Import kann für einzelne Attribute oder Methoden erfolgen (z. B. <code>import static de.othr.rechnen.Geld.addieren</code>) oder für alle auf einmal (z. B. <code>import static de.othr.rechnen.Geld.*</code>).<br>Die Ausgabe von diesem Programm lautet: 9,20 EUR</aside>
+      </section>
+
+      <section>
+        <h3>Methoden: varargs</h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 9.2</div>
+        <ul class="small">
+          <li>Der letzte (oder einzige) Methodenparameter darf variadisch sein</li>
+          <li>Der variadische Parameter erscheint in der Methode als Array</li>
+        </ul>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/varargs/Geld.java#6-10'></code></pre>
+        <ul class="small">
+          <li>Methodenaufruf mit einer beliebigen Anzahl von Parametern möglich</li>
+        </ul>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/varargs/Geld.java#16-19'></code></pre>  
+        <div class="poll fragment" style="bottom:-80px">
+          <h1>Was liefert Geld.addieren() zurück?</h1>
+            <ul>
+              <li data-poll="correct">0</li>
+              <li>null</li>
+              <li>ein leeres Array</li>
+              <li>einen Fehler</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
+        <aside class="notes">Würde man die Methode als <code>addieren(double[] args)</code> definieren, sähe ihre Implementierung nicht anders aus, allerdings müsste man die Methode dann tatsächlich mit einem Double-Array aufrufen als einzigen Parameter aufrufen. Die Varargs-Schreibweise <code>(double...)</code> ermöglicht es, die Methode mit einer beliebigen Anzahl von Parametern aufzurufen. Auch der Aufruf <code>Geld.addieren()</code> wäre möglich und würde 0 zurückgeben. Im unteren Beispiel ist zu sehen, dass sogar die <code>main</code>-Methode variadisch definiert sein kann. Dies hat jedoch gegenüber <code>String[] args</code> keine Vorteile.</aside>
+      </section>
+
+      <section>
+        <h2>UML</h2>
+        <h4>Unified Modelling Language</h4>
+        <p class="small" style="width:18cm;">Standardisierte grafische Sprache, die 14 Diagrammtypen zur Modellierung von Software-Systemen bietet:</p>
+
+        <ul class="small">
+          <li>Klassendiagramm (Beispiel: Klasse <code>Person</code>) &UpperRightArrow;</li>
+          <li>Objektdiagramm (Beispiel: Objekt <code>p</code>) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &LowerRightArrow;</li>
+          <li>Sequenzdiagramm</li>
+          <li>...</li>
+        </ul>
+
+        <img style="position: absolute; right:0cm; top:4cm; width:30%" uml='
+        class Person {
+          -name : String
+          -alter : int
+          +setName(name : String)
+          +getName() : String
+          +setAlter(alter : int)
+          +getAlter() : int
+          +erhoeheAlter()
+        }     
+        
+        object "p:Person" as p {
+          name = "Peter"
+          alter = 20
+          }
+         Person -[hidden]-> p
+        '/>
+      </section>
+
+      <section>
+        <h3>UML-Klassendiagramm</h3>
+
+        <p class="small" style="margin-left:-3mm; margin-right: -1cm;">
+          <code>+|-|#|~ &lt;Attribut&gt; : &lt;Typ&gt; </code><br>
+          <code>+|-|#|~ &lt;Methode&gt;(&lt;Parameter&gt; : &lt;Typ&gt;, ...) : &lt;Rückgabetyp&gt; </code>
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <h4>Sichtbarkeiten</h4>
+        <ul class="small">
+          <li><code>+ public</code>: Sichtbar von überall</li>
+          <li><code>- private</code>: Nur in der Klasse selbst sichtbar</li>
+          <li><code># protected</code>: In Subklassen und in Klassen im gleichen Paket sichtbar</li>
+          <li><code>~</code> package-private: In Klassen im gleichen Paket sichtbar</li>
+        </ul>
+
+        <img style="position: absolute; right:0cm; top:5cm; width:30%" uml="class Person {
+          -name : String
+          -alter : int
+          +Person(name : String)
+          +setName(name : String)
+          +getName() : String
+          +setAlter(alter : int)
+          +getAlter() : int
+          +erhoeheAlter()
+        }        
+        "/>
+
+        <aside class="notes">In Klassendiagrammen werden Klassen und Schnittstellen samt ihrer Attribute und Methoden dargestellt sowie die Beziehungen zwischen ihnen.</aside>
+      </section>
+
+      <section>
+        <h3>Objektreferenzen</h3>
+        <img style="width:80%" uml="class Person {
+          -name : String
+          -alter : int
+          -adresse : Adresse
+          +setName(name : String)
+          +getName() : String
+          +setAlter(alter : int)
+          +getAlter() : int
+          +erhoeheAlter()
+          +setAdresse(adresse : Adresse)
+          +getAdresse() : Adresse
+        }
+
+        class Adresse {
+          -strasse : String
+          -hausnummer : int
+          -plz : String
+          -ort : String
+          +getStrasse() : String
+          +setStrasse(strasse : String)
+          +getHausnummer() : int
+          +setHausnummer(hausnummer : int)
+          +getPlz() : String
+          +setPlz(plz : String)
+          +getOrt() : String
+          +setOrt(ort : String)
+        }
+        Person &quot;*&quot; ---r &quot;1&quot; Adresse : \t
+        "/>
+
+        <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#57,68,70'></code></pre>  
+        <aside class="notes">Die Member-Variable <code>adresse</code> der Klasse <code>Person</code> hat die Klasse <code>Adresse</code>, das heißt, sie referenziert ein Objekt ebendieser <code>Adresse</code>-Klasse. Die letzten beiden Zeilen des Code-Beispiels lassen sich auch vereinfachen: <code>p.setAdresse(new Adresse("Badstr.", 3, "12345", "Teststadt"));</code></aside>
+      </section>
+
+      <section>
+        <h3>Objektidentität</h3>
+        <div class="red" style="position: absolute; top: 20px; right:50px; font-size:100px"><code>==</code></div>
+        <p class="small"><code>==</code> überprüft, ob zwei Variablen <em>dasselbe</em> Objekt referenzieren.</p>
+        <pre><code style="max-height: 1000px" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#57-59,68-80'></code></pre>  
+        <aside class="notes">Hier wird &quot;Peter und Ute haben dieselbe Adresse." ausgegeben, da sie beide dasselbe <code>Adresse</code>-Objekt referenzieren. Das zweite <code>println</code> gibt &quot;Ute wohnt in der Hausnummer 5&quot; aus, da sich Peters Adressänderung auch auf Ute auswirkt. Es handelt sich ja um dasselbe <code>Adresse</code>-Objekt.</aside>
+      </section>
+
+      <section>
+        <h3>Gleichheit: <code>equals</code></h3>
+        <div class="trackinfo"><i class="fas fa-book"></i> 12.2</div>
+        <div style="position: absolute; top: 30px; right:0px; font-size:80px"><i class="fas fa-home red"></i><i class="fas fa-home red"></i></div>
+        <p class="small"><code>equals</code> soll überprüfen, ob zwei Objekte als gleich behandelt werden.<br>Diese Methode muss man für eigene Klassen selbst entwickeln.</p>
+        <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personenadresse/Adresse.java#3,55-70'></code></pre>  
+        <aside class="notes">Diese Methode gibt <code>true</code> aus, wenn zwei Adressen dieselbe Straße, Hausnummer, PLZ und Ort haben. Details zur <code>@Override</code>-Annotation und zur <code>instanceof</code>-Überprüfung folgen im nächsten Kapitel. </aside>
+      </section>
+
+      <section>
+        <h3>Gleichheit: <code>equals</code></h3>
+        <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/EqualsBeispiel.java#5-21'></code></pre>  
+        <div class="poll fragment" style="bottom:-80px">
+          <h1>Peters und Utes Adressen sind...?</h1>
+            <ul>
+              <li>dieselbe und die gleiche</li>
+              <li>dieselbe, aber nicht die gleiche</li>
+              <li data-poll="correct">nicht dieselbe, aber die gleiche</li>
+              <li>nicht die selbe und nicht die gleiche</li>
+            </ul>
+          <h2>https://frage.space</h2>
+         </div>
+      </section>
+
+      <section>
+        <h3>UML-Objektdiagramm</h3>
+        <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/EqualsBeispiel.java#8-9'></code></pre>  
+        <img style="width:45%" uml='object "<u>p:Person</u>" as p {
+          name = "Peter"
+          alter = 20
+          }
+          
+          object "<u>q:Person</u>" as q {
+            name = "Ute"
+            alter = 0
+            }
+            
+          object "<u>:Adresse</u>" as a {
+            strasse = "Badstr."
+            hausnummer = 3
+            plz = "12345"
+            ort = "Teststadt"
+            }
+
+            object "<u>:Adresse</u>" as b {
+              strasse = "Badstr."
+              hausnummer = 3
+              plz = "12345"
+              ort = "Teststadt"
+              }
+              
+            p--a : adresse
+            q--b : adresse
+              '>
+        <aside class="notes">Während UML-Klassendiagramme dazu geeignet sind, das Schema der Daten zu beschreiben, wird in Objektdiagrammen eine Momentaufnahme von konkreten Instanzen von Klassen - also Objekten - dargestellt. In Objektdiagrammen wird der Bezeichner unterstrichen. Es ist optional, dem Objekt einen Namen zu geben (z. B. <code>p</code>).</aside>
+      
+        
+      </section>
+
+      <section>
+        <h3>UML-Objektdiagramm</h3>
+        <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/EqualsBeispiel.java#23-25'></code></pre>
+        <img style="width:45%" uml='object "<u>p:Person</u>" as p {
+          name = "Peter"
+          alter = 20
+          }
+          
+          object "<u>q:Person</u>" as q {
+            name = "Ute"
+            alter = 0
+            }
+            
+          object "<u>a:Adresse</u>" as a {
+            strasse = "Badstr."
+            hausnummer = 3
+            plz = "12345"
+            ort = "Teststadt"
+            }
+              
+            p--a : adresse
+            q--a : adresse
+              '>
+        <aside class="notes">Im nun gezeigen Beispiel haben Peter und Ute dieselbe Adresse. Es existiert - anders als im Beispiel auf der vorherigen Folie - nur ein einziges <code>Adresse</code>-Objekt.</aside>
+      </section>
+
+
+			<section>
+							<h2>Kapitelzusammenfassung</h2>
+							<ul>
+                <li>Klassen und Objekte</li>
+                <li>Member-Variablen</li>
+                <li>Konstruktoren, Methoden, Getter, Setter</li>
+                <li><code>this</code></li>
+                <li>Overloading</li>
+                <li>Statische Attribute und Methoden</li>
+                <li>UML: Klassendiagramme und Objektdiagramme</li>
+                <li>Objektidentität, <code>equals</code></li>
+							</ul>
+      </section>
+
+			</div>
+		</div>
+
+		<script src="reveal.js/js/reveal.js"></script>
+        <script src="lib/jquery.js"></script>
+        <script src="lib/lodash.js"></script>
+        <script src="lib/backbone.js"></script>
+        <script src="lib/joint.min.js"></script>
+        <script src="lib/deflate.js"></script>
+
+		<script src="src/init_reveal.js"></script>
+
+        <script>
+        if(window.location.search.match( /print-pdf/gi )) {
+                document.getElementById('header').style="display:none";
+                document.getElementById('footer').style="display:none";
+        }
+        </script>
+
+
+	</body>
+</html>

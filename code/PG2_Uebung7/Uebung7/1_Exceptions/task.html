@@ -1,0 +1,10 @@
+<html>
+<p>In unserer Witze-App möchten wir API-Anfragen machen. Eine solche Anfrage läuft so ab, dass ein HTTP GET-Request an die REST-API-URL geschickt wird. Das Ergebnis dieses HTTP GET-Requests nennt sich Response und beinhaltet die Antwort der API.</p>
+<p>In der Klasse <code>APIHelper</code> wurde bereits mit der Entwicklung einer statischen Methode <code>httpGet</code> begonnen. Was noch fehlt sind die Imports der benötigten Klassen sowie das Exception-Handling.</p>
+<p>Beim Verbinden mit einer API kann viel schlief gehen: Die Internetverbindung ist unterbrochen, die URL ist ungültig, usw. Daher ist es nun ihre Aufgabe, diese Exceptions, die auftreten können, zu behandeln.</p>
+<ol>
+    <li><b>Importieren Sie die fehlenden Klassen in <code>APIHelper</code>.</b></li>
+    <li><b>In der Methode <code>httpGet</code> soll die <code>IOException</code> nicht abgefangen werden. Stattdessen soll die Methode diese Exception einfach nach außen weiterwerfen.</b></li>
+    <li><b>Da Sie die Exception an die <code>main</code>-Methode der Klasse <code>Main</code> weiterreichen, muss sie nun dort behandelt werden. Fangen Sie sie in der <code>main</code>-Methode ab und geben Sie statt der eigentlichen Ausgabe (dem Quelltext der Webseite) &quot;Verbindungsfehler&quot; aus, wenn die <code>IOException</code> auftritt.</b></li>
+</ol>
+</html>

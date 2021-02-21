@@ -1,0 +1,22 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="de.othr.NotizenController" >
+  <left>
+    <ListView fx:id="uebersicht" onMouseClicked="#notizAuswahl"/>
+  </left>
+  <center>
+    <TextArea fx:id="notiztext" onKeyReleased="#notizAendern"/>
+  </center>
+  <bottom>
+    <HBox>
+      <TextField fx:id="notiztitel"/>
+      <Button text="Neue Notiz erstellen" onAction="#notizNeu"/>
+      <Button text="Löschen" onAction="#notizLoeschen"/>
+    </HBox>
+  </bottom>
+</BorderPane>

@@ -1,0 +1,20 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<VBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <Label text="Anfangskapital [EUR]"/>
+    <TextField fx:id="anfangskapital"/>
+    <Label text="Zinssatz [%]"/>
+    <TextField fx:id="zinssatz"/>
+    <Label text="Jahre"/>
+    <TextField fx:id="jahre"/>
+    <Button text="Berechnen" onAction="#zinsen_berechnen"/>
+    <Label text="Endkapital [EUR]"/>
+    <TextField fx:id="endkapital"/>
+</VBox>

@@ -1,6 +1,7 @@
 import org.junit.*;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.List;
@@ -25,8 +26,6 @@ public class Tests {
 
   @Test
   public void testSolution() {
-    boolean dice_6 = false;
-    boolean dice_0 = false;
     for(int i = 1; i<= 100; i++) {
       Wuerfeln.main(new String[0]);
     }
@@ -35,5 +34,10 @@ public class Tests {
     Assert.assertFalse("Es wurde mal eine 0 gewuerfelt.", output.contains("Ich habe eine 0 gewuerfelt."));
     Assert.assertTrue("Es wurde nie eine 3 gewuerfelt.", output.contains("Ich habe eine 3 gewuerfelt."));
     Assert.assertTrue("Es wurde nie eine 6 gewuerfelt.", output.contains("Ich habe eine 6 gewuerfelt."));
+    try {
+      SubmitX.submit();
+    } catch (IOException e) {
+      Assert.fail("Correct but submission failed: "+e.getMessage());
+    }
   }
 }

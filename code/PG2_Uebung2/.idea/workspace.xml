@@ -44,80 +44,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e8529e2-4117-45b8-be4a-5a9eca72e868" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/util/Programmieren_2.util.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Programmieren2/src/de/othr/rechnen/GeldRechner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aufgabe 2/a_Random/test/SubmitX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aufgabe 1/a_Rechnen/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe 1/a_Rechnen/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe 2/a_Random/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe 2/a_Random/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe 2/a_Random/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe 2/a_Random/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe 2/a_Random/test/Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programmieren2/src/de/othr/collections/CollectionBeispiel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Programmieren2/src/de/othr/collections/CollectionBeispiel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/ex1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/ex2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/fontawesome.all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../lib/fontawesome.all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../../webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../../webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../../webfonts/fa-solid-900.woff2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +109,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -160,48 +130,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="/media/tmpfs" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.33690986" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Hallo">
-    <configuration name="Adresse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Adresse" />
-      <module name="Aufgabe_2-e__Strings_main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GeradeZahlen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GeradeZahlen" />
-      <module name="Aufgabe_2-c__Schleife_main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Hallo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hallo" />
-      <module name="Aufgabe_2-g__Texteingabe_main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tiere" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tiere" />
-      <module name="Aufgabe_2-f__Arrays_main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Todo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Todo" />
-      <module name="Aufgabe_2-d__enum_main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Wuerfeln">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -215,13 +150,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Adresse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Adresse" />
+      <module name="Aufgabe_2-e__Strings_main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hallo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hallo" />
+      <module name="Aufgabe_2-g__Texteingabe_main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubmitX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SubmitX" />
+      <module name="Programmieren_2.Aufgabe_2-a_Random.test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tiere" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tiere" />
+      <module name="Aufgabe_2-f__Arrays_main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Wuerfeln" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Wuerfeln" />
+      <module name="Programmieren_2.Aufgabe_2-a_Random.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Wuerfeln" />
+        <item itemvalue="Application.SubmitX" />
         <item itemvalue="Application.Hallo" />
         <item itemvalue="Application.Tiere" />
         <item itemvalue="Application.Adresse" />
-        <item itemvalue="Application.Todo" />
-        <item itemvalue="Application.GeradeZahlen" />
       </list>
     </recent_temporary>
   </component>
@@ -256,20 +226,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="443" y="99" width="1024" height="844" key="#Project_Structure" timestamp="1603375554805">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="443" y="99" width="1024" height="844" key="#Project_Structure/0.0.1920.1044@0.0.1920.1044" timestamp="1603375554805" />
-    <state x="648" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603375574292">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="648" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1603375574292" />
-    <state x="749" y="1379" key="FileChooserDialogImpl" timestamp="1603455719724">
-      <screen x="1" y="1080" width="1920" height="1080" />
-    </state>
-    <state x="749" y="1379" key="FileChooserDialogImpl/0.0.1920.1080/1.1080.1920.1080@1.1080.1920.1080" timestamp="1603455719724" />
   </component>
 </project>

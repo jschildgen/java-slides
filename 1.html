@@ -6,8 +6,8 @@
 
 		<title>Programmieren 2 - Kapitel 1 - Grundlagen</title>
 
-		<link rel="stylesheet" href="reveal.js/css/reset.css">
-		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
 
         <link rel="stylesheet" href="src/slides.css">
         <link rel="stylesheet" href="src/style.css">
@@ -15,25 +15,20 @@
 		<link rel="stylesheet" href="src/layout.css">
         <link rel="stylesheet" href="lib/joint.min.css" />
         <link rel="stylesheet" href="src/erd.css" />
-        <link rel="stylesheet" href="poll/poll.css" />
+        <link rel="stylesheet" href="src/poll.css" />
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="src/rainbow.css">
+		<script>
+			if(window.location.search.match( /print-pdf/gi )) {
+				document.getElementsByTagName( "head" )[0].innerHTML += '<link rel="stylesheet" href="src/routeros.css">';
+			} else {
+				document.getElementsByTagName( "head" )[0].innerHTML += '<link rel="stylesheet" href="src/rainbow.css">';
+			}
+			</script>
 
         <!--<script defer src="lib/fontawesome.all.min.js"/>-->
         <link href="lib/fontawesome.all.min.css" rel="stylesheet">
         <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
-
-
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -45,7 +40,7 @@
                     <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
                     <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
                     <h3>Kapitel 1: Grundlagen</h3>
-                    <h4 style="text-align:center">2020-10-12</h4>
+                    <h4 style="text-align:center">&nbsp;</h4>
                     <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-225px;">
                     <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-225px; box-shadow:none">
                 </section>
@@ -81,20 +76,26 @@
                     <li>90 Minuten Zeit</li>
                     <li>Hilfsmittel: Handschriftlich<br>doppelseitig beschriebenes DIN-A4-Blatt</li>
                 </ul>
-                <div style="position: absolute; top: 120px; right:50px; font-size:250px"><i class="fas fa-edit red"></i><div>
+                <div style="position: absolute; top: 120px; right:50px; font-size:220px"><i class="fas fa-edit red"></i><div>
                 </section>
                 <section>
                 <h2>Literatur</h2>
-								<div class="trackinfo"><i class="fas fa-book"></i> 1</div>
+								<div class="trackinfo"><i class="fas fa-headphones"></i> 1 <i class="fas fa-book"></i> 1</div>
                 <ul style="font-size:26pt">
+                    <li><em>J. Schildgen</em><br>Sprachkurs Java - Das Hörbuch über<br>objektorientierte Programmierung</li>
                     <li><em>M. Kofler</em> <br>Java - Der Grundkurs</li>
-                    <!--<li><em>J. Schildgen</em><br>Sprachkurs Java - Der Podcast</li>-->
                     <li><em>C. Ullenboom</em><br>Java ist auch eine Insel</li>
 										<li><em>F. Jobst</em><br>Programmieren in Java</li>
                 </ul>
-								<div style="position: absolute; top: 125px; right:0px; font-size:250px"><img src="img/1/kofler_java.jpg" class="noborder" style="width:225px;border:0"><div>
+								<div style="position: absolute; top: 125px; right:0px; font-size:250px">
+                  <img src="img/1/Sprachkurs_Java.jpg" class="noborder" style="width:225px;border:0;"><br>
+                </div>
+
+								<div style="position: absolute; top: 400px; right:0px; font-size:250px">
+                  <img src="img/1/kofler_java.jpg" class="noborder" style="width:225px;border:0; margin-top: -10mm">
+                </div>
 								<aside class="notes">
-								Die Primärliteratur zu dieser Vorlesung ist das Java-Buch von Michael Kofler. Ein Buch-Symbol rechts oben auf Folien verweist auf die jeweiligen Kapitel im Buch. <!--Sprachkurs Java ist ein Podcast, welcher begleitend zur Vorlesung gehört werden kann. Der Podcast ist kostenfrei verfügbar auf Spotify, Anchor und anderen Podcast-Plattformen.-->
+								Die Primärliteratur zu dieser Vorlesung ist zum einen das Hörbuch Sprachkurs Java und zum anderen das Java-Buch von Michael Kofler. Die Kopfhörer- und Buch-Symbole rechts oben auf Folien verweisen auf die jeweiligen Kapitel im Hörbuch bzw. Buch. <!--Sprachkurs Java ist ein Podcast, welcher begleitend zur Vorlesung gehört werden kann. Der Podcast ist kostenfrei verfügbar auf Spotify, Anchor und anderen Podcast-Plattformen.-->
 								</aside>
                 </section>
                 
@@ -273,8 +274,8 @@
 
       <section>
         <h2>Warum Java?</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 1.1</div>
-        <img class="fragment" src="img/1/android.png" alt="Android App" style="width:5cm; position:absolute; margin-left:7cm; margin-top:0cm">
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 5 <i class="fas fa-book"></i> 1.1</div>
+        <img class="fragment noborder" src="img/1/android.png" alt="Android App" style="width:5cm; position:absolute; margin-left:7cm; margin-top:0cm">
         <ul>
           <li>Plattformunabhängig</li>
           <li>Kostenlos und Open Source</li>
@@ -366,6 +367,7 @@ jshell>
       </section>
 
       <section>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 6</div>
         <h2>IDE</h2>
         <p><b>Integrated Development Enviroments</b><br>IntelliJ, Eclipse, Netbeans, ...</p>
         <ul>
@@ -413,7 +415,7 @@ jshell>
 
       <section>
         <h2>Sprachelemente</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 2.2</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 7-8, 10 <i class="fas fa-book"></i> 2.2</div>
         <table class="small">
           <thead>
             <tr><th>Bezeichnung</th><th>Beschreibung</th><th>Beispiel</th><th>Namenskonvention</th></tr>
@@ -431,7 +433,7 @@ jshell>
 
       <section>
         <h2>Variablen</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 3</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 9 <i class="fas fa-book"></i> 3</div>
         <p class="small" style="margin-right: -4cm;">Variablen speichern einen Wert eines primitiven Datentypen oder die Referenz auf ein Objekt.</p>
 
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#5-10'></code></pre>
@@ -466,6 +468,7 @@ jshell>
 
       <section>
         <h2>Code-Blöcke</h2>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 11</div>
         <p class="small">Der Gültigkeitsbereich von Variablen endet beim Abschluss desjenigen Code-Blocks, in dem sie deklariert wurden.</p>
         
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#14-20'></code></pre>
@@ -474,13 +477,13 @@ jshell>
 
       <section>
         <h2>if / else if / else</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 5.1</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 12 <i class="fas fa-book"></i> 5.1</div>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#22-28'></code></pre>
       </section>
 
       <section>
         <h3>Ternärer Operator <code>? : </code></h3>
-        <div class="trackinfo"><i class="fas fa-book"></i> 5.2</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 15 <i class="fas fa-book"></i> 5.2</div>
         <p class="small"><code>bedingung ? dann_wert : sonst_wert</code></p>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#70-73'></code></pre>
         
@@ -506,14 +509,14 @@ jshell>
 
       <section>
         <h2>switch</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 5.3</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 16 <i class="fas fa-book"></i> 5.3</div>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#81-92'></code></pre>
         <aside class="notes"><code>switch</code> wertet einen Ausdruck aus (hier die Variable <code>sprache</code>) und überprüft, welchen Wert dieser hat. Dementsprechend werden diejenigen Anweisungen, die hinter dem jeweiligen Doppelpunkt stehen, ausgeführt. Wichtig ist, dass die letzte Anweisung ein <code>break;</code> ist, damit die anderen Fälle nicht weiter überprüft werden müssen. Der <code>default</code>-Fall ist optional. Die dahinter stehenden Ausweisungen werden ausgeführt, wenn vorher nicht bereits der Switch-Block mit einem <code>break</code> verlassen wurde, also wenn im gezeigten Beispiel die Sprache weder Englisch noch Deutsch ist.</aside>
       </section>
 
       <section>
         <h2>while / do-while / for</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 5.6, 5.4</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 13-14 <i class="fas fa-book"></i> 5.6, 5.4</div>
         <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#30-33'></code></pre>
 
         <pre class="fragment"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#35-38'></code></pre>
@@ -525,7 +528,7 @@ jshell>
 
       <section>
         <h2>Primitive Datentypen</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 3.2</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 18 <i class="fas fa-book"></i> 3.2</div>
         <table class="small">
           <tbody>
             <tr><td><code>boolean</code></td><td><code>true</code> oder <code>false</code></td></tr>
@@ -544,7 +547,8 @@ jshell>
       </section>
 
       <section>
-        <h2>Wrapper-Datentypen</h2>
+        <h2>Wrapper-Klassen</h2>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 24</div>
         <table class="small">
           <tbody>
             <tr><td><code>Boolean</code></td><td style="width:175mm">...</td></tr>
@@ -562,15 +566,15 @@ jshell>
       </section>
 
       <section>
-        <h2>Aufzählungstypen</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 3.6</div>
+        <h2><code>enum</code>: Aufzählungstypen</h2>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 20 <i class="fas fa-book"></i> 3.6</div>
         <pre><code class="java" style="max-height: 19cm; width: 102%" data-sample='code/Programmieren2/src/de/othr/grundlagen/EnumBeispiel.java#4-18'></code></pre>
         <aside class="notes"></aside>
       </section>
 
       <section>
         <h2>Strings</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 7</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 19 <i class="fas fa-book"></i> 7</div>
         <p class="small">Strings stehen in doppelten Anführungszeichen.</p>
 
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/DatentypenBeispiel.java#51-58'></code></pre>
@@ -686,7 +690,7 @@ Person q = p;
 
       <section>
         <h2>Arrays</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 6</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 21 <i class="fas fa-book"></i> 6</div>
         <pre><code style="max-height: 12cm" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/ArrayBeispiel.java#8-21'></code></pre>
         <aside class="notes">Die Array-Variable erhält den Typ <code>datentyp[]</code>. Danach kann der Array entweder mittels <code>new datentyp[n]</code> initialisiert werden (<code>n</code> ist die Anzahl der im Array zu speichernden Elemente) oder über ein direktes Zuweisen der Elemente mittels der <code>{}</code>-Syntax. Die Länge des Arrays ist immer fix, sie kann nachträglich nicht mehr verändert werden. Der Zugriff auf die einzelnen Array-Elemente erfolgt mittels <code>[i]</code>, wobei der Index <code>i</code> eine ganze Zahl zwischen <code>0</code> und <code>n-1</code> ist. Greift man auf ein ungültiges Element zu (z. B. <code>tage[7]</code>), erscheint eine ArrayIndexOutOfBoundsException.</aside>
       </section>
@@ -723,7 +727,7 @@ Person q = p;
 
       <section>
         <h3>Pakete / <code>import</code></h3>
-        <div class="trackinfo"><i class="fas fa-book"></i> 2.2</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 37 <i class="fas fa-book"></i> 2.2</div>
         <p class="small">Jede Klasse (eigene Klassen, zur Java API gehörende Klassen, weitere verwendete Klassen) befindet sich in einem <em>Paket</em>.</p>
         <p class="fragment small">Verwendung einer Klasse: <code>paketname.Klasse</code><br>
           Paketname kann weggelassen werden ...</p>
@@ -738,14 +742,14 @@ Person q = p;
 
       <section>
         <h3>Textausgabe: <code>System.out</code></h3>
-        <div class="trackinfo"><i class="fas fa-book"></i> 3.5</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 17 <i class="fas fa-book"></i> 3.5</div>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/grundlagen/TextausgabeBeispiel.java#5-10'></code></pre>
         <aside class="notes"><code>java.lang.System</code> muss nicht importiert werden, da es sich im Paket <code>java.lang</code> befindet. <code>System.out</code> ist ein sogenannter <code>PrintStream</code>, welcher Methoden anbietet, mit denen Text auf der Konsole ausgegeben werden kann. <code>print</code> macht anders als <code>println</code> am Ende keinen Zeilenumbruch. Diesen kann man aber mit <code>\n</code> innerhalb des Strings auch manuell machen. Die Methode <code>printf</code> nimmt als ersten Parameter einen String, der ausgegeben werden soll und in dem Platzhalter vorkommen. Als weitere Parameter wird für jeden Platzhalter ein Wert gesetzt. Der Platzhalter <code>%s</code> steht für String, <code>%d</code> für eine ganze Zahl im Dezimalsystem, <code>%.4f</code> für eine auf vier Nachkommastellen gerundete Dezimalzahl.</aside>
       </section>
 
       <section>
         <h3>Texteingabe: <code>Scanner</code></h3>
-        <div class="trackinfo"><i class="fas fa-book"></i> 3.5</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 38 <i class="fas fa-book"></i> 3.5</div>
         <pre><code style="max-height: 12cm" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/grundlagen/ScannerBeispiel.java#3-17'></code></pre>
 
       <aside class="notes">Die Klasse <code>Scanner</code> befindet sich im Paket <code>java.util</code>, dahier muss diese Klasse zunächst importiert werden. Nach der Erzeugung eines Scanner-Objekts <code>scan</code> kann mittels <code>scan.nextLine()</code> die vom Benutzer eingegebene Zeichenkette gelesen werden. Im gezeigten Beispiel wird dies in einer Dauerschleife gemacht. Erst wenn die Eingabe leer ist, wird die Schleife durch das <code>break;</code>-Kommando verlassen. Der Dialog in diesem Programm könnte wie folgt aussehen: &quot;Was sagst du?&quot; - &quot;Hallo&quot; - &quot;Ich schreie zurück: HALLO&quot; - &quot;Was sagst du?&quot; - &quot;tschö&quot; - &quot;Ich schreie zurück: TSCHÖ&quot; - &quot;Was sagst du?&quot; - &quot;&quot;</aside>
@@ -768,12 +772,18 @@ Person q = p;
 			</div>
 		</div>
 
-		<script src="reveal.js/js/reveal.js"></script>
+		<script src="reveal.js/dist/reveal.js"></script>
+		<script src="reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js/plugin/math/math.js"></script>
+		<script src="reveal.js/plugin/notes/notes.js"></script>
+		<script src="reveal.js/plugin/search/search.js"></script>
         <script src="lib/jquery.js"></script>
         <script src="lib/lodash.js"></script>
         <script src="lib/backbone.js"></script>
         <script src="lib/joint.min.js"></script>
-        <script src="lib/deflate.js"></script>
+				<script src="lib/deflate.js"></script>
 
 		<script src="src/init_reveal.js"></script>
 

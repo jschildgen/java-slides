@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: src/Wetter.java
+  visible: true
+  placeholders:
+    - offset: 232
+      length: 260
+      placeholder_text: ""

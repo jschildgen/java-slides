@@ -5,12 +5,12 @@ files:
 - name: src/Tiere.java
   visible: true
   placeholders:
-  - offset: 110
-    length: 69
+  - offset: 113
+    length: 75
     placeholder_text: ""
-  - offset: 255
+  - offset: 270
     length: 8
     placeholder_text: ""
-  - offset: 297
+  - offset: 317
     length: 7
     placeholder_text: ""

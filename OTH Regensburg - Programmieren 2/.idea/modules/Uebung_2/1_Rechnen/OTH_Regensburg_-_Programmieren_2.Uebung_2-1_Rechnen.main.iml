@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Uebung_2-1_Rechnen:main" external.linked.project.path="$MODULE_DIR$/../../../../Uebung_2/1_Rechnen" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="OTH_Regensburg_-_Programmieren_2" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../../Uebung_2/1_Rechnen/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../Uebung_2/1_Rechnen/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../Uebung_2/1_Rechnen/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="OTH_Regensburg_-_Programmieren_2.util.main" />
+  </component>
+</module>

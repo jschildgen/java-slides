@@ -1,0 +1,10 @@
+type: output
+files:
+- name: test/output.txt
+  visible: false
+- name: src/Webshop.java
+  visible: true
+  placeholders:
+  - offset: 179
+    length: 28
+    placeholder_text: ""

@@ -6,8 +6,8 @@
 
 		<title>Programmieren 2 - Kapitel 3 - Vererbung</title>
 
-		<link rel="stylesheet" href="reveal.js/css/reset.css">
-		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
 
         <link rel="stylesheet" href="src/slides.css">
         <link rel="stylesheet" href="src/style.css">
@@ -15,23 +15,20 @@
 		<link rel="stylesheet" href="src/layout.css">
         <link rel="stylesheet" href="lib/joint.min.css" />
         <link rel="stylesheet" href="src/erd.css" />
-        <link rel="stylesheet" href="poll/poll.css" />
+        <link rel="stylesheet" href="src/poll.css" />
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="src/rainbow.css">
+		<script>
+			if(window.location.search.match( /print-pdf/gi )) {
+				document.getElementsByTagName( "head" )[0].innerHTML += '<link rel="stylesheet" href="src/routeros.css">';
+			} else {
+				document.getElementsByTagName( "head" )[0].innerHTML += '<link rel="stylesheet" href="src/rainbow.css">';
+			}
+			</script>
 
         <!--<script defer src="lib/fontawesome.all.min.js"/>-->
         <link href="lib/fontawesome.all.min.css" rel="stylesheet">
         <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -43,14 +40,14 @@
                     <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
                     <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
                     <h3>Kapitel 3: Vererbung</h3>
-                    <h4 style="text-align:center">2020-11-16</h4>
+                    <h4 style="text-align:center">&nbsp;</h4>
                     <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-225px;">
                     <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-225px; box-shadow:none">
                 </section>
                 
                 <section>
                     <h2>Vererbung</h2>
-                    <div class="trackinfo"><i class="fas fa-book"></i> 12.1</div>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 40 <i class="fas fa-book"></i> 12.1</div>
                     <p class="small">Subklasse erweitert die Superklasse und erbt alle deren Attribute und Methoden</p>
                     <pre style="position: absolute; width:17.5cm; left:0px; font-size: 50%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Studierender.java#3-14' data-sample-indent="keep"></code></pre>
                     <img style="position: absolute; right:-0.5cm; max-height: 9cm; top:4.7cm" uml="class Person {
@@ -90,6 +87,7 @@
             
                   <section>
                     <h2>Polymorphie</h2>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 41, 43</div>
                     <p class="small">Polymorphie (Vielgestaltigkeit) bedeutet, dass ein und die selbe Variable zur Laufzeit von unterschiedlichen Datentypen sein kann.</p>
                     <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/StudierenderBeispiel.java#7'></code></pre>  
                     <div class="fragment">
@@ -127,6 +125,7 @@
             
                   <section>
                     <h2>Method Overriding</h2>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 44</div>
                     <p class="small">Neuimplementieren einer Methode einer Superklasse</p>
                     <p class="small"><code class="java">Person</code></p>
                     <pre style="left:-1cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/overriding/Person.java#43-45'></code></pre>
@@ -150,6 +149,7 @@
             
                   <section>
                       <h2>Objektreferenz <code>super</code></h2>
+                      <div class="trackinfo"><i class="fas fa-headphones"></i> 48</div>
                       <ul>
                         <li><code>this</code> referenziert das aktuelle Objekt</li>
                         <li><code>super</code> referenziert das Objekt der Superklasse</li>
@@ -164,6 +164,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h3>Konstruktoren-Aufruf: <code>super()</code></h3>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 49</div>
                     <p class="small">In einem Konstruktor lässt sich ein Konstruktor der Superklasse aufrufen.</p>
                     <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Studierender.java#3-9,14' data-sample-indent="keep"></code></pre>
                     <aside class="notes">Genau wie eine Konstruktoren-Verkettung mit <code>this()</code> möglich ist, darf man mittels <code>super()</code> einen Konstruktor der Superklasse aufrufen. Dies muss dann das erste Kommando im Konstruktor sein.</aside>
@@ -188,7 +189,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h2>Klasse <code>Object</code></h2>
-                    <div class="trackinfo"><i class="fas fa-book"></i> 12.2</div>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 45 <i class="fas fa-book"></i> 12.2</div>
                     <p class="small">Jede Klasse ist automatisch eine Subklasse von <code>Object</code></p>
                     <p class="small">Methoden:</p>
 
@@ -219,6 +220,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                       <h2>Methode <code>toString</code></h2>
+                      <div class="trackinfo"><i class="fas fa-headphones"></i> 46</div>
                       <p class="small">Die <code>Object</code>-Klasse hat eine Methode <code>toString</code>, um das Objekt in einen String zu wandeln, wenn ein String benötigt wird, z. B. in <code>println</code> oder <code>""+p</code></p>
                       <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/overriding/OverridingBeispiel.java#13-15'></code></pre>
                     <p class="fragment small"><code>de.othr.overriding.Person@3b9a45b3<br>de.othr.overriding.Studierender@7699a589</code></p>
@@ -229,7 +231,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h3>Finale Klassen und Methoden</h3>
-                    <div class="trackinfo"><i class="fas fa-book"></i> 12.1</div>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 50-51 <i class="fas fa-book"></i> 12.1</div>
                     <h4>Finale Klassen</h4>
                     <p class="small">...dürfen keine Subklassen haben.</p>
                     <pre style="width: 14cm; margin-left: 1cm;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Kreditkarte.java#3'></code></pre>
@@ -248,7 +250,8 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
                   </section>
 
                   <section>
-                    <h3>Abstrakte und Methoden</h3>
+                    <h3>Abstrakte Klassen und Methoden</h3>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 52-53</div>
                     <h4>Abstrakte Klassen</h4>
                     <p class="small">... können nicht instanziiert werden und sind nur zum Vererben da.</p>
                     <pre style="width: 14cm; margin-left: 1cm;"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/lebewesen/Lebewesen.java#3'></code></pre>
@@ -269,7 +272,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h2>Schnittstellen (Interfaces)</h2>
-                    <div class="trackinfo"><i class="fas fa-book"></i> 12.4</div>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 54 <i class="fas fa-book"></i> 12.4</div>
                     <ul class="small">
                       <li>In Interfaces werden nur Methoden-Signaturen definiert, nicht ausimplementiert (ähnlich wie bei abstrakten Methoden).</li>
                       <li class="fragment">Eine Klasse kann beliebig viele Interfaces implementieren<br>und muss dabei deren Methoden ausimplementieren</li>
@@ -343,7 +346,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h3>Interface <code>Comparable</code></h3>
-                    <div class="trackinfo"><i class="fas fa-book"></i> 13.5</div>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 55 <i class="fas fa-book"></i> 13.5</div>
                     <img style="position: absolute; right:-0.5cm; max-height: 3cm; top:4.5cm" uml="interface Comparable <<interface>> { 
                       +compareTo(other : Object) : int  
                     } "/>
@@ -403,6 +406,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h3>Abstrakte Klassen vs. Schnittstelle</h3>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 56</div>
                     <p class="small">Ähnlicher Ansatz: Beide nicht instanziierbar. Methoden werden vorgegeben, die die Sub-Klassen implementieren müssen.</p>
                     <div class="columns">
                       <div style="width:13cm">
@@ -429,7 +433,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h3>Innere Klassen</h3>
-                    <div class="trackinfo"><i class="fas fa-book"></i> 11.2, 11.4</div>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 58 <i class="fas fa-book"></i> 11.2, 11.4</div>
                     <p class="small">Klassen können in Klassen verschachtelt werden.</p>
                     <pre style="margin-left: 1cm; width:13cm"><code class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/spezielleklassen/Person.java#3,50-51,57,89,91,138-140'></code></pre>
                     <pre class="fragment"><code style="max-height: 1000px;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/InnereKlassenBeispiel.java#5-7'></code></pre>
@@ -445,7 +449,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h3>Anonyme Klassen</h3>
-                    <div class="trackinfo"><i class="fas fa-book"></i> 11.3</div>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 59 <i class="fas fa-book"></i> 11.3</div>
                     <p class="small">Innere Klassen ohne Namen.</p>
                     <pre style="margin-left: 1cm; width: 16cm"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/spezielleklassen/AnonymeKlasseBeispiel.java#7-13'></code></pre>
                     
@@ -466,6 +470,7 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
 
                   <section>
                     <h3>UML-Beispiel</h3>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 60</div>
                     <img style="max-height: 12cm; margin-top: -4mm;" uml="interface Printable <<interface>> { 
                       +print()  
                     }
@@ -539,21 +544,28 @@ String s2 = super.getDetails();            // Ute (0)</code></pre>
               </div>
             </div>
         
-            <script src="reveal.js/js/reveal.js"></script>
-                <script src="lib/jquery.js"></script>
-                <script src="lib/lodash.js"></script>
-                <script src="lib/backbone.js"></script>
-                <script src="lib/joint.min.js"></script>
-                <script src="lib/deflate.js"></script>
-        
-            <script src="src/init_reveal.js"></script>
-        
-                <script>
-                if(window.location.search.match( /print-pdf/gi )) {
-                        document.getElementById('header').style="display:none";
-                        document.getElementById('footer').style="display:none";
-                }
-                </script>
+            <script src="reveal.js/dist/reveal.js"></script>
+		<script src="reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js/plugin/math/math.js"></script>
+		<script src="reveal.js/plugin/notes/notes.js"></script>
+		<script src="reveal.js/plugin/search/search.js"></script>
+        <script src="lib/jquery.js"></script>
+        <script src="lib/lodash.js"></script>
+        <script src="lib/backbone.js"></script>
+        <script src="lib/joint.min.js"></script>
+				<script src="lib/deflate.js"></script>
+
+		<script src="src/init_reveal.js"></script>
+
+        <script>
+        if(window.location.search.match( /print-pdf/gi )) {
+                document.getElementById('header').style="display:none";
+                document.getElementById('footer').style="display:none";
+        }
+        </script>
+
         
         
           </body>

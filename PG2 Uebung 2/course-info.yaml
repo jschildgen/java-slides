@@ -1,0 +1,10 @@
+type: marketplace
+title: PG2 Uebung 2
+language: German
+summary: OTH Regensburg, Prof. Schildgen
+vendor:
+  name: Johannes Schildgen
+programming_language: Java
+solutions_hidden: true
+content:
+- Aufgaben

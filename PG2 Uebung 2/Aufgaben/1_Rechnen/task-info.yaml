@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: src/Webshop.java
+  visible: true
+  placeholders:
+  - offset: 188
+    length: 30
+    placeholder_text: ""

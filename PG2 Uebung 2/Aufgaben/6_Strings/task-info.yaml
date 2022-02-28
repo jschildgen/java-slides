@@ -1,0 +1,13 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: src/Adresse.java
+  visible: true
+  placeholders:
+    - offset: 246
+      length: 50
+      placeholder_text: ""
+    - offset: 312
+      length: 23
+      placeholder_text: ""

@@ -5,6 +5,6 @@ files:
 - name: src/Wetter.java
   visible: true
   placeholders:
-  - offset: 220
-    length: 234
+  - offset: 232
+    length: 260
     placeholder_text: ""

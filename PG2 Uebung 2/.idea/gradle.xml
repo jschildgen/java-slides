@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Aufgaben/1_Rechnen" />
+            <option value="$PROJECT_DIR$/Aufgaben/2_Random" />
+            <option value="$PROJECT_DIR$/Aufgaben/3_if" />
+            <option value="$PROJECT_DIR$/Aufgaben/4_Schleifen" />
+            <option value="$PROJECT_DIR$/Aufgaben/5_enum" />
+            <option value="$PROJECT_DIR$/Aufgaben/6_Strings" />
+            <option value="$PROJECT_DIR$/Aufgaben/7_Arrays" />
+            <option value="$PROJECT_DIR$/Aufgaben/8_Scanner" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

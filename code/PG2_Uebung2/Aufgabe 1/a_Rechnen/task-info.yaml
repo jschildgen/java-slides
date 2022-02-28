@@ -5,6 +5,6 @@ files:
 - name: src/Webshop.java
   visible: true
   placeholders:
-  - offset: 179
-    length: 28
+  - offset: 188
+    length: 30
     placeholder_text: ""

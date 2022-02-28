@@ -4,7 +4,6 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.util.List;
 
 public class Tests {
   private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();

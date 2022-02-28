@@ -6,8 +6,8 @@
 
 		<title>Programmieren 2 - Kapitel 2 - Objektorientierung</title>
 
-		<link rel="stylesheet" href="reveal.js/css/reset.css">
-		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
 
         <link rel="stylesheet" href="src/slides.css">
         <link rel="stylesheet" href="src/style.css">
@@ -15,23 +15,20 @@
 		<link rel="stylesheet" href="src/layout.css">
         <link rel="stylesheet" href="lib/joint.min.css" />
         <link rel="stylesheet" href="src/erd.css" />
-        <link rel="stylesheet" href="poll/poll.css" />
+        <link rel="stylesheet" href="src/poll.css" />
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="src/rainbow.css">
+		<script>
+			if(window.location.search.match( /print-pdf/gi )) {
+				document.getElementsByTagName( "head" )[0].innerHTML += '<link rel="stylesheet" href="src/routeros.css">';
+			} else {
+				document.getElementsByTagName( "head" )[0].innerHTML += '<link rel="stylesheet" href="src/rainbow.css">';
+			}
+			</script>
 
         <!--<script defer src="lib/fontawesome.all.min.js"/>-->
         <link href="lib/fontawesome.all.min.css" rel="stylesheet">
         <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -43,7 +40,7 @@
                     <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
                     <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
                     <h3>Kapitel 2: Objektorientierung</h3>
-                    <h4 style="text-align:center">2020-10-26</h4>
+                    <h4 style="text-align:center">&nbsp;</h4>
                     <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-225px;">
                     <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-225px; box-shadow:none">
                 </section>
@@ -51,7 +48,7 @@
 
       <section>
         <h2>Klassen und Objekte</h2>
-        <div class="trackinfo"><i class="fas fa-book"></i> 11</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 25 <i class="fas fa-book"></i> 11</div>
         <pre><code class="java" data-trim contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#32-36'></code></pre>  
         <h4>Klasse</h4>
         <p class="small" style="margin-top: -5mm;">Vorlage für Objekte, besteht aus <em>Attributen</em> (<em>Member-<br>Variablen</em>) und <em>Methoden</em>.</p>
@@ -89,6 +86,7 @@
 
       <section>
         <h3>Objektorientierung: Vorteile</h3>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 26</div> 
         <div style="position: absolute; top: 100px; right:0px; font-size:200px"><i class="fas fa-cubes red"></i></div>
         <h4>Modularisierung</h4>
         <ul>
@@ -115,7 +113,8 @@
       </section>
 
       <section>
-        <h3>Member-Variablen</h3>
+        <h3>Member-Variablen (Attribute)</h3>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 27</div> 
         <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Datentyp&gt; &lt;Attributsname&gt;;</code></p>
         <pre style="margin-left:0px; width:12cm" ><code class="java" data-sample-indent="keep" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#1-5,50'></code></pre>  
         <img style="position: absolute; right:0cm; top:3cm; width:30%; z-index: -5;" uml="
@@ -169,6 +168,7 @@
 
       <section>
         <h3>Getter / Setter</h3>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 28-29</div>
         <pre><code class="java">p.name = "Peter";
 System.out.println(p.name);</code></pre>
         <p class="small">... funktioniert nur innerhalb der Klasse <code>de.othr.personen.Person</code></p>
@@ -220,6 +220,7 @@ public void setName(String name) {
 
       <section>
         <h3>Konstruktoren</h3>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 30</div>
         <div style="position: absolute; top: 50px; right:50px; font-size:100px"><i class="fas fa-star red"></i></div>
         <p class="small">Konstruktoren erzeugen neue Objekte der Klasse. <br>
           Sie sind immer <code>public</code> und werden mit <code>new</code> aufgerufen.</p> 
@@ -247,9 +248,9 @@ public void setName(String name) {
 
       <section>
         <h3>Methoden: <code>void</code></h3>
-        <div class="trackinfo"><i class="fas fa-book"></i> 9</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 31 <i class="fas fa-book"></i> 9</div>
         <div style="position: absolute; top: 50px; right:50px; font-size:100px"><i class="fas fa-meh-blank red"></i></div>
-        <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Rückgabetyp&gt;  &lt;Methodenname&gt;(&lt;Parametertyp&gt; &lt;Parametername&gt;, ...) { ... }</code></p>
+        <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Rückgabetyp&gt;  &lt;Methodenname&gt;(<br>&lt;Parametertyp&gt; &lt;Parametername&gt;, ...) { ... }</code></p>
       
         <h4><code>void</code> (keine Rückgabe)</h4>
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personen/Person.java#27-29'></code></pre>  
@@ -260,7 +261,7 @@ public void setName(String name) {
         <h3>Methoden: <code>return</code></h3>
         <div class="trackinfo"><i class="fas fa-book"></i> 9.3</div>
         <div style="position: absolute; top: 50px; right:50px; font-size:100px"><i class="fas fa-surprise red"></i></div>
-        <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Rückgabetyp&gt;  &lt;Methodenname&gt;(&lt;Parametertyp&gt; &lt;Parametername&gt;, ...) { ... }</code></p>
+        <p class="small"><code>&lt;Sichtbarkeit&gt; &lt;Rückgabetyp&gt;  &lt;Methodenname&gt;(<br>&lt;Parametertyp&gt; &lt;Parametername&gt;, ...) { ... }</code></p>
 
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#28-31'></code></pre>  
         <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#62-66'></code></pre>  
@@ -279,7 +280,8 @@ public void setName(String name) {
       </section>
       
       <section>
-        <h3>Methoden: Overloading</h3>
+        <h3>Overloading</h3>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 32</div>
         <p class="small">Eine Klasse kann mehrere Methoden mit dem <em>gleichen Namen</em>, aber <em>unterschiedlichen Parametern</em> besitzen.</p>
         <pre style="width:92%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#33-42'></code></pre>  
         <pre style="width:92%"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#86-88'></code></pre>  
@@ -297,7 +299,7 @@ public void setName(String name) {
 
       <section>
         <h3><code>static</code>: Statische Attribute</h3>
-        <div class="trackinfo"><i class="fas fa-book"></i> 11.1</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 33 <i class="fas fa-book"></i> 11.1</div>
         <p class="small">Mit <code>static</code> gekennzeichnete Attribute existieren nur einmal (nicht pro Objekt).</p>
         <pre style="width:19.5cm; margin-left: 0px;"><code style="max-height: 1000px" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personen/Haustier.java#3-18'></code></pre>  
         <img style="position: absolute; right:0cm; top:4.5cm; width:5.5cm" uml="class Haustier {
@@ -313,6 +315,7 @@ public void setName(String name) {
 
       <section>
         <h3><code>static</code>: Statische Methoden</h3>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 34</div> 
         <p class="small">Statische Methoden...</p>
         <ul class="small" style="margin-top: -5mm;">
           <li>... haben keinen Bezug zu einem Objekt (kein <code>this</code>),</li>
@@ -341,7 +344,7 @@ public void setName(String name) {
 
       <section>
         <h3>Methoden: varargs</h3>
-        <div class="trackinfo"><i class="fas fa-book"></i> 9.2</div>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 35 <i class="fas fa-book"></i> 9.2</div>
         <ul class="small">
           <li>Der letzte (oder einzige) Methodenparameter darf variadisch sein</li>
           <li>Der variadische Parameter erscheint in der Methode als Array</li>
@@ -366,6 +369,7 @@ public void setName(String name) {
 
       <section>
         <h2>UML</h2>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 60</div>
         <h4>Unified Modelling Language</h4>
         <p class="small" style="width:18cm;">Standardisierte grafische Sprache, die 14 Diagrammtypen zur Modellierung von Software-Systemen bietet:</p>
 
@@ -465,6 +469,7 @@ public void setName(String name) {
 
       <section>
         <h3>Objektidentität</h3>
+        <div class="trackinfo"><i class="fas fa-headphones"></i> 39</div>
         <div class="red" style="position: absolute; top: 20px; right:50px; font-size:100px"><code>==</code></div>
         <p class="small"><code>==</code> überprüft, ob zwei Variablen <em>dasselbe</em> Objekt referenzieren.</p>
         <pre><code style="max-height: 1000px" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/personenadresse/Person.java#57-59,68-80'></code></pre>  
@@ -474,7 +479,7 @@ public void setName(String name) {
       <section>
         <h3>Gleichheit: <code>equals</code></h3>
         <div class="trackinfo"><i class="fas fa-book"></i> 12.2</div>
-        <div style="position: absolute; top: 30px; right:0px; font-size:80px"><i class="fas fa-home red"></i><i class="fas fa-home red"></i></div>
+        <div style="position: absolute; top: 30px; right:0px; font-size:70px"><i class="fas fa-home red"></i><i class="fas fa-home red"></i></div>
         <p class="small"><code>equals</code> soll überprüfen, ob zwei Objekte als gleich behandelt werden.<br>Diese Methode muss man für eigene Klassen selbst entwickeln.</p>
         <pre><code style="max-height: 1000px;" class="java" contenteditable data-sample-indent="keep" data-sample='code/Programmieren2/src/de/othr/personenadresse/Adresse.java#3,55-70'></code></pre>  
         <aside class="notes">Diese Methode gibt <code>true</code> aus, wenn zwei Adressen dieselbe Straße, Hausnummer, PLZ und Ort haben. Details zur <code>@Override</code>-Annotation und zur <code>instanceof</code>-Überprüfung folgen im nächsten Kapitel. </aside>
@@ -574,12 +579,18 @@ public void setName(String name) {
 			</div>
 		</div>
 
-		<script src="reveal.js/js/reveal.js"></script>
+		<script src="reveal.js/dist/reveal.js"></script>
+		<script src="reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js/plugin/math/math.js"></script>
+		<script src="reveal.js/plugin/notes/notes.js"></script>
+		<script src="reveal.js/plugin/search/search.js"></script>
         <script src="lib/jquery.js"></script>
         <script src="lib/lodash.js"></script>
         <script src="lib/backbone.js"></script>
         <script src="lib/joint.min.js"></script>
-        <script src="lib/deflate.js"></script>
+				<script src="lib/deflate.js"></script>
 
 		<script src="src/init_reveal.js"></script>
 
@@ -589,6 +600,7 @@ public void setName(String name) {
                 document.getElementById('footer').style="display:none";
         }
         </script>
+
 
 
 	</body>

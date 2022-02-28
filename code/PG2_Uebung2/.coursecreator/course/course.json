@@ -1,5 +1,5 @@
 {
-  "summary" : "Prof. Dr. Johannes Schildgen, OTH Regensburg",
+  "summary" : "2022-02-09, Prof. Dr. Johannes Schildgen, OTH Regensburg",
   "title" : "Programmieren 2 - Übungsblatt 2",
   "authors" : [
     "Johannes Schildgen"
@@ -7,6 +7,7 @@
   "programming_language" : "JAVA",
   "language" : "de",
   "course_type" : "PyCharm",
+  "solutions_hidden" : true,
   "items" : [
     {
       "title" : "Aufgabe 1",
@@ -54,7 +55,7 @@
               "name" : "test/Tests.java",
               "placeholders" : [ ],
               "is_visible" : false,
-              "text" : "import org.junit.*;\n\nimport java.io.ByteArrayOutputStream;\nimport java.io.PrintStream;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class Tests {\n  private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();\n  private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();\n  private final PrintStream originalOut = System.out;\n  private final PrintStream originalErr = System.err;\n\n  @Before\n  public void setUpStreams() {\n    System.setOut(new PrintStream(outContent));\n    System.setErr(new PrintStream(errContent));\n  }\n\n  @After\n  public void restoreStreams() {\n    System.setOut(originalOut);\n    System.setErr(originalErr);\n  }\n\n  @Test\n  public void testSolution() {\n    boolean dice_6 = false;\n    boolean dice_0 = false;\n    for(int i = 1; i<= 100; i++) {\n      Wuerfeln.main(new String[0]);\n    }\n\n    List<String> output = Arrays.asList(outContent.toString().split(\"\\n\"));\n    Assert.assertFalse(\"Es wurde mal eine 0 gewuerfelt.\", output.contains(\"Ich habe eine 0 gewuerfelt.\"));\n    Assert.assertTrue(\"Es wurde nie eine 3 gewuerfelt.\", output.contains(\"Ich habe eine 3 gewuerfelt.\"));\n    Assert.assertTrue(\"Es wurde nie eine 6 gewuerfelt.\", output.contains(\"Ich habe eine 6 gewuerfelt.\"));\n  }\n}"
+              "text" : "import org.junit.*;\n\nimport java.io.ByteArrayOutputStream;\nimport java.io.IOException;\nimport java.io.PrintStream;\nimport java.util.Arrays;\nimport java.util.List;\n\npublic class Tests {\n  private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();\n  private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();\n  private final PrintStream originalOut = System.out;\n  private final PrintStream originalErr = System.err;\n\n  @Before\n  public void setUpStreams() {\n    System.setOut(new PrintStream(outContent));\n    System.setErr(new PrintStream(errContent));\n  }\n\n  @After\n  public void restoreStreams() {\n    System.setOut(originalOut);\n    System.setErr(originalErr);\n  }\n\n  @Test\n  public void testSolution() {\n    for(int i = 1; i<= 100; i++) {\n      Wuerfeln.main(new String[0]);\n    }\n\n    List<String> output = Arrays.asList(outContent.toString().split(\"\\n\"));\n    Assert.assertFalse(\"Es wurde mal eine 0 gewuerfelt.\", output.contains(\"Ich habe eine 0 gewuerfelt.\"));\n    Assert.assertTrue(\"Es wurde nie eine 3 gewuerfelt.\", output.contains(\"Ich habe eine 3 gewuerfelt.\"));\n    Assert.assertTrue(\"Es wurde nie eine 6 gewuerfelt.\", output.contains(\"Ich habe eine 6 gewuerfelt.\"));\n    try {\n      SubmitX.submit();\n    } catch (IOException e) {\n      Assert.fail(\"Correct but submission failed: \"+e.getMessage());\n    }\n  }\n}"
             },
             "src/Wuerfeln.java" : {
               "name" : "src/Wuerfeln.java",
@@ -74,6 +75,12 @@
               ],
               "is_visible" : true,
               "text" : "\n\npublic class Wuerfeln {\n    public static void main(String[] args) {\n        Random wuerfel = new Random();\n\n        int augenzahl = wuerfel.nextInt(6);\n\n        System.out.println(\"Ich habe eine \"+augenzahl+\" gewuerfelt.\");\n    }\n}"
+            },
+            "test/SubmitX.java" : {
+              "name" : "test/SubmitX.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\nimport java.time.ZonedDateTime;\nimport java.util.regex.Matcher;\nimport java.util.regex.Pattern;\n\nclass SubmitX {\n    private static final String DEADLINE_TIME = \"12:00:00+01:00\";\n\n    static void submit() throws IOException {\n        ZonedDateTime now = ZonedDateTime.now();\n        if(now.isAfter(getDeadline())) {\n            return;\n        }\n        URL url = new URL(\"https://fraage.de/submitpg2/submit.php?s=\" + getStudent() + \"&e=\" + getExercise());\n        HttpURLConnection connection = (HttpURLConnection) url.openConnection();\n        connection.setRequestProperty(\"accept\", \"text/plain\");\n        int responseCode = connection.getResponseCode();\n\n        if (responseCode != HttpURLConnection.HTTP_OK) {\n            throw new IOException(\"HTTP_\" + responseCode);\n        }\n    }\n\n    private static String getStudent() throws IOException {\n        Path file = Paths.get(System.getProperty(\"user.home\"), \"submitpg2.txt\");\n        if(!Files.exists(file)) {\n            throw new IOException(\"Please write your token in \"+file);\n        }\n        BufferedReader br = Files.newBufferedReader(file);\n        String token = br.readLine();\n        if(token.length() != 10) {\n            throw new IOException(\"Invalid token in \"+file);\n        }\n        return token;\n    }\n\n    static String getExercise() {\n        Path path = Paths.get(System.getProperty(\"user.dir\"));\n        String a = path.getParent().getParent().getFileName().toString();\n        String b = path.getParent().getFileName().toString();\n        String c = path.getFileName().toString();\n        return (a+\"/\"+b+\"/\"+c).replaceAll(\" \", \"_\").replaceAll(\"%20\", \"_\");\n    }\n\n    private static ZonedDateTime getDeadline() throws IOException {\n        Path path = Paths.get(System.getProperty(\"user.dir\")).getParent().getParent();\n        Path file = path.resolve(\"course-info.yaml\");\n        BufferedReader br = Files.newBufferedReader(file);\n        String line;\n        while( (line = br.readLine()) != null) {\n            if(line.startsWith(\"summary: \")) {\n                Pattern pattern = Pattern.compile(\"([0-9]{4}\\\\-([0-9]){1,2}\\\\-([0-9]){1,2})\");\n                Matcher matcher = pattern.matcher(line);\n                if(matcher.find()) {\n                    return ZonedDateTime.parse(matcher.group(1)+\"T\"+DEADLINE_TIME);\n                }\n            }\n        }\n        return null;\n    }\n}\n"
             }
           },
           "description_text" : "<html>\n<h2>Aufgabe 2 a) Random</h2>\nMit Hilfe eines Würfels lässt sich eine zufällige ganze Zahl zwischen 1 und 6 erzeugen. Mit Java lässt sich dies mit der Klasse <code>Random</code> erreichen.\n<p><b>Lösen Sie das Problem, dass die Klasse <code>Random</code> nicht gefunden werden kann.</b></p>\n<p>Tipp: IntelliJ kann fehlende Klassen-Importe automatisch mittels Alt+Enter hinzufügen.</p>\n<p><b>Sorgen Sie außerdem dafür, dass richtig gewürfelt wird! Es sollen nur die Zahlen 1, 2, 3, 4, 5 und 6 gewürfelt werden können.</b></p>\n</html>",

@@ -1,6 +1,8 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.IOException;
+
 public class Tests {
     @Test
     public void testSolution() {
@@ -15,5 +17,10 @@ public class Tests {
         Karte k2 = new Karte(Karte.FARBE.SCHWARZ, 10);
         Assert.assertEquals("Konstruktor Karte(farbe, wert) funktioniert nicht, wie er soll.", Karte.FARBE.SCHWARZ, k2.getFarbe());
         Assert.assertEquals("Konstruktor Karte(farbe, wert) funktioniert nicht, wie er soll.", 10, k2.getWert());
+        try {
+            Submit.submit();
+        } catch (IOException e) {
+            Assert.fail("Correct but submission failed: " + e.getMessage());
+        }
     }
 }

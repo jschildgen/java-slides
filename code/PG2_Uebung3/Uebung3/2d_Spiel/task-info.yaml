@@ -1,11 +1,7 @@
-type: output
+type: edu
 files:
 - name: src/Main.java
   visible: true
-  placeholders:
-  - offset: 69
-    length: 196
-    placeholder_text: ""
 - name: src/Karte.java
   visible: true
   placeholders:
@@ -38,5 +34,7 @@ files:
       is_visible: false
 - name: uml_karte.png
   visible: true
-- name: test/output.txt
+- name: test/Tests.java
+  visible: false
+- name: test/Submit.java
   visible: false

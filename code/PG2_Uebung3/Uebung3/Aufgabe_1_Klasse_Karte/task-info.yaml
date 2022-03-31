@@ -12,3 +12,5 @@ files:
     placeholder_text: ""
 - name: uml_karte.png
   visible: true
+- name: test/Submit.java
+  visible: false

@@ -47,7 +47,7 @@
                 
                 <section>
                   <h2>Exceptions</h2>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 10</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 61-62 <i class="fas fa-book"></i> 10</div>
                   <p class="small">Exceptions werden geworfen, wenn eine Ausnahmesituation auftritt.</p>
                   <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/ExceptionBeispiel.java#5'></code></pre>
                   <p class="fragment small red">java.lang.NumberFormatException: For input string: "500 EUR"</p>
@@ -81,7 +81,7 @@
 
                 <section>
                   <h2><code>try catch</code></h2>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 10.2</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 63 <i class="fas fa-book"></i> 10.2</div>
                   <div class="columns">
                     <div>
                       <p class="small">Wird im <code>try</code>-Block die abzufangene Exception geworfen,<br>wird sofort in den entsprechenden <code>catch</code>-Block gesprungen.</p>
@@ -122,6 +122,7 @@
 
                   <section>
                     <h2><code>try catch finally</code></h2>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 67</div>
                     <p class="small">Der <code>finally</code>-Block wird in jedem Falle aufgerufen, egal ob der <code>try</code>-Block mit oder ohne Exception durchlaufen wurde.</p>
                     <pre><code class="java" contenteditable data-trim>
                       try {
@@ -143,6 +144,7 @@
 
                   <section>
                     <h3><code>try(...)</code> mit Ressourcen</h3>
+                    <div class="trackinfo"><i class="fas fa-headphones"></i> 67</div>
                     <p class="small">Deklariert man im <code>try</code>-Statement eine oder mehrere Ressourcen, kümmert sich Java darum, diese am Ende des <code>try</code>-Statements zu schließen, egal ob eine Exception auftrat oder nicht.</p>
                     <pre style="width: 98%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#90-98'></code></pre>
                     <aside class="notes">Mit einer Ressource ist ein Objekt gemeint, welches nach der Verwendung ordnungsgemäß geschlossen werden soll, z. B. eine Datei oder eine Verbindung zu einer Datenbank. Es können alle Objekte von Klassen verwendet werden, die die Schnittstelle <code>AutoCloseable</code> implementieren. Java ruft dann nach Beendigung des <code>try</code>-Statements deren <code>close()</code>-Methode auf.</aside>
@@ -171,7 +173,7 @@
 
                 <section>
                   <h2><code>throw</code></h2>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 10.4</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 65 <i class="fas fa-book"></i> 10.4</div>
                   <p class="small">Manuelles Werfen von Exceptions:</p>
                     <pre style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#29-32'></code></pre>
                   <pre class="fragment" style="width: 100%;"><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenThrows.java#39'></code></pre>
@@ -187,7 +189,7 @@
 
                 <section>
                   <h2><code>Exception</code>-Klasse</h2>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 10.1</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 64 <i class="fas fa-book"></i> 10.1</div>
                   <img style="max-height: 10.5cm; margin-top: -8mm;" uml="
                   hide empty members
                   set namespaceSeparator none
@@ -272,7 +274,7 @@
 
                 <section>
                   <h3>Datei-Handling</h3>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 16</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 68 <i class="fas fa-book"></i> 16</div>
                   <ul class="small">
                     <li><code>java.io</code>
                       <ul>
@@ -297,7 +299,7 @@
 
                 <section>
                   <h3>Betriebssystem-Umgebungsvariablen</h3>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 16.2</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 68 <i class="fas fa-book"></i> 16.2</div>
                   <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/dateien/DateiBeispiel.java#9-13'></code></pre>
                   <table class="small">
                     <thead><tr><td><code>os.name</code></td><th>Windows 10</th><th>Mac OS X</th><th>Linux</th></tr></thead>
@@ -313,6 +315,7 @@
 
                 <section>
                   <h3><code>Path</code> / <code>Paths</code></h3>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 69</div>
                   <img style="max-height: 8cm; position: absolute; right: 5mm;" uml="
                   class Paths {
                     --
@@ -347,7 +350,7 @@
 
                 <section>
                   <h3><code>Files</code></h3>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 16.2, 16.3</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 69 <i class="fas fa-book"></i> 16.2, 16.3</div>
                   <img style="max-height: 8cm; position: absolute; right: 1mm; top: 2cm; z-index: 9999;" uml="
                   class Files {
                     --
@@ -371,7 +374,7 @@
 
                 <section>
                   <h3><code>BufferedWriter</code></h3>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 16.4</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 70 <i class="fas fa-book"></i> 16.4</div>
                   <h4>In eine Textdatei schreiben</h4>
                   <pre><code style="max-height:22cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/dateien/DateiBeispiel.java#68-77'></code></pre>
                   <aside class="notes">Viele Methoden der <code>Files</code>-Klasse nehmen beliebig viele zusätzliche Parameter entgegen, um Optionen festzulegen. In diesem Beispiel wurde die Option <code>APPEND</code> gewählt, um den Text ans Ende der Datei anzufügen anstatt die Datei zu überschreiben. Die <code>CREATE</code>-Option sorgt dafür, dass die Datei angelegt wird, falls sie noch nicht existiert.</aside>
@@ -379,7 +382,7 @@
                 
                 <section>
                   <h3><code>BufferedReader</code></h3>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 16.4</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 70 <i class="fas fa-book"></i> 16.4</div>
                   <h4>Aus einer Textdatei lesen</h4>
                   <pre><code class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/exceptions/DateiLesenTryCatch.java#90-98'></code></pre>
                   <aside class="notes">Dieses Beispiel wurde bereits auf der Folie zum try-catch mit Ressourcen gezeigt. Der <code>BufferedReader</code> erlaubt über die Methode <code>readLine()</code> einen zeilenweisen Zugriff auf eine Textdatei. Ist er am Ende angekommen, liefert die Methode <code>null</code> zurück. Der Ausdruck <code>zeile = br.readLine()</code> setzt also <code>zeile</code> auf <code>null</code> und liefert <code>null</code>. Die Überprüfung auf <code>!= null</code> sorgt dann dafür, dass die <code>while</code>-Schleife nun beendet ist.</aside>

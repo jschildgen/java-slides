@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 
 public class Tests {
@@ -28,6 +29,12 @@ public class Tests {
   public void testSolution() {
     Adresse.main(new String[0]);
     Assert.assertEquals("", "Haupstrasse 4b 01234 Teststadt\n" +
-            "Die Adresse befindet sich in Teststadt!\n", outContent.toString());
+            "Die Adresse befindet sich in Teststadt!\n", outContent.toString().replaceAll("(\\r)", ""));
+
+    try {
+      Submit.submit();
+    } catch (IOException e) {
+      Assert.fail("Correct but submission failed: " + e.getMessage());
+    }
   }
 }

@@ -1,0 +1,10 @@
+type: edu
+files:
+- name: src/Konto.java
+  visible: true
+- name: test/Tests.java
+  visible: false
+- name: src/Bank.java
+  visible: true
+- name: test/Submit.java
+  visible: false

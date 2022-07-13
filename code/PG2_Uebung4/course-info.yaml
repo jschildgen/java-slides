@@ -1,8 +1,10 @@
-title: PG2_Uebung4
-language: English
-summary: |-
-  Programmieren 2 - Uebungsblatt 4
-  Prof. Johannes Schildgen, OTH Regensburg
+type: marketplace
+title: PG2 Uebung 4
+language: German
+summary: 2022-04-21, Prof. Dr. Johannes Schildgen, OTH Regensburg
+vendor:
+  name: Johannes Schildgen
 programming_language: Java
+solutions_hidden: true
 content:
 - Uebung4

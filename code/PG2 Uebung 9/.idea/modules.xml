@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung_9.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung_9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung_9.Uebung9-1_Collections.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung_9.Uebung9-1_Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung_9.Uebung9-1_Collections.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung_9.Uebung9-1_Collections.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung_9.Uebung9-1_Collections.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/1_Collections/PG2_Uebung_9.Uebung9-1_Collections.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2_Collections_Fortsetzung/PG2_Uebung_9.Uebung9-2_Collections_Fortsetzung.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2_Collections_Fortsetzung/PG2_Uebung_9.Uebung9-2_Collections_Fortsetzung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2_Collections_Fortsetzung/PG2_Uebung_9.Uebung9-2_Collections_Fortsetzung.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2_Collections_Fortsetzung/PG2_Uebung_9.Uebung9-2_Collections_Fortsetzung.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/2_Collections_Fortsetzung/PG2_Uebung_9.Uebung9-2_Collections_Fortsetzung.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/2_Collections_Fortsetzung/PG2_Uebung_9.Uebung9-2_Collections_Fortsetzung.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/3_List/PG2_Uebung_9.Uebung9-3_List.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/3_List/PG2_Uebung_9.Uebung9-3_List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/3_List/PG2_Uebung_9.Uebung9-3_List.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/3_List/PG2_Uebung_9.Uebung9-3_List.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/3_List/PG2_Uebung_9.Uebung9-3_List.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/3_List/PG2_Uebung_9.Uebung9-3_List.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/4_Set/PG2_Uebung_9.Uebung9-4_Set.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/4_Set/PG2_Uebung_9.Uebung9-4_Set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/4_Set/PG2_Uebung_9.Uebung9-4_Set.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/4_Set/PG2_Uebung_9.Uebung9-4_Set.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/4_Set/PG2_Uebung_9.Uebung9-4_Set.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/4_Set/PG2_Uebung_9.Uebung9-4_Set.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/5_Map/PG2_Uebung_9.Uebung9-5_Map.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/5_Map/PG2_Uebung_9.Uebung9-5_Map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/5_Map/PG2_Uebung_9.Uebung9-5_Map.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/5_Map/PG2_Uebung_9.Uebung9-5_Map.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung9/5_Map/PG2_Uebung_9.Uebung9-5_Map.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung9/5_Map/PG2_Uebung_9.Uebung9-5_Map.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_9.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_9.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_9.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_9.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_9.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_9.util.test.iml" />
+    </modules>
+  </component>
+</project>

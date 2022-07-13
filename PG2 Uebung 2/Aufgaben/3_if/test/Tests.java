@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 
 public class Tests {
@@ -33,6 +34,12 @@ public class Tests {
             "Es ist warm!\n" +
             "Es ist warm!\n" +
             "Es ist warm!\n" +
-            "Es ist warm!\n", outContent.toString());
+            "Es ist warm!\n", outContent.toString().replaceAll("(\\r)", ""));
+
+    try {
+      Submit.submit();
+    } catch (IOException e) {
+      Assert.fail("Correct but submission failed: " + e.getMessage());
+    }
   }
 }

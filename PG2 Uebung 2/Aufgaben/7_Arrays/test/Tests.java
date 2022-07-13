@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 
 public class Tests {
@@ -32,6 +33,12 @@ public class Tests {
             "Maus\n" +
             "Hund\n" +
             "Katze\n" +
-            "Maus\n", outContent.toString());
+            "Maus\n", outContent.toString().replaceAll("(\\r)", ""));
+
+    try {
+      Submit.submit();
+    } catch (IOException e) {
+      Assert.fail("Correct but submission failed: " + e.getMessage());
+    }
   }
 }

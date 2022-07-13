@@ -1,9 +1,6 @@
 import org.junit.*;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.io.PrintStream;
+import java.io.*;
 
 public class Tests {
   private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -29,6 +26,11 @@ public class Tests {
     InputStream in = new ByteArrayInputStream(input.getBytes());
     System.setIn(in);
     Hallo.main(new String[0]);
-    Assert.assertEquals("Wie heißt du? Hallo Frau Dr. Dings!\n", outContent.toString());
+    Assert.assertEquals("Wie heißt du? Hallo Frau Dr. Dings!\n", outContent.toString().replaceAll("(\\r)", ""));
+    try {
+      Submit.submit();
+    } catch (IOException e) {
+      Assert.fail("Correct but submission failed: " + e.getMessage());
+    }
   }
 }

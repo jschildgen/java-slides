@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung_5.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung_5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/1_Banking/PG2_Uebung_5.Uebung_5-1_Banking.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/1_Banking/PG2_Uebung_5.Uebung_5-1_Banking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/1_Banking/PG2_Uebung_5.Uebung_5-1_Banking.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/1_Banking/PG2_Uebung_5.Uebung_5-1_Banking.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/1_Banking/PG2_Uebung_5.Uebung_5-1_Banking.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/1_Banking/PG2_Uebung_5.Uebung_5-1_Banking.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/2_Waehrung/PG2_Uebung_5.Uebung_5-2_Waehrung.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/2_Waehrung/PG2_Uebung_5.Uebung_5-2_Waehrung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/2_Waehrung/PG2_Uebung_5.Uebung_5-2_Waehrung.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/2_Waehrung/PG2_Uebung_5.Uebung_5-2_Waehrung.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/2_Waehrung/PG2_Uebung_5.Uebung_5-2_Waehrung.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/2_Waehrung/PG2_Uebung_5.Uebung_5-2_Waehrung.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/3_BigDecimal/PG2_Uebung_5.Uebung_5-3_BigDecimal.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/3_BigDecimal/PG2_Uebung_5.Uebung_5-3_BigDecimal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/3_BigDecimal/PG2_Uebung_5.Uebung_5-3_BigDecimal.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/3_BigDecimal/PG2_Uebung_5.Uebung_5-3_BigDecimal.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/3_BigDecimal/PG2_Uebung_5.Uebung_5-3_BigDecimal.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/3_BigDecimal/PG2_Uebung_5.Uebung_5-3_BigDecimal.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/4_Auszahlen/PG2_Uebung_5.Uebung_5-4_Auszahlen.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/4_Auszahlen/PG2_Uebung_5.Uebung_5-4_Auszahlen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/4_Auszahlen/PG2_Uebung_5.Uebung_5-4_Auszahlen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/4_Auszahlen/PG2_Uebung_5.Uebung_5-4_Auszahlen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/4_Auszahlen/PG2_Uebung_5.Uebung_5-4_Auszahlen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/4_Auszahlen/PG2_Uebung_5.Uebung_5-4_Auszahlen.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/5_Ueberweisen/PG2_Uebung_5.Uebung_5-5_Ueberweisen.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/5_Ueberweisen/PG2_Uebung_5.Uebung_5-5_Ueberweisen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/5_Ueberweisen/PG2_Uebung_5.Uebung_5-5_Ueberweisen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/5_Ueberweisen/PG2_Uebung_5.Uebung_5-5_Ueberweisen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/5_Ueberweisen/PG2_Uebung_5.Uebung_5-5_Ueberweisen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/5_Ueberweisen/PG2_Uebung_5.Uebung_5-5_Ueberweisen.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/6_compareTo/PG2_Uebung_5.Uebung_5-6_compareTo.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/6_compareTo/PG2_Uebung_5.Uebung_5-6_compareTo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/6_compareTo/PG2_Uebung_5.Uebung_5-6_compareTo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/6_compareTo/PG2_Uebung_5.Uebung_5-6_compareTo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_5/6_compareTo/PG2_Uebung_5.Uebung_5-6_compareTo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_5/6_compareTo/PG2_Uebung_5.Uebung_5-6_compareTo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_5.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_5.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_5.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_5.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_5.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_5.util.test.iml" />
+    </modules>
+  </component>
+</project>

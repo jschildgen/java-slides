@@ -242,23 +242,7 @@
                   <aside class="notes"><code>add</code> fügt die Nachricht in die <code>Queue</code> ein (<code>offer</code> fügt am Ende ein) und benachrichtigt wartende Threads. In der Methode <code>warten_und_ausgeben</code>, welche vom Main-Thread aufgerufen wird (siehe vorherige Folie), wartet auf eingehende Nachrichten (<code>wait()</code>). Sobald der Warteprozess aufgrund von <code>notify()</code> beendet wird, wird sich die Nachricht geholt, sie wird ausgegeben und aus der Queue entfernt (<code>poll</code>).</aside>
                 </section>
                 
-                <section>
-                  <h2>JavaDoc</h2>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 18</div>
-                  <p class="small"><code>/** ... */</code>-Kommentarblöcke beschreiben Klassen, Methoden, etc.</p>
-                  <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/threads/Nachrichtensender.java#25-34'></code></pre>
-                  <p class="small">Erzeugen einer JavaDoc (HTML-Dateien) auf der Konsole:</p>
-                  <pre><code>javadoc Nachrichtensender.java</code></pre>
-                  <p class="small">In IntelliJ: Tools &rightarrow; Generate JavaDoc...</p>
-                  <img src="img/7/javadoc_intellij.png" alt="JavaDoc" class="noborder" style="position: absolute; top: 10cm; right:0mm; width: 7cm;">
-                  <aside class="notes">Mit JavaDoc können Sie Ihre Klassen, Interfaces, Methoden, deren Parameter (<code>@params</code>), Exception-Verhalten (<code>@throws</code>), und mehr dokumentieren. IDEs wie IntelliJ zeigen JavaDoc-Infos im Code an.</aside>
-                </section>
-                <section>
-                  <h2>JavaDoc</h2>
-                  <img src="img/7/javadoc1.png" alt="JavaDoc" class="noborder" style="margin-top: -5mm; width: 80%;">
-                  <img src="img/7/javadoc2.png" alt="JavaDoc" class="noborder" style="margin-top: -5mm; width: 80%;">
-                  
-                </section>
+                
 
                 <section>
                   <h3>Kapitelzusammenfassung</h3>
@@ -266,7 +250,6 @@
                     <li>Threads: <code>Runnable</code>, <code>run</code>, <code>start</code></li>
                     <li><code>synchronized</code>-Blöcke und -Methoden</li>
                     <li><code>wait</code>, <code>notify</code>, <code>notifyAll</code></li>
-                    <li>JavaDoc</li>
                   </ul>
                 </section>
               </div>

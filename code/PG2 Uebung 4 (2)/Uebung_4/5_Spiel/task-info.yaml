@@ -1,0 +1,131 @@
+type: edu
+files:
+- name: src/Karte.java
+  visible: true
+  placeholders:
+  - offset: 1058
+    length: 10
+    placeholder_text: /* TODO */
+    dependency:
+      lesson: Uebung_4
+      task: 4_Methode
+      file: src/Karte.java
+      placeholder: 1
+      is_visible: false
+    initial_state:
+      length: 10
+      offset: 84
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+    student_answer: '          '
+    encrypted_possible_answer: mRLUMKwDtiYOIJ98iF5jMP5ZDdoqcKNVF0ChxI9LiQVFaDeM8z2lzCxmvF71rLX9
+  - offset: 1069
+    length: 10
+    placeholder_text: /* TODO */
+    dependency:
+      lesson: Uebung_4
+      task: 4_Methode
+      file: src/Karte.java
+      placeholder: 2
+      is_visible: false
+    initial_state:
+      length: 10
+      offset: 95
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+    student_answer: '    : "Sch'
+    encrypted_possible_answer: 00SaDY2UNQBZQ8ApRygVw2xoI9EdGP6ysxV2+AVIbJ05bWB3Eerq5HhFZz9L9uuq3ZwYRTFR/03QlbD8XNoV7kpAAvyDuoaLRqnSyJbwsxwXlarXAsUHAz0pDWkW5ToPe2KZapoUeJ7fBc4E+CSqy9vQyXdPinCC5gVMLK9gUseZ9rnSWhD8viEZhkI6hHR6t+ZSswfwoHk31aOCmzu1eBAMrC9OeM6NvtwbsQ3yeIHB2/2Cv7Hz5XdEoyVY91XzxHCBwo6lQLLOQ7YJGoVpFtnvlh6GMv5bRV46R5FMz30RCWodUQ5wFLB0S54Y94E4Xt2GERH73Jmnb6ovT2JE3Jg5Cfmw+lSkjiQPvzrgBTmQfEdTYygfbWkBNJLrAAwNxAPt5LgZUCNiXTNBO3UHijJ1zvzHuuu+y8QUko0VgMyyLHmzKZkSywt7usif+k38aIq90IkFMuJiNhuZRwY/uSRA8KJ4V1XpouJPvZ7WwHkJsbpMI4LMMl08HjbwC4A7sNe8DYWfv0FgG/jATn9o+3N3yyKLm6dbB6e2swm/2vk=
+  - offset: 1085
+    length: 10
+    placeholder_text: /* TODO */
+    dependency:
+      lesson: Uebung_4
+      task: 4_Methode
+      file: src/Karte.java
+      placeholder: 3
+      is_visible: false
+    initial_state:
+      length: 10
+      offset: 111
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+    student_answer: ";\n        "
+    encrypted_possible_answer: IW4zTAx5YRl8U4bLC3bGDCyUonKX8t83A8tjQaWk71f+fsy4lewZCT8+hhE8UAH9g5j2jxcej3DcAEsu8HzovK14wuycGdXvVbuo53X/gWPldtLLZjx3r+PSbRe9qMIASzjzeqithK7jW+LoFro0MuSGC/YKDJU11VH9r7Wn4SBoV0ETsXyKeFKuHldLqWK9
+  - offset: 1101
+    length: 10
+    placeholder_text: /* TODO */
+    dependency:
+      lesson: Uebung_4
+      task: 4_Methode
+      file: src/Karte.java
+      placeholder: 4
+      is_visible: false
+    initial_state:
+      length: 10
+      offset: 127
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+    student_answer: ' farbe + "'
+    encrypted_possible_answer: rydaPfk0X4RmkWkdkoZFELOMOuGfNGcPsBoeVnjpqVgMgchHds2eHTkqMciNJpjWsqZbJgkScTzPnp7GIoaSP1PsNPrz20Zq9QfNuCk5XrXQD0SIfn7DMjftgVW8vps3tMFLQvgEvarO8F9A4kqAX2kPXpSUfiETZMpOvUbWKWJOYV0FRATJysMWK0dsxMSLsvKk90naRsdLmsB9XDuMW2dS8Be5wlWFUerUI1thAzLdk7CUXFrgwfORN734wCKB3V8mZ2mUvvzyp5GGApCLCfndx1Y/AMfbMjxNcTxBDSQE509MVlQ0P3SX4dOVQ8m9
+  - offset: 1117
+    length: 10
+    placeholder_text: /* TODO */
+    dependency:
+      lesson: Uebung_4
+      task: 4_Methode
+      file: src/Karte.java
+      placeholder: 5
+      is_visible: false
+    initial_state:
+      length: 10
+      offset: 143
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+    student_answer: |-
+      ert;
+          }
+    encrypted_possible_answer: i/qLy5bOu3wUCr+SxFqGCIH0dFZ0rhAGNSN7QxLcFlghRDjfYE6Q5KJc6IV1przdOZZ9QRasNEh5WEIPwd5/ol10Wd1K/aB7gk4qXzz7RC6dd8skZEyQWXgCgTG/x/Zx+BFwj1yrgVs8F1i0pFW1Hv++opDdE+yY3/aU2Y7SPffFXa39rV3zjS1gVZSgISX5rS55dXozrF4IqUge3Bxv/VGmhsNEZlC7gcLAfMEC6xR/SmG4PeNJn5Y7o1Stwmya3jEGSQsYXyRTP/xfs1y+eQ==
+  encrypted_text: NYgHoNruO3t7vIi6YFhoH3xmf8QOf2biYwvx2p61rdE4N69KwY9xWLdu5IAjHVpx7Sfw51O4+DBZUh6yF4OTFkPstm73KyjwDGTDlbts8wtiHl9/95ht9b44OJo5WGoLkQfTbtggGI/+rtaVEsg2aDwtwngICI6rzi9nEMtvNv6RyizGjrVf1gh8CHmtphjO+gfamfrwY7UoBAyBXdcNoQ==
+  learner_created: false
+- name: src/Main.java
+  visible: true
+  placeholders:
+  - offset: 73
+    length: 247
+    placeholder_text: /* TODO */
+    initial_state:
+      length: 10
+      offset: 73
+    initialized_from_dependency: false
+    selected: true
+    status: Failed
+    student_answer: |-
+      Karte rote_zehn = new Karte(Karte.FARBE.ROT, 10);
+              boolean legen_ok;
+              Karte weitere;
+              do {
+                  weitere = new Karte();
+              } while(!weitere.kannGelegtWerdenAuf(rote_zehn));
+              System.out.println("Na endlich!");
+    encrypted_possible_answer: 8nikAeXUTkJJ+h5iDfWcwvc9HiOxdLdDy0fR5M2c4IeR/+U58t+qhLiCjfIxEQ2Ak9l9rEhv/o7Hz3OBbcumopc8enPNwS2XiPmZ62IAqoJYBp5cgcFX3n7P4A4nyKtAtG0rSxKyKfI6oqT+h5rQRK+3jB7ZMsDr+IZ3VktvMJ/nIl9bgCsa/gcRhFZBVp9u0OnVM2smNlCFYi+x4bwtMz3vPaQxw1SI4+7yiMnhmDx+Py/uCfnyGwCtWCgP5ahhVtt5S7ixvJ4Gqrvn+I2EhQ==
+  encrypted_text: a3Oc3sOKihNm0o8Cls6Am2veUqlp63F5lxEAwbBQempXPsBIjeXs2wTZafI9V0nFYxAf1rSciieVcn3ovR1XW9sxUJHRaZBtlXDKE6wgboyomkAiCoN6znYPw53ajepo
+  learner_created: false
+- name: test/Tests.java
+  visible: false
+  encrypted_text: ITs8Nv8EH6QWJG5nufD7nE8BMiS9NrdASklZATwTJ+JcHlWkVhXEz4UXVzDHUliuXYTd4Axo4B/qQsq1HY8hjUngB98VSCIjbXCFPCKuztMcpTyxkcZfoAz/ygdd/yo2niRInmjH1eIraLrVb/LKu1MOcgH2PrguDfmoMFIuK0lXY1dp4SoYu0OmZpPWJXuIObwbHCNJYjta2cgPf5MzT7hqD+i5EeAa/wWMjmDyr0d3qKWNxusqhntDs5thueOtrHW18cheuVO93hUdhICSfjCxEnVb9XMp/1NOGavVCnQvELAAVQg9LK+ef4wgyR1321SYRlYkLqZn+tma50ORtD5x3k2RnHT7jtXtoNLiXldWBYSnvk0GcjhLfnrMDz6S23fOQdlSoGczP8Zc7/CNVLRtyGfC7yGrmKoAy1VOoi8Zp72t+Zterm61f1UH7Mqp3I6GFAzjhYMzbriuwUU20y47W4wbpcRDRVMrzlwJLF3LCcvAFJxUR+SwAAfCLsoM1Eokk1HyOKI4wXKYTzUSPcS5aI+7dxSF7eIlgnLhjg8qACyBezn5/Ixe1rD+G5W1mSScZ9iCV0ggtuLdTAm2vX9m/pZ/7xaJwoNOT46G4xIchIn1zQynuiuRnPNRxwyo5+ueqxuxSkcIb105AhWL7z6i71zmKDdx7KQH6lHrOWUuRTPmqZel++WgYAr1um+ta8VnZ69hrLbnIsvOpiUBenml1sjq+HqMeh70nevbKGFHP+HdQ9TGaHqhAPkUj3outVowfuVJ7NkekRumbaK4mPeTSzq56gL74kHr+j2+o7wEtqfu9Kx6BNvkTb49hDVU7iK6YY5dytI1CHpX8LoCtsFeAS3vgxR6s5L7mVhotCHZWFQtQmgYmTuZY+NMWARcFiGfQlGZuwg4iVs7nHg6w6AUae/LPeru8s4CjhWiIHQhy4Fe6QyYGuvLHEU4QwvPbomv0kOiYrQyRIBalafN7lfkS6/5MbzBUakmNjDDg+fQAsNa4EVCnEyWhNJMM/AKRnu1AjVYGqFOSelS3WVXhvsZUKiVArCTsYpL87xZJ94vfHGAho+c2HE63cLxTPzNp2e2y2EGEpVdSnto+WL+LU97YM4fBo5oqrwy3YfOcZ5FwTaMlZXU2h7psKKswnlL9dqAn0bB9Lmj1O71ag4L7H9Qn3a8q5v7SVhuXUf8OhM=
+  learner_created: false
+- name: test/Submit.java
+  visible: false
+  encrypted_text: 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
+  learner_created: false
+status: Failed
+feedback:
+  message: 'Correct but submission failed: /var/www/html/java-slides/code/PG2 Uebung
+    4 (2)/course-info.yaml'
+  time: Fri, 22 Apr 2022 10:32:27 UTC
+record: 5

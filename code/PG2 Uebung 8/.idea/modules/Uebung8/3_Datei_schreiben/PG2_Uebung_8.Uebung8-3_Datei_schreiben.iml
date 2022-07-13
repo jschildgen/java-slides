@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Uebung8-3_Datei_schreiben" external.linked.project.path="$MODULE_DIR$/../../../../Uebung8/3_Datei_schreiben" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="PG2_Uebung_8" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../Uebung8/3_Datei_schreiben">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../Uebung8/3_Datei_schreiben/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../Uebung8/3_Datei_schreiben/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../Uebung8/3_Datei_schreiben/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

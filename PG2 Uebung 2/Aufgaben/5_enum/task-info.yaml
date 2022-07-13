@@ -5,6 +5,8 @@ files:
 - name: src/Todo.java
   visible: true
   placeholders:
-    - offset: 25
-      length: 39
-      placeholder_text: Definieren Sie den enum hier.
+  - offset: 25
+    length: 39
+    placeholder_text: Definieren Sie den enum hier.
+- name: test/Submit.java
+  visible: false

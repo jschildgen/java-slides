@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung_4.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/1_Klasse_Karte/PG2_Uebung_4.Uebung_4-1_Klasse_Karte.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/1_Klasse_Karte/PG2_Uebung_4.Uebung_4-1_Klasse_Karte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/1_Klasse_Karte/PG2_Uebung_4.Uebung_4-1_Klasse_Karte.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/1_Klasse_Karte/PG2_Uebung_4.Uebung_4-1_Klasse_Karte.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/1_Klasse_Karte/PG2_Uebung_4.Uebung_4-1_Klasse_Karte.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/1_Klasse_Karte/PG2_Uebung_4.Uebung_4-1_Klasse_Karte.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/2_toString/PG2_Uebung_4.Uebung_4-2_toString.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/2_toString/PG2_Uebung_4.Uebung_4-2_toString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/2_toString/PG2_Uebung_4.Uebung_4-2_toString.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/2_toString/PG2_Uebung_4.Uebung_4-2_toString.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/2_toString/PG2_Uebung_4.Uebung_4-2_toString.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/2_toString/PG2_Uebung_4.Uebung_4-2_toString.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/3_Random/PG2_Uebung_4.Uebung_4-3_Random.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/3_Random/PG2_Uebung_4.Uebung_4-3_Random.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/3_Random/PG2_Uebung_4.Uebung_4-3_Random.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/3_Random/PG2_Uebung_4.Uebung_4-3_Random.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/3_Random/PG2_Uebung_4.Uebung_4-3_Random.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/3_Random/PG2_Uebung_4.Uebung_4-3_Random.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/4_Methode/PG2_Uebung_4.Uebung_4-4_Methode.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/4_Methode/PG2_Uebung_4.Uebung_4-4_Methode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/4_Methode/PG2_Uebung_4.Uebung_4-4_Methode.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/4_Methode/PG2_Uebung_4.Uebung_4-4_Methode.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/4_Methode/PG2_Uebung_4.Uebung_4-4_Methode.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/4_Methode/PG2_Uebung_4.Uebung_4-4_Methode.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/5_Spiel/PG2_Uebung_4.Uebung_4-5_Spiel.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/5_Spiel/PG2_Uebung_4.Uebung_4-5_Spiel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/5_Spiel/PG2_Uebung_4.Uebung_4-5_Spiel.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/5_Spiel/PG2_Uebung_4.Uebung_4-5_Spiel.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung_4/5_Spiel/PG2_Uebung_4.Uebung_4-5_Spiel.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung_4/5_Spiel/PG2_Uebung_4.Uebung_4-5_Spiel.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_4.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_4.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_4.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_4.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_4.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_4.util.test.iml" />
+    </modules>
+  </component>
+</project>

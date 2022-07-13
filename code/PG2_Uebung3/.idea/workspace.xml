@@ -44,323 +44,550 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5ab4c4b-c8c6-41f1-a77c-5acc4ee6c66d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 1/a_Rechnen/Programmieren_2.Aufgabe_1-a_Rechnen.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/a_Random/Programmieren_2.Aufgabe_2-a_Random.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/b_if/Programmieren_2.Aufgabe_2-b_if.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/c_Schleifen/Programmieren_2.Aufgabe_2-c_Schleifen.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/d_enum/Programmieren_2.Aufgabe_2-d_enum.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/e_Strings/Programmieren_2.Aufgabe_2-e_Strings.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/f_Arrays/Programmieren_2.Aufgabe_2-f_Arrays.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/g_Scanner/Programmieren_2.Aufgabe_2-g_Scanner.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/util/Programmieren_2.util.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/util/Programmieren_2.util.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/util/Programmieren_2.util.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/util/PG2_Uebung4.util.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/util/PG2_Uebung4.util.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/util/PG2_Uebung4.util.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/1_Spieler/PG2_Uebung5.Uebung5-1_Spieler.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/1_Spieler/PG2_Uebung5.Uebung5-1_Spieler.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/1_Spieler/PG2_Uebung5.Uebung5-1_Spieler.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2a_instanceof/PG2_Uebung5.Uebung5-2a_instanceof.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2a_instanceof/PG2_Uebung5.Uebung5-2a_instanceof.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2a_instanceof/PG2_Uebung5.Uebung5-2a_instanceof.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2b_Computergegner_Staerke/PG2_Uebung5.Uebung5-2b_Computergegner_Staerke.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2b_Computergegner_Staerke/PG2_Uebung5.Uebung5-2b_Computergegner_Staerke.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2b_Computergegner_Staerke/PG2_Uebung5.Uebung5-2b_Computergegner_Staerke.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2c_Overriding/PG2_Uebung5.Uebung5-2c_Overriding.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2c_Overriding/PG2_Uebung5.Uebung5-2c_Overriding.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2c_Overriding/PG2_Uebung5.Uebung5-2c_Overriding.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2d_Casting/PG2_Uebung5.Uebung5-2d_Casting.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2d_Casting/PG2_Uebung5.Uebung5-2d_Casting.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2d_Casting/PG2_Uebung5.Uebung5-2d_Casting.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/util/PG2_Uebung5.util.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/util/PG2_Uebung5.util.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/util/PG2_Uebung5.util.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/1_UML/PG2_Uebung6.Uebung6-1_UML.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/1_UML/PG2_Uebung6.Uebung6-1_UML.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/1_UML/PG2_Uebung6.Uebung6-1_UML.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2a_Ausprobieren/PG2_Uebung6.Uebung6-2a_Ausprobieren.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2a_Ausprobieren/PG2_Uebung6.Uebung6-2a_Ausprobieren.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2a_Ausprobieren/PG2_Uebung6.Uebung6-2a_Ausprobieren.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2b_Schnittstelle/PG2_Uebung6.Uebung6-2b_Schnittstelle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2b_Schnittstelle/PG2_Uebung6.Uebung6-2b_Schnittstelle.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2b_Schnittstelle/PG2_Uebung6.Uebung6-2b_Schnittstelle.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2c_Overrides/PG2_Uebung6.Uebung6-2c_Overrides.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2c_Overrides/PG2_Uebung6.Uebung6-2c_Overrides.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2c_Overrides/PG2_Uebung6.Uebung6-2c_Overrides.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2d_implements/PG2_Uebung6.Uebung6-2d_implements.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2d_implements/PG2_Uebung6.Uebung6-2d_implements.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2d_implements/PG2_Uebung6.Uebung6-2d_implements.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/util/PG2_Uebung6.util.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/util/PG2_Uebung6.util.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/util/PG2_Uebung6.util.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PG2_Uebung7/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Programmieren2/src/de/othr/rechnen/GeldRechner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeinTollesProjekt/src/com/company/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeinTollesProjekt/src/de/othr/LustgeApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/PG2_Uebung_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/Uebung_3/1_FizzBuzz/PG2_Uebung_3.Uebung_3-1_FizzBuzz.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/Uebung_3/1_FizzBuzz/PG2_Uebung_3.Uebung_3-1_FizzBuzz.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/Uebung_3/1_FizzBuzz/PG2_Uebung_3.Uebung_3-1_FizzBuzz.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/Uebung_3/2_Zweiter/PG2_Uebung_3.Uebung_3-2_Zweiter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/Uebung_3/2_Zweiter/PG2_Uebung_3.Uebung_3-2_Zweiter.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/Uebung_3/2_Zweiter/PG2_Uebung_3.Uebung_3-2_Zweiter.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/util/PG2_Uebung_3.util.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/util/PG2_Uebung_3.util.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/.idea/modules/util/PG2_Uebung_3.util.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/1_FizzBuzz/src/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/1_FizzBuzz/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/1_FizzBuzz/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/1_FizzBuzz/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/1_FizzBuzz/test/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/2_Zweiter/src/Zweiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/2_Zweiter/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/2_Zweiter/test/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/externalDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/PG2_Uebung_4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/1_Klasse_Karte/PG2_Uebung_4.Uebung_4-1_Klasse_Karte.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/1_Klasse_Karte/PG2_Uebung_4.Uebung_4-1_Klasse_Karte.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/1_Klasse_Karte/PG2_Uebung_4.Uebung_4-1_Klasse_Karte.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/2_toString/PG2_Uebung_4.Uebung_4-2_toString.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/2_toString/PG2_Uebung_4.Uebung_4-2_toString.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/2_toString/PG2_Uebung_4.Uebung_4-2_toString.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/3_Random/PG2_Uebung_4.Uebung_4-3_Random.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/3_Random/PG2_Uebung_4.Uebung_4-3_Random.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/3_Random/PG2_Uebung_4.Uebung_4-3_Random.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/4_Methode/PG2_Uebung_4.Uebung_4-4_Methode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/4_Methode/PG2_Uebung_4.Uebung_4-4_Methode.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/4_Methode/PG2_Uebung_4.Uebung_4-4_Methode.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/5_Spiel/PG2_Uebung_4.Uebung_4-5_Spiel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/5_Spiel/PG2_Uebung_4.Uebung_4-5_Spiel.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/Uebung_4/5_Spiel/PG2_Uebung_4.Uebung_4-5_Spiel.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/util/PG2_Uebung_4.util.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/util/PG2_Uebung_4.util.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/modules/util/PG2_Uebung_4.util.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/1_Klasse_Karte/src/Karte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/1_Klasse_Karte/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/1_Klasse_Karte/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/1_Klasse_Karte/test/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/2_toString/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/2_toString/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/2_toString/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/2_toString/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/2_toString/test/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/3_Random/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/3_Random/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/3_Random/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/3_Random/test/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/4_Methode/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/4_Methode/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/4_Methode/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/4_Methode/test/Submit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/5_Spiel/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/5_Spiel/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/5_Spiel/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/5_Spiel/test/Submit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/lesson-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/PG2_Uebung4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung3/2a_toString/PG2_Uebung4.Uebung4-2a_toString.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung3/2b_Random/PG2_Uebung4.Uebung4-2b_Random.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung3/2c_Methode/PG2_Uebung4.Uebung4-2c_Methode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung4.Uebung4-2d_Spiel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_toString/2a_toString.PG2_Uebung4.Uebung4-2a_toString.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_toString/2a_toString.PG2_Uebung4.Uebung4-2a_toString.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_toString/PG2_Uebung4.Uebung4-2a_toString.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_Random/2b_Random.PG2_Uebung4.Uebung4-2b_Random.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_Random/2b_Random.PG2_Uebung4.Uebung4-2b_Random.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_Random/PG2_Uebung4.Uebung4-2b_Random.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_Methode/2c_Methode.PG2_Uebung4.Uebung4-2c_Methode.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_Methode/2c_Methode.PG2_Uebung4.Uebung4-2c_Methode.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_Methode/PG2_Uebung4.Uebung4-2c_Methode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_Spiel/2d_Spiel.PG2_Uebung4.Uebung4-2d_Spiel.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_Spiel/2d_Spiel.PG2_Uebung4.Uebung4-2d_Spiel.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_Spiel/PG2_Uebung4.Uebung4-2d_Spiel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/Aufgabe_1_Klasse_Karte/Aufgabe_1_Klasse_Karte.PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/Aufgabe_1_Klasse_Karte/Aufgabe_1_Klasse_Karte.PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/Aufgabe_1_Klasse_Karte/PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/PG2_Uebung4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2b_auszahlen/Uebung4-2b_auszahlen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/util/PG2_Uebung4.util.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/util/PG2_Uebung4.util.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PG2_Uebung4_/.idea/modules/util/PG2_Uebung4.util.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/1_Rechnen/PG2_Uebung_2.Aufgaben-1_Rechnen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/1_Rechnen/PG2_Uebung_2.Aufgaben-1_Rechnen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/1_Rechnen/PG2_Uebung_2.Aufgaben-1_Rechnen.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/1_Rechnen/PG2_Uebung_2.Aufgaben-1_Rechnen.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/1_Rechnen/PG2_Uebung_2.Aufgaben-1_Rechnen.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/1_Rechnen/PG2_Uebung_2.Aufgaben-1_Rechnen.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/2_Random/PG2_Uebung_2.Aufgaben-2_Random.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/2_Random/PG2_Uebung_2.Aufgaben-2_Random.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/2_Random/PG2_Uebung_2.Aufgaben-2_Random.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/2_Random/PG2_Uebung_2.Aufgaben-2_Random.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/2_Random/PG2_Uebung_2.Aufgaben-2_Random.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/2_Random/PG2_Uebung_2.Aufgaben-2_Random.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/3_if/PG2_Uebung_2.Aufgaben-3_if.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/3_if/PG2_Uebung_2.Aufgaben-3_if.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/3_if/PG2_Uebung_2.Aufgaben-3_if.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/3_if/PG2_Uebung_2.Aufgaben-3_if.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/3_if/PG2_Uebung_2.Aufgaben-3_if.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/3_if/PG2_Uebung_2.Aufgaben-3_if.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/4_Schleifen/PG2_Uebung_2.Aufgaben-4_Schleifen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/4_Schleifen/PG2_Uebung_2.Aufgaben-4_Schleifen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/4_Schleifen/PG2_Uebung_2.Aufgaben-4_Schleifen.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/4_Schleifen/PG2_Uebung_2.Aufgaben-4_Schleifen.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/4_Schleifen/PG2_Uebung_2.Aufgaben-4_Schleifen.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/4_Schleifen/PG2_Uebung_2.Aufgaben-4_Schleifen.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/5_enum/PG2_Uebung_2.Aufgaben-5_enum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/5_enum/PG2_Uebung_2.Aufgaben-5_enum.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/5_enum/PG2_Uebung_2.Aufgaben-5_enum.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/5_enum/PG2_Uebung_2.Aufgaben-5_enum.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/5_enum/PG2_Uebung_2.Aufgaben-5_enum.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/5_enum/PG2_Uebung_2.Aufgaben-5_enum.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/6_Strings/PG2_Uebung_2.Aufgaben-6_Strings.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/6_Strings/PG2_Uebung_2.Aufgaben-6_Strings.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/6_Strings/PG2_Uebung_2.Aufgaben-6_Strings.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/6_Strings/PG2_Uebung_2.Aufgaben-6_Strings.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/6_Strings/PG2_Uebung_2.Aufgaben-6_Strings.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/6_Strings/PG2_Uebung_2.Aufgaben-6_Strings.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/7_Arrays/PG2_Uebung_2.Aufgaben-7_Arrays.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/7_Arrays/PG2_Uebung_2.Aufgaben-7_Arrays.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/7_Arrays/PG2_Uebung_2.Aufgaben-7_Arrays.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/7_Arrays/PG2_Uebung_2.Aufgaben-7_Arrays.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/7_Arrays/PG2_Uebung_2.Aufgaben-7_Arrays.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/7_Arrays/PG2_Uebung_2.Aufgaben-7_Arrays.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/8_Scanner/PG2_Uebung_2.Aufgaben-8_Scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/8_Scanner/PG2_Uebung_2.Aufgaben-8_Scanner.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/8_Scanner/PG2_Uebung_2.Aufgaben-8_Scanner.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/8_Scanner/PG2_Uebung_2.Aufgaben-8_Scanner.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/8_Scanner/PG2_Uebung_2.Aufgaben-8_Scanner.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/Aufgaben/8_Scanner/PG2_Uebung_2.Aufgaben-8_Scanner.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/PG2_Uebung_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/PG2_Uebung_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/util/PG2_Uebung_2.util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/util/PG2_Uebung_2.util.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/util/PG2_Uebung_2.util.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/util/PG2_Uebung_2.util.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/util/PG2_Uebung_2.util.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/.idea/modules/util/PG2_Uebung_2.util.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/1_Rechnen/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/2_Random/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/3_if/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/4_Schleifen/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/5_enum/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/6_Strings/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/7_Arrays/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/Aufgaben/8_Scanner/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2 Uebung 2/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2 Uebung 2/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/modules/PG2_Uebung1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/modules/PG2_Uebung1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/modules/lesson1/task1/PG2_Uebung1.lesson1-task1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/modules/lesson1/task1/PG2_Uebung1.lesson1-task1.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/.idea/modules/lesson1/task1/PG2_Uebung1.lesson1-task1.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/src/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/task.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/task.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/Aufgabe/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/Aufgabe/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PG2_Uebung1/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PG2_Uebung1/course-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 1/a_Rechnen/Aufgabe_1-a_Rechnen_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/a_Random/Aufgabe_2-a_Random_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/b_if/Aufgabe_2-b_if_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/c_Schleifen/Aufgabe_2-c_Schleifen_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/d_enum/Aufgabe_2-d_enum_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/e_Strings/Aufgabe_2-e_Strings_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/f_Arrays/Aufgabe_2-f_Arrays_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/Aufgabe 2/g_Scanner/Aufgabe_2-g_Scanner_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/util/util.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/util/util_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/modules/util/util_test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 1/a_Rechnen/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 1/a_Rechnen/task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/course-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/Uebung3-2a_toString.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/Uebung3-2a_toString_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/Uebung3-2a_toString_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/Uebung3-2b_Random.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/Uebung3-2b_Random_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/Uebung3-2b_Random_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/Uebung3-2c_Methode.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/Uebung3-2c_Methode_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/Uebung3-2c_Methode_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/Uebung3-2d_Spiel.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/Uebung3-2d_Spiel_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/Uebung3-2d_Spiel_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/Uebung3-Aufgabe_1_Klasse_Karte.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/Uebung3-Aufgabe_1_Klasse_Karte_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/Uebung3-Aufgabe_1_Klasse_Karte_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/reports/tests/test/classes/Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/test-results/test/TEST-Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung2/Aufgabe 2/a_Random/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coursecreator/PG2_Uebung3/course.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PG2_Uebung3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2a_toString/PG2_Uebung3.Uebung3-2a_toString.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2b_Random/PG2_Uebung3.Uebung3-2b_Random.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2c_Methode/PG2_Uebung3.Uebung3-2c_Methode.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/2d_Spiel/PG2_Uebung3.Uebung3-2d_Spiel.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Uebung3/Aufgabe_1_Klasse_Karte/PG2_Uebung3.Uebung3-Aufgabe_1_Klasse_Karte.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung3.util.test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/classes/Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/classes/Tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/test-results/test/TEST-Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/test-results/test/TEST-Tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/reports/tests/test/classes/Tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/test-results/test/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/2_Zweiter/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/src/Karte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/3_Random/src/Karte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/3_Random/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/1_FizzBuzz/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/test/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2a_toString/uml_karte.png" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/1_Klasse_Karte/uml_karte.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/reports/tests/test/classes/Tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/test-results/test/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/src/Karte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/4_Methode/src/Karte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/4_Methode/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/2_Zweiter/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/4_Methode/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2b_Random/uml_karte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/reports/tests/test/classes/Tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/test-results/test/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/src/Karte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/5_Spiel/src/Karte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/5_Spiel/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/1_Klasse_Karte/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/test/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2c_Methode/uml_karte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2d_Spiel/src/Karte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2d_Spiel/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2d_Spiel/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2d_Spiel/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2d_Spiel/task.md" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 3/Uebung_3/2_Zweiter/task.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2d_Spiel/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/2_toString/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2d_Spiel/test/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/5_Spiel/test/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/2d_Spiel/uml_karte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/classes/Tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/test-results/test/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/src/Karte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/2_toString/src/Karte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/1_Klasse_Karte/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/1_Klasse_Karte/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/test/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2 Uebung 4/Uebung_4/3_Random/test/Submit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/test/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/Aufgabe_1_Klasse_Karte/uml_karte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uebung3/lesson-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.coursecreator/PG2_Uebung4/course.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.coursecreator/course/course.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.coursecreator/course/course.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/PG2_Uebung4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/PG2_Uebung4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/1_Banking/Uebung4-1_Banking.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/1_Banking/Uebung4-1_Banking_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/1_Banking/Uebung4-1_Banking_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_Waehrung/Uebung4-2a_Waehrung.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_Waehrung/Uebung4-2a_Waehrung_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_Waehrung/Uebung4-2a_Waehrung_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_BigDecimal/Uebung4-2b_BigDecimal.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_BigDecimal/Uebung4-2b_BigDecimal_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_BigDecimal/Uebung4-2b_BigDecimal_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_auszahlen/Uebung4-2c_auszahlen.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_auszahlen/Uebung4-2c_auszahlen_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_auszahlen/Uebung4-2c_auszahlen_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_ueberweisen/Uebung4-2d_ueberweisen.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_ueberweisen/Uebung4-2d_ueberweisen_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_ueberweisen/Uebung4-2d_ueberweisen_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2e_compareTo/Uebung4-2e_compareTo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2e_compareTo/Uebung4-2e_compareTo_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2e_compareTo/Uebung4-2e_compareTo_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/util/util.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/util/util_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/util/util_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/src/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/src/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2b_auszahlen/Uebung4-2b_auszahlen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/reports/tests/test/classes/Tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/test-results/test/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/src/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/src/Konto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/1_Banking/test/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/reports/tests/test/classes/Tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/test-results/test/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/src/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/src/Konto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2a_Waehrung/test/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/reports/tests/test/classes/Tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/test-results/test/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/src/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/src/Konto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2b_BigDecimal/test/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/reports/tests/test/classes/Tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/test-results/test/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/src/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/src/Konto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2c_auszahlen/test/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/reports/tests/test/classes/Tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/test-results/test/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/src/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/src/Konto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2d_ueberweisen/test/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/src/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/src/Konto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/2e_compareTo/test/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/Uebung4/lesson-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/course-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/1_Spieler/Uebung5-1_Spieler.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/1_Spieler/Uebung5-1_Spieler_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/1_Spieler/Uebung5-1_Spieler_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2a_instanceof/Uebung5-2a_instanceof.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2a_instanceof/Uebung5-2a_instanceof_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2a_instanceof/Uebung5-2a_instanceof_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2b_Computergegner_Staerke/Uebung5-2b_Computergegner_Staerke.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2b_Computergegner_Staerke/Uebung5-2b_Computergegner_Staerke_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2b_Computergegner_Staerke/Uebung5-2b_Computergegner_Staerke_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2c_Overriding/Uebung5-2c_Overriding.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2c_Overriding/Uebung5-2c_Overriding_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2c_Overriding/Uebung5-2c_Overriding_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2d_Casting/Uebung5-2d_Casting.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2d_Casting/Uebung5-2d_Casting_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/Uebung5/2d_Casting/Uebung5-2d_Casting_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/util/util.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/util/util_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/modules/util/util_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung5/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung5/course-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung6/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/1_UML/Uebung6-1_UML.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/1_UML/Uebung6-1_UML_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/1_UML/Uebung6-1_UML_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2a_Ausprobieren/Uebung6-2a_Ausprobieren.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2a_Ausprobieren/Uebung6-2a_Ausprobieren_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2a_Ausprobieren/Uebung6-2a_Ausprobieren_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2b_Schnittstelle/Uebung6-2b_Schnittstelle.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2b_Schnittstelle/Uebung6-2b_Schnittstelle_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2b_Schnittstelle/Uebung6-2b_Schnittstelle_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2c_Overrides/Uebung6-2c_Overrides.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2c_Overrides/Uebung6-2c_Overrides_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2c_Overrides/Uebung6-2c_Overrides_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2d_implements/Uebung6-2d_implements.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2d_implements/Uebung6-2d_implements_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/Uebung6/2d_implements/Uebung6-2d_implements_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/util/util.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/util/util_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/.idea/modules/util/util_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/Uebung6/2d_implements/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung6/Uebung6/2d_implements/task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung6/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung6/course-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung7/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung7/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/1_Exceptions/Uebung7-1_Exceptions.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/1_Exceptions/Uebung7-1_Exceptions_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/1_Exceptions/Uebung7-1_Exceptions_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/2a_JSON/Uebung7-2a_JSON.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/2a_JSON/Uebung7-2a_JSON_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/2a_JSON/Uebung7-2a_JSON_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/ChuckNorrisAPI/Uebung7-ChuckNorrisAPI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/ChuckNorrisAPI/Uebung7-ChuckNorrisAPI_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/ChuckNorrisAPI/Uebung7-ChuckNorrisAPI_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/OfficialJokeAPI/Uebung7-OfficialJokeAPI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/OfficialJokeAPI/Uebung7-OfficialJokeAPI_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/Uebung7/OfficialJokeAPI/Uebung7-OfficialJokeAPI_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/util/util.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/util/util_main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/modules/util/util_test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PG2_Uebung7/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung7/course-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programmieren2/src/de/othr/collections/CollectionBeispiel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Programmieren2/src/de/othr/collections/CollectionBeispiel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PG2_Uebung4/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../PG2_Uebung4/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Programmieren2/src/de/othr/grundlagen/KonstantenBeispiel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Programmieren2/src/de/othr/grundlagen/KonstantenBeispiel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Submit/src/Submit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Submit/src/Submit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../exercises/ex1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/ex2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/ex2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/css/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/css/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/dist/reveal.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/dist/reveal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/dist/reveal.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/dist/reveal.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/dist/reveal.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/dist/reveal.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/dist/reveal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/dist/reveal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/dist/reveal.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/dist/reveal.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/js/controllers/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/js/controllers/location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/js/reveal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/js/reveal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/js/utils/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/js/utils/color.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/plugin/highlight/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/plugin/highlight/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/plugin/math/math.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/plugin/math/math.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/plugin/math/math.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/plugin/math/math.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/plugin/math/mathjax3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/plugin/math/mathjax3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/plugin/notes/notes.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/plugin/notes/notes.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/plugin/notes/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/plugin/notes/notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/plugin/notes/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/plugin/notes/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/plugin/notes/speaker-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/plugin/notes/speaker-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reveal.js/test/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../reveal.js/test/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/init_reveal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/init_reveal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,11 +603,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Submit" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1aJ7ciBgsus8kwNsyi7AXhmfZS6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -389,60 +620,32 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Edu.Author.Name" value="Johannes" />
-    <property name="Edu.CourseCreator.LastArchiveLocation" value="/media/tmpfs/uebung3" />
+    <property name="Edu.Author.Name" value="Johannes Schildgen" />
+    <property name="Edu.CourseCreator.LastArchiveLocation" value="/media/tmpfs/uebung3.zip" />
     <property name="HINTS_IN_TASK_DESCRIPTION" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PG2_Uebung4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PG2 Uebung 3" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.33690986" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Main (5)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Uebung3-Aufgabe_1_Klasse_Karte" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Uebung3-Aufgabe_1_Klasse_Karte_main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Uebung3-2a_toString_main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Uebung3-2b_Random_main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Uebung3-2c_Methode_main" />
+      <module name="PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (5)" />
-        <item itemvalue="Application.Main (4)" />
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -477,28 +680,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="748" y="280" key="FileChooserDialogImpl" timestamp="1604477567841">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="748" y="280" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1604477567841" />
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1604477653835">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1604477653835" />
-    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1604477653834">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1604477653834" />
-    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1604477653834">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1604477653834" />
-    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1604477653835">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1604477653835" />
   </component>
 </project>

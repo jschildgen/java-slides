@@ -14,7 +14,7 @@ class Submit {
 
     static void submit() throws IOException {
         ZonedDateTime now = ZonedDateTime.now();
-        if(now.isAfter(getDeadline())) {
+        if (now.isAfter(getDeadline())) {
             return;
         }
         URL url = new URL("https://fraage.de/submitpg2/submit.php?s=" + getStudent() + "&e=" + getExercise());
@@ -29,13 +29,13 @@ class Submit {
 
     private static String getStudent() throws IOException {
         Path file = Paths.get(System.getProperty("user.home"), "submitpg2.txt");
-        if(!Files.exists(file)) {
-            throw new IOException("Please write your token in "+file);
+        if (!Files.exists(file)) {
+            throw new IOException("Please write your token in " + file);
         }
         BufferedReader br = Files.newBufferedReader(file);
         String token = br.readLine();
-        if(token.length() != 10) {
-            throw new IOException("Invalid token in "+file);
+        if (token.length() != 10) {
+            throw new IOException("Invalid token in " + file);
         }
         return token;
     }
@@ -45,7 +45,7 @@ class Submit {
         String a = path.getParent().getParent().getFileName().toString();
         String b = path.getParent().getFileName().toString();
         String c = path.getFileName().toString();
-        return (a+"/"+b+"/"+c).replaceAll(" ", "_").replaceAll("%20", "_");
+        return (a + "/" + b + "/" + c).replaceAll(" ", "_").replaceAll("%20", "_");
     }
 
     private static ZonedDateTime getDeadline() throws IOException {
@@ -53,12 +53,12 @@ class Submit {
         Path file = path.resolve("course-info.yaml");
         BufferedReader br = Files.newBufferedReader(file);
         String line;
-        while( (line = br.readLine()) != null) {
-            if(line.startsWith("summary: ")) {
+        while ((line = br.readLine()) != null) {
+            if (line.startsWith("summary: ")) {
                 Pattern pattern = Pattern.compile("([0-9]{4}\\-([0-9]){1,2}\\-([0-9]){1,2})");
                 Matcher matcher = pattern.matcher(line);
-                if(matcher.find()) {
-                    return ZonedDateTime.parse(matcher.group(1)+"T"+DEADLINE_TIME);
+                if (matcher.find()) {
+                    return ZonedDateTime.parse(matcher.group(1) + "T" + DEADLINE_TIME);
                 }
             }
         }

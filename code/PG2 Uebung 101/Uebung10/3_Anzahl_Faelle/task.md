@@ -1,0 +1,1 @@
+Geben Sie die Anzahl der Corona-Fälle am 1. Mai 2022 in Germany aus.

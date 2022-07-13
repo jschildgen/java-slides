@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung_8.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung_8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/1_Betriebssystem/PG2_Uebung_8.Uebung8-1_Betriebssystem.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/1_Betriebssystem/PG2_Uebung_8.Uebung8-1_Betriebssystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/1_Betriebssystem/PG2_Uebung_8.Uebung8-1_Betriebssystem.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/1_Betriebssystem/PG2_Uebung_8.Uebung8-1_Betriebssystem.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/1_Betriebssystem/PG2_Uebung_8.Uebung8-1_Betriebssystem.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/1_Betriebssystem/PG2_Uebung_8.Uebung8-1_Betriebssystem.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/2_Tmpdir/PG2_Uebung_8.Uebung8-2_Tmpdir.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/2_Tmpdir/PG2_Uebung_8.Uebung8-2_Tmpdir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/2_Tmpdir/PG2_Uebung_8.Uebung8-2_Tmpdir.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/2_Tmpdir/PG2_Uebung_8.Uebung8-2_Tmpdir.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/2_Tmpdir/PG2_Uebung_8.Uebung8-2_Tmpdir.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/2_Tmpdir/PG2_Uebung_8.Uebung8-2_Tmpdir.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/3_Datei_schreiben/PG2_Uebung_8.Uebung8-3_Datei_schreiben.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/3_Datei_schreiben/PG2_Uebung_8.Uebung8-3_Datei_schreiben.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/3_Datei_schreiben/PG2_Uebung_8.Uebung8-3_Datei_schreiben.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/3_Datei_schreiben/PG2_Uebung_8.Uebung8-3_Datei_schreiben.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/3_Datei_schreiben/PG2_Uebung_8.Uebung8-3_Datei_schreiben.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/3_Datei_schreiben/PG2_Uebung_8.Uebung8-3_Datei_schreiben.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/4_Datei_kopieren/PG2_Uebung_8.Uebung8-4_Datei_kopieren.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/4_Datei_kopieren/PG2_Uebung_8.Uebung8-4_Datei_kopieren.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/4_Datei_kopieren/PG2_Uebung_8.Uebung8-4_Datei_kopieren.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/4_Datei_kopieren/PG2_Uebung_8.Uebung8-4_Datei_kopieren.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/4_Datei_kopieren/PG2_Uebung_8.Uebung8-4_Datei_kopieren.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/4_Datei_kopieren/PG2_Uebung_8.Uebung8-4_Datei_kopieren.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/5_Datei_lesen/PG2_Uebung_8.Uebung8-5_Datei_lesen.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/5_Datei_lesen/PG2_Uebung_8.Uebung8-5_Datei_lesen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/5_Datei_lesen/PG2_Uebung_8.Uebung8-5_Datei_lesen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/5_Datei_lesen/PG2_Uebung_8.Uebung8-5_Datei_lesen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung8/5_Datei_lesen/PG2_Uebung_8.Uebung8-5_Datei_lesen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung8/5_Datei_lesen/PG2_Uebung_8.Uebung8-5_Datei_lesen.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_8.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_8.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_8.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_8.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_8.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_8.util.test.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: test/Submit.java
+  visible: false
+- name: src/Uebersetzer.java
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 162
+    placeholder_text: ""
+  - offset: 358
+    length: 383
+    placeholder_text: /* TODO */
+  - offset: 799
+    length: 99
+    placeholder_text: /* TODO */
+- name: src/InfoApp.java
+  visible: true

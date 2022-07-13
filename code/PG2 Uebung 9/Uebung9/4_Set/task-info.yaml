@@ -1,0 +1,12 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: src/Main.java
+  visible: true
+  placeholders:
+  - offset: 269
+    length: 253
+    placeholder_text: /* TODO */
+- name: test/Submit.java
+  visible: false

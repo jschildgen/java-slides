@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: src/Karte.java
+  visible: true
+  placeholders:
+  - offset: 58
+    length: 435
+    placeholder_text: /* TODO */
+- name: src/Main.java
+  visible: true
+- name: test/Submit.java
+  visible: false
+- name: uml_karte.png
+  visible: true

@@ -30,14 +30,14 @@ public class Tests {
       Wuerfeln.main(new String[0]);
     }
 
-    List<String> output = Arrays.asList(outContent.toString().split("\n"));
+    List<String> output = Arrays.asList(outContent.toString().replaceAll("(\\r)", "").split("\n"));
     Assert.assertFalse("Es wurde mal eine 0 gewuerfelt.", output.contains("Ich habe eine 0 gewuerfelt."));
     Assert.assertTrue("Es wurde nie eine 3 gewuerfelt.", output.contains("Ich habe eine 3 gewuerfelt."));
     Assert.assertTrue("Es wurde nie eine 6 gewuerfelt.", output.contains("Ich habe eine 6 gewuerfelt."));
-    /*try {
-      SubmitX.submit();
+    try {
+      Submit.submit();
     } catch (IOException e) {
       Assert.fail("Correct but submission failed: "+e.getMessage());
-    }*/
+    }
   }
 }

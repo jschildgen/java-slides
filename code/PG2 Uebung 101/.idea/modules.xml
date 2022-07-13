@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung_101.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung_101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/1_Lambda/PG2_Uebung_101.Uebung10-1_Lambda.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/1_Lambda/PG2_Uebung_101.Uebung10-1_Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/1_Lambda/PG2_Uebung_101.Uebung10-1_Lambda.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/1_Lambda/PG2_Uebung_101.Uebung10-1_Lambda.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/1_Lambda/PG2_Uebung_101.Uebung10-1_Lambda.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/1_Lambda/PG2_Uebung_101.Uebung10-1_Lambda.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/2_Anzahl_Laender/PG2_Uebung_101.Uebung10-2_Anzahl_Laender.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/2_Anzahl_Laender/PG2_Uebung_101.Uebung10-2_Anzahl_Laender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/2_Anzahl_Laender/PG2_Uebung_101.Uebung10-2_Anzahl_Laender.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/2_Anzahl_Laender/PG2_Uebung_101.Uebung10-2_Anzahl_Laender.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/2_Anzahl_Laender/PG2_Uebung_101.Uebung10-2_Anzahl_Laender.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/2_Anzahl_Laender/PG2_Uebung_101.Uebung10-2_Anzahl_Laender.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/3_Anzahl_Faelle/PG2_Uebung_101.Uebung10-3_Anzahl_Faelle.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/3_Anzahl_Faelle/PG2_Uebung_101.Uebung10-3_Anzahl_Faelle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/3_Anzahl_Faelle/PG2_Uebung_101.Uebung10-3_Anzahl_Faelle.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/3_Anzahl_Faelle/PG2_Uebung_101.Uebung10-3_Anzahl_Faelle.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/3_Anzahl_Faelle/PG2_Uebung_101.Uebung10-3_Anzahl_Faelle.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/3_Anzahl_Faelle/PG2_Uebung_101.Uebung10-3_Anzahl_Faelle.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/4_Gesamtanzahl/PG2_Uebung_101.Uebung10-4_Gesamtanzahl.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/4_Gesamtanzahl/PG2_Uebung_101.Uebung10-4_Gesamtanzahl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/4_Gesamtanzahl/PG2_Uebung_101.Uebung10-4_Gesamtanzahl.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/4_Gesamtanzahl/PG2_Uebung_101.Uebung10-4_Gesamtanzahl.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung10/4_Gesamtanzahl/PG2_Uebung_101.Uebung10-4_Gesamtanzahl.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung10/4_Gesamtanzahl/PG2_Uebung_101.Uebung10-4_Gesamtanzahl.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_101.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_101.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_101.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_101.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_101.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_101.util.test.iml" />
+    </modules>
+  </component>
+</project>

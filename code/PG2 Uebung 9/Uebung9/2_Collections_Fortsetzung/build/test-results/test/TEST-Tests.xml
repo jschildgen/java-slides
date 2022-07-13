@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-19T05:39:27" hostname="jotebook" time="0.303">
+  <properties/>
+  <testcase name="testSolution" classname="Tests" time="0.303"/>
+  <system-out><![CDATA[name: Katja
+hobbies: 
+    - Tennis
+    - Klavier
+wohnorte: 
+    - Regensburg
+    - Berlin
+telefon: 
+    Mobil: 0151/55
+    Privat: 0941/55
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

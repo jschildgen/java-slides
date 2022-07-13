@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 
 public class Tests {
@@ -29,6 +30,12 @@ public class Tests {
     Todo.main(new String[0]);
     Assert.assertEquals("", "OFFEN\n" +
             "IN_ARBEIT\n" +
-            "FERTIG\n", outContent.toString());
+            "FERTIG\n", outContent.toString().replaceAll("(\\r)", ""));
+
+    try {
+      Submit.submit();
+    } catch (IOException e) {
+      Assert.fail("Correct but submission failed: " + e.getMessage());
+    }
   }
 }

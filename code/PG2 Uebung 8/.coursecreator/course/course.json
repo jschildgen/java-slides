@@ -1,0 +1,198 @@
+{
+  "course_version" : 1,
+  "summary" : "Programmieren 2, OTH Regensburg, Prof. Schildgen",
+  "title" : "PG2 Uebung 8",
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "Marketplace",
+  "solutions_hidden" : true,
+  "items" : [
+    {
+      "id" : 799729695,
+      "title" : "Uebung8",
+      "task_list" : [
+        {
+          "id" : 828521177,
+          "name" : "1_Betriebssystem",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [
+                {
+                  "offset" : 73,
+                  "length" : 10,
+                  "possible_answer" : "hPCGMtq5LjZmA9ye76lrFIuadcg+PQ7AyzPRrLOKhOZS4hS3JiYKMVbCeSQvc9DcenOH7+q0InVpzooWgCSBQg==",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "WEJEkhpCAL5HUFSlR3wpPyFwPlLyF7xM9SfDz0gpEyn0nnRv1DRCH8yrYFOH0XHOHgO9LdyG/Df2eQ+RljCg0iJH8F99/EtTUmkicUwi40JjEFPxIGj4mpUW0ppYhrw+"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ5bt+QuYkigvvbLBqdG+8g/Wzs8tnYCkZ99vR7qZNKQOztEUSHdhGRtJqQ3WfyiNiM+qpD2Ni3HqxJB2XOl4dO7UTmxNOVNkI/18zgDr9iYVGL0ZR2mCZUSYOnQ9gbyfc7L9apMv/T2RQd9lbJQ8ByA7/F4iEy1k+Vk83T1SqTnQapAiEZgg8aVkeZNuW5pHDjQnJ8baG/xSqvF/O1dqdqyZJFr+lBooxO30cI6l5UVTZ2ZJ53he4wzpSBnLFMD/TTHHzD1/76XKDs6vh4gBwy+Ij+wkUi1hag4BKhllfU+jrnSJIPc5j5O4NhXAO0ukwRah/vSbUTwyIGuDgI/dJiMC9dx2vgAb4Jvh/QV5yHydVyMg2CmnON3sWidAVAOuE7fTvMzTY2Usu3otcXCa+zNFbx7MGFD/rY0LGW0a98u3ESZXWXkhx3Vewf+5eOSQ8myhWJum5eDqsJjejv1ROeJEUl70VSr//4oaJNi1shjH9QDJfooBiihF/Yp8ogeSap4mPafJVGt2OYQALFwI9QgJMvVedY8e8T9TFFLnWD5tID8T9VcV+erraGghguwHpI5/FpdG03qqbaiI8Wa7gBeTVJu82U4qeqi05ZW66H36FTOxU5F7+cfLntjUwjJhTTa7WpVUCoT3Ahx1U5HhgTY4TGHJFBeoAevDImLSe9vtjLG6mP/n7pe44Ou6F282866CV/j4hbrUcQOnoebZEMrsQSyDvBSu1cfRVxYoftp0EP7XNUqu53l+qyvzwuHBEWskFh2WLqXTsfXz5CXOJbMw96i9GFRFbp1VY//L90m3Onf9GNphjpQsG5ut7P48xClD9WHUOhurjX52vqdPpW02zAH6hQ7v0m2jWpqnH0ilIAnwIGmGACukUf8Br/zv0Uh2r6qJ1sy3EFgvqDBFR85eN7Qai6+uAgh52gqE3HOV0lq94IPQ0aEuxMD7iVMfVe23J0K0KRW44WUdEicLSf1WiWUxV7mdiYkPxwv9W8wkDRssJ+XQVGm+xs4X/h2lEnpQ3nrCX32fe8/E7Ay7lxnsrXlgHKdf6H9FAua/Ope5onDMmtyZsBED4gO5knLKYtQOUhMBW146sMvZgis0DpaR923ZRq9CHR6CXhmbYNS9MsE7MGwQSCQgcgbcq3mZEETzA06WYGtfITJvAuLS9uep0UeloZEhq84A81U+Igql8C/o7wMbN1+LKPdfJ6Q2ZTrp8121P8Ct2o5vvn9hinKJTJNR0sbaJuXweL+7kXqZ0RW1tv9/pJFjy/1p92buutwn0aj+/5Khjbk1/Dj5pEVQS/oIY++C8AW4jyi0Y52NJnIb0nJz2JAvYQy/rZTl/8RxRsVjJLgUPbU0iMyZNLC2Pi7IBgGpcKmObzS3nwlBtahAUcKS+lixNoYWdG9N9E="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "In dieser ersten Aufgabe sollen Sie einfach nur das **Betriebssystem ausgeben**, welches der Benutzer hat. Na dann: Auf geht's! :-)",
+          "description_format" : "MD",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 1225861134,
+          "name" : "2_Tmpdir",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [
+                {
+                  "offset" : 214,
+                  "length" : 10,
+                  "possible_answer" : "e0y7MamdIt2j2qJZAfl8tp7pVlF2vmMNKljKxdZC++YtUY1Pu3FjXysfyoWPz6s5cqPAkdqsLD/1Prg8U/Q++g==",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "ClA4fXpUa4NPkfy2XESd9NpoxHNuMPQ7auEI4/srjHyWTEMci09AHOKe6qgLMpKdUUlihjooET9dIwCbkj7DxolSVokRQAkvYNZ0OOM0yBqzgLzMjZJMvYTkIAApQnq495wZfkzB2k3GMvQcu4di4Lr/qNsDTSnU5fa0/mSqI4X32EmtrQ8eyU8smw5N7qfIJndqYWeQuTAOsVCSr/Dv4PPWiCC5NqC7AOgfG8j6/vPeKjzItQcuNn8ilX9EdOSMkgd7Pa5gwsilda7AkLcLnIJGGASoRU53k1BuNMiRX/TUUzFRcPQcnqx0O76+MVzi"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRMczxxtrWGK6cIYlUtvAb9j1KeY520oFr0wu0oKWj7MOORXLfIPiqF2M+M+D3kH8gynpnmjZDLfgkg+tkaJOVDnIwW5x8cccxQl7LzKP+9GEI4HOozBkn35xl/w7s/rJ3pZCjm+yaxhMjYAZ61C4jjCKDwZGf/tnKRnM5P3ouZoOw3WnRi3DnGNO1u3GOcoJW7JV43yJ2BfOmpNZiWa+Wc9oERF4pdpZ/w8rNK9MObdTg+6sbyuBwUP6EkLQZyZf6lzCmjEB835LNmRRqhs47A3YsTQJaN5cwFEQHMqhkdG3nLKm1SYFvwDFxI5MrP9pscb8m6bnkgSIf+hU9/1RwZrPWMI9BfVKVtylVYgnRCL5E6+ieUPiC8pyV/4vjyBi3VIdT8ezckPz2ARn6jrmyRfGRRhvR/fXYqmiBurAElGhQz/o1lR+rM7BGEatJo5jdYH1DuBOYVxJ3oME24jbtFY="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "cqHeZjISg3ZYP7+JNY7yj47x3CS6WycQbjwmwvlpPVT3NW6m+5MJbJcLOy9Fw+BzoaLsBSso4GJZiI+rhotAs6lH3D6ZaU6U6TpU+JMRdedK2hLYv2NPmxK/C1TX6/JZDBeDE9RqPMbHWYrxQnrI/zoLGO0PAwWeSEK51LwMYFp/4q3lXAgmR3gZShDoSMI4u8nSFzSeeeaG7YhTwBEqqLFXHMDYv3bagaQhHMsp6Cd1gy6koFbAJbyue/sX3WA+8hBoMtfv7YOK7XWxbke6m3WZLOVYutncEmI3kMsIS0Ltk4a8y/jMz4Gxn0vH2sNEilYCjnCmSMZnP8aATV4Nls5ImCaDoY5zVKhvPfEt5hIulYbQcbpFTLZNZkx+SkFgr29Li+9wuP8Cl4iUKpZP1Vs5945RVxpLRSOjIjGWU1QQY6wAEXKZNXdbDGVhdkvGNN6pCwx7mujeffuGItDeZYT2E+bI2pB6vjgGfAyV7IQhheBnCrD7kIQOqmjwdYxj8YmwyNqBuIAVLhqvTbBjYrDki7FlAIgMDw9Rgty2/rjlhIb7cMzSmBnyo7wrAjHrGSBKsru2QHuZgKXmIfN8WS6DI4rgCTycPKX8OxuVe4llesURDVemb3JGa28ek8+Mz8lcQlfuuvgeMnI3gAAmrymHF+zdyC4MQjA5ExOzeQC2QehBtJ90NMEsIP/ASOFPpJ0WbjspjQn3pl3uWAckeQ3uMudHwTkP4Esw+PGsqHnjvW49PaJDSzM5pxT94F92snpa04Uldgj94pQlarXJBDmQ/iaUQQXPjnQp0DOT/L01jfz/DiA/4pcTytyfoWqazlSwNA8d4pVtYwjl/BvpL1Exj+DHR8gGl50hFIs6yXTOuvx7mKJ8xQvIZDGSw5I/PSDGYgfXfeP8r6AVlYyLPdzPgYzFnnyviEt3Rwc4OleCW5UT80/CjMFjqyA+X1TeCo7hkXqvsapPZODEBIWwqKTBrosh7TjrMCJ3+IT92sg2mexp9hHEx+27rg0r699SRs6LpsrFBzlls0uBjFSCQyWznhfKYxc0bAmBiWmCQeXQXDiiRIWEchfrswSTBamdeOosmZjaZyEdB9Og2RVlhls2g4IsxO8oN1GxaVEwgv8YEbM3Zl/gnUlXURvBeRhcuthPIGrXe4h6sG6WrY3qNMIVVYmHfmEgKnYqnntPjfKROCpIXbXNoK0yd1bi8zkEdXeorU0FNEbxFXD86AV/gFrwigSfqJUpzQOUbqVT68CRFS9kO2rf/ysgqNmFdrGON1ujAzIvyzxV2LcPEL5WCOtLqHtvL+0xKWk+Z74H2cIrGx4KyfkFYJkeBmBOp5qFHB6U/4Ssg86Yg88CtZVTwdc+dQ/r81O14VV0ykbozs44AwvnLHY6Mr/niRbBS4J+WQKNKWlDKRYkgsIC5IazN3PYyYao+glJsTnrJSUcUCJYiWD3TsUSLRUCu11imVTDuXOEb6BNsC4JOFYbkT2jZpIxQDhC8PtYUe6DgkikIArSPZipBzU9Vh7ogyK43VVpS8DnZijf3BVpmI1UmxjnR3zw608xnwuELTAjkm3OUBvyiQS0tbG9Kz6IbFxhGWGFuJEiuVWcTC0AsRDGBM+P6NDihxIYiM/+QRg4hGnGNusl9ua5ICS3eoK8b1yIe9wmnWIQR0pANjnG88IWS2SZ8CoibOYIVycNB0cQt+r0AGsxq1VFvWF+1M/fHm8ldzXlW8vQbwqRe0JtnOXBJDI4XoxfaG/TKZzm7NBKvzwhilXof9ZQWZQwm+qmVX1/RifG4yyqIf4CVEmMmAv/LC77oD57GF3l7SLpVV6sDQpjjGHTOjAXywraNg8TS9fsT+2aJRUg6OR+VW2mk9wfXNRovi+Zde8AAwkilMyULg0otRivqGYJLohfxYFBOM5gvh00zKW9kUZgIlbcQDx8Ojc4Lc8LL0g3niPqjfJA07uN56eRq0jfInEYx0vi/GDhGJ2hFJ+ks9mr4TlSFYgxGVq7U22HOVNHacaQLlvKDswKBBqXVs99QHwiCtOA65wxwTT5Fe+aQyZqwzurWOwKyLJoWojU9+ACwB3kzdc5j3A+AU9T1Ng67LAzG2pqqqf8YJwAWyXBKCKEJuHg15l8VJl82V1BqAIrhN+XdYDP0mhe+InuU+SGFYFEJRsGUXuQYWymBWlRf3vg0VmPmTPqaD5JMp3r4p/6XB1Ph+ROC0mW2WSdpK5j6L8nnxPuBZTnq0zv8AOeCdw1RDa5PbrAuidU7qSmft2sdt9m/8dTLGMb/95Wfk6qasyS3xoqF0SCnZfgWrDv3M6Eamch0rvSMCEViUq+GsAP0pKNPpXweDeuvF1jGReFCq79uNl+JTtpXgAU5rJcP3IvgkNXLfAhOiJ9zF2USzmrYce+AIHVczMd4aKDE0QUKqa/EPzd74gzuHbhC5DuCGQBUWWj+TIQvHw3MgFLLkO96swMiurHgV924uXEpS/HEd+N7B+khxPn8zQ3m3LO4LX6YQoMNialt3NCRw=="
+            }
+          },
+          "description_text" : "Es geht so ähnlich weiter. Schreiben Sie nun eine Methode, die das **tmp-Verzeichnis** ausgibt. Allerdings nicht als String, sondern als `Path`-Objekt. ",
+          "description_format" : "MD",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 284259947,
+          "name" : "3_Datei_schreiben",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [
+                {
+                  "offset" : 257,
+                  "length" : 10,
+                  "possible_answer" : "NP9ulWQfeuqkhDtZfBBDHWYXFA0a+bmKtEoB1h1qZFXZumiekH4x5232b9d3/bDRxmqeYd7dun3KtB9z8ikErw+kzTFWElCt2TCR1W7I9s6by3ppkXMUMKggmMskyeBmeax24rhYHDSQpIui7uGCpTCkRePgulZI7yWp+uGMk61HM8494POaOOu/GB7h8smQ0H7EI1aC6SHVPzkMmKxNDdSzMYd8tY83gmM037DAXJVnC6ubkMKxpKoQbTjjLQW7wkcgF6JN3drZ5rljoV0t6vikP4heO7AxTnIuFmDcfp7/HM2zSqR/uFJfL83aZ5fBKGf3YEMg1SwZ3z5auDw9LNZDBH+Zz9vFRsQAKdNEmQuCvVkDB729gMAmpStW3jqnNtE35fODATG35jXdFOWKJg==",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "cqHeZjISg3ZYP7+JNY7yj0P/qWtifa6ypzhoZCYyCce5c4KV+eYDDI0+SvXJdynQY8bYMRz5JzJMZQtAR9luKlM0WJKwlgEWdhSJ0ayYaLwMd4B+wPqUM+7TPtfAcVRl1uqcHKJufOTmPP9O5lckvcmCaDSDBm0dQiMigai6zphqlRSRu99rMiXSnJOFeNZhOeupiPd0bVxXy29TeDo9A5mFY6IMM1/FMa5UUqlQEcWEMMBqkEmRBVWv2KKNrYL1TTIW5uX5CW2Y7BHMBDVyyJyyi/FnGUWhEk9rif5/pHzoO6GexiBd/3Z3taaAUv3pmzE7zBa+ga8gAsmVCfHkuPP910tvFexQ7u2wvC1vjDttKfCVSsciJ5IW6GUrxsBcXfHC0bDuwfUXHUFDE0XSE2kSb096pChMoPuf3Em01gUsaRp3DtP+9uhLZCciAXpKjJGybjVJc5Po1Wb9GqdfwNyoEv0pkB2DeXMAhAcd8d7D/AZ7qSDO1g0CQViTHuwAeOVW57O/YNSebWtQ9FsNNA=="
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRACwl/kbmHpWrOMqT/hj2uxkQx0kmyb5aAt/I6qUOioE51FkQY19RMFxjlJJ4vOCSVi5d/pp91GZf6dhi8DyjJbbMbls61oOb7b2Fp0Gd0/CqvvwSMBkceMsJhkEJhx29TNg//ANH5D8Rj11T9Ue99370K2IdYVM+TFS02kM5U0hwEx+shANlzKoTAfbRO2pAB61qki3pPJoDO6hBh7wIRvAVq/rP0CnadzdPUouO2eM+ZIENFzwhMeFdZPDVe+9jyEBzuwqLnPpJ/7ixSG1fqlZcTST0hWnrogWyPBVunbs0n3sTpyQThjkIDOMQnnGG7PJY9ZmUECUDaP/EhWUtPywLMUFkVK5MBWAPwXJB08/D7iE+uTH6nO555ePWGdsHje8zvjr7tFLwZjr67akeovZLIAOUfzWa4eO6DVtHY97TYsBzRHEjGIXnNsRnnt4xc8+r1LqwOv43vxjt73u4s3mmfOkF8gXQcTpePgpzOPNvjAGwLpI3jS3a2QJgtfmrKCB9jy7yVssEtFkYKNTLZ3rPX19bXah0WK6GHzXfi0IE8AZf2j36NyfQcJ9LQaSTa1y2x01264RZhoA4mPmLSt1bksFhWIUWWQZ5CJODXMRNQ3Sq18ttMxv7m70lywoEArcoFwIb9grL826Lk9Hp69tiB8mo1RnzWHQXijqtFyAdWuUKID/dSEqRphRwPB87RFXUFQ/wreN/cD4e//RxPUSHVJ6i3zUoGYu9jMMM6HWTIkVpovlnSjVH6/u220vDQSnD5sitGaKa+jkVeSB92LKGAy1E+/tQ/7K3d5qS3GVEbuRL7kOkGQ20eOmC8xMGIkVt5S1FiuuViBASHkFgO0P/JOTbH7D4R1opvq9ubdS+m3znD7NBkn9tOx5phlc7PDiBMdiG1wu+0i7Ws9UfzPRFhtqZKHQRQ5KA2bcw+n2XNaVN/wL0DQ3jrId/EDkZsyVZtEgVx80aiDjJGDkJ6Sw8TrC9uANkE1gCIrLQC4F0Etlq7vRc9KLhPU+ll1IAahULi7sDPFz0hqW+Qs+GT0IEUC/8elXFe2YLOTs0Ldq"
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "Schreiben Sie ein Programm, was eine neue Datei (sofern noch nicht vorhanden) im Tmp-Verzeichnis anlegt namens `zahlen.txt`. In diese Datei sollen die Zahlen von 1 bis 5 (in jede Zeile eine Zahl) geschrieben werden. \n\nFalls die Datei schon existiert, überschreiben Sie deren Inhalt oder löschen Sie die Datei bevor sie angelegt wird.\n\nSchauen Sie danach über den Datei-Explorer nach, ob die Datei angelegt wurde und den gewünschten Inhalt hat.",
+          "description_format" : "MD",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 1336914784,
+          "name" : "4_Datei_kopieren",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [
+                {
+                  "offset" : 185,
+                  "length" : 10,
+                  "possible_answer" : "OOtIAzWn14bgbfMlthqa8BUaBSuNnPjq8CmESC+ndQy2D68bvi4HupP7erQ9ecDukbwp0Lj2IT94jzqDklmt6non1xMaxg/cOfe5I0suUQhaqHRnQAqlxDJnk7gl/XnYrcalslO10YXkJqI7IbOK2cg4vbufrR4xlZu5p8Gogiix396nE7CE9RLOpreIudpqQKoKJnK1gR3W0j5C1a+EZ5XSYHqlF5ZEQP2wf85koDvyK8b/NQVe2+B6oPat0DElveEwqFQROreiYXdRfjPZQ727zYJMDIvFWAfNzkA/1GzenPWmtAOPpYgkK8t6DoBwsa1T1hWw2Lf86MiPSOj+oP9tULcir/58IF9H6D1NCcg=",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "4VhQNWQagsWUy67tfwkg8TBD5zjl83g5roIBaQZAqL7JT/+E36hI4QGVN6Iqd48YIXw3utJ4Fr8+4G2Ybc5EF7G/uzB8c896RilvoTpK6IyyK4wEPSo7e/5gLe3Ee4biamu0mP0bqR0JkhKBPxnjLD0JbUbH3NtZRNscx4kzQS/hWQdsPHB4la25CaUSv/IU54o9mMCydaUtvXbylcXJEkLTwhcRowU0H4rDJ+xeBFKKShP4OO/W8GAg0eumQfT379pivdDIspKtCVTnKpUR8Mh79xIOIfMm53BUbg26wN5/Ka/XhJPLkM/avM5xKuEOw936x2XriPt2U8aYpOJpNWr7FQ7DjE7outqzkHapggD3SRSQiNUeNIKoZg7dVpsDAXlvSwbu1hSwTvD7MF9xm08uO5z75siyb1aGqhQrxLA="
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRACwl/kbmHpWrOMqT/hj2uzmXZengqtiSbHz5OZI7/OxV6weAvw+ERWj9dyunPpbeiy/zSASyqxCdBU6GVk771fb15lda7LjLtfmzRkduClkuIrTHL0nkGiky45K1u5Rn0e4OazlksqKM21kokqXl6OZUn9JZNrzaPwQbypf4vKYS07rSpbZFzhpoPXVULEoZNPFeFZ5hbOmHJuOhJPungYzfkYmFcfCPz9Q1xM79swiIWxMJBRXkT4q7V/Eila5iyhyOTkva7kD13psh4G0qTWfTYhbY0oM3+yivsbBpC9pBg3hFs/KA+YT7S9ihJ9xCLWtVIRuOYiTJQBsF4bzIxNZdl3CfdCWUIg3tHNjIEKK08yekrT99fuZkWnO/yHY6uignLvQrW6rIYCa1/C6QKy2EwvccHCJFzshWHHV3S0W5m7L7C1nQfIfNtbWn5pE7i9PKnkU6Z+BcAgeQ7ODN7GHjbqmTDZHEaeCqlSffCAlWyvBmu8M/QfFs5pGL1LiXN8pIEGK7+6bZYD0FOmC5HulVg75/33zoOYoCi3egA58FqFiczHYE2uo340LL6G5YVOLGmwp6NC1kqjt5dUmktTE/POr+b844huLuOtiKspJMBxmL+VRCXWtCdgHhx83J2DrsXmL7bQGEKa1Zk1UXgYZJmcGzGyAiX8Z2N3Yye531B/8Xrs/aqesOXYDCzcPx8ahm3tM5zTQSGi25/D85dJ5PrD7HXuTw0X0ZNaTdb/bRNh0eKjQlXUsbl8JMJ4d75BWRXN0fn3oOdbhC3gGyzYJ2GafF0ZX7QOj6Ai+k4yVtdReEg68acl5yFimr2Lk9KTQ52amKFiYyWCVwsI8RJqg6JBZ53d/iNcB18EHa300nrFqeMMU4MkAiyGmfT04yaltzm1bW7f6BgxY/4hOyHQBcpo7wPn+E5uLXNE/GYQoEJqNMGY6c8+bUk83gsLA4XJns8/LEsufgH91KLbCa4H4BlG1SwbBSd8K9DMf8hPNbx5KPFQ3WGP/6tsWVwFNLtPWMUffqgGEe/gBqfyLppeq5S3vuCqG+HfeyKhVtB46RJNargb6Ull6SHrIztEo7dwCHwzhSpgMwDpXMzQxtSg="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "Schreiben Sie ein Programm, welches eine Kopie Ihrer Datei `zahlen.txt` erstellt. Der Dateiname der Kopie soll `zahlen2.txt` sein. Sie soll ins gleiche Verzeichnis gespeichert werden, also ebenfalls im Tmp-Verzeichnis.",
+          "description_format" : "MD",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 1874586814,
+          "name" : "5_Datei_lesen",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [
+                {
+                  "offset" : 313,
+                  "length" : 10,
+                  "possible_answer" : "2abbmnB/TBmsiisz+2KIEu6+YYnBenXjqXQac0o0DUQrYCtwphGofR0ukNz8ME3MFH2VMuRt7DK4GZqAbTMlhF+t47O3pynK38AjtmXX7G9vedGpy/Pe/psBkTHhWLNqf+GJdMDYCD2eRqhsHM9AHwrTHyBf51cG7psodW4/SGX6/1iYHX27yS0QW3kW+kzLPn2WpQI0tLKa19DWYSdSeMrXF9JXTkirq2XVpFQQt4HLXg+mhVIMNIXIrvJqwHJLp/K8ppUxtBhToeAP+AkRfqifQ6Rs+QrmbiOm003QAs4hpsp2dyitCJ3eYabS2FEf6S5HltmYcdGORF81OjdZn/ayWWLv/pGyBTst1ONMUddgb0kwpvl8xnGScjKZ5I5lU71E3VDvGbLVMZPguZ0Bhb9N9eGV1LQEs8+PlU7A0CO9p2G54TEzLjBj13qmdNtlZ1YGLDSp0JnxB6qx1cky+V5FdzbM9lwPjLzNZFxnFLyTeYxt7zWJQGdTrOFkCyoT",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "cqHeZjISg3ZYP7+JNY7yj47x3CS6WycQbjwmwvlpPVT3NW6m+5MJbJcLOy9Fw+BzoaLsBSso4GJZiI+rhotAs9IQgRdTuKX7lYFzliJRpjim87tkzEc72BG2ec+s3L3euETiXDepPHDiEDwC9yam7+UkHNcI5gagbW91vES1vSQ+732yV72EiMXLpN398rFwOqID6JGmoNjEn4hJO6iqORA9TVyhlsXld6MoCr6HX119aDGZi2/3ajSMtayA9YRkS3G/DYvqsPLLb/vXkn4aeQj8xbzbwz4nQg2XrLYOWQTJAwibJkJOyF/t8yOagVOjpo52kd5gaKym11/Tzo5ID4PKveXyvXM3BU6bxxwbxE8wSlZ/9R+ZNS06d6l0rxkj8msKLFMzjl32PqkXrYZLQJJ6qXElf8zruxVAZSpDPucdt0ogSTfWfJ1F4bQncOIy"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRACwl/kbmHpWrOMqT/hj2uzmXZengqtiSbHz5OZI7/OxV6weAvw+ERWj9dyunPpbeiy/zSASyqxCdBU6GVk771fb15lda7LjLtfmzRkduClkuIrTHL0nkGiky45K1u5Rn0e4OazlksqKM21kokqXl6OZUn9JZNrzaPwQbypf4vKYS07rSpbZFzhpoPXVULEoZNPFeFZ5hbOmHJuOhJPungYzfkYmFcfCPz9Q1xM79swiIWxMJBRXkT4q7V/Eila5i6gh2AdBvipMBuTutUKzUYOU60csL6x5JYCBTv2ng/U7Wi/VlFvZTWsYmX38iun3VdHH8mSM95qlppQ0Fr4vg4yLY4E6snvU7qpKb80cuRgpvWf6s9S+adZZXmXmvahS7xyeG4fWqclYT9dxa6gYULibvrWaC4xhq3PkkYv4sVuJ6aH7npkLlk5Y0SvnvDWQcoHQyF5boWf8okFWFFz0U76luqW8JprIl+rDqwmy8Y2gznnvl4E+nOGjusy7x4CVzIUt/GuRngW2sXxslzpJ7W6/aS4/IoHzz3g1w4b2tqPpGQhY6e7xzCM1l0Qclcl8MSHgqmC1lmwd1CnePluDJ8fv4VUE4KhL+bcUxcQr6NqKqYsdhKjKQiysckE4bcA2hSVC/T6josEkKQ13G3s1RHptKimisJI5XIEMGsIsBr7wBcqM4QEaBYFaHhpQUL4gomh0GP9bXSVKXlv0/dJPNJFr5zoSojaQiJaLqxgYkNyhlm6zUeJ3GpWjMf4sQlUWWDaazmMHp7M9nIOtgulEx4C/vqzK9TL7hvCQlp7btA0DylpR7mHbbMDBuEVkqpCibBm/aFzFAv9XhmrvEEUp+XU0nh6Ryyop99NjnGQkgv4wQhqqF8J8/4yuOddKi9QUtMgKX59sznSIEFMA+iLvAjD60JGzLNFj/SxbW97nwS9cV2AQ5GUqZ57/xDRH2qCssmYT1PqmEawNi7KiRO223bVU7dvx2MuiVok/PdmbSU8WgomCCZn2CvERIgNFJfs+Fw=="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "Sie haben ja eine Datei namens `submitpg2.txt` in Ihrem Benutzerverzeichnis liegen, in der Ihr Token für die Übungsabgabe steht.\n\nImplementieren Sie die Methode `getToken()`, die das Token aus der Datei liest und als String zurückliefert.\n\nWenn die Datei nicht existieren sollte, soll die Methode `null` zurückliefern.",
+          "description_format" : "MD",
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "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"
+    }
+  ],
+  "version" : 13,
+  "edu_plugin_version" : "2022.2-2021.3-864"
+}

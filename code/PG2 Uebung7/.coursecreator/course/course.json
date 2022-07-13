@@ -1,0 +1,313 @@
+{
+  "course_version" : 1,
+  "summary" : "Programmieren 2, OTH Regensburg, Prof. Schildgen",
+  "title" : "PG2 Uebung7",
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "Marketplace",
+  "vendor" : {
+    "name" : "Johannes Schildgen"
+  },
+  "items" : [
+    {
+      "id" : 475000987,
+      "title" : "Uebung7",
+      "task_list" : [
+        {
+          "id" : 2131737021,
+          "name" : "1_Exceptions",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            },
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "cqHeZjISg3ZYP7+JNY7yj47x3CS6WycQbjwmwvlpPVT3NW6m+5MJbJcLOy9Fw+BzoaLsBSso4GJZiI+rhotAs0h6Ur2H/HJC974ACoWD2h9YTZeGjIxF4gHK+18l7bb7tkG2OIBO5m4fNii2n6LQdUv8iHe/Atjn0pD62l5JmJHdQAlM76tE6yBxvPgDjqzOxKHZAMxqx+C9c3bGNIGYcQ==",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 74,
+                  "length" : 0,
+                  "possible_answer" : "6CbdNAFfSGvy40e91uDXf8AJdwF+7lyW+lQ+gziq/WQ=",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "wq8P7NUA+JufAHsPt8AKg3zvzTINKbSgbpaEMDVxiLsQUC1VNmK1EJArFMcXQdffQvhj3YT/Hu5ytumX6rCQIqEC5IaR46DMgPaQlJJc2QWGZQrL0qKE6nRlvTu9iUPVOpC8Yfk3W5J9ZHKwO2jpNMUcroAovB8b3iaradAz09WbInnJkQw+c/SrZ0f2zF/mzVS04Pvl+bn4MN4T9lZuyBrYTnumhq8F34XI+a4YdwiBDTzZoFY7h8YdzNha+TJ+RxY4VRRPMkG1INiFkln7HRAMMoEfR3WkWRFbngb48OMS8Nx+J22lewisaUR4G7UIhUNtGHtIG7ohlx6ZNjMrAcKSVnPJUlUXva6niAwryz/Ss9XdB3s2zlASGE4oMk2Qsftr9NMJvauK0rm7OeyOPotfLOfw+g8dVAUwTAdwQCQeeMyGZ6FnZINu6Hs3vA3lToum68K5cBk6GBsTRoa29yrNMLXjkxVs26iHCZPWkFq1oY6Q8fZPfyJVkCyi5UB8k80aS50rnpxk6Pk4tcD0WP/1LoFfUlQ2wH5M1Lljt8YQbvt55v4Ay92rPLKeQKVJGdpWGuZBmWAgV5h/jNOxk1hhPDpMVPldmtLjvvAbV8/SZ2HclWaVmFp7PHsC7+gxN0SzVjevWkEQVDFkylDqI81I5+4bXRQdfH6QV5gVt6ikqN1HU3x5YfkGPJQxn3GKeDd0OnoWAemsqR+Yzg0rx4t7veWfVGrUp5AkBrZiGhcKy7Yl/ngumJsEHHu5497/OQ0G5ZGJcY9khM15abDBqN4Dm5W2BtqXZMMEA0nDZnw="
+            },
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 10,
+                  "possible_answer" : "4VhQNWQagsWUy67tfwkg8QF23FYQkVvMpFNTAPXGtGs=",
+                  "placeholder_text" : "/* TODO */"
+                },
+                {
+                  "offset" : 113,
+                  "length" : 0,
+                  "possible_answer" : "PZx0xBo0v00eAKdsNOUkGg==",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 216,
+                  "length" : 0,
+                  "possible_answer" : "6Mz3+PwI1eWYem92bakCMHaivRf6W7sB9Hb7AbBsjG6QiIsb295vOw9wlbqEo5eDR+023oRmHfYwBwlH2rOp22ioExKCuqMEA8roRdhQPCzkcVil5sBbycDl5RG0tQFr",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "LQeMW6tCoCSNNxdvP5KEUUsTjPSt4hvomTIZjtf5gldc6owE76wiBz9M/jB8CbrSp3ox3eE7Zxy44kHMKhCE4xe3SdJsp17wlDnGGhEX4RF2pUmMOTQ4DlLJleyrXF9VVu8fruueL8TbTg8YD0ROQ7N8zenwkKR2w1/OAW6J2gySiLzZfwNEsr6xISdetC+O158gLGOrJKRQ8XBxMLYtPRV0gW9d7jqH/rBeJbnAg9ux+9MKXnIVwBiv8wTVuY+PPmXyTVEnX5IkQaytasy1TBC1iM5BVYWIhCdJRvAbcKVf6WKh++HBxc/gJH7dFpvs"
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>In unserer Witze-App möchten wir API-Anfragen machen. Eine solche Anfrage läuft so ab, dass ein HTTP GET-Request an die REST-API-URL geschickt wird. Das Ergebnis dieses HTTP GET-Requests nennt sich Response und beinhaltet die Antwort der API.</p>\n<p>In der Klasse <code>APIHelper</code> wurde bereits mit der Entwicklung einer statischen Methode <code>httpGet</code> begonnen. Was noch fehlt sind die Imports der benötigten Klassen sowie das Exception-Handling.</p>\n<p>Beim Verbinden mit einer API kann viel schlief gehen: Die Internetverbindung ist unterbrochen, die URL ist ungültig, usw. Daher ist es nun ihre Aufgabe, diese Exceptions, die auftreten können, zu behandeln.</p>\n<ol>\n  <li><b>Importieren Sie die fehlenden Klassen in <code>APIHelper</code>.</b></li>\n  <li><b>In der Methode <code>httpGet</code> soll die <code>IOException</code> nicht abgefangen werden. Stattdessen soll die Methode diese Exception einfach nach außen weiterwerfen.</b></li>\n  <li><b>Da Sie die Exception an die <code>main</code>-Methode der Klasse <code>Main</code> weiterreichen, muss sie nun dort behandelt werden. Fangen Sie sie in der <code>main</code>-Methode ab und geben Sie statt der eigentlichen Ausgabe (dem Quelltext der Webseite) &quot;Verbindungsfehler&quot; aus, wenn die <code>IOException</code> auftritt.</b></li>\n</ol>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 613830298,
+          "name" : "2_JSON",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRPgE0Feh7zuBWhaAWsBIWhPYRKY0CQLu8NXzqmDo1zFSLNXpGgCl5A832pMH4zCpj3dDYddh/7IfPQ8BEXAdjDElFgcE44kbDkDVnQxQpKEzv/lEx3nY/TyLU99WnKSDH1bUgasffWwVwnHdNyLtX0tW1Pm5+DYb2NMDE0lrdNUIGaLv6ZpnWxHoOEJLVQ3L1EA/Pv5i2qW0PCkr8wqyzP0JhN3D+20OyOXSpMaskcogmsO47r7xWAW+edJS5q6IwpEcp0FW0ahIWospKU5sZ4HuWB3GtEM4q576Olq4z5K3k3BZ5hBhwUMJv1rMvlOseYCOi7XENYxpFeJnuqts94AD5x0RX9EdQ/BqYPus8nB0eOJPc2+MvgJHTnQF2+m7Auf7QOXlYKhJtwYEiJWM3PTZ+OQe+60Zih0MOqIYcRGoVg+cNNz7Lf82ORI2RA23Vn1mAgfm0Z8TGCx7xn5tYqoX2c2FlxAh5aKW72mqmMDKKKYVnP2iFa4Mw36JcTPV/pfhIOIJ5MCTOj5W/lsCKuUW2vvad5dNUURRP+QWTVRWsGVQUsNvl58/mlc9zBec/ajJPLnvtjuvv8sd4NQ3XhsTamKK5AVYTJHvOu8hJBeaOrmiIspRA5V98NXoOjGa8RE1gMOu7IL4pRfC5pjT7HToW2GOVioqQvgy7x1USoKhIKxPO7JazQF/twF8JPZWzpIU2V8l9rX7ox9flavR3ISUH3oNTxcgMDN13dxMyB7bNbhFQZZCkG6Y3vQfhn9NgNkHyaNrDQx4dmC0dbUmb8W9Qz/FvArCI3WrJ8syAIU4l1B6CisL/wJ/ccPuQdbCCK7Bc07b353fh7juPKSg1kxlDzMQGGt3EZgQsmZcXJ7eKAbcYNll8VUbmPqWOFMerehdTqidymcsmPWTJozyu60XmPppgKrl2tjYg1eZYvRiQgYrghpbvxt6c5BjfjFF9rQhx9GLlToxIJ9zM5HhKw1Yo/9BVyxdD8qnFPqg5JHx"
+            },
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "a3Oc3sOKihNm0o8Cls6Am2veUqlp63F5lxEAwbBQempXPsBIjeXs2wTZafI9V0nFYxAf1rSciieVcn3ovR1XW/08s+LUfrNLaFJmGlZHeFpkKjUGGJNTq5B/dLPV2t2yCx/a8hQKTUkB4Xr5JaT15PqUJWpoCih8wkfkzIfQbAkU67973qGf0HDjQ3PybKZ7F7TeRK9gZwvgkp4+ruF2tGGXFw+HmkDrS6VtdVsvMN6Qb1Gb1f1A5W1SzQorE0l61orRr9TOFApTYN8f5vG1sg=="
+            },
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [
+                {
+                  "offset" : 1050,
+                  "length" : 0,
+                  "possible_answer" : "PZx0xBo0v00eAKdsNOUkGg==",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 1096,
+                  "length" : 0,
+                  "possible_answer" : "BY/eTXp38vSIynlKKXi4pxLH3vxc6pt3oybtLrqOPhoyiqPlgEfdRZAoDMCG8WswH1fgQl4zdEVU0daCeV3xR6Bi3PSoWg8YYmOvZM15zAkHjW7etY9XHWFmoxbYIpSNKrOyX5cslMn0gMjxVP3pE+WetZwM8YrPvVNMc1TWtA4=",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "S9HiMB6kjmvZNT8QansvMhWyWTpkBPdkOyVHB7dG1L7QYc0+hZczfb5xB2wZRTFZpFUZhRbqc2tRkyPhFQ5HID4kbldrpyWJ5SB0h2XiDrwuEqprBE8zFDjS4xo1kOfSfRZI4XuJ25Mm0sw5DmI933welePtrhMUMMQdi5IIZx8vuMkxMkaktCGEz1R1x/eT7KBFJSZ46sx1X66H+wQkGrm/39Y75jOr9iHD7aeXUvGmGZN9uCqeeV5B9eCG4CK3rTGEzpUK1VtUsFlImEp5Utn8YACD5wcHQcxxWJAEqfOWyx2yBlR0F1PH9fOicM7/jRJe45nrxD1FHuQjlCY6ZbSd2fkOcjcCWR8/u2DcJaGDUdfMwnYTzF7JVxDu/c6UlhnQSyFlIIPz0d2C5k/HS1WYoOYogpJ+fJoneRWA3CHNWuOCHSGXLAJaO9+VZUqEBNL0cbEWJdYuWGlUCnexfNA+gj4mlLiVUGFZqR5GqiBSbve9mzpX4R27KsbZrU7qgkk7P9R1fpU4OaAg+dpR5gIpVOOlbFFAentdoJNKWezlTpuvrtlBPPtPLX/v3HaOG6Vohmz8uv9uJsn4Zm7MUB9/4bDsGG6NXpbT/3t5ldz1uF1bHOC4/wjeTvm59XBAU8MGwxFseQ+Tmof+8DQcgN+3k3omKoxNAGpjTNhUs7RckNk0z//QcZJV68No8QUjH1F4NvuhbcI33gS8GWhyIvwHr8CgvX7fnyNO4zSK+6uzkYbx6QqNnoIWyvQ0NfFLbMXU0ucgUG8JRvtHOeU0ccrXzcz0uyavP7RPczXxPLS9g8TG37tdwLKO7E2Mh0yXVL+a4IenLSxEZONorqds2zZSfZTG1k41ahbiGLJB1wh69EkYSL63jR+L7JUEJIUHlykSaeS3QUvZTSIwGSUCmDQVHRhisY1SuXs5j6Xftdz+9VhR886Fweqvh5oBbwB92cwusehTWwhclNnwje6QO9VqIU0u2V0YrELrWRgWQ0TFZ30rp0GbZRtp03ZnvsPJUFWW+M5Q9NAzrQDpnvRbBNXLjLxBM/p9EdDfzYntcCnei7P7E15vOHWQYSA1A6ppDOu3j2EnYjX5/aUU8HSNtQqAb6Tdtg0/NEnUZafl2jtQXCWf6Ln8b5NtFtqkbPO94v0E4NjglKacI+aJIcipVMAHt8RDuNm6ytf/hYQ49/japlAjRV9Gp3tJdcEaTkUAwjy2Hdae6m99U9xbAiuKf/z1BGsDVol/oyr/qnVJcdyN/FxVd/pFZHJ/FJ+0SZViYOEDVjP+3kKBKwGYvyQ6DASwgKOwg/1ebwBtAhvBii1bHnIekRe3AoZAg6g8Xtiy88e+/Yd0c8RvFjdFmuJ5cd3zpMjiC6RkCsfcNk8oEqi2fGcm4skl0IHrneee7EU06QCgWKHdWWH4afzv5WAsUyuh8bBAD18mq2TXy742urlCnGOwW+HgGrSqi2GD/bYHOgcQ0pYsX3a8qyzPzl1SiA=="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>Als weiteres benötigen wir eine Möglichkeit, JSON-Daten zu parsen, damit wir später in der Witze-App auf das Ergebnis eines API-Aufrufs zugreifen können. Die APIs, die wir verwenden, liefern als Rückgabe einen JSON-String.</p>\n<p>JSON-Objekte sehen in etwa so aus: <code>{\"attribut\": \"wert\"}</code>. Während der Attributname stets ein String ist, kann der Wert ein <code>\"String\"</code>, eine Zahl, ein <code>[Array]</code>, ein <code>{Unterobjekt}</code>, usw. sein.</p>\n<p>Diesem Projekt wurde bereits die <code>org.json</code>-Bibliothek hinzugefügt. Mit ihr kann man in Java JSON-Daten  verarbeiten. Das Hinzufügen von Bibliotheken behandeln wir im Detail jedoch erst später.</p>\n<p>Das Parsen eines JSON-Strings erfolgt in der Methode <code>APIHelper.parseJson</code>. Dort kann einiges schief gehen: Wenn beispielswiese der übergebene String kein wohlgeformtes JSON ist, wird eine <code>JSONException</code> geworfen. Dies ist eine Subklasse von RuntimeException.</p>\n<p><b>Fangen Sie in der Methode <code>parseJson</code> die JSONException ab und werfen Sie eine <code>new IllegalArgumentException(\"Ungueltiges JSON-Objekt\")</code>.</b></p>\n<p>Die <code>IllegalArgumentsException</code> ist ebenfalls eine Subklasse von <code>RuntimeException</code>. Sie muss also nicht abgefangen werden und bedarf auch einer <code>throws</code>-Deklaration.</p>\n<p><b>Probieren Sie im Anschluss in der <code>Main</code>-Klasse aus, was passiert, wenn Sie einen nicht-wohlgeformten JSON-String übergeben (vergessen Sie z. B. ein <code>\"</code> oder eine <code>}</code>) oder wenn Sie einen Array <code>[1,3,3]</code> übergeben.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 1928041688,
+          "name" : "ChuckNorrisAPI",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nEsEPHevjd6ZOkKdl5CNK3W6mVIsPg0pc7tfpvkrTpztYdJIeGfjeDHHYlCn0ZGL9Ynbrjjh2SHcS7HUevX8JcXqjsQHVXgoltopgSYkL46ig+UckeIwTg1Svq4HNKBJo0sOn7h1TTSKMts2VvOAoobm800/91+xWpo6nHZpJKekNYh6O4OCwy4LgHoBAoXuf3UYdjtE8kywzcWnx/CyZGrreZS6fxEE9FW44U7trBB38zhBPPYI+PpPXN0R2rGUhSIM6nR3G8RWBysLacQZjbYIEPU4cJPuKivFjroIjWCS+ExrO5QBYlp1Y7SPxXhD2LRDZtHdS30lOT7/JYtGlp53eeDsawpKQDHmEIv9FTzL9sE2LZR0taYHOVDun+hwUxYN9PR4zRjysrzW2dcEX5m6b2kFRvQdhBpzVCog9EzDH9lmR9xsH9s/f0dOmmJ3qKg13fhzVZQqE7+eEdmugSwR0FMsBf0JZbEEYBQSgV3r14W7eYk1A85YjHIwbO8vCX7HJEV6/pvXHhTAjjQj4tYSS7m86uJ4egMp9FKicTw8mmqr3uwCREWYTqNncYgoy45rAxFGDTAZST57AajePvD+4N8/Rq13dv9K9bRZDlGI+05DTqsoOUEFIpZJpNKVVnNP/BWOX1EeM55dVaDyf8F9Nr7qDq2+kVdsrOvpj66aw1RblTkFPPypPMQvGWi0YTz0sjCzbG4eZG+viP3mOE0cI8lvs6xw2Ip2XzostyLE7WydS3NhKW1eH27Sp7zFbl2xFr7jYVCKKsgachjzQVbV3CJcpit+D+wZJFssykjgEpezVj8sqMGukbGmbZ6XfJLuLupmNUnt8A4g/g01yS3RAswvPRZAZyhyIGaYjP3mb/IsCj4aU8WH/jzeucu8+z3dXoOCGRwgtE5iltGg3pZzYUNu83A+PMOvlnpsnboxiZ6hCRkMKjMbL8rM+3nbnNGKNgBbDdD1+GshwoBKNztSvY5x2cdSmizNq+mOjKhGIUr2ryut61t+kc7igkW3nXAvn7njhOWpU1FYW7yt96i+LZjf7Hzh078qARzLgt7ZxTW+dLKwgM9Yw64l+CzRHBsMrn6h87d19RXwMgAouoCbyzdxngj4obZAuk9IYq6MUTgie6flFvvuEnH6FYNUo0U0VBXNHMyKeyh6U5QTUEKlCiKHVPTnjOmrwA3odISRl0E51u+D8dalVkBLt5GEnrZ5g6Jx9EWm7cNeOUz8JucTUMTMGNpTZdbsdU3E0eBY/3fNEtPfIskLD8aFCJ9YlP7P+wxMTwWdgCT9gm8A8pBqrY90WtIp5cDunmm+QAQoJHQEfd6fP11Q9jbyDO2qn73+dfg61nwpjB0fGhdcTUDcuB6XxisvBFAQn5BjlbhU"
+            },
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "S9HiMB6kjmvZNT8QansvMhWyWTpkBPdkOyVHB7dG1L7QYc0+hZczfb5xB2wZRTFZpFUZhRbqc2tRkyPhFQ5HID4kbldrpyWJ5SB0h2XiDrwuEqprBE8zFDjS4xo1kOfSfRZI4XuJ25Mm0sw5DmI933welePtrhMUMMQdi5IIZx8vuMkxMkaktCGEz1R1x/eT7KBFJSZ46sx1X66H+wQkGrm/39Y75jOr9iHD7aeXUvGmGZN9uCqeeV5B9eCG4CK3rTGEzpUK1VtUsFlImEp5Utn8YACD5wcHQcxxWJAEqfOWyx2yBlR0F1PH9fOicM7/jRJe45nrxD1FHuQjlCY6ZbSd2fkOcjcCWR8/u2DcJaGDUdfMwnYTzF7JVxDu/c6UlhnQSyFlIIPz0d2C5k/HS1WYoOYogpJ+fJoneRWA3CHNWuOCHSGXLAJaO9+VZUqEBNL0cbEWJdYuWGlUCnexfNA+gj4mlLiVUGFZqR5GqiBSbve9mzpX4R27KsbZrU7qgkk7P9R1fpU4OaAg+dpR5gIpVOOlbFFAentdoJNKWezlTpuvrtlBPPtPLX/v3HaOG6Vohmz8uv9uJsn4Zm7MUB9/4bDsGG6NXpbT/3t5ldz1uF1bHOC4/wjeTvm59XBAU8MGwxFseQ+Tmof+8DQcgN+3k3omKoxNAGpjTNhUs7RckNk0z//QcZJV68No8QUjH1F4NvuhbcI33gS8GWhyIvwHr8CgvX7fnyNO4zSK+6uzkYbx6QqNnoIWyvQ0NfFLbMXU0ucgUG8JRvtHOeU0ccrXzcz0uyavP7RPczXxPLS9g8TG37tdwLKO7E2Mh0yXVL+a4IenLSxEZONorqds2zZSfZTG1k41ahbiGLJB1wh69EkYSL63jR+L7JUEJIUHlykSaeS3QUvZTSIwGSUCmDQVHRhisY1SuXs5j6Xftdz+9VhR886Fweqvh5oBbwB92cwusehTWwhclNnwje6QO9VqIU0u2V0YrELrWRgWQ0TFZ30rp0GbZRtp03ZnvsPJUFWW+M5Q9NAzrQDpnvRbBNXLjLxBM/p9EdDfzYntcCnei7P7E15vOHWQYSA1A6ppDOu3j2EnYjX5/aUU8HSNtQqAb6Tdtg0/NEnUZafl2jtQXCWf6Ln8b5NtFtqkbPO94v0E4NjglKacI+aJIcipVMAHt8RDuNm6ytf/hYQ49/japlAjRV9Gp3tJdcEaTkUAwjy2Hdae6m99U9xbAiuKf/z1BGsDVol/oyr/qnVJcdyN/FxVd/pFZHJ/FJ+0SZViYOEDVjP+3kKBKwGYvyQ6DASwgKOwg/1ebwBtAhvBii1bHnIekRe3AoZAg6g8Xtiy88e+/Yd0c8RvFjdFmuJ5cd3zpMjiC6RkCsfcNk8oEqhALTc/8S61/3dUrArCqkIbkfXjQkAmNB1ZQjiUAqWmv9ze5bzP/mZ1gTwVEu/+NQX1o7LkF7o/Noud4whQHp/1ZjlzJQxlO9eUvdL9IYC823s9VYbY/UpmLIvyi+QFpTzRvkH2CeZ6eJ/OWu4iv5B2igOZxvUEjQw9hf9bSw1keq0KgBoJzvccD9JrYxANH3G66JVa0uTTzM31Lg/eXalIRlULR9MXlpP5c/+lsBfGEH9gBSkzQTgqdRe62HogLvA="
+            },
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [
+                {
+                  "offset" : 139,
+                  "length" : 10,
+                  "possible_answer" : "GuqXz0ngA2v+uKR4H1Jg/8FOudoIBWT0txMNH6dQmqt6sZwRjONdvsdPOELnIr0aIGeQjDP2au+8xHiU4GD+kY5+w5zAddaSkTpyAe9KlPEqb/HS2WvjnybFZcWJvegslN55Cd39eJJCA0rXwR+AfpeBWEFVGL8VEeqA09YJAlkstdbAiFJtgf0htYnTXcw/MAjIoAN8VMF0NP1/ZfkQDpqgxx0Rzn/WhXOL5PmBLlDJi2vmyC1Exk8E7hNqm14KqT9rCD0PIKaH5Kwcpm2WaA==",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "4VhQNWQagsWUy67tfwkg8VUUeaNAvnsruwrTV/gfBDafwV5W1QfKU3Kz5DT0mOOygi7H8OEch8+xAnFyslGEBpgFPPv6peMcPe16gt1b93WfkVE6x8vIlGtogzc5xukjSxAfq84J93p0oUqrqAqZh1LdoPSPN+xK0RasUEEuhinaamxDCXtfU/sYvtQ/ihSSLyLraIlrjl04bTHGI5Delg=="
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 81,
+                  "length" : 0,
+                  "possible_answer" : "lZjSUN4KMPEnc6JW5a/RgFtSGTTshMoeW1rn9+Qcbsc=",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "4VhQNWQagsWUy67tfwkg8VUUeaNAvnsruwrTV/gfBDZ/DFmHRgVtn7dzgx/siUI4Gf8LB5e/Jl9Qc2MwGxFCg3LGirstznd7CQYQxRE1P29gwNX18jWqktrmCtgp4EenPLJP7IQNMVXAFmVvTMOaQTLNfzKo2nwE/QC2twHA95cwVh83bsgd0mIsyZ7oSKRRHGT/CxpAbrRCqNBB12nzCQ=="
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKG7iGVdOtXi3kBTA5Y0i/jdmXap+XZX+igDi8ZsCmE4JqzvAzvsHqng272FjwcXWGw1n5QVtI9pIcuOAdw/lu0b4BfVXFDPCMixuBPGkQjBU962Aal01WMO+LXymzeUNXteJmsp1iVhhkBVhObJ/2jRcoPo7+mn4DdOPf3UMW5K1yAZ7yBPgKbF6wvxBj53G3/NHW6xPI/OH655z/tAis3Iq0CpUvcdJPQoPFfW90MC0MyZY7PpigBOuC6TlnHORVJ7fxgZSvonH96elpr9/dCP5X4jovlGKSzZbj9ZkZmLz8SHACDWJrAbSI64V4nK0anCHD0sTvTSKYNvmOXocqz257Hk3YGppYMpLeP+RLKkN/uOk7J4ORcI9xYj2jqFcIQh19bNynS9u6lcBhmIUroWMFF+Tz5kkgaMNSxGb0XJi1YvIXy6xfiKhzNpG70n4pq1KLWZIKO6Qh4PCDHqek2cie0a1lfgJzj1qnpWE3u0cLoNQTLaFn8PwBa9M0xB2mg=="
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "9n3bQOTUnP64FRTujZGBdnarqJVjrC4Z3lHT88GrGd5edcefKT3p7fMVIw3kOWtjviSq/mgujr46/1W026vHy1OpBNPhrBRbRhnIj08sHR6xnZ69XglQ3oOcvYfGVXe4zWlKuxQy4JBlBGwKzyi/prbDIRsJQq1b0QFHTl1W505HiLuoWM3MhzTxwxYsG0MRjn3L7wr0L9ryyJi6OHERse19s63ZynbLx+krq5N/6iNH8bERlmWtgmxktMAqt9eu7E2kWwjDyvZwemOmg6kju+cdqyIAaHhVkbjrebh5Z9g="
+            },
+            "src/ChuckNorrisAPI.java" : {
+              "name" : "src/ChuckNorrisAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 175,
+                  "length" : 0,
+                  "possible_answer" : "lZjSUN4KMPEnc6JW5a/RgFtSGTTshMoeW1rn9+Qcbsc=",
+                  "placeholder_text" : ""
+                }
+              ],
+              "is_visible" : true,
+              "text" : "S9HiMB6kjmvZNT8QansvMn5XS5pX1g1jBUK+3WwFwFQx5B+Y/uaKbnI30tvF2YJKstMghhZ4dkvlDKTmPsx8hcm624p9Y/iSOV4srXLK9R5Xm+/SYTwyBY0qbJzw/DMo11WmroBfdJixFdw9ANi93bsfiqce0ZbFdQCcDl29+5JBkqJYC7JZoglS0TcbAtg6KCe6Xgu8cL0d99O0g3pQn6fzVmgGN2Zc5dbztTz35VZax/0od+uj0lDRdw9R/5d+LinFb4MaL2W6xlIeXOxtgiSmhi0pawHBW/IR1GVOc95qBdUoLuYpsZUBzsZQ/3kxK2+yVZaUdNrwA6XJcm4O2F0zA7jip5ECgJKXF+rKTPa4mveUMi03GHJi4c92Zo9ny3nqVx2saQ/purD8etOFQjMWFjo7Aio8r25NCjsEPgyJDVad9g2cQY/0B+8HonUDtuQ/lD2KPfBPd4rjUFFM8lLZOlP3LzIssl//JCOWLtoanq/zbgmjY0mpime/ExFlPXK1SSA2nthGU0kfjMM8hOfpLlJodOvbyoFBfSv03ypgEwRzi4p18BdQz7DPJ9Bs8rQHRnY+V7i0mQetydNp1wigNcjP6FXtoS5lDH9vPA+xwnV6A+T8LogHRaKbYEftCAoeHWs73tM2yfgM+kNWqO0AhsZFrtUu9zLEpJcaZr+MOJgmjDwuW7p8U6BuvwYoU9qSZDZEk2X1EWRV4q3lcnvrdH7ssiGAFHb5JQG/BX/pSOT83q4luX4wqgV/CWHlzo8ydSgsgOd4KI4GNN7kkg=="
+            },
+            "src/MeineTestAPI.java" : {
+              "name" : "src/MeineTestAPI.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "MtK/X/OCUoDouoTSFoaPWvQq+4R0gfSxo5BlLVw5OT0WfItrH7ZlLufaBJZFbYcyoufScamTRE7EOCoIpyMumjL3zXMWVUskqH7szT8KQblvjGTvSjJro8YfuzuXl+FXnfbFXieymTzx9nPAlrvXy1hR7giVTwmXy9sDWdmACpnl+W54JkQhTYaLixa5+a+0LTl3qJ63GR6X/J7KFM5SCv7ZKyJZrjUAMOvQyyEN53+sbPXrFPOFeUmO3z9z8dIy9mE9YVLrp5tl7Ykd8YYWAB5LzC+IzbUZVKnkca4MHUI1v+enpJyiSc2HrBDZSJCqiyXSAyXb6vG1KSs7HWcCW2dc0vXoY3abH0M/5yqEDGLUNp+QuUvuQ4TKwF417JODV3JjxiPUMz5ZfaHzeyx0DksAoQDL7rVvlgWy3eG/uNwAGf4o/AKTpFNWGfJ14RkNPoKXq34M4mb4puTwKK2WsAueoYmaY1+OoeEsb/kivZqnl3w2gBhrttwXJL0w41WeeaT5t0BmMl1pV+ztUZGEd8xHDs2Aily268Xe0gX5FwJYKbT8mOJ/FXnsoQPEfXjSwCjbkXwYqc0d0gAONm3JiylIdWbrb4fie+ta/oGmYgbgKM8oOQQlUN+22UxOh3ohtfLAsdsDRYdqHs8McABUHsmrg5YMjB2zufddWdK56YjVp5ozRaUw2c6F8/1xpvnld5bLnAjMJOfQB2DK7tz/fXKWCGsYI27hmpsn+Bjf4gjwYdyog4bUd1yl3W6Mk2159j3gVOA1JTOAbMa9QiUjKeDxcyuvK1vCCuE9lDXnc97fnWssvxj0U2VNNg0spt4Lk2SS/xRFW19vs2uoORjLdqHpg6CPZ2LXDlUgBRFTrh4="
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "liTrpQdA8XbtdaMvBov+lWxuWyHxQ0RyXBQvfLDotdnTKOpfPUVGJK8+Oiz8/CFslRAFZ0TfyzJ+scqlxOVen+Y+aVBfAD+vYVqfBVMn8/TgIEYumhnqe97CJOGcI/3VZPQJB8tG+Fd3wUecWzEX/Apn6a74/+zHw8U4BgkbWaF4ntnSFJEOfeXQopAjrTi+/XItEHMzcSr/4gIRB7Bd+Tjf8oj75qCsMUVVqbb0P4ayjDLqs5KRIlaUZv4ULQpRpEUKyKC/13G1fyJvb2AMDo7+er0i5BVyv60P4HfP/J0TsDgpDVsaOzSscHB4AnuRvAl/sloZ+KnjAewBmP497OaYgZrw0NhRy5CIFByUDsbVim41mrCzWWUc6plnTIoq7Isi9vkj2EVT4Yis/wutsYesX+Vp+deoGPZKr/9vfpp2OuYlT6FU/ymdjSel5bRIIKLNO92+s9dwkZAa2tgyVe5a/gDb5M1MA6TzWL0Vz41qDWZBp/tXF11+ERSlMCiSUGIWgq0Sk+gaBtHB9pJFiVuHfbunOp8pAy+N1Xm7JX+ZkFIbmm0Ly5Nc5Rf/meYHs797gB6+fP6RcaiYlORQd74z+1qVy6d92dMQmG2pnLH7RJ/RuoXGTFSbQ9k5Re0JbPljs6Q5KSe8+e1NvfPab3dNPlXm8MDqtBtY+1P4Nzm2U8qXUyTkMjJbwQ6cbOLxyiqPtY3ghxbTIrE2+Z7BPB/N6kj70XaMeERQGexXMBsSdb2bbNw3nDGCiCJ90sBaDmAftsQdNFQaFishKDO7Fg61IJbJnM6dr8Yq1LISEVjTUOVg9awztJCbnYHDddi3tdT56auFZRcJv4baA+lYHwuP5C/IJuDJd8ArRcbMEhw="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "cqHeZjISg3ZYP7+JNY7yj47x3CS6WycQbjwmwvlpPVT3NW6m+5MJbJcLOy9Fw+BzoaLsBSso4GJZiI+rhotAs6lH3D6ZaU6U6TpU+JMRdedK2hLYv2NPmxK/C1TX6/JZDBeDE9RqPMbHWYrxQnrI/zoLGO0PAwWeSEK51LwMYFp/4q3lXAgmR3gZShDoSMI4u8nSFzSeeeaG7YhTwBEqqLFXHMDYv3bagaQhHMsp6Cd1gy6koFbAJbyue/sX3WA+8hBoMtfv7YOK7XWxbke6m3WZLOVYutncEmI3kMsIS0Ltk4a8y/jMz4Gxn0vH2sNEilYCjnCmSMZnP8aATV4Nls5ImCaDoY5zVKhvPfEt5hIulYbQcbpFTLZNZkx+SkFgr29Li+9wuP8Cl4iUKpZP1Vs5945RVxpLRSOjIjGWU1QQY6wAEXKZNXdbDGVhdkvGNN6pCwx7mujeffuGItDeZYT2E+bI2pB6vjgGfAyV7IQhheBnCrD7kIQOqmjwdYxj8YmwyNqBuIAVLhqvTbBjYrDki7FlAIgMDw9Rgty2/rjlhIb7cMzSmBnyo7wrAjHrGSBKsru2QHuZgKXmIfN8WTh90iC98plNK3bjORmw3VkiYyOJwd3T0llDXPPWL3ByXnZkK/Ap7Sbccqb+ghTZrA9XZXdQgpjJxhTyoeWYGOOp9HP6/euBFsc9BkU2ELHRKEBMozEw5vlKPa418Bi5TQFrpig9XibBFB/Xxbisljckv57QwCxIuFE+5XV0lsn+juwrE9AD2pSJyz0dv2rqhoCR2IotLCDrjF0TKh255ShIkMtU97NDi1Gnct+opN7Q2Pp+AEPLRIYjL5pB3AFKMquvrDpNkIaxVNekPIXf7pWIh2Hpx5C8uEvu7fx/6yLwqL7xs3fcoDggtb1AMwIloaUtOgVPNoou04rYWuV14YWEweuP1zYCy10R/LK0SUtQDI/Gupy3Xfc2OE3EqLy1h3CDt4y/COCFfR6dbhXHfv6zgN0Yh0unOwXDmhqD0waXs/NqcWtqEPxBqR68Rek/BjlW6kDQOBey97wTjkBCgzMUKsW5nh2GK+lvze6djVxA1rQEq6TDM8ZPIzTd8Fkl1UCDKYmgpn5Th0zighhfE2r+yZWLGwAQmfd7chc2LYn+0i+jSLyh5lzOt+KERvpXMqMQcmKvlqX6uJWpwFaKkuVOudUPF6vGxDFB1xU1S8fGsQ/PbnBNOFDHW0/Clx4TET2NkRcM0H6JnxNKrbErD3xSnBjhEAkkhrbMdsL5KqWpu1LbyvIfkV4CfLTt0trmXWq1wOT5VY7cUclpjLy5pD5KcFqSUeP5MnH8whzK4fxITgJECyNS5LcZVX7eIe6PAxl9mAsSljy8KOP2FjFpIxLgf4vR+jG5DvZXvQpUc7IBsUm8d8O3OE4VTWzwoD7R0dDCIJH1Webg8AblfMS346q1hsqKZvztpJ/p75AG/cdwt6RsHFlY9QVTw4Y1SOlpJrzoBmUYsvKMHPoWNj8HakvBGcdwFdR8wIpLvb1ZXBmVaBn0pOuPuODcdOOR8XHWp5L9HROgCoe9vNmcvKyTtdQhdWRlk4lUUIgjngOWwCxUICljGf8cPw4SjKPJDZKeyoWeIJ3zBYKZvAvMqpS8KKIdkzLiCIX9iZkMiyLW39wXic9GahBWbbwKcKbVytK1EN8pW2jvsEJfT/xdfn5yq1m/a9mkpgkunMyK6Gun2W2jJa1PejBOdFQKehLX78rl+a22u21bNlCvSAM/XlPJghrAYpSVtVAGDqvsI6m70y7lf29dbEs9RYdoXC8fIKBVGk+3OlqlV52+3HjE8Oy1aqeQVgyEs4LxvnJHxhnu76GRJ9XRoDA3QurnsRaYX66VI5pK0gxAZgRIXtDD6wLJfNyceTAh+H0A1ZJ5jCKdcA+GCqSEMT51wgtoYdETcsE5F1LY01zxNA9P1gUq9VHFwBxV2t0qlNTPcoAOe37gHtj5A9X2/KeP8LJ+liNlkcxz0cCEsh1CStWMBV9Da8+Efg6eNFg3QrAbj4/gmm/XB2Ne1QOwSoEBn0G7T+7AwV3lkv8rG5CZd1Ca8zULRHOOas2kSPdYvapTp8kfuIaF4Va5GlF2OIQN8w0nl93p2qHdAz5BSFzoUM2LnhqV8T4+R+nJ6lUkIfiBrtwoFhTlD0Azj7oonYgzUx2+1/8PdgJfvaP6EZkQRGOsBlrizLiwYG6Wvgi51lwCA5rlbzdVTh/Zh9vFMngBTIp/2d2/eTtDT7xZMLTfzjny7P/U74uGfak9SF97h9y5YeH1SCz5siRCm/fR5P75A9bYCXDRiLuZUrXQqEtv69w90XCSAX37tNGymRxtUlAul19V2usy85f4Pz4n/1ntHSWflsPKLDJPxqTvJmOPRIsKbtpecnVi3huOxOOAB4Fyq4oQ4q0R+DXgeAF/x/rDR++6wA/LHF/NE5hHtFkgkh6y8v+eX7MZwhli5IoFxTXl1UlKAp8xyOrkrepn6emAmcQTupQZ+FMaXA=="
+            }
+          },
+          "description_text" : "<html>\n<p>Hier sind wir wieder in unserer Witze-App. Mittlerweile hat auch die <code>APIHelper</code>-Klasse hier Einzug gehalten.</p>\n<p>Wie Sie in der neuen Klasse <code>ChuckNorrisAPI</code> sehen können, verwendet sie unsere beiden Methoden <code>httpGet</code> und <code>parseJson</code>. In diesem Übungsblatt kümmern wir uns nur um die Methode <code>getZufallswitz</code>. Dort wurde sich mal wieder nicht ums Exception-Handling gekümmert.</p>\n<p><b>Sorgen Sie in der Klasse <code>ChuckNorrisAPI</code>dafür, dass sie die <code>IOException</code> nach außen weiterwirft.</b></p>\n<p><b>Diese <code>throws</code>-Deklaration muss auch ins Interface eingetragen werden.</b></p>\n<p><b>Entwickeln Sie die <code>main</code>-Methode in der Klasse <code>WitzeApp</code>. Sie soll unter Verwendung der <code>ChuckNorrisAPI</code> einen zufälligen Witz auszugeben. Wenn ein Fehler auftritt, geben Sie &quot;API-Fehler&quot; aus.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 512716966,
+          "name" : "JokesAPI",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRPgE0Feh7zuBWhaAWsBIWhPYRKY0CQLu8NXzqmDo1zFSLNXpGgCl5A832pMH4zCpj3dDYddh/7IfPQ8BEXAdjDHCaIytXuxPhrLQUjlv2i6brIpn9fqqyK6Cc8vor8wu66sZMbp8vfRBlcOjRm8gkYEmE2w3Sg/VFlEwOLVIHCS/Y9Qt+kQNvf7QTawcFeqMe7leag3NTqN+KfTO7QdnwI6EHpxW65WT7ziSz2jcjBd6gz77S0xA3srAQqca0Szlm5Wa2v5nGNcqrm5EvVbHRMXO7eTkbI0ES+aMx1SCJtIagJ+8+n/bMRO008VD8SAQ0FzBAW/1VEbUaZd7NdaSgJ5BmMdyubjsGGQmG8af3dfTNhOGHD4Evj3l3yHQLN7PWcGt7uZfIKX6K67kOv7xiVxACfF64DjkgqcDHNxt6XNcAdiu5bHsuwDXvAQv6mkKD+wVe3UZfUOYY83YtiYcvp6R7bvuKBCUbDC5so0SibAXLEc5uOvAHp2+tS4DkrvPEdzzYzCCrcOmUUPgXlJjLyOE/NPiXXrFz24rCNvhz4RocwKvUqOYr4iozU5VxiRPm0rlqM3yu2ufwcIKMM8kuGZoYdg/0o+P1mVbMjGiDyS3lBURT1RtHl8bY1TTOSho1wdnomnxGQJ4m4P7aTtLV4P2IcMbd999vLldD22JZi0pGOrPnV3BwCn4JHkNbuE9YUfa6vctXmSkdwb4PY4hgOnrp4GEOORFLEaWuQf0Awr1T+H7WjVrtuggOrwTOv71qbcqJGZyW7c76sLhUYv7h9sNBgYWX5UnEHCBRayeaJ4h/PXdEha/jtrfih8DWFvBPg=="
+            },
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "4VhQNWQagsWUy67tfwkg8VUUeaNAvnsruwrTV/gfBDafwV5W1QfKU3Kz5DT0mOOygi7H8OEch8+xAnFyslGEBpgFPPv6peMcPe16gt1b93WfkVE6x8vIlGtogzc5xukjSxAfq84J93p0oUqrqAqZh1LdoPSPN+xK0RasUEEuhink2P04COGe5HF57RZFWl+GMKpEJ1wE2qZv+dXOgzl7OkXhORbWpxKQLshtR4DjH5jLkdqjvi9yr7cXFU/DRPDxxGr+EZ1tEMn+W87k3QxSCbPxJAtLcYKdM/FJHRRlj6odLaD3dQI0X1FHHp/7FwTFaDoGq27f59cirKaJZnOLC+D0QUUzdUHS6xPDuBdZLaxAvEiNn0D/NJC+OP/VI/mq4i6Z7VfH/iKcQy9NfeZXxnUXxW6bC2LqY3i1uNIliRxAV2Tp2/4EJxvq26EeDn2MjRl7nLPY+o8wylaMbO1Nog=="
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "4VhQNWQagsWUy67tfwkg8VUUeaNAvnsruwrTV/gfBDZ/DFmHRgVtn7dzgx/siUI4Gf8LB5e/Jl9Qc2MwGxFCg3LGirstznd7CQYQxRE1P2+kzmg/ECsosF/40nmv8WgFhvl3f6Fs3Ma/iEyMoJJoJDh7XtCVCcqPLxAfKPOPxYA9qL3zgKOpBDwjfC55hwFFnKzQxIdiXmFdTZZ81Fe6yz03UmM84WRh78jylv7QsU/5hbthqZ/tiJ6zX/MJToc6"
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKG7iGVdOtXi3kBTA5Y0i/jdmXap+XZX+igDi8ZsCmE4JqzvAzvsHqng272FjwcXWGw1n5QVtI9pIcuOAdw/lu0b4BfVXFDPCMixuBPGkQjBU962Aal01WMO+LXymzeUNXteJmsp1iVhhkBVhObJ/2jRcoPo7+mn4DdOPf3UMW5K1yAZ7yBPgKbF6wvxBj53G3/NHW6xPI/OH655z/tAis3Iq0CpUvcdJPQoPFfW90MC0MyZY7PpigBOuC6TlnHORVJ7fxgZSvonH96elpr9/dCP5X4jovlGKSzZbj9ZkZmLz8SHACDWJrAbSI64V4nK0anCHD0sTvTSKYNvmOXocqz257Hk3YGppYMpLeP+RLKkN/uOk7J4ORcI9xYj2jqFcIQh19bNynS9u6lcBhmIUroWMFF+Tz5kkgaMNSxGb0XJi1YvIXy6xfiKhzNpG70n4pq1KLWZIKO6Qh4PCDHqek2cie0a1lfgJzj1qnpWE3u0cLoNQTLaFn8PwBa9M0xB2mg=="
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "9n3bQOTUnP64FRTujZGBdnarqJVjrC4Z3lHT88GrGd5edcefKT3p7fMVIw3kOWtjviSq/mgujr46/1W026vHy1OpBNPhrBRbRhnIj08sHR6xnZ69XglQ3oOcvYfGVXe4zWlKuxQy4JBlBGwKzyi/prbDIRsJQq1b0QFHTl1W505HiLuoWM3MhzTxwxYsG0MRjn3L7wr0L9ryyJi6OHERse19s63ZynbLx+krq5N/6iNH8bERlmWtgmxktMAqt9eu7E2kWwjDyvZwemOmg6kju+cdqyIAaHhVkbjrebh5Z9g="
+            },
+            "src/JokesAPI.java" : {
+              "name" : "src/JokesAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 10,
+                  "possible_answer" : "4VhQNWQagsWUy67tfwkg8VUUeaNAvnsruwrTV/gfBDaUi0vsthDTB9o8pE3D9STiRGMKvRH23stS7Ij3fLhm6vS5mwVY6gBt+gU+JpspHDzdffVNPk8GXk8XSv/4rUwfW3SKlQ3R7ZeWoJ9e0ND1p0xDgDPcEwWzGyGwRSgyYpnVO23yEt+oBmBwPlp82vA+xL9l7XSl23DZgMAEulO7uktaYTFO2S7DQ9GbOSMtNrOufFM6x4ZmKBLpDD4gFKxWsmMvvA8QrN6xMlAT/WCdWMoOoob/Y66c/3PcdqFSs0u5zP0k/03g8DJBHhziZG8mAr5VyISBzBkg+totwnv5EqZvSBWNeLZBXkedjBeDjriGfRzeV9jMeCD+5SwiVChf2JaoId3K9hEkzDKfJ2HJcCHIQwVpA48PvrzGGtsOoqQIcYO8lNSk09cxzOLRFDJWqMblELVZTV8zlTBcpVC4Q/0sTPgV/w1PGYSdEG4DMm5oPAtRBfpB0iINn+ry45rYduDTrPPZSDgg7e26JKfJJGAHZik0WflVszWRF8s90QmbLZxKnlKQN35MqicHSvmXpHlod5bHwYdFklt1om59/4pYZWf/KWh2gEyXNWQueAbGJ7/SjReQ7FbC/sIjxuQQIdcmbCB/HfBWpwjpTRqw9bSn8Oe1ucqwhrZ9KeLNWu8l5ycY94kjhxQNT1Wlh6bnBNgYzFQ0tVXdcKAHDbJ61hm4J4ncm4RhXz1FFeDBMOe/dA3n0x5Ot4lCTLvzpahxXLRr2W4RIHRYKC8eRL2QHjl9gmyTSeq5O4zxMHh0WQISd9W0bAArNFNoRN+RyWOz",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "ft3/KDXagmI+TWDbl9vbuw=="
+            },
+            "src/APIHelper.java" : {
+              "name" : "src/APIHelper.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "S9HiMB6kjmvZNT8QansvMhWyWTpkBPdkOyVHB7dG1L7QYc0+hZczfb5xB2wZRTFZpFUZhRbqc2tRkyPhFQ5HID4kbldrpyWJ5SB0h2XiDrwuEqprBE8zFDjS4xo1kOfSfRZI4XuJ25Mm0sw5DmI933welePtrhMUMMQdi5IIZx8vuMkxMkaktCGEz1R1x/eT7KBFJSZ46sx1X66H+wQkGrm/39Y75jOr9iHD7aeXUvGmGZN9uCqeeV5B9eCG4CK3rTGEzpUK1VtUsFlImEp5Utn8YACD5wcHQcxxWJAEqfOWyx2yBlR0F1PH9fOicM7/jRJe45nrxD1FHuQjlCY6ZbSd2fkOcjcCWR8/u2DcJaGDUdfMwnYTzF7JVxDu/c6UlhnQSyFlIIPz0d2C5k/HS1WYoOYogpJ+fJoneRWA3CHNWuOCHSGXLAJaO9+VZUqEBNL0cbEWJdYuWGlUCnexfNA+gj4mlLiVUGFZqR5GqiBSbve9mzpX4R27KsbZrU7qgkk7P9R1fpU4OaAg+dpR5gIpVOOlbFFAentdoJNKWezlTpuvrtlBPPtPLX/v3HaOG6Vohmz8uv9uJsn4Zm7MUB9/4bDsGG6NXpbT/3t5ldz1uF1bHOC4/wjeTvm59XBAU8MGwxFseQ+Tmof+8DQcgN+3k3omKoxNAGpjTNhUs7RckNk0z//QcZJV68No8QUjH1F4NvuhbcI33gS8GWhyIvwHr8CgvX7fnyNO4zSK+6uzkYbx6QqNnoIWyvQ0NfFLbMXU0ucgUG8JRvtHOeU0ccrXzcz0uyavP7RPczXxPLS9g8TG37tdwLKO7E2Mh0yXVL+a4IenLSxEZONorqds2zZSfZTG1k41ahbiGLJB1wh69EkYSL63jR+L7JUEJIUHlykSaeS3QUvZTSIwGSUCmDQVHRhisY1SuXs5j6Xftdz+9VhR886Fweqvh5oBbwB92cwusehTWwhclNnwje6QO9VqIU0u2V0YrELrWRgWQ0TFZ30rp0GbZRtp03ZnvsPJUFWW+M5Q9NAzrQDpnvRbBNXLjLxBM/p9EdDfzYntcCnei7P7E15vOHWQYSA1A6ppDOu3j2EnYjX5/aUU8HSNtQqAb6Tdtg0/NEnUZafl2jtQXCWf6Ln8b5NtFtqkbPO94v0E4NjglKacI+aJIcipVMAHt8RDuNm6ytf/hYQ49/japlAjRV9Gp3tJdcEaTkUAwjy2Hdae6m99U9xbAiuKf/z1BGsDVol/oyr/qnVJcdyN/FxVd/pFZHJ/FJ+0SZViYOEDVjP+3kKBKwGYvyQ6DASwgKOwg/1ebwBtAhvBii1bHnIekRe3AoZAg6g8Xtiy88e+/Yd0c8RvFjdFmuJ5cd3zpMjiC6RkCsfcNk8oEqhALTc/8S61/3dUrArCqkIbkfXjQkAmNB1ZQjiUAqWmv9ze5bzP/mZ1gTwVEu/+NQX1o7LkF7o/Noud4whQHp/1ZjlzJQxlO9eUvdL9IYC823s9VYbY/UpmLIvyi+QFpTzRvkH2CeZ6eJ/OWu4iv5B2igOZxvUEjQw9hf9bSw1keq0KgBoJzvccD9JrYxANH3G66JVa0uTTzM31Lg/eXalIRlULR9MXlpP5c/+lsBfGEH9gBSkzQTgqdRe62HogLvA="
+            },
+            "src/ChuckNorrisAPI.java" : {
+              "name" : "src/ChuckNorrisAPI.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "S9HiMB6kjmvZNT8QansvMn5XS5pX1g1jBUK+3WwFwFQx5B+Y/uaKbnI30tvF2YJKstMghhZ4dkvlDKTmPsx8hcm624p9Y/iSOV4srXLK9R5Xm+/SYTwyBY0qbJzw/DMo11WmroBfdJixFdw9ANi93bsfiqce0ZbFdQCcDl29+5JBkqJYC7JZoglS0TcbAtg6KCe6Xgu8cL0d99O0g3pQn6fzVmgGN2Zc5dbztTz35Vb7G7J/J2hFruEOz2KCRzW0SZkAbj+I+aFcmjiiglxVwNsnw9S5Darw/F1eWtIWD9KSn9C6mseiayUoThkudBT0hnoGCa/DyEjAVrXEDIS/UDsGYORSEtzxJu4gEC4sSzQW+hYdIE50fOEjKvk7SkaQCuOt9V5WRzaYW4a+AN/RpGgRz/EuYRltPUR/4NqMKKsiSwAojqUhZmN/YsXhtqPPaTVrWR+uSetW1wd+TLKDOSji5Sz6gPrGa/gJLAtQQ9uFdt977/O0wuixS2H/xgFUyGX97Ds4MZuo2BoeBZcpit+wtBGLbwhplM4xNNzTL/wC0S7z5z19egRUvmbT/XfsRB8Pu1f3vIrOFlhV2s9EUI7Eg45iTbiaP64EzqWWqg3vLTQhVNfrg2YheE84qKGDAjvOQ2qRWQJzygj4HjBHnU429zj0v5X/XO2YGMEfLKOYLOAVJtzlyObA747NA82RuSKq5vlrxRJUqEx3Ooi/+ZWRF4n8hzyNnRlUfT9anIZHw8JQRzX/dyJwCpUYSoMHcgo36/ZPw3LwD26NKOieQh6DCIFsxyG/NRs1ll3xxow="
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "liTrpQdA8XbtdaMvBov+lWxuWyHxQ0RyXBQvfLDotdnTKOpfPUVGJK8+Oiz8/CFslRAFZ0TfyzJ+scqlxOVen+Y+aVBfAD+vYVqfBVMn8/TgIEYumhnqe97CJOGcI/3VZPQJB8tG+Fd3wUecWzEX/Apn6a74/+zHw8U4BgkbWaF4ntnSFJEOfeXQopAjrTi+/XItEHMzcSr/4gIRB7Bd+Tjf8oj75qCsMUVVqbb0P4ayjDLqs5KRIlaUZv4ULQpRpEUKyKC/13G1fyJvb2AMDo7+er0i5BVyv60P4HfP/J0TsDgpDVsaOzSscHB4AnuRvAl/sloZ+KnjAewBmP497OaYgZrw0NhRy5CIFByUDsbVim41mrCzWWUc6plnTIoq7Isi9vkj2EVT4Yis/wutsYesX+Vp+deoGPZKr/9vfpp2OuYlT6FU/ymdjSel5bRIIKLNO92+s9dwkZAa2tgyVe5a/gDb5M1MA6TzWL0Vz41qDWZBp/tXF11+ERSlMCiSUGIWgq0Sk+gaBtHB9pJFiVuHfbunOp8pAy+N1Xm7JX+ZkFIbmm0Ly5Nc5Rf/meYHs797gB6+fP6RcaiYlORQd74z+1qVy6d92dMQmG2pnLH7RJ/RuoXGTFSbQ9k5Re0JbPljs6Q5KSe8+e1NvfPab3dNPlXm8MDqtBtY+1P4Nzm2U8qXUyTkMjJbwQ6cbOLxyiqPtY3ghxbTIrE2+Z7BPB/N6kj70XaMeERQGexXMBsSdb2bbNw3nDGCiCJ90sBaDmAftsQdNFQaFishKDO7Fg61IJbJnM6dr8Yq1LISEVjTUOVg9awztJCbnYHDddi3tdT56auFZRcJv4baA+lYHwuP5C/IJuDJd8ArRcbMEhw="
+            },
+            "src/MeineTestAPI.java" : {
+              "name" : "src/MeineTestAPI.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "MtK/X/OCUoDouoTSFoaPWvQq+4R0gfSxo5BlLVw5OT0WfItrH7ZlLufaBJZFbYcyoufScamTRE7EOCoIpyMumjL3zXMWVUskqH7szT8KQblvjGTvSjJro8YfuzuXl+FXnfbFXieymTzx9nPAlrvXy1hR7giVTwmXy9sDWdmACpnl+W54JkQhTYaLixa5+a+0LTl3qJ63GR6X/J7KFM5SCv7ZKyJZrjUAMOvQyyEN53+sbPXrFPOFeUmO3z9z8dIy9mE9YVLrp5tl7Ykd8YYWAB5LzC+IzbUZVKnkca4MHUI1v+enpJyiSc2HrBDZSJCqiyXSAyXb6vG1KSs7HWcCW2dc0vXoY3abH0M/5yqEDGLUNp+QuUvuQ4TKwF417JODV3JjxiPUMz5ZfaHzeyx0DksAoQDL7rVvlgWy3eG/uNwAGf4o/AKTpFNWGfJ14RkNPoKXq34M4mb4puTwKK2WsAueoYmaY1+OoeEsb/kivZqnl3w2gBhrttwXJL0w41WeeaT5t0BmMl1pV+ztUZGEd8xHDs2Aily268Xe0gX5FwJYKbT8mOJ/FXnsoQPEfXjSwCjbkXwYqc0d0gAONm3JiylIdWbrb4fie+ta/oGmYgbgKM8oOQQlUN+22UxOh3ohtfLAsdsDRYdqHs8McABUHsmrg5YMjB2zufddWdK56YjVp5ozRaUw2c6F8/1xpvnld5bLnAjMJOfQB2DK7tz/fXKWCGsYI27hmpsn+Bjf4gjwYdyog4bUd1yl3W6Mk2159j3gVOA1JTOAbMa9QiUjKeDxcyuvK1vCCuE9lDXnc97fnWssvxj0U2VNNg0spt4Lk2SS/xRFW19vs2uoORjLdqHpg6CPZ2LXDlUgBRFTrh4="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>Nun ist es Ihre Aufgabe, eine weitere API anzubinden. Und zwar die Jokes API.</p>\n<p>Hier finden Sie die Beschreibung zu dieser API: <a href=\"https://github.com/jkbkupczyk/jokes-api\">https://github.com/jkbkupczyk/jokes-api</a>.</p>\n<p><b>Die Klasse <code>JokesAPI</code> ist bereits angelegt. Sie müssen sich &quot;nur noch&quot; um die Implementierung kümmern.</b></p>\n<p>Hinweis: Erzeugen Sie ein <code>FrageAntwortWitz</code>-Objekt.</p>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "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"
+    }
+  ],
+  "version" : 13,
+  "edu_plugin_version" : "2022.2-2021.3-864"
+}

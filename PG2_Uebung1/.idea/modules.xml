@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung1.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lesson1/task1/PG2_Uebung1.lesson1-task1.iml" filepath="$PROJECT_DIR$/.idea/modules/lesson1/task1/PG2_Uebung1.lesson1-task1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lesson1/task1/PG2_Uebung1.lesson1-task1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lesson1/task1/PG2_Uebung1.lesson1-task1.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lesson1/task1/PG2_Uebung1.lesson1-task1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lesson1/task1/PG2_Uebung1.lesson1-task1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe/Aufgabe/PG2_Uebung1.Aufgabe-Aufgabe.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe/Aufgabe/PG2_Uebung1.Aufgabe-Aufgabe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe/Aufgabe/PG2_Uebung1.Aufgabe-Aufgabe.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe/Aufgabe/PG2_Uebung1.Aufgabe-Aufgabe.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Aufgabe/Aufgabe/PG2_Uebung1.Aufgabe-Aufgabe.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Aufgabe/Aufgabe/PG2_Uebung1.Aufgabe-Aufgabe.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung1.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung1.util.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung1.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung1.util.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung1.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung1.util.test.iml" />

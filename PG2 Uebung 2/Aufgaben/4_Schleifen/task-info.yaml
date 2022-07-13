@@ -5,6 +5,8 @@ files:
 - name: src/GeradeZahlen.java
   visible: true
   placeholders:
-    - offset: 81
-      length: 79
-      placeholder_text: ""
+  - offset: 81
+    length: 79
+    placeholder_text: ""
+- name: test/Submit.java
+  visible: false

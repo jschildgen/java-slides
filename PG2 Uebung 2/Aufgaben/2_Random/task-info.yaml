@@ -5,9 +5,11 @@ files:
 - name: src/Wuerfeln.java
   visible: true
   placeholders:
-    - offset: 0
-      length: 24
-      placeholder_text: ""
-    - offset: 177
-      length: 4
-      placeholder_text: ""
+  - offset: 0
+    length: 24
+    placeholder_text: ""
+  - offset: 177
+    length: 4
+    placeholder_text: ""
+- name: test/Submit.java
+  visible: false

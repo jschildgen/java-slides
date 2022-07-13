@@ -35,7 +35,7 @@ public class Tests {
     Assert.assertTrue("Es wurde nie eine 3 gewuerfelt.", output.contains("Ich habe eine 3 gewuerfelt."));
     Assert.assertTrue("Es wurde nie eine 6 gewuerfelt.", output.contains("Ich habe eine 6 gewuerfelt."));
     try {
-      SubmitX.submit();
+      Submit.submit();
     } catch (IOException e) {
       Assert.fail("Correct but submission failed: "+e.getMessage());
     }

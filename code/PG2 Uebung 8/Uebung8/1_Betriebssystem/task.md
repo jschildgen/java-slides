@@ -1,0 +1,1 @@
+In dieser ersten Aufgabe sollen Sie einfach nur das **Betriebssystem ausgeben**, welches der Benutzer hat. Na dann: Auf geht's! :-)

@@ -1,0 +1,224 @@
+{
+  "course_version" : 1,
+  "summary" : "Programmieren 2, OTH Regensburg, Prof. Schildgen",
+  "title" : "PG2 Uebung 9",
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "Marketplace",
+  "vendor" : {
+    "name" : "Johannes Schildgen"
+  },
+  "items" : [
+    {
+      "id" : 1796531953,
+      "title" : "Uebung9",
+      "task_list" : [
+        {
+          "id" : 834690513,
+          "name" : "1_Collections",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRMczxxtrWGK6cIYlUtvAb9gqzYU/dy5PQltiJ+JWBdqKbn2pxYKF1WRyMLZYVmuSeolKqaZRYu5BavSl9w/t6B2KYnUFlzqGpSa7Qnefjf0wQTJcJrzmwhRIGwozFg2VS1fxwIp09AM3VGLoAFOxdhzcg/lpNnkuINJ0QTIl4JrtVBTLZW99p0VSQK+yOHeG9lmRMfdQjRgwFF+qWUN9aFU4SKoveDFVNi9JyMTFkeUPVE/e9iih38vNJqxdP6h6mLJwJeOPYs36bwUzBr2D1TmlrPmd3ikX2Nxj5xBuBGebNG+lEWSXFG80ZJKg7XkSfuZsVk0GoX2LK3o61aPJPsYW8OEbheIx40O5nW1RNCf8CLzpk0bt2qqHPF2JD6xnLy9i9WSTgXrTzO3DdbbAwCyjhvkO2tdJ2ki+ouOKAIJGzfao4y6Uljqb0gTfMQTQ5XowUmFklgxXPQJNKXdNFS88l/tcJFL00psTG5jGXeCn+sQEKjZFZm0T7aAc5aUlM9Zq51SLugIvbZIJb/Ez7XFTmqvT+JQDdR6+UWzR1vqowJ6n9ZuV5YcJosoqdvGU8sHvFSgEi7VRkpWOs3YtqYABUMBIuc3BJ5RoEDLoQtMnksOSx+TQ1wEUwLB2M6RHICC00oJzC88yj/xDnuQm2oBycoG+4z8pTaBFTH4ZbIZNfl6qMwy/8/tz8aq7vIS1pwyAc5KvWG3aLDx3Ln2hMdy6rhH59B8kEf89vc6MOK3kVTBSP6MoCgs5o1cy6Re2m9HTA6renqf6YzmZb2nIMXDytYI8udJs5bk+4QYuzvJ7VXgtKpU6NuaHV6tMQbIGF5YrqVhehvJ1aXbRudJLOoGhtz7GZFhtnOtgVdBckjQLgWwWQD1B/Xe2+RTUjgL94d0xbwGhm5JLywyVLTLFZedCHE2GZwt/IkB9qBtfu5oALM9wiKNeJ9Sdz9mIy33lMTS9HGWynnhBEnI8U9Tl1xo81MyzCKjp314AjjYwi/rBSwLigdNHzXsyIITSUJlyNyrLYQLDSdkTO0UEDyQxom9JwUI0+E5n7ZXO0HILb07YHoWeO7rhURndHU9XwytdeJnboJk4z3ylFlkpEoFJW6jKL8ihGulXwTBy2dbfdlTywk7+KBRAq+3LWDxeHmx+b2GlRZ8BgMbdJ0e+iNbCk0AXeaMfW3TjivakU0Kf/1knM6MFclmzM4a5tn6rvaTkEQ=="
+            },
+            "src/Person.java" : {
+              "name" : "src/Person.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 10,
+                  "possible_answer" : "NYgHoNruO3t7vIi6YFhoH7NgfeYzu1KH7PYwVOiEzRumU6l+CIEyswPCqy+7xP486ryC0u0QggJTe4xANurKKVgYr/qsBAfW5GWR3Mbfdvq7JSHMJnjPXp1EVg4v0TGZpbCks5qnKeNWukS6ik9mS9DatVj3thz2nKQd+E2ICywTY9fRqWk36st+3na30NgmTxSgNfwvjfGyp5y7BZ5T8qPyXRaHTrJabCAWMESGBKGc9+yeT3wO8rph5yrTYjQt0CkSdriLBhFAlE1PzYnRGN5+mKL6Ix3xeU9+OJNSp7T+Yr1vdW1wpBZHFgHRbVvm6PYUb6SYOBuVihgVy11VBoTDD7AmERApBTTBone2Y7lNopAO4aLlnUtJWbhUB3/RG+ZTSEvO9NgC5FkhC+JbgE0zwhWtz0dZPS6YLCplLrb6M08B/41dDY7d6gIMc2aRoHo5mFN6Fuj10pZXzhvY7si4HGZ4NOqF5q+Vw0tjjoTSM7e89QjpTrSykTnQBAmTwSs+KgK4uUe8ZJlgOpjhy/jL1PjlNNIZkDix9shYQLe1Kn0QRBGplP/cunlsQLzLf3393OqE8xknH63sRVW+cD+DqgJQQAHTYHLPQla16A0N+NKaTrH3d+Zpmat5yK85oz9ZBj1HeQGebFNWhoIt0bUllA6CfstOoDYMyGbbnHcqsAW4Gt91TrPpd121KCVzWDZhwTAD4uX4FkNVgOwyjrepu1FdPyZfDfNfh/ZAVIRr0Vy2JC3buzDmRHXlxbYJpQDL/xHxpHYainMVV/kwFSc9IYcA2j1ONtFY+YizL6arrXKimipWJp9+zsFVDePPclKhxYnc++XfUUKP/uYDEluxVZKOLejnkXjAYfAR1Wcig7ZFYB/N9QjJneSsHoN6Yxq9yzyI/BIgpVArSEGoGzm3nmcGYVmFs9tWCdbNzqUYEtwlrtv05Ulv7ydWbsHVCy7uTQeRLdXvXmCckS+3OmwKhKu6iKLPZN498FQr3lWRX1X35daf7+2jnHtkQsvxdQ+Yq/Rjh8yN5bdAvpzXUK+lsD1S0oapb4pSxGHh2il3Z0dCfc4GgUMTX+WVuM31",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "ft3/KDXagmI+TWDbl9vbuw=="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>Für ein soziales Netzwerk wird eine Klasse <code>Person</code> benötigt, welche ein Personenprofil repräsentieren soll. Die Klasse soll die folgenden vier Attribute besitzen:\n<ul>\n  <li><code>name</code></li>\n  <li><code>hobbies</code></li>\n  <li><code>wohnorte</code></li>\n  <li><code>telefon</code></li>\n</ul>\n<p>Während die Hobbies einer Person eine ungeordnete Menge ohne Duplikate sind, haben die Wohnorte eine Reihenfolge und dürfen auch doppelte Einträge beinhalten. Durch diese Reihenfolge kann beispielsweise der Hauptwohnsitz bestimmt werden.</p>\n<p>Eine Person kann beliebig viele Telefonnummern haben. Jede hat einen eindeutigen Typen (z. B. &quot;Mobil&quot;) und eine Nummer. Die Nummer darf auch Sonderzeichen (/ + usw.) enthalten.</p>\n\n<p><b>Entwickeln Sie die Klasse samt Gettern und Settern.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 1329513395,
+          "name" : "2_Collections_Fortsetzung",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRMczxxtrWGK6cIYlUtvAb9gqzYU/dy5PQltiJ+JWBdqKbn2pxYKF1WRyMLZYVmuSeolKqaZRYu5BavSl9w/t6B2KYnUFlzqGpSa7Qnefjf0wQTJcJrzmwhRIGwozFg2VS085wGrqj/PMay5U4EkMqePf7cT2F7sXy9kZPyo1I1aPa33V2JfOJ04tjRCvERLx55gtP6oKoyMS7Hmdr3JGBhOX3nMVBy0/TYyvduKZ2M3NKtn5Oz1dTe4nh8/KHHEtYPvmzqVvf6WrASTk918Y9rYvyppMBJLIhkL5llTzKVg5vvExbNWRlf1OlgSMedrjAgs2j0qCFB4EbYfyHc0mcTEBm78ZuxD/Y+sdVf7fy9+xrcFPgy7reMtXTfaDSakyYj+SZWQuUYJui1cG6Tr7XOVNYHBuPtarVmie7WXLJwUKfGqWezsoNtcun5prPtDT1HI6UyUEYWHxb8lsJhRJ2/zxmmo0h8wZqGQBQ3fELPtH8MJXOsOe8Vg9UpTUq35xqGATN7Qlc2dweM/J7IzbWoR5XmLkYrsSQXzkgOBfdIbz2tcNr2LPQS+FH1CZnNdrHWtD/z/izyupHMbZ6h/z1NEjHH7/qSjT0hWhwHT8gAzIYSHQsXb4u2XxOhy8nIipLu+50WJ2YTZHVDYrHhfKJJBUCrzt/cG24yraV2pXdHzbhSdXxlYktuEAxNn8TpnviytePb9uUJ65i2Md85Fx0CCINKSBx+Q7CYLwUmqQWh9JG04evvUMrQ0EcgLX5wgZsMRgV5WUGipTYZiCZV7adRkK/Ao99hd2UEfEebtrLKh995Nm/St5VG9O77wyLC8ubh+wKf5mNHK4RXCBQfXqTejTEuIsJ4HYOfW7uuddGaAaWSoVHec0wuD26EB3VDDIV2zpgGPXm6IaDC++jqXDAm8JDFbGI0iEBZgva24WPbCXOb+CcXBMTIXXQqfbgJJclNe+nt3fTpBCZOZcSlyazzGKzTWN31omE57o85NwtiPhJsaXLnM/cGPsNSSkWboYNRyV6Z7wainf341e0zP3hGixLAMId8OvRAIYdl8QiFA7Xh0Pa1iqMMx+tNkkVEDNsYQ1U6Ed9fh2UOaahmFg4Md+BhnbrZUY+fqg7Gos10HVuv3LopCUqbui/hna6b0FKU90IyeVIegPjk2eu0CXM8vWCXuKR5sMMS5PHX2D9RUA4DkaToNNSqGMoCS3NXtb2m7fKtNeMoEhTC3c5kTADe6yrdErdikQwaVtbshwnAqwz+bX0gCtmrsNw10bDV+DDHGkCXhLOsYNFvB3W+FhOw4fWuu8mXqy+AnliQ6T8j2G04FJeGFGikkskCMU9lTHo7oY/MUvtwTL0Q1CnZ8eXKp7GtI9aMVpkhv623INspllBXqU0JbLoOEZufw4z/RFdt6k9WuZaDy0ZV7mXefCi/ybmUFrVESrijH586kNvN47zDffvAof+blLlERsh3QsYg8VIq+jNT0WxyFhMb4UWNGp01Z7vBfeO9BCtTDPG93wxlkwBN0dhrnh/NcybjNDnKTBvHsa1LBLL/1Ly5CdK5A61ZTyPTH7jPAd/ACXl+4JXYnnfbfmQv6gwStpb6Q18mrSB2NJhaU7tGhBen1oHxwB5S8evCM60I4cTq3vr8zAAJ6rneI8I6VcnqLKs4Of4hpwStilY+eT4jVfC13/qgWtPHiknpLLxpPJYdCnAEiq9jRVK7RhK2JJMAkzMPpzRg=="
+            },
+            "src/Person.java" : {
+              "name" : "src/Person.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "NYgHoNruO3t7vIi6YFhoH7NgfeYzu1KH7PYwVOiEzRumU6l+CIEyswPCqy+7xP486ryC0u0QggJTe4xANurKKVgYr/qsBAfW5GWR3Mbfdvq7JSHMJnjPXp1EVg4v0TGZpbCks5qnKeNWukS6ik9mS9DatVj3thz2nKQd+E2ICywTY9fRqWk36st+3na30NgmTxSgNfwvjfGyp5y7BZ5T8qPyXRaHTrJabCAWMESGBKGc9+yeT3wO8rph5yrTYjQt0CkSdriLBhFAlE1PzYnRGN5+mKL6Ix3xeU9+OJNSp7T+Yr1vdW1wpBZHFgHRbVvm6PYUb6SYOBuVihgVy11VBoTDD7AmERApBTTBone2Y7lNopAO4aLlnUtJWbhUB3/RG+ZTSEvO9NgC5FkhC+JbgE0zwhWtz0dZPS6YLCplLrb6M08B/41dDY7d6gIMc2aRoHo5mFN6Fuj10pZXzhvY7si4HGZ4NOqF5q+Vw0tjjoTSM7e89QjpTrSykTnQBAmTwSs+KgK4uUe8ZJlgOpjhy/jL1PjlNNIZkDix9shYQLe1Kn0QRBGplP/cunlsQLzLf3393OqE8xknH63sRVW+cD+DqgJQQAHTYHLPQla16A0N+NKaTrH3d+Zpmat5yK85oz9ZBj1HeQGebFNWhoIt0bUllA6CfstOoDYMyGbbnHcqsAW4Gt91TrPpd121KCVzWDZhwTAD4uX4FkNVgOwyjrepu1FdPyZfDfNfh/ZAVIRr0Vy2JC3buzDmRHXlxbYJpQDL/xHxpHYainMVV/kwFSc9IYcA2j1ONtFY+YizL6arrXKimipWJp9+zsFVDePPclKhxYnc++XfUUKP/uYDEluxVZKOLejnkXjAYfAR1Wcig7ZFYB/N9QjJneSsHoN6Yxq9yzyI/BIgpVArSEGoGzm3nmcGYVmFs9tWCdbNzqUYEtwlrtv05Ulv7ydWbsHVCy7uTQeRLdXvXmCckS+3OmwKhKu6iKLPZN498FQr3lWRX1X35daf7+2jnHtkQsvxdQ+Yq/Rjh8yN5bdAvpzXUK+lsD1S0oapb4pSxGHh2inFwjJve7zc4lyXs57uk92+XQa7FXxQVwRUeu5hLO8sr+mlo0C0obvVW4fYtv18bj2shzN5zjRHqsOba+Dbuu4DM898HliRoKCYkHLCn4KNGsJkQ1bD7adj7OCu/hoX8evrkeyJ1qt4lHhk88SblaehjZtmSL7QURAgA6BhO6T08FNbA6cB3ExmAXMPAfkreYTiVOhmS7DVlfWa2uKMsZVVWI4U5/CkhjOvxcWgXqQ8uJ1v7qtfSGzAIVE7sBjgcn3owvN22bxvnhYdVzK1HFXW2Ez6IVZxE86PQpHTlvKOZfirzZU5b9CcAv9vAxE3b5jSVmejIw8OuNvl6jF9wYnA9Qmh9hdpgYduNW0rFVFzVllzzBQBhmb3fltMIcwvczALYnQlg6fn9lxM2LxCc9besL9VgLMfxhAazZdyjmuhB00iVZ1lkgnrzdeGLS09Fux+wP2qWQerJdxvmIPDTnHevpKog7HIsvd54dqo5PCR9C996LXT9d/a1RMo74WDQGASoEMtPlKcKDIV4lkrLu8lQo0fLmIAd9UFhbYJoND+a/vbU1LlrPzM0jEu5zqiwPjhjf/98IejpK88jc266rroTwplJulQopq0gScAWWyigbDfxsKg3eqBf63irC4LYiyIraVBl5NM80Qm7S+WfB6MN99Au6a7HDyYwFNLSAtIIwjT6N7ZUxtV/6dUXpBNjpfT4h9aVb7I/flpXX7VCv5N"
+            },
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 139,
+                  "length" : 10,
+                  "possible_answer" : "KGv5YQK43z3NoLJjqWcOQcBSOvUAyBPORMMxmKmow6uQngMsD/we1f6CSxzjC5g84V/YdO9APRJr0CSPJXtu0mmEQgKLUqnIkTNmOdlYGkmRzv/o8yg5e0BhfySj+jYVpapn1DkQPk2M01F9a9+Qv0BqTdVmnYfFwwjY79tU5GiIM5zn29d36bOha/DevgrYHxnWQnf/PGVB6pw7cIUaaIMOyalsMaV16LmHEeNcMVC8bARsyulS6ajienMIXKvDNA2h8QIKDGyE9d0OgYNUPKUQ7yKakG8uvwnhcgeREd8em3KnQFdraMaJbHGxrn/nlY0+LxbQr0RKZH4s7gsqanFSLN4pC/LPV4fEMIuLuUwcdAy4gXn0TrnLAckdN76et+hCaIBEXifJhsSCOgKikLEUXAJMOjQZG2s1AWfeZvwuEvIUX5x9TgKjqtwRJFXQvJZOKgGxX7fw+dGCVsThA0fgAzWh19Xe194aSw2fmhF1eZ2KZLy9T6wnNIiqktTYxrpoSHeSC+vzzTb3eBuB9HAnYCOnTr82RfbWmJVRIdXaBXyOOohr6PNQAaxd0y5NM+cAosAGiLpn9Dod7L4PgTo4a+3HWdH2l9TmG7OcrdFbSeZDo0Hl/LTMGYtjPNydT/TmSKxVJ3a4r0o2Z6Jy0g==",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "NYgHoNruO3t7vIi6YFhoH7NgfeYzu1KH7PYwVOiEzRvRAUjANntvwwinjcODD7aFHHpeLCpEZTaIWxJd+nkhNJJWDIFKFdF7PJOpAwzGOow1F1KTfAfhj4TCOaB55FiH3/mMa7DJb+nVLakV5TkLo+9d0nEAM3NrQwzELGoQjQLO80uJmif0jG2+JO7UOaf85qEEbO8yzybtEqnujsL7+aTM0XB6qdQCDOHWLtg7EfXe7u4mbWYqovTKUyr0Uz0ba6g/5N3PGzspcRXt2qhzrDBqe96cXNKR2oOxu96PesuQUpyhjNAtyYN+ZprjlrWpnKH+QuoA26jN7UvvI+ALlw=="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<p>Nun wurde in der Klasse <code>Person</code> eine <code>toString()</code>-Methode implementiert, um ein Personen-Objekt ein einen schön leserlichen String umzuwandeln.</p>\n\n<p>Belegen Sie die Attribute des in der <code>Main</code>-Klasse erzeugten Personen-Objekts mit den folgenden Werten, welches daraufhin auf der Konsole ausgegeben wird:</p>\n<ul>\n  <li>Katja</li>\n  <li>Hobbies: Tennis und Klavier</li>\n  <li>Hauptwohnsitz: Regensburg</li>\n  <li>Zweitwohnsitz: Berlin</li>\n  <li>Mobil: 0151/55</li>\n  <li>Privat: 0941/55</li>\n</ul>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 1951349452,
+          "name" : "3_List",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ5bt+QuYkigvvbLBqdG+8g/Wzs8tnYCkZ99vR7qZNKQOztEUSHdhGRtJqQ3WfyiNiM+qpD2Ni3HqxJB2XOl4dO7UTmxNOVNkI/18zgDr9iYVGL0ZR2mCZUSYOnQ9gbyfc7L9apMv/T2RQd9lbJQ8ByA7/F4iEy1k+Vk83T1SqTnQapAiEZgg8aVkeZNuW5pHDjQnJ8baG/xSqvF/O1dqdqyZJFr+lBooxO30cI6l5UVTZ2ZJ53he4wzpSBnLFMD/TTHHzD1/76XKDs6vh4gBwy+Ij+wkUi1hag4BKhllfU+jrnSJIPc5j5O4NhXAO0ukwRah/vSbUTwyIGuDgI/dJiMC9dx2vgAb4Jvh/QV5yHydVyMg2CmnON3sWidAVAOuE7fTvMzTY2Usu3otcXCa+zNFbx7MGFD/rY0LGW0a98u3ESZXWXkhx3Vewf+5eOSQ8myhWJum5eDqsJjejv1ROeJEUl70VSr//4oaJNi1shjH9QDJfooBiihF/Yp8ogeSap4mPafJVGt2OYQALFwI9QgJMvVedY8e8T9TFFLnWD5tID8T9VcV+erraGghguwHpI5/FpdG03qqbaiI8Wa7gBeTVJu82U4qeqi05ZW66H36FTOxU5F7+cfLntjUwjJhTTa7WpVUCoT3Ahx1U5HhgTY4TGHJFBeoAevDImLSe9vtjLG6mP/n7pe44Ou6F282866CV/j4hbrUcQOnoebZEMrsQSyDvBSu1cfRVxYoftp0EP7XNUqu53l+qyvzwuHBEWskFh2WLqXTsfXz5CXOJbMw96i9GFRFbp1VY//L90m3Onf9GNphjpQsG5ut7P48xClD9WHUOhurjX52vqdPpW02zAH6hQ7v0m2jWpqnH0ilIAnwIGmGACukUf8Br/zv0Uh2r6qJ1sy3EFgvqDBFR85eN7Qai6+uAgh52gqE3HOV0lq94IPQ0aEuxMD7iVMfVe23J0K0KRW44WUdEicLSf1Jr8UpRjkve3yOYo4oQFktnimivG/uFrBxl7peZ9wz2lwqDtQEya+u+EuDpKgRcBbpP676VEiLTMd7DlGKUnHRUbczg7ZFnd5wyGj7aA84o7RNru2H0LFS3NP0AJr4IgoTLEpPp404p5UNnBZSq/UKIVBDvPFWYEqXpU/1ff+kYeq33kzNJR3smBqhP1/c9R6KTSrIa123N+wt1YiaV0G6cFjs/3vQOePyIGTsxJwSBIewX0EXx42gVI3UgL2fDvEM6aAbKKeoWk8mDpj2edWMYZcNQe4FKyCL1tf06535fOywWBVzipSfNySeE5cZ6brvFHulp3ZuItEvbV0qfnbxWUmQSEZwcp4OXtr/8IhWQPNskjt7S5/jpIGwp9D2gDpoG4lLq+li6uHjZpKxNOq1qz737P5MG9fZbXPvvDLB5JqFJR1PWZd5dATqnoSh+b2BKvMr4cotzV9Av1jCVq9VdMh6ijjEuB/IlaLesIUHRQBXnQKaU+vPxr1Kvyg7nV1tJlXaI6bbyqCW7K8miHK2Qcc+zMzifEWdocjO2pr0fI="
+            },
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 240,
+                  "length" : 10,
+                  "possible_answer" : "lNghsuBf21DIlCM3hvsnE/YsTxuqiF42/zUSkpXEJicQWI4kPOCQAdIjin5WiYugH+L26Y9vV06ADx/fOcmE+EShH7NBq8S6w2Ha4kThJnFC19dYlwFFHILioaBLuJQ7oAWcuv3OJSPpZn5BfE1ijWY7NYKrlL/F6+UurRdQCs4H/QT43VkLIAckpvwDJOc4ZSAp6E2MrsHUCzBzmcm/FTu+z2Swq8AvN8a5sHcapjmjaVSFwkU0wayLDNr+spL7UJUwFa0U6+LUcuqPY/HvhUaTiU6ZeM1oD8qdEcygJZWD9Xv5qFanBcdVEyjkeor6GhMq67ZOBvnvkFzruMwzOw==",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "NYgHoNruO3t7vIi6YFhoH5Y3smFePCPz49Z2FWeSLZJRZSV24DJfICT1lSmQ/3QCZlAFywnkw9fi5po90/grq+zHC9ELAK49BGGZgSs7EMQq+CVCUQT65TqKnD/tjidyUP+rSN/GFG59R2UNTE/JJe7WgQsI++8+bh9g84Voa4LVDVpfISoz086fag3Q6YydRPOmGFHUUGzrX3VPCJHNdIX4EJBk9478IbkEtf7+N2QT//c98zxlCk/dm0s45wUFNh8HC38q1M7UXHD/iE6+jBRHQSVRaXsZf8d02YaDPHWrgRRhYbNh5g7KmnsmISU3WDeA0+9iO875PlbwkshAgEGDEU8Lh3X1/CL8WwVon7A="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>Hier ist eine Liste zu sehen, in welche wir Buchstaben speichern können.</p>\n<ul>\n  <li>Fügen Sie an das Ende der Liste den Buchstaben D ein.</li>\n  <li>Fügen Sie ganz am Anfang der Liste den Buchstaben A ein.</li>\n  <li>Geben Sie die Anzahl der Elemente aus.</li>\n  <li>Geben Sie das letzte Element aus.</li>\n  <li>Geben Sie alle Elemente aus.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 1628660606,
+          "name" : "4_Set",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ5bt+QuYkigvvbLBqdG+8g/Wzs8tnYCkZ99vR7qZNKQOztEUSHdhGRtJqQ3WfyiNiM+qpD2Ni3HqxJB2XOl4dO7UTmxNOVNkI/18zgDr9iYVGL0ZR2mCZUSYOnQ9gbyfc7L9apMv/T2RQd9lbJQ8ByA7/F4iEy1k+Vk83T1SqTnQapAiEZgg8aVkeZNuW5pHDjQnJ8baG/xSqvF/O1dqdqyZJFr+lBooxO30cI6l5UVTZ2ZJ53he4wzpSBnLFMD/TTHHzD1/76XKDs6vh4gBwy+Ij+wkUi1hag4BKhllfU+jrnSJIPc5j5O4NhXAO0ukwRah/vSbUTwyIGuDgI/dJiMC9dx2vgAb4Jvh/QV5yHydVyMg2CmnON3sWidAVAOuE7fTvMzTY2Usu3otcXCa+zNFbx7MGFD/rY0LGW0a98u3ESZXWXkhx3Vewf+5eOSQ8myhWJum5eDqsJjejv1ROeJEUl70VSr//4oaJNi1shjH9QDJfooBiihF/Yp8ogeSap4mPafJVGt2OYQALFwI9QgJMvVedY8e8T9TFFLnWD5tID8T9VcV+erraGghguwHpI5/FpdG03qqbaiI8Wa7gBeTVJu82U4qeqi05ZW66H36FTOxU5F7+cfLntjUwjJhTTa7WpVUCoT3Ahx1U5HhgTY4TGHJFBeoAevDImLSe9vtjLG6mP/n7pe44Ou6F282866CV/j4hbrUcQOnoebZEMrsQSyDvBSu1cfRVxYoftp0EP7XNUqu53l+qyvzwuHBEWskFh2WLqXTsfXz5CXOJbMw96i9GFRFbp1VY//L90m3Onf9GNphjpQsG5ut7P48xClD9WHUOhurjX52vqdPpW02zAH6hQ7v0m2jWpqnH0ilIAnwIGmGACukUf8Br/zv0Uh2r6qJ1sy3EFgvqDBFR85eN7Qai6+uAgh52gqE3HOV0lq94IPQ0aEuxMD7iVMfVe23J0K0KRW44WUdEicLSf1Jr8UpRjkve3yOYo4oQFktnimivG/uFrBxl7peZ9wz2lwqDtQEya+u+EuDpKgRcBbDyPZr/dyWbjMpmBPjB+vkHHa6nk9N5/AK0lgIId16PhbVIoB9Km1Oi4go1C9xf3F7/wDEuZT0XWIbgTXGrZhoBxXLWopfG2Rmdl/Ke0VFKxTnfv80u7a4Pc6TNwhqR7y3ZS3+Tmf2TS5mywhGxD0kTgwt/cNuX9J+HWjSyV6UZSVPFFaninQi0eXXerEx3Z1fwtjFrOS/H7chNAYwOhVOPINqAR77bQ2jQPvbxZHjuE+Bu1zLJhTJxzWgQ9GjzBQwT9UUlY/I6j4xYuCrAzZLLL9KaYFd0EsmivtlM0I1CwJIKMt18SZnaHqy3qEtGYyyBC2QpXRw/vKo59G28vUsSYBNQ346KPWFvq+tJJ/7CzX/9EWf+8Yb5DjAlz21GxUsn98TNtpuUmxvd8hHglcqBQRKqAJ+1SwdgsgTOI6+NV3ThtFG3RE+KLOwW1VmtsEuC/bBlLRYINkmclrJHzEog=="
+            },
+            "src/Main.java" : {
+              "name" : "src/Main.java",
+              "placeholders" : [
+                {
+                  "offset" : 269,
+                  "length" : 10,
+                  "possible_answer" : "uqb9ulgE2lpizgfs5F9XvElYYVpfULsPGO938kdPQ0Kip9jX3QljehafWULn1vHgv0B8Vpbrl5eLDU1ctQTU5dhvROO37FouxwXO43QIBnYaL247YBfmaPuD6EWRJu8YehiPz+MXkkHIL35R/nEXhTCyA+4hcZeFCw/t04WnfWysR8Hi1ofjrf9PC9vd3NmebbQFA+ElXz1EvdSm6OmxgJrPEr3jMrccJj2sbF2yIKYNzQofyNxi1Bh7ryNCyQCmfx29P7DPJjzx8FnZDvkqJHomGFUiohVsI8SA1id2RWfUsbCtmKvTxXvVlMWKP84DyvHhgj4MiGdwV8qpKlOsFw==",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "NYgHoNruO3t7vIi6YFhoH9Q1KUudHU+xZyWfsx1LdVVlmMyUvuh+LGjrQlCua95zO9CaVVvbbgGsrF8KemxL9G2bejOpdHs9GgH9NZlReSTXlYcniOolNxq7skbauIJ5NGF5uUN8aQnvSpyOGzifnutqalMguNiBiPKAGoVPg3UWC7ViRtkr8QplL0TZBZAL1UtXxNI/kunhrsJFvkkcVj5f40KH578yxVJNO7PPmFfA271vGlXfRJ+7lkC2Ab588h+PohrVJxBdU6cMV1rQG+2Ei7AP9SsLCJiq8MlbfKBkd421A/qJg+nZGJfXIl3g8JVQQ7K6kOV2NtoU0KOqHsqfw7M7qudwc5mvyGwMO1GGpjjQSUnvqqnvTii8VNUj"
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>Hier ist nun eine Menge von Zahlen zu sehen.</p>\n<ul>\n  <li>Fügen Sie zwei mal die Zahl 77 hinzu.</li>\n  <li>Geben Sie die Anzahl der Elemente der Menge aus.</li>\n  <li>Überprüfen Sie, ob die 14 in der Menge ist. Wenn ja, soll &quot;Jepp&quot; ausgegeben werden.</li>\n  <li>Geben Sie alle Elemente der Menge aus.</li>\n</ul>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 1376683096,
+          "name" : "5_Map",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            },
+            "src/Uebersetzer.java" : {
+              "name" : "src/Uebersetzer.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 0,
+                  "possible_answer" : "cqHeZjISg3ZYP7+JNY7yj47x3CS6WycQbjwmwvlpPVT3NW6m+5MJbJcLOy9Fw+BzoaLsBSso4GJZiI+rhotAs9IQgRdTuKX7lYFzliJRpjim87tkzEc72BG2ec+s3L3euETiXDepPHDiEDwC9yam77SdvYu/t00s3gqNyUYiEFnukRILwAXcqjMwFuXANub0ot3STdjSL+a4SyuwoPCRk/uQ9/UBPI9S9Gm83ldwvNU=",
+                  "placeholder_text" : ""
+                },
+                {
+                  "offset" : 196,
+                  "length" : 10,
+                  "possible_answer" : "Mk1Pd3u6GfjiIrGFfOk2QvSMsVkTaQ/S9OigjF07ULp2E54yh3D/FL2lDOmfII3e7IqXHA8TYfrpnNu+VjXOyhS4smtD+3GC6dTS6HVzGx1REyUnq2HmK7XrMiKeGX6JbrdDXwOFscTMr/4+AY0+e22gFJ6t3aHzTGckmGXNmnAxNpv0TXe6ubVJ5u5DUDvlpbCo4XIVJA9f8LtGkD+epJpQ9H0PP4rvafOnP4HvroBgRTgj5RTHchSSdqCnuny+bz0wGV5nTgjQnexalosVDjmQ2pAXb3zlDFkJmoQVUHleLkymdVVGjmRni0iiw6tU9JML4B9qJVMlU/vkm+hCp5UUaBGglgRVqFfefCVMgkArrjlPFrPec0kte93RCFreqsPN246lHt4M76JowYNIyX+QMdxkgDqslZIab9Pxc/P15T/K1GKY7D7FRTp4N3HD/DsmFHEin+oYD4+moFCg4n1osIDTcOI3AXIj2yfYErzJjmtx1VzylqVkfa8F65EW",
+                  "placeholder_text" : "/* TODO */"
+                },
+                {
+                  "offset" : 264,
+                  "length" : 10,
+                  "possible_answer" : "+ThgNL/RrLWy0RTA1USivNJ8SnahQGBjld7f53kuAFgqaqOhDzEqO3vRaG71sM2hiOBAx0SCHvM6FLEoCVwpUzzIKexJeELzxzgh+eN9WnUj/wH8O4hGy+xdZmTG+fa48MyMLkjI4Eu+pbkHVoVJrA==",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "LGOmcFD3+dp5BsQ5hmrOtEI8pdEAQ+QWoX1KL17hsx39uCpB+LkQBrkRy1BujvEd6iY60+/g8zBlXBA9E68GkwjJO7/TQGCi3fCGOH3y0/QWUVrBq+qtOKpWQJAy3eMk8ZL4oySXO1o8LFeO4xno/9uRlLxHqvpHqaOAO05JojUaaENFEYrDyigz8ssB/Hv5IVaXY5MjEzQayqQ09R1TRVoCCgITdJLAZmoKVtwTqEMPy1fytFNeVm1VMQTr7Kbxu0HRuf0uumfOBqiQ8jSOFOsEwv0YBjLF5IDNXnTwN4MYeWtOr1cOBqVLX4B4ZJZYBF9evosK4Inbf9RIKgJAa0V8nMB/yOtuwVak7yV8lV26CHD1/u2TKCRVll2JrznP"
+            },
+            "src/InfoApp.java" : {
+              "name" : "src/InfoApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "4VhQNWQagsWUy67tfwkg8TBD5zjl83g5roIBaQZAqL7JT/+E36hI4QGVN6Iqd48Y7i7OPHhE+2tnrwcJ2FklQvDsiGNwCoWpopG/1IsUVqgUiwm9iAkooEPLwbUxrF0OHIJ+CHvTXVSLIcvfW44okRSG5hdVl6xaOJhcmkOzAtQ1+oKVdUUmEffaIEq9Y8GewTl8hjNjSlGNfq0Fq2VCGLGtH9y2Sgko8QgTXB0TEA0EaUufPMbMIzwYlrWYA1TUv4BqZ8/qyjf3XWiXu24+1fDkJqQpXH+qY44Nm0/WL3mTS/BFN58VBBu/17FDkdWnxJph1z8BbxXRO6gwPrRzGFtQ8EKSwJUExEHqcEn/DC1pZ55nb2KLG65xq64O3O/HRQEriI/cJOgzcOmf2NtV/IJPAyr/55am11dy+AU51ABI6ImosWhGLvUa4aEOER2Qnom/2yhcDQ8VfZJiYtbZDYy4I0uL6UqW2mEbHcU4WE/msAt8jV6OvVtauCTR9iyA/DrE668cWzmWktHbDqrs7ltK3ScweWVNuZQcTyjlzKGGsPjB04HwCjByTeck2yQEuq05YLD3CDN3i2e6w4PZVCMEdKxhJs1XK//s5c8ngK3k44hD3P9aqTxedKZYOdHn4vrJivHuiTyBA2uEr2u6PWBEkMxCukPYMl7BVXucHYX6WIQjE2bpKkS8pBCQ3miGl21jkyNhNuC+VzMv048jEDQylYxYWOkrAGsSCCOf3yUlpFMDLOPmvh0zd99j8mFi686YKLISD73DAUR18xhFym2y2kqxgOIwtL6UC/FWOpRpTzl4dlDih0ciQnDiqJUNl9iOOejOhE6KYaN+VoO57AWB5OsQgk5tZjPbkIhqVEj4hnb5c3ad6GRcr/SbdJJ/jDXhiO/MKg8uUppb8qiEfPs4R+za+PwpehT/b7hZEvY="
+            }
+          },
+          "description_text" : "<html>\n<p>In dieser Aufgabe sehen Sie eine Info-App, welche dem Benutzer auf der Konsole nützliche Infos darstellt: Sein oder ihr Betriebssystem und die aktuelle Uhrzeit.</p>\n<p>Ihre Aufgabe ist es, diese App um einen Multilingual-Support zu erweitern. D. h., sie soll Texte auf englisch, deutsch, usw. ausgeben können.</p>\n<p>Legen Sie eine Sprachdatei in Ihrem Home-Verzeichnis namens <code>deutsch.txt</code> an, die wie folgt aussieht:</p>\n<pre>Information|Information\nOperating System|Betriebssystem\nTime|Uhrzeit</pre>\n<p>In jeder Zeile steht also ein englischer Betriff, dann ein senkrechter Strich und dann die Übersetzung.</p>\n\n<p><b>Entwickeln Sie die <code>Uebersetzer</code>-Klasse:</b></p>\n<ul>\n  <li>Der Konstruktor <code>Uebersetzer(Path)</code> soll die als Parameter übergebene Sprachdatei einlesen und alle darin enthaltenen Einträge in die Map <code>woerterbuch</code> eintragen. Tritt ein Fehler beim Lesen der Datei auf, soll der Konstruktor eine IOException werfen (auch wenn die Wörterbuch-Datei einen ungültigen Eintrag enthält, z. B. eine Zeile ohne <code>|</code> oder mit mehreren <code>|</code>)</li>\n  <li>Die Methode <code>uebersetzen(String)</code> soll den übergebenen String mittels des eingelesenen Wörterbuchs übersetzen. Wird der Eintrag nicht gefunden, soll einfach der ursprüngliche englische Begriff unübersetzt ausgegeben werden.</li>\n</ul>\n<p>Starten Sie die Info-App, um zu sehen, ob die Übersetzung ins Deutsche funktioniert hat. Gerne können Sie auch noch weitere Sprachdateien (z. B. spanisch.txt) anlegen und den Dateipfad in der Info-App entsprechend anpassen.</p>\n<p>Tipp: Mit der <code>String</code>-Methode <code>split(\"\\\\|\")</code> können Sie einen String anhand vom <code>|</code>-Symbol in mehrere Teile aufteilen.</p>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "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"
+    }
+  ],
+  "version" : 13,
+  "edu_plugin_version" : "2022.2-2021.3-864"
+}

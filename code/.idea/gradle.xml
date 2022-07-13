@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="jbr-11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DBUebung11" />
+            <option value="$PROJECT_DIR$/JSON" />
+            <option value="$PROJECT_DIR$/JavaFX" />
+            <option value="$PROJECT_DIR$/MauMau" />
+            <option value="$PROJECT_DIR$/PG2_Uebung10/Uebung10/1_Lambda" />
+            <option value="$PROJECT_DIR$/PG2_Uebung10/Uebung10/2a_Anzahl_Laender" />
+            <option value="$PROJECT_DIR$/PG2_Uebung10/Uebung10/2b_Anzahl_Faelle" />
+            <option value="$PROJECT_DIR$/PG2_Uebung10/Uebung10/2c_Gesamtanzahl" />
+            <option value="$PROJECT_DIR$/PG2_Uebung2/Aufgabe 1/a_Rechnen" />
+            <option value="$PROJECT_DIR$/PG2_Uebung2/Aufgabe 2/a_Random" />
+            <option value="$PROJECT_DIR$/PG2_Uebung2/Aufgabe 2/b_if" />
+            <option value="$PROJECT_DIR$/PG2_Uebung2/Aufgabe 2/c_Schleifen" />
+            <option value="$PROJECT_DIR$/PG2_Uebung2/Aufgabe 2/d_enum" />
+            <option value="$PROJECT_DIR$/PG2_Uebung2/Aufgabe 2/e_Strings" />
+            <option value="$PROJECT_DIR$/PG2_Uebung2/Aufgabe 2/f_Arrays" />
+            <option value="$PROJECT_DIR$/PG2_Uebung2/Aufgabe 2/g_Scanner" />
+            <option value="$PROJECT_DIR$/PG2_Uebung3/Uebung3/2a_toString" />
+            <option value="$PROJECT_DIR$/PG2_Uebung3/Uebung3/2b_Random" />
+            <option value="$PROJECT_DIR$/PG2_Uebung3/Uebung3/2c_Methode" />
+            <option value="$PROJECT_DIR$/PG2_Uebung3/Uebung3/2d_Spiel" />
+            <option value="$PROJECT_DIR$/PG2_Uebung3/Uebung3/Aufgabe_1_Klasse_Karte" />
+            <option value="$PROJECT_DIR$/PG2_Uebung4/Uebung4/1_Banking" />
+            <option value="$PROJECT_DIR$/PG2_Uebung4/Uebung4/2a_Waehrung" />
+            <option value="$PROJECT_DIR$/PG2_Uebung4/Uebung4/2b_BigDecimal" />
+            <option value="$PROJECT_DIR$/PG2_Uebung4/Uebung4/2c_auszahlen" />
+            <option value="$PROJECT_DIR$/PG2_Uebung4/Uebung4/2d_ueberweisen" />
+            <option value="$PROJECT_DIR$/PG2_Uebung4/Uebung4/2e_compareTo" />
+            <option value="$PROJECT_DIR$/PG2_Uebung5/Uebung5/1_Spieler" />
+            <option value="$PROJECT_DIR$/PG2_Uebung5/Uebung5/2a_instanceof" />
+            <option value="$PROJECT_DIR$/PG2_Uebung5/Uebung5/2b_Computergegner_Staerke" />
+            <option value="$PROJECT_DIR$/PG2_Uebung5/Uebung5/2c_Overriding" />
+            <option value="$PROJECT_DIR$/PG2_Uebung5/Uebung5/2d_Casting" />
+            <option value="$PROJECT_DIR$/PG2_Uebung6/Uebung6/1_UML" />
+            <option value="$PROJECT_DIR$/PG2_Uebung6/Uebung6/2a_Ausprobieren" />
+            <option value="$PROJECT_DIR$/PG2_Uebung6/Uebung6/2b_Schnittstelle" />
+            <option value="$PROJECT_DIR$/PG2_Uebung6/Uebung6/2c_Overrides" />
+            <option value="$PROJECT_DIR$/PG2_Uebung6/Uebung6/2d_implements" />
+            <option value="$PROJECT_DIR$/PG2_Uebung7/Uebung7/1_Exceptions" />
+            <option value="$PROJECT_DIR$/PG2_Uebung7/Uebung7/2a_JSON" />
+            <option value="$PROJECT_DIR$/PG2_Uebung7/Uebung7/ChuckNorrisAPI" />
+            <option value="$PROJECT_DIR$/PG2_Uebung7/Uebung7/OfficialJokeAPI" />
+            <option value="$PROJECT_DIR$/PG2_Uebung8/Uebung9/1_Collections" />
+            <option value="$PROJECT_DIR$/PG2_Uebung8/Uebung9/2a_Listen" />
+            <option value="$PROJECT_DIR$/PG2_Uebung8/Uebung9/2b_Mengen" />
+            <option value="$PROJECT_DIR$/PG2_Uebung8/Uebung9/2c_Dateien_Map" />
+            <option value="$PROJECT_DIR$/Programmieren2" />
+            <option value="$PROJECT_DIR$/WebApp" />
+            <option value="$PROJECT_DIR$/Zinsrechner" />
+            <option value="$PROJECT_DIR$/tmpdelete" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

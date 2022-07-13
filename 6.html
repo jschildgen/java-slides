@@ -40,14 +40,14 @@
                     <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
                     <h1 style="font-size: 240%;">Programmieren 2 (Java)</h1>
                     <h3>Kapitel 6: JavaFX</h3>
-                    <h4 style="text-align:center">2020-05-20</h4>
+                    <h4 style="text-align:center">&nbsp;</h4>
                     <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-180px;">
                     <img src="img/oth.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-180px; box-shadow:none">
                 </section>
 
                 <section>
                   <h2>Bibliotheken</h2>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 19.3</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 86 <i class="fas fa-book"></i> 19.3</div>
                   <p class="small">Fremdbibliotheken (jar-Archive) zum Java-Classpath hinzufügen:</p>
                   <pre><code data-trim class="bash">
                     $ javac -cp json-simple-1.1.1.jar MeinProgramm.java
@@ -83,7 +83,7 @@
 
                 <section>
                   <h3>GUI-Programmierung in Java</h3>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 17</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 91 <i class="fas fa-book"></i> 17</div>
                   <ul class="small">
                     <li>GUI: Graphical User Interface</li>
                     <li>Java-Frameworks zur Entwicklung plattformübergreifender GUIs:
@@ -102,7 +102,7 @@
 
                 <section>
                   <h3>JavaFX in IntelliJ</h3>
-                  <div class="trackinfo"><i class="fas fa-book"></i> 17.1, 17.2</div>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 91 <i class="fas fa-book"></i> 17.1, 17.2</div>
                   <img src="img/6/intellij_new_javafx.png" class="noborder" style="position: absolute; right:5mm; top: 2cm; max-height:11cm">
                   <p class="small">In Java 7 bis 10 war JavaFX enthalten;<br>nun muss es separat installiert werden.</p>
                   <p class="small"><a href="https://gluonhq.com/products/javafx/">https://gluonhq.com/products/javafx/</a></p>
@@ -296,6 +296,24 @@
               </section>
 
               <section>
+                <h2>JavaDoc</h2>
+                <div class="trackinfo"><i class="fas fa-headphones"></i> 85 <i class="fas fa-book"></i> 18</div>
+                <p class="small"><code>/** ... */</code>-Kommentarblöcke beschreiben Klassen, Methoden, etc.</p>
+                <pre><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/Programmieren2/src/de/othr/javadoc/MeineKlasse.java#4-11,18'></code></pre>
+                <p class="small" style="z-index: 5; position: relative;">Erzeugen einer JavaDoc (HTML-Dateien) auf der Konsole:</p>
+                <pre><code>javadoc MeineKlasse.java</code></pre>
+                <p class="small">In IntelliJ: Tools &rightarrow; Generate JavaDoc...</p>
+                <img src="img/6/javadoc_nmalhallo.png" alt="JavaDoc" class="noborder" style="position: absolute; top: 10cm; right:0mm; width: 10cm; z-index: 4;">
+                <aside class="notes">Mit JavaDoc können Sie Ihre Klassen, Interfaces, Methoden, deren Parameter (<code>@params</code>), Exception-Verhalten (<code>@throws</code>), und mehr dokumentieren. IDEs wie IntelliJ zeigen JavaDoc-Infos im Code an.</aside>
+              </section>
+              <section>
+                <h2>JavaDoc</h2>
+                <img src="img/6/javadoc_MeineKlasse.png" alt="JavaDoc" class="noborder" style="margin-top: -5mm; width: 98%;">
+                
+                
+              </section>
+
+              <section>
                 <h3>Zusammenfassung</h3>
                 <ul class="small">
                   <li>Bibliotheken als JARs importieren; <code>java -cp</code></li>
@@ -305,6 +323,7 @@
                   <li>Listener-Konzept: <code>onAction</code>, ...</li>
                   <li>Controller-Klasse</li>
                   <li>MVC-Konzept</li>
+                  <li>JavaDoc</li>
                 </ul>
               </section>
 

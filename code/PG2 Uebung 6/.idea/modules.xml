@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung_6.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/PG2_Uebung_6.Uebung6-1_UML.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/PG2_Uebung_6.Uebung6-1_UML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/PG2_Uebung_6.Uebung6-1_UML.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/PG2_Uebung_6.Uebung6-1_UML.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/PG2_Uebung_6.Uebung6-1_UML.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/1_UML/PG2_Uebung_6.Uebung6-1_UML.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2_Ausprobieren/PG2_Uebung_6.Uebung6-2_Ausprobieren.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2_Ausprobieren/PG2_Uebung_6.Uebung6-2_Ausprobieren.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2_Ausprobieren/PG2_Uebung_6.Uebung6-2_Ausprobieren.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2_Ausprobieren/PG2_Uebung_6.Uebung6-2_Ausprobieren.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/2_Ausprobieren/PG2_Uebung_6.Uebung6-2_Ausprobieren.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/2_Ausprobieren/PG2_Uebung_6.Uebung6-2_Ausprobieren.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/3_Schnittstelle/PG2_Uebung_6.Uebung6-3_Schnittstelle.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/3_Schnittstelle/PG2_Uebung_6.Uebung6-3_Schnittstelle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/3_Schnittstelle/PG2_Uebung_6.Uebung6-3_Schnittstelle.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/3_Schnittstelle/PG2_Uebung_6.Uebung6-3_Schnittstelle.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/3_Schnittstelle/PG2_Uebung_6.Uebung6-3_Schnittstelle.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/3_Schnittstelle/PG2_Uebung_6.Uebung6-3_Schnittstelle.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/4_Overrides/PG2_Uebung_6.Uebung6-4_Overrides.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/4_Overrides/PG2_Uebung_6.Uebung6-4_Overrides.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/4_Overrides/PG2_Uebung_6.Uebung6-4_Overrides.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/4_Overrides/PG2_Uebung_6.Uebung6-4_Overrides.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/4_Overrides/PG2_Uebung_6.Uebung6-4_Overrides.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/4_Overrides/PG2_Uebung_6.Uebung6-4_Overrides.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/5_implements/PG2_Uebung_6.Uebung6-5_implements.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/5_implements/PG2_Uebung_6.Uebung6-5_implements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/5_implements/PG2_Uebung_6.Uebung6-5_implements.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/5_implements/PG2_Uebung_6.Uebung6-5_implements.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung6/5_implements/PG2_Uebung_6.Uebung6-5_implements.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung6/5_implements/PG2_Uebung_6.Uebung6-5_implements.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_6.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_6.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_6.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_6.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_6.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung_6.util.test.iml" />
+    </modules>
+  </component>
+</project>

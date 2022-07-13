@@ -11,12 +11,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Uebung4/1_Banking" />
-            <option value="$PROJECT_DIR$/Uebung4/2a_Waehrung" />
-            <option value="$PROJECT_DIR$/Uebung4/2b_BigDecimal" />
-            <option value="$PROJECT_DIR$/Uebung4/2c_auszahlen" />
-            <option value="$PROJECT_DIR$/Uebung4/2d_ueberweisen" />
-            <option value="$PROJECT_DIR$/Uebung4/2e_compareTo" />
+            <option value="$PROJECT_DIR$/Uebung4/2a_toString" />
+            <option value="$PROJECT_DIR$/Uebung4/2b_Random" />
+            <option value="$PROJECT_DIR$/Uebung4/2c_Methode" />
+            <option value="$PROJECT_DIR$/Uebung4/2d_Spiel" />
+            <option value="$PROJECT_DIR$/Uebung4/Aufgabe_1_Klasse_Karte" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>

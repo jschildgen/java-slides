@@ -26,7 +26,7 @@ import {
 } from './utils/constants.js'
 
 // The reveal.js version
-export const VERSION = '4.3.0';
+export const VERSION = '4.3.1';
 
 /**
  * reveal.js
@@ -2743,6 +2743,9 @@ export default function( revealElement, options ) {
 
 		// Helper method, retrieves query string as a key:value map
 		getQueryHash: Util.getQueryHash,
+
+		// Returns the path to the current slide as represented in the URL
+		getSlidePath: location.getHash.bind( location ),
 
 		// Returns reveal.js DOM elements
 		getRevealElement: () => revealElement,

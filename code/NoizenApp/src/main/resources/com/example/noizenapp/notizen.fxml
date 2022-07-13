@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.noizenapp.NotizenController">
+   <left>
+       <ListView fx:id="notizen_liste" onMouseClicked="#notiz_auswahl"></ListView>
+   </left>
+    <center>
+        <TextArea fx:id="notiz_text" onKeyReleased="#notiz_aendern"></TextArea>
+    </center>
+    <bottom>
+        <HBox>
+            <TextField fx:id="neuer_titel"></TextField>
+            <Button text="Neue Notiz" onAction="#neueNotiz"></Button>
+            <Button text="Notiz löschen" onAction="#notiz_loeschen"></Button>
+        </HBox>
+    </bottom>
+</BorderPane>

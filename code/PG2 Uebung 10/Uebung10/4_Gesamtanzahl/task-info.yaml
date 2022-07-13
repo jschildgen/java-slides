@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: src/Main.java
+  visible: true
+  placeholders:
+  - offset: 852
+    length: 264
+    placeholder_text: /* TODO */
+- name: src/CoronaDatensatz.java
+  visible: true
+- name: src/APIHelper.java
+  visible: true
+- name: test/Submit.java
+  visible: false

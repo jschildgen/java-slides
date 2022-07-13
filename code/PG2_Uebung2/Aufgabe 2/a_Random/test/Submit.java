@@ -9,7 +9,7 @@ import java.time.ZonedDateTime;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-class SubmitX {
+class Submit {
     private static final String DEADLINE_TIME = "12:00:00+01:00";
 
     static void submit() throws IOException {

@@ -1,0 +1,14 @@
+type: edu
+files:
+- name: src/Bank.java
+  visible: true
+- name: test/Tests.java
+  visible: false
+- name: src/Konto.java
+  visible: true
+  placeholders:
+  - offset: 442
+    length: 98
+    placeholder_text: /* TODO */
+- name: test/Submit.java
+  visible: false

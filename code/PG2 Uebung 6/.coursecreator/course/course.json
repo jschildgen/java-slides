@@ -1,0 +1,295 @@
+{
+  "course_version" : 1,
+  "summary" : "2022-04-28, Prof. Dr. Johannes Schildgen, OTH Regensburg.",
+  "title" : "PG2 Uebung 6",
+  "programming_language" : "JAVA",
+  "language" : "en",
+  "course_type" : "Marketplace",
+  "vendor" : {
+    "name" : "Johannes Schildgen"
+  },
+  "items" : [
+    {
+      "id" : 1106061396,
+      "title" : "Uebung6",
+      "task_list" : [
+        {
+          "id" : 615238179,
+          "name" : "1_UML",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaOn8jxzbcZ7IK3CVAl5OgXuafVAAz2BVf4MyChyZGQKPTVJtAPw062CU76hz9sD9aghioDnq3jfR7xIc6reTwdGycvZsPcshUDRcXs9tCdTbjirzI3O+xFXfeTHUH1LXfPKNwTxV9KuDY+jsViIAL4vOzhFpMnUv0/JUwOF/M2wZdbynTUcNJM1Zeho8zTX73EM0CRjL1TZipNuvsuI5OrPQTFfzlJTBF/PwimxKZn7PRK5Q7CJe0zAQ0c1A+2DpYf0Hojzfz4s9gh2JmSKdRVh6q3ATWFotN73T4sWBC7iILREkQMvBpeWTNiPiOan7z2"
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            },
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKCOqnxxY6BmgdD+IFgBFJuxxmQLnmQ7vhvoc7utcBM3gLIa2kqaFojUucMTg0udV2ambIVoU8ZH0ZXKjTG/TllT8oh0ibxVMeKTyRFbbOHhzHpf2tGBCoVDXlLk+hNFjTqvRjc2cPTnZhrZL+Qs4XxO907o9S/FF8yPwZ3+9F3u4"
+            }
+          },
+          "description_text" : "<html>\n<p>In dieser ersten Aufgabe geht es nicht darum, etwas zu programmieren. Stattdessen geht es um den Entwurf einer Software.</p>\n<p><b>Erstellen Sie ein UML-Klassendiagramm für das folgende Szenario:</b></p>\n<ul>\n  <li>Wir möchten eine Witze-App erstellen mit einer Anbindung für verschiedene Witze-Anbieter-APIs.</li>\n  <li>Die Klasse <code>Witz</code> soll die Attribute <code>witz</code> und <code>kategorie</code> besitzen. Während der Witz ein <code>String</code> ist, soll es für die <code>Kategorie</code> eine eigene Klasse geben.</li>\n  <li>Es soll die beiden Konstruktoren <code>Witz(witz)</code> und <code>Witz(witz, kategorie)</code> sowie die Getter die beiden Attribute geben (keine Setter).</li>\n  <li>Die Klasse <code>Kategorie</code> hat ein Attribut <code>kategorie</code> vom Typ <code>String</code>, einen Konstruktor <code>Kategorie(kategorie)</code> und eine Methode <code>toString()</code> besitzen.</li>\n  <li>Eine Subklasse von <code>Witz</code> soll die Klasse <code>FrageAntwortWitz</code> sein. Diese soll die zusätzlichen Attribute <code>frage</code> und <code>antwort</code> besitzen sowie die Getter-Methoden für diese besitzen.</li>\n  <li>Die beiden Konstruktoren hier sollen <code>FrageAntwortWitz(frage, antwort)</code> und <code>FrageAntwortWitz(frage, antwort, kategorie)</code> sein.</li>\n  <li>Die Schnittstelle <code>WitzAPI</code> soll die Methoden <code>getZufallswitz()</code> und <code>getWitze(Kategorie kategorie)</code> besitzen. Erste liefert ein <code>Witz</code>-Objekt zurück, letztere einen Array mit <code>Witz</code>-Objekten.</li>\n  <li>Eine weitere Methode der <code>WitzAPI</code>-Schnittstelle voll <code>getKategorien()</code> sein, welche einen Array mit den verfügbaren Kategorien liefert.</li>\n  <li>Die beiden Klassen <code>OfficialJokeAPI</code> und <code>ChuckNorrisAPI</code> sollen jeweils das Interface <code>WitzAPI</code> implementieren. Beide sollen einen Konstruktor ohne Parameter besitzen.</li>\n  <li>In der Klasse <code>OfficialJokeAPI</code> sind die Kategorien hart reinprogrammiert, daher soll es dort eine statische Klassen-Variable <code>Kategorie[] kategorien</code> geben.</li>\n  <li>Die Hauptklasse der App heißt <code>WitzeApp</code>. Sie hat eine Methode <code>public static void main(String[] args)</code> sowie eine private statische Member-Variable <code>WitzAPI api</code>, in welche die zu wendende API konfiguriert wird.</li>\n</ul>\n<p>Hinweis: Achten Sie darauf, Klassen miteinander zu verbinden und mit Multiplizitäten (1, *, ...) zu versehen, wenn in einer Klasse Objekte einer anderen Klasse in Member-Variablen gespeichert werden.</p>\n<p>Zeichnen Sie das UML-Diagramm auf Papier oder verwenden Sie eine Software zur Erstellung des UML-Diagrams.</p>\n<p>Fahren Sie mit den nächsten Aufgaben bitte erst fort, wenn Sie das UML-Diagramm fertiggestellt haben.</p>\n<p>PS: Drücken Sie den &quot;Check&quot;-Button, um die Punkte für diese Aufgabe zu bekommen.</p>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 627768512,
+          "name" : "2_Ausprobieren",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ5bt+QuYkigvvbLBqdG+8g/Wzs8tnYCkZ99vR7qZNKQOztEUSHdhGRtJqQ3WfyiNiM+qpD2Ni3HqxJB2XOl4dO7UTmxNOVNkI/18zgDr9iYVGL0ZR2mCZUSYOnQ9gbyfc7L9apMv/T2RQd9lbJQ8ByA7/F4iEy1k+Vk83T1SqTnQapAiEZgg8aVkeZNuW5pHDjQnJ8baG/xSqvF/O1dqdqyZJFr+lBooxO30cI6l5UVTZ2ZJ53he4wzpSBnLFMD/TTHHzD1/76XKDs6vh4gBwy+MK8U/cM7JWYYAdLbhhwgZcyuLlVPpw7dg27GpTGZqgiL/Un22l+PXgCVQ40sDBUeDtJSBGisYxT7deHjwKPXHpzrinF+SeoWRFzsgjPBqFEomDLZXFKS0C1nbaQ3tYLUG1qP5qThBkca0pYNOQSSbP1aA8cuswl6rF2kqsGbLfv6qstXYbItiqbDEg0t0JtZ41zmdh0s0UhJdwv7tmGohq6NNa9jdVtP1tIsU4qvbg9+w8p9RW4L0W4zfaLGfAkhSRt4HGTt89aRWXsj8qPeEWC3NSenaYwgMEzl8afpXslEwgJk12/gKABsi8N0Np30KFVqOidRG99GZsVcdxgfiMMzD8HDXR/etnsOPoHB/O56v+PoLmo2zEU0i2leKcodW2Zx5UaXGwDiK1FCIFrjZmdLU/j2h6S49GCU3iwbQxoWsP39l9Sh9bNKPKXiwf/SgI5gJE6t7Amig66jbRSC8QketurBh8zK+m+6IfN44IU8XiatuNfmqFeY05bgvOaYf+4+iioWBEkUFFwWMuxlNuvRLL/+1P5X8bMsEkcHXuTV1KPHmEXeNlBDnQCVsjaxNTyo8FUngOm2c4hakxps0H1QPQ0WgkpSdP/IAmzLnq8fEZGjBVNop0qrQuRAx8JurANxrqTTIny4kj5Y9m6ioztkEIIIwrYRzSxOzQuNcLlyMIDek3MB9yHiBHl/eF/bofyLMm9dhHmnhxTtro3lVGjTdmOnY9WHIszbWDTFoLOEUXkcpQ1FyTtoSzDPiFRb1N8b012iAXphOzkEnKdn3xvZN0RonrS4Vl9J8FNVNBGy5Ek0RPORI3AihdsiOGFculq5pokUvkSyZfZTJaAUzVqlhC3gr1HD1QZ68ZjZG6t0XtBjQ9Ii5d3rtqVSCPGE9FmduUGpKPiNRKCbkUGKMALjSdY5yA5k+PSsRHHbJrI+J8BzSf5O3fRMLYn/BzJqlN6AzwmConYCDsxQLVHHGU07jsHZ3PSlceHA1HFWsUkhSONf72FjF3h4dqiwmyS4HaUJKUWVJv20ekV8f73XsqCqKd72jGvk/086lhsLT/SVXe+Xzw9XfpfwQ6DBxfQuZWImt/paGdBI5KTI2mOWcWmoJLPeoghAGtGzBryrfLesMoXgJW4GfCkU+MK7rjaqsrINY/yZYhC9cgIaBC09eiWIgYsNdl5rm6LGsWNHR9nIb/HSOnYczCB9Z0BcyxsM5lhmQE9rMSGD/9ibPhNCdg=="
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKG7iGVdOtXi3kBTA5Y0i/jdmXap+XZX+igDi8ZsCmE4JqzvAzvsHqng272FjwcXWGw1n5QVtI9pIcuOAdw/lu0b4BfVXFDPCMixuBPGkQjBU962Aal01WMO+LXymzeUNXteJmsp1iVhhkBVhObJ/2jRcoPo7+mn4DdOPf3UMW5K1yAZ7yBPgKbF6wvxBj53G3/NHW6xPI/OH655z/tAis3Iq0CpUvcdJPQoPFfW90MC0MyZY7PpigBOuC6TlnHORVJ7fxgZSvonH96elpr9/dCP5X4jovlGKSzZbj9ZkZmLz8SHACDWJrAbSI64V4nK0anCHD0sTvTSKYNvmOXocqz257Hk3YGppYMpLeP+RLKkN/uOk7J4ORcI9xYj2jqFcIQh19bNynS9u6lcBhmIUroWMFF+Tz5kkgaMNSxGb0XJi1YvIXy6xfiKhzNpG70n4pq1KLWZIKO6Qh4PCDHqek2cie0a1lfgJzj1qnpWE3u0cLoNQTLaFn8PwBa9M0xB2mg=="
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "9n3bQOTUnP64FRTujZGBdnarqJVjrC4Z3lHT88GrGd5edcefKT3p7fMVIw3kOWtjviSq/mgujr46/1W026vHy1OpBNPhrBRbRhnIj08sHR6xnZ69XglQ3oOcvYfGVXe4zWlKuxQy4JBlBGwKzyi/prbDIRsJQq1b0QFHTl1W505HiLuoWM3MhzTxwxYsG0MRjn3L7wr0L9ryyJi6OHERse19s63ZynbLx+krq5N/6iNH8bERlmWtgmxktMAqt9eu7E2kWwjDyvZwemOmg6kju+cdqyIAaHhVkbjrebh5Z9g="
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "liTrpQdA8XbtdaMvBov+lWxuWyHxQ0RyXBQvfLDotdnTKOpfPUVGJK8+Oiz8/CFslRAFZ0TfyzJ+scqlxOVen+Y+aVBfAD+vYVqfBVMn8/TgIEYumhnqe97CJOGcI/3VZPQJB8tG+Fd3wUecWzEX/Apn6a74/+zHw8U4BgkbWaF4ntnSFJEOfeXQopAjrTi+/XItEHMzcSr/4gIRB7Bd+Tjf8oj75qCsMUVVqbb0P4ayjDLqs5KRIlaUZv4ULQpRpEUKyKC/13G1fyJvb2AMDo7+er0i5BVyv60P4HfP/J0TsDgpDVsaOzSscHB4AnuRvAl/sloZ+KnjAewBmP497OaYgZrw0NhRy5CIFByUDsbVim41mrCzWWUc6plnTIoq7Isi9vkj2EVT4Yis/wutsYesX+Vp+deoGPZKr/9vfpp2OuYlT6FU/ymdjSel5bRIIKLNO92+s9dwkZAa2tgyVe5a/gDb5M1MA6TzWL0Vz41qDWZBp/tXF11+ERSlMCiSUGIWgq0Sk+gaBtHB9pJFiVuHfbunOp8pAy+N1Xm7JX+ZkFIbmm0Ly5Nc5Rf/meYHs797gB6+fP6RcaiYlORQd74z+1qVy6d92dMQmG2pnLH7RJ/RuoXGTFSbQ9k5Re0JbPljs6Q5KSe8+e1NvfPab3dNPlXm8MDqtBtY+1P4Nzm2U8qXUyTkMjJbwQ6cbOLxyiqPtY3ghxbTIrE2+Z7BPJ23bfSgKgj/gM4CjnNVWKc="
+            },
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [
+                {
+                  "offset" : 97,
+                  "length" : 10,
+                  "possible_answer" : "o66+Dnu+TbK8QJ4wZcnphpwcvx9iubH+xgI6GsN4Net01KHm8+GLbEBBF4avWBwd8Oa8C8CKJemwgq5F/Z1BoNbpZ4yvqeV1MmFZYD7e27Ds5fm/QvrvOrsx1mUfgdxkNWTU65j5deMgdeo1m0I4arLox2z7SgSVfkXE8ZgYClw=",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKCOqnxxY6BmgdD+IFgBFJuxxmQLnmQ7vhvoc7utcBM3gLIa2kqaFojUucMTg0udV2R29JcOLhKMZfzB/nsq13LCdGjYqU19znoU3lKELLa09zFb7FjffVaBZo7Tth5B5KbWPQiQ8ajKeGkc5SrW/jJn2EbVMSJb1QPpkPJpfJpQiqWRdxwIpSSK1LWHsMThP7hPiXelTZvDaaQIC64Yz5bFN2f3mXZt33gh0FDE4hReyAk/B4RYge0iGY0oMpZ3QTkngLVij/2DD0Q1qavMeVgU="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>Nachdem Sie Ihr UML-Diagramm erstellt haben und damit der Entwurf der Witz-App abgeschlossen ist, beginnt nun die eigentliche Softwareentwicklung.</p>\n<p>Wie Sie sehen können, ist bis auf die API-Schnittstelle und deren Implementierung schon fast alles fertig entwickelt.</p>\n<p>Um sich mit den Klassen vertraut zu machen, eine kleine Aufgabe:</p>\n<p><b>Erzeugen Sie ein <code>Witz</code>-Objekt mit dem folgenden Text und der Kategorie &quot;Essen&quot;:</b></p>\n<pre>Herr Ober, da ist ein H in meiner Buchstabensuppe!</pre>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 463287594,
+          "name" : "3_Schnittstelle",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRPgE0Feh7zuBWhaAWsBIWhPYRKY0CQLu8NXzqmDo1zFSLNXpGgCl5A832pMH4zCpj3dDYddh/7IfPQ8BEXAdjDEFaqMzU/0X1TZJrsWlEXAyQ8hXmyGcOVGb7LLF0iYaO2EeXwnAyVDgbSKwGIyY3aBktJFhIeNEsUYk3gEMbpvVvj857+QwBPHiO2qmHtUFOF216+Yxzz04DeGskqZMqkVBbbw3fCZb5n/juQfgOyq6R+KqY6NCv2EksV0CIJXBF53I1rbJwQo68PC0zw8D4l06w63biJENKGKv0bXjsST6aqZJBzNs9nW+VpUEi4RTswXQgHQggrvAvdd5vVuvDgHObC4yvTOVCD5tc2q4UWLbkcKmjTD/dMQKx2OSGEt73GUhiyOgeDpAzdUdqVugCSwd5AIx24QdrA7FMnvEyFk1IBtwzEKC/iG/155ZY1BVT1w1dZ2/GTNpBp0K9aapvGrv+6WbsLdIteBgHOUIv5seDgUo+MfDTPK3aj5pWQ3bRdG8UND0g8z9vlrO5KqHjJnzvUf9/xB4YfnxLdubs/sY3Wpm2xrv6i9VWeF74v0T80rifNXlSntHCSg/z57TTeUkSoLTBgrgoEUtzFFnF/VloUIeD1qFRI/vYXM60DdMzQ+rlnMZNHt2EYs/E4FJrR03p8+FV49twdDWui9JWJnzxUwu0VRXjcgYEblo5PXxd7xaPVVG8W/wLpOmKM+WJQ9YbZ36vqK3nTmT5zXViEIe9pDAFkoE9SvMmZavMQ+vLBX8IFA5N1M1prUrZ6BOk9OIVnfQKyN4a/3LH3WuwL5Loy2rxc6OmPjuArxS5HL3Ez4fkib1xVM42M55XM5AO8IYztYzoGN19G3ESlmiYavJPnyieBYi4ElOfx9bfN6M+RKmgucia+0KBbKeYga1dP8="
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "9n3bQOTUnP64FRTujZGBdnarqJVjrC4Z3lHT88GrGd5edcefKT3p7fMVIw3kOWtjviSq/mgujr46/1W026vHy1OpBNPhrBRbRhnIj08sHR6xnZ69XglQ3oOcvYfGVXe4zWlKuxQy4JBlBGwKzyi/prbDIRsJQq1b0QFHTl1W505HiLuoWM3MhzTxwxYsG0MRjn3L7wr0L9ryyJi6OHERse19s63ZynbLx+krq5N/6iNH8bERlmWtgmxktMAqt9eu7E2kWwjDyvZwemOmg6kju+cdqyIAaHhVkbjrebh5Z9g="
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKG7iGVdOtXi3kBTA5Y0i/jdmXap+XZX+igDi8ZsCmE4JqzvAzvsHqng272FjwcXWGw1n5QVtI9pIcuOAdw/lu0b4BfVXFDPCMixuBPGkQjBU962Aal01WMO+LXymzeUNXteJmsp1iVhhkBVhObJ/2jRcoPo7+mn4DdOPf3UMW5K1yAZ7yBPgKbF6wvxBj53G3/NHW6xPI/OH655z/tAis3Iq0CpUvcdJPQoPFfW90MC0MyZY7PpigBOuC6TlnHORVJ7fxgZSvonH96elpr9/dCP5X4jovlGKSzZbj9ZkZmLz8SHACDWJrAbSI64V4nK0anCHD0sTvTSKYNvmOXocqz257Hk3YGppYMpLeP+RLKkN/uOk7J4ORcI9xYj2jqFcIQh19bNynS9u6lcBhmIUroWMFF+Tz5kkgaMNSxGb0XJi1YvIXy6xfiKhzNpG70n4pq1KLWZIKO6Qh4PCDHqek2cie0a1lfgJzj1qnpWE3u0cLoNQTLaFn8PwBa9M0xB2mg=="
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "liTrpQdA8XbtdaMvBov+lWxuWyHxQ0RyXBQvfLDotdnTKOpfPUVGJK8+Oiz8/CFslRAFZ0TfyzJ+scqlxOVen+Y+aVBfAD+vYVqfBVMn8/TgIEYumhnqe97CJOGcI/3VZPQJB8tG+Fd3wUecWzEX/Apn6a74/+zHw8U4BgkbWaF4ntnSFJEOfeXQopAjrTi+/XItEHMzcSr/4gIRB7Bd+Tjf8oj75qCsMUVVqbb0P4ayjDLqs5KRIlaUZv4ULQpRpEUKyKC/13G1fyJvb2AMDo7+er0i5BVyv60P4HfP/J0TsDgpDVsaOzSscHB4AnuRvAl/sloZ+KnjAewBmP497OaYgZrw0NhRy5CIFByUDsbVim41mrCzWWUc6plnTIoq7Isi9vkj2EVT4Yis/wutsYesX+Vp+deoGPZKr/9vfpp2OuYlT6FU/ymdjSel5bRIIKLNO92+s9dwkZAa2tgyVe5a/gDb5M1MA6TzWL0Vz41qDWZBp/tXF11+ERSlMCiSUGIWgq0Sk+gaBtHB9pJFiVuHfbunOp8pAy+N1Xm7JX+ZkFIbmm0Ly5Nc5Rf/meYHs797gB6+fP6RcaiYlORQd74z+1qVy6d92dMQmG2pnLH7RJ/RuoXGTFSbQ9k5Re0JbPljs6Q5KSe8+e1NvfPab3dNPlXm8MDqtBtY+1P4Nzm2U8qXUyTkMjJbwQ6cbOLxyiqPtY3ghxbTIrE2+Z7BPJ23bfSgKgj/gM4CjnNVWKc="
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 10,
+                  "possible_answer" : "+IszU2sLU405ZWI8OEONmwbJOu3/HiG/JfUba/RwvNy2xgzqtAXHBkhE38hu+XjRacwjEsYClsiv/R/NAkIZWdglmGyJ7AXJ0hm7O21jLb7llfm+P7I3CQaBzTFfClo9iZG1wqacXiNp3+i+/NSYulTuCx4luFsd5MGD+igEdp759ABSMCeofHGkH557a26k",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "ft3/KDXagmI+TWDbl9vbuw=="
+            },
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKKQ8ZzbqUrDFW6QTUtFA49S4Vzw2DLZWhsJUDzd5ed6kXFl7r9S9hBs38mYP273NZxwE6sWCkqnTdLIJil4hUXWUAzCceUHkjiwRRXzWJUDvzsG3ZdcnWPeqJVtx3T0WhtmZNZlzve+Qa0ZplkEPS2/SH1b8LAE6n4NXLB9fuEHuoXhzU6LVH4oKiPmPlTWryUo8NB31O1xCEzKHllF9KmNTJEUKor3OBSuulqyjq5PCwE8GyuaBS7SXqDbOgltagcXohz9AmfZnYqMNzrXD/xNy1GIbNE5WiKxlHgSBmzZgyZwbz8ApY8Fa0lrnJg3JfJKVey2ufXa27ugZGFTfD01aUeOlFo50y8q9sOL/Io1qi30xs7hoBiVpHQrlPNbCX6m4fdClrD6DPf938gMiv5Q9oKwD5y7Tqj9pFcY20QMqUSrSezyQhmXAt97mde24njQRfChb+U7j6WBcvnaPQt25OQq/HMZjCy/4R1TFFjcr"
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>Bevor wir mit der Entwicklung der einzelnen API-Implementierungen beginnen, benötigen wir das Interface <code>WitzAPI</code> mit den folgenden Methoden:</p>\n<ul>\n  <li><code>getZufallswitz()</code> liefert ein <code>Witz</code>-Objekt zurück</li>\n  <li><code>getWitze(Kategorie kategorie)</code> gibt einen Array mit <code>Witz</code>-Objekten aus</li>\n  <li><code>getKategorien()</code> gibt einen Array mit <code>Kategorie</code>-Objekten</li>\n</ul>\n<p><b>Entwickeln Sie die Schnittstelle <code>WitzAPI</code>.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 1234403273,
+          "name" : "4_Overrides",
+          "files" : {
+            "src/Task.java" : {
+              "name" : "src/Task.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "WEJEkhpCAL5HUFSlR3wpP2CaOB7TIMB42A3rM9YWqpddxZJc8v3L9oQSwn7ScXDA"
+            },
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRPgE0Feh7zuBWhaAWsBIWhPYRKY0CQLu8NXzqmDo1zFSLNXpGgCl5A832pMH4zCpj3dDYddh/7IfPQ8BEXAdjDHCaIytXuxPhrLQUjlv2i6b0+RrbnquJTklhZBhvsz2ZRWetA+cJIbUMbhcHsCcef3yD6p1QVccdK3wkkbzHnHU67mjt25m7GsMv5TH/M+QNkSSlvBL6bBJHBxt+WfECi2/CDHzIprKWiGT7nrUKvFHdiMLNdfSUaNey/K7ZCiaYUFd1rhO95Qgifc8nRtftaMoRvZmSKIEzAD3K2JXeOTR3hFkDMHjbV2QFd+oFBb0Hop4QR1NlHQAFDyuTVl3CqvGErHBFqMcZMJJs/9Ezmf4/VnV2UM7bCnn8G5YGDzBCwa3sFVObfFWyzhqArxtEMOKIgKNE0r2kCzjdof/sZ/K"
+            },
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKKQ8ZzbqUrDFW6QTUtFA49S4Vzw2DLZWhsJUDzd5ed6kXFl7r9S9hBs38mYP273NZxwE6sWCkqnTdLIJil4hUXWUAzCceUHkjiwRRXzWJUDvzsG3ZdcnWPeqJVtx3T0WhtmZNZlzve+Qa0ZplkEPS28V7u9XyDD5A+R6J6CzDQ4tBEjRIRMiCsIVkVBBHnkp0G3O6Y045WaRolkaTFybJArCdi1JByJoUrTvrbtRdp0KbOduEY2+pEzncV6Ep4vRRg5d/bJC26PSTGoPZ8symOa8vHwcj63wZGgN0jFbngIvmRxZgc/L1rwdeMbaVJVDp8X1XojGcnvT8XQD7TF2z9Y="
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "+IszU2sLU405ZWI8OEONmwbJOu3/HiG/JfUba/RwvNy2xgzqtAXHBkhE38hu+XjRacwjEsYClsiv/R/NAkIZWdglmGyJ7AXJ0hm7O21jLb7llfm+P7I3CQaBzTFfClo9iZG1wqacXiNp3+i+/NSYulTuCx4luFsd5MGD+igEdp759ABSMCeofHGkH557a26k"
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKG7iGVdOtXi3kBTA5Y0i/jdmXap+XZX+igDi8ZsCmE4JqzvAzvsHqng272FjwcXWGw1n5QVtI9pIcuOAdw/lu0b4BfVXFDPCMixuBPGkQjBU962Aal01WMO+LXymzeUNXteJmsp1iVhhkBVhObJ/2jRcoPo7+mn4DdOPf3UMW5K1yAZ7yBPgKbF6wvxBj53G3/NHW6xPI/OH655z/tAis3Iq0CpUvcdJPQoPFfW90MC0MyZY7PpigBOuC6TlnHORVJ7fxgZSvonH96elpr9/dCP5X4jovlGKSzZbj9ZkZmLz8SHACDWJrAbSI64V4nK0anCHD0sTvTSKYNvmOXocqz257Hk3YGppYMpLeP+RLKkN/uOk7J4ORcI9xYj2jqFcIQh19bNynS9u6lcBhmIUroWMFF+Tz5kkgaMNSxGb0XJi1YvIXy6xfiKhzNpG70n4pq1KLWZIKO6Qh4PCDHqek2cie0a1lfgJzj1qnpWE3u0cLoNQTLaFn8PwBa9M0xB2mg=="
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "9n3bQOTUnP64FRTujZGBdnarqJVjrC4Z3lHT88GrGd5edcefKT3p7fMVIw3kOWtjviSq/mgujr46/1W026vHy1OpBNPhrBRbRhnIj08sHR6xnZ69XglQ3oOcvYfGVXe4zWlKuxQy4JBlBGwKzyi/prbDIRsJQq1b0QFHTl1W505HiLuoWM3MhzTxwxYsG0MRjn3L7wr0L9ryyJi6OHERse19s63ZynbLx+krq5N/6iNH8bERlmWtgmxktMAqt9eu7E2kWwjDyvZwemOmg6kju+cdqyIAaHhVkbjrebh5Z9g="
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [
+                {
+                  "offset" : 556,
+                  "length" : 10,
+                  "possible_answer" : "rydaPfk0X4RmkWkdkoZFEKBbZ1elS7s2bYcdkFfpVClIe6KP3QQvdRIgnJeR4uqRIGmRa8WNeZ2L8RNDZTKhphIaFym2gvXhsse4iqMUdPKGjCyRas2ySgJj5llOmHEW",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "liTrpQdA8XbtdaMvBov+lWxuWyHxQ0RyXBQvfLDotdnTKOpfPUVGJK8+Oiz8/CFslRAFZ0TfyzJ+scqlxOVen+Y+aVBfAD+vYVqfBVMn8/TgIEYumhnqe97CJOGcI/3VZPQJB8tG+Fd3wUecWzEX/Apn6a74/+zHw8U4BgkbWaF4ntnSFJEOfeXQopAjrTi+/XItEHMzcSr/4gIRB7Bd+Tjf8oj75qCsMUVVqbb0P4ayjDLqs5KRIlaUZv4ULQpRpEUKyKC/13G1fyJvb2AMDo7+er0i5BVyv60P4HfP/J0TsDgpDVsaOzSscHB4AnuRvAl/sloZ+KnjAewBmP497OaYgZrw0NhRy5CIFByUDsbVim41mrCzWWUc6plnTIoq7Isi9vkj2EVT4Yis/wutsYesX+Vp+deoGPZKr/9vfpp2OuYlT6FU/ymdjSel5bRIIKLNO92+s9dwkZAa2tgyVe5a/gDb5M1MA6TzWL0Vz41qDWZBp/tXF11+ERSlMCiSUGIWgq0Sk+gaBtHB9pJFiVuHfbunOp8pAy+N1Xm7JX+ZkFIbmm0Ly5Nc5Rf/meYHs797gB6+fP6RcaiYlORQd74z+1qVy6d92dMQmG2pnLH7RJ/RuoXGTFSbQ9k5Re0JbPljs6Q5KSe8+e1NvfPab3dNPlXm8MDqtBtY+1P4Nzm2U8qXUyTkMjJbwQ6cbOLxyiqPtY3ghxbTIrE2+Z7BPGkY/WaL8QMOJChmMuByOW63sa3zvATSbx7N/PzsujsB"
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>Bevor wir weitermachen, noch eine unschöne Sache: Wenn ein Witz von der Klasse <code>FrageAntwortWitz</code> ist und wir dann dessen <code>getWitz()</code>-Methode aufrufen, kommt <code>null</code> zurück, da ja die Member-Variable <code>witz</code> im Konstruktor auf <code>null</code> gesetzt wurde.</p>\n<p><b>Überschreiben Sie unter Verwendung der <code>@Overrides</code>-Notation in der <code>FrageAntwortWitz</code>-Klasse die Methode <code>getWitz()</code> so, dass sie die <code>frage</code>, dann ein Leerzeichen und dann die <code>antwort</code> ausgibt.</b></p>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        },
+        {
+          "id" : 856903178,
+          "name" : "5_implements",
+          "files" : {
+            "test/Tests.java" : {
+              "name" : "test/Tests.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "ITs8Nv8EH6QWJG5nufD7nL+5+4bhYoXDvmVthWtIgQ65QGrosPwl8pWa8Roz0DaObGqP+yWz3JzEMiw/pLuaRPgE0Feh7zuBWhaAWsBIWhPYRKY0CQLu8NXzqmDo1zFSLNXpGgCl5A832pMH4zCpj3dDYddh/7IfPQ8BEXAdjDHCaIytXuxPhrLQUjlv2i6brIpn9fqqyK6Cc8vor8wu6wMCLK7uoZvtbPJ/oGc/9246lHBSQA4H8gyeFHY0nOAB+ZTj7RsE/cPcYhkjnMlCaMkX8JdSJZoDbM9BsPDRtkwHVEfR1NiLuyhBLLgr53fHUe7Iv4vf12lsjMF4Gy5q9AvAwazYpZHH/A1IjKpPNBeEf21GG7Qf1NvWsicPc9zNO6atBH0gQ0HKO108RhXRXtemI75TvRy6MhDM/sPmohOq886LoXKjFEA0T9c2sLi4/fD33LjSSDnFcnZhhZ0U1vR4uSxiF2Uehzh374qGBzt11gktXUmY62cGPcz8gcOS8WQJuFq9tchUFVeZdBlbDx/FyPB7hqum5IAIt/RKI/c7SRUdwGYNFl/lKINjYKuBvwxXS5j8TRFEYiAtdOo0CcoDbBcYc0Chqxng2PPY9Y9X1R1fXsu7zL5bGQfihNq3H1rK3xvpih1Ge0UiULTdJnBDSCMXA3NSvnoyLQqkbNgYm8IM5U+LdUoh/6rvC0i4e+bIdZ3navCSg9D769SBuiuxSP3+3sd2E/JI45JDbTfUBwAY/ybllgfR+R69KQzt"
+            },
+            "src/Witz.java" : {
+              "name" : "src/Witz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKG7iGVdOtXi3kBTA5Y0i/jdmXap+XZX+igDi8ZsCmE4JqzvAzvsHqng272FjwcXWGw1n5QVtI9pIcuOAdw/lu0b4BfVXFDPCMixuBPGkQjBU962Aal01WMO+LXymzeUNXteJmsp1iVhhkBVhObJ/2jRcoPo7+mn4DdOPf3UMW5K1yAZ7yBPgKbF6wvxBj53G3/NHW6xPI/OH655z/tAis3Iq0CpUvcdJPQoPFfW90MC0MyZY7PpigBOuC6TlnHORVJ7fxgZSvonH96elpr9/dCP5X4jovlGKSzZbj9ZkZmLz8SHACDWJrAbSI64V4nK0anCHD0sTvTSKYNvmOXocqz257Hk3YGppYMpLeP+RLKkN/uOk7J4ORcI9xYj2jqFcIQh19bNynS9u6lcBhmIUroWMFF+Tz5kkgaMNSxGb0XJi1YvIXy6xfiKhzNpG70n4pq1KLWZIKO6Qh4PCDHqek2cie0a1lfgJzj1qnpWE3u0cLoNQTLaFn8PwBa9M0xB2mg=="
+            },
+            "src/Kategorie.java" : {
+              "name" : "src/Kategorie.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "9n3bQOTUnP64FRTujZGBdnarqJVjrC4Z3lHT88GrGd5edcefKT3p7fMVIw3kOWtjviSq/mgujr46/1W026vHy1OpBNPhrBRbRhnIj08sHR6xnZ69XglQ3oOcvYfGVXe4zWlKuxQy4JBlBGwKzyi/prbDIRsJQq1b0QFHTl1W505HiLuoWM3MhzTxwxYsG0MRjn3L7wr0L9ryyJi6OHERse19s63ZynbLx+krq5N/6iNH8bERlmWtgmxktMAqt9eu7E2kWwjDyvZwemOmg6kju+cdqyIAaHhVkbjrebh5Z9g="
+            },
+            "src/FrageAntwortWitz.java" : {
+              "name" : "src/FrageAntwortWitz.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "liTrpQdA8XbtdaMvBov+lWxuWyHxQ0RyXBQvfLDotdnTKOpfPUVGJK8+Oiz8/CFslRAFZ0TfyzJ+scqlxOVen+Y+aVBfAD+vYVqfBVMn8/TgIEYumhnqe97CJOGcI/3VZPQJB8tG+Fd3wUecWzEX/Apn6a74/+zHw8U4BgkbWaF4ntnSFJEOfeXQopAjrTi+/XItEHMzcSr/4gIRB7Bd+Tjf8oj75qCsMUVVqbb0P4ayjDLqs5KRIlaUZv4ULQpRpEUKyKC/13G1fyJvb2AMDo7+er0i5BVyv60P4HfP/J0TsDgpDVsaOzSscHB4AnuRvAl/sloZ+KnjAewBmP497OaYgZrw0NhRy5CIFByUDsbVim41mrCzWWUc6plnTIoq7Isi9vkj2EVT4Yis/wutsYesX+Vp+deoGPZKr/9vfpp2OuYlT6FU/ymdjSel5bRIIKLNO92+s9dwkZAa2tgyVe5a/gDb5M1MA6TzWL0Vz41qDWZBp/tXF11+ERSlMCiSUGIWgq0Sk+gaBtHB9pJFiVuHfbunOp8pAy+N1Xm7JX+ZkFIbmm0Ly5Nc5Rf/meYHs797gB6+fP6RcaiYlORQd74z+1qVy6d92dMQmG2pnLH7RJ/RuoXGTFSbQ9k5Re0JbPljs6Q5KSe8+e1NvfPab3dNPlXm8MDqtBtY+1P4Nzm2U8qXUyTkMjJbwQ6cbOLxyiqPtY3ghxbTIrE2+Z7BPB/N6kj70XaMeERQGexXMBsSdb2bbNw3nDGCiCJ90sBaDmAftsQdNFQaFishKDO7Fg61IJbJnM6dr8Yq1LISEVjTUOVg9awztJCbnYHDddi3tdT56auFZRcJv4baA+lYHwuP5C/IJuDJd8ArRcbMEhw="
+            },
+            "src/MeineTestAPI.java" : {
+              "name" : "src/MeineTestAPI.java",
+              "placeholders" : [
+                {
+                  "offset" : 0,
+                  "length" : 10,
+                  "possible_answer" : "MtK/X/OCUoDouoTSFoaPWvQq+4R0gfSxo5BlLVw5OT0WfItrH7ZlLufaBJZFbYcyoufScamTRE7EOCoIpyMumjL3zXMWVUskqH7szT8KQblvjGTvSjJro8YfuzuXl+FXnfbFXieymTzx9nPAlrvXy1hR7giVTwmXy9sDWdmACpnl+W54JkQhTYaLixa5+a+0LTl3qJ63GR6X/J7KFM5SCv7ZKyJZrjUAMOvQyyEN53+sbPXrFPOFeUmO3z9z8dIy9mE9YVLrp5tl7Ykd8YYWAB5LzC+IzbUZVKnkca4MHUI1v+enpJyiSc2HrBDZSJCqiyXSAyXb6vG1KSs7HWcCW2dc0vXoY3abH0M/5yqEDGLUNp+QuUvuQ4TKwF417JODV3JjxiPUMz5ZfaHzeyx0DksAoQDL7rVvlgWy3eG/uNwAGf4o/AKTpFNWGfJ14RkNPoKXq34M4mb4puTwKK2WsAueoYmaY1+OoeEsb/kivZqnl3w2gBhrttwXJL0w41WeeaT5t0BmMl1pV+ztUZGEd8xHDs2Aily268Xe0gX5FwJYKbT8mOJ/FXnsoQPEfXjSwCjbkXwYqc0d0gAONm3JiylIdWbrb4fie+ta/oGmYgbgKM8oOQQlUN+22UxOh3ohtfLAsdsDRYdqHs8McABUHsmrg5YMjB2zufddWdK56YjVp5ozRaUw2c6F8/1xpvnld5bLnAjMJOfQB2DK7tz/fXKWCGsYI27hmpsn+Bjf4gjwYdyog4bUd1yl3W6Mk2159j3gVOA1JTOAbMa9QiUjKeDxcyuvK1vCCuE9lDXnc97fnWssvxj0U2VNNg0spt4Lk2SS/xRFW19vs2uoORjLdqHpg6CPZ2LXDlUgBRFTrh4=",
+                  "placeholder_text" : "/* TODO */"
+                }
+              ],
+              "is_visible" : true,
+              "text" : "ft3/KDXagmI+TWDbl9vbuw=="
+            },
+            "src/WitzAPI.java" : {
+              "name" : "src/WitzAPI.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "+IszU2sLU405ZWI8OEONmwbJOu3/HiG/JfUba/RwvNy2xgzqtAXHBkhE38hu+XjRacwjEsYClsiv/R/NAkIZWdglmGyJ7AXJ0hm7O21jLb7llfm+P7I3CQaBzTFfClo9iZG1wqacXiNp3+i+/NSYulTuCx4luFsd5MGD+igEdp759ABSMCeofHGkH557a26k"
+            },
+            "src/WitzeApp.java" : {
+              "name" : "src/WitzeApp.java",
+              "placeholders" : [ ],
+              "is_visible" : true,
+              "text" : "kJXJeiyB7wKmahgcxq+eKKQ8ZzbqUrDFW6QTUtFA49S4Vzw2DLZWhsJUDzd5ed6kXFl7r9S9hBs38mYP273NZxwE6sWCkqnTdLIJil4hUXWUAzCceUHkjiwRRXzWJUDvxAoGHOSfmGPo+p1Ef7Nc4Cw4gMBHMI9GKxJcHWreyaQVI6IL8tn1My+VW254diZqAJbN6I1HCxwvTHyZ+PpGtUOFQKjTusbmD4u/XayBe0j9qqUXrAGMtPvMI/VldeDUot+JsaWj0B3PHz9/X1/VMiWvaLzGF26cBWf9xZJ/Fd3kXsVve4/9ulVOvBchyOl7E7++shwpK0327JHYKnHn6n5BcvOWGc2Z0l8a/BaYbWmGlXV3WpFbRxplLybjGX9iqs3rz/2gO7y+6b7MXWUgsAvIKt0QFiqaO7lKKBCnbylxj9cor5FGIWclg32vXLbWoamw0DLpmx60R41B0CIoHUmcBvtOXph8hiGi4gdNpLXUBTfVmmLfdf+0zuyVnocDL5YsHSlt+PK/5YamRotLQbzzADuUDS6wZa+gYL+pbMSlCtm/pmwFkY9HSCjTIaJxUBTneJ2ZnK+PV/JQytHNMEsliz4tRYuLqy2sOVXf3lHLNFhVdVclCcbJ/ymDSwX3N2XDI9VDomsQzC2M/laQz4AR4mioBMrOU/XNatJTeoIKspvlcW0XR+yVmx+h/obYhI6/AZoBHR0zYWFFhrAGwJgpoOAiZ5IVYiVR/X4OBwOk/ZF+i5q0d8KrAypnP6j5o9xXTeSStq+rPfaBD9nZXWG/JK2yaT4OgbxR+oSpZfL8ZWpTZK8k42lFQMcbuUCOdeii+SIqXhGqWjS98YTi3w=="
+            },
+            "test/Submit.java" : {
+              "name" : "test/Submit.java",
+              "placeholders" : [ ],
+              "is_visible" : false,
+              "text" : "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"
+            }
+          },
+          "description_text" : "<html>\n<p>Ich muss Sie leider hier enttäuschen. Wir entwickeln unsere App erst auf dem nächsten Übungsblatt zu Ende.</p>\n<p><b>Implementieren Sie nun zum Testen eine Klasse <code>MeineTestAPI</code>, die Ihr Interface <code>WitzAPI</code> implementiert.</b></p>\n<p>Geben Sie in den drei zu implementierenden Methoden einfach irgendwas zurück (aber nicht <code>null</code>!), z. B. einen Array mit mind. einem Witz drin. <code>getKategorien</code> sollte einen Array zurückliefern, der mindestens eine Kategorie enthält.</p>\n</html>",
+          "description_format" : "HTML",
+          "task_type" : "edu"
+        }
+      ],
+      "type" : "lesson"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "build.gradle",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : "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"
+    }
+  ],
+  "version" : 13,
+  "edu_plugin_version" : "2022.2-2021.3-864"
+}

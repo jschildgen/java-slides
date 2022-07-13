@@ -1,0 +1,22 @@
+type: edu
+files:
+- name: src/Task.java
+  visible: true
+- name: test/Tests.java
+  visible: false
+- name: src/WitzeApp.java
+  visible: true
+- name: src/WitzAPI.java
+  visible: true
+- name: src/Witz.java
+  visible: true
+- name: src/Kategorie.java
+  visible: true
+- name: src/FrageAntwortWitz.java
+  visible: true
+  placeholders:
+  - offset: 556
+    length: 89
+    placeholder_text: /* TODO */
+- name: test/Submit.java
+  visible: false

@@ -1,0 +1,1 @@
+Es geht so ähnlich weiter. Schreiben Sie nun eine Methode, die das **tmp-Verzeichnis** ausgibt. Allerdings nicht als String, sondern als `Path`-Objekt. 

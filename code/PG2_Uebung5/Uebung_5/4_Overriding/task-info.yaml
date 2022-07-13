@@ -1,0 +1,18 @@
+type: edu
+files:
+- name: test/Tests.java
+  visible: false
+- name: test/Submit.java
+  visible: false
+- name: src/MauMau.java
+  visible: true
+- name: src/Spieler.java
+  visible: true
+- name: src/ComputerGegner.java
+  visible: true
+  placeholders:
+  - offset: 288
+    length: 107
+    placeholder_text: /* TODO */
+- name: src/MenschlicherSpieler.java
+  visible: true

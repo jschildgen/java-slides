@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PG2_Uebung4.iml" filepath="$PROJECT_DIR$/.idea/PG2_Uebung4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/1_Banking/PG2_Uebung4.Uebung4-1_Banking.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2a_Waehrung/PG2_Uebung4.Uebung4-2a_Waehrung.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2b_BigDecimal/PG2_Uebung4.Uebung4-2b_BigDecimal.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2c_auszahlen/PG2_Uebung4.Uebung4-2c_auszahlen.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2d_ueberweisen/PG2_Uebung4.Uebung4-2d_ueberweisen.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2e_compareTo/PG2_Uebung4.Uebung4-2e_compareTo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2b_Random/2b_Random.PG2_Uebung4.Uebung4-2b_Random.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2b_Random/2b_Random.PG2_Uebung4.Uebung4-2b_Random.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2b_Random/2b_Random.PG2_Uebung4.Uebung4-2b_Random.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2b_Random/2b_Random.PG2_Uebung4.Uebung4-2b_Random.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2c_Methode/2c_Methode.PG2_Uebung4.Uebung4-2c_Methode.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2c_Methode/2c_Methode.PG2_Uebung4.Uebung4-2c_Methode.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2c_Methode/2c_Methode.PG2_Uebung4.Uebung4-2c_Methode.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2c_Methode/2c_Methode.PG2_Uebung4.Uebung4-2c_Methode.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2d_Spiel/2d_Spiel.PG2_Uebung4.Uebung4-2d_Spiel.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2d_Spiel/2d_Spiel.PG2_Uebung4.Uebung4-2d_Spiel.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2d_Spiel/2d_Spiel.PG2_Uebung4.Uebung4-2d_Spiel.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2d_Spiel/2d_Spiel.PG2_Uebung4.Uebung4-2d_Spiel.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/Aufgabe_1_Klasse_Karte/Aufgabe_1_Klasse_Karte.PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/Aufgabe_1_Klasse_Karte/Aufgabe_1_Klasse_Karte.PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/Aufgabe_1_Klasse_Karte/Aufgabe_1_Klasse_Karte.PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/Aufgabe_1_Klasse_Karte/Aufgabe_1_Klasse_Karte.PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PG2_Uebung4.iml" filepath="$PROJECT_DIR$/.idea/modules/PG2_Uebung4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2a_toString/PG2_Uebung4.Uebung4-2a_toString.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2a_toString/PG2_Uebung4.Uebung4-2a_toString.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2b_Random/PG2_Uebung4.Uebung4-2b_Random.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2b_Random/PG2_Uebung4.Uebung4-2b_Random.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2c_Methode/PG2_Uebung4.Uebung4-2c_Methode.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2c_Methode/PG2_Uebung4.Uebung4-2c_Methode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/2d_Spiel/PG2_Uebung4.Uebung4-2d_Spiel.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/2d_Spiel/PG2_Uebung4.Uebung4-2d_Spiel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Uebung4/Aufgabe_1_Klasse_Karte/PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.iml" filepath="$PROJECT_DIR$/.idea/modules/Uebung4/Aufgabe_1_Klasse_Karte/PG2_Uebung4.Uebung4-Aufgabe_1_Klasse_Karte.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung4.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung4.util.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung4.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung4.util.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/PG2_Uebung4.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/PG2_Uebung4.util.test.iml" />

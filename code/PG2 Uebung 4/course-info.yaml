@@ -1,0 +1,10 @@
+type: marketplace
+title: PG2 Uebung 4
+language: German
+summary: 2022-04-21, Prof. Dr. Johannes Schildgen, OTH Regensburg
+vendor:
+  name: Johannes Schildgen
+programming_language: Java
+solutions_hidden: true
+content:
+  - Uebung_4

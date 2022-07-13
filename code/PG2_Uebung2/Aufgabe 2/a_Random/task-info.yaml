@@ -11,5 +11,5 @@ files:
   - offset: 177
     length: 4
     placeholder_text: ""
-- name: test/SubmitX.java
+- name: test/Submit.java
   visible: false

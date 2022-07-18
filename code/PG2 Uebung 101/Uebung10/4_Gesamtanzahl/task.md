@@ -1,1 +1,0 @@
-Geben Sie die Gesamtanzahl an Corona-Fällen, die es im Monat Januar 2022 in Germany gab, aus.

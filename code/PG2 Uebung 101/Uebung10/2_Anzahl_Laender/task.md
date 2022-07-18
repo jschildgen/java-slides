@@ -1,1 +1,0 @@
-Geben Sie die Anzahl der Länder aus.

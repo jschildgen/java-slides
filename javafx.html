@@ -1,0 +1,488 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>JavaFX</title>
+
+		<link rel="stylesheet" href="reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+
+        <link rel="stylesheet" href="src/slides.css">
+        <link rel="stylesheet" href="src/style.css">
+
+		<link rel="stylesheet" href="src/layout.css">
+        <link rel="stylesheet" href="lib/joint.min.css" />
+        <link rel="stylesheet" href="src/erd.css" />
+        <link rel="stylesheet" href="src/poll.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<script>
+			if(window.location.search.match( /print-pdf/gi )) {
+				document.getElementsByTagName( "head" )[0].innerHTML += '<link rel="stylesheet" href="src/routeros.css">';
+			} else {
+				document.getElementsByTagName( "head" )[0].innerHTML += '<link rel="stylesheet" href="src/rainbow.css">';
+			}
+			</script>
+
+        <!--<script defer src="lib/fontawesome.all.min.js"/>-->
+        <link href="lib/fontawesome.all.min.css" rel="stylesheet">
+        <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
+	</head>
+	<body>
+		<div class="reveal">
+            <div id="header"></div>
+            <div id="footer"></div>
+			<div class="slides">
+                <section>
+                    <h4 style="text-align:center"><b>Prof. Dr.-Ing. Johannes Schildgen</b><br>
+                    <a href="mailto:johannes.schildgen@h-da.de">johannes.schildgen@oth-regensburg.de</a></h4>
+                    <p>&nbsp;</p>
+                    <h3>Wir programmieren</h3>
+                    <h1 style="font-size: 240%;">GUIs mit JavaFX</h1>
+                    
+                    <h4 style="text-align:center">&nbsp;</h4>
+                    <img src="img/ccby.png" height="60px" style="position: absolute; left:0px; border:0; bottom:-180px;">
+                    <img src="img/javaland.png" height="60px" style="position: absolute; right:0px; border:0; bottom:-180px; box-shadow:none">
+                </section>
+
+                
+
+                <section>
+                  <h3>GUI-Programmierung in Java</h3>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 91 <i class="fas fa-book"></i> 17</div>
+                  <ul class="small">
+                    <li>GUI: Graphical User Interface</li>
+                    <li>Java-Frameworks zur Entwicklung plattformübergreifender GUIs:
+                      <ul>
+                        <li>AWT (Abstract Window Toolkit) - Java 1 (1995)</li>
+                        <li>Swing - Java 1.2 (1998)</li>
+                        <li>SWT (Standard Widget Toolkit) - Eclipse (2001)</li>
+                        <li>JavaFX (2008) - aktuelle Version: JavaFX 19 (2022)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <img src="img/6/awt.jpg" class="noborder" style="position: absolute; right:5mm; top: 5cm">
+                  <aside class="notes">Java wurde seit Beginn auch für die Entwicklung von GUI-Anwendungen eingesetzt. Dabei wurde stets angestrebt, dass diese Anwendungen zum Erscheinungsbild des verwendeten Betriebssystems passen. Läuft ein Java-Programm also auf MacOS, sieht beispielsweise ein Button anders aus als unter Windows. SWT ist nicht offiziell von Java, sondern wurde von Eclipse entwickelt. Das Programm Eclipse selbst läuft unter SWT. AWT und Swing sind mittlerweile veraltet. JavaFX ist deren moderner Nachfolger.<br>
+                    <b>Wichtig</b>: Achten Sie beim Import von <code>javafx</code>-Klassen darauf, dass sie die richtigen importieren! In AWT-Paketen gibt es oft Klassen mit gleichem Namen.</aside>
+                </section>
+
+                <section>
+                  <h3>JavaFX in IntelliJ</h3>
+                  <div class="trackinfo"><i class="fas fa-headphones"></i> 91 <i class="fas fa-book"></i> 17.1, 17.2</div>
+                  <img src="img/6/intellij_new_javafx.png" class="noborder" style="position: absolute; right:5mm; top: 2cm; max-height:11cm">
+                  <p class="small">In Java 7 bis 10 war JavaFX enthalten;<br>nun muss es separat installiert werden.</p>
+                  <p class="small"><a href="https://gluonhq.com/products/javafx/">https://gluonhq.com/products/javafx/</a></p>
+                  <p class="small"><b>In IntelliJ:</b></p>
+                  <ul class="small">
+                    <li class="fragment">JavaFX-Projekt anlegen<br>(File &rightarrow; New &rightarrow; Project &rightarrow; JavaFX)</li>
+                   </ul>
+                </section>
+
+                <section>
+                  <h3>JavaFX - Komponenten</h3>
+                  <img src="img/6/intellij_javafx_files.png" class="" style="position: absolute; right:1mm; top: 2cm; max-height:9cm">
+                  <h4>Application</h4>
+                  <ul class="small">
+                    <li>Haupt-Klasse (beinhaltet die <code>main</code>-Methode)</li>
+                    <li>Zu implementieren ist die <code>start</code>-Methode,<br>um das Haupt-Programmfenster anzuzeigen.</li>
+                  </ul>
+
+                  <h4 style="margin-top: 4mm;">Controller</h4>
+                  <ul class="small" style="margin-top: -4mm; margin-bottom: 4mm;">
+                    <li>Beinhaltet Listener-Methoden, die bei Events (Klick, ...) aufgerufen werden.</li>
+                  </ul>
+
+                  <h4 style="margin-top: 4mm;">FXML</h4>
+                  <ul class="small" style="margin-top: -4mm; margin-bottom: 4mm;">
+                    <li>XML zur Beschreibung des Layouts</li>
+                  </ul>
+
+                  
+                </section>
+                
+                <section>
+                  <h3>JavaFX-Application</h3>
+                  <img src="img/6/javafx_hallo.png" class="noborder" style="position: absolute; right:-5mm; top: 8mm; z-index: 999; background: none;">
+                  <img style="position: absolute; right:-0.5cm; max-height: 9cm; top:6cm; z-index: 1" uml="
+                  hide empty members
+                  class Stage
+                  class StackPane
+                  class Button
+
+                  Stage -- StackPane
+                  StackPane -- Button
+                  ">
+                  <pre style="width:21.5cm; margin-left:5mm"><code style="max-height: 25cm;" data-sample-indent="keep" class="java" contenteditable data-sample='code/JavaFX/src/de/othr/Hallo.java#3-4,10-26'></code></pre>
+                  <div class="poll fragment" style="bottom:-30px; z-index:999;">
+                    <h1>&quot;Button&quot; wird in IntelliJ rot dargestellt, wie lösen wir das?</h1>
+                      <ul>
+                        <li>Klasse Button erstellen</li>
+                        <li>import java.awt.Button;</li>
+                        <li data-poll="correct">import javafx.scene.control.Button;</li>
+                        <li>Da kann man nichts machen.</li>
+                      </ul>
+                    <h2>https://frage.space</h2>
+                   </div>
+                  <aside class="notes">JavaFX-Anwendungen erben von der abstrakten Klasse <code>Application</code> und müssen deren <code>start</code>-Methode implementieren. In der <code>main</code> wird <code>launch</code> aufgerufen, welches intern die in der <code>start</code>-Methode stehenden Aktionen ausführt. Diese Anwendung erstellt ein kleines Fenster mit einem Button. Das hier gezeigte Beispiel verwendet keine FXML und keine Controller-Klasse.</aside>
+                </section>
+
+                <section>
+                  <h3>Scene Graph</h3>
+                  <div class="trackinfo"><i class="fas fa-book"></i> 17.3</div>
+                  <p class="small">Baumstruktur, die den Fensterinhalt festlegt</p>
+                  <img style="position: absolute; right:-0.5cm; max-height: 9cm; top:2cm; z-index: 888" uml="
+                  hide empty members
+                  class Stage
+                  class StackPane
+                  class Button
+
+                  Stage -- StackPane
+                  StackPane -- Button
+                  ">
+                  <ul class="small">
+                    <li class="fragment"><code>Stage</code>
+                    <ul>
+                      <li>Fenster; Wurzel des Scene Graphs</li>
+                      <li>Fenstertitel: <code>primaryStage.setTitle("Hallo");</code></li>
+                      <li>Fenstergröße: <code>primaryStage.setScene(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new Scene(pane, 200, 100));</code></li>
+                      <li>Sichtbar machen: <code>primaryStage.show();</code></li>
+                    </ul></li>
+                    <li class="fragment"><code>Pane</code>
+                    <ul>
+                      <li>Anordnung der Elemente</li>
+                      <li><code>StackPane</code> (alle Elemente hintereinander)</li>
+                      <li><code>VBox</code>, <code>HBox</code>, <code>BorderPane</code>, <code>GridPane</code>, <code>FlowPane</code>, ...</li>
+                    </ul></li>
+                  </ul>
+                  <div class="poll fragment fade-in-then-out" style="bottom:-30px; z-index:999;">
+                    <h1>Wofür könnte VBox und HBox stehen?</h1>
+                      <ul>
+                        <li>Virtuell und Hardware</li>
+                        <li>Visuell und Haptisch</li>
+                        <li>Visible und Hidden</li>
+                        <li data-poll="correct">Vertikal und Horizontal</li>
+                      </ul>
+                    <h2>https://frage.space</h2>
+                   </div>
+                  <ul class="small">
+                    <li class="fragment">Steuerelemente
+                      <ul><li><input type="button" value="Button">, <code>Label</code>, <input type="radio" checked><code>RadioButton</code>, <input type="checkbox" checked><code>Checkbox</code>, <input type="text" value="TextField" size="5">, ...</li></ul>
+                  </ul>
+                  
+                </section>
+
+              <section>
+              <h3><code>VBox</code> / <code>HBox</code></h3>
+              <p class="small">Elemente werden untereinander (<code>VBox</code>) bzw. nebeneinander (<code>HBox</code>) angeordnet.</p>
+              <img src="img/6/javafx_login.png" class="noborder" style="position: absolute; right:5mm; top: 2.5cm; z-index: 999; background: none;">
+              <pre style="width:21cm; margin-left:5mm"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/JavaFX/src/de/othr/Login.java#23-39'></code></pre>
+              <div class="poll fragment fade-in-then-out" style="bottom:-30px; z-index:999;">
+                <h1>Zeichnen Sie den Scene Graph (beginnend mit der Wurzel &quot;Stage&quot;). Wie viele Knoten hat er?</h1>
+                  <ul>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li data-poll="correct">9</li>
+                  </ul>
+                <h2>https://frage.space</h2>
+               </div>
+              </section>
+
+              <section>
+                <h3>Listener-Konzept</h3>
+                <div class="trackinfo"><i class="fas fa-book"></i> 17.3</div>
+                <p class="small">Listener-Methode wird aufgerufen, sobald ein gewisses Ereignis eintritt,<br>z. B. wenn ein Button geklickt wird:</p>
+                <pre><code class="java" contenteditable data-sample='code/JavaFX/src/de/othr/Login.java#41'></code></pre>
+                <div class="fragment">
+                  <p class="small">oder wenn eine Eingabe in einem Textfeld erfolgt:</p>
+                  <pre><code class="java" contenteditable data-sample='code/JavaFX/src/de/othr/Login.java#43-51'></code></pre>
+                  <img src="img/6/javafx_login_error.png" class="noborder" style="position: absolute; right:-20mm; top: 5cm; z-index: 999; background: none;">
+                </div>
+                <aside class="notes">Mit den <code>setOn...</code>-Methoden lässt sich (am einfachsten über einen Lambda-Ausdruck) definieren, was passieren soll, wenn eine bestimmte Aktion auf einem GUI-Element ausgeführt wird. Beim Klick auf den Abbrechen-Button wird das Fenster geschlossen und damit das Programm beendet. Und bei jeder Tastatureingabe im E-Mail-Eingabefeld wird überprüft, ob die eingegebene E-Mail-Adresse ein @-Symbol enthält. Falls nein, erhält das Feld einen roten Hintergrund und der Einloggen-Button wird deaktiviert.</aside>
+              </section>
+
+              <section>
+                <h3>FXML</h3>
+                <img src="img/6/javafx_login.png" class="noborder" style="position: absolute; right:-5mm; top: 0cm; z-index: 999; background: none;">
+                <pre style="width: 98%; margin-left: 2mm;"><code style="max-height: 25cm;" class="language-xml" contenteditable data-sample-indent="keep" data-sample='code/JavaFX/src/de/othr/login.fxml#7-16'></code></pre>
+                <pre style="width: 98%; margin-left: 2mm;"><code style="max-height: 25cm;" class="java" contenteditable data-sample='code/JavaFX/src/de/othr/LoginFXML.java#13-16'></code></pre>
+                <aside class="notes">Mit FXML bietet JavaFX die Möglichkeit, das Layout einer GUI-Anwendung in Form einer XML-Datei zu gestalten. IntelliJ bietet hier eine gute Autovervollständigungen, sodass sich vieles auch ohne genaue Kenntnisse und auch ohne ein Blick in die Dokumentation schnell und leicht realisieren lässt. Die hier dargestellte FXML entspricht dem Code aus der vorherigen Folie. Durch diesen Ansatz wird die eigentliche Programmlogik vom Design der Anwendung getrennt.</aside>
+              </section>
+
+              <section>
+                <h3>Übung 1: FXML</h3>
+                <ol class="small">
+                  <li>Überlegen Sie sich eine (super simple) GUI-Anwendung,<br>zeichnen Sie auf Papier, wie diese aussehen soll.</li>
+                  <li>Legen Sie ein neues JavaFX-Projekt in IntelliJ an und starten Sie es.</li>
+                  <li>Passen Sie den Fenstertitel und -größe in der Application-Klasse an.</li>
+                  <li>Erstellen Sie das Layout Ihrer Anwendung in der FXML<br>und führen Sie die Anwendung aus.</li>
+                </ol>
+                <p class="small"><b>Beispiel-Ideen</b>: Zinsrechner, Taschenrechner (Addieren zweier Zahlen), Text-Rückwärts-Converter, Wörter-Zähl-Programm, Ratespiel, Login-Formular, ...</p>
+
+                <p class="small"><b>Tipp</b>: Verwenden Sie der Einfachheit halber zunächst nur die Komponenten VBox und HBox (vertikale und horizontale Anordnung von Elementen) sowie<br>Button, Label, TextField, TextArea und Checkbox.</p>
+                
+                <p class="small">Natürlich dürfen Sie Google und die JavaFX-Dokumentation nutzen.</p>
+              </section>
+
+              <section>
+                <h3>Listener in FXML</h3>
+                <pre style="width: 98%; margin-left: 2mm;"><code style="max-height: 25cm;" class="language-xml" contenteditable data-sample='code/JavaFX/src/de/othr/login2.fxml#7-8'></code></pre>
+                <pre style="width: 98%; margin-left: 2mm;"><code style="max-height: 25cm;" class="language-xml" contenteditable data-sample='code/JavaFX/src/de/othr/login2.fxml#16'></code></pre>
+
+                <h4>Controller-Klasse</h4>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="keep" data-sample='code/JavaFX/src/de/othr/LoginController.java#12-20,35'></code></pre>
+                <aside class="notes">In der FXML wird auf eine Controller-Klasse verwiesen. Diese enthält Listener-Methoden (hier: <code>cancel</code>). IntelliJ besitzt eine Funktion, diese automatisch erstellen zu lassen, nachdem man in die Methode in FXML referenziert (hier: <code>onAction="#cancel"</code>). Die <code>@FXML</code>-Annotation zeigt, dass es eine Verknüpfung zur FXML gibt. Über die Member-Variablen (z. B. <code>email</code>) hat man Zugriff auf die Steuerungselemente.</aside>
+              </section>
+
+              <section>
+                <h3>MVC</h3>
+                <p class="small"><b>Model-View-Controller</b>-Konzept: Trennung von Datenmodell (Model), Präsentation (View) und Programmsteuerung (Controller)</p>
+                
+                <div class="fragment">
+                  <h4>Model</h4>
+                  <p class="small" style="margin-top: -4mm">Klassen, die die in der Anwendung verwalteten Daten repräsentieren:<br><code>Person</code>, <code>Witz</code>, <code>BlogBeitrag</code>, <code>Musikstueck</code>, <code>Notiz</code>, <code>Produkt</code>,...</p>
+                </div>
+                <div class="fragment">
+                  <h4>View</h4>
+                  <p class="small" style="margin-top: -4mm">Präsentation der Daten des Modells und festlegung der Benutzerinteraktion:<br>Layout gestalten mit Panes, Textfeldern, Buttons, Labels, ... (z. B. in FXML)</p>
+                </div>
+                <div class="fragment">
+                  <h4>Controller</h4>
+                  <p class="small" style="margin-top: -4mm">Wertet Änderung in der Präsentation (z. B. Textfeld-Eingabe) aus, und nimmt Änderung an der Präsentation und den Daten im Modell vor.</p>
+                </div>
+              </section>
+
+              <section>
+                  <h3>Beispiel: Notiz-Anwendung</h3>
+                  <ul class="small">
+                    <li><b>Model</b>: Klasse <code>Notiz</code> (<code>titel</code>, <code>text</code>, Konstruktor, Getter, Setter)</li>
+                    <li><b>View</b>: <code>notizen.fxml</code></li>
+                    <li><b>Controller</b>: Klasse <code>NotizenController</code></li>
+                  </ul>
+                  <img src="img/6/javafx_notizen.png" class="stretch noborder">
+              </section>
+
+              <section>
+                <h3>Notizen.java</h3>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="keep" data-sample='code/JavaFX/src/de/othr/Notizen.java#9-22'></code></pre>
+                <aside class="notes">Dies ist die Hauptklasse der Anwendung, die die <code>main</code>-Methode beinhaltet und gestartet wird. Hier wird die FXML geladen und der Fenstertitel und die Fenstergröße gesetzt.</aside>
+              </section>
+
+              <section>
+                <h3>Notiz.java</h3>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="keep" data-sample='code/JavaFX/src/de/othr/Notiz.java#3-21'></code></pre>
+                <aside class="notes">Das Model besteht hier lediglich aus der einen Klasse <code>Notiz</code>. Ein <code>Notiz</code>-Objekt repräsentiert eine Notiz und speichert deren Titel und Text. Man könnte nun Klassen erstellen, die solche Notizen aus einer Datei oder einer Datenbank laden bzw. diese dort hin abspeichern. <code>toString()</code> gibt den Titel aus.</aside>
+              </section>
+
+              <section>
+                <h3>notizen.fxml</h3>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="xml" style="max-height: 25cm;" class="language-xml" contenteditable data-sample-indent="keep" data-sample='code/JavaFX/src/de/othr/notizen.fxml#7-24'></code></pre>
+                <aside class="notes">Hier wird ein <code>BorderPane</code> verwendet. Dieser kann aus bis zu fünf Bereichen (<code>top</code>, <code>left</code>, <code>right</code>, <code>bottom</code>, <code>center</code>) bestehen. Links wollen wir eine Übersicht über alle Notizen darstellen, rechts ein großes Textfeld, um die Notiz anzuzeigen und zu bearbeiten, unten kann man den Titel einer neuen Notiz angeben und zwei Knöpfe drücken. Im <code>notiztext</code>-Feld wird jede Änderung sofort gespeichert.</aside>
+              </section>
+              
+              <section>
+                <h3>NotizenController.java (1/2)</h3>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="keep" data-sample='code/JavaFX/src/de/othr/NotizenController.java#11-24,47'></code></pre>
+                <aside class="notes">Oben sind die referenzierten Elemente aus der FXML zu sehen. JavaFX bringt eine Schnittstelle <code>ObservableList</code> mit, die sich wie eine <code>List</code> verwenden lässt. Jede Änderung an dieser Liste wird jedoch überwacht, damit die <code>ListView uebersicht</code> immer den aktuellen Zustand der Liste darstellt.</aside>
+              </section>
+
+              <section>
+                <h3>NotizenController.java (2/2)</h3>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample='code/JavaFX/src/de/othr/NotizenController.java#26-46'></code></pre>
+                <aside class="notes">Diese Methoden greifen lesend und schreibend auf das Model (<code>notizen</code>-Liste) und die View zu.</aside>
+              </section>
+
+              <section>
+                <h3>Übung 2: Controller</h3>
+                <ol class="small">
+                  <li>Vergeben Sie in Ihrer FXML den Elementen, auf die sie im Controller zugreifen wollen fx-id-Werte und legen Sie in der Controller-Klasse entsprechende Member-Variablen an.</li>
+                </ol>
+                <pre><code class="xml">&lt;TextField fx:id="name"/></code></pre>
+                <pre><code class="java">@FXML TextField name;</code></pre>
+                <ol start="2" class="small">
+                  <li>Verweisen Sie in der FXML auf Listener-Methoden im Controller,<br>um Aktionen auszuführen.</li>
+                </ol>
+                <pre><code class="xml">&lt;TextField fx:id="name" onKeyReleased="#eingabe"/>
+&lt;Button onAction="#buttonclick"/></code></pre>
+                <ol start="3" class="small">
+                  <li>Implementieren Sie simple Programmlogik.</li>
+                </ol>
+
+              </section>
+
+              <section>
+                <h3>SceneBuilder</h3>
+                <img src="img/6/javafx_scenebuilder.png" class="stretch noborder">
+                <aside class="notes">Mit dem JavaFX SceneBuilder lässt sich mit Drag and Drop eine GUI erstellen und diese als FXML abspeichern.</aside>
+              </section>
+
+              <section>
+                <h3>ChatGPT</h3>
+                <img style="margin-left: -5cm;" src="img/6/javafx_chatgpt.png" class="stretch noborder">
+                <img style="position:absolute; left: 14cm; top: 10cm; width:12cm" src="img/6/javafx_chatgpt2.png" class="noborder">
+                <aside class="notes">ChatGPT macht natürlich noch Fehler, aber man kann sich mit Folgeanfragen der Lösung annähern und sie manuell anpassen.</aside>
+              </section>
+
+              <section>
+                <h3>GitHub Copilot</h3>
+                <p class="small">GitHub Copilot macht automatisch Code-Vorschläge (mit Tab annehmen).</p>
+                <img src="img/6/github_copilot.png" class="noborder">
+                <p class="small fragment">Problem hier: Die Klasse ConfirmBox gibt es (noch) gar nicht.</p>
+              </section>
+
+              <section>
+                <h3>Application Modal</h3>
+                <pre style="width: 98%; margin-left: 2mm; font-size: 34%;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="none" data-sample='code/JavaFX2/src/main/java/com/example/javafx/HelloApplication.java#ConfirmBox'></code></pre>
+                <img src="img/6/javafx_confirm.png" style="position: absolute; right: 5mm; top:5cm">
+              </section>
+
+              <section>
+                <h3>Alert</h3>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="none" data-sample='code/JavaFX2/src/main/java/com/example/javafx/HelloApplication.java#ConfirmationAlert'></code></pre>
+                <img src="img/6/javafx_alert_confirm.png" style="position: absolute; right: 5mm; top:1mm; width:7cm" class="noborder">
+                <p class="small" style="width:105%"><code class="java">e.consume();</code> markiert das Event als erledigt &Rightarrow; Fenster wird nicht geschlossen</p>
+                <aside class="notes">Der auf der vorherigen Folie gezeigte wurde wurde von GitHub Copilot erstellt. Dort wurde ein neues Fenster (Stage) programmiert, um den Bestätigungsdialog anzuzeigen. Für viele häufig verwendete Dialoge muss man dies aber nicht händisch machen, sondern kann einfach die Klasse <code>Alert</code> verwenden.</aside>
+              </section>
+
+              <section>
+                <h3>Mehrere Scenes</h3>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="none" data-sample='code/JavaFX2/src/main/java/com/example/javafx/HelloController.java#ZweiteScene'></code></pre>
+                <div>
+                <img src="img/6/javafx_scene1.png" style="height:7cm" class="noborder">
+                <img src="img/6/javafx_scene2.png" style="height:7cm" class="noborder">
+                </div>
+                <aside class="notes">Mit <code>stage.setScene(...);</code> kann man von einer Scene zu einer anderen wechseln. Der komplette Inhalte des Fensters wird dann ausgetauscht. Mit <code>actionEvent.getSource();</code> kommen wir an das Element, auf welchem die Aktion ausgeführt wurde (hier ist das ein Button). Über dieses kommen wir an die aktuelle Scene, die wir dann austauschen können.</aside>
+              </section>
+
+              <section>
+                <h3>Datenaustausch zwischen Scenes</h3>
+                <div style="margin-top: -1cm;">
+                <img src="img/6/javafx_scene1.png" style="height:7cm;" class="noborder">
+                <img src="img/6/javafx_scene2.png" style="height:7cm;margin-left: -1cm; margin-right: -1cm;" class="noborder">
+                <img src="img/6/javafx_scene1a.png" style="height:7cm" class="noborder">
+                </div>
+                <pre style="width: 98%; margin-left: 2mm; margin-top:-1cm"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="none" data-sample='code/JavaFX2/src/main/java/com/example/javafx/ZweiterController.java#Datenaustausch'></code></pre>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="none" data-sample='code/JavaFX2/src/main/java/com/example/javafx/HelloController.java#receiveData'></code></pre>
+                <aside class="notes">Die <code>FXMLLoader</code>-  und <code>Scene</code>-Objekte der Haupt-Scene wurden in Member-Variablen der Klasse <code>HelloApplication</code> geschrieben, um wieder auf die Scene wechseln zu können und um mit dem Controller zu kommunizieren.</aside>
+              </section>
+
+              <section>
+                <h3>Properties</h3>
+                <p class="small">Properties sind Werte, deren Änderungen überwacht werden.</p>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="keep" data-sample='code/JavaFX2/src/main/java/com/example/javafx/Person.java#Person'></code></pre>
+                <aside class="notes">Die hier zu sehenden Methoden wurden mit IntelliJ's &quot;Generate Getters/Setters&quot; erzeugt. Nach außen wird versteckt, dass der Name eine StringProperty ist, er erscheint als String. Properties können an andere Properties gebunden werden (siehe nächste Folie).</aside>
+              </section>
+
+              <section>
+                <h3>Bindings</h3>
+                <p class="small">Ändert sich eine Property, ändern sich auch die daran gebunden Properties.</p>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="none" data-sample='code/JavaFX2/src/main/java/com/example/javafx/PropertiesController.java#bindings'></code></pre>
+                <p class="small">Variante ohne Person-Objekt:</p>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="java" style="max-height: 25cm;" contenteditable data-sample-indent="none" data-sample='code/JavaFX2/src/main/java/com/example/javafx/PropertiesController.java#bindings2'></code></pre>
+                <img src="img/6/javafx_property.png" style="position: absolute; right: 1mm; top:32mm; width:7cm" class="noborder">
+              </section>
+
+              <section>
+                <h3>GridPane</h3>
+                <pre style="width: 98%; margin-left: 2mm;"><code class="xml" style="max-height: 25cm;" contenteditable data-sample-indent="keep" data-sample='code/JavaFX2/src/main/resources/com/example/javafx/gridpane.fxml#gridpane'></code></pre>
+                <img src="img/6/javafx_gridpane.png" style="position: absolute; right: 5mm; top:1mm" class="noborder">
+                <aside class="notes">In einem GridPane hat jedes Element eine Spalten- und Zeilennummer. <code>hgap</code> und <code>vgap</code> geben den Abstand zwischen den Spalten bzw. Zeilen an, die padding-Insets definieren die Abstände zum Fensterrand.</aside>
+              </section>
+
+              <section>
+                <h3>Threads und JavaFX</h3>
+                <p class="small">Greift man in einem neuen Thread auf JavaFX-Elemente zu, wird die Exception &quot;Not on FX application thread&quot; geworfen.</li>
+                
+                <h4>Platform.runLater(Runnable)</h4>
+                <pre><code class="java">Platform.runLater(() -> { 
+  // dies wird (irgendwann) im FX-Application-Thread aufgerufen.
+});</code></pre>
+              </section>
+
+              <section>
+                <h3>CSS Styles</h3>
+
+                <h4>Inline-Styles</h4>
+                <pre><code class="xml">&lt;Button text="Button" style="-fx-background-color: red;"&gt;</code></pre>
+
+                <h4>CSS-Datei einbinden</h4>
+                <pre><code class="java">scene.getStylesheets()                      // Application-Klasse
+     .add(getClass().getResource("style.css").toExternalForm());</code></pre>
+
+<pre><code class="xml">&lt;Button text="Button" styleClass="mybutton"&gt;        <!-- FXML --></code></pre>
+
+                <pre><code class="css">.button {                                         /* style.css */
+  -fx-font-weight: bold;
+}
+.mybutton {
+  -fx-background-color: red;
+}
+</code></pre>
+
+                <input type="button" value="Button" style="background-color: red; position: absolute; right:2cm; top:2cm" />
+                <input type="button" value="Button" style="background-color: red; font-weight: bold; position: absolute; right:2cm; top:6cm" />
+
+                <aside class="notes">Cascading Style Sheets (CSS), die Design-Sprache für das Web, wird von JavaFX unterstützt, um das Aussehen von Elementen festzulegen.</aside>
+              </section>
+
+
+
+              <section>
+                <h3>Übung 3: Anwendung fertigstellen</h3>
+                <ol class="small">
+                  <li>Erweitern Sie Ihre Anwendung um komplexere Programmlogik</li>
+                  <li>Verwenden Sie gerne auch Alerts, mehrere Scenes, ListViews, Observables, Properties, BorderPanes, GridPanes, Threads, ...</li>
+                  <li>Legen Sie den Stil Ihrer Anwendung mit CSS fest.</li>
+                </ol>
+              </section>
+
+              <section>
+                <h3>JavaFX &rightarrow; Android, iOS, Web, ...</h3>
+                <h4>Gluon</h4>
+                <p class="small">Die Firma Gluon kümmert sich um die Weiterentwicklung<br>von JavaFX und des Scene-Builders.</p>
+
+                <h4>Gluon Mobile</h4>
+                <p class="small">Erzeugt Android- und iOS-Apps.<br>
+                Gluon-Plugins für IntelliJ und Co.<br>
+                <a href="https://gluonhq.com" target="_blank">https://gluonhq.com</a></p>
+
+                <h4>JavaFX Deployment in the Browser</h4>
+                <p class="small">Gluon WebGL (work in progress) und andere Ansätze.</p>
+
+                <img style="position: absolute; right:5mm; width:9cm; top:5cm" src="img/6/gluon_platforms.png" class="noborder">
+
+                <aside class="notes">Es ist möglich, JavaFX-Applikationen cross-Plattform zu entwickeln, sodass diese in Android- und iOS-Stores angeboten werden können. Nativ für diese Plattformen entwickelte Apps haben aber dennoch ein viel besseres Look-and-Feel und bieten mehr Möglichkeiten. Das gleiche gilt für Web-Apps, hier ist die Integration von JavaFX sehr experimentell.</aside>
+              </section>
+
+              </div>
+            </div>
+        
+            <script src="reveal.js/dist/reveal.js"></script>
+		<script src="reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js/plugin/math/math.js"></script>
+		<script src="reveal.js/plugin/notes/notes.js"></script>
+		<script src="reveal.js/plugin/search/search.js"></script>
+        <script src="lib/jquery.js"></script>
+        <script src="lib/lodash.js"></script>
+        <script src="lib/backbone.js"></script>
+        <script src="lib/joint.min.js"></script>
+				<script src="lib/deflate.js"></script>
+
+		<script src="src/init_reveal.js"></script>
+
+        <script>
+        if(window.location.search.match( /print-pdf/gi )) {
+                document.getElementById('header').style="display:none";
+                document.getElementById('footer').style="display:none";
+        }
+        </script>
+
+        
+        
+          </body>
+        </html>
+        
